@@ -1,0 +1,21 @@
+:root {
+    color-scheme: light dark;
+    --link-color: Blue;
+    --highlight-color: Gainsboro
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --link-color: #93d5ff;
+    --highlight-color: DimGray
+  }
+}
+a {
+    color: var(--link-color);
+}
+.search-results {
+    background-color: var(--highlight-color);
+}
+body { 
+tab-size: 4; 
+margin: 1em; font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14pt }

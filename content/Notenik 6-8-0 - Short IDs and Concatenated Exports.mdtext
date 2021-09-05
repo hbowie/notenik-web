@@ -1,0 +1,33 @@
+Title:  Notenik 6.8.0 - Short IDs and Concatenated Exports
+
+Page Title: Notenik 6.8.0 - Short IDs and Concatenated Exports
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   02 Aug 2021
+
+Teaser: 
+
+Added Short ID to the list of available field labels and types, to help with URL shortening; added new option to export an entire Collection into a single HTML or Markdown document; fixed a bug affecting automatic links in footnotes. 
+
+
+Body: 
+
+## Added Short ID Field Label and Type
+
+Added [Short ID][shortid] to the list of available [Field Labels and Types][fields]. One potential use for such a field, when creating a website, would be to perform your own homegrown [URL shortening](https://en.wikipedia.org/wiki/URL_shortening), rather than using a third-party service.  
+
+## Added New Export Option to Concatenate HTML or Markdown
+
+The new options, described on the [Import and Export Your Notes][impexp] page, will write out a single file for an entire Collection, concatenating all of the Notes in the Collection. 
+
+## Fixed a Footnote Bug
+
+[Footnotes][fns] were not being properly handled when they contained an automatic link (contained within angle brackets). This has now been corrected.
+
+[fields]: 		../knowledge-base/EPUB/html/field-labels-and-types.html
+[fns]: 			../knowledge-base/EPUB/html/footnotes.html
+[impexp]:	../knowledge-base/EPUB/html/import-and-export-your-notes.html
+[shortid]: 	../knowledge-base/EPUB/html/short-id.html

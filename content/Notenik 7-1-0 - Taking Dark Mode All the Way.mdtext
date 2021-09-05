@@ -1,0 +1,49 @@
+Title:  Notenik 7.1.0 - Taking Dark Mode All the Way
+
+Page Title: Version 7.1.0 - Taking Dark Mode All the Way
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   31 Aug 2021
+
+Teaser: 
+
+Notenik has mostly supported Dark Mode from the beginning -- everywhere except on the Display tab, where the default was still to show black text on a white background. Now the Display Tab will follow your light/dark preferences, along with the rest of the App. 
+
+Body: 
+
+## Turning to the Dark Side on the Display Tab
+
+I was kind of a late adopter of the [Dark Appearance Setting on the Mac][darkmac]. 
+
+At first I just didn't see the point. 
+
+But I kept trying it out until it started to grow on me a bit. 
+
+Until now I'm using it all the time, and turning on the light setting now seems a bit of a shock. 
+
+Notenik has mostly supported Dark Mode from the beginning -- everywhere except on the Display tab, where the default was still to show black text on a white background. 
+
+The reason for this was a little bit complex. I'm using the Mac's WebKit API to format the Display tab, which means I'm essentially formatting each Note display as a Web page -- and I hadn't yet incorporated the latest HTML to allow the page to follow the user's wishes in terms of the light/dark setting. 
+
+But Notenik 7.1.0 fixes all that. As a bonus, when you use one of Notenik's functions to generate an actual Web page from a single Note or a Collection, the generated pages will also include the code to respect the user's preferences. 
+
+I think the results look pretty sharp, if I do say so myself. 
+
+(Of course, you can still supply your own CSS if you'd prefer different colors.)
+
+## Highlighting Search Text Matches
+
+Another new feature in 7.1.0 that also shows up on the Display tab is highlighting of matching text when you execute a Search function. Previously Notenik would take you to the Note(s) containing the text you were searching for, but would not show you where the text was found. For a brief Note, this wasn't usually a problem, but for longer Notes, it could be a bit frustrating to try to figure out where the matching text had been found. With 7.1.0, the matching text will be clearly highlighted. 
+
+## Generating Wikipedia Links
+
+The final little goodie in this release is the ability to automatically populate a Link field by taking the Title of a Note and then transforming it into a Link to the English Wikipedia page on that topic. Not everyone will find this feature useful, but if you have a Collection of your favorite Authors, for example, it can be handy for populating a Link field for each author. You can find this new function within the Note menu, about halfway down the list. 
+
+## Enjoy!
+
+Hope you enjoy the new release! If you have questions or problems or suggestions for further improvements, just send me an email at [hbowie@notenik.net](mailto:hbowie@notenik.net), and I'll get back to you as quickly as I can. 
+
+[darkmac]: https://support.apple.com/guide/mac-help/use-a-light-or-dark-appearance-mchl52e1c2d2/mac

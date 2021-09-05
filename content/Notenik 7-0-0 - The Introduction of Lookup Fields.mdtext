@@ -1,0 +1,28 @@
+Title:  Notenik 7.0.0 - The Introduction of Lookup Fields
+
+Page Title: Notenik 7.0.0 - The Introduction of Lookup Fields
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   27 Aug 2021
+
+Teaser: 
+
+A field in one Collection can now reference information in other Collections. 
+
+
+Body: 
+
+Released on August 27, 2021
+
+## Addition of a Lookup Field Type
+
+Users can now add [Lookup][] fields to a Collection to reference information in another Collection. See the new [Lookup][] field type for further info. 
+
+## Improved Web Book Generation
+
+Files are no longer overwritten if they haven't changed.
+
+[lookup]: ../knowledge-base/EPUB/html/lookup.html

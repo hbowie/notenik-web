@@ -1,0 +1,183 @@
+:root {
+    color-scheme: light dark;
+    --link-color: Blue;
+    --highlight-color: Gainsboro
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --link-color: #93d5ff;
+    --highlight-color: DimGray
+  }
+}
+a {
+    color: var(--link-color);
+}
+.search-results {
+    background-color: var(--highlight-color);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem 0.5rem;
+	font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.4;
+	max-width: 60rem;
+	margin: 0 auto;
+	/* color: #333; */
+}
+
+main {
+	max-width: 50rem;
+}
+
+/* --------------------------------------------------
+
+	Navigation Bar Styling
+	
+ * -------------------------------------------------- */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	padding: 8px; 
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	/* background-color: #dddddd; */
+}
+
+nav ul li a:hover {
+	/* background-color: #111; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'equity-text', Georgia, 'Times New Roman', Times, serif;
+}
+
+p.news-date {
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+.site-logo-image {
+	max-width: 128px;
+}
+
+header {
+	text-align: center;
+	/* border-bottom: 8px double #f9f9f9; */
+	margin-bottom: 2rem;
+	padding-bottom: 1rem;
+}
+
+#site-title { 
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+}
+
+#site-slogan {
+  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.Strap {
+	font-size: 1rem;
+}
+
+.MoneyShot {
+	position: relative;
+}
+
+.MoneyShotImg {
+	border: 6px solid #e8cfa9;
+	border-radius: 4px;
+}
+
+.LogoWrapper {
+	display: block;
+}
+
+.ImageCaption {
+	font-size: 0.75rem;
+	position: absolute;
+	bottom: 0.5rem;
+	right: 1rem;
+	padding: 3px;
+	background-color: #222;
+	color: #e4e4e4;
+}
+
+.IntroText {
+	font-size: 1.8rem;
+	font-style: italic;
+}
+
+.MethodWrapper li {
+	padding: 0.4rem 0;
+}
+
+.MethodWrapper li:after {
+	content: "✼";
+	display: block;
+	text-align: center;
+	margin: 1rem 0 0.5rem 0;
+	color: #eee;
+}
+
+@media screen and (min-width: 800px) {
+
+
+	.IntroWrapper {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+	}
+
+	.MoneyShot,
+	.IntroText {
+		display: table-cell;
+		width: 50%;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.IntroText {
+		padding: 0.5rem;
+		font-size: 2.5rem;
+		text-align: left;
+		position: relative;
+	}
+
+	.Ingredients {
+		font-size: 0.9rem;
+		float: right;
+		padding: 1rem;
+		margin: 0 0 0.5rem 1rem;
+		border-radius: 3px;
+		background-color: #ffffdf;
+		border: 2px solid #e8cfa9;
+	}
+
+	.Ingredients h3 {
+		margin: 0;
+	}
+}

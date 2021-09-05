@@ -1,0 +1,58 @@
+<?set prior-title = "" ?>
+<?set prior-page-title = "" ?>
+<?nextrec?>
+<?set folder-out = "" ?>
+<?if "=$type$=" eq "news" ?>
+<?set folder-out = "news/" ?>
+<?endif?>
+<?if "=$type$=" ne "review" ?>
+<?output "../=$folder-out$==$title&f$=.html"?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>=$page-title$=</title>
+		<meta name="description" content="The Notenik App for the Mac" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<?include "../includes/head-links.html" ?>
+	</head>
+	<body>
+
+<?include "../includes/header.html" ?>
+
+<?include "../includes/nav-top.html" ?>
+
+		<main>
+<?if "=$title$=" != "index" ?>
+			<h1>=$page-title$=</h1>
+<?endif?>
+<?if "=$type$=" eq "news" ?>
+			<p class="news-date">Posted on =$date&d MMM, yyyy$=</p>
+<?endif?>
+			=$body&o$=
+
+<?if "=$type$=" eq "news" ?>
+<?if "=$prior-title$=" ?>
+			<hr />
+
+			<p>Earlier News:
+				<a href="=$prior-title&f$=.html">
+					=$prior-page-title$=
+				</a>
+			</p>
+<?endif?>
+<?set prior-title = "=$title$="?>
+<?set prior-page-title = "=$page-title$=" ?>
+<?endif?>
+
+<?if "=$title$=" eq "index" ?>
+<?include "../includes-gen/latest-news.html" ?>
+<?endif?>
+
+<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+
+		</main>
+	</body>
+</html>
+<?endif?>
+<?loop?>

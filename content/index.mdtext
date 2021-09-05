@@ -1,0 +1,45 @@
+Title:  index
+
+Page Title: Notenik
+
+Status: 9 - Published
+
+Type:   page
+
+Body: 
+
+## Introducing Notenik
+
+If you're looking for a note-taking app that does more than just record your notes, then you you might want to consider some of Notenik's key attributes. 
+
+## Proudly Made for the Mac
+
+Just in time for the 2021 resurgence of Apple's premier platform, and M1-ready, Notenik runs easily on all reasonably modern Macs. 
+
+## 100% Free and Open-Source
+
+No upfront cost, no in-app purchases, no subscriptions, no advertising, no interest in your personal data -- just download from the Mac App Store and start running, with all features enabled. Source code published under the MIT license, and available on GitHub. 
+
+## Text Files Are Forever
+
+Notenik stores all of your Notes in plain text files that can be opened, viewed and edited using any text editor, or your favorite Markdown editor. Notes are collected into folders, and you can store a Notenik folder anywhere you like. Sync to the cloud and to other devices and platforms using your favorite service. 
+
+## Markdown and Then Some
+
+You can format your Notes using Markdown, with support for footnotes, citations, definition lists and MathJax. Use wiki style double-bracket notation to link from one Note to another. Automatically generate a Table of Contents for a single long Note, or for an entire Collection of Notes. 
+
+## And Then There Are Fields
+
+Every Notenik Note consists of multiple fields. Of course there's always a Title and a Body, but you needn't stop there. Add a Tags field and see your Notes organized by tag. Add a Link field to store a URL. Add a Date field to track a due date or a publication date. Add a Seq field to add an arbitrary sequence number. Add an Author field to maintain a list of your favorite quotations. Sort your Collection of Notes using any of these fields. Each Notenik Collection (aka folder) can use a different set of fields. Fields can be of different types. The possibilities, if not exactly endless, are at least quite numerous. 
+
+## Export, Publish and Share
+
+You'll have all sorts of options for exporting your Notes, or publishing them to the Web. Notenik even has its own templating and scripting languages, so you can sort and filter and format your Notes in any way you would like. 
+
+## Thoroughly Documented
+
+The Notenik Knowledge Base contains everything you might ever want to know about Notenik -- stored in its own Notenik Collection of Notes! Open from within Notenik (look beneath the Help menu), or access on the Web. 
+
+## Actively Supported, Maintained and Enhanced
+
+I'm Herb Bowie, the developer. I respond to all emails, and am generally happy to accommodate requests for fixes and further enhancements. I try to publish one or two significant updates each month. If you have a missing feature or software quirk that's bothering you, then let me know, and I'll see what I can do.

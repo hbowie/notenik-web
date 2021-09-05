@@ -1,0 +1,41 @@
+<?output "../news.html"?>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>The Latest News</title>
+		<meta name="description" content="The Latest News About Notenik" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<?include "../includes/head-links.html" ?>
+	</head>
+	<body>
+
+<?include "../includes/header.html" ?>
+
+<?include "../includes/nav-top.html" ?>
+
+		<main>
+			<h1>The Latest News</h1>
+<?nextrec?>
+<?if "=$type$=" eq "news" ?>
+				<article>
+					<h2>
+						<a href="news/=$title&f$=.html">
+							=$page-title$=
+						</a>
+					</h2>
+
+					=$teaser&o$=
+
+					<p class="news-date">
+						=$date&d MMM, yyyy$=
+						<a href="news/=$title&f$=.html">
+							read more&hellip;
+						</a>
+					</p>
+				<article>
+<?endif?>
+<?loop?>
+		</main>
+	</body>
+</html>

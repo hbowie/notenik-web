@@ -1,0 +1,32 @@
+Title:  Notenik 6.2.0 - I Love It When a Plan Comes Together
+
+Page Title: Notenik 6.2.0 - I Love It When a Plan Comes Together
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   27 May 2021
+
+Teaser: 
+
+My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. "Slow but Steady" might be my mantra. This latest release finally implements a custom URL scheme for Notenik. (I first received an email asking for something like this in January of 2020!) 
+
+
+Body: 
+
+My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. "Slow but Steady" might be my mantra. 
+
+This latest release finally implements a custom URL scheme for [Notenik](https://apps.apple.com/us/app/notenik/id1465997984?mt=12). (I first received an email asking for something like this in January of 2020!) You can read all the details [here](../knowledge-base/EPUB/html/custom-url-scheme.html).
+
+What this means is that other apps can now easily integrate with Notenik. You can retrieve a `notenik://open...` link to a particular Note from within Notenik, then embed that URL in the content of another app such that, when you select it, Notenik will open and point you to that particular Note. 
+
+The other sort of integration you can now implement is to format a `notenik://add...` URL that will take content from another app and then add it to Notenik. This sort of URL is generally implemented via an *Action* or a *Script* within the other app, depending on the terminology used. [Drafts](https://getdrafts.com) is a natural for this sort of integration. Drafts has both macOS and iOS versions, and syncs effortlessly between platforms, so I can now use it to capture some text on my iPhone, and then easily add it to one of my Notenik collections when I'm back in front of my Mac. 
+
+One complication here is that Notenik, by design, allows and even, one might say, *encourages* you to maintain multiple Collections of Notes that may, for various good reasons, even be stored in varying locations within your home folder. So in order to access, or add, a Note, one must first specify which Collection to use for the desired operation. 
+
+Normally the specification of a Collection would require a long and often somewhat gnarly path specification, calling out all the various folders and sub-folders in which your Collection of interest might be tucked away. 
+
+This is where we get some help from our [Collection Shortcuts](https://notenik.net/articles/collection-shortcuts-and-the-quick-action-window.html), introduced in version 6.0.0. Add a shorty, pithy identifier to your frequently used Collections, and then easily call out that particular Collection in a `notenik://...` URL by specifying the shortcut, rather than the entire path. Sweet! For example, `todo` and `ideas` are a couple of shortcuts to two of my frequently used Collections. 
+
+I hope you find this new feature useful. Feel free to share it with your friends and neighbors! And if you have any questions or feedback, on this or any other aspect of Notenik, please drop me a line at [hbowie@notenik.net](mailto:hbowie@notenik.net). I'd love to hear from you!
