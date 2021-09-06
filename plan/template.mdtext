@@ -10,7 +10,7 @@ Status: 0 - Idea; 1 - Proposed; 2 - Approved; 3 - Planned; 4 - In Work; 5 - Held
 
 Seq: <seq> 
 
-Level: <level: > 
+Level: <level: 1 - Project; 2 - Phase; 3 - Task; 4 - Subtask; >
 
 Body:  
 

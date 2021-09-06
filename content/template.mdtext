@@ -2,11 +2,17 @@ Title: <title>
 
 Page Title:  
 
+Seq: <seq> 
+
 Tags: <tags> 
+
+Main Menu:  
+
+Secondary Menu:  
 
 Status: 0 - Idea; 4 - In Work; 5 - Held; 6 - Completed; 8 - Canceled; 9 - Published;  
 
-Type: pick-from: news, page, review 
+Type: pick-from: chrome, news, page, review 
 
 Date: <date> 
 

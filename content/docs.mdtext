@@ -2,6 +2,10 @@ Title:  docs
 
 Page Title: Documentation
 
+Seq:    1.3
+
+Main Menu: Docs
+
 Status: 9 - Published
 
 Type:   page
@@ -16,5 +20,4 @@ You can find it on GitHub at [hbowie/notenik-KB](https://github.com/hbowie/noten
 
 To review recent changes to the app, see the [Version History](notenik://help?id=versionhistory) section of the Knowledge Base. 
 
-If you'd rather consult the Knowledge Base without use of Notenik, please view the [Web Book](knowledge-base/EPUB/html/notenik-knowledge-base.html) stored on this site, and available for viewing within your Web browser. 
-
+If you'd rather consult the Knowledge Base without use of Notenik, please view the [Web Book](knowledge-base/EPUB/html/notenik-knowledge-base.html) stored on this site, and available for viewing within your Web browser.

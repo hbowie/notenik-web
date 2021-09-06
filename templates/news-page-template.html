@@ -1,21 +1,4 @@
-<?output "../news.html"?>
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>The Latest News</title>
-		<meta name="description" content="The Latest News About Notenik" />
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<?include "../includes/head-links.html" ?>
-	</head>
-	<body>
-
-<?include "../includes/header.html" ?>
-
-<?include "../includes/nav-top.html" ?>
-
-		<main>
-			<h1>The Latest News</h1>
+<?output "../includes-gen/news-page.html"?>
 <?nextrec?>
 <?if "=$type$=" eq "news" ?>
 				<article>
@@ -36,6 +19,3 @@
 				<article>
 <?endif?>
 <?loop?>
-		</main>
-	</body>
-</html>

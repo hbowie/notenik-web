@@ -1,0 +1,40 @@
+Title:  Notenik 6.9.0 - Enhanced OPML Import and Export
+
+Page Title: Notenik 6.9.0 - Enhanced OPML Import and Export
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   12 Aug 2021
+
+Teaser: 
+
+Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
+
+
+Body: 
+
+## Added OPML Import Function
+
+An OPML Outline file can now be imported into Notenik. See [Assemble an Outline][outline] for more info. 
+
+## Enhanced OPML Export Function
+
+The export will now nest `outline` elements based on [Level][] field values. 
+
+## Added 'New Child' Option to List tab Popup Menu
+
+When using the Seq and Level fields, added an option to the Notes List popup menu to add a New Child to an existing Note, so that the Level field will be incremented by 1, and the Seq value will have a `.1` added to it.
+
+## Added Ability to Drag and Drop Within a Sequenced List
+
+If you have a Sequenced Collection, you can perform some basic resequencing by dragging and dropping a Note from one position to another on the List tab. Note that you must move the Drop indicator to a line above and/or below existing Notes in order to indicate a desired new position for an existing Note. Only the Note being dragged and dropped will have its Seq value changed.
+
+## Improved List Scrolling
+
+In most cases, the list view on the left should now scroll to show the selected Note displayed on the right.
+
+[level]: ../knowledge-base/EPUB/html/level.html
+
+[outline]: ../knowledge-base/EPUB/html/assemble-an-outline.html
