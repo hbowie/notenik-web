@@ -15,18 +15,18 @@ Added an option to backup an entire Collection to a compressed Zip file; made im
 
 Body: 
 
-### Added What's New Command beneath the Help Menu
+#### Added What's New Command beneath the Help Menu
 
 Selecting `What's New` beneath the `Help` menu will open the Notenik Knowledge Base and position it on the Note showing Notenik's latest changes. 
 
-### Added Backup to Zip option
+#### Added Backup to Zip option
 
 A new option beneath the File menu will create a Zip file containing a compressed backup of the entire current Collection. 
 
-### Improvements to Streamlined Reading
+#### Improvements to Streamlined Reading
 
 Only the Seq, Title and Body fields are now included on the Display tab, when Streamlined Reading is chosen for the Collection. 
 
-### Help Command Expanded
+#### Help Command Expanded
 
 A notenik Custom URL invoking the help command can now optionally specify the ID of a specific Note to be displayed, after opening the Knowledge Base.

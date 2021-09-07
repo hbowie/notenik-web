@@ -15,15 +15,15 @@ Added Short ID to the list of available field labels and types, to help with URL
 
 Body: 
 
-### Added Short ID Field Label and Type
+#### Added Short ID Field Label and Type
 
 Added [Short ID][shortid] to the list of available [Field Labels and Types][fields]. One potential use for such a field, when creating a website, would be to perform your own homegrown [URL shortening](https://en.wikipedia.org/wiki/URL_shortening), rather than using a third-party service.  
 
-### Added New Export Option to Concatenate HTML or Markdown
+#### Added New Export Option to Concatenate HTML or Markdown
 
 The new options, described on the [Import and Export Your Notes][impexp] page, will write out a single file for an entire Collection, concatenating all of the Notes in the Collection. 
 
-### Fixed a Footnote Bug
+#### Fixed a Footnote Bug
 
 [Footnotes][fns] were not being properly handled when they contained an automatic link (contained within angle brackets). This has now been corrected.
 

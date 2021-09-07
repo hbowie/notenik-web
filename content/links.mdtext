@@ -1,0 +1,85 @@
+Title:  links
+
+Page Title: Links
+
+Seq:    1.3
+
+Main Menu: Links
+
+Status: 9 - Published
+
+Type:   page
+
+Body:
+
+For convenience, links to all Notenik-related resources external to this website have been gathered together here. 
+
+### App Download
+
+Notenik is available exclusively from the Mac App Store. Use the official button below or a [text link][download-app-store].
+
+<p><a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a></p>
+
+### Knowledge Base
+
+The Notenik Knowledge Base contains all of the written documentation about Notenik. The Knowledge Base is, itself, a Notenik Collection. You can access it from various sources, and in various forms. 
+
++ [Within Notenik][nkb-notenik] -- After downloading and installing Notenik on your Mac, use this link to open a read-only copy of the Knowledge Base. 
+
++ [On the Web][nkb-web] -- If you'd rather consult the Knowledge Base without use of Notenik, please view the Web Book stored on this site, and available for viewing within your Web browser.
+
++ [On GitHub][nkb-github] -- The Knowledge Base is stored on GitHub in its own repository.  
+
+### Version History
+
+The complete version history is contained within the Knowledge Base. Use the following links to access this log directly. 
+
++ [Within Notenik][history-notenik] -- After downloading and installing Notenik on your Mac, use this link to see the version history from within Notenik. 
+
++ [On the Web][history-web] -- Use this link to view the version history within your Web browser.
+
+### Notenik Web Site
+
+This website has been created and is maintained using Notenik. 
+
++ [On the Web][web-web] -- This is the primary link to the Notenik website. 
+
++ [On GitHub][web-github] -- All of the content, templates and scripts used to generate the Notenik website. 
+
+### Source Code
+
+All of the Notenik source code is available on GitHub, split between several different repositories. 
+
++ [Notenik Swift][source-swift] -- This is where you will find all of the code for creating and interacting with the user interface. 
+
++ [Notenik Lib][source-lib] -- This is where you will find the code for manipulating the data. 
+
++ [Notenik Mkdown][source-mkdown] -- This is the code for the Markdown parser built specifically for Notenik. 
+
++ [Notenik Utils][source-utils] -- This repo contains some very general utilities that are not Notenik-specific. 
+
+[download-app-store]: https://apps.apple.com/us/app/notenik/id1465997984?mt=12
+
+[history-notenik]: notenik://help?id=versionhistory
+
+[history-web]: knowledge-base/EPUB/html/version-history.html
+
+[nkb-github]: https://github.com/hbowie/notenik-KB
+
+[nkb-notenik]: notenik://help
+
+[nkb-web]: knowledge-base/EPUB/html/notenik-knowledge-base.html
+
+[source-swift]: https://github.com/hbowie/notenik-swift
+
+[source-lib]: https://github.com/hbowie/NotenikLib
+
+[source-mkdown]: https://github.com/hbowie/NotenikMkdown
+
+[source-utils]: https://github.com/hbowie/NotenikUtils
+
+[web-github]: https://github.com/hbowie/notenik-web
+
+[web-web]: https://notenik.net
+
+

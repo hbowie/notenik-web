@@ -17,11 +17,11 @@ Body:
 
 Released on August 27, 2021
 
-### Addition of a Lookup Field Type
+#### Addition of a Lookup Field Type
 
 Users can now add [Lookup][] fields to a Collection to reference information in another Collection. See the new [Lookup][] field type for further info. 
 
-### Improved Web Book Generation
+#### Improved Web Book Generation
 
 Files are no longer overwritten if they haven't changed.
 

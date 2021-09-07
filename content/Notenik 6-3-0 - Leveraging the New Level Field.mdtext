@@ -15,20 +15,20 @@ Updated the Work List field type to allow entries for 'Novel' and 'Podcast' (and
 
 Body: 
 
-## Added Level as New Field Label and Type
+#### Added Level as New Field Label and Type
 
 `Level` has been added as a new field label and type. A field of this type can be used to indicate the level of a Note within the overall structure of the Collection -- which can be used, along with the Seq field, to define an outline. 
 
-## Added New Collection Command to Replace Tags based on Seq and Level
+#### Added New Collection Command to Replace Tags based on Seq and Level
 
 This new command automatically adds tags to reflect the outline structure created by combining Seq and Level. 
 
  
-## Added Collection Command to Renumber Seq Based on Level
+#### Added Collection Command to Renumber Seq Based on Level
 
 Now that we have a Level field, we can combine Level with Seq to create an outline structure, and then, with this change, can automatically renumber the Seq fields in a Collection to reflect that outline structure. 
  
-## Updates to Work List Field Type
+#### Updates to Work List Field Type
 
 I added 'Novel' and 'Podcast' as new choices, when specifying the type of work being referenced or quoted. 
 
