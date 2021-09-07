@@ -14,83 +14,51 @@
     <!-- End of include file head-links.html -->
 	</head>
 	<body>
+		<div id="wrapper">
 
-		<!-- Start of include file header.html -->
-		<header>
-
-			<section id="site-logo">
-				<a href="../index.html">
-					<img class="site-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
-				</a>
-			</section>
-
-			<section id="site-title" class="">
-				Notenik
-			</section>
-
-			<section id="site-slogan" class="">
-				Do More With Your Notes
-			</section>
-
-		</header>
-		<!-- End of include file header.html -->
-
-		<!-- Start of include file nav-top.html -->
-		<nav>
-
-			<ul>
-
-				<li>
+			<!-- Start of include file header.html -->
+			<header id="header">
+				<section id="header-logo">
 					<a href="../index.html">
-						Home
+						<img class="header-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
 					</a>
-				</li>
+				</section>
+				<section id="header-title" class="">
+					Notenik
+				</section>
+				<section id="header-slogan" class="">
+					Do More With Your Notes
+				</section>
+			</header>
+			<!-- End of include file header.html -->
 
-				<li>
-					<a href="../news.html">
-						News
-					</a>
-				</li>
+			<!-- Start of include file nav-top.html -->
+			<nav id="nav-top" class="nav">
+				<ul>
+					<li>
+						<a href="../index.html">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="../news.html">
+							News
+						</a>
+					</li>
+					<li>
+						<a href="../docs.html">
+							Docs
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End of include file nav-top.html -->
 
-				<li>
-					<a href="../docs.html">
-						Docs
-					</a>
-				</li>
-
-				<li>
-					<a href="../license.html">
-						License
-					</a>
-				</li>
-
-				<li>
-					<a href="../privacy.html">
-						Privacy
-					</a>
-				</li>
-
-				<li>
-					<a href="../support.html">
-						Support
-					</a>
-				</li>
-
-				<li>
-					<a href="../about.html">
-						About
-					</a>
-				</li>
-
-			</ul>
-
-		</nav>
-		<!-- End of include file nav-top.html -->
-
-		<main>
-			<h1>Notenik 6.0.0 - Collection Shortcuts and the Quick Action Window</h1>
-			<p class="news-date">Posted on 14 May, 2021</p>
-			<p>If you're a serious Notenik user, then you may find yourself with multiple Collections of Notes after a while. You may even find that you have them in multiple locations for various good reasons. For example, my Collections used for generating websites are stored in my Sites folder; Collections I share with my wife are in a special shared iCloud Drive folder; and other Collections are in the iCloud Notenik folder. </p>
+			<main id="main">
+				<h1>Notenik 6.0.0 - Collection Shortcuts and the Quick Action Window</h1>
+				<p class="news-date">Posted on 14 May, 2021</p>
+				<div id="content">
+					<p>If you're a serious Notenik user, then you may find yourself with multiple Collections of Notes after a while. You may even find that you have them in multiple locations for various good reasons. For example, my Collections used for generating websites are stored in my Sites folder; Collections I share with my wife are in a special shared iCloud Drive folder; and other Collections are in the iCloud Notenik folder. </p>
 <p>Navigating around to all of these Collections in all of these locations can be a bit challenging at times. However, it's just gotten a bit easier with the introduction of Collection Shortcuts. </p>
 <p>Each Collection can be assigned a shortcut in its Collection Preferences window. You can enter any brief, unique identifier for a Collection in this field. Upper-case characters will be converted to lower-case, and any spacing and punctuation will be removed. The idea is to make a shortcut easy and quick to type. </p>
 <p><img src="../images/collection-prefs.jpg" alt="Collection Prefs Window"> </p>
@@ -103,11 +71,43 @@
 <p>And here's one last trick you can perform with the Quick Action window. If you enter &#8216;today&#8217; in the Note Title field, then this word will be replaced with today's date, formatted for year-month-day sorting, and with the day of the week appended to the end. Then enter some useful info about this date in the Body Text field, and press OK. If the Daily Note does not yet exist, it will be added, and the Body Text will become the body of your new Note. If the Note for this date has already been created, then the Body Text you enter will be appended to the body that is already there. All of this can be useful for those wishing to keep a log/journal of their daily activities. </p>
 <p>Of course, the usual security/sandboxing restrictions apply. If you haven't opened a particular Collection recently, and if it's not located within the iCloud Notenik folder, then you may need to open it normally using other means before you can open it using the Quick Action window. </p>
 
+				</div>
 
 
+			</main>
+			<!-- Start of include file nav-bottom.html -->
+			<nav id="nav-bottom" class="nav">
+				<ul>
+					<li>
+						<a href="../license.html">
+							License
+						</a>
+					</li>
+					<li>
+						<a href="../privacy.html">
+							Privacy
+						</a>
+					</li>
+					<li>
+						<a href="../support.html">
+							Support
+						</a>
+					</li>
+					<li>
+						<a href="../about.html">
+							About
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- End of include file nav-bottom.html -->
 
-<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
-
-		</main>
+			<!-- Start of include file footer.html -->
+			<footer id="footer">
+        <hr />
+Copyright &copy; 2019 - 2021 by <a href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a href="https://opensource.org/licenses/MIT">MIT license</a>
+      </footer>
+			<!-- End of include file footer.html -->
+		</div>  <!-- end of wrapper div -->
 	</body>
 </html>

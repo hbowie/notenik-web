@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</title>
+		<title>Notenik 6.3.0 - Leveraging the New Level Field</title>
 		<meta name="description" content="The Notenik App for the Mac" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- Start of include file head-links.html -->
@@ -55,31 +55,26 @@
 			<!-- End of include file nav-top.html -->
 
 			<main id="main">
-				<h1>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</h1>
-				<p class="news-date">Posted on 2 Jul, 2021</p>
+				<h1>Notenik 6.3.0 - Leveraging the New Level Field</h1>
+				<p class="news-date">Posted on 10 Jun, 2021</p>
 				<div id="content">
-					<h3 id="new-documentation">New Documentation</h3>
-<p>Following the DRY principle (Don't Repeat Yourself), all Notenik information and documentation has been consolidated into a single Knowledge Base, accessible from the Help menu. The Knowledge Base is itself a Notenik Collection, and it takes advantage of a number of recently added features. </p>
-<h3 id="level-navigation">Level Navigation</h3>
-<p>When Notenik finds a Collection with both <a href="https://ntnk.app/seq">Seq</a> and <a href="https://ntnk.app/level">Level</a> fields, and when sorted by Seq + Title, and when Streamlined Reading is chosen, then additional navigation elements will be added to the Display tab. </p>
-<ul>
-<li>At the top of the Note's display there will appear a link to the parent of the current item. </li>
-<li>At the bottom of the Note's display there will appear a link to the next Note in the list. </li>
-<li>For parent Notes, there will also appear a list of the child Notes at the next level. </li>
-</ul>
-<h3 id="added-collection-pref-for-streamlined-reading">Added Collection Pref for Streamlined Reading</h3>
-<p>As part of the Collection Preferences, a user may now check a box to Format Display for Streamlined Reading. </p>
-<p>Checking this option will cause the Display tab to focus on the Body of each Note, while minimizing the appearance of metadata. The net effect &#8211; especially if one declines to Include an Explicity Body Field Label on the Display tab &#8211; is to make it easier for a user to focus on the content of each Note. </p>
-<h3 id="added-markdown-support-for-definition-lists">Added Markdown Support for Definition Lists</h3>
-<p>Markdown definition lists are now supported by the standard Notenik parser. </p>
+					<h2 id="added-level-as-new-field-label-and-type">Added Level as New Field Label and Type</h2>
+<p><code>Level</code> has been added as a new field label and type. A field of this type can be used to indicate the level of a Note within the overall structure of the Collection &#8211; which can be used, along with the Seq field, to define an outline. </p>
+<h2 id="added-new-collection-command-to-replace-tags-based-on-seq-and-level">Added New Collection Command to Replace Tags based on Seq and Level</h2>
+<p>This new command automatically adds tags to reflect the outline structure created by combining Seq and Level. </p>
+<h2 id="added-collection-command-to-renumber-seq-based-on-level">Added Collection Command to Renumber Seq Based on Level</h2>
+<p>Now that we have a Level field, we can combine Level with Seq to create an outline structure, and then, with this change, can automatically renumber the Seq fields in a Collection to reflect that outline structure. </p>
+<h2 id="updates-to-work-list-field-type">Updates to Work List Field Type</h2>
+<p>I added &#8216;Novel&#8217; and &#8216;Podcast&#8217; as new choices, when specifying the type of work being referenced or quoted. </p>
+<p>I also modified the logic so that you can use either a leading lower-case letter, or leading upper-case, when entering a work type value. Whichever one is used, and chosen, the value stored will be with leading upper-case. </p>
 
 				</div>
 
 				<hr />
 
 				<p>Earlier News:
-					<a href="notenik-6.3.0-leveraging-the-new-level-field.html">
-						Notenik 6.3.0 - Leveraging the New Level Field
+					<a href="notenik-6.2.0-i-love-it-when-a-plan-comes-together.html">
+						Notenik 6.2.0 - I Love It When a Plan Comes Together
 					</a>
 				</p>
 

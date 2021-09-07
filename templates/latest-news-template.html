@@ -1,28 +1,27 @@
 <?output "../includes-gen/latest-news.html"?>
 
-			<h1>Notenik News</h1>
+				<h2>Notenik News</h2>
 <?set count = 0 ?>
 <?nextrec?>
 <?if "=$type$=" eq "news" ?>
 <?if =$count$= lt 1 ?>
-				<article>
-					<h2>
-						<a href="news/=$title&f$=.html">
-							=$page-title$=
-						</a>
-					</h2>
+					<article>
+						<h3>
+							<a href="news/=$title&f$=.html">
+								=$page-title$=
+							</a>
+						</h3>
 
-					=$teaser&o$=
+						=$teaser&o$=
 
-					<p class="news-date">
-						=$date&d MMM, yyyy$=
-						<a href="news/=$title&f$=.html">
-							read more&hellip;
-						</a>
-					</p>
-				<article>
+						<p class="news-date">
+							=$date&d MMM, yyyy$=
+							<a href="news/=$title&f$=.html">
+								read more&hellip;
+							</a>
+						</p>
+					</article>
 <?endif?>
 <?set count += 1 ?>
 <?endif?>
 <?loop?>
-

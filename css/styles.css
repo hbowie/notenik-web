@@ -77,7 +77,7 @@ img {
 	max-width: 100%;
 }
 
-.site-logo-image {
+.header-logo-image {
 	max-width: 128px;
 }
 
@@ -88,12 +88,12 @@ header {
 	padding-bottom: 1rem;
 }
 
-#site-title { 
+#header-title { 
   font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 3rem;
 }
 
-#site-slogan {
+#header-slogan {
   font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
