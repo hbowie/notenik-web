@@ -1,22 +1,26 @@
-Title: <title> 
+Title: <title>
 
-Page Title:  
+Page Title:
 
-Seq: <seq> 
+Seq: <seq>
 
-Tags: <tags> 
+Tags: <tags>
 
-Main Menu:  
+Main Menu:
 
-Secondary Menu:  
+Secondary Menu:
 
-Status: 0 - Idea; 4 - In Work; 5 - Held; 6 - Completed; 8 - Canceled; 9 - Published;  
+Status: 0 - Idea; 4 - In Work; 5 - Held; 6 - Completed; 8 - Canceled; 9 - Published;
 
-Type: pick-from: chrome, news, page, review 
+Type: pick-from: chrome, news, page, review
 
-Date: <date> 
+Date: <date>
 
-Teaser: <longtext> 
+Source:
 
-Body:  
+Source Link:
+
+Teaser: <longtext>
+
+Body:
 

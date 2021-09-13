@@ -1,0 +1,23 @@
+<?output "../includes-gen/reviews.html"?>
+
+				<h2>What Users Are Saying</h2>
+<?nextrec?>
+<?if "=$type$=" eq "review" ?>
+				<article>
+					<h3>
+							=$page-title$=
+					</h3>
+
+					<blockquote>
+					=$body&o-$=
+					</blockquote>
+
+					<p class="news-date">
+						Source: 
+						<a href="=$source-link$=">
+							=$source$=
+						</a>
+					</p>
+				<article>
+<?endif?>
+<?loop?>
