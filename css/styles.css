@@ -1,15 +1,49 @@
 :root {
     color-scheme: light dark;
+    --text-color: #000000;
     --link-color: Blue;
-    --highlight-color: Gainsboro
+    --highlight-color: Gainsboro;
+    --nav-current-color: #ffffff;
 }
 @media screen and (prefers-color-scheme: dark) {
   :root {
+    --text-color: #ffffff;
     --link-color: #93d5ff;
     --subtle-link-color: #93d5ff;
-    --highlight-color: DimGray
+    --highlight-color: DimGray;
+    --nav-current-color: #000000;
+    --nav-another-color: #101010;
   }
 }
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  #header-right { display: none; }  /* hide it on small screens */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+
+	Body and Paragraphs
+	
+ * -------------------------------------------------- */
+
+body {
+	padding: 1rem 0.5rem;
+	font-family: 'concourse-text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	max-width: 52rem;
+	margin: 0 auto;
+	/* color: #333; */
+}
+
+p {
+	margin-block-start: 0.5em;
+}
+
 a {
   color: var(--link-color);
 }
@@ -28,24 +62,24 @@ a.invisi-link {
     background-color: var(--highlight-color);
 }
 
-* {
-	box-sizing: border-box;
-}
+/* --------------------------------------------------
 
-body {
-	padding: 1rem 0.5rem;
-	font-family: 'concourse-text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.4rem;
-	line-height: 1.5;
-	max-width: 60rem;
-	margin: 0 auto;
-	/* color: #333; */
-}
+	Headings
+	
+ * -------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'equity-caps', Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
 	font-style: normal;
+}
+
+h2 {
+	border-bottom: 2px solid var(--text-color);
+}
+
+h3 {
+	margin-block-end: 0;
 }
 
 h4 {
@@ -70,18 +104,40 @@ footer {
 	Navigation Bar Styling
 	
  * -------------------------------------------------- */
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #333; */
+ 
+ nav {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	flex-direction: row;
+ 	font-family: concourse_c6regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ 	font-size: 1.6rem;
+ }
+ 
+ nav#nav-top {
+  /* margin-left: 6rem;
+ 	margin-right: 6rem; */
+ }
+ 
+ nav#nav-bottom {
+	margin-top: 1rem;
+	font-family: concourse_t3regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.1rem;
+}
+ 
+nav a {
+flex: 1;
+text-align: center;
+margin: 0.25em;
+padding: 0.25em;
+text-decoration: none;
 }
 
-nav ul li {
-	float: left;
+nav a.current-page {
+color: #ffffff;
+border-bottom: 4px solid var(--link-color);
 }
+
+nav a.another-page { color: #A9A9A9; }
 
 nav ul li a {
 	display: block;
@@ -96,6 +152,8 @@ nav ul li a:hover {
 	/* background-color: #111; */
 }
 
+
+
 p.news-date {
 	font-style: italic;
 }
@@ -104,15 +162,36 @@ img {
 	max-width: 100%;
 }
 
-.header-logo-image {
-	max-width: 128px;
-}
+/* --------------------------------------------------
+
+	Page Header (Masthead)
+	
+ * -------------------------------------------------- */
 
 header {
-	text-align: center;
-	/* border-bottom: 8px double #f9f9f9; */
+	display: flex;
+	flex-direction: row;
 	margin-bottom: 2rem;
 	padding-bottom: 1rem;
+}
+
+#header-left {
+	display: flex;
+	flex-direction: column;
+}
+
+#header-logo-and-name {
+	display: flex;
+	flex-direction: row;
+}
+
+#header-right {
+	margin-left: auto;
+}
+
+.header-logo-image {
+	max-width: 64px;
+	margin-right: 16px;
 }
 
 #header-title { 
@@ -121,8 +200,12 @@ header {
 }
 
 #header-slogan {
-  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'concourse_t4italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+blockquote {
+	font-style: italic;
 }
 

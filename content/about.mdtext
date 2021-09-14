@@ -2,6 +2,8 @@ Title:  about
 
 Page Title: About
 
+Seq:    2.4
+
 Status: 9 - Published
 
 Type:   page
@@ -59,4 +61,3 @@ In the past I operated PowerSurgePub.com as its own website, where you could fin
 The functionality of many of the Java programs listed above has been folded into the new Notenik, now written in Swift, and described on this site, Notenik.net. 
 
 At this point I am no longer maintaining any of the Java apps listed above, and am no longer maintaining PowerSurgePub.com as a separate website.
-

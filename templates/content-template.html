@@ -21,7 +21,15 @@
 
 <?include "../includes/header.html" ?>
 
+<?set index-class = another-page ?>
+<?set links-class = another-page ?>
+<?set news-class = another-page ?>
+<?set docs-class = another-page ?>
+<?set =$title$=-class = current-page ?>
+
 <?include "../includes/nav-top.html" ?>
+
+<?include "../includes/nav-bottom.html" ?>
 
 			<main id="main">
 <?if "=$type$=" ne "news" ?>
@@ -52,16 +60,14 @@
 <?set prior-page-title = "=$page-title$=" ?>
 <?endif?>
 <?if "=$title$=" eq "index" ?>
-<?include "../includes-gen/latest-news.html" ?>
-
 <?include "../includes-gen/reviews.html" ?>
+<?include "../includes-gen/latest-news.html" ?>
 <?endif?>
 <?if "=$title$=" eq "news" ?>
 <?include "../includes-gen/news-page.html" ?>
 <?endif?>
 
 			</main>
-<?include "../includes/nav-bottom.html" ?>
 
 <?include "../includes/footer.html" ?>
 		</div>  <!-- end of wrapper div -->
