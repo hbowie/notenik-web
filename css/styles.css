@@ -122,8 +122,8 @@ nav {
  
 nav#nav-top {
 	font-family: concourse_c6regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
-	background-color: mediumblue;
+    font-size: 1.6rem;
+	/* background-color: mediumblue; */
 }
  
 nav#nav-bottom {
@@ -133,7 +133,9 @@ nav#nav-bottom {
 }
  
 nav a {
-	flex: 1;
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 5em;
 	text-align: center;
 	margin: 0.25em;
 	padding: 0.25em;
@@ -141,11 +143,13 @@ nav a {
 }
 
 nav a.current-page {
-color: #ffffff;
+	background-color: #c8c8c8;
+	color: black;
+	border-radius: 20px;
 /* border-bottom: 4px solid var(--link-color); */
 }
 
-nav a.another-page { color: #A9A9A9; }
+/* nav a.another-page { color: #A9A9A9; } */
 
 nav ul li a {
 	display: block;
