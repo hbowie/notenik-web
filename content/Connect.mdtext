@@ -1,22 +1,21 @@
-Title:  Connect
+Title:  connect
 
-Seq:    2.9
+Page Title: Connect
 
-Status: 0 - Idea
+Seq:    2.2
+
+Status: 9 - Published
 
 Type:   page
 
 Body: 
 
-Social?
-Interact?
-Follow?
-Community?
+Stay connected with the Notenik community via any or all of the following channels. 
 
-Could include:
+### RSS
 
-+ RSS Feed
-+ Atom Feed
-+ Twitter Feed
-+ Reddit
-+ Facebook Page
+If you regularly use an RSS reader, then select one of the following links to follow. 
+
++ [ATOM Format](atom.xml)
++ [RSS Format](rss.xml)
+

@@ -32,6 +32,11 @@ template	open			/Users/hbowie/Sites/notenik-web/templates/news-page-template.htm
 template	generate
 template	open			/Users/hbowie/Sites/notenik-web/templates/latest-news-template.html
 template	generate
+template	open			/Users/hbowie/Sites/notenik-web/templates/rss-template.xml
+template	generate
+template	open			/Users/hbowie/Sites/notenik-web/templates/atom-template.xml
+template	generate
+
 
 <!-- Generate the Reviews include -->
 

@@ -1,18 +1,27 @@
+/* --------------------------------------------------
+
+	Global Settings and Media Queries
+
+* -------------------------------------------------- */
 :root {
     color-scheme: light dark;
     --text-color: #000000;
-    --link-color: Blue;
-    --highlight-color: Gainsboro;
-    --nav-current-color: #ffffff;
+    --link-color: #0000F0;
+	--subtle-link-color: #0000FF;
+    --highlight-color: gainsboro;
+	--nav-current-background: #d8d8d8;
+    --nav-current-color: #000000;
+	--nav-another-color: #8e6b00
 }
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --text-color: #ffffff;
+    --text-color: #F0F0F0;
     --link-color: #93d5ff;
-    --subtle-link-color: #93d5ff;
+    --subtle-link-color: #b6e2ff;
     --highlight-color: DimGray;
-    --nav-current-color: #000000;
-    --nav-another-color: #101010;
+	--nav-current-background: #404040;
+    --nav-current-color: #F0F0F0;
+    --nav-another-color: #FEB40B;
   }
 }
 
@@ -41,7 +50,7 @@ body {
 	line-height: 1.5;
 	max-width: 52rem;
 	margin: 0 auto;
-	/* color: #333; */
+	color: var(--text-color); 
 }
 
 p {
@@ -53,12 +62,18 @@ img {
 	max-width: 100%;
 }
 
+/* --------------------------------------------------
+
+	Links
+
+* -------------------------------------------------- */
+
 a {
   color: var(--link-color);
 }
 
 a.subtle-link { 
-	color: #BDD9FB; 
+	color: var(--subtle-link-color); 
 	text-decoration: none;
 }
 
@@ -110,78 +125,14 @@ footer {
 
 /* --------------------------------------------------
 
-	Navigation Bar Styling
-	
- * -------------------------------------------------- */
- 
-nav {
- 	display: flex;
- 	justify-content: space-between;
- 	flex-direction: row;
-}
- 
-nav#nav-top {
-	font-family: concourse_c6regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 1.6rem;
-	/* background-color: mediumblue; */
-}
- 
-nav#nav-bottom {
-	margin-top: 1rem;
-	font-family: concourse_t3regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1.1rem;
-}
- 
-nav a {
-	flex-grow: 0;
-	flex-shrink: 1;
-	flex-basis: 5em;
-	text-align: center;
-	margin: 0.25em;
-	padding: 0.25em;
-	text-decoration: none;
-}
+Page Header (Masthead)
 
-nav a.current-page {
-	background-color: #c8c8c8;
-	color: black;
-	border-radius: 20px;
-/* border-bottom: 4px solid var(--link-color); */
-}
-
-/* nav a.another-page { color: #A9A9A9; } */
-
-nav ul li a {
-	display: block;
-	padding: 8px; 
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	/* background-color: #dddddd; */
-}
-
-nav ul li a:hover {
-	/* background-color: #111; */
-}
-
-
-
-p.news-date {
-	font-style: italic;
-}
-
-
-
-/* --------------------------------------------------
-
-	Page Header (Masthead)
-	
- * -------------------------------------------------- */
+* -------------------------------------------------- */
 
 header {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 2rem;
+	margin-bottom: 0;
 	padding-bottom: 1rem;
 }
 
@@ -205,14 +156,71 @@ header {
 }
 
 #header-title { 
-  font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 3rem;
+	font-family: 'concourse_t4regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 3rem;
 }
 
 #header-slogan {
-  font-family: 'concourse_t4italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+	font-family: 'concourse_t4italic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+/* --------------------------------------------------
+
+	Navigation Bar Styling
+	
+ * -------------------------------------------------- */
+ 
+nav {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	flex-direction: row;
+}
+ 
+nav#nav-top {
+	font-family: concourse_c6regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+}
+ 
+nav#nav-bottom {
+	margin-top: 0.5rem;
+	font-family: concourse_c3regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+ 
+nav a {
+	flex-grow: 0;
+	flex-shrink: 1;
+	flex-basis: 5em;
+	text-align: center;
+	margin: 0.25em;
+	padding: 0.25em;
+	text-decoration: none;
+	color: var(--nav-another-color);
+}
+
+nav#nav-bottom a {
+	flex-basis: 7em;
+}
+
+nav a.current-page {
+	background-color: var(--nav-current-background);
+	color: var(--nav-current-color);
+	border-radius: 10px;
+}
+
+nav a.another-page:hover {
+	background-color: var(--nav-current-background);
+	border-radius: 10px;
+}
+
+
+
+
+p.news-date {
+	font-style: italic;
 }
 
 blockquote {

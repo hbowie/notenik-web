@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Notenik News</title>
+  <subtitle>The latest news about the Notenik app</subtitle>
+  <link href="https://notenik.net/atom.xml" type="application/atom+xml" rel="self" />
+  <link href="https://notenik.net/" type="text/html" rel="alternate"  />
+  <updated>2021-09-16T09:00:00Z</updated>
+  <rights>Copyright © 2021, Herb Bowie</rights>
+  <author>
+	<name>Herb Bowie</name>
+  </author>
+  <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 7.1.0 - Taking Dark Mode All the Way</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-7.1.0-taking-dark-mode-all-the-way.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-7.1.0-taking-dark-mode-all-the-way.html</id>
+	  <published>2021-08-31T09:00:00Z</published>
+	  <updated>2021-08-31T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Notenik has mostly supported Dark Mode from the beginning &#8211; everywhere except on the Display tab, where the default was still to show black text on a white background. Now the Display Tab will follow your light/dark preferences, along with the rest of the App. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="turning-to-the-dark-side-on-the-display-tab">Turning to the Dark Side on the Display Tab</h4>
+<p>I was kind of a late adopter of the <a href="https://support.apple.com/guide/mac-help/use-a-light-or-dark-appearance-mchl52e1c2d2/mac">Dark Appearance Setting on the Mac</a>. </p>
+<p>At first I just didn&apos;t see the point. </p>
+<p>But I kept trying it out until it started to grow on me a bit. </p>
+<p>Until now I&apos;m using it all the time, and turning on the light setting now seems a bit of a shock. </p>
+<p>Notenik has mostly supported Dark Mode from the beginning &#8211; everywhere except on the Display tab, where the default was still to show black text on a white background. </p>
+<p>The reason for this was a little bit complex. I&apos;m using the Mac&apos;s WebKit API to format the Display tab, which means I&apos;m essentially formatting each Note display as a Web page &#8211; and I hadn&apos;t yet incorporated the latest HTML to allow the page to follow the user&apos;s wishes in terms of the light/dark setting. </p>
+<p>But Notenik 7.1.0 fixes all that. As a bonus, when you use one of Notenik&apos;s functions to generate an actual Web page from a single Note or a Collection, the generated pages will also include the code to respect the user&apos;s preferences. </p>
+<p>I think the results look pretty sharp, if I do say so myself. </p>
+<p>(Of course, you can still supply your own CSS if you&apos;d prefer different colors.) </p>
+<h4 id="highlighting-search-text-matches">Highlighting Search Text Matches</h4>
+<p>Another new feature in 7.1.0 that also shows up on the Display tab is highlighting of matching text when you execute a Search function. Previously Notenik would take you to the Note(s) containing the text you were searching for, but would not show you where the text was found. For a brief Note, this wasn&apos;t usually a problem, but for longer Notes, it could be a bit frustrating to try to figure out where the matching text had been found. With 7.1.0, the matching text will be clearly highlighted. </p>
+<h4 id="generating-wikipedia-links">Generating Wikipedia Links</h4>
+<p>The final little goodie in this release is the ability to automatically populate a Link field by taking the Title of a Note and then transforming it into a Link to the English Wikipedia page on that topic. Not everyone will find this feature useful, but if you have a Collection of your favorite Authors, for example, it can be handy for populating a Link field for each author. You can find this new function within the Note menu, about halfway down the list. </p>
+<h4 id="enjoy">Enjoy!</h4>
+<p>Hope you enjoy the new release! If you have questions or problems or suggestions for further improvements, just send me an email at <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>, and I&apos;ll get back to you as quickly as I can. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 7.0.0 - The Introduction of Lookup Fields</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-7.0.0-the-introduction-of-lookup-fields.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-7.0.0-the-introduction-of-lookup-fields.html</id>
+	  <published>2021-08-27T09:00:00Z</published>
+	  <updated>2021-08-27T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  A field in one Collection can now reference information in other Collections. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Released on August 27, 2021 </p>
+<h4 id="addition-of-a-lookup-field-type">Addition of a Lookup Field Type</h4>
+<p>Users can now add <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> fields to a Collection to reference information in another Collection. See the new <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> field type for further info. </p>
+<h4 id="improved-web-book-generation">Improved Web Book Generation</h4>
+<p>Files are no longer overwritten if they haven&apos;t changed. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.9.0 - Enhanced OPML Import and Export</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.9.0-enhanced-opml-import-and-export.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.9.0-enhanced-opml-import-and-export.html</id>
+	  <published>2021-08-12T09:00:00Z</published>
+	  <updated>2021-08-12T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-opml-import-function">Added OPML Import Function</h4>
+<p>An OPML Outline file can now be imported into Notenik. See <a href="../knowledge-base/EPUB/html/assemble-an-outline.html">Assemble an Outline</a> for more info. </p>
+<h4 id="enhanced-opml-export-function">Enhanced OPML Export Function</h4>
+<p>The export will now nest <code>outline</code> elements based on <a href="../knowledge-base/EPUB/html/level.html">Level</a> field values. </p>
+<h4 id="added-aposnew-childapos-option-to-list-tab-popup-menu">Added &apos;New Child&apos; Option to List tab Popup Menu</h4>
+<p>When using the Seq and Level fields, added an option to the Notes List popup menu to add a New Child to an existing Note, so that the Level field will be incremented by 1, and the Seq value will have a <code>.1</code> added to it. </p>
+<h4 id="added-ability-to-drag-and-drop-within-a-sequenced-list">Added Ability to Drag and Drop Within a Sequenced List</h4>
+<p>If you have a Sequenced Collection, you can perform some basic resequencing by dragging and dropping a Note from one position to another on the List tab. Note that you must move the Drop indicator to a line above and/or below existing Notes in order to indicate a desired new position for an existing Note. Only the Note being dragged and dropped will have its Seq value changed. </p>
+<h4 id="improved-list-scrolling">Improved List Scrolling</h4>
+<p>In most cases, the list view on the left should now scroll to show the selected Note displayed on the right. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.8.0 - Short IDs and Concatenated Exports</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.8.0-short-ids-and-concatenated-exports.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.8.0-short-ids-and-concatenated-exports.html</id>
+	  <published>2021-08-02T09:00:00Z</published>
+	  <updated>2021-08-02T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added Short ID to the list of available field labels and types, to help with URL shortening; added new option to export an entire Collection into a single HTML or Markdown document; fixed a bug affecting automatic links in footnotes. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-short-id-field-label-and-type">Added Short ID Field Label and Type</h4>
+<p>Added <a href="../knowledge-base/EPUB/html/short-id.html">Short ID</a> to the list of available <a href="../knowledge-base/EPUB/html/field-labels-and-types.html">Field Labels and Types</a>. One potential use for such a field, when creating a website, would be to perform your own homegrown <a href="https://en.wikipedia.org/wiki/URL_shortening">URL shortening</a>, rather than using a third-party service.  </p>
+<h4 id="added-new-export-option-to-concatenate-html-or-markdown">Added New Export Option to Concatenate HTML or Markdown</h4>
+<p>The new options, described on the <a href="../knowledge-base/EPUB/html/import-and-export-your-notes.html">Import and Export Your Notes</a> page, will write out a single file for an entire Collection, concatenating all of the Notes in the Collection. </p>
+<h4 id="fixed-a-footnote-bug">Fixed a Footnote Bug</h4>
+<p><a href="../knowledge-base/EPUB/html/footnotes.html">Footnotes</a> were not being properly handled when they contained an automatic link (contained within angle brackets). This has now been corrected. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.7.0 - 6.7.4 - MathJax!</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.7.0-6.7.4-mathjax.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.7.0-6.7.4-mathjax.html</id>
+	  <published>2021-07-19T09:00:00Z</published>
+	  <updated>2021-07-19T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added support for Mathjax; enhanced Table of Contents generation for a single Note; enhanced Table of Contents generation for an entire Collection. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-mathjax-support">Added MathJax Support</h4>
+<p>Added an option to the Collection Preferences to enable <a href="../knowledge-base/EPUB/html/mathjax-support.html">MathJax Support</a>. This will be disabled by default. A copy of MathJax is now included within the app, so that Internet access is not required in order for MathJax to work. Various bugs in my MathJax implementation were straightened out in the 6.7.1 through 6.7.4 versions. </p>
+<h4 id="enhanced-table-of-contents-generation">Enhanced Table of Contents Generation</h4>
+<p>Enhanced Notenik&apos;s ability to <a href="../knowledge-base/EPUB/html/generate-a-note-table-of-contents.html">generate a Note Table of Contents</a>. Multiple syntax variations are now supported. Also added the ability to limit both the upper and lower range of heading level numbers to be included in the ToC. Also enhanced/corrected the code generated for a multi-level table of contents. </p>
+<h4 id="enhanced-collection-table-of-contents-generation">Enhanced Collection Table of Contents Generation</h4>
+<p>Added lowest- and highest-level options to the <a href="../knowledge-base/EPUB/html/generate-a-collection-table-of-contents.html">generate a Collection Table of Contents</a> command. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.6.0 - Generate a Web Book</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.6.0-generate-a-web-book.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.6.0-generate-a-web-book.html</id>
+	  <published>2021-07-14T09:00:00Z</published>
+	  <updated>2021-07-14T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added a new Markdown extension to generate a Table of Contents for an entire Collection; added another new Markdown extension to generate an Index for an entire Collection; added another new Markdown extensions to generate a Tags Outline; added a new command to Generate a Web Book from a Collection; updated the Notenik Knowledge Base to make use of all of these new features. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-markdown-extension-for-a-collection-table-of-contents">Added Markdown Extension for a Collection Table of Contents</h4>
+<p>Users may now insert a line containing <code>{:collection-toc}</code> into the body of a Note in order to have that line replaced with a complete Table of Contents for the entire Collection containing the Note. See <a href="../knowledge-base/EPUB/html/generate-a-collection-table-of-contents.html">Generate a Collection Table of Contents</a> for further details. </p>
+<h4 id="added-markdown-extension-for-a-collection-index">Added Markdown Extension for a Collection Index</h4>
+<p>Users may now insert a line containing <code>{:index}</code> into the Body of a Note in order to have that line replaced with an Index for the entire Collection containing the Note. See <a href="../knowledge-base/EPUB/html/generate-a-collection-index.html">Generate a Collection Index</a> for further details. </p>
+<h4 id="added-markdown-extension-for-a-tags-outline">Added Markdown Extension for a Tags Outline</h4>
+<p>Users may now insert a line containing <code>{:tags-outline}</code> into the Body of a Note in order to have that line replaced with an outline of all the Tags used in the entire Collection, along with the Notes bearing each Tag. See <a href="../knowledge-base/EPUB/html/generate-a-tags-outline.html">Generate a Tags Outline</a> for further details. </p>
+<h4 id="added-alternative-syntax-for-a-note-table-of-contents">Added Alternative Syntax for a Note Table of Contents</h4>
+<p>A Table of Contents for an individual Note can now be generated by inserting a line containing <code>{:toc}</code> (as an alternative to <code>[toc]</code>) into the Body of the Note. The alternative syntax was added for consistency with new Markdown extensions added in this release, and described above. See <a href="../knowledge-base/EPUB/html/generate-a-note-table-of-contents.html">Generate a Note Table of Contents</a> for further details. </p>
+<h4 id="added-generate-web-book-command">Added Generate Web Book Command</h4>
+<p>Added a new command beneath the <code>File</code> menu to <a href="../knowledge-base/EPUB/html/generate-a-web-book.html">Generate a Web Book</a>. This command can make use of the other new Notenik features listed above. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.5.0 - Added What&apos;s New Menu Option</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.5.0-added-whats-new-menu-option.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.5.0-added-whats-new-menu-option.html</id>
+	  <published>2021-07-07T09:00:00Z</published>
+	  <updated>2021-07-07T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added an option to backup an entire Collection to a compressed Zip file; made improvements to Streamlined Reading, to focus only on Seq, Title and Body fields; expanded the custom URL help command to allow an ID to be included, to point to a specific Note to be initially displayed; added a What&apos;s New command beneath the Help menu to show the user the latest changes to the app. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-whataposs-new-command-beneath-the-help-menu">Added What&apos;s New Command beneath the Help Menu</h4>
+<p>Selecting <code>What&amp;apos;s New</code> beneath the <code>Help</code> menu will open the Notenik Knowledge Base and position it on the Note showing Notenik&apos;s latest changes. </p>
+<h4 id="added-backup-to-zip-option">Added Backup to Zip option</h4>
+<p>A new option beneath the File menu will create a Zip file containing a compressed backup of the entire current Collection. </p>
+<h4 id="improvements-to-streamlined-reading">Improvements to Streamlined Reading</h4>
+<p>Only the Seq, Title and Body fields are now included on the Display tab, when Streamlined Reading is chosen for the Collection. </p>
+<h4 id="help-command-expanded">Help Command Expanded</h4>
+<p>A notenik Custom URL invoking the help command can now optionally specify the ID of a specific Note to be displayed, after opening the Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</id>
+	  <published>2021-07-02T09:00:00Z</published>
+	  <updated>2021-07-02T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Markdown parser support for definition lists; new Collection pref for Streamlined Reading, increasing focus on Body content on the Display tab; new Display navigation elements added when using Streamlined Reading, especially useful when using Seq and Level fields and sorting by Seq; new Notenik Knowledge Base, available from the Help menu (replacing all prior Help documentation). 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="new-documentation">New Documentation</h4>
+<p>Following the DRY principle (Don&apos;t Repeat Yourself), all Notenik information and documentation has been consolidated into a single Knowledge Base, accessible from the Help menu. The Knowledge Base is itself a Notenik Collection, and it takes advantage of a number of recently added features. </p>
+<h4 id="level-navigation">Level Navigation</h4>
+<p>When Notenik finds a Collection with both <a href="https://ntnk.app/seq">Seq</a> and <a href="https://ntnk.app/level">Level</a> fields, and when sorted by Seq + Title, and when Streamlined Reading is chosen, then additional navigation elements will be added to the Display tab. </p>
+<ul>
+<li>At the top of the Note&apos;s display there will appear a link to the parent of the current item. </li>
+<li>At the bottom of the Note&apos;s display there will appear a link to the next Note in the list. </li>
+<li>For parent Notes, there will also appear a list of the child Notes at the next level. </li>
+</ul>
+<h4 id="added-collection-pref-for-streamlined-reading">Added Collection Pref for Streamlined Reading</h4>
+<p>As part of the Collection Preferences, a user may now check a box to Format Display for Streamlined Reading. </p>
+<p>Checking this option will cause the Display tab to focus on the Body of each Note, while minimizing the appearance of metadata. The net effect &#8211; especially if one declines to Include an Explicity Body Field Label on the Display tab &#8211; is to make it easier for a user to focus on the content of each Note. </p>
+<h4 id="added-markdown-support-for-definition-lists">Added Markdown Support for Definition Lists</h4>
+<p>Markdown definition lists are now supported by the standard Notenik parser. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.3.0 - Leveraging the New Level Field</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.3.0-leveraging-the-new-level-field.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.3.0-leveraging-the-new-level-field.html</id>
+	  <published>2021-06-10T09:00:00Z</published>
+	  <updated>2021-06-10T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Updated the Work List field type to allow entries for &apos;Novel&apos; and &apos;Podcast&apos; (and to make it easier to enter using all lowercase letters); added a new field type of Level, to indicate the depth of a Note within the structure of a Collection; added a new command to renumber the Seq field based on sequence and Level; added a new command to generate tags that will mirror the outline structure implied by the combination of Seq and Level fields. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h4 id="added-level-as-new-field-label-and-type">Added Level as New Field Label and Type</h4>
+<p><code>Level</code> has been added as a new field label and type. A field of this type can be used to indicate the level of a Note within the overall structure of the Collection &#8211; which can be used, along with the Seq field, to define an outline. </p>
+<h4 id="added-new-collection-command-to-replace-tags-based-on-seq-and-level">Added New Collection Command to Replace Tags based on Seq and Level</h4>
+<p>This new command automatically adds tags to reflect the outline structure created by combining Seq and Level. </p>
+<h4 id="added-collection-command-to-renumber-seq-based-on-level">Added Collection Command to Renumber Seq Based on Level</h4>
+<p>Now that we have a Level field, we can combine Level with Seq to create an outline structure, and then, with this change, can automatically renumber the Seq fields in a Collection to reflect that outline structure. </p>
+<h4 id="updates-to-work-list-field-type">Updates to Work List Field Type</h4>
+<p>I added &apos;Novel&apos; and &apos;Podcast&apos; as new choices, when specifying the type of work being referenced or quoted. </p>
+<p>I also modified the logic so that you can use either a leading lower-case letter, or leading upper-case, when entering a work type value. Whichever one is used, and chosen, the value stored will be with leading upper-case. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 6.2.0 - I Love It When a Plan Comes Together</title>
+	  <link rel="related" type="text/html" href="https://notenik.net/news/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html"/>
+	  <id>https://notenik.net/knowledge-base/EPUB/html/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html</id>
+	  <published>2021-05-27T09:00:00Z</published>
+	  <updated>2021-05-27T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. &quot;Slow but Steady&quot; might be my mantra. This latest release finally implements a custom URL scheme for Notenik. (I first received an email asking for something like this in January of 2020!) 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. &quot;Slow but Steady&quot; might be my mantra. </p>
+<p>This latest release finally implements a custom URL scheme for <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a>. (I first received an email asking for something like this in January of 2020!) You can read all the details <a href="../knowledge-base/EPUB/html/custom-url-scheme.html">here</a>. </p>
+<p>What this means is that other apps can now easily integrate with Notenik. You can retrieve a <code>notenik://open&amp;hellip;</code> link to a particular Note from within Notenik, then embed that URL in the content of another app such that, when you select it, Notenik will open and point you to that particular Note. </p>
+<p>The other sort of integration you can now implement is to format a <code>notenik://add&amp;hellip;</code> URL that will take content from another app and then add it to Notenik. This sort of URL is generally implemented via an <em>Action</em> or a <em>Script</em> within the other app, depending on the terminology used. <a href="https://getdrafts.com">Drafts</a> is a natural for this sort of integration. Drafts has both macOS and iOS versions, and syncs effortlessly between platforms, so I can now use it to capture some text on my iPhone, and then easily add it to one of my Notenik collections when I&apos;m back in front of my Mac. </p>
+<p>One complication here is that Notenik, by design, allows and even, one might say, <em>encourages</em> you to maintain multiple Collections of Notes that may, for various good reasons, even be stored in varying locations within your home folder. So in order to access, or add, a Note, one must first specify which Collection to use for the desired operation. </p>
+<p>Normally the specification of a Collection would require a long and often somewhat gnarly path specification, calling out all the various folders and sub-folders in which your Collection of interest might be tucked away. </p>
+<p>This is where we get some help from our <a href="https://notenik.net/articles/collection-shortcuts-and-the-quick-action-window.html">Collection Shortcuts</a>, introduced in version 6.0.0. Add a shorty, pithy identifier to your frequently used Collections, and then easily call out that particular Collection in a <code>notenik://&amp;hellip;</code> URL by specifying the shortcut, rather than the entire path. Sweet! For example, <code>todo</code> and <code>ideas</code> are a couple of shortcuts to two of my frequently used Collections. </p>
+<p>I hope you find this new feature useful. Feel free to share it with your friends and neighbors! And if you have any questions or feedback, on this or any other aspect of Notenik, please drop me a line at <a href="mailto:hbowie@notenik.net">hbowie@notenik.net</a>. I&apos;d love to hear from you! </p>
+
+		  ]]>
+	  </content>
+	</entry>
+</feed>

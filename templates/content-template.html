@@ -11,7 +11,7 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>=$page-title$=</title>
+		<title>Notenik =$page-title$=</title>
 		<meta name="description" content="The Notenik App for the Mac" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <?include "../includes/head-links.html" ?>
@@ -25,9 +25,16 @@
 <?set links-class = another-page ?>
 <?set news-class = another-page ?>
 <?set docs-class = another-page ?>
+<?set about-class = another-page ?>
+<?set connect-class = another-page ?>
+<?set license-class = another-page ?>
+<?set privacy-class = another-page ?>
+<?set support-class = another-page ?>
 <?set =$title$=-class = current-page ?>
 
 <?include "../includes/nav-top.html" ?>
+
+<?include "../includes/nav-bottom.html" ?>
 
 			<main id="main">
 <?if "=$type$=" ne "news" ?>
@@ -66,7 +73,6 @@
 <?endif?>
 
 			</main>
-<?include "../includes/nav-bottom.html" ?>
 
 <?include "../includes/footer.html" ?>
 		</div>  <!-- end of wrapper div -->
