@@ -5,6 +5,7 @@
 * -------------------------------------------------- */
 :root {
     color-scheme: light dark;
+	--background-color: #FFFFFF;
     --text-color: #000000;
     --link-color: #0000F0;
 	--subtle-link-color: #0000FF;
@@ -12,9 +13,11 @@
 	--nav-current-background: #d8d8d8;
     --nav-current-color: #000000;
 	--nav-another-color: #8e6b00
+	--nav-bottom-flex-basis: 7em;
 }
 @media screen and (prefers-color-scheme: dark) {
   :root {
+	--background-color: #000000;
     --text-color: #F0F0F0;
     --link-color: #93d5ff;
     --subtle-link-color: #b6e2ff;
@@ -26,6 +29,9 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
+	:root {
+		--nav-bottom-flex-basis: 6em;
+	}
   #header-right { display: none; }  /* hide it on small screens */
 }
 
@@ -50,6 +56,7 @@ body {
 	line-height: 1.5;
 	max-width: 52rem;
 	margin: 0 auto;
+	background-color: var(--background-color);
 	color: var(--text-color); 
 }
 
@@ -184,6 +191,7 @@ nav#nav-top {
 }
  
 nav#nav-bottom {
+	flex-wrap: wrap;
 	margin-top: 0.5rem;
 	font-family: concourse_c3regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.1rem;
@@ -202,7 +210,7 @@ nav a {
 }
 
 nav#nav-bottom a {
-	flex-basis: 7em;
+	flex-basis: var(--nav-bottom-flex-basis);
 }
 
 nav a.current-page {
@@ -215,9 +223,6 @@ nav a.another-page:hover {
 	background-color: var(--nav-current-background);
 	border-radius: 10px;
 }
-
-
-
 
 p.news-date {
 	font-style: italic;
