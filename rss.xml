@@ -1,13 +1,22 @@
 <rss version="2.0">
   <channel>
 	<title>Notenik News</title>
-	<link>https://notenik.net</link>
+	<link>https://notenik.app</link>
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 7.2.0 - Some Nifty Enhancements</title>
+	  <link>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</link>
+	  <guid>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</guid>
+	  <pubDate>Mon, 20 Sep 2021 12:00:00 -0700</pubDate>
+	  <description>
+		  Version 7.2.0 of Notenik includes a handful of nifty changes: the website address has been updated to point to Notenik.app; wiki links now will try to pluralize a reference, if it is not found in singular form; the Merge template Set command now allows a variable to be used as part or all of a global variable name; Markdown quote sharing corrected to respect lookup links; added a Quick Export and Open command. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 7.1.0 - Taking Dark Mode All the Way</title>
-	  <link>https://notenik.net/news/notenik-7.1.0-taking-dark-mode-all-the-way.html</link>
-	  <guid>https://notenik.net/news/notenik-7.1.0-taking-dark-mode-all-the-way.html</guid>
+	  <link>https://notenik.app/news/notenik-7.1.0-taking-dark-mode-all-the-way.html</link>
+	  <guid>https://notenik.app/news/notenik-7.1.0-taking-dark-mode-all-the-way.html</guid>
 	  <pubDate>Tue, 31 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Notenik has mostly supported Dark Mode from the beginning &#8211; everywhere except on the Display tab, where the default was still to show black text on a white background. Now the Display Tab will follow your light/dark preferences, along with the rest of the App. 
@@ -15,8 +24,8 @@
 	</item>
 	<item>
 	  <title>Notenik 7.0.0 - The Introduction of Lookup Fields</title>
-	  <link>https://notenik.net/news/notenik-7.0.0-the-introduction-of-lookup-fields.html</link>
-	  <guid>https://notenik.net/news/notenik-7.0.0-the-introduction-of-lookup-fields.html</guid>
+	  <link>https://notenik.app/news/notenik-7.0.0-the-introduction-of-lookup-fields.html</link>
+	  <guid>https://notenik.app/news/notenik-7.0.0-the-introduction-of-lookup-fields.html</guid>
 	  <pubDate>Fri, 27 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  A field in one Collection can now reference information in other Collections. 
@@ -24,8 +33,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.9.0 - Enhanced OPML Import and Export</title>
-	  <link>https://notenik.net/news/notenik-6.9.0-enhanced-opml-import-and-export.html</link>
-	  <guid>https://notenik.net/news/notenik-6.9.0-enhanced-opml-import-and-export.html</guid>
+	  <link>https://notenik.app/news/notenik-6.9.0-enhanced-opml-import-and-export.html</link>
+	  <guid>https://notenik.app/news/notenik-6.9.0-enhanced-opml-import-and-export.html</guid>
 	  <pubDate>Thu, 12 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
@@ -33,8 +42,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.8.0 - Short IDs and Concatenated Exports</title>
-	  <link>https://notenik.net/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</link>
-	  <guid>https://notenik.net/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</guid>
+	  <link>https://notenik.app/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</link>
+	  <guid>https://notenik.app/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</guid>
 	  <pubDate>Mon, 02 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added Short ID to the list of available field labels and types, to help with URL shortening; added new option to export an entire Collection into a single HTML or Markdown document; fixed a bug affecting automatic links in footnotes. 
@@ -42,8 +51,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.7.0 - 6.7.4 - MathJax!</title>
-	  <link>https://notenik.net/news/notenik-6.7.0-6.7.4-mathjax.html</link>
-	  <guid>https://notenik.net/news/notenik-6.7.0-6.7.4-mathjax.html</guid>
+	  <link>https://notenik.app/news/notenik-6.7.0-6.7.4-mathjax.html</link>
+	  <guid>https://notenik.app/news/notenik-6.7.0-6.7.4-mathjax.html</guid>
 	  <pubDate>Mon, 19 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added support for Mathjax; enhanced Table of Contents generation for a single Note; enhanced Table of Contents generation for an entire Collection. 
@@ -51,8 +60,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.6.0 - Generate a Web Book</title>
-	  <link>https://notenik.net/news/notenik-6.6.0-generate-a-web-book.html</link>
-	  <guid>https://notenik.net/news/notenik-6.6.0-generate-a-web-book.html</guid>
+	  <link>https://notenik.app/news/notenik-6.6.0-generate-a-web-book.html</link>
+	  <guid>https://notenik.app/news/notenik-6.6.0-generate-a-web-book.html</guid>
 	  <pubDate>Wed, 14 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added a new Markdown extension to generate a Table of Contents for an entire Collection; added another new Markdown extension to generate an Index for an entire Collection; added another new Markdown extensions to generate a Tags Outline; added a new command to Generate a Web Book from a Collection; updated the Notenik Knowledge Base to make use of all of these new features. 
@@ -60,8 +69,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.5.0 - Added What&apos;s New Menu Option</title>
-	  <link>https://notenik.net/news/notenik-6.5.0-added-whats-new-menu-option.html</link>
-	  <guid>https://notenik.net/news/notenik-6.5.0-added-whats-new-menu-option.html</guid>
+	  <link>https://notenik.app/news/notenik-6.5.0-added-whats-new-menu-option.html</link>
+	  <guid>https://notenik.app/news/notenik-6.5.0-added-whats-new-menu-option.html</guid>
 	  <pubDate>Wed, 07 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added an option to backup an entire Collection to a compressed Zip file; made improvements to Streamlined Reading, to focus only on Seq, Title and Body fields; expanded the custom URL help command to allow an ID to be included, to point to a specific Note to be initially displayed; added a What&apos;s New command beneath the Help menu to show the user the latest changes to the app. 
@@ -69,8 +78,8 @@
 	</item>
 	<item>
 	  <title>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</title>
-	  <link>https://notenik.net/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</link>
-	  <guid>https://notenik.net/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</guid>
+	  <link>https://notenik.app/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</link>
+	  <guid>https://notenik.app/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</guid>
 	  <pubDate>Fri, 02 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Markdown parser support for definition lists; new Collection pref for Streamlined Reading, increasing focus on Body content on the Display tab; new Display navigation elements added when using Streamlined Reading, especially useful when using Seq and Level fields and sorting by Seq; new Notenik Knowledge Base, available from the Help menu (replacing all prior Help documentation). 
@@ -78,20 +87,11 @@
 	</item>
 	<item>
 	  <title>Notenik 6.3.0 - Leveraging the New Level Field</title>
-	  <link>https://notenik.net/news/notenik-6.3.0-leveraging-the-new-level-field.html</link>
-	  <guid>https://notenik.net/news/notenik-6.3.0-leveraging-the-new-level-field.html</guid>
+	  <link>https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html</link>
+	  <guid>https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html</guid>
 	  <pubDate>Thu, 10 Jun 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Updated the Work List field type to allow entries for &apos;Novel&apos; and &apos;Podcast&apos; (and to make it easier to enter using all lowercase letters); added a new field type of Level, to indicate the depth of a Note within the structure of a Collection; added a new command to renumber the Seq field based on sequence and Level; added a new command to generate tags that will mirror the outline structure implied by the combination of Seq and Level fields. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.2.0 - I Love It When a Plan Comes Together</title>
-	  <link>https://notenik.net/news/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html</link>
-	  <guid>https://notenik.net/news/notenik-6.2.0-i-love-it-when-a-plan-comes-together.html</guid>
-	  <pubDate>Thu, 27 May 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. &quot;Slow but Steady&quot; might be my mantra. This latest release finally implements a custom URL scheme for Notenik. (I first received an email asking for something like this in January of 2020!) 
 	  </description>
 	</item>
   </channel>
