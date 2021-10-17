@@ -4,12 +4,74 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2021-09-20T09:00:00Z</updated>
+  <updated>2021-10-14T09:00:00Z</updated>
   <rights>Copyright © 2021, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 7.4.0 - Wiki Link Enhancements</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.4.0-wiki-link-enhancements.html</id>
+	  <published>2021-10-14T09:00:00Z</published>
+	  <updated>2021-10-14T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Notenik 7.4.0 addresses some common issues that often arise when making use of  Wiki Style Links. Welcome to backlinks, automatic target note creation, and AKA entries for your Notes! 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Notenik 7.4.0 addresses some common issues that often arise when making use of  <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-style-links.html">Wiki Style Links</a>. </p>
+<p><strong>Issue # 1</strong>: You&apos;re writing one Note, then realize you want that Note to link to a different Note, but that different Note does not yet exist. Before 7.4.0, Notenik would allow you to create the link but then, when you clicked on it, would just give you a (not very helpful) error message. </p>
+<p>The fix? When you save a Note (or reload a Note you have edited externally, using your favorite text editor), Notenik will check all of the Note&apos;s wiki style links to make sure they point to Notes that actually exist. For any that don&apos;t yet exist, Notenik will automatically create them! And the new Note will contain a handy pointer back to the Note that created it, via its wiki style link. </p>
+<p>Problem solved! </p>
+<p><strong>Issue # 2</strong>: You&apos;ve named a Note one way (including a verb and an object, let&apos;s say) and then want to later refer to that Note via a wiki style link. But given the context of the reference to that Note, you want to use slightly different wording in the new sentence you&apos;re constructing (calling out just the object, let&apos;s say). </p>
+<p>The solution? Now you can add a special <a href="https://notenik.app/knowledge-base/EPUB/html/also-known-as.html">AKA</a> field to a Collection, and then add one or more alternate identifiers to a Note, allowing you to then wiki link to that Note using any of the alternates you have called out. For example, even though the <a href="https://notenik.app/docs.html">Notenik Knowledge Base</a> includes a Note for this new field that is titled &quot;Also Known As,&quot; I can link to that Note using a Wiki Link of <code>[AKA]</code>, because the <code>Also Known As</code> Note contains an <code>AKA</code> entry that calls out <code>AKA</code> as an alternate identifier for that Note. </p>
+<p>Pretty handy, eh? </p>
+<p><strong>Issue # 3</strong>: You&apos;ve created a bunch of wiki style links that refer to various other Notes. And now you&apos;re looking at a Note in your Collection. And you can see what other Notes are linked to from this Note, but then you wonder&hellip; which Notes, if any, link to this Note? </p>
+<p>The answer? <em>Backlinks!</em> By enabling the new field type called <a href="https://notenik.app/knowledge-base/EPUB/html/back-links.html">Backlinks</a>, Notenik will automatically keep track of backlinks in your Collection, and make them available on the Display tab. </p>
+<p>And so now you have automatic bidirectional linking of Notes within a Collection: write one link to go from one Note to another, and you can then automatically traverse your wiki style links in either direction. </p>
+<p><strong>And One More Thing</strong>: The Notenik Knowledge Base now has a new article in the <a href="https://notenik.app/knowledge-base/EPUB/html/putting-it-all-together.html">Putting It All Together</a> section called <a href="https://notenik.app/knowledge-base/EPUB/html/write-a-web-book.html">Write a Web Book</a>, that gives you some pointers on how to create a web book of your own. Hope you find it useful! </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 7.3.0 - A Handful of Helpful Refinements</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.3.0-a-handful-of-helpful-refinements.html</id>
+	  <published>2021-09-30T09:00:00Z</published>
+	  <updated>2021-09-30T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Version 7.3.0 of Notenik includes a handful of helpful improvements. </p>
+<h5 id="improved-seq-and-level-defaults-for-drag-and-drop">Improved Seq and Level Defaults for Drag and Drop</h5>
+<p>When pasting an item (such as a URL) into a List sorted by Seq, and when the drop point is between existing rows, Notenik will now do a better job of setting reasonable defaults for both Seq and Level for the new Note. </p>
+<h5 id="improved-recognition-of-parent-realm-folders">Improved Recognition of Parent Realm Folders</h5>
+<p>Notenik allows you to drag a folder to be opened onto its app icon in the dock. That folder can be either a Notenik Collection or a parent folder containing Notenik Collections. Before this change, if a folder contained a single text file named <code>robots.txt</code>, then that would be treated as a Note, and so the folder would be opened as a Collection. After this change, such a folder will be more productively treated as the object of an <a href="https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html">Open Parent Realm</a> command. </p>
+<h5 id="parent-realm-folders-now-appear-on-open-recent-menu">Parent Realm Folders Now Appear on Open Recent Menu</h5>
+<p>After you execute the <a href="https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html">Open Parent Realm</a> command (either explicitly via the <code>File</code> menu, or implicitly by dragging a folder onto the app icon), the Parent Realm folder will now be added to the the <code>Open Recent</code> menu, making it available to be easily reopened later. </p>
+<h5 id="streamlined-new-collection-process">Streamlined New Collection process</h5>
+<p>It seemed a bit confusing to have so many different options for creating a new Collection, so I&apos;ve combined them. Now there is just one <code>File</code> menu option, that says <code>New Collection&amp;hellip;</code>. This option walks you through several screens where you can pick a location, pick a name, and pick a Collection type, and then shows you the Collection Preferences screen where you can make any final adjustments to the configuration of your New Collection. </p>
+<h5 id="saving-security-scoped-bookmarks">Saving Security-Scoped Bookmarks</h5>
+<p>Notenik has been enhanced to try to extend the life of access permissions for Collections assigned Shortcuts, so as to reduce the number of times a user has to re-authorize access to a folder. See <a href="https://notenik.app/knowledge-base/EPUB/html/tailor-collection-preferences.html">Tailor Collection Preferences</a> for info on assigning a Shortcut to a Collection. </p>
+<h5 id="undo-provided-for-note-deletions">Undo Provided for Note Deletions</h5>
+<p>If you delete a Note by mistake, then you can use the Undo function (beneath the Edit menu) to undo the deletion, with the only caveat being that any note attachments will not be restored. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 7.2.0 - Some Nifty Enhancements</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html"/>
@@ -260,67 +322,6 @@
 <p>Only the Seq, Title and Body fields are now included on the Display tab, when Streamlined Reading is chosen for the Collection. </p>
 <h4 id="help-command-expanded">Help Command Expanded</h4>
 <p>A notenik Custom URL invoking the help command can now optionally specify the ID of a specific Note to be displayed, after opening the Knowledge Base. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</id>
-	  <published>2021-07-02T09:00:00Z</published>
-	  <updated>2021-07-02T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Markdown parser support for definition lists; new Collection pref for Streamlined Reading, increasing focus on Body content on the Display tab; new Display navigation elements added when using Streamlined Reading, especially useful when using Seq and Level fields and sorting by Seq; new Notenik Knowledge Base, available from the Help menu (replacing all prior Help documentation). 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="new-documentation">New Documentation</h4>
-<p>Following the DRY principle (Don&apos;t Repeat Yourself), all Notenik information and documentation has been consolidated into a single Knowledge Base, accessible from the Help menu. The Knowledge Base is itself a Notenik Collection, and it takes advantage of a number of recently added features. </p>
-<h4 id="level-navigation">Level Navigation</h4>
-<p>When Notenik finds a Collection with both <a href="https://ntnk.app/seq">Seq</a> and <a href="https://ntnk.app/level">Level</a> fields, and when sorted by Seq + Title, and when Streamlined Reading is chosen, then additional navigation elements will be added to the Display tab. </p>
-<ul>
-<li>At the top of the Note&apos;s display there will appear a link to the parent of the current item. </li>
-<li>At the bottom of the Note&apos;s display there will appear a link to the next Note in the list. </li>
-<li>For parent Notes, there will also appear a list of the child Notes at the next level. </li>
-</ul>
-<h4 id="added-collection-pref-for-streamlined-reading">Added Collection Pref for Streamlined Reading</h4>
-<p>As part of the Collection Preferences, a user may now check a box to Format Display for Streamlined Reading. </p>
-<p>Checking this option will cause the Display tab to focus on the Body of each Note, while minimizing the appearance of metadata. The net effect &#8211; especially if one declines to Include an Explicity Body Field Label on the Display tab &#8211; is to make it easier for a user to focus on the content of each Note. </p>
-<h4 id="added-markdown-support-for-definition-lists">Added Markdown Support for Definition Lists</h4>
-<p>Markdown definition lists are now supported by the standard Notenik parser. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.3.0 - Leveraging the New Level Field</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.3.0-leveraging-the-new-level-field.html</id>
-	  <published>2021-06-10T09:00:00Z</published>
-	  <updated>2021-06-10T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Updated the Work List field type to allow entries for &apos;Novel&apos; and &apos;Podcast&apos; (and to make it easier to enter using all lowercase letters); added a new field type of Level, to indicate the depth of a Note within the structure of a Collection; added a new command to renumber the Seq field based on sequence and Level; added a new command to generate tags that will mirror the outline structure implied by the combination of Seq and Level fields. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="added-level-as-new-field-label-and-type">Added Level as New Field Label and Type</h4>
-<p><code>Level</code> has been added as a new field label and type. A field of this type can be used to indicate the level of a Note within the overall structure of the Collection &#8211; which can be used, along with the Seq field, to define an outline. </p>
-<h4 id="added-new-collection-command-to-replace-tags-based-on-seq-and-level">Added New Collection Command to Replace Tags based on Seq and Level</h4>
-<p>This new command automatically adds tags to reflect the outline structure created by combining Seq and Level. </p>
-<h4 id="added-collection-command-to-renumber-seq-based-on-level">Added Collection Command to Renumber Seq Based on Level</h4>
-<p>Now that we have a Level field, we can combine Level with Seq to create an outline structure, and then, with this change, can automatically renumber the Seq fields in a Collection to reflect that outline structure. </p>
-<h4 id="updates-to-work-list-field-type">Updates to Work List Field Type</h4>
-<p>I added &apos;Novel&apos; and &apos;Podcast&apos; as new choices, when specifying the type of work being referenced or quoted. </p>
-<p>I also modified the logic so that you can use either a leading lower-case letter, or leading upper-case, when entering a work type value. Whichever one is used, and chosen, the value stored will be with leading upper-case. </p>
 
 		  ]]>
 	  </content>

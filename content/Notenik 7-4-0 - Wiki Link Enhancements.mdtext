@@ -1,0 +1,49 @@
+Title:  Notenik 7.4.0 - Wiki Link Enhancements
+
+Page Title: Notenik 7.4.0 - Wiki Link Enhancements
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   14 Oct 2021
+
+Teaser: 
+
+Notenik 7.4.0 addresses some common issues that often arise when making use of  Wiki Style Links. Welcome to backlinks, automatic target note creation, and AKA entries for your Notes!
+
+Body: 
+
+Notenik 7.4.0 addresses some common issues that often arise when making use of  [Wiki Style Links][wsl]. 
+
+**Issue # 1**: You're writing one Note, then realize you want that Note to link to a different Note, but that different Note does not yet exist. Before 7.4.0, Notenik would allow you to create the link but then, when you clicked on it, would just give you a (not very helpful) error message. 
+
+The fix? When you save a Note (or reload a Note you have edited externally, using your favorite text editor), Notenik will check all of the Note's wiki style links to make sure they point to Notes that actually exist. For any that don't yet exist, Notenik will automatically create them! And the new Note will contain a handy pointer back to the Note that created it, via its wiki style link. 
+
+Problem solved!
+
+**Issue # 2**: You've named a Note one way (including a verb and an object, let's say) and then want to later refer to that Note via a wiki style link. But given the context of the reference to that Note, you want to use slightly different wording in the new sentence you're constructing (calling out just the object, let's say). 
+
+The solution? Now you can add a special [AKA][] field to a Collection, and then add one or more alternate identifiers to a Note, allowing you to then wiki link to that Note using any of the alternates you have called out. For example, even though the [Notenik Knowledge Base][nkb] includes a Note for this new field that is titled "Also Known As," I can link to that Note using a Wiki Link of `[AKA]`, because the `Also Known As` Note contains an `AKA` entry that calls out `AKA` as an alternate identifier for that Note. 
+
+Pretty handy, eh?
+
+**Issue # 3**: You've created a bunch of wiki style links that refer to various other Notes. And now you're looking at a Note in your Collection. And you can see what other Notes are linked to from this Note, but then you wonder... which Notes, if any, link to this Note?
+
+The answer? *Backlinks!* By enabling the new field type called [Backlinks][], Notenik will automatically keep track of backlinks in your Collection, and make them available on the Display tab. 
+
+And so now you have automatic bidirectional linking of Notes within a Collection: write one link to go from one Note to another, and you can then automatically traverse your wiki style links in either direction. 
+
+**And One More Thing**: The Notenik Knowledge Base now has a new article in the [Putting It All Together][all] section called [Write a Web Book][book], that gives you some pointers on how to create a web book of your own. Hope you find it useful!
+
+[aka]: https://notenik.app/knowledge-base/EPUB/html/also-known-as.html
+
+[all]: https://notenik.app/knowledge-base/EPUB/html/putting-it-all-together.html
+
+[backlinks]: https://notenik.app/knowledge-base/EPUB/html/back-links.html
+
+[book]: https://notenik.app/knowledge-base/EPUB/html/write-a-web-book.html
+
+[nkb]: https://notenik.app/docs.html
+
+[wsl]: https://notenik.app/knowledge-base/EPUB/html/wiki-style-links.html

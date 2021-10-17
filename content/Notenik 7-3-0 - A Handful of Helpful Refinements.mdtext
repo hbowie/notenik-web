@@ -1,0 +1,42 @@
+Title:  Notenik 7.3.0 - A Handful of Helpful Refinements
+
+Page Title: Notenik 7.3.0 - A Handful of Helpful Refinements
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   30 Sep 2021
+
+Teaser: 
+
+Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions.
+
+
+Body: 
+
+Version 7.3.0 of Notenik includes a handful of helpful improvements. 
+
+##### Improved Seq and Level Defaults for Drag and Drop
+
+When pasting an item (such as a URL) into a List sorted by Seq, and when the drop point is between existing rows, Notenik will now do a better job of setting reasonable defaults for both Seq and Level for the new Note.
+
+##### Improved Recognition of Parent Realm Folders
+
+Notenik allows you to drag a folder to be opened onto its app icon in the dock. That folder can be either a Notenik Collection or a parent folder containing Notenik Collections. Before this change, if a folder contained a single text file named `robots.txt`, then that would be treated as a Note, and so the folder would be opened as a Collection. After this change, such a folder will be more productively treated as the object of an [Open Parent Realm](https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html) command.
+
+##### Parent Realm Folders Now Appear on Open Recent Menu
+
+After you execute the [Open Parent Realm](https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html) command (either explicitly via the `File` menu, or implicitly by dragging a folder onto the app icon), the Parent Realm folder will now be added to the the `Open Recent` menu, making it available to be easily reopened later.
+
+##### Streamlined New Collection process
+
+It seemed a bit confusing to have so many different options for creating a new Collection, so I've combined them. Now there is just one `File` menu option, that says `New Collection...`. This option walks you through several screens where you can pick a location, pick a name, and pick a Collection type, and then shows you the Collection Preferences screen where you can make any final adjustments to the configuration of your New Collection.
+
+##### Saving Security-Scoped Bookmarks
+
+Notenik has been enhanced to try to extend the life of access permissions for Collections assigned Shortcuts, so as to reduce the number of times a user has to re-authorize access to a folder. See [Tailor Collection Preferences](https://notenik.app/knowledge-base/EPUB/html/tailor-collection-preferences.html) for info on assigning a Shortcut to a Collection. 
+
+##### Undo Provided for Note Deletions
+
+If you delete a Note by mistake, then you can use the Undo function (beneath the Edit menu) to undo the deletion, with the only caveat being that any note attachments will not be restored.

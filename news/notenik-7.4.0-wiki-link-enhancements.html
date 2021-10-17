@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Notenik Notenik 7.4.0 - Wiki Link Enhancements</title>
+		<meta name="description" content="The Notenik App for the Mac" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Start of include file head-links.html -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../fonts/equity_cb.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/concourse_t3.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- End of include file head-links.html -->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Start of include file header.html -->
+			<header>
+				<div id="header-left">
+					<div id="header-logo-and-name">
+						<div id="header-logo">
+							<a href="../index.html">
+								<img class="header-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
+							</a>
+						</div>
+						<div id="header-title">
+							Notenik
+						</div>
+					</div>
+					<div id="header-slogan">
+						Do More With Your Notes
+					</div>
+				</div>
+				<div id="header-right">
+				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+				</div>
+			</header>
+			<!-- End of include file header.html -->
+
+
+			<!-- Start of include file nav-top.html -->
+			<nav id="nav-top">
+				<a class="another-page" href="../index.html">
+					Home
+				</a>
+				<a class="another-page" href="../links.html">
+					Links
+				</a>
+				<a class="another-page" href="../news.html">
+					News
+				</a>
+				<a class="another-page" href="../docs.html">
+					Docs
+				</a>
+			</nav>
+			<!-- End of include file nav-top.html -->
+
+			<!-- Start of include file nav-bottom.html -->
+			<nav id="nav-bottom">
+				<a class="another-page" href="../about.html">
+					About
+				</a>
+				<a class="another-page" href="../connect.html">
+					Connect
+				</a>
+				<a class="another-page" href="../license.html">
+					License
+				</a>
+				<a class="another-page" href="../privacy.html">
+					Privacy
+				</a>
+				<a class="another-page" href="../support.html">
+					Support
+				</a>
+			</nav>
+			<!-- End of include file nav-bottom.html -->
+
+			<main id="main">
+				<h3>Notenik 7.4.0 - Wiki Link Enhancements</h3>
+				<p class="news-date">Posted on 14 Oct, 2021</p>
+
+				<div id="content">
+					<p>Notenik 7.4.0 addresses some common issues that often arise when making use of  <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-style-links.html">Wiki Style Links</a>. </p>
+<p><strong>Issue # 1</strong>: You're writing one Note, then realize you want that Note to link to a different Note, but that different Note does not yet exist. Before 7.4.0, Notenik would allow you to create the link but then, when you clicked on it, would just give you a (not very helpful) error message. </p>
+<p>The fix? When you save a Note (or reload a Note you have edited externally, using your favorite text editor), Notenik will check all of the Note's wiki style links to make sure they point to Notes that actually exist. For any that don't yet exist, Notenik will automatically create them! And the new Note will contain a handy pointer back to the Note that created it, via its wiki style link. </p>
+<p>Problem solved! </p>
+<p><strong>Issue # 2</strong>: You've named a Note one way (including a verb and an object, let's say) and then want to later refer to that Note via a wiki style link. But given the context of the reference to that Note, you want to use slightly different wording in the new sentence you're constructing (calling out just the object, let's say). </p>
+<p>The solution? Now you can add a special <a href="https://notenik.app/knowledge-base/EPUB/html/also-known-as.html">AKA</a> field to a Collection, and then add one or more alternate identifiers to a Note, allowing you to then wiki link to that Note using any of the alternates you have called out. For example, even though the <a href="https://notenik.app/docs.html">Notenik Knowledge Base</a> includes a Note for this new field that is titled &#8220;Also Known As,&#8221; I can link to that Note using a Wiki Link of <code>[AKA]</code>, because the <code>Also Known As</code> Note contains an <code>AKA</code> entry that calls out <code>AKA</code> as an alternate identifier for that Note. </p>
+<p>Pretty handy, eh? </p>
+<p><strong>Issue # 3</strong>: You've created a bunch of wiki style links that refer to various other Notes. And now you're looking at a Note in your Collection. And you can see what other Notes are linked to from this Note, but then you wonder&#8230; which Notes, if any, link to this Note? </p>
+<p>The answer? <em>Backlinks!</em> By enabling the new field type called <a href="https://notenik.app/knowledge-base/EPUB/html/back-links.html">Backlinks</a>, Notenik will automatically keep track of backlinks in your Collection, and make them available on the Display tab. </p>
+<p>And so now you have automatic bidirectional linking of Notes within a Collection: write one link to go from one Note to another, and you can then automatically traverse your wiki style links in either direction. </p>
+<p><strong>And One More Thing</strong>: The Notenik Knowledge Base now has a new article in the <a href="https://notenik.app/knowledge-base/EPUB/html/putting-it-all-together.html">Putting It All Together</a> section called <a href="https://notenik.app/knowledge-base/EPUB/html/write-a-web-book.html">Write a Web Book</a>, that gives you some pointers on how to create a web book of your own. Hope you find it useful! </p>
+
+				</div>
+
+				<hr />
+
+				<p>Earlier News:
+					<a href="notenik-7.3.0-a-handful-of-helpful-refinements.html">
+						Notenik 7.3.0 - A Handful of Helpful Refinements
+					</a>
+				</p>
+
+			</main>
+
+			<!-- Start of include file footer.html -->
+			<footer id="footer">
+        <hr />
+Copyright &copy; 2019 - 2021 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+      </footer>
+			<!-- End of include file footer.html -->
+		</div>  <!-- end of wrapper div -->
+	</body>
+</html>

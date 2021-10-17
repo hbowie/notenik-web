@@ -5,6 +5,24 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 7.4.0 - Wiki Link Enhancements</title>
+	  <link>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</link>
+	  <guid>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</guid>
+	  <pubDate>Thu, 14 Oct 2021 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik 7.4.0 addresses some common issues that often arise when making use of  Wiki Style Links. Welcome to backlinks, automatic target note creation, and AKA entries for your Notes! 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 7.3.0 - A Handful of Helpful Refinements</title>
+	  <link>https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html</link>
+	  <guid>https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html</guid>
+	  <pubDate>Thu, 30 Sep 2021 12:00:00 -0700</pubDate>
+	  <description>
+		  Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 7.2.0 - Some Nifty Enhancements</title>
 	  <link>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</link>
 	  <guid>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</guid>
@@ -74,24 +92,6 @@
 	  <pubDate>Wed, 07 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added an option to backup an entire Collection to a compressed Zip file; made improvements to Streamlined Reading, to focus only on Seq, Title and Body fields; expanded the custom URL help command to allow an ID to be included, to point to a specific Note to be initially displayed; added a What&apos;s New command beneath the Help menu to show the user the latest changes to the app. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.4.0 - Introducing the Notenik Knowledge Base</title>
-	  <link>https://notenik.app/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</link>
-	  <guid>https://notenik.app/news/notenik-6.4.0-introducing-the-notenik-knowledge-base.html</guid>
-	  <pubDate>Fri, 02 Jul 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Markdown parser support for definition lists; new Collection pref for Streamlined Reading, increasing focus on Body content on the Display tab; new Display navigation elements added when using Streamlined Reading, especially useful when using Seq and Level fields and sorting by Seq; new Notenik Knowledge Base, available from the Help menu (replacing all prior Help documentation). 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.3.0 - Leveraging the New Level Field</title>
-	  <link>https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html</link>
-	  <guid>https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html</guid>
-	  <pubDate>Thu, 10 Jun 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Updated the Work List field type to allow entries for &apos;Novel&apos; and &apos;Podcast&apos; (and to make it easier to enter using all lowercase letters); added a new field type of Level, to indicate the depth of a Note within the structure of a Collection; added a new command to renumber the Seq field based on sequence and Level; added a new command to generate tags that will mirror the outline structure implied by the combination of Seq and Level fields. 
 	  </description>
 	</item>
   </channel>

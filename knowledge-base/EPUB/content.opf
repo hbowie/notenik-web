@@ -17,7 +17,7 @@
     <item href="html/the-name-of-your-collection.html" id="nameofyourcollection" media-type="text/html"/>
     <item href="html/the-field-labels-and-types-for-your-collection.html" id="fieldlabelsandtypesforyourcollection" media-type="text/html"/>
     <item href="html/file-extension-for-your-notes.html" id="fileextensionforyournotes" media-type="text/html"/>
-    <item href="html/menu-commands-for-creating-new-collections.html" id="menucommandsforcreatingnewcollections" media-type="text/html"/>
+    <item href="html/menu-command-for-creating-a-new-collection.html" id="menucommandforcreatinganewcollection" media-type="text/html"/>
     <item href="html/tailor-collection-preferences.html" id="tailorcollectionpreferences" media-type="text/html"/>
     <item href="html/common-tasks.html" id="commontasks" media-type="text/html"/>
     <item href="html/display-a-note.html" id="displayanote" media-type="text/html"/>
@@ -93,6 +93,10 @@
     <item href="html/link.html" id="link" media-type="text/html"/>
     <item href="html/launch-at-startup-tags.html" id="launchatstartuptags" media-type="text/html"/>
     <item href="html/body.html" id="body" media-type="text/html"/>
+    <item href="html/fields-to-assist-with-note-linking.html" id="fieldstoassistwithnotelinking" media-type="text/html"/>
+    <item href="html/also-known-as.html" id="alsoknownas" media-type="text/html"/>
+    <item href="html/back-links.html" id="backlinks" media-type="text/html"/>
+    <item href="html/wiki-links.html" id="wikilinks" media-type="text/html"/>
     <item href="html/fields-for-sequencing-and-outlining.html" id="fieldsforsequencingandoutlining" media-type="text/html"/>
     <item href="html/seq.html" id="seq" media-type="text/html"/>
     <item href="html/level.html" id="level" media-type="text/html"/>
@@ -196,7 +200,11 @@
     <item href="html/assemble-an-outline.html" id="assembleanoutline" media-type="text/html"/>
     <item href="html/create-a-digital-commonplace-book-or-a-zettelkasten.html" id="createadigitalcommonplacebookorazettelkasten" media-type="text/html"/>
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
+    <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-7.4.3.html" id="version743" media-type="text/html"/>
+    <item href="html/version-7.4.0.html" id="version740" media-type="text/html"/>
+    <item href="html/version-7.3.0.html" id="version730" media-type="text/html"/>
     <item href="html/version-7.2.0.html" id="version720" media-type="text/html"/>
     <item href="html/version-7.1.0.html" id="version710" media-type="text/html"/>
     <item href="html/version-7.0.0.html" id="version700" media-type="text/html"/>
