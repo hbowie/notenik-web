@@ -16,6 +16,10 @@ a {
     background-color: var(--highlight-color);
 }
 body { 
-tab-size: 4; 
-margin: 1em; font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-size: 14pt }
+	tab-size: 4; 
+	margin: 1em; 
+	font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14pt;
+	max-width: 33em; 
+	margin: 0 auto; 
+	float: none; } 

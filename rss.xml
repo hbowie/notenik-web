@@ -5,6 +5,15 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 7.5.0 - A Few Small Improvements</title>
+	  <link>https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html</link>
+	  <guid>https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html</guid>
+	  <pubDate>Thu, 28 Oct 2021 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik 7.5.0 makes a few small improvements, including reorganizing some of the app&apos;s menus, as well as rearranging things on the Collection Prefs screen. The Advanced Search option is the new feature that might be most widely appreciated. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 7.4.0 - Wiki Link Enhancements</title>
 	  <link>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</link>
 	  <guid>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</guid>
@@ -83,15 +92,6 @@
 	  <pubDate>Wed, 14 Jul 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added a new Markdown extension to generate a Table of Contents for an entire Collection; added another new Markdown extension to generate an Index for an entire Collection; added another new Markdown extensions to generate a Tags Outline; added a new command to Generate a Web Book from a Collection; updated the Notenik Knowledge Base to make use of all of these new features. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.5.0 - Added What&apos;s New Menu Option</title>
-	  <link>https://notenik.app/news/notenik-6.5.0-added-whats-new-menu-option.html</link>
-	  <guid>https://notenik.app/news/notenik-6.5.0-added-whats-new-menu-option.html</guid>
-	  <pubDate>Wed, 07 Jul 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Added an option to backup an entire Collection to a compressed Zip file; made improvements to Streamlined Reading, to focus only on Seq, Title and Body fields; expanded the custom URL help command to allow an ID to be included, to point to a specific Note to be initially displayed; added a What&apos;s New command beneath the Help menu to show the user the latest changes to the app. 
 	  </description>
 	</item>
   </channel>
