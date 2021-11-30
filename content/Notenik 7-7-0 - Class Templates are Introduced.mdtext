@@ -1,0 +1,39 @@
+Title:  Notenik 7.7.0 - Class Templates are Introduced
+
+Page Title: Notenik 7.7.0 - Class Templates are Introduced
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   30 Nov 2021
+
+Teaser: 
+
+This release introduces Class templates. Each different Class value within a Collection can have its own template, and that template can limit the fields included on the Edit tab for Notes of that Class, and can also supply default values for any fields that are included. This is one of those features that can be used in lots of different ways, for many different purposes, so it's worth sitting down and having a good think about how you might be able to put this feature to use for your Notes. 
+
+Body: 
+
+This release is focused on an expanded use of the Class field, including the introduction of the very useful Class templates. 
+
+The Class field was introduced in 7.5.0, and its associated features have been expanded in 7.6.0, and now again in 7.7.0.
+
+With this release, Notenik will recognize a subfolder named `class`, and then use each of the files found therein as class templates. Class templates can be used for three very useful purposes.
+
+First, each filename will be recognized as a valid Class value, whether or not that value was identified as such in the Collection template file. 
+
+Second, you can omit certain fields from a Class template file, and then only the remaining fields (the ones included in the Class template file) will be shown on the Edit tab, when that Class value is specified for a particular Note. 
+
+Third, you can supply default values for any of the associated fields, and these will then be pre-populated when you create a new Note with that Class. 
+
+A couple of these functions above involve a bit of a chicken-and-egg type problem: the Edit field will be configured and pre-populated based on the Class, but there's no way to specify the Class until you get to the Edit tab!
+
+The solution here is the new command, found beneath the `Note` menu, to create a `New Note w/Options`. When you select this menu item, you will be presented with a window allowing you to select the Class for the new Note. Once you hit `OK` on this screen, you will be taken to the Edit tab, blank except for the values you've specified. 
+
+This new Options screen also allows you to fill in a couple of other useful fields. First, the Note's title, just because that seems a natural thing to do at this point in your flow. But then there are also the Level and Seq fields for the new Note. The Level field will default to that of the last Note selected before invoking this screen, but you can change it if you like. The Seq field will then change appropriately to reflect the Level you've selected, in order to place the new Note just after the last Note selected. 
+
+Notenik also has some new Display logic associated with certain special Class values, especially when a Collection is in the Streamlined Reading mode. For example, a Class value of `quote` will result in the body of the Note being displayed with `blockquote` styling. And if you use the new `Attribution` field to indicate the source of the quote, that field will be neatly shown below the quotation itself. 
+
+As long as I was allowing a Class template to limit the fields shown on the Edit tab, it also seemed like a good time to remove calculated fields from the Edit tab, since they can't be modified directly by the user anyway. So now the Edit tab will be that much cleaner, allowing you to focus on the fields of interest to you. 
+
+Those are the heavy hitters in this release. Be sure and read more about these new features in the Notenik Knowledge Base, where you'll find all the details. And if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.

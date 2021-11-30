@@ -4,12 +4,70 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2021-10-28T09:00:00Z</updated>
+  <updated>2021-11-30T09:00:00Z</updated>
   <rights>Copyright © 2021, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 7.7.0 - Class Templates are Introduced</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.7.0-class-templates-are-introduced.html</id>
+	  <published>2021-11-30T09:00:00Z</published>
+	  <updated>2021-11-30T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  This release introduces Class templates. Each different Class value within a Collection can have its own template, and that template can limit the fields included on the Edit tab for Notes of that Class, and can also supply default values for any fields that are included. This is one of those features that can be used in lots of different ways, for many different purposes, so it&apos;s worth sitting down and having a good think about how you might be able to put this feature to use for your Notes. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>This release is focused on an expanded use of the Class field, including the introduction of the very useful Class templates. </p>
+<p>The Class field was introduced in 7.5.0, and its associated features have been expanded in 7.6.0, and now again in 7.7.0. </p>
+<p>With this release, Notenik will recognize a subfolder named <code>class</code>, and then use each of the files found therein as class templates. Class templates can be used for three very useful purposes. </p>
+<p>First, each filename will be recognized as a valid Class value, whether or not that value was identified as such in the Collection template file. </p>
+<p>Second, you can omit certain fields from a Class template file, and then only the remaining fields (the ones included in the Class template file) will be shown on the Edit tab, when that Class value is specified for a particular Note. </p>
+<p>Third, you can supply default values for any of the associated fields, and these will then be pre-populated when you create a new Note with that Class. </p>
+<p>A couple of these functions above involve a bit of a chicken-and-egg type problem: the Edit field will be configured and pre-populated based on the Class, but there&apos;s no way to specify the Class until you get to the Edit tab! </p>
+<p>The solution here is the new command, found beneath the <code>Note</code> menu, to create a <code>New Note w/Options</code>. When you select this menu item, you will be presented with a window allowing you to select the Class for the new Note. Once you hit <code>OK</code> on this screen, you will be taken to the Edit tab, blank except for the values you&apos;ve specified. </p>
+<p>This new Options screen also allows you to fill in a couple of other useful fields. First, the Note&apos;s title, just because that seems a natural thing to do at this point in your flow. But then there are also the Level and Seq fields for the new Note. The Level field will default to that of the last Note selected before invoking this screen, but you can change it if you like. The Seq field will then change appropriately to reflect the Level you&apos;ve selected, in order to place the new Note just after the last Note selected. </p>
+<p>Notenik also has some new Display logic associated with certain special Class values, especially when a Collection is in the Streamlined Reading mode. For example, a Class value of <code>quote</code> will result in the body of the Note being displayed with <code>blockquote</code> styling. And if you use the new <code>Attribution</code> field to indicate the source of the quote, that field will be neatly shown below the quotation itself. </p>
+<p>As long as I was allowing a Class template to limit the fields shown on the Edit tab, it also seemed like a good time to remove calculated fields from the Edit tab, since they can&apos;t be modified directly by the user anyway. So now the Edit tab will be that much cleaner, allowing you to focus on the fields of interest to you. </p>
+<p>Those are the heavy hitters in this release. Be sure and read more about these new features in the Notenik Knowledge Base, where you&apos;ll find all the details. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 7.6.0 - A Little Something for Everyone</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.6.0-a-little-something-for-everyone.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.6.0-a-little-something-for-everyone.html</id>
+	  <published>2021-11-09T09:00:00Z</published>
+	  <updated>2021-11-09T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Notenik 7.6.0 should contain a little something for everyone, including some additional sort options, an improvement to the Quick Action window, more reasonable handling of data from deleted fields, the ability to include images in a Web Book, as well as the ability to specify your own available values for the new Class field. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>This is another grab bag release, with a handful of unrelated changes, but everyone should find a little something useful in the mix. Some of these changes were suggested by users, and some were ones I dreamt up all on my own. </p>
+<p>First of all, a Sort Option to sequence your list by Date Modified has been added. No matter what sort of information you&apos;re storing in Notenik, it will probably at least occasionally be useful to sort your Notes to see those that have most recently been modified. This was a user request. </p>
+<p>Next, I&apos;ve added a keyboard shortcut to the option to Reverse a Sort. Combining the CMD key with a number key will change the sort field used for a Collection to one of the nine available options. (See the Sort submenu beneath the Collection menu for details.) But now <code>CMD 0</code> will reverse the sequence for any of these options. Especially when switching from one option to another, I often find I want to reverse the sequence, and so this new keyboard shortcut makes that a snap. </p>
+<p>Another user request was to have the Quick Action window retain the last Collection Shortcut entered as a default for the next time a Quick Action is taken. This can make an action even quicker, and I&apos;m already using it to speed up some of my Notenik work. </p>
+<p>One more change in this release involves the removal of fields from a Collection. This isn&apos;t the most common of operations &#8211; usually you&apos;re selecting fields when you create a new Collection, or adding more later. But occasionally, after I&apos;ve added some fields, I later realize that they&apos;re not really needed and, in fact, are just getting in the way. At that point I open the Collection Preferences and uncheck the fields I no longer want. So far, so good, it would seem. But what if some of your Notes already have data in those now-deleted fields? Unfortunately, Notenik did not previously have a systematic way for dealing with this sort of abandoned data. With this release, though, those fields and values will be systematically purged from your Notes, to prevent any untoward things from happening somewhere downstream. This is not a feature you&apos;ll be using every day, I&apos;ll wager, but good to know it&apos;s there when you need it. </p>
+<p>And then there&apos;s yet another change in this release, only useful if you&apos;re using the recently added option to <code>Generate a Web Book</code>. In that case, the <code>Image Name</code> field can now be used to include an image that will appear towards the top of a page, between the <code>Title</code> and the <code>Body</code>. </p>
+<p>And then the new <code>Class</code> field has been fleshed out a little further, with the user given an option for specifying his or her own values for the field, as an alternative to the ones that seem useful to me. Still more to come in terms of functionality associated with this field, but this is a small step forward. </p>
+<p>And that&apos;s it! Hope you find something useful here. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 7.5.0 - A Few Small Improvements</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html"/>
@@ -268,60 +326,6 @@
 <p>The new options, described on the <a href="../knowledge-base/EPUB/html/import-and-export-your-notes.html">Import and Export Your Notes</a> page, will write out a single file for an entire Collection, concatenating all of the Notes in the Collection. </p>
 <h4 id="fixed-a-footnote-bug">Fixed a Footnote Bug</h4>
 <p><a href="../knowledge-base/EPUB/html/footnotes.html">Footnotes</a> were not being properly handled when they contained an automatic link (contained within angle brackets). This has now been corrected. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.7.0 - 6.7.4 - MathJax!</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.7.0-6.7.4-mathjax.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.7.0-6.7.4-mathjax.html</id>
-	  <published>2021-07-19T09:00:00Z</published>
-	  <updated>2021-07-19T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added support for Mathjax; enhanced Table of Contents generation for a single Note; enhanced Table of Contents generation for an entire Collection. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="added-mathjax-support">Added MathJax Support</h4>
-<p>Added an option to the Collection Preferences to enable <a href="../knowledge-base/EPUB/html/mathjax-support.html">MathJax Support</a>. This will be disabled by default. A copy of MathJax is now included within the app, so that Internet access is not required in order for MathJax to work. Various bugs in my MathJax implementation were straightened out in the 6.7.1 through 6.7.4 versions. </p>
-<h4 id="enhanced-table-of-contents-generation">Enhanced Table of Contents Generation</h4>
-<p>Enhanced Notenik&apos;s ability to <a href="../knowledge-base/EPUB/html/generate-a-note-table-of-contents.html">generate a Note Table of Contents</a>. Multiple syntax variations are now supported. Also added the ability to limit both the upper and lower range of heading level numbers to be included in the ToC. Also enhanced/corrected the code generated for a multi-level table of contents. </p>
-<h4 id="enhanced-collection-table-of-contents-generation">Enhanced Collection Table of Contents Generation</h4>
-<p>Added lowest- and highest-level options to the <a href="../knowledge-base/EPUB/html/generate-a-collection-table-of-contents.html">generate a Collection Table of Contents</a> command. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.6.0 - Generate a Web Book</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.6.0-generate-a-web-book.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.6.0-generate-a-web-book.html</id>
-	  <published>2021-07-14T09:00:00Z</published>
-	  <updated>2021-07-14T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added a new Markdown extension to generate a Table of Contents for an entire Collection; added another new Markdown extension to generate an Index for an entire Collection; added another new Markdown extensions to generate a Tags Outline; added a new command to Generate a Web Book from a Collection; updated the Notenik Knowledge Base to make use of all of these new features. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="added-markdown-extension-for-a-collection-table-of-contents">Added Markdown Extension for a Collection Table of Contents</h4>
-<p>Users may now insert a line containing <code>{:collection-toc}</code> into the body of a Note in order to have that line replaced with a complete Table of Contents for the entire Collection containing the Note. See <a href="../knowledge-base/EPUB/html/generate-a-collection-table-of-contents.html">Generate a Collection Table of Contents</a> for further details. </p>
-<h4 id="added-markdown-extension-for-a-collection-index">Added Markdown Extension for a Collection Index</h4>
-<p>Users may now insert a line containing <code>{:index}</code> into the Body of a Note in order to have that line replaced with an Index for the entire Collection containing the Note. See <a href="../knowledge-base/EPUB/html/generate-a-collection-index.html">Generate a Collection Index</a> for further details. </p>
-<h4 id="added-markdown-extension-for-a-tags-outline">Added Markdown Extension for a Tags Outline</h4>
-<p>Users may now insert a line containing <code>{:tags-outline}</code> into the Body of a Note in order to have that line replaced with an outline of all the Tags used in the entire Collection, along with the Notes bearing each Tag. See <a href="../knowledge-base/EPUB/html/generate-a-tags-outline.html">Generate a Tags Outline</a> for further details. </p>
-<h4 id="added-alternative-syntax-for-a-note-table-of-contents">Added Alternative Syntax for a Note Table of Contents</h4>
-<p>A Table of Contents for an individual Note can now be generated by inserting a line containing <code>{:toc}</code> (as an alternative to <code>[toc]</code>) into the Body of the Note. The alternative syntax was added for consistency with new Markdown extensions added in this release, and described above. See <a href="../knowledge-base/EPUB/html/generate-a-note-table-of-contents.html">Generate a Note Table of Contents</a> for further details. </p>
-<h4 id="added-generate-web-book-command">Added Generate Web Book Command</h4>
-<p>Added a new command beneath the <code>File</code> menu to <a href="../knowledge-base/EPUB/html/generate-a-web-book.html">Generate a Web Book</a>. This command can make use of the other new Notenik features listed above. </p>
 
 		  ]]>
 	  </content>

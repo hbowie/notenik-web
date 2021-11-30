@@ -19,10 +19,12 @@
     <item href="html/file-extension-for-your-notes.html" id="fileextensionforyournotes" media-type="text/html"/>
     <item href="html/menu-command-for-creating-a-new-collection.html" id="menucommandforcreatinganewcollection" media-type="text/html"/>
     <item href="html/tailor-collection-preferences.html" id="tailorcollectionpreferences" media-type="text/html"/>
+    <item href="html/streamlined-reading.html" id="streamlinedreading" media-type="text/html"/>
     <item href="html/common-tasks.html" id="commontasks" media-type="text/html"/>
     <item href="html/display-a-note.html" id="displayanote" media-type="text/html"/>
     <item href="html/tailor-the-display.html" id="tailorthedisplay" media-type="text/html"/>
     <item href="html/add-delete-and-edit-your-notes.html" id="adddeleteandedityournotes" media-type="text/html"/>
+    <item href="html/new-note-with-options.html" id="newnotewithoptions" media-type="text/html"/>
     <item href="html/view-your-notes-as-a-list.html" id="viewyournotesasalist" media-type="text/html"/>
     <item href="html/search.html" id="search" media-type="text/html"/>
     <item href="html/files-and-folders.html" id="filesandfolders" media-type="text/html"/>
@@ -100,7 +102,6 @@
     <item href="html/fields-for-sequencing-and-outlining.html" id="fieldsforsequencingandoutlining" media-type="text/html"/>
     <item href="html/seq.html" id="seq" media-type="text/html"/>
     <item href="html/level.html" id="level" media-type="text/html"/>
-    <item href="html/class.html" id="class" media-type="text/html"/>
     <item href="html/task-related-fields.html" id="taskrelatedfields" media-type="text/html"/>
     <item href="html/date.html" id="date" media-type="text/html"/>
     <item href="html/status.html" id="status" media-type="text/html"/>
@@ -114,6 +115,7 @@
     <item href="html/short-id.html" id="shortid" media-type="text/html"/>
     <item href="html/fields-useful-for-reviews-citations-and-quotations.html" id="fieldsusefulforreviewscitationsandquotations" media-type="text/html"/>
     <item href="html/artist.html" id="artist" media-type="text/html"/>
+    <item href="html/attribution.html" id="attribution" media-type="text/html"/>
     <item href="html/author.html" id="author" media-type="text/html"/>
     <item href="html/rating.html" id="rating" media-type="text/html"/>
     <item href="html/work-title.html" id="worktitle" media-type="text/html"/>
@@ -121,6 +123,8 @@
     <item href="html/work-link.html" id="worklink" media-type="text/html"/>
     <item href="html/general-purpose-fields.html" id="generalpurposefields" media-type="text/html"/>
     <item href="html/boolean.html" id="boolean" media-type="text/html"/>
+    <item href="html/class.html" id="class" media-type="text/html"/>
+    <item href="html/special-class-values.html" id="specialclassvalues" media-type="text/html"/>
     <item href="html/integer.html" id="integer" media-type="text/html"/>
     <item href="html/longtext.html" id="longtext" media-type="text/html"/>
     <item href="html/lookup.html" id="lookup" media-type="text/html"/>
@@ -203,6 +207,7 @@
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-7.7.0.html" id="version770" media-type="text/html"/>
     <item href="html/version-7.6.0.html" id="version760" media-type="text/html"/>
     <item href="html/version-7.5.0.html" id="version750" media-type="text/html"/>
     <item href="html/version-7.4.3.html" id="version743" media-type="text/html"/>
