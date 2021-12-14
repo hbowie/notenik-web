@@ -4,12 +4,48 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2021-11-30T09:00:00Z</updated>
+  <updated>2021-12-13T09:00:00Z</updated>
   <rights>Copyright © 2021, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</id>
+	  <published>2021-12-13T09:00:00Z</published>
+	  <updated>2021-12-13T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  This release includes a new Notenik Intro, the addition of a new, optional header line when publishing a Web Book, a new <code>Include Children</code> field useful when using outlining with streamlined reading, and a new Sort option to view things in pure Date order (irrespective of Status). 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>I received some requests recently for a kinder, gentler introduction to Notenik that would include some visuals, in addition to the words. </p>
+<p>So with this release a new &quot;Notenik Intro&quot; has been introduced. You can experience it in one of several ways: </p>
+<ul>
+<li>
+<p>As with the full <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">Notenik Knowledge Base</a>, the new <a href="https://notenik.app/intro/EPUB/html/welcome-to-notenik.html">Notenik Intro</a> has been published as a Web Book that is available on the <a href="https://notenik.app/index.html">Notenik.app</a> website. </p>
+</li>
+<li>
+<p>If you&apos;re firing up Notenik for the very first time, then you should see the Intro opened for you automatically, in edit mode, so that you can browse through it, but also edit it as desired to use as your first Notenik Collection, if you&apos;d like. </p>
+</li>
+<li>
+<p>Whenever you create a New Collection, you&apos;ll see the Notenik Intro available as a starting option. </p>
+</li>
+</ul>
+<p>With the addition of the new Intro, this meant that the Notenik.app website now contained two different Web Books: one for the full Knowledge Base, and one for the Intro. So I fixed something else that had been bugging me for a while, and added an optional header line that could be included when generating a Web Book. You can see this in action by viewing either (or both!) of these documents on the website. I&apos;ve used this top line to contain a book title on the left, and a link back to the full website on the right. I think you&apos;ll agree that the addition of this header line makes these web books easier to use. </p>
+<p>This release includes one more feature useful for Streamlined Reading and Web Books: a new field titled <code>Include Children</code>. I haven&apos;t made use of it yet for either of the Notenik Web Books, so I can&apos;t point you to an example, but it allows you to pull the children of a Note into the parent&apos;s Display, in cases where you might wish the child Notes to be separately addressable, but don&apos;t want to make the reader keep clicking on a &quot;Next&quot; link to advance from one to the next. </p>
+<p>And then, finally, I&apos;ve added a new Sort option that allows a Collection to be sorted by Date (without respect to Status) plus the Seq field (if used) followed by the Title field. I had a user request this feature, and it seemed reasonable to me, so there it is. </p>
+<p>Those are the changes in the latest release. Check them out in the app and, where you need more info to make sense of them, refer to the Notenik Knowledge Base for the details. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 7.7.0 - Class Templates are Introduced</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html"/>
@@ -301,31 +337,6 @@
 <p>If you have a Sequenced Collection, you can perform some basic resequencing by dragging and dropping a Note from one position to another on the List tab. Note that you must move the Drop indicator to a line above and/or below existing Notes in order to indicate a desired new position for an existing Note. Only the Note being dragged and dropped will have its Seq value changed. </p>
 <h4 id="improved-list-scrolling">Improved List Scrolling</h4>
 <p>In most cases, the list view on the left should now scroll to show the selected Note displayed on the right. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.8.0 - Short IDs and Concatenated Exports</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.8.0-short-ids-and-concatenated-exports.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.8.0-short-ids-and-concatenated-exports.html</id>
-	  <published>2021-08-02T09:00:00Z</published>
-	  <updated>2021-08-02T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added Short ID to the list of available field labels and types, to help with URL shortening; added new option to export an entire Collection into a single HTML or Markdown document; fixed a bug affecting automatic links in footnotes. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="added-short-id-field-label-and-type">Added Short ID Field Label and Type</h4>
-<p>Added <a href="../knowledge-base/EPUB/html/short-id.html">Short ID</a> to the list of available <a href="../knowledge-base/EPUB/html/field-labels-and-types.html">Field Labels and Types</a>. One potential use for such a field, when creating a website, would be to perform your own homegrown <a href="https://en.wikipedia.org/wiki/URL_shortening">URL shortening</a>, rather than using a third-party service.  </p>
-<h4 id="added-new-export-option-to-concatenate-html-or-markdown">Added New Export Option to Concatenate HTML or Markdown</h4>
-<p>The new options, described on the <a href="../knowledge-base/EPUB/html/import-and-export-your-notes.html">Import and Export Your Notes</a> page, will write out a single file for an entire Collection, concatenating all of the Notes in the Collection. </p>
-<h4 id="fixed-a-footnote-bug">Fixed a Footnote Bug</h4>
-<p><a href="../knowledge-base/EPUB/html/footnotes.html">Footnotes</a> were not being properly handled when they contained an automatic link (contained within angle brackets). This has now been corrected. </p>
 
 		  ]]>
 	  </content>

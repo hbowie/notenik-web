@@ -10,10 +10,10 @@
   }
 }
 a {
-    color: var(--link-color);
+  color: var(--link-color);
 }
 .search-results {
-    background-color: var(--highlight-color);
+  background-color: var(--highlight-color);
 }
 body { 
 	tab-size: 4; 
@@ -22,4 +22,8 @@ body {
 	font-size: 14pt;
 	max-width: 33em; 
 	margin: 0 auto; 
-	float: none; } 
+	float: none; 
+} 
+.alignLeft { float: left; }
+.alignRight { float: right; }
+.clearFloats { clear: both; }

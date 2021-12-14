@@ -1,0 +1,39 @@
+Title:  Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books
+
+Page Title: Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   13 Dec 2021
+
+Teaser: 
+
+This release includes a new Notenik Intro, the addition of a new, optional header line when publishing a Web Book, a new `Include Children` field useful when using outlining with streamlined reading, and a new Sort option to view things in pure Date order (irrespective of Status). 
+
+Body: 
+
+I received some requests recently for a kinder, gentler introduction to Notenik that would include some visuals, in addition to the words. 
+
+So with this release a new "Notenik Intro" has been introduced. You can experience it in one of several ways: 
+
++ As with the full [Notenik Knowledge Base][nkb], the new [Notenik Intro][intro] has been published as a Web Book that is available on the [Notenik.app][nnk] website. 
+
++ If you're firing up Notenik for the very first time, then you should see the Intro opened for you automatically, in edit mode, so that you can browse through it, but also edit it as desired to use as your first Notenik Collection, if you'd like. 
+
++ Whenever you create a New Collection, you'll see the Notenik Intro available as a starting option. 
+
+With the addition of the new Intro, this meant that the Notenik.app website now contained two different Web Books: one for the full Knowledge Base, and one for the Intro. So I fixed something else that had been bugging me for a while, and added an optional header line that could be included when generating a Web Book. You can see this in action by viewing either (or both!) of these documents on the website. I've used this top line to contain a book title on the left, and a link back to the full website on the right. I think you'll agree that the addition of this header line makes these web books easier to use. 
+
+This release includes one more feature useful for Streamlined Reading and Web Books: a new field titled `Include Children`. I haven't made use of it yet for either of the Notenik Web Books, so I can't point you to an example, but it allows you to pull the children of a Note into the parent's Display, in cases where you might wish the child Notes to be separately addressable, but don't want to make the reader keep clicking on a "Next" link to advance from one to the next. 
+
+And then, finally, I've added a new Sort option that allows a Collection to be sorted by Date (without respect to Status) plus the Seq field (if used) followed by the Title field. I had a user request this feature, and it seemed reasonable to me, so there it is. 
+
+Those are the changes in the latest release. Check them out in the app and, where you need more info to make sense of them, refer to the Notenik Knowledge Base for the details. And if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+[intro]: https://notenik.app/intro/EPUB/html/welcome-to-notenik.html
+
+[nkb]: https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html
+
+[nnk]: https://notenik.app/index.html

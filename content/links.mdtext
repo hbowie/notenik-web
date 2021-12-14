@@ -12,11 +12,17 @@ Type:   page
 
 Body: 
 
-For convenience, links to all Notenik-related resources external to this website have been gathered together on this page. 
+For convenience, links to all Notenik-related resources have been gathered together on this page. 
 
 ### App Download
 
-Notenik is available exclusively from the Mac App Store. Use the official button above or a [text link][download-app-store].
+Notenik is available exclusively from the Mac App Store. Use the official button at the top of this page, on the right, or this [text link][download-app-store].
+
+### Brief Intro
+
+If you're new to Notenik, you might want to start with this brief overview, including screenshots of the app in action. 
+
++ [On the Web][intro-web] -- View the Web Book stored on this site, and available for viewing within your Web browser. 
 
 ### Knowledge Base
 
@@ -61,6 +67,8 @@ All of the Notenik source code is available on GitHub, split between several dif
 [history-notenik]: notenik://help?id=versionhistory
 
 [history-web]: knowledge-base/EPUB/html/version-history.html
+
+[intro-web]: intro/EPUB/html/welcome-to-notenik.html
 
 [nkb-github]: https://github.com/hbowie/notenik-KB
 

@@ -5,6 +5,15 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books</title>
+	  <link>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</link>
+	  <guid>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</guid>
+	  <pubDate>Mon, 13 Dec 2021 12:00:00 -0700</pubDate>
+	  <description>
+		  This release includes a new Notenik Intro, the addition of a new, optional header line when publishing a Web Book, a new <code>Include Children</code> field useful when using outlining with streamlined reading, and a new Sort option to view things in pure Date order (irrespective of Status). 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 7.7.0 - Class Templates are Introduced</title>
 	  <link>https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html</link>
 	  <guid>https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html</guid>
@@ -83,15 +92,6 @@
 	  <pubDate>Thu, 12 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.8.0 - Short IDs and Concatenated Exports</title>
-	  <link>https://notenik.app/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</link>
-	  <guid>https://notenik.app/news/notenik-6.8.0-short-ids-and-concatenated-exports.html</guid>
-	  <pubDate>Mon, 02 Aug 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Added Short ID to the list of available field labels and types, to help with URL shortening; added new option to export an entire Collection into a single HTML or Markdown document; fixed a bug affecting automatic links in footnotes. 
 	  </description>
 	</item>
   </channel>

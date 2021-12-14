@@ -16,6 +16,10 @@ window.MathJax = {
 </script>
 </head>
 <body>
+<p class="alignLeft">Notenik Knowledge Base</p>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+
 <p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
 <p><strong>5.7 Generate a Web Book</strong></p>
 <p>Index: web book; </p>
@@ -23,13 +27,13 @@ window.MathJax = {
 <p>Here's the way this feature works. </p>
 <ol>
 <li>
-<p>Your Collection should have both <a href="seq.html">Seq</a> and <a href="level.html">Level</a> fields, in addition to the usual <a href="title.html">Title</a> and <a href="body.html">Body</a> fields. See <a href="assemble-an-outline.html">Assemble an Outline</a> for further useful info on how these two fields can be used together. </p>
+<p>Your Collection should have a  <a href="seq.html">Seq</a> field, and optionally a <a href="level.html">Level</a> field, in addition to the usual <a href="title.html">Title</a> and <a href="body.html">Body</a> fields. See <a href="assemble-an-outline.html">Assemble an Outline</a> for further useful info on how these two fields can be used together. </p>
 </li>
 <li>
-<p>All of the Notes in your Collection should be numbered sequentially using the Seq field, and the Level field should be used to indicate the depth of each Note within the overall hierarchy. </p>
+<p>All of the Notes in your Collection should be numbered sequentially using the Seq field. If the Level field is present, then it should be used to indicate the depth of each Note within the overall outline hierarchy. </p>
 </li>
 <li>
-<p>The first Note in the Collection should be given a Seq value of zero, or blank. The Title of this first Note should reflect the overall title for the resulting Web Book, and its Level field should have a value of 1. </p>
+<p>The first Note in the Collection should be given a Seq value of zero, or blank. The Title of this first Note should reflect the overall title for the resulting Web Book, and its Level field (if present) should have a value of 1. </p>
 </li>
 <li>
 <p>When the command is invoked, the user will be prompted to specify an output folder into which the generated files will be placed. </p>
@@ -51,6 +55,9 @@ window.MathJax = {
 </li>
 <li>
 <p>The first time a Web Book folder is populated, Notenik will create another EPUB sub-folder, this one named &#8216;css&#8217;, into which a file named &#8216;styles.css&#8217; will be placed, containing body formatting reflecting the current Display Fonts chosen within Notenik. Once this file has been created, though, Notenik will not replace it, so you are free to modify this CSS stylesheet in any way you would like. Each HTML page generated will link to this stylesheet for its formatting. </p>
+</li>
+<li>
+<p>If a file named &#8216;header.html&#8217; is found within the output folder, at the top level, then the HTML code within this file will be included at the top of each generated page. </p>
 </li>
 <li>
 <p>You may find other files within the output folder. These are generally intended to make it easier to publish the resulting output in the <a href="https://en.wikipedia.org/wiki/EPUB">EPUB</a> format, although the ability to generate such output from Notenik is still largely aspirational at this point. </p>

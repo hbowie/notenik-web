@@ -102,6 +102,7 @@
     <item href="html/fields-for-sequencing-and-outlining.html" id="fieldsforsequencingandoutlining" media-type="text/html"/>
     <item href="html/seq.html" id="seq" media-type="text/html"/>
     <item href="html/level.html" id="level" media-type="text/html"/>
+    <item href="html/include-children.html" id="includechildren" media-type="text/html"/>
     <item href="html/task-related-fields.html" id="taskrelatedfields" media-type="text/html"/>
     <item href="html/date.html" id="date" media-type="text/html"/>
     <item href="html/status.html" id="status" media-type="text/html"/>
@@ -207,6 +208,8 @@
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-7.8.0.html" id="version780" media-type="text/html"/>
+    <item href="html/version-7.7.1.html" id="version771" media-type="text/html"/>
     <item href="html/version-7.7.0.html" id="version770" media-type="text/html"/>
     <item href="html/version-7.6.0.html" id="version760" media-type="text/html"/>
     <item href="html/version-7.5.0.html" id="version750" media-type="text/html"/>
