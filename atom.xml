@@ -4,12 +4,38 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2021-12-13T09:00:00Z</updated>
-  <rights>Copyright © 2021, Herb Bowie</rights>
+  <updated>2022-01-12T09:00:00Z</updated>
+  <rights>Copyright © 2022, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 7.9.0 - Taking Outlining to a New Level</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.9.0-taking-outlining-to-a-new-level.html</id>
+	  <published>2022-01-04T09:00:00Z</published>
+	  <updated>2022-01-04T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  This release includes a powerful new function for renumbering the Seq values for a range of Notes, indent and outdent commands, and some improvements to Web Book publishing. With these new options, outlining in Notenik is more powerful than ever. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Notenik was never intended to be an outliner, but outlining has sort of gradually crept into the app over the last six months or so, starting with the <a href="https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html">introduction of the Level field in Notenik 6.3.0</a> . </p>
+<p>Version 7.9.0 adds a couple of finishing touches that were missing before. </p>
+<p>First of all, if you select a range of Notes (in a Collection sorted by <code>Seq + Title</code>, and containing Seq and Level fields), and then right-click to open the context menu for the List tab, you&apos;ll see an option that says <code>Modify Seq&amp;hellip;</code>. If you select this function, then you&apos;ll see a new window that allows you to specify a new Seq value for the first Note in the range. Click OK after entering that new value, and the entire range will be renumbered, with Notes following the first falling into line behind their leader, maintaining the same outline structure, but changing Seq and Level values appropriately. It&apos;s quite a powerful way to restructure an outline in Notenik, and brings Notenik a bit closer to having most of what one might need when working on an outline. </p>
+<p>Next, there are new <code>Indent</code> and <code>Outdent</code> commands to be found beneath the <code>Note</code> menu, with appropriate keyboard shortcuts. </p>
+<p>And then the way Web Book publication works has been improved. It&apos;s now just another export format, instead of a separate entry beneath the <code>File</code> menu. And, when generating a Web Book as a Site, the first page now gets written out twice, once with the file name of <code>index.html</code>. This removes the need for the ability to generate a redirection page for the first page, and so that option has been retired. </p>
+<p>There&apos;s now an impressive array of functionality in Notenik to aid in outlining, and I&apos;ve updated the page on outlining in the Knowledge Base to collect all of this together in one place: see <a href="https://notenik.app/knowledge-base/EPUB/html/using-notenik-as-an-outliner.html">Using Notenik as an Outliner</a> for all of the details. </p>
+<p>And that does it for the first release of 2022! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html"/>
@@ -308,35 +334,6 @@
 <p>Users can now add <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> fields to a Collection to reference information in another Collection. See the new <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> field type for further info. </p>
 <h4 id="improved-web-book-generation">Improved Web Book Generation</h4>
 <p>Files are no longer overwritten if they haven&apos;t changed. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 6.9.0 - Enhanced OPML Import and Export</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-6.9.0-enhanced-opml-import-and-export.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-6.9.0-enhanced-opml-import-and-export.html</id>
-	  <published>2021-08-12T09:00:00Z</published>
-	  <updated>2021-08-12T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="added-opml-import-function">Added OPML Import Function</h4>
-<p>An OPML Outline file can now be imported into Notenik. See <a href="../knowledge-base/EPUB/html/assemble-an-outline.html">Assemble an Outline</a> for more info. </p>
-<h4 id="enhanced-opml-export-function">Enhanced OPML Export Function</h4>
-<p>The export will now nest <code>outline</code> elements based on <a href="../knowledge-base/EPUB/html/level.html">Level</a> field values. </p>
-<h4 id="added-aposnew-childapos-option-to-list-tab-popup-menu">Added &apos;New Child&apos; Option to List tab Popup Menu</h4>
-<p>When using the Seq and Level fields, added an option to the Notes List popup menu to add a New Child to an existing Note, so that the Level field will be incremented by 1, and the Seq value will have a <code>.1</code> added to it. </p>
-<h4 id="added-ability-to-drag-and-drop-within-a-sequenced-list">Added Ability to Drag and Drop Within a Sequenced List</h4>
-<p>If you have a Sequenced Collection, you can perform some basic resequencing by dragging and dropping a Note from one position to another on the List tab. Note that you must move the Drop indicator to a line above and/or below existing Notes in order to indicate a desired new position for an existing Note. Only the Note being dragged and dropped will have its Seq value changed. </p>
-<h4 id="improved-list-scrolling">Improved List Scrolling</h4>
-<p>In most cases, the list view on the left should now scroll to show the selected Note displayed on the right. </p>
 
 		  ]]>
 	  </content>

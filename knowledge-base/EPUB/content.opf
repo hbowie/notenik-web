@@ -56,11 +56,11 @@
     <item href="html/copy-cut-paste-and-share-your-notes.html" id="copycutpasteandshareyournotes" media-type="text/html"/>
     <item href="html/import-and-export-your-notes.html" id="importandexportyournotes" media-type="text/html"/>
     <item href="html/import-from-omnifocus.html" id="importfromomnifocus" media-type="text/html"/>
+    <item href="html/export-as-web-book.html" id="exportaswebbook" media-type="text/html"/>
     <item href="html/export-to-notenik-vs-save-as-vs-move.html" id="exporttonotenikvssaveasvsmove" media-type="text/html"/>
     <item href="html/backup-to-zip.html" id="backuptozip" media-type="text/html"/>
     <item href="html/publish-to-medium.html" id="publishtomedium" media-type="text/html"/>
     <item href="html/favorites-to-html.html" id="favoritestohtml" media-type="text/html"/>
-    <item href="html/generate-a-web-book.html" id="generateawebbook" media-type="text/html"/>
     <item href="html/generating-reports.html" id="generatingreports" media-type="text/html"/>
     <item href="html/record-and-play-scripts.html" id="recordandplayscripts" media-type="text/html"/>
     <item href="html/mirror-your-notes.html" id="mirroryournotes" media-type="text/html"/>
@@ -203,11 +203,12 @@
     <item href="html/create-a-simple-collection-of-notes.html" id="createasimplecollectionofnotes" media-type="text/html"/>
     <item href="html/create-a-collection-of-web-bookmarks.html" id="createacollectionofwebbookmarks" media-type="text/html"/>
     <item href="html/make-a-to-do-list.html" id="makeatodolist" media-type="text/html"/>
-    <item href="html/assemble-an-outline.html" id="assembleanoutline" media-type="text/html"/>
+    <item href="html/using-notenik-as-an-outliner.html" id="usingnotenikasanoutliner" media-type="text/html"/>
     <item href="html/create-a-digital-commonplace-book-or-a-zettelkasten.html" id="createadigitalcommonplacebookorazettelkasten" media-type="text/html"/>
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-7.9.0.html" id="version790" media-type="text/html"/>
     <item href="html/version-7.8.0.html" id="version780" media-type="text/html"/>
     <item href="html/version-7.7.1.html" id="version771" media-type="text/html"/>
     <item href="html/version-7.7.0.html" id="version770" media-type="text/html"/>

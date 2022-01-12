@@ -1,0 +1,40 @@
+Title:  Notenik 7.9.0 - Taking Outlining to a New Level
+
+Page Title: Notenik 7.9.0 - Taking Outlining to a New Level
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   04 Jan 2022
+
+Teaser: 
+
+This release includes a powerful new function for renumbering the Seq values for a range of Notes, indent and outdent commands, and some improvements to Web Book publishing. With these new options, outlining in Notenik is more powerful than ever. 
+
+Body: 
+
+Notenik was never intended to be an outliner, but outlining has sort of gradually crept into the app over the last six months or so, starting with the [introduction of the Level field in Notenik 6.3.0][level-intro] . 
+
+Version 7.9.0 adds a couple of finishing touches that were missing before. 
+
+First of all, if you select a range of Notes (in a Collection sorted by `Seq + Title`, and containing Seq and Level fields), and then right-click to open the context menu for the List tab, you'll see an option that says `Modify Seq...`. If you select this function, then you'll see a new window that allows you to specify a new Seq value for the first Note in the range. Click OK after entering that new value, and the entire range will be renumbered, with Notes following the first falling into line behind their leader, maintaining the same outline structure, but changing Seq and Level values appropriately. It's quite a powerful way to restructure an outline in Notenik, and brings Notenik a bit closer to having most of what one might need when working on an outline. 
+
+Next, there are new `Indent` and `Outdent` commands to be found beneath the `Note` menu, with appropriate keyboard shortcuts. 
+
+And then the way Web Book publication works has been improved. It's now just another export format, instead of a separate entry beneath the `File` menu. And, when generating a Web Book as a Site, the first page now gets written out twice, once with the file name of `index.html`. This removes the need for the ability to generate a redirection page for the first page, and so that option has been retired. 
+
+There's now an impressive array of functionality in Notenik to aid in outlining, and I've updated the page on outlining in the Knowledge Base to collect all of this together in one place: see [Using Notenik as an Outliner][together] for all of the details. 
+
+And that does it for the first release of 2022! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+
+[intro]: https://notenik.app/intro/EPUB/html/welcome-to-notenik.html
+
+[level-intro]: https://notenik.app/news/notenik-6.3.0-leveraging-the-new-level-field.html
+
+[nkb]: https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html
+
+[nnk]: https://notenik.app/index.html
+
+[together]: https://notenik.app/knowledge-base/EPUB/html/using-notenik-as-an-outliner.html

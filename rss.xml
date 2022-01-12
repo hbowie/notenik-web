@@ -5,6 +5,15 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 7.9.0 - Taking Outlining to a New Level</title>
+	  <link>https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html</link>
+	  <guid>https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html</guid>
+	  <pubDate>Tue, 04 Jan 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  This release includes a powerful new function for renumbering the Seq values for a range of Notes, indent and outdent commands, and some improvements to Web Book publishing. With these new options, outlining in Notenik is more powerful than ever. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books</title>
 	  <link>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</link>
 	  <guid>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</guid>
@@ -83,15 +92,6 @@
 	  <pubDate>Fri, 27 Aug 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  A field in one Collection can now reference information in other Collections. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 6.9.0 - Enhanced OPML Import and Export</title>
-	  <link>https://notenik.app/news/notenik-6.9.0-enhanced-opml-import-and-export.html</link>
-	  <guid>https://notenik.app/news/notenik-6.9.0-enhanced-opml-import-and-export.html</guid>
-	  <pubDate>Thu, 12 Aug 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Added several new options to better support outlining: OPML Export, ability to add a new Child to an existing Note, plus ability to drag and drop within a sequenced list; fixed list scrolling so that the Note highlighted and visible on the left will generally match the Note currently selected on the right. 
 	  </description>
 	</item>
   </channel>

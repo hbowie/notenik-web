@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Generate a Web Book</title>
+<title>Export as Web Book</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/styles.css" type="text/css" />
 <script> 
@@ -20,14 +20,14 @@ window.MathJax = {
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
 
-<p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
-<p><strong>5.7 Generate a Web Book</strong></p>
+<p>5.2 <a href="import-and-export-your-notes.html">Import and Export Your Notes</a>&nbsp;&#8593;</p>
+<h1>5.2.2 Export as Web Book</h1>
 <p>Index: web book; </p>
-<p>The command <code>Generate Web Book</code>, found beneath the <code>File</code> menu, will transform an entire Collection into a series of HTML pages that can be read as if they were chapters in a book. </p>
+<p>The <code>Web Book</code> export format will transform an entire Collection into a series of HTML pages that can be read as if they were chapters in a book. </p>
 <p>Here's the way this feature works. </p>
 <ol>
 <li>
-<p>Your Collection should have a  <a href="seq.html">Seq</a> field, and optionally a <a href="level.html">Level</a> field, in addition to the usual <a href="title.html">Title</a> and <a href="body.html">Body</a> fields. See <a href="assemble-an-outline.html">Assemble an Outline</a> for further useful info on how these two fields can be used together. </p>
+<p>Your Collection should have a  <a href="seq.html">Seq</a> field, and optionally a <a href="level.html">Level</a> field, in addition to the usual <a href="title.html">Title</a> and <a href="body.html">Body</a> fields. See <a href="using-notenik-as-an-outliner.html">Using Notenik as an Outliner</a> for further useful info on how these two fields can be used together. </p>
 </li>
 <li>
 <p>All of the Notes in your Collection should be numbered sequentially using the Seq field. If the Level field is present, then it should be used to indicate the depth of each Note within the overall outline hierarchy. </p>
@@ -48,7 +48,7 @@ window.MathJax = {
 <p><a href="wiki-style-links.html">Wiki Style Links</a> will be converted to relative web links, so that the intent of the original links will be preserved. (In other words, note-to-note links will still work.) </p>
 </li>
 <li>
-<p>Each Note will be formatted for streamlined reading. (You are again referred to the instructions on how to <a href="assemble-an-outline.html">Assemble an Outline</a> for further explanation of what this means.) </p>
+<p>Each Note will be formatted for streamlined reading. (You are again referred to the instructions on how to <a href="using-notenik-as-an-outliner.html">Using Notenik as an Outliner</a> for further explanation of what this means.) </p>
 </li>
 <li>
 <p>As with Streamlined Reading within Notenik, each page will have a link to its parent in the hierarchy, as well as links to any children. Each page will also end with a link to the next page in the Collection. </p>
@@ -67,8 +67,8 @@ window.MathJax = {
 </li>
 </ol>
 <p>For an example of a Web Book, see the <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">one on the Notenik.app website</a> that was generated from this Notenik Knowledge Base itself. </p>
-<p>Happy Web Book publishing! </p>
+<p>If you select the option to export to a Web Book as a Site, then the HTML pages will be generated at the top of the output folder, instead of within an <code>EPUB</code> folder, and the other EPUB-specific outputs will be skipped. Additionally, the first page of the &#8216;book&#8217; will be written twice, once with a file name of <code>index.html</code>. </p>
 <hr>
-<p>Next: <a href="generating-reports.html">Generating Reports</a></p>
+<p>Next: <a href="export-to-notenik-vs-save-as-vs-move.html">Export to Notenik vs. Save As vs. Move</a></p>
 </body>
 </html>
