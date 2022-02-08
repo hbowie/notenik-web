@@ -4,12 +4,100 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2022-01-12T09:00:00Z</updated>
+  <updated>2022-02-05T09:00:00Z</updated>
   <rights>Copyright © 2022, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 8.2.0 - Setting the Table for New Users</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.2.0-setting-the-table-for-new-users.html</id>
+	  <published>2022-01-28T09:00:00Z</published>
+	  <updated>2022-01-28T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added Markdown support for the creation of tables, using pipes and dashes; added a new command beneath the File menu to Open the current Collection&apos;s Folder in the macOS FInder; improved editing of Index fields; added new command to Clean a Link, removing common tracking parameters; improved the readability of the Keyboard Shortcuts Reference page in the Knowledge Base; added a new Markdown Cheat Sheet. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>For me, Notenik has always been an adventure as much as an application. </p>
+<p>I&apos;m currently reading <em><a href="https://www.amortowles.com/the-lincoln-highway-about-the-book/">The Lincoln Highway</a></em> by Amor Towles, a tale in which one surprise after another awaits our adventurers, who initially start out with such simple and straightforward and highly achievable intentions, only to find their plans and wants and needs changing beyond recognition almost as soon as they set out. </p>
+<p>Yes, I think to myself, Notenik has been a bit like that. </p>
+<p>Take Notenik&apos;s Markdown parser, for example. In the beginning there wasn&apos;t one. And I had no plans to write one. After all, two very accomplished open-source Markdown parsers already existed, so I could use one of them. Even better, I could allow the user to choose which one they wanted to use! And I could work on other things. </p>
+<p>But then I reached a point at which&hellip; I wanted to be able to link from one Note to another, wiki-style. And not only was this not part of the original Markdown syntax, it wasn&apos;t even widely available as a common extension. And so, I began to think&hellip; maybe I should write my own? </p>
+<p>And so I did. So now Notenik lets you choose between three parsers. But only the one allows inter-Note linking. </p>
+<p>But another part of the adventure has been feature requests from users. Someone wanted to know why I didn&apos;t support Mathjax, for people who wanted to do maths. Well, the last time I wrote anything that would require Mathjax was in my sophomore year of college&hellip; which was a <em>long</em> time ago. So I ignored that request for a while. But then I received an email from a Math professor in England who really, seriously, wanted Mathjax support. And who was willing to work with me until I got it right. </p>
+<p>And so I took a little side trip in order to incorporate Mathjax into Notenik. </p>
+<p>And then various people requested other Markdown extensions: footnotes, citations, fenced code blocks, etc. And while I had never planned to implement any of these, as each new request came in, I thought&hellip; &quot;Well, it can&apos;t be <em>that</em> hard, let me give it a go,&quot; and so each new extension became another chapter in the evolving saga. </p>
+<p>All of which is relevant, because a kind user on the Mac App Store recently left a nice review of my app, which included a feature request for Markdown tables. And, of course, I knew that this was a common Markdown extension that I had so far ignored, and thought would be more trouble than it was worth, but then I started thinking about it, and then thoughts turned into code, until now, with the latest release of Notenik, support for making tables from pipes and dashes is now supported. </p>
+<p>(Now I do have to admit that the same reviewer also said that, of the three parsers, only Down functions correctly. Unfortunately, he didn&apos;t give me anything else to go on, so I&apos;m not sure what sort of Markdown coding wasn&apos;t being parsed correctly by the Notenik parser. If he, or anyone else, has any problems that they&apos;d like to report, then I&apos;m always open to hearing problem reports via email.) </p>
+<p>Of course, there are also other improvements in the latest release (and the one before that, which I never got around to doing a write-up on, and so will include here). </p>
+<p>Let&apos;s see, in no particular order&hellip; </p>
+<ul>
+<li>
+<p>I used the new table formatting feature to reformat the keyboard shortcuts page into a table, to make it more readable. </p>
+</li>
+<li>
+<p>I also added a Markdown cheat sheet to the Knowledge base, along with a Help menu item to quickly pull it up, for those who have not yet memorized the basic syntax. </p>
+</li>
+<li>
+<p>Added a command to the <code>File</code> menu to open the current Collection folder in the macOS Finder. </p>
+</li>
+<li>
+<p>Expanded the size of the Edit widget for fields of type <code>Index</code>. </p>
+</li>
+<li>
+<p>Borrowed some <a href="https://github.com/rknightuk/TrackerZapper">code</a> from <a href="https://rknight.me">Robb Knight</a> to cobble together a new feature allowing you to clean a Link, stripping out various common tracking parameters, leaving you with the part of the URL actually needed to get you to your intended destination. </p>
+</li>
+<li>
+<p>You can now use the include style of <code>quote-body</code> to include only the body of a second Note, and format it as a <code>blockquote</code>. </p>
+</li>
+<li>
+<p>Cleaned up a couple of cases where Notes were showing up in lists, but didn&apos;t really need to be there. </p>
+</li>
+<li>
+<p>Included the Seq value on the Tags tab, for Collections sorted by Seq. </p>
+</li>
+<li>
+<p>And, finally, straightened out some issues with model Collections that were hampering users&apos; abilities to create new Collections, especially when launching Notenik for the first time.  </p>
+</li>
+</ul>
+<p>And that&apos;s it for the latest Notenik adventures! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.2.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 8.0.0 - Including Several Neat Enhancements</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.0.0-including-several-neat-enhancements.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.0.0-including-several-neat-enhancements.html</id>
+	  <published>2022-01-18T09:00:00Z</published>
+	  <updated>2022-01-18T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added new Include command within the Notenik Markdown parser, to include a file, or another Note; expanded the Author Name Variable Modifierer to allow first name first to be extracted; added a new command and keyboard shortcut to quickly toggle the Streamlined Reading mode; added a new command to format a special Notenik URL to open the current Collection at a later date; added a new Merge Template Variable Modifier to perform a very rudimentary conversion of HTML to Markdown. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>The big news in this release is the ability to use an <code>include</code> command within the Body of a Note, to include a second Note or separate file into the Display of the first Note. If you&apos;re including a second Note, then you have the option to specify a style of inclusion: just the Body of the second Note, or the entire Note, or a formatted quotation. (And, of course, if you need to, you can nest your includes.) </p>
+<p>I implemented a Custom URL scheme for Notenik some time ago, and provided a handy way to copy a URL to open a specific Note, but neglected to provide anything similar to generate a URL to open the Collection itself, without specifying a particular Note. This oversight has now been corrected with a new command beneath the <code>Collection</code> menu: <code>Copy Notenik URL for Collection</code>. </p>
+<p>If you&apos;re using Streamlined Reading, it can often be handy to switch back and forth between that mode and the normal, unstreamlined, display, showing all fields with non-blank values. There&apos;s now a new command and keyboard shortcut to allow you to toggle the Streamlined mode on and off, avoiding repeated trips to the Collection Preferences. Again, look beneath the <code>Collection</code> menu to find this new time-saver. </p>
+<p>And, for those of you who use Merge Templates, there are a couple of minor new enhancements: the ability to format a person&apos;s name in a first name first fashion, and a very rudimentary ability to convert HTML to Markdown. </p>
+<p>And that does it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.0.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 7.9.0 - Taking Outlining to a New Level</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html"/>
@@ -275,65 +363,6 @@
 <p>But now it can! </p>
 <h4 id="enjoy">Enjoy!</h4>
 <p>Hope you enjoy the new release! If you have questions or problems or suggestions for further improvements, just send me an email at <a href="mailto:hbowie@notenik.app">hbowie@notenik.app</a>, and I&apos;ll get back to you as quickly as I can. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.1.0 - Taking Dark Mode All the Way</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.1.0-taking-dark-mode-all-the-way.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.1.0-taking-dark-mode-all-the-way.html</id>
-	  <published>2021-08-31T09:00:00Z</published>
-	  <updated>2021-08-31T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Notenik has mostly supported Dark Mode from the beginning &#8211; everywhere except on the Display tab, where the default was still to show black text on a white background. Now the Display Tab will follow your light/dark preferences, along with the rest of the App. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <h4 id="turning-to-the-dark-side-on-the-display-tab">Turning to the Dark Side on the Display Tab</h4>
-<p>I was kind of a late adopter of the <a href="https://support.apple.com/guide/mac-help/use-a-light-or-dark-appearance-mchl52e1c2d2/mac">Dark Appearance Setting on the Mac</a>. </p>
-<p>At first I just didn&apos;t see the point. </p>
-<p>But I kept trying it out until it started to grow on me a bit. </p>
-<p>Until now I&apos;m using it all the time, and turning on the light setting now seems a bit of a shock. </p>
-<p>Notenik has mostly supported Dark Mode from the beginning &#8211; everywhere except on the Display tab, where the default was still to show black text on a white background. </p>
-<p>The reason for this was a little bit complex. I&apos;m using the Mac&apos;s WebKit API to format the Display tab, which means I&apos;m essentially formatting each Note display as a Web page &#8211; and I hadn&apos;t yet incorporated the latest HTML to allow the page to follow the user&apos;s wishes in terms of the light/dark setting. </p>
-<p>But Notenik 7.1.0 fixes all that. As a bonus, when you use one of Notenik&apos;s functions to generate an actual Web page from a single Note or a Collection, the generated pages will also include the code to respect the user&apos;s preferences. </p>
-<p>I think the results look pretty sharp, if I do say so myself. </p>
-<p>(Of course, you can still supply your own CSS if you&apos;d prefer different colors.) </p>
-<h4 id="highlighting-search-text-matches">Highlighting Search Text Matches</h4>
-<p>Another new feature in 7.1.0 that also shows up on the Display tab is highlighting of matching text when you execute a Search function. Previously Notenik would take you to the Note(s) containing the text you were searching for, but would not show you where the text was found. For a brief Note, this wasn&apos;t usually a problem, but for longer Notes, it could be a bit frustrating to try to figure out where the matching text had been found. With 7.1.0, the matching text will be clearly highlighted. </p>
-<h4 id="generating-wikipedia-links">Generating Wikipedia Links</h4>
-<p>The final little goodie in this release is the ability to automatically populate a Link field by taking the Title of a Note and then transforming it into a Link to the English Wikipedia page on that topic. Not everyone will find this feature useful, but if you have a Collection of your favorite Authors, for example, it can be handy for populating a Link field for each author. You can find this new function within the Note menu, about halfway down the list. </p>
-<h4 id="enjoy">Enjoy!</h4>
-<p>Hope you enjoy the new release! If you have questions or problems or suggestions for further improvements, just send me an email at <a href="mailto:hbowie@notenik.app">hbowie@notenik.app</a>, and I&apos;ll get back to you as quickly as I can. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.0.0 - The Introduction of Lookup Fields</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.0.0-the-introduction-of-lookup-fields.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.0.0-the-introduction-of-lookup-fields.html</id>
-	  <published>2021-08-27T09:00:00Z</published>
-	  <updated>2021-08-27T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  A field in one Collection can now reference information in other Collections. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Released on August 27, 2021 </p>
-<h4 id="addition-of-a-lookup-field-type">Addition of a Lookup Field Type</h4>
-<p>Users can now add <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> fields to a Collection to reference information in another Collection. See the new <a href="../knowledge-base/EPUB/html/lookup.html">Lookup</a> field type for further info. </p>
-<h4 id="improved-web-book-generation">Improved Web Book Generation</h4>
-<p>Files are no longer overwritten if they haven&apos;t changed. </p>
 
 		  ]]>
 	  </content>

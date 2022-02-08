@@ -1,0 +1,66 @@
+Title:  Notenik 8.2.0 - Setting the Table for New Users
+
+Page Title: Notenik 8.2.0 - Setting the Table for New Users
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   28 Jan 2022
+
+Teaser: 
+
+Added Markdown support for the creation of tables, using pipes and dashes; added a new command beneath the File menu to Open the current Collection's Folder in the macOS FInder; improved editing of Index fields; added new command to Clean a Link, removing common tracking parameters; improved the readability of the Keyboard Shortcuts Reference page in the Knowledge Base; added a new Markdown Cheat Sheet. 
+
+
+Body: 
+
+For me, Notenik has always been an adventure as much as an application. 
+
+I'm currently reading *[The Lincoln Highway][towles-21]* by Amor Towles, a tale in which one surprise after another awaits our adventurers, who initially start out with such simple and straightforward and highly achievable intentions, only to find their plans and wants and needs changing beyond recognition almost as soon as they set out. 
+
+Yes, I think to myself, Notenik has been a bit like that. 
+
+Take Notenik's Markdown parser, for example. In the beginning there wasn't one. And I had no plans to write one. After all, two very accomplished open-source Markdown parsers already existed, so I could use one of them. Even better, I could allow the user to choose which one they wanted to use! And I could work on other things. 
+
+But then I reached a point at which... I wanted to be able to link from one Note to another, wiki-style. And not only was this not part of the original Markdown syntax, it wasn't even widely available as a common extension. And so, I began to think... maybe I should write my own? 
+
+And so I did. So now Notenik lets you choose between three parsers. But only the one allows inter-Note linking. 
+
+But another part of the adventure has been feature requests from users. Someone wanted to know why I didn't support Mathjax, for people who wanted to do maths. Well, the last time I wrote anything that would require Mathjax was in my sophomore year of college... which was a *long* time ago. So I ignored that request for a while. But then I received an email from a Math professor in England who really, seriously, wanted Mathjax support. And who was willing to work with me until I got it right. 
+
+And so I took a little side trip in order to incorporate Mathjax into Notenik. 
+
+And then various people requested other Markdown extensions: footnotes, citations, fenced code blocks, etc. And while I had never planned to implement any of these, as each new request came in, I thought... "Well, it can't be *that* hard, let me give it a go," and so each new extension became another chapter in the evolving saga. 
+
+All of which is relevant, because a kind user on the Mac App Store recently left a nice review of my app, which included a feature request for Markdown tables. And, of course, I knew that this was a common Markdown extension that I had so far ignored, and thought would be more trouble than it was worth, but then I started thinking about it, and then thoughts turned into code, until now, with the latest release of Notenik, support for making tables from pipes and dashes is now supported. 
+
+(Now I do have to admit that the same reviewer also said that, of the three parsers, only Down functions correctly. Unfortunately, he didn't give me anything else to go on, so I'm not sure what sort of Markdown coding wasn't being parsed correctly by the Notenik parser. If he, or anyone else, has any problems that they'd like to report, then I'm always open to hearing problem reports via email.)
+
+Of course, there are also other improvements in the latest release (and the one before that, which I never got around to doing a write-up on, and so will include here). 
+
+Let's see, in no particular order...
+
++ I used the new table formatting feature to reformat the keyboard shortcuts page into a table, to make it more readable. 
+
++ I also added a Markdown cheat sheet to the Knowledge base, along with a Help menu item to quickly pull it up, for those who have not yet memorized the basic syntax. 
+
++ Added a command to the `File` menu to open the current Collection folder in the macOS Finder. 
+
++ Expanded the size of the Edit widget for fields of type `Index`.
+
++ Borrowed some [code](https://github.com/rknightuk/TrackerZapper) from [Robb Knight](https://rknight.me) to cobble together a new feature allowing you to clean a Link, stripping out various common tracking parameters, leaving you with the part of the URL actually needed to get you to your intended destination. 
+
++ You can now use the include style of `quote-body` to include only the body of a second Note, and format it as a `blockquote`. 
+
++ Cleaned up a couple of cases where Notes were showing up in lists, but didn't really need to be there. 
+
++ Included the Seq value on the Tags tab, for Collections sorted by Seq. 
+
++ And, finally, straightened out some issues with model Collections that were hampering users' abilities to create new Collections, especially when launching Notenik for the first time.  
+
+And that's it for the latest Notenik adventures! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Version History entry](https://notenik.app/knowledge-base/EPUB/html/version-8.2.0.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.
+
+[towles-21]: https://www.amortowles.com/the-lincoln-highway-about-the-book/

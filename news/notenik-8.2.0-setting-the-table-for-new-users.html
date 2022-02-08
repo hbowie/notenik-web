@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Notenik Notenik 8.2.0 - Setting the Table for New Users</title>
+		<meta name="description" content="The Notenik App for the Mac" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Start of include file head-links.html -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../fonts/equity_cb.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/concourse_t3.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- End of include file head-links.html -->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Start of include file header.html -->
+			<header>
+				<div id="header-left">
+					<div id="header-logo-and-name">
+						<div id="header-logo">
+							<a href="../index.html">
+								<img class="header-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
+							</a>
+						</div>
+						<div id="header-title">
+							Notenik
+						</div>
+					</div>
+					<div id="header-slogan">
+						Do More With Your Notes
+					</div>
+				</div>
+				<div id="header-right">
+				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+				</div>
+			</header>
+			<!-- End of include file header.html -->
+
+
+			<!-- Start of include file nav-top.html -->
+			<nav id="nav-top">
+				<a class="another-page" href="../index.html">
+					Home
+				</a>
+				<a class="another-page" href="../links.html">
+					Links
+				</a>
+				<a class="another-page" href="../news.html">
+					News
+				</a>
+				<a class="another-page" href="../docs.html">
+					Docs
+				</a>
+			</nav>
+			<!-- End of include file nav-top.html -->
+
+			<!-- Start of include file nav-bottom.html -->
+			<nav id="nav-bottom">
+				<a class="another-page" href="../about.html">
+					About
+				</a>
+				<a class="another-page" href="../connect.html">
+					Connect
+				</a>
+				<a class="another-page" href="../license.html">
+					License
+				</a>
+				<a class="another-page" href="../privacy.html">
+					Privacy
+				</a>
+				<a class="another-page" href="../support.html">
+					Support
+				</a>
+			</nav>
+			<!-- End of include file nav-bottom.html -->
+
+			<main id="main">
+				<h3>Notenik 8.2.0 - Setting the Table for New Users</h3>
+				<p class="news-date">Posted on 28 Jan, 2022</p>
+
+				<div id="content">
+					<p>For me, Notenik has always been an adventure as much as an application. </p>
+<p>I'm currently reading <em><a href="https://www.amortowles.com/the-lincoln-highway-about-the-book/">The Lincoln Highway</a></em> by Amor Towles, a tale in which one surprise after another awaits our adventurers, who initially start out with such simple and straightforward and highly achievable intentions, only to find their plans and wants and needs changing beyond recognition almost as soon as they set out. </p>
+<p>Yes, I think to myself, Notenik has been a bit like that. </p>
+<p>Take Notenik's Markdown parser, for example. In the beginning there wasn't one. And I had no plans to write one. After all, two very accomplished open-source Markdown parsers already existed, so I could use one of them. Even better, I could allow the user to choose which one they wanted to use! And I could work on other things. </p>
+<p>But then I reached a point at which&#8230; I wanted to be able to link from one Note to another, wiki-style. And not only was this not part of the original Markdown syntax, it wasn't even widely available as a common extension. And so, I began to think&#8230; maybe I should write my own? </p>
+<p>And so I did. So now Notenik lets you choose between three parsers. But only the one allows inter-Note linking. </p>
+<p>But another part of the adventure has been feature requests from users. Someone wanted to know why I didn't support Mathjax, for people who wanted to do maths. Well, the last time I wrote anything that would require Mathjax was in my sophomore year of college&#8230; which was a <em>long</em> time ago. So I ignored that request for a while. But then I received an email from a Math professor in England who really, seriously, wanted Mathjax support. And who was willing to work with me until I got it right. </p>
+<p>And so I took a little side trip in order to incorporate Mathjax into Notenik. </p>
+<p>And then various people requested other Markdown extensions: footnotes, citations, fenced code blocks, etc. And while I had never planned to implement any of these, as each new request came in, I thought&#8230; &#8220;Well, it can't be <em>that</em> hard, let me give it a go,&#8221; and so each new extension became another chapter in the evolving saga. </p>
+<p>All of which is relevant, because a kind user on the Mac App Store recently left a nice review of my app, which included a feature request for Markdown tables. And, of course, I knew that this was a common Markdown extension that I had so far ignored, and thought would be more trouble than it was worth, but then I started thinking about it, and then thoughts turned into code, until now, with the latest release of Notenik, support for making tables from pipes and dashes is now supported. </p>
+<p>(Now I do have to admit that the same reviewer also said that, of the three parsers, only Down functions correctly. Unfortunately, he didn't give me anything else to go on, so I'm not sure what sort of Markdown coding wasn't being parsed correctly by the Notenik parser. If he, or anyone else, has any problems that they'd like to report, then I'm always open to hearing problem reports via email.) </p>
+<p>Of course, there are also other improvements in the latest release (and the one before that, which I never got around to doing a write-up on, and so will include here). </p>
+<p>Let's see, in no particular order&#8230; </p>
+<ul>
+<li>
+<p>I used the new table formatting feature to reformat the keyboard shortcuts page into a table, to make it more readable. </p>
+</li>
+<li>
+<p>I also added a Markdown cheat sheet to the Knowledge base, along with a Help menu item to quickly pull it up, for those who have not yet memorized the basic syntax. </p>
+</li>
+<li>
+<p>Added a command to the <code>File</code> menu to open the current Collection folder in the macOS Finder. </p>
+</li>
+<li>
+<p>Expanded the size of the Edit widget for fields of type <code>Index</code>. </p>
+</li>
+<li>
+<p>Borrowed some <a href="https://github.com/rknightuk/TrackerZapper">code</a> from <a href="https://rknight.me">Robb Knight</a> to cobble together a new feature allowing you to clean a Link, stripping out various common tracking parameters, leaving you with the part of the URL actually needed to get you to your intended destination. </p>
+</li>
+<li>
+<p>You can now use the include style of <code>quote-body</code> to include only the body of a second Note, and format it as a <code>blockquote</code>. </p>
+</li>
+<li>
+<p>Cleaned up a couple of cases where Notes were showing up in lists, but didn't really need to be there. </p>
+</li>
+<li>
+<p>Included the Seq value on the Tags tab, for Collections sorted by Seq. </p>
+</li>
+<li>
+<p>And, finally, straightened out some issues with model Collections that were hampering users' abilities to create new Collections, especially when launching Notenik for the first time.  </p>
+</li>
+</ul>
+<p>And that's it for the latest Notenik adventures! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.2.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+				</div>
+
+				<hr />
+
+				<p>Earlier News:
+					<a href="notenik-8.0.0-including-several-neat-enhancements.html">
+						Notenik 8.0.0 - Including Several Neat Enhancements
+					</a>
+				</p>
+
+			</main>
+
+			<!-- Start of include file footer.html -->
+			<footer id="footer">
+        <hr />
+Copyright &copy; 2019 - 2022 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+      </footer>
+			<!-- End of include file footer.html -->
+		</div>  <!-- end of wrapper div -->
+	</body>
+</html>

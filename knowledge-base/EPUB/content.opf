@@ -8,7 +8,7 @@
   <manifest>
     <item href="html/notenik-knowledge-base.html" id="notenikknowledgebase" media-type="text/html"/>
     <item href="html/basics.html" id="basics" media-type="text/html"/>
-    <item href="html/guiding-principle.html" id="guidingprinciple" media-type="text/html"/>
+    <item href="html/guiding-principles.html" id="guidingprinciples" media-type="text/html"/>
     <item href="html/overview.html" id="overview" media-type="text/html"/>
     <item href="html/introduction-to-the-mac-user-interface.html" id="introductiontothemacuserinterface" media-type="text/html"/>
     <item href="html/creating-and-tailoring-a-collection-of-notes.html" id="creatingandtailoringacollectionofnotes" media-type="text/html"/>
@@ -77,14 +77,17 @@
     <item href="html/citations.html" id="citations" media-type="text/html"/>
     <item href="html/fenced-code-blocks.html" id="fencedcodeblocks" media-type="text/html"/>
     <item href="html/definition-lists.html" id="definitionlists" media-type="text/html"/>
+    <item href="html/tables.html" id="tables" media-type="text/html"/>
     <item href="html/mathjax-support.html" id="mathjaxsupport" media-type="text/html"/>
     <item href="html/generate-a-note-table-of-contents.html" id="generateanotetableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-table-of-contents.html" id="generateacollectiontableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-index.html" id="generateacollectionindex" media-type="text/html"/>
     <item href="html/generate-a-tags-outline.html" id="generateatagsoutline" media-type="text/html"/>
+    <item href="html/include-a-note-or-file.html" id="includeanoteorfile" media-type="text/html"/>
     <item href="html/no-email-obfuscation.html" id="noemailobfuscation" media-type="text/html"/>
     <item href="html/no-backticks-style-quotes.html" id="nobackticksstylequotes" media-type="text/html"/>
     <item href="html/word-and-character-counts.html" id="wordandcharactercounts" media-type="text/html"/>
+    <item href="html/markdown-cheat-sheet.html" id="markdowncheatsheet" media-type="text/html"/>
     <item href="html/field-labels-and-types.html" id="fieldlabelsandtypes" media-type="text/html"/>
     <item href="html/what-we-mean-by-label-and-type.html" id="whatwemeanbylabelandtype" media-type="text/html"/>
     <item href="html/functionality-associated-with-field-types.html" id="functionalityassociatedwithfieldtypes" media-type="text/html"/>
@@ -168,6 +171,7 @@
     <item href="html/keep-characters-on-the-right-r.html" id="keepcharactersontherightr" media-type="text/html"/>
     <item href="html/readable-file-name-r.html" id="readablefilenamer" media-type="text/html"/>
     <item href="html/summarize-s.html" id="summarizes" media-type="text/html"/>
+    <item href="html/html-to-markdown-t.html" id="htmltomarkdownt" media-type="text/html"/>
     <item href="html/uppercase-modifier-u.html" id="uppercasemodifieru" media-type="text/html"/>
     <item href="html/variance-v.html" id="variancev" media-type="text/html"/>
     <item href="html/wiki-style-links-w.html" id="wikistylelinksw" media-type="text/html"/>
@@ -208,6 +212,11 @@
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-8.2.2.html" id="version822" media-type="text/html"/>
+    <item href="html/version-8.2.1.html" id="version821" media-type="text/html"/>
+    <item href="html/version-8.2.0.html" id="version820" media-type="text/html"/>
+    <item href="html/version-8.1.0.html" id="version810" media-type="text/html"/>
+    <item href="html/version-8.0.0.html" id="version800" media-type="text/html"/>
     <item href="html/version-7.9.0.html" id="version790" media-type="text/html"/>
     <item href="html/version-7.8.0.html" id="version780" media-type="text/html"/>
     <item href="html/version-7.7.1.html" id="version771" media-type="text/html"/>
