@@ -21,7 +21,7 @@ window.MathJax = {
 <hr class="clearFloats" />
 
 <p>11 <a href="version-history.html">Version History</a>&nbsp;&#8593;</p>
-<h1>11.8 Version 7.7.1</h1>
+<h1>11.9 Version 7.7.1</h1>
 <p>Date: 05 Dec 2021</p>
 <h5 id="straighted-out-class-pick-from-conflicts">Straighted Out Class/Pick-From Conflicts</h5>
 <p>I had originally implemented <code>Class</code> as a <code>pick-from</code> field, and it turned out that, whenever Collection Preferences were updated, Notenik was still writing out a field titled <code>Class</code> as a <code>pick-from</code> field when saving the Collection template file. I've fixed this error, and also implemented some self-healing code to coerce the field type, for a field titled <code>Class</code>, to <code>class</code>, if the <code>Class</code> / <code>pick-from</code> combination is detected on an existing Collection template file. </p>

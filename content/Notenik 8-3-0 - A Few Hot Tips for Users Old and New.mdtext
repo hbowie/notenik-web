@@ -1,0 +1,33 @@
+Title:  Notenik 8.3.0 - A Few Hot Tips for Users Old and New
+
+Page Title: Notenik 8.3.0 - A Few Hot Tips for Users Old and New
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   11 Feb 2022
+
+Teaser: 
+
+Our first Notenik video, a new collection of brief Notenik Tips, the ability to jump to a random note in a collection, recall of Collection window sizes and positions, and a few more MathJax fixes -- it's all part of the lastest Notenik release!
+
+Body: 
+
+Notenik 8.3.0 is out today, and there have been a variety of improvements made since the 8.2.0 release. 
+
+First, even though this is not technically part of the software itself, I want to take this opportunity to announce the availability of the first video about the app, titled "Notenik 101." It's available on [YouTube](https://youtu.be/JR0kpAUXM5E), and it's about a 10-minute introduction to use of the app. Please share liberally, if you know of others who might be interested in a brief video tour demonstrating the software. 
+
+Next, the new release now contains a number of brief tips about Notenik usage. These are -- of course -- housed in their own Collection. This read-only Collection will open automatically each time you launch Notenik -- at least, that is, until you turn this behavior off in the Notenik Preferences. You can also open it later from a new entry under the Help menu. Even if you've been using Notenik for a while now, you might find one or two nuggets here that you hadn't previously known about. 
+
+This release contains a few other enhancements that are used by the Notenik Tips Collection. You'll notice that these Tips open in Streamlined Reading mode, which means that, at the bottom of each Note's display, you'll see a link to take you to the next Note. But what happens when you reach the last Note? Previously you were just stuck there, but now you'll see a helpful link that will take you back to the top of the Collection. 
+
+Also, beneath the Nav menu, you'll now see an option to take you to a random Note in the Collection. This won't be useful for every Collection, of course, but can be for some. You can try it out while using the Notenik Tips, which is one place where it might be fun. And there's a keyboard shortcut for this as well -- Shift-Cmd-].
+
+Another new enhancement will hopefully be helpful for everyone -- Notenik will now recall the size and position of your various Collection windows, and will restore them when they are next opened. This includes the position of the left/right divider. Hopefully this will make usage a little more convenient for all. 
+
+And, finally, this release includes a few fixes for MathJax processing that were pointed out to me by a kind and knowledgeable user. A couple of these came out in point releases after 8.2.0, and there are yet one or two more released first in 8.3.0. 
+
+So that pretty much rounds out the list for 8.3.0. As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Version History entry](https://notenik.app/knowledge-base/EPUB/html/version-8.3.0.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

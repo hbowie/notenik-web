@@ -5,6 +5,15 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 8.3.0 - A Few Hot Tips for Users Old and New</title>
+	  <link>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</link>
+	  <guid>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</guid>
+	  <pubDate>Fri, 11 Feb 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Our first Notenik video, a new collection of brief Notenik Tips, the ability to jump to a random note in a collection, recall of Collection window sizes and positions, and a few more MathJax fixes &#8211; it&apos;s all part of the lastest Notenik release! 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 8.2.0 - Setting the Table for New Users</title>
 	  <link>https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html</link>
 	  <guid>https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html</guid>
@@ -83,15 +92,6 @@
 	  <pubDate>Thu, 30 Sep 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.2.0 - Some Nifty Enhancements</title>
-	  <link>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</link>
-	  <guid>https://notenik.app/news/notenik-7.2.0-some-nifty-enhancements.html</guid>
-	  <pubDate>Mon, 20 Sep 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Version 7.2.0 of Notenik includes a handful of nifty changes: the website address has been updated to point to Notenik.app; wiki links now will try to pluralize a reference, if it is not found in singular form; the Merge template Set command now allows a variable to be used as part or all of a global variable name; Markdown quote sharing corrected to respect lookup links; added a Quick Export and Open command. 
 	  </description>
 	</item>
   </channel>
