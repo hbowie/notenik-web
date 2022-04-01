@@ -21,7 +21,8 @@ window.MathJax = {
 <hr class="clearFloats" />
 
 <p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
-<h1>5.11 Custom URL Scheme</h1>
+<h3 id="custom-url-scheme">5.11 Custom URL Scheme</h3>
+<p><em>aka: Custom URL</em></p>
 <p>Notenik has its own custom URL scheme, which can be invoked by other apps as a means of integrating Notenik with these other applications. </p>
 <p>Note that URLs must in general be <a href="https://en.wikipedia.org/wiki/Percent-encoding">percent encoded</a>. The most common encoding is done by replacing each space with <code>%20</code>. </p>
 <p>The following commands are supported. </p>
@@ -30,7 +31,7 @@ window.MathJax = {
 <pre>
 <code>notenik://open?shortcut=todo&amp;id=pickupmilk
 </code></pre>
-<p>Let's break this down: </p>
+<p>Let&#8217;s break this down: </p>
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>open</code> - The Notenik command to open a Collection and optionally a specific Note within the Collection. </li>
@@ -40,14 +41,22 @@ window.MathJax = {
 <li><code>&amp;</code> - An ampersand is used to separate each <code>label=value</code> parameter from the next. </li>
 <li><code>id=pickupmilk</code> - The ID identifying the Note to be selected for Display. Note than a Note ID is defined in such a way (removing spaces, etc.) that it will <em>not</em> need to be percent encoded. </li>
 </ul>
-<p>An easy way to obtain a complete URL that can be used to later open a specific Note is to right-click the Note's row on the List tab within Notenik, and then select <code>Copy Notenik URL</code> from the contextual menu that will pop up. This will copy a complete Notenik URL to the clipboard, from which it can then be pasted into another location. </p>
+<p>The <code>open</code> command accepts the following parameters following the question mark: </p>
+<ul>
+<li><code>shortcut</code> - The shortcut for the Collection to be opened. </li>
+<li><code>path</code> - The complete path to the Collection to be opened, with percent encoding. </li>
+<li><code>id</code> - The ID identifying the Note to be selected for display, which is generally the Note&#8217;s title, with spaces and punctuation removed, and converted to lowercase. </li>
+<li><code>timestamp</code> - A <a href="timestamp.html">timestamp</a> for a Note can be supplied, as an alternate to <code>id</code>, as a means of identifying a specific Note to be selected for display. </li>
+<li><code>notepath</code> - A complete file system path to a specific Note can be specified, as a means of specifying both a Collection and a Note within the Collection; again, the path will need to be percent encoded. </li>
+</ul>
+<p>An easy way to obtain a complete URL that can be used to later open a specific Note is to right-click the Note&#8217;s row on the List tab within Notenik, and then select <code>Copy Notenik URL</code> from the contextual menu that will pop up. This will copy a complete Notenik URL to the clipboard, from which it can then be pasted into another location. </p>
 <p>To obtain a URL to open the Collection only, without specifying a specific Note, select <code>Copy Notenik URL for Collection</code> from beneath the <code>Collection</code> menu, then paste into the desired location. </p>
 <h3 id="add">Add</h3>
 <p>Following is a sample URL:  </p>
 <pre>
 <code>notenik://add?shortcut=todo&amp;title=Pick%20up%20milk&amp;body=You%20gotta
 </code></pre>
-<p>Again, let's break this down. </p>
+<p>Again, let&#8217;s break this down. </p>
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>add</code> - The Notenik command to add a new Note to an existing Collection. </li>
@@ -65,7 +74,7 @@ window.MathJax = {
 <pre>
 <code>notenik://help?id=versionhistory
 </code></pre>
-<p>Once more, let's break this down: </p>
+<p>Once more, let&#8217;s break this down: </p>
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>help</code> - The Notenik command to open the Notenik Knowledge Base supplied with Notenik. </li>
@@ -81,6 +90,6 @@ window.MathJax = {
 </code></pre>
 <p>This command simply brings up the overall Application Preferences window, to allow the user to adjust one or more of the global preferences. </p>
 <hr>
-<p>Next: <a href="markdown.html">Markdown</a></p>
+<p>Next: <a href="apis-for-hook-integration.html">APIs for Hook Integration</a></p>
 </body>
 </html>

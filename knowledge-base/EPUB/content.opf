@@ -19,14 +19,17 @@
     <item href="html/file-extension-for-your-notes.html" id="fileextensionforyournotes" media-type="text/html"/>
     <item href="html/menu-command-for-creating-a-new-collection.html" id="menucommandforcreatinganewcollection" media-type="text/html"/>
     <item href="html/tailor-collection-preferences.html" id="tailorcollectionpreferences" media-type="text/html"/>
+    <item href="html/note-title-display.html" id="notetitledisplay" media-type="text/html"/>
     <item href="html/streamlined-reading.html" id="streamlinedreading" media-type="text/html"/>
     <item href="html/common-tasks.html" id="commontasks" media-type="text/html"/>
     <item href="html/display-a-note.html" id="displayanote" media-type="text/html"/>
     <item href="html/tailor-the-display.html" id="tailorthedisplay" media-type="text/html"/>
+    <item href="html/default-styling-for-headings.html" id="defaultstylingforheadings" media-type="text/html"/>
     <item href="html/add-delete-and-edit-your-notes.html" id="adddeleteandedityournotes" media-type="text/html"/>
     <item href="html/new-note-with-options.html" id="newnotewithoptions" media-type="text/html"/>
     <item href="html/view-your-notes-as-a-list.html" id="viewyournotesasalist" media-type="text/html"/>
     <item href="html/search.html" id="search" media-type="text/html"/>
+    <item href="html/select-a-note-for-action.html" id="selectanoteforaction" media-type="text/html"/>
     <item href="html/files-and-folders.html" id="filesandfolders" media-type="text/html"/>
     <item href="html/note-files.html" id="notefiles" media-type="text/html"/>
     <item href="html/note-file-format.html" id="notefileformat" media-type="text/html"/>
@@ -66,9 +69,11 @@
     <item href="html/mirror-your-notes.html" id="mirroryournotes" media-type="text/html"/>
     <item href="html/website-building.html" id="websitebuilding" media-type="text/html"/>
     <item href="html/custom-url-scheme.html" id="customurlscheme" media-type="text/html"/>
+    <item href="html/apis-for-hook-integration.html" id="apisforhookintegration" media-type="text/html"/>
     <item href="html/markdown.html" id="markdown" media-type="text/html"/>
     <item href="html/choice-of-markdown-parsers.html" id="choiceofmarkdownparsers" media-type="text/html"/>
     <item href="html/notenik-markdown-parser.html" id="notenikmarkdownparser" media-type="text/html"/>
+    <item href="html/curly-apostrophes.html" id="curlyapostrophes" media-type="text/html"/>
     <item href="html/heading-identification.html" id="headingidentification" media-type="text/html"/>
     <item href="html/wiki-style-links.html" id="wikistylelinks" media-type="text/html"/>
     <item href="html/heading-auto-numbering.html" id="headingautonumbering" media-type="text/html"/>
@@ -78,6 +83,7 @@
     <item href="html/fenced-code-blocks.html" id="fencedcodeblocks" media-type="text/html"/>
     <item href="html/definition-lists.html" id="definitionlists" media-type="text/html"/>
     <item href="html/tables.html" id="tables" media-type="text/html"/>
+    <item href="html/task-lists.html" id="tasklists" media-type="text/html"/>
     <item href="html/mathjax-support.html" id="mathjaxsupport" media-type="text/html"/>
     <item href="html/generate-a-note-table-of-contents.html" id="generateanotetableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-table-of-contents.html" id="generateacollectiontableofcontents" media-type="text/html"/>
@@ -211,7 +217,17 @@
     <item href="html/create-a-digital-commonplace-book-or-a-zettelkasten.html" id="createadigitalcommonplacebookorazettelkasten" media-type="text/html"/>
     <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
+    <item href="html/make-a-project-launcher.html" id="makeaprojectlauncher" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-9.0.1.html" id="version901" media-type="text/html"/>
+    <item href="html/version-9.0.0.html" id="version900" media-type="text/html"/>
+    <item href="html/version-8.9.0.html" id="version890" media-type="text/html"/>
+    <item href="html/version-8.8.0.html" id="version880" media-type="text/html"/>
+    <item href="html/version-8.7.1.html" id="version871" media-type="text/html"/>
+    <item href="html/version-8.7.0.html" id="version870" media-type="text/html"/>
+    <item href="html/version-8.6.0.html" id="version860" media-type="text/html"/>
+    <item href="html/version-8.5.0.html" id="version850" media-type="text/html"/>
+    <item href="html/version-8.4.0.html" id="version840" media-type="text/html"/>
     <item href="html/version-8.3.0.html" id="version830" media-type="text/html"/>
     <item href="html/version-8.2.2.html" id="version822" media-type="text/html"/>
     <item href="html/version-8.2.1.html" id="version821" media-type="text/html"/>
@@ -306,6 +322,7 @@
     <item href="html/open-and-accessible-data.html" id="openandaccessibledata" media-type="text/html"/>
     <item href="html/designed-first-and-foremost-for-the-mac.html" id="designedfirstandforemostforthemac" media-type="text/html"/>
     <item href="html/frequent-incremental-improvements.html" id="frequentincrementalimprovements" media-type="text/html"/>
+    <item href="html/how-notenik-stacks-up-against-the-big-names.html" id="hownotenikstacksupagainstthebignames" media-type="text/html"/>
     <item href="html/reference.html" id="reference" media-type="text/html"/>
     <item href="html/about.html" id="about" media-type="text/html"/>
     <item href="html/about-those-other-names....html" id="aboutthoseothernames" media-type="text/html"/>

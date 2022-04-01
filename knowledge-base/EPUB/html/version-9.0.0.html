@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 9.0.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+<p class="alignLeft">Notenik Knowledge Base</p>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+
+<p>11 <a href="version-history.html">Version History</a>&nbsp;&#8593;</p>
+<h3 id="version-9.0.0">11.2 Version 9.0.0</h3>
+<p>Date: 29 Mar 2022</p>
+<h5 id="fixed-timestamp-problem">Fixed Timestamp Problem</h5>
+<p>Notenik was assigning the timestamp based on the file system creation date, which was not available until after the file had been saved. To make sure the timestamp is immediately saved within the Note&#8217;s text file, such a file is now re-saved after assignment of the timestamp. </p>
+<h5 id="allow-a-note-to-be-opened-within-its-collection-from-macos">Allow a Note to be Opened within its Collection from macOS</h5>
+<p>When a Note file is dragged and dropped onto the Notenik app icon &#8211; or in other cases where Notenik receives an external request via macOS to open a specific file &#8211; Notenik will now open the Collection, and then select the corresponding Note. </p>
+<h5 id="fixed-markdown-parser-problem-handling-numbers-alone-on-lines">Fixed Markdown Parser Problem Handling Numbers Alone on Lines</h5>
+<p>The Notenik Markdown parser had a problem processing a line of text that consisted of only a single number, making up the entire line. This has now been fixed. </p>
+<h5 id="added-option-to-render-curly-apostrophes">Added Option to Render Curly Apostrophes</h5>
+<p>Added a new Collection Preference to allow control over rendering of apparent apostrophes as straight or curly, with the default now being curly. See <a href="curly-apostrophes.html">Curly Apostrophes</a> for details. </p>
+<h5 id="added-list-contextual-menu-copy-options">Added List Contextual Menu Copy Options</h5>
+<p>When selecting the contextual menu from the List tab, two new options appear: </p>
+<ul>
+<li><code>Copy Title</code> </li>
+<li><code>Copy Timestamp</code> </li>
+</ul>
+<p>These appear in addition to, and just below, the existing option to <code>Copy Notenik URL</code>. </p>
+<h5 id="added-note-selector-action-options-for-timestamp">Added Note Selector Action Options for Timestamp</h5>
+<p>Added two new possible actions to the <a href="select-a-note-for-action.html">Note Selector</a> window. The first is to copy a timestamp value to the clipboard, and the second to copy and paste a timestamp. </p>
+<h5 id="added-additional-api-to-return-a-file-path">Added Additional API to Return a File Path</h5>
+<p>Added an additional AppleScript command, as part of <a href="apis-for-hook-integration.html">APIs for Hook Integration</a>, to allow Hook to request the file path pointing to a Note&#8217;s file. </p>
+<h5 id="tab-characters-now-skip-to-next-field-from-a-link-field">Tab Characters Now Skip to Next Field from a Link Field</h5>
+<p>A Link field allows multiple lines of text to be entered, with scrolling. This sort of field normally allows a Tab character to be entered within the field. However, this makes no sense for a field intended to contain hyperlinks. So the behavior of a Link field has been modified, so that a Tab character will now cause the next field to be selected (as it does for most other other field types). </p>
+<hr>
+<p>Next: <a href="version-8.9.0.html">Version 8.9.0</a></p>
+</body>
+</html>

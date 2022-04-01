@@ -5,6 +5,52 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 9.0.1 - Hooked on Notenik</title>
+	  <link>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</link>
+	  <guid>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</guid>
+	  <pubDate>Thu, 31 Mar 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  The last couple of releases focused on better integration with other apps, including new Custom URL commands, new custom AppleScript commands, and the ability to integrate with the Hook app via their official scripts.  <br />
+
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 8.8.0 - Improvements to Note Editing</title>
+	  <link>https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html</link>
+	  <guid>https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html</guid>
+	  <pubDate>Fri, 18 Mar 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Added a Note Selector window that allows a user, while remaining on Display or Edit of one Note, to look up the title of a second Note, for possible insertion into the text of the first Note; also expanded the width of the Body text editing field, and made inclusion of a &apos;Body:&apos; field label optional, on the Edit tab as well as the Display tab. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 8.7.0 - A Chocolate and Vanilla Swirl</title>
+	  <link>https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</link>
+	  <guid>https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</guid>
+	  <pubDate>Thu, 10 Mar 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik&apos;s Link field; and further refine the appearance of a Web Book. It&apos;s all here in the latest release. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options</title>
+	  <link>https://notenik.app/news/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html</link>
+	  <guid>https://notenik.app/news/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html</guid>
+	  <pubDate>Mon, 28 Feb 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Markdown Checklists are now available, as are more flexible options for formatting Note Titles, along with improved default CSS styling for headings, plus a new toggle for auto-creation of missing wiki link targets. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 8.5.0 - Support for YAML Metadata and Local Images</title>
+	  <link>https://notenik.app/news/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html</link>
+	  <guid>https://notenik.app/news/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html</guid>
+	  <pubDate>Sun, 20 Feb 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  YAML metadata is now a thing, and Notenik now supports it, in addition to its own special format. And then there&apos;s the problem of how to load local images into a Note, which now has a solution, allowing them to show up in the Display tab for the Note within Notenik. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 8.3.0 - A Few Hot Tips for Users Old and New</title>
 	  <link>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</link>
 	  <guid>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</guid>
@@ -47,51 +93,6 @@
 	  <pubDate>Mon, 13 Dec 2021 12:00:00 -0700</pubDate>
 	  <description>
 		  This release includes a new Notenik Intro, the addition of a new, optional header line when publishing a Web Book, a new <code>Include Children</code> field useful when using outlining with streamlined reading, and a new Sort option to view things in pure Date order (irrespective of Status). 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.7.0 - Class Templates are Introduced</title>
-	  <link>https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html</link>
-	  <guid>https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html</guid>
-	  <pubDate>Tue, 30 Nov 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  This release introduces Class templates. Each different Class value within a Collection can have its own template, and that template can limit the fields included on the Edit tab for Notes of that Class, and can also supply default values for any fields that are included. This is one of those features that can be used in lots of different ways, for many different purposes, so it&apos;s worth sitting down and having a good think about how you might be able to put this feature to use for your Notes. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.6.0 - A Little Something for Everyone</title>
-	  <link>https://notenik.app/news/notenik-7.6.0-a-little-something-for-everyone.html</link>
-	  <guid>https://notenik.app/news/notenik-7.6.0-a-little-something-for-everyone.html</guid>
-	  <pubDate>Tue, 09 Nov 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Notenik 7.6.0 should contain a little something for everyone, including some additional sort options, an improvement to the Quick Action window, more reasonable handling of data from deleted fields, the ability to include images in a Web Book, as well as the ability to specify your own available values for the new Class field. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.5.0 - A Few Small Improvements</title>
-	  <link>https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html</link>
-	  <guid>https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html</guid>
-	  <pubDate>Thu, 28 Oct 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Notenik 7.5.0 makes a few small improvements, including reorganizing some of the app&apos;s menus, as well as rearranging things on the Collection Prefs screen. The Advanced Search option is the new feature that might be most widely appreciated. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.4.0 - Wiki Link Enhancements</title>
-	  <link>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</link>
-	  <guid>https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html</guid>
-	  <pubDate>Thu, 14 Oct 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Notenik 7.4.0 addresses some common issues that often arise when making use of  Wiki Style Links. Welcome to backlinks, automatic target note creation, and AKA entries for your Notes! 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.3.0 - A Handful of Helpful Refinements</title>
-	  <link>https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html</link>
-	  <guid>https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html</guid>
-	  <pubDate>Thu, 30 Sep 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions. 
 	  </description>
 	</item>
   </channel>

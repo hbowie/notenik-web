@@ -10,9 +10,11 @@ Status: 9 - Published
 
 Type:   page
 
-Body: 
+Body:
 
 If you're new to Notenik, you might want to start with a brief [Notenik Intro](intro/EPUB/html/welcome-to-notenik.html), complete with screenshots. 
+
+Or, perhaps, you'd like to see a summary of Notenik features, arranged for easy comparison to other apps in this space. In other words: "[How Notenik Stacks Up Against the Big Names](how-notenik-stacks-up-against-the-big-names.html)".
 
 When you're ready for more detail, you'll want to consult the Notenik Knowledge Base, which is, itself, a Notenik Collection. 
 
@@ -27,4 +29,3 @@ If you'd rather consult the Knowledge Base without use of Notenik, please view t
 And if you'd like a quick, 10-minute video tour of the Notenik basics...
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JR0kpAUXM5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-

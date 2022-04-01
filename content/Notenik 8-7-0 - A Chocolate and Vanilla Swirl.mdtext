@@ -1,0 +1,33 @@
+Title:  Notenik 8.7.0 - A Chocolate and Vanilla Swirl
+
+Page Title: Notenik 8.7.0 - A Chocolate and Vanilla Swirl
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   10 Mar 2022
+
+Teaser:
+
+Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik's Link field; and further refine the appearance of a Web Book. It's all here in the latest release. 
+
+Body:
+
+Henry Ford once remarked that a customer could have "any color so long as it was black". Apple had a similar policy with the Mac interface for many years, telling customers that they could have any appearance so long as it was black text on a white background, which they dubbed "light". 
+
+Apple doubled users' options a few years ago when they added a General Appearance preference to allow them to choose either dark (white text on a black background) or light. 
+
+And Notenik added an option a little while back to follow the System Preference, so that when the System pref is light, Notenik will be light, and when the System pref is dark, so shall Notenik be dark. 
+
+But some people like to mix and match their light and dark, just as some like to swirl their chocolate and vanilla in their cones, and so the latest release of Notenik has its own App preference to set its appearance to either light or dark -- no matter what the rest of the system is doing.  
+
+So if you like Notenik in dark mode -- but want to keep the rest of the system a bit lighter in appearance -- you can now choose that option. 
+
+A few other options in this release help a bit with nicely formatting a Web Book. You can see the results on a new website I'm working on. The site is [here](https://keylists.org), and all of the source files are [here](https://github.com/hbowie/key-lists). One of the enhancements allows the creation of a [tags outline](https://keylists.org/lists-by-tag.html) without having to include untagged Notes. The other enhancement allows finer control of Seq formatting for differing numbering levels. On my new site, for example, the [lists themselves](https://keylists.org/key-lists.html), at the top level of numbering, are not showing their Seq numbers at all. Once you dive down a level, though, the items within each list are [showing their numbers](https://keylists.org/motivational-factors-for-complex-work.html). 
+
+I've also added an article in the Knowledge Base describing how Notenik can be used as a [project launcher](https://notenik.app/knowledge-base/EPUB/html/make-a-project-launcher.html), and that takes advantage of some other enhancements appearing in this latest release. Notenik's logic for handling folders has been refined a bit, to more usefully distinguish between different types (packages, etc.). And a new command has been added beneath the `File` menu to `Grant Folder Access`, in case you want Notes in one Collection to be able to open files and folders located somewhere else. Also, you can now Launch Links from the Tags tab, as well as the List tab, and you can launch Links from multiple selected Notes all at once, again from either of these tabs.
+
+So that's it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Version History entry](https://notenik.app/knowledge-base/EPUB/html/version-8.7.0.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

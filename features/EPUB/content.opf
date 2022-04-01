@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="uid">notenik-features</dc:identifier>
+    <dc:title>Notenik Features</dc:title>
+    <dc:language>en</dc:language>
+  </metadata>
+  <manifest>
+    <item href="html/notenik-features.html" id="notenikfeatures" media-type="text/html"/>
+    <item href="html/supported-platforms.html" id="supportedplatforms" media-type="text/html"/>
+    <item href="html/synchronization.html" id="synchronization" media-type="text/html"/>
+    <item href="html/plain-text.html" id="plaintext" media-type="text/html"/>
+    <item href="html/folders-and-collections.html" id="foldersandcollections" media-type="text/html"/>
+    <item href="html/use-of-markdown.html" id="useofmarkdown" media-type="text/html"/>
+    <item href="html/wiki-style-links.html" id="wikistylelinks" media-type="text/html"/>
+    <item href="html/metadata.html" id="metadata" media-type="text/html"/>
+    <item href="html/tags.html" id="tags" media-type="text/html"/>
+    <item href="html/a-personal-content-management-system.html" id="personalcontentmanagementsystem" media-type="text/html"/>
+    <item href="html/field-labels-and-types.html" id="fieldlabelsandtypes" media-type="text/html"/>
+    <item href="html/user-interface.html" id="userinterface" media-type="text/html"/>
+    <item href="html/connections-between-notes.html" id="connectionsbetweennotes" media-type="text/html"/>
+    <item href="html/blocks-within-notes.html" id="blockswithinnotes" media-type="text/html"/>
+    <item href="html/search.html" id="search" media-type="text/html"/>
+    <item href="html/programming-code.html" id="programmingcode" media-type="text/html"/>
+    <item href="html/daily-notes.html" id="dailynotes" media-type="text/html"/>
+    <item href="html/tasks.html" id="tasks" media-type="text/html"/>
+    <item href="html/custom-url-schemes.html" id="customurlschemes" media-type="text/html"/>
+    <item href="html/integration-via-applescript.html" id="integrationviaapplescript" media-type="text/html"/>
+    <item href="html/customizing-appearance-and-functionality.html" id="customizingappearanceandfunctionality" media-type="text/html"/>
+    <item href="html/templates.html" id="templates" media-type="text/html"/>
+    <item href="html/import-and-export.html" id="importandexport" media-type="text/html"/>
+    <item href="html/publish-and-share.html" id="publishandshare" media-type="text/html"/>
+    <item href="html/cost.html" id="cost" media-type="text/html"/>
+    <item href="html/development-and-support-model.html" id="developmentandsupportmodel" media-type="text/html"/>
+    <item href="html/bottom-line.html" id="bottomline" media-type="text/html"/>
+    <item href="html/feedback.html" id="feedback" media-type="text/html"/>
+  </manifest>
+</package>

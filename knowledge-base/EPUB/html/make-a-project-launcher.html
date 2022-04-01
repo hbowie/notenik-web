@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Make a Project Launcher</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+<p class="alignLeft">Notenik Knowledge Base</p>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+
+<p>10 <a href="putting-it-all-together.html">Putting It All Together</a>&nbsp;&#8593;</p>
+<h3 id="make-a-project-launcher">10.8 Make a Project Launcher</h3>
+<p>If you&#8217;re like me, then you probably work on different tasks or different projects at different times. </p>
+<p>And &#8211; again, if you&#8217;re like me &#8211; each of these activities seems to require you to open up multiple resources, using multiple apps. </p>
+<p>And so, when I&#8217;m switching from one project to another, it usually takes me some little while, and a bit of digging, before I get enough stuff open that I can just settle in and do some work. </p>
+<p>Now, of course, I&#8217;ve been feeling somewhat embarrassed about my disorganized approach to task switching because I know there are lots of solutions available, and lots of much smarter ways to handle this. </p>
+<p>But at the same time, as the author of Notenik, I&#8217;ve had this nagging feeling that I could probably use my own app for this &#8211; I mean, couldn&#8217;t I? </p>
+<p>So I finally sat down the other day and tried to get all of this stuff organized, using Notenik. </p>
+<p>The first thing I did was to create a new Collection, calling it <code>Project Notes</code>. The only fields I needed were the basic four: <a href="title.html">Title</a>, <a href="tags.html">Tags</a>, <a href="link.html">Link</a> and <a href="body.html">Body</a>. </p>
+<p>Then I added a new Note for each different resource I needed to open, and assigned a project tag to each Note (just coming up with some unique tag for each project, and then using it consistently to tag associated Notes). </p>
+<p>The magic happens, of course, in the Link field. Because you can use this single field for so many different <em>kinds</em> of links. </p>
+<ul>
+<li>
+<p>First, and most obviously, you can use it to link to a site or page on the World-Wide Web, using the <code>https://</code> protocol. Just drag a URL into your list, or into the Link field, or copy and paste, and you&#8217;re all set. </p>
+</li>
+<li>
+<p>Next, you can use Notenik&#8217;s own custom URL scheme to open a Collection, or a parent realm folder, or a specific Note, within Notenik. </p>
+<p>(And, after opening a Collection, you can use the <code>Copy Notenik URL for Collection</code> beneath the <code>Collection</code> menu to construct the appropriate URL to re-open the Collection later and place it on the system clipboard; or, on the List tab, Ctrl-Click on a particular Note, then select <code>Copy Notenik URL</code> to construct a URL to re-select that specific Note, within that particular Collection, and place that Notenik URL on the system clipboard; in either case, you can then paste the resulting clipboard value into the Link field of another Note.) </p>
+</li>
+<li>
+<p>And then, you can use any other app&#8217;s custom URL scheme to have it do something useful. </p>
+</li>
+<li>
+<p>And then, finally, you can use the <code>Set Local Link</code> command beneath the <code>Note</code> menu to allow you to select a local application, file or folder to be opened upon your command. </p>
+</li>
+</ul>
+<p>Now I can select one (or more!) rows on either the List tab, or the Tags tab, and use the <code>Launch Link</code> command to open my desired resources for a particular project. </p>
+<p>So far, it&#8217;s working pretty well! </p>
+<p>P.S.: Something to be mindful of when using Notenik in this fashion are <a href="disk-access-permissions.html">Disk Access Permissions</a>, especially if you&#8217;re asking Notenik to open a lot of local files and folders that are spread out a bit. One way to prevent permissions problems during a Notenik session is to use the <code>Grant Folder Access</code> command beneath the <code>File</code> menu, and then select a folder at a high enough level to include all of the local resources of interest.) </p>
+<hr>
+<p>Next: <a href="version-history.html">Version History</a></p>
+</body>
+</html>

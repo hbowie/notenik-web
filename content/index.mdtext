@@ -10,7 +10,7 @@ Status: 9 - Published
 
 Type:   page
 
-Body: 
+Body:
 
 ![Notenik Screenshot](images/notenik-on-mbair.png)
 
@@ -44,9 +44,8 @@ Every Notenik note consists of multiple fields. Of course there's always a Title
 
 ### &bull; Thoroughly Documented
 
-The Notenik Knowledge Base contains everything you might ever want to know about Notenik -- stored in its own Notenik collection of notes! Open from within Notenik (look beneath the Help menu), or [access on the Web](https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html). Or for a brief introduction, with screen shots, see the [Notenik Intro](https://notenik.app/intro/EPUB/html/welcome-to-notenik.html).
+The Notenik Knowledge Base contains everything you might ever want to know about Notenik -- stored in its own Notenik collection of notes! Open from within Notenik (look beneath the Help menu), or [access on the Web](https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html). Or for a brief introduction, with screen shots, see the [Notenik Intro](https://notenik.app/intro/EPUB/html/welcome-to-notenik.html). Or see a [more detailed list of features](features/EPUB/html/notenik-features.html) to help you compare Notenik to other similar apps.  
 
 ### &bull; Actively Supported, Maintained and Enhanced
 
 I'm Herb Bowie, the developer. I respond to all emails, and am generally happy to accommodate requests for fixes and further enhancements. I try to publish one or two significant updates each month. If you have a missing feature or software quirk that's bothering you, then let me know, and I'll see what I can do.
-

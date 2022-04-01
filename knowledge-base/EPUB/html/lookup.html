@@ -21,7 +21,7 @@ window.MathJax = {
 <hr class="clearFloats" />
 
 <p>7.10 <a href="general-purpose-fields.html">General-Purpose Fields</a>&nbsp;&#8593;</p>
-<h1>7.10.5 Lookup</h1>
+<h4 id="lookup">7.10.5 Lookup</h4>
 <p>The word <code>lookup</code> can be used as a field type, but is not intended to be used as a field label. </p>
 <p>The intent of a lookup field is to allow one Collection to reference Notes stored in a second Collection. </p>
 <p>The second Collection must have had a shortcut assigned to it, which you can do when you <a href="tailor-collection-preferences.html">tailor Collection preferences</a>. </p>
@@ -34,7 +34,7 @@ window.MathJax = {
 <p>When viewing a <code>lookup</code> field on the Display tab, you will notice a couple of special features. </p>
 <ul>
 <li>
-<p>The value stored in the <code>lookup</code> field will be formatted as a link, using Notenik's own <a href="custom-url-scheme.html">Custom URL Scheme</a>. If that value already exists as a <code>Title</code> within the Collection identified by the referenced shortcut, then the link will be formatted to <code>open</code> the referenced Note within the second Collection; if the value does not yet exist within the second Collection, the the link will be formatted to <code>add</code> a Note titled with that value in the second Collection. </p>
+<p>The value stored in the <code>lookup</code> field will be formatted as a link, using Notenik&#8217;s own <a href="custom-url-scheme.html">Custom URL Scheme</a>. If that value already exists as a <code>Title</code> within the Collection identified by the referenced shortcut, then the link will be formatted to <code>open</code> the referenced Note within the second Collection; if the value does not yet exist within the second Collection, the the link will be formatted to <code>add</code> a Note titled with that value in the second Collection. </p>
 </li>
 <li>
 <p>If there are additional non-blank fields found on the referenced Note in the second Collection, then the lookup value will appear following a disclosure triangle, and clicking on the triangle will disclose the additional available fields from the second Collection. </p>

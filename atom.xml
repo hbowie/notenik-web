@@ -4,12 +4,212 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2022-02-11T09:00:00Z</updated>
+  <updated>2022-03-31T09:00:00Z</updated>
   <rights>Copyright © 2022, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 9.0.1 - Hooked on Notenik</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.0.1-hooked-on-notenik.html</id>
+	  <published>2022-03-31T09:00:00Z</published>
+	  <updated>2022-03-31T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  The last couple of releases focused on better integration with other apps, including new Custom URL commands, new custom AppleScript commands, and the ability to integrate with the Hook app via their official scripts.  <br />
+
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>The last couple of releases focused on integration with the <a href="https://hookproductivity.com">Hook app</a>. I&apos;ve had people ask me about Hook integration for a while now, and I finally invested enough time and energy to figure out how all of this might work. <a href="https://twitter.com/luccogzest">Luc Beaudoin</a> and his team were very helpful and responsive when I had questions, with the happy result that they have just today <a href="https://discourse.hookproductivity.com/t/integration-with-notenik-note-taking-app/4889/3">announced the availability of their integration scripts for Notenik</a>. It&apos;s been a pleasure working with the team, and it&apos;s nice to see one more user requested fulfilled. </p>
+<p>There were some other enhancements as part of 8.9.0, 9.0.0 and 9.0.1 &#8211; generally along this same theme of integration. A couple of new commands were added to the custom URL scheme, to make it possible to access a Note via a complete file path as well as via its Timestamp. Hook integration was enabled via the addition of some new custom AppleScript commands. Also, you can now drag a text file onto Notenik&apos;s app icon, and Notenik will attempt to open the enclosing folder as a Collection, and then select the dropped Note. </p>
+<p>Also corrected a problem with Notenik&apos;s Markdown parser that affected a list of numbers, one per line, without any spacing or punctuation. And also added a Collection pref to allow the Notenik parser to turn straight apostrophes into curly ones. </p>
+<p>Oh, and when you hit the tab key while in a Link field, Notenik will now advance you to the next field, as one might expect, instead of actually inserting a tab character into the middle of a hyperlink. </p>
+<p>And there&apos;s also a new addition to the Notenik documentation. Articles such as <a href="https://thesweetsetup.com/obsidian-vs-roam/">this one from The Sweet Setup</a> go into quite a bit of detail comparing various players in the Personal Knowledge Management (PKM) space, so I thought it might be time to offer up a description of Notenik features that is equally detailed, without being as lengthy and comprehensive as the Notenik Knowledge Base. The result is a new guide to Notenik&apos;s features, formatted in a way that makes it easy to compare to some of these other apps. You can find it <a href="https://notenik.app/features/EPUB/html/notenik-features.html">here</a> on the website. Feel free to check it out, and recommend it to others.  </p>
+<p>So that&apos;s it for the latest updates! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 8.8.0 - Improvements to Note Editing</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.8.0-improvements-to-note-editing.html</id>
+	  <published>2022-03-18T09:00:00Z</published>
+	  <updated>2022-03-18T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Added a Note Selector window that allows a user, while remaining on Display or Edit of one Note, to look up the title of a second Note, for possible insertion into the text of the first Note; also expanded the width of the Body text editing field, and made inclusion of a &apos;Body:&apos; field label optional, on the Edit tab as well as the Display tab. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>In other comparable note-taking apps, a common feature is to allow the user to easily select a second Note to become the target of a wiki-style link in a Note being edited. This has been sort of a &quot;missing feature&quot; in Notenik for a while now &#8211; but has finally shown up in this latest release. </p>
+<p>Here&apos;s the way it works. </p>
+<ol>
+<li>
+<p>Hit the keyboard shortcut of CTRL-S. Note that you can do this at any time &#8211; whether you are in Edit mode or Display mode. If you are in Edit mode, then you will remain in Edit mode. </p>
+</li>
+<li>
+<p>Watch the &apos;Note Selector&apos; window appear. </p>
+</li>
+<li>
+<p>Type 3 or more letters in the text field at the top of the new window. After typing the third letter, you will see a list of all Notes in the Collection whose titles contain that sequence of characters anywhere within. Case (upper- or lower-) is not significant for this operation. </p>
+</li>
+<li>
+<p>Select the row containing the title of the Note you are looking for. You can do this in one of several ways: </p>
+<ul>
+<li>Keep typing letters until the Note of interest is first in the list; </li>
+<li>Use the down (and up, if you go too far) arrow keys to position yourself on the Note of interest; </li>
+<li>Use your pointing device to click on the Note of interest. </li>
+</ul>
+</li>
+<li>
+<p>Select your desired action from the drop-down menu at the bottom of the window. </p>
+</li>
+<li>
+<p>Hit the OK button to take the indicated action with the selected Note. </p>
+</li>
+<li>
+<p>Alternatively, use a keyboard shortcut to combine steps 5 and 6. </p>
+</li>
+</ol>
+<p>Here&apos;s the list of available actions, with their associated keyboard shortcuts. </p>
+<ul>
+<li>
+<p><code>Copy Title</code> &#8211; Simply copy the selected Title to the System clipboard, ready to be pasted anywhere else you would like it to appear. (<code>CMD-C</code>) </p>
+</li>
+<li>
+<p><code>Copy and Paste Title</code> &#8211; This action will copy the selected value to the clipboard, as above, but then will also attempt to paste that value into whatever text field you are currently editing. (<code>CMD-V</code>) </p>
+</li>
+<li>
+<p><code>Copy Wikilink</code> &#8211; This action will copy the selected value to the clipboard, as above, but will enclose the value within double brackets, in order to form a wikilink. (<code>OPT-CMD-C</code>) </p>
+</li>
+<li>
+<p><code>Copy and Paste Wikilink</code> &#8211; This action will copy the selected value to the clipboard, as above, but will enclose the value within double brackets, and then paste the resulting wikilink into whatever text field you are currently editing. (<code>OPT-CMD-V</code>) </p>
+</li>
+<li>
+<p><code>Go To</code> &#8211; Navigate to the selected Note. (<code>CMD-G</code>) </p>
+</li>
+<li>
+<p><code>Launch Link</code> &#8211; Launch the Link field of the selected Note. (<code>CMD-L</code>) </p>
+</li>
+</ul>
+<p>Note that, so long as the Note Selector window is still frontmost, the keyboard shortcuts indicated above will override their usual meanings within the application. </p>
+<p>Also note that you can add other modifier keys if that will help avoid invocation of some app other than Notenik: for example, SHIFT-OPT-CMD-V will work as well as OPT-CMD-V, to copy and paste the selected title as a wikilink. </p>
+<p>So now, if you&apos;re editing the body of a Note, and want to add a wiki link to a second Note, you can insert a perfectly formatted wikilink with just a few strokes on your keyboard. </p>
+<p>Of course, as indicated by the action list above, you can perform other tasks as well, but insertion of wikilinks is the requested feature that has been missing until now. </p>
+<p>Oh, and let&apos;s see &#8211; there are a couple of other new things to mention as well. </p>
+<p>First, I created a litte more space for body text on the Edit tab. The Edit tab is split into two columns, with field labels on the left, and with values on the right. This arrangement generally works well, especially for fields with compact values, but makes less sense for the body of the Note itself, especially if the text is of any significant length. So the field for the body value now appears below any label field, and spreads out over both columns, allowing more room for text entry. Additionally, if the user has turned off the Collection Preferences option to include an explicit body field label, then the Body label will also be excluded on the Edit tab &#8211; again providing more space for entry of body text. </p>
+<p>Next, there&apos;s a new document available on the website: &quot;<a href="../how-notenik-stacks-up-against-the-big-names.html">How Notenik Stacks Up Against the Big Names</a>&quot;. My intent here was to lay out various features of Notenik in a way that would make it easy to compare Notenik to other better-known apps in the Zettelkasten/Personal Knowledge Management space. If you think I&apos;ve missed something here, then please let me know! </p>
+<p>So that&apos;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="../knowledge-base/EPUB/html/version-8.8.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 8.7.0 - A Chocolate and Vanilla Swirl</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</id>
+	  <published>2022-03-10T09:00:00Z</published>
+	  <updated>2022-03-10T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik&apos;s Link field; and further refine the appearance of a Web Book. It&apos;s all here in the latest release. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Henry Ford once remarked that a customer could have &quot;any color so long as it was black&quot;. Apple had a similar policy with the Mac interface for many years, telling customers that they could have any appearance so long as it was black text on a white background, which they dubbed &quot;light&quot;. </p>
+<p>Apple doubled users&apos; options a few years ago when they added a General Appearance preference to allow them to choose either dark (white text on a black background) or light. </p>
+<p>And Notenik added an option a little while back to follow the System Preference, so that when the System pref is light, Notenik will be light, and when the System pref is dark, so shall Notenik be dark. </p>
+<p>But some people like to mix and match their light and dark, just as some like to swirl their chocolate and vanilla in their cones, and so the latest release of Notenik has its own App preference to set its appearance to either light or dark &#8211; no matter what the rest of the system is doing.  </p>
+<p>So if you like Notenik in dark mode &#8211; but want to keep the rest of the system a bit lighter in appearance &#8211; you can now choose that option. </p>
+<p>A few other options in this release help a bit with nicely formatting a Web Book. You can see the results on a new website I&apos;m working on. The site is <a href="https://keylists.org">here</a>, and all of the source files are <a href="https://github.com/hbowie/key-lists">here</a>. One of the enhancements allows the creation of a <a href="https://keylists.org/lists-by-tag.html">tags outline</a> without having to include untagged Notes. The other enhancement allows finer control of Seq formatting for differing numbering levels. On my new site, for example, the <a href="https://keylists.org/key-lists.html">lists themselves</a>, at the top level of numbering, are not showing their Seq numbers at all. Once you dive down a level, though, the items within each list are <a href="https://keylists.org/motivational-factors-for-complex-work.html">showing their numbers</a>. </p>
+<p>I&apos;ve also added an article in the Knowledge Base describing how Notenik can be used as a <a href="https://notenik.app/knowledge-base/EPUB/html/make-a-project-launcher.html">project launcher</a>, and that takes advantage of some other enhancements appearing in this latest release. Notenik&apos;s logic for handling folders has been refined a bit, to more usefully distinguish between different types (packages, etc.). And a new command has been added beneath the <code>File</code> menu to <code>Grant Folder Access</code>, in case you want Notes in one Collection to be able to open files and folders located somewhere else. Also, you can now Launch Links from the Tags tab, as well as the List tab, and you can launch Links from multiple selected Notes all at once, again from either of these tabs. </p>
+<p>So that&apos;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.7.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html</id>
+	  <published>2022-02-28T09:00:00Z</published>
+	  <updated>2022-02-28T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Markdown Checklists are now available, as are more flexible options for formatting Note Titles, along with improved default CSS styling for headings, plus a new toggle for auto-creation of missing wiki link targets. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>I&apos;ve been gradually adding support for various common Markdown extensions, and the latest is support for checklists &#8211; also called <a href="https://www.markdownguide.org/extended-syntax/#task-lists">task lists</a>. You just put a pair of square brackets following a dash and a space, at the beginning of a line, and then either an &apos;x&apos; or a space inside the brackets, and &#8211; voila! &#8211; when you view the formatted display, you either see empty boxes, or boxes with check marks inside of them. A small thing, but a nice addition to the Notenik feature list. </p>
+<p>And then there&apos;s the way Note titles appear on the Display tab. There used to be a single, binary option: either display as level 1 HTML headings, or normal paragraphs with the text in bold. But that simple choice between two extremes &#8211; huge or small &#8211; had been nagging at me for a while. So now you can choose any heading level you like (or even vary the heading size based on a note&apos;s level within its Collection hierarchy), or bold and/or italics at your normal text display size. Much nicer. </p>
+<p>And while I was at it, I tweaked the default CSS styling for the various heading levels &#8211; when headings are used for Note titles, but also for any normal Markdown headings you place within the body of a Note. You can view the default sizing within the Notenik Knowledge base, but the range seems a bit more refined now, at least to my eyes. (And, of course, you can still override with your own CSS, if that&apos;s your thing.) </p>
+<p>And then, as part of my recent work to make Notenik more tolerant of YAML metadata, I added one more missing piece: the auto-creation of missing wiki link targets is now optional, and off by default. So if you use Notenik to open an existing folder of text files formatted with YAML metadata &#8211; perhaps even one you also use with another,  <a href="https://en.wikipedia.org/wiki/Electron_(software_framework)">electron</a>-based app&hellip;? &#8211; Notenik should now leave your Notes in a state perfectly suitable for continued access by other apps as well. </p>
+<p>And now that the Notenik/YAML reconciliation has been pretty much completed, I&apos;d like to give a shout-out to Evan Travers. He has a nice little web page offering up his latest thoughts on creating a <a href="https://evantravers.com/simple-markdown-zettelkasten">Simple Markdown Zettelkasten</a>, including a list of supported tools, and it was this list &#8211; and his initial decision to drop Notenik, after briefly considering it &#8211; that caused me to reach out to him, and pursue the changes along this path that have been coming along of late. Evan has a nice <a href="https://evantravers.com/articles/2022/02/28/notenik/">Notenik post out now</a>, and I&apos;m grateful to him for working with me to make Notenik potentially more useful to a larger audience. </p>
+<p>So that&apos;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.6.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 8.5.0 - Support for YAML Metadata and Local Images</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html</id>
+	  <published>2022-02-20T09:00:00Z</published>
+	  <updated>2022-02-20T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  YAML metadata is now a thing, and Notenik now supports it, in addition to its own special format. And then there&apos;s the problem of how to load local images into a Note, which now has a solution, allowing them to show up in the Display tab for the Note within Notenik. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <h3 id="enter-yaml-stage-left">Enter YAML, Stage Left</h3>
+<p>In the beginning, there was <a href="https://daringfireball.net/projects/markdown/">Markdown</a>. </p>
+<p>And then there was <a href="https://fletcherpenney.net/multimarkdown/">MultiMarkdown</a>, which included support for <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html">metadata</a> (data about a Markdown doc), using its own special format. </p>
+<p>And then, somewhat recently, Markdown metadata formatted using <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> has become a thing. </p>
+<p>This sort of YAML metadata is often referred to as <a href="https://support.typora.io/YAML/">YAML Front Matter</a>. </p>
+<p>Now Notenik has its own way of structuring such data. But this is a good opportunity for the application of <a href="https://en.wikipedia.org/wiki/Robustness_principle">Postel&apos;s Law</a>, which states: </p>
+<p>&gt; Be conservative in what you do, be liberal in what you accept. </p>
+<p>And so, the question becomes, if someone asks Notenik to open an existing folder full of Markdown notes with YAML front matter, how will Notenik respond? </p>
+<p>Well, prior to the last couple of releases, the answer to that question left a bit to be desired. </p>
+<p>But with version 8.4.0, and even more so with 8.5.0, Notenik takes YAML front matter in stride. And not only will Notenik read and recognize such data, but it will do a pretty fair job of respecting such a format choice when modifying and even adding Notes in an existing Collection. </p>
+<p>So, if you are already using YAML front matter, and happy with it, there&apos;s no reason not to point Notenik at such a Collection of Notes and see how you like it. And if you run into any problems with such an experiment, feel free to drop me a line and let me know what&apos;s going on. </p>
+<h3 id="enter-local-images-stage-right">Enter Local Images, Stage Right</h3>
+<p>And then there&apos;s one more new thing that&apos;s kind of cool. </p>
+<p>Before 8.5.0, you could use Markdown image tags in the bodies of your Notes, and this would work well &#8211; so long as you were using <code>http</code> or <code>https</code> to reference image files stored on a web server somewhere. </p>
+<p>Unfortunately, such tags worked not at all if you were trying to address image files stored locally, most often in a subfolder, using relative paths. </p>
+<p>It&apos;s not that I hadn&apos;t wanted to provide such functionality before. But the last time I tried to make this work I ran into some Apple API issues that prevented an easy implementation. </p>
+<p>But 8.5.0 provides a solution. In order to enable it, you have to select a new option in the Collection Preferences. Once you check this box, Notenik will subtly change its behavior when formatting a Note&apos;s display: instead of doing the formatting entirely within the computer&apos;s memory, it will first write an <code>html</code> file to disk, and then create the display from this temporary file. And this slightly different behavior will then allow local image file references to work. </p>
+<p>Where would you place such image files? Well, you could manually add them to a special folder for images that you create within your Collection folder. Or you could add the image files as attachments to your Notes, and then use the <code>Image Name</code> field to point to an attached image that you&apos;d like to see on your display tab, and let Notenik pull these images in automatically. </p>
+<p>Either way, the results are pretty darned nice. </p>
+<p>So that&apos;s it for the latest releases. As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.5.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 8.3.0 - A Few Hot Tips for Users Old and New</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html"/>
@@ -184,153 +384,6 @@
 <p>This release includes one more feature useful for Streamlined Reading and Web Books: a new field titled <code>Include Children</code>. I haven&apos;t made use of it yet for either of the Notenik Web Books, so I can&apos;t point you to an example, but it allows you to pull the children of a Note into the parent&apos;s Display, in cases where you might wish the child Notes to be separately addressable, but don&apos;t want to make the reader keep clicking on a &quot;Next&quot; link to advance from one to the next. </p>
 <p>And then, finally, I&apos;ve added a new Sort option that allows a Collection to be sorted by Date (without respect to Status) plus the Seq field (if used) followed by the Title field. I had a user request this feature, and it seemed reasonable to me, so there it is. </p>
 <p>Those are the changes in the latest release. Check them out in the app and, where you need more info to make sense of them, refer to the Notenik Knowledge Base for the details. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.7.0 - Class Templates are Introduced</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.7.0-class-templates-are-introduced.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.7.0-class-templates-are-introduced.html</id>
-	  <published>2021-11-30T09:00:00Z</published>
-	  <updated>2021-11-30T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  This release introduces Class templates. Each different Class value within a Collection can have its own template, and that template can limit the fields included on the Edit tab for Notes of that Class, and can also supply default values for any fields that are included. This is one of those features that can be used in lots of different ways, for many different purposes, so it&apos;s worth sitting down and having a good think about how you might be able to put this feature to use for your Notes. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This release is focused on an expanded use of the Class field, including the introduction of the very useful Class templates. </p>
-<p>The Class field was introduced in 7.5.0, and its associated features have been expanded in 7.6.0, and now again in 7.7.0. </p>
-<p>With this release, Notenik will recognize a subfolder named <code>class</code>, and then use each of the files found therein as class templates. Class templates can be used for three very useful purposes. </p>
-<p>First, each filename will be recognized as a valid Class value, whether or not that value was identified as such in the Collection template file. </p>
-<p>Second, you can omit certain fields from a Class template file, and then only the remaining fields (the ones included in the Class template file) will be shown on the Edit tab, when that Class value is specified for a particular Note. </p>
-<p>Third, you can supply default values for any of the associated fields, and these will then be pre-populated when you create a new Note with that Class. </p>
-<p>A couple of these functions above involve a bit of a chicken-and-egg type problem: the Edit field will be configured and pre-populated based on the Class, but there&apos;s no way to specify the Class until you get to the Edit tab! </p>
-<p>The solution here is the new command, found beneath the <code>Note</code> menu, to create a <code>New Note w/Options</code>. When you select this menu item, you will be presented with a window allowing you to select the Class for the new Note. Once you hit <code>OK</code> on this screen, you will be taken to the Edit tab, blank except for the values you&apos;ve specified. </p>
-<p>This new Options screen also allows you to fill in a couple of other useful fields. First, the Note&apos;s title, just because that seems a natural thing to do at this point in your flow. But then there are also the Level and Seq fields for the new Note. The Level field will default to that of the last Note selected before invoking this screen, but you can change it if you like. The Seq field will then change appropriately to reflect the Level you&apos;ve selected, in order to place the new Note just after the last Note selected. </p>
-<p>Notenik also has some new Display logic associated with certain special Class values, especially when a Collection is in the Streamlined Reading mode. For example, a Class value of <code>quote</code> will result in the body of the Note being displayed with <code>blockquote</code> styling. And if you use the new <code>Attribution</code> field to indicate the source of the quote, that field will be neatly shown below the quotation itself. </p>
-<p>As long as I was allowing a Class template to limit the fields shown on the Edit tab, it also seemed like a good time to remove calculated fields from the Edit tab, since they can&apos;t be modified directly by the user anyway. So now the Edit tab will be that much cleaner, allowing you to focus on the fields of interest to you. </p>
-<p>Those are the heavy hitters in this release. Be sure and read more about these new features in the Notenik Knowledge Base, where you&apos;ll find all the details. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.6.0 - A Little Something for Everyone</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.6.0-a-little-something-for-everyone.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.6.0-a-little-something-for-everyone.html</id>
-	  <published>2021-11-09T09:00:00Z</published>
-	  <updated>2021-11-09T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Notenik 7.6.0 should contain a little something for everyone, including some additional sort options, an improvement to the Quick Action window, more reasonable handling of data from deleted fields, the ability to include images in a Web Book, as well as the ability to specify your own available values for the new Class field. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This is another grab bag release, with a handful of unrelated changes, but everyone should find a little something useful in the mix. Some of these changes were suggested by users, and some were ones I dreamt up all on my own. </p>
-<p>First of all, a Sort Option to sequence your list by Date Modified has been added. No matter what sort of information you&apos;re storing in Notenik, it will probably at least occasionally be useful to sort your Notes to see those that have most recently been modified. This was a user request. </p>
-<p>Next, I&apos;ve added a keyboard shortcut to the option to Reverse a Sort. Combining the CMD key with a number key will change the sort field used for a Collection to one of the nine available options. (See the Sort submenu beneath the Collection menu for details.) But now <code>CMD 0</code> will reverse the sequence for any of these options. Especially when switching from one option to another, I often find I want to reverse the sequence, and so this new keyboard shortcut makes that a snap. </p>
-<p>Another user request was to have the Quick Action window retain the last Collection Shortcut entered as a default for the next time a Quick Action is taken. This can make an action even quicker, and I&apos;m already using it to speed up some of my Notenik work. </p>
-<p>One more change in this release involves the removal of fields from a Collection. This isn&apos;t the most common of operations &#8211; usually you&apos;re selecting fields when you create a new Collection, or adding more later. But occasionally, after I&apos;ve added some fields, I later realize that they&apos;re not really needed and, in fact, are just getting in the way. At that point I open the Collection Preferences and uncheck the fields I no longer want. So far, so good, it would seem. But what if some of your Notes already have data in those now-deleted fields? Unfortunately, Notenik did not previously have a systematic way for dealing with this sort of abandoned data. With this release, though, those fields and values will be systematically purged from your Notes, to prevent any untoward things from happening somewhere downstream. This is not a feature you&apos;ll be using every day, I&apos;ll wager, but good to know it&apos;s there when you need it. </p>
-<p>And then there&apos;s yet another change in this release, only useful if you&apos;re using the recently added option to <code>Generate a Web Book</code>. In that case, the <code>Image Name</code> field can now be used to include an image that will appear towards the top of a page, between the <code>Title</code> and the <code>Body</code>. </p>
-<p>And then the new <code>Class</code> field has been fleshed out a little further, with the user given an option for specifying his or her own values for the field, as an alternative to the ones that seem useful to me. Still more to come in terms of functionality associated with this field, but this is a small step forward. </p>
-<p>And that&apos;s it! Hope you find something useful here. And if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.5.0 - A Few Small Improvements</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.5.0-a-few-small-improvements.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.5.0-a-few-small-improvements.html</id>
-	  <published>2021-10-28T09:00:00Z</published>
-	  <updated>2021-10-28T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Notenik 7.5.0 makes a few small improvements, including reorganizing some of the app&apos;s menus, as well as rearranging things on the Collection Prefs screen. The Advanced Search option is the new feature that might be most widely appreciated. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Sometimes it&apos;s enough to just improve a few things for users, rather than adding a bunch of completely new stuff. </p>
-<p>This release adds an Advanced Search function. The new window allows you to opt out of including certain common fields in a search, when you&apos;re looking for more focused results. It also gives you the option of doing a case-sensitive search. These are not options you need everyday, but it&apos;s nice to have them there when they&apos;d be helpful.  </p>
-<p>Adding a new menu option made me rethink Notenik&apos;s overall menu structure, resulting in a couple of changes that should make everything a little easier to navigate. If you&apos;re looking for sort options, these are now found beneath the Collection menu. Search options, including the new Advanced Search option, are now beneath the new Nav menu, along with a few more navigation options. And the Format menu is now gone, with the <code>Display Appearance</code> option now beneath the App preferences. </p>
-<p>This release also adds a new field label and type of <code>Class</code>. The intent here is to have a field that tells Notenik something about the intended role of a particular Note within the overall structure of a Collection. But this is mostly a placeholder for now. Look for future enhancements in coming releases to more fully express my design intent here. </p>
-<p>In the meantime, though, the addition of this new field was the proverbial straw that broke the camel&apos;s back when it came to the Collection Preferences window, so I&apos;ve reorganized this thing a bit to make it easier to use, and make better use of available screen real estate. </p>
-<p>A new user recently noticed that, if you have the Edit tab visible, Notenik allows you to quit the application, or close the window, without saving any in-flight changes you had made. I&apos;ve fixed this, so Notenik will save your changes automatically in this scenario. </p>
-<p>And then, one more slight improvement: when sorting by the Seq field, Notenik will now perform padding on up to six segments (separated by dots or dashes), whereas before it stopped at four. </p>
-<p>If you&apos;re a Notenik user, then hopefully you will find at least a few of these refinements to be helpful. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.4.0 - Wiki Link Enhancements</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.4.0-wiki-link-enhancements.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.4.0-wiki-link-enhancements.html</id>
-	  <published>2021-10-14T09:00:00Z</published>
-	  <updated>2021-10-14T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Notenik 7.4.0 addresses some common issues that often arise when making use of  Wiki Style Links. Welcome to backlinks, automatic target note creation, and AKA entries for your Notes! 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Notenik 7.4.0 addresses some common issues that often arise when making use of  <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-style-links.html">Wiki Style Links</a>. </p>
-<p><strong>Issue # 1</strong>: You&apos;re writing one Note, then realize you want that Note to link to a different Note, but that different Note does not yet exist. Before 7.4.0, Notenik would allow you to create the link but then, when you clicked on it, would just give you a (not very helpful) error message. </p>
-<p>The fix? When you save a Note (or reload a Note you have edited externally, using your favorite text editor), Notenik will check all of the Note&apos;s wiki style links to make sure they point to Notes that actually exist. For any that don&apos;t yet exist, Notenik will automatically create them! And the new Note will contain a handy pointer back to the Note that created it, via its wiki style link. </p>
-<p>Problem solved! </p>
-<p><strong>Issue # 2</strong>: You&apos;ve named a Note one way (including a verb and an object, let&apos;s say) and then want to later refer to that Note via a wiki style link. But given the context of the reference to that Note, you want to use slightly different wording in the new sentence you&apos;re constructing (calling out just the object, let&apos;s say). </p>
-<p>The solution? Now you can add a special <a href="https://notenik.app/knowledge-base/EPUB/html/also-known-as.html">AKA</a> field to a Collection, and then add one or more alternate identifiers to a Note, allowing you to then wiki link to that Note using any of the alternates you have called out. For example, even though the <a href="https://notenik.app/docs.html">Notenik Knowledge Base</a> includes a Note for this new field that is titled &quot;Also Known As,&quot; I can link to that Note using a Wiki Link of <code>[AKA]</code>, because the <code>Also Known As</code> Note contains an <code>AKA</code> entry that calls out <code>AKA</code> as an alternate identifier for that Note. </p>
-<p>Pretty handy, eh? </p>
-<p><strong>Issue # 3</strong>: You&apos;ve created a bunch of wiki style links that refer to various other Notes. And now you&apos;re looking at a Note in your Collection. And you can see what other Notes are linked to from this Note, but then you wonder&hellip; which Notes, if any, link to this Note? </p>
-<p>The answer? <em>Backlinks!</em> By enabling the new field type called <a href="https://notenik.app/knowledge-base/EPUB/html/back-links.html">Backlinks</a>, Notenik will automatically keep track of backlinks in your Collection, and make them available on the Display tab. </p>
-<p>And so now you have automatic bidirectional linking of Notes within a Collection: write one link to go from one Note to another, and you can then automatically traverse your wiki style links in either direction. </p>
-<p><strong>And One More Thing</strong>: The Notenik Knowledge Base now has a new article in the <a href="https://notenik.app/knowledge-base/EPUB/html/putting-it-all-together.html">Putting It All Together</a> section called <a href="https://notenik.app/knowledge-base/EPUB/html/write-a-web-book.html">Write a Web Book</a>, that gives you some pointers on how to create a web book of your own. Hope you find it useful! </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 7.3.0 - A Handful of Helpful Refinements</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-7.3.0-a-handful-of-helpful-refinements.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-7.3.0-a-handful-of-helpful-refinements.html</id>
-	  <published>2021-09-30T09:00:00Z</published>
-	  <updated>2021-09-30T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Version 7.3.0 of Notenik includes a handful of nifty changes: Improved Seq and Level Defaults for Drag and Drop; Improved Recognition of Parent Realm Folders; Parent Realm Folders Now Appear on Open Recent Menu; Streamlined New Collection process; Saving Security-Scoped Bookmarks; and Undo Provided for Note Deletions. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Version 7.3.0 of Notenik includes a handful of helpful improvements. </p>
-<h5 id="improved-seq-and-level-defaults-for-drag-and-drop">Improved Seq and Level Defaults for Drag and Drop</h5>
-<p>When pasting an item (such as a URL) into a List sorted by Seq, and when the drop point is between existing rows, Notenik will now do a better job of setting reasonable defaults for both Seq and Level for the new Note. </p>
-<h5 id="improved-recognition-of-parent-realm-folders">Improved Recognition of Parent Realm Folders</h5>
-<p>Notenik allows you to drag a folder to be opened onto its app icon in the dock. That folder can be either a Notenik Collection or a parent folder containing Notenik Collections. Before this change, if a folder contained a single text file named <code>robots.txt</code>, then that would be treated as a Note, and so the folder would be opened as a Collection. After this change, such a folder will be more productively treated as the object of an <a href="https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html">Open Parent Realm</a> command. </p>
-<h5 id="parent-realm-folders-now-appear-on-open-recent-menu">Parent Realm Folders Now Appear on Open Recent Menu</h5>
-<p>After you execute the <a href="https://notenik.app/knowledge-base/EPUB/html/open-parent-realm.html">Open Parent Realm</a> command (either explicitly via the <code>File</code> menu, or implicitly by dragging a folder onto the app icon), the Parent Realm folder will now be added to the the <code>Open Recent</code> menu, making it available to be easily reopened later. </p>
-<h5 id="streamlined-new-collection-process">Streamlined New Collection process</h5>
-<p>It seemed a bit confusing to have so many different options for creating a new Collection, so I&apos;ve combined them. Now there is just one <code>File</code> menu option, that says <code>New Collection&amp;hellip;</code>. This option walks you through several screens where you can pick a location, pick a name, and pick a Collection type, and then shows you the Collection Preferences screen where you can make any final adjustments to the configuration of your New Collection. </p>
-<h5 id="saving-security-scoped-bookmarks">Saving Security-Scoped Bookmarks</h5>
-<p>Notenik has been enhanced to try to extend the life of access permissions for Collections assigned Shortcuts, so as to reduce the number of times a user has to re-authorize access to a folder. See <a href="https://notenik.app/knowledge-base/EPUB/html/tailor-collection-preferences.html">Tailor Collection Preferences</a> for info on assigning a Shortcut to a Collection. </p>
-<h5 id="undo-provided-for-note-deletions">Undo Provided for Note Deletions</h5>
-<p>If you delete a Note by mistake, then you can use the Undo function (beneath the Edit menu) to undo the deletion, with the only caveat being that any note attachments will not be restored. </p>
 
 		  ]]>
 	  </content>

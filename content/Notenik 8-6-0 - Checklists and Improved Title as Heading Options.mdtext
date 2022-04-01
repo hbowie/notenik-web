@@ -1,0 +1,38 @@
+Title:  Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options
+
+Page Title: Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   28 Feb 2022
+
+Teaser:
+
+Markdown Checklists are now available, as are more flexible options for formatting Note Titles, along with improved default CSS styling for headings, plus a new toggle for auto-creation of missing wiki link targets. 
+
+
+Body:
+
+I've been gradually adding support for various common Markdown extensions, and the latest is support for checklists -- also called [task lists](https://www.markdownguide.org/extended-syntax/#task-lists). You just put a pair of square brackets following a dash and a space, at the beginning of a line, and then either an 'x' or a space inside the brackets, and -- voila! -- when you view the formatted display, you either see empty boxes, or boxes with check marks inside of them. A small thing, but a nice addition to the Notenik feature list. 
+
+And then there's the way Note titles appear on the Display tab. There used to be a single, binary option: either display as level 1 HTML headings, or normal paragraphs with the text in bold. But that simple choice between two extremes -- huge or small -- had been nagging at me for a while. So now you can choose any heading level you like (or even vary the heading size based on a note's level within its Collection hierarchy), or bold and/or italics at your normal text display size. Much nicer. 
+
+And while I was at it, I tweaked the default CSS styling for the various heading levels -- when headings are used for Note titles, but also for any normal Markdown headings you place within the body of a Note. You can view the default sizing within the Notenik Knowledge base, but the range seems a bit more refined now, at least to my eyes. (And, of course, you can still override with your own CSS, if that's your thing.)
+
+And then, as part of my recent work to make Notenik more tolerant of YAML metadata, I added one more missing piece: the auto-creation of missing wiki link targets is now optional, and off by default. So if you use Notenik to open an existing folder of text files formatted with YAML metadata -- perhaps even one you also use with another,  [electron](https://en.wikipedia.org/wiki/Electron_(software_framework))-based app...? -- Notenik should now leave your Notes in a state perfectly suitable for continued access by other apps as well. 
+
+And now that the Notenik/YAML reconciliation has been pretty much completed, I'd like to give a shout-out to Evan Travers. He has a nice little web page offering up his latest thoughts on creating a [Simple Markdown Zettelkasten](https://evantravers.com/simple-markdown-zettelkasten), including a list of supported tools, and it was this list -- and his initial decision to drop Notenik, after briefly considering it -- that caused me to reach out to him, and pursue the changes along this path that have been coming along of late. Evan has a nice [Notenik post out now](https://evantravers.com/articles/2022/02/28/notenik/), and I'm grateful to him for working with me to make Notenik potentially more useful to a larger audience. 
+
+So that's it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Version History entry](https://notenik.app/knowledge-base/EPUB/html/version-8.6.0.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.
+
+
+[md]: https://daringfireball.net/projects/markdown/
+[mmd]: https://fletcherpenney.net/multimarkdown/
+[mmdmeta]: https://fletcher.github.io/MultiMarkdown-4/metadata.html
+[postel]: https://en.wikipedia.org/wiki/Robustness_principle
+[yaml]: https://en.wikipedia.org/wiki/YAML
+[yaml-front]: https://support.typora.io/YAML/

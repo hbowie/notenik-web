@@ -1,0 +1,30 @@
+Title:  Notenik 9.0.1 - Hooked on Notenik
+
+Page Title: Notenik 9.0.1 - Hooked on Notenik
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   31 Mar 2022
+
+Teaser:
+
+The last couple of releases focused on better integration with other apps, including new Custom URL commands, new custom AppleScript commands, and the ability to integrate with the Hook app via their official scripts.  
+
+
+Body:
+
+The last couple of releases focused on integration with the [Hook app](https://hookproductivity.com). I've had people ask me about Hook integration for a while now, and I finally invested enough time and energy to figure out how all of this might work. [Luc Beaudoin](https://twitter.com/luccogzest) and his team were very helpful and responsive when I had questions, with the happy result that they have just today [announced the availability of their integration scripts for Notenik](https://discourse.hookproductivity.com/t/integration-with-notenik-note-taking-app/4889/3). It's been a pleasure working with the team, and it's nice to see one more user requested fulfilled. 
+ 
+There were some other enhancements as part of 8.9.0, 9.0.0 and 9.0.1 -- generally along this same theme of integration. A couple of new commands were added to the custom URL scheme, to make it possible to access a Note via a complete file path as well as via its Timestamp. Hook integration was enabled via the addition of some new custom AppleScript commands. Also, you can now drag a text file onto Notenik's app icon, and Notenik will attempt to open the enclosing folder as a Collection, and then select the dropped Note. 
+
+Also corrected a problem with Notenik's Markdown parser that affected a list of numbers, one per line, without any spacing or punctuation. And also added a Collection pref to allow the Notenik parser to turn straight apostrophes into curly ones. 
+
+Oh, and when you hit the tab key while in a Link field, Notenik will now advance you to the next field, as one might expect, instead of actually inserting a tab character into the middle of a hyperlink. 
+
+And there's also a new addition to the Notenik documentation. Articles such as [this one from The Sweet Setup](https://thesweetsetup.com/obsidian-vs-roam/) go into quite a bit of detail comparing various players in the Personal Knowledge Management (PKM) space, so I thought it might be time to offer up a description of Notenik features that is equally detailed, without being as lengthy and comprehensive as the Notenik Knowledge Base. The result is a new guide to Notenik's features, formatted in a way that makes it easy to compare to some of these other apps. You can find it [here](https://notenik.app/features/EPUB/html/notenik-features.html) on the website. Feel free to check it out, and recommend it to others.  
+
+So that's it for the latest updates! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Notenik Version History page](../knowledge-base/EPUB/html/version-history.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

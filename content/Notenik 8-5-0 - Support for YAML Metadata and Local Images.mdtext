@@ -1,0 +1,65 @@
+Title:  Notenik 8.5.0 - Support for YAML Metadata and Local Images
+
+Page Title: Notenik 8.5.0 - Support for YAML Metadata and Local Images
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   20 Feb 2022
+
+Teaser:
+
+YAML metadata is now a thing, and Notenik now supports it, in addition to its own special format. And then there's the problem of how to load local images into a Note, which now has a solution, allowing them to show up in the Display tab for the Note within Notenik. 
+
+Body:
+
+### Enter YAML, Stage Left
+
+In the beginning, there was [Markdown][md]. 
+
+And then there was [MultiMarkdown][mmd], which included support for [metadata][mmdmeta] (data about a Markdown doc), using its own special format. 
+
+And then, somewhat recently, Markdown metadata formatted using [YAML][] has become a thing. 
+
+This sort of YAML metadata is often referred to as [YAML Front Matter][yaml-front].
+
+Now Notenik has its own way of structuring such data. But this is a good opportunity for the application of [Postel's Law][postel], which states:
+
+> Be conservative in what you do, be liberal in what you accept.
+
+And so, the question becomes, if someone asks Notenik to open an existing folder full of Markdown notes with YAML front matter, how will Notenik respond? 
+
+Well, prior to the last couple of releases, the answer to that question left a bit to be desired. 
+
+But with version 8.4.0, and even more so with 8.5.0, Notenik takes YAML front matter in stride. And not only will Notenik read and recognize such data, but it will do a pretty fair job of respecting such a format choice when modifying and even adding Notes in an existing Collection. 
+
+So, if you are already using YAML front matter, and happy with it, there's no reason not to point Notenik at such a Collection of Notes and see how you like it. And if you run into any problems with such an experiment, feel free to drop me a line and let me know what's going on. 
+
+### Enter Local Images, Stage Right
+
+And then there's one more new thing that's kind of cool. 
+
+Before 8.5.0, you could use Markdown image tags in the bodies of your Notes, and this would work well -- so long as you were using `http` or `https` to reference image files stored on a web server somewhere. 
+
+Unfortunately, such tags worked not at all if you were trying to address image files stored locally, most often in a subfolder, using relative paths. 
+
+It's not that I hadn't wanted to provide such functionality before. But the last time I tried to make this work I ran into some Apple API issues that prevented an easy implementation. 
+
+But 8.5.0 provides a solution. In order to enable it, you have to select a new option in the Collection Preferences. Once you check this box, Notenik will subtly change its behavior when formatting a Note's display: instead of doing the formatting entirely within the computer's memory, it will first write an `html` file to disk, and then create the display from this temporary file. And this slightly different behavior will then allow local image file references to work. 
+
+Where would you place such image files? Well, you could manually add them to a special folder for images that you create within your Collection folder. Or you could add the image files as attachments to your Notes, and then use the `Image Name` field to point to an attached image that you'd like to see on your display tab, and let Notenik pull these images in automatically. 
+
+Either way, the results are pretty darned nice. 
+
+So that's it for the latest releases. As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Version History entry](https://notenik.app/knowledge-base/EPUB/html/version-8.5.0.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.
+
+
+[md]: https://daringfireball.net/projects/markdown/
+[mmd]: https://fletcherpenney.net/multimarkdown/
+[mmdmeta]: https://fletcher.github.io/MultiMarkdown-4/metadata.html
+[postel]: https://en.wikipedia.org/wiki/Robustness_principle
+[yaml]: https://en.wikipedia.org/wiki/YAML
+[yaml-front]: https://support.typora.io/YAML/

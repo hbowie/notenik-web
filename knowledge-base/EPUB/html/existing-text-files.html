@@ -21,23 +21,25 @@ window.MathJax = {
 <hr class="clearFloats" />
 
 <p>4 <a href="files-and-folders.html">Files and Folders</a>&nbsp;&#8593;</p>
-<h1>4.9 Existing Text Files</h1>
-<p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following variations on the normal Notenik format. </p>
-<ol>
-<li>
-<p>Markdown - The first line of the file contains a Markdown level 1 heading, which is to be used as the Note's title. The remainder of the file makes up the body. No metadata, and no field labels. </p>
-</li>
-<li>
-<p>MultiMarkdown - The file may start with metadata, including a title, but there is no explicit label identifying the start of the body; instead, the first blank line indicates the end of the metadata and the start of the body. </p>
-</li>
-<li>
-<p>Plain Text - The title is taken from the file name, and the entire contents of the file makes up the body. No metadata, and no field labels.  </p>
-</li>
-</ol>
-<p>Note that these three formats differ from the normal Notenik format in one or more of the following ways: </p>
+<h3 id="existing-text-files">4.9 Existing Text Files</h3>
+<p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following alternate text file formats.  </p>
+<p>In all cases, the body of the Note will be treated as Markdown. </p>
+<p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of each text file. </p>
+<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
+<p>And when adding new Notes to a Collection, Notenik will attempt to use whatever format is already found in the folder. </p>
+<h2 id="plain-text">Plain Text</h2>
+<p>The first line of the file contains neither a Title label nor a Markdown level 1 heading. The title is taken from the file name (minus the extension) and the entire file contents make up the body. No metadata, no field labels, and no tags. </p>
+<h2 id="markdown">Markdown</h2>
+<p>The first line of the file contains a level 1 heading, and this is used as the Note&#8217;s title. The second line may optionally contain tags for the Note, identified by a hash mark in the first position of the line, immediately followed by tag(s), with no intervening spaces. The rest of the file makes up the Note&#8217;s body. No metadata, and no field labels. </p>
+<h2 id="multimarkdown">MultiMarkdown </h2>
+<p>The MultiMarkdown format has a special syntax for metadata stored at the top of a Markdown document. Notenik will attempt to recognize and parse such a document according to <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html">this specification</a>. </p>
+<h2 id="yaml-frontmatter">YAML Frontmatter</h2>
+<p>Metadata is present at the beginning of the document. A line with three dashes indicates the beginning of the metadata block, and appears on the first line of the file. The end of the metadata block is indicated by another line with three dashes, or a line with three dots. Between these delimiters metadata is expressed in a fashion very similar to the MultiMarkdown format, with the effective difference being that fields capable of possessing multiple values (<em>tags</em>, <em>authors</em>, etc.) have each of those values expressed on a separate line, with each value preceded by a dash. </p>
+<h2 id="notenik">Notenik</h2>
+<p>The Notenik format differs from those above in the following significant ways. </p>
 <ul>
 <li>
-<p>While Notenik will create a Note's file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example: </p>
+<p>While Notenik will create a Note&#8217;s file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example: </p>
 <pre>
 <code>Title: Supported Variations in Text File Formats
 </code></pre>
@@ -46,14 +48,15 @@ window.MathJax = {
 <p>Notenik will generally write out a blank line between fields, to aid in readability, which means that the beginning of the body is not triggered by the first blank line. </p>
 </li>
 <li>
-<p>Notenik will explicitly identify the start of the Note's body with a body label, as in the following example: </p>
+<p>Notenik will explicitly identify the start of the Note&#8217;s body with a body label, as in the following example: </p>
 <pre>
 <code>Body: 
 </code></pre>
+<pre>
+<code>And this is the first line of the body.
+</code></pre>
 </li>
 </ul>
-<p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of the text file. </p>
-<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
 <hr>
 <h4>Contents</h4>
 <ul>

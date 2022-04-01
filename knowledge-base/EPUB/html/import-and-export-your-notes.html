@@ -21,12 +21,16 @@ window.MathJax = {
 <hr class="clearFloats" />
 
 <p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
-<h1>5.2 Import and Export Your Notes</h1>
+<h3 id="import-and-export-your-notes">5.2 Import and Export Your Notes</h3>
 <p>You can import and export a Collection in a variety of formats, using commands found under the File menu.  Following are the supported formats.</p>
 <ul>
 <li>
 <p>Import/Export in Notenik Format  </p>
 <p>You can import and export your Notes in the current collection from/to a folder in the same Notenik format. </p>
+</li>
+<li>
+<p>Export in YAML Format </p>
+<p>You can export your Notes into a new folder, using YAML metadata rather than the Notenik format. The new folder will be formatted so that it can be opened by Notenik as a Collection, which means that it will have some &#8216;extra&#8217; files: <code>- INFO.nnk</code>, <code>- README.txt</code> and <code>template.md</code>. Feel free to delete these if they are not needed. </p>
 </li>
 <li>
 <p>Import/Export in Tab-Delimited Format  </p>
@@ -54,7 +58,7 @@ window.MathJax = {
 </li>
 <li>
 <p>Export in Concatenated HTML or Markdown </p>
-<p>A single file will be produced, with all Notes in the Collection appearing one after another, in the selected format (HTML or Markdown). Notes will appear in whatever Sort Sequence you have currently selected for the Collection. If you've selected the Streamlined Reading option in the Collection Preferences, then the focus of the content will be on the <a href="seq.html">Seq</a>, Title and Body fields. The overall intent is to combine all of the Notes in your Collection into a single document. </p>
+<p>A single file will be produced, with all Notes in the Collection appearing one after another, in the selected format (HTML or Markdown). Notes will appear in whatever Sort Sequence you have currently selected for the Collection. If you&#8217;ve selected the Streamlined Reading option in the Collection Preferences, then the focus of the content will be on the <a href="seq.html">Seq</a>, Title and Body fields. The overall intent is to combine all of the Notes in your Collection into a single document. </p>
 </li>
 <li>
 <p>Export as a Web Book </p>
@@ -76,7 +80,7 @@ window.MathJax = {
 <p>Note that the Tags Export Preferences are global across all Collections. </p>
 </li>
 <li>
-<p>Split Tags? Select &#8216;Yes&#8217; if you wish one row to be written for each Tag on each Note. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note's Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. </p>
+<p>Split Tags? Select &#8216;Yes&#8217; if you wish one row to be written for each Tag on each Note. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note&#8217;s Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. </p>
 </li>
 <li>
 <p>Add Web Extensions? Select &#8216;Yes&#8217; to add a number of fields that can be useful for generating Web pages. </p>

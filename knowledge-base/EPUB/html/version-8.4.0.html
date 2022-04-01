@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 8.4.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+<p class="alignLeft">Notenik Knowledge Base</p>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+
+<p>11 <a href="version-history.html">Version History</a>&nbsp;&#8593;</p>
+<h3 id="version-8.4.0">11.9 Version 8.4.0</h3>
+<p>Date: 15 Feb 2022</p>
+<h5 id="added-support-for-yaml-frontmatter">Added Support for YAML Frontmatter</h5>
+<p>Notenik had previously supported MultiMarkdown metadata, but had not explicitly supported YAML frontmatter. The omission was most problematic when multiple values for a field were expressed on multiple lines following the label, with each line starting with a dash. Notenik now supports this sort of metadata, both when reading existing files, and when modifying or adding files in this format. See the revised documentation on <a href="existing-text-files.html">Existing Text Files</a> for details. </p>
+<h5 id="general-improvements-in-handling-alternate-metadata-formats">General Improvements in Handling Alternate Metadata Formats</h5>
+<p>Made several miscellaneous improvements in the way that Notenik handles text files in alternate text file formats. </p>
+<h5 id="increased-respect-for-existing-collection-formats">Increased Respect for Existing Collection Formats</h5>
+<p>When creating a new Note, Notenik would previously always use the Notenik format, even when adding a Note to a Collection containing text files in alternate formats. Notenik will now attempt to add new Notes in a format consistent with that of existing Notes in the folder. </p>
+<hr>
+<p>Next: <a href="version-8.3.0.html">Version 8.3.0</a></p>
+</body>
+</html>
