@@ -1,0 +1,40 @@
+Title:  Notenik 9.2.0 - Easy Commonplace Book with Lookup Fields
+
+Page Title: Notenik 9.2.0 - Easy Commonplace Book with Lookup Fields
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   20 Apr 2022
+
+Teaser:
+
+Added a new model Collection -- a Commonplace Book using Lookup fields -- that can be used to initialize a new Collection; added automatic generation of initial backlinks when adding a Backlinks field; straightened out some issues that could affect capture of metadata when importing/pasting a new Note into a Collection; fixed some problems associated with moving/copying a Collection, including initial population of a new Collection.  
+
+
+Body:
+
+One of the things that Notenik can be used for is the creation and maintenance of a [Digital Commonplace Book](https://www.nytimes.com/2021/02/10/technology/personaltech/make-digital-commonplace-book.html). In fact, this was one of my original intentions motivating the creation of Notenik, and I've been using my software to maintain my own Commonplace Book for quite a number of years (going all the way back to [iWisdom](https://iwisdom.en.softonic.com/mac), as a matter of fact). 
+
+Using software to create a list of notable quotations is easy enough, but it gets a little more challenging when you want to record associated information about the author of each quote, and the work from which the quote was taken. At some point, you begin to see that you need something like a relational database, with a separate table for authors, and another for works (books, etc.), and finally one for quotes, that can reference the other two. 
+
+As it turns out, all of this can be done using Notenik, taking advantage of the Lookup field type. But setting all of this up can be a bit daunting, requiring use of an external text editor to customize your Collection template files in various ways. 
+
+It all became a bit easier with the latest release, though. Now, when creating a new Collection, you can select an option of `Commonplace with Lookups` as a model Collection with which to initialize your own, and all of this will get set up for you automatically.  
+
+See the [Create a Commonplace Book with Lookup Fields](https://notenik.app/knowledge-base/EPUB/html/create-a-commonplace-book-with-lookup-fields.html) article for more info on how all of this works. 
+
+And if you're wanting to see an example of how to use Lookup fields, perhaps with some different intent, this is still a great place to start. 
+
+One of the things I did here -- which I had never done before -- was to *nest* Notenik Collections, putting one Collection folder inside of another. To tell the truth, I wasn't even sure that this would work! But it all seems to work seamlessly, and helps to keep things straight. 
+
+Copying the model data from a secure location within the Notenik app bundle to the user's desired location, though, didn't initially work so well. So Notenik's ability to move or copy a Collection has been enhanced/corrected with this release, as well. 
+
+And then there was a problem with capturing metadata from an external text file when it got dragged into Notenik -- so that's been fixed also. 
+
+And then, even though the Collection Preferences screen would let a user add a Backlinks field to an existing Collection, Notenik didn't automatically generate the initial set of Backlinks as part of that process. So that's been fixed up in this release as well. 
+
+And that rounds out the set of changes in this latest release. As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Notenik Version History page](../knowledge-base/EPUB/html/version-history.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

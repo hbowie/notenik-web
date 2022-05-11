@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 <title>Why is the Notenik Format Different?</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-<script> 
+<script type="text/javascript"> 
 window.MathJax = { 
     tex: { 
       tags: 'ams' 
     } 
   }; 
 </script> 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
 </script>
 </head>
 <body>
@@ -34,7 +35,7 @@ window.MathJax = {
 <p>That being said, a Notenik file is not a completely general-purpose object: it&#8217;s not intended to compete with JSON or YAML, for example. For one thing, each note must have a Title field and a Body field, in addition to other fields. Also, each field generally consists of a single value, without any convention for handling arbitrary lists, or any nesting of objects. </p>
 <p>So there you have it: a Notenik Note sits somewhere between a Markdown doc with metadata and a full-fledged  object with any number of complex fields. Which makes it simple enough to be read and written by ordinary humans using any text editor, and yet flexible enough to help such users keep track of any number of useful, everyday objects. </p>
 <p>Which was exactly my intent when concocting this format. </p>
-<hr>
+<hr />
 <p>Next: <a href="use-of-a-text-editor.html">Use of a Text Editor</a></p>
 </body>
 </html>

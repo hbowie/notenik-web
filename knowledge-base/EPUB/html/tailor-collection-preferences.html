@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 <title>Tailor Collection Preferences</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-<script> 
+<script type="text/javascript"> 
 window.MathJax = { 
     tex: { 
       tags: 'ams' 
     } 
   }; 
 </script> 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
 </script>
 </head>
 <body>
@@ -22,7 +23,7 @@ window.MathJax = {
 
 <p>2 <a href="creating-and-tailoring-a-collection-of-notes.html">Creating and Tailoring a Collection of Notes</a>&nbsp;&#8593;</p>
 <h3 id="tailor-collection-preferences">2.3 Tailor Collection Preferences</h3>
-<p><em>aka: Tailor the Collection Preferences</em></p>
+<p><em>aka: Tailor the Collection Preferences, collection shortcuts</em></p>
 <p>You will be presented with the Preferences for your Collection immediately after creating it. </p>
 <p>But you can always access these Preferences later by selecting <code>Preferences&#8230;</code> beneath the <code>Collection</code> menu. </p>
 <p>(Note that these are different from the Application preferences, found beneath the <code>Notenik</code> menu. The Application Preferences apply globally to all of your Collections.) </p>
@@ -52,9 +53,14 @@ window.MathJax = {
 <p>Create Notes for Missing Wiki Link Targets? &#8211; This option is off by default. If you turn it on for a Collection, then whenever Notenik encounters a Note containing a wiki-style link to a second Note, and that Note does not yet exist, Notenik will create a Note with the targeted title, and with text in the body of the new Note pointing back to the referencing Note. </p>
 </li>
 </ul>
+<h5 id="list-of-fields">List of Fields</h5>
 <p>The right side of the window allows you to choose the fields you would like to include in the Collection. Feel free to check additional ones if they seem useful to you. </p>
 <p>If you would like to further customize the list of fields for a Collection, read about <a href="the-collection-template-file.html">the Collection Template file</a>, consulting the section on <a href="field-labels-and-types.html">Field Labels and Types</a> as necessary. </p>
-<hr>
+<h5 id="other-fields-allowed">Other Fields Allowed?</h5>
+<p>Note that the last checkbox on the right side is a bit different from the others. It asks if `Other Fields Allowed?'. This is unchecked by default, which means that Notenik will only recognize a field in a Note if it has been defined in advance for the Collection &#8211; either by checking the field label here, on the Collection Preferences window, or by adding it to the template file directly, via an external text editor. </p>
+<p>If you check this box, then anything in any of your Notes that looks like a separate field will be treated as such, whether or not it starts with one of your predefined field labels for the Collection. </p>
+<p>In general, it is better to not allow other, random fields to be recognized as such, to prevent cases of misinterpretation of your Notes. On the other hand, there may be cases where the additional flexibility is worth the risk. </p>
+<hr />
 <h4>Contents</h4>
 <ul>
 <li>2.3.1 <a href="note-title-display.html">Note Title Display</a></li>

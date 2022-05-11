@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 <title>Import and Export Your Notes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-<script> 
+<script type="text/javascript"> 
 window.MathJax = { 
     tex: { 
       tags: 'ams' 
     } 
   }; 
 </script> 
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
 </script>
 </head>
 <body>
@@ -22,6 +23,7 @@ window.MathJax = {
 
 <p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
 <h3 id="import-and-export-your-notes">5.2 Import and Export Your Notes</h3>
+<p><em>aka: import</em></p>
 <p>You can import and export a Collection in a variety of formats, using commands found under the File menu.  Following are the supported formats.</p>
 <ul>
 <li>
@@ -43,6 +45,10 @@ window.MathJax = {
 <li>
 <p>Import from OmniFocus </p>
 <p>You can use either the plain text or csv exports from OmniFocus. See the next section, <a href="import-from-omnifocus.html">Import from OmniFocus</a>, for further info specific to this topic. </p>
+</li>
+<li>
+<p>Import Text File </p>
+<p>You can select a single text file to be imported. This can be in simple Markdown format, or in any format valid for <a href="existing-text-files.html">Existing Text Files</a>. (The same effect can be achieved from the Finder, by dragging the text file onto the List tab of the target Collection window.) You can also import a folder full of such files. </p>
 </li>
 <li>
 <p>Import in XML format </p>
@@ -88,7 +94,7 @@ window.MathJax = {
 </ul>
 <h5 id="quick-export-and-open">Quick Export and Open</h5>
 <p>An alternative export method is available at the bottom of the File menu, to perform a <code>Quick Export and Open</code>. This command will export the current Collection to a CSV (comma-separated values) file located within a sub-folder named <code>quick-export</code> and named <code>export.csv</code>. If the export was successful, then Notenik will ask the operating system to open the CSV file using the default app for handling &#8216;.csv&#8217; files (such as the Numbers app). </p>
-<hr>
+<hr />
 <h4>Contents</h4>
 <ul>
 <li>5.2.1 <a href="import-from-omnifocus.html">Import from OmniFocus</a></li>

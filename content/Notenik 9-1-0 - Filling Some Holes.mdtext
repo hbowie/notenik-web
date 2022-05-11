@@ -1,0 +1,33 @@
+Title:  Notenik 9.1.0 - Filling Some Holes
+
+Page Title: Notenik 9.1.0 - Filling Some Holes
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   15 Apr 2022
+
+Teaser:
+
+Added import option for a single text file (or simply drag and drop from the Finder); modified Discard of Edits to use a less common keyboard shortcut (Shift-CMD-D) and to provide a confirmation alert before proceeding; added a new Markdown command to produce a simple Tags Cloud; and added an option to remove all previously assigned tags based on level. 
+
+
+
+Body:
+
+The latest release focused on smoothing out a few rough spots. 
+
+First, even though Notenik has gotten much more friendly of late in terms of working with text files in a variety of formats (YAML front matter, MultiMarkdown metadata, plain old Markdown, etc.), it was pointed out to me that there was not yet an easy and intuitive way to add a single existing text file to a Collection. So there is now an additional File Import option to import a single text file (in pretty much any format). Even easier, you can start in the Finder and drag such a file onto the List tab of any open Collection in order to add the Note to that Collection.  
+
+Next there is the matter of the command to Discard Edits for a Note currently being entered. This is not an option that was ever meant to be used all that often -- you only need it when you've already entered some stuff, and just want to throw away your edits and start over -- and yet it was all too easy to invoke this command unintentionally, and lose some of your work. So two changes were made: first, the keyboard shortcut is no longer just CMD-D, but now Shift-CMD-D; second, an alert now pops up when you enter this command, asking if you are sure you want to throw away any in-flight changes. These changes should help prevent any accidental data loss. 
+
+And then a couple of bugs were fixed that prevented use of an Author Lookup field. This should once again be working as intended. 
+
+If you're using the Level field to structure your Notes into a sort of outline, then a command had previously been provided to add special Tags entries reflecting this outline structure. But what if you decided you just wanted to get rid of all such Tags? There was no easy way to do so previously -- but now there is. 
+
+And then there's a new Markdown command to create a sort of Tags Cloud based on the Tags you have entered for a Collection. This is an alternative to use of the existing command to create a Tags Outline. If you have multi-level tags on a Collection, then the Outline will probably be the best way to allow easy navigation. But if you're using a bunch of single-level Tags, then the new Tags Cloud format may be preferable. 
+
+So that's it for the latest updates! As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Notenik Version History page](../knowledge-base/EPUB/html/version-history.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

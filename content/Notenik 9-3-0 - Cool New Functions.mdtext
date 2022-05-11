@@ -1,0 +1,47 @@
+Title:  Notenik 9.3.0 - Cool New Functions
+
+Page Title: Notenik 9.3.0 - Cool New Functions
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   10 May 2022
+
+Teaser:
+
+Expanded Note Selector to allow selection from other Collections; added an import option for a folder full of text files; modified the defaults for a new Level field to avoid values of zero; added a command to populate an app catalog; improved editing of the Status field. 
+
+Body:
+
+This latest version of Notenik includes a couple of significant new functions that you might find useful, along with some nice enhancements to existing functionality. 
+
+### Link to a Note in a Second Collection
+
+The Note Selector (introduced in Version 8.8.0) allowed the user to quickly and easily select another Note and then perform one of a number of actions on it -- including formatting a Wiki Link to reference that Note, ready for insertion into the body of the Note being edited. 
+
+However a Wiki Link can only link to another Note within the same Collection. 
+
+But one can construct something like a Wiki Link to another Note in a different Collection by using the Notenik Custom URL Scheme in combination with Collection Shortcuts. 
+
+So the Note Selector window now includes a Collection Shortcut field. It's initially blank, indicating that the current Collection is to be referenced. But you can use the dropdown to select a different Collection, and then perform similar/equivalent actions on a Note from the other Collection -- effectively allowing you to link from a Note in one Collection to another Note in a second Collection. 
+
+Not everyone needs or wants this level of interconnectivity, but some users may find it extremely useful. 
+
+### Populate an App Catalog for your Mac
+
+The second new function can be found beneath the `File` menu, and is called `Populate App Catalog`. You can point this function at your local `Applications` folder on your Mac, and it will then extract information about all the apps found therein, and use that info to populate your frontmost Collection with information about your apps. This is not something that will appeal to everyone, but it is a way of maintaining a user-editable, taggable, searchable, info repository about the applications that you use on your Mac. 
+
+### Import a Folder of Text Files
+
+Also included is a new Import option that will allow you to import a folder full of existing text files in just about any format. (You could import one at a time previously, or drag and drop a bunch onto the List tab, but this new Import option may be easier to use in some cases.)
+
+### Improved Status Field Editing
+
+Version 8.5.0 opened up the Status field to allow input that did not match any of the preset values, but also left a few problems behind. The Status field now combines the best of both worlds, allowing easy selection from a list of tailorable presets, or from any free-form status values encountered within the open Collection. 
+
+### Additional Info
+
+And that rounds out the set of changes in this latest release. As always, if you have something on your Notenik wish list that is still not there, feel free to [drop me a line](mailto:support@notenik.app) and let me know how you think my little app can be further improved. I'm always happy to entertain suggestions from users.
+
+See the [Notenik Version History page](../knowledge-base/EPUB/html/version-history.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.

@@ -5,6 +5,34 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 9.3.0 - Cool New Functions</title>
+	  <link>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</link>
+	  <guid>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</guid>
+	  <pubDate>Tue, 10 May 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Expanded Note Selector to allow selection from other Collections; added an import option for a folder full of text files; modified the defaults for a new Level field to avoid values of zero; added a command to populate an app catalog; improved editing of the Status field. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 9.2.0 - Easy Commonplace Book with Lookup Fields</title>
+	  <link>https://notenik.app/news/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html</link>
+	  <guid>https://notenik.app/news/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html</guid>
+	  <pubDate>Wed, 20 Apr 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Added a new model Collection &#8211; a Commonplace Book using Lookup fields &#8211; that can be used to initialize a new Collection; added automatic generation of initial backlinks when adding a Backlinks field; straightened out some issues that could affect capture of metadata when importing/pasting a new Note into a Collection; fixed some problems associated with moving/copying a Collection, including initial population of a new Collection.  <br />
+
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 9.1.0 - Filling Some Holes</title>
+	  <link>https://notenik.app/news/notenik-9.1.0-filling-some-holes.html</link>
+	  <guid>https://notenik.app/news/notenik-9.1.0-filling-some-holes.html</guid>
+	  <pubDate>Fri, 15 Apr 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Added import option for a single text file (or simply drag and drop from the Finder); modified Discard of Edits to use a less common keyboard shortcut (Shift-CMD-D) and to provide a confirmation alert before proceeding; added a new Markdown command to produce a simple Tags Cloud; and added an option to remove all previously assigned tags based on level. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 9.0.1 - Hooked on Notenik</title>
 	  <link>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</link>
 	  <guid>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</guid>
@@ -66,33 +94,6 @@
 	  <pubDate>Fri, 28 Jan 2022 12:00:00 -0700</pubDate>
 	  <description>
 		  Added Markdown support for the creation of tables, using pipes and dashes; added a new command beneath the File menu to Open the current Collection&apos;s Folder in the macOS FInder; improved editing of Index fields; added new command to Clean a Link, removing common tracking parameters; improved the readability of the Keyboard Shortcuts Reference page in the Knowledge Base; added a new Markdown Cheat Sheet. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.0.0 - Including Several Neat Enhancements</title>
-	  <link>https://notenik.app/news/notenik-8.0.0-including-several-neat-enhancements.html</link>
-	  <guid>https://notenik.app/news/notenik-8.0.0-including-several-neat-enhancements.html</guid>
-	  <pubDate>Tue, 18 Jan 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Added new Include command within the Notenik Markdown parser, to include a file, or another Note; expanded the Author Name Variable Modifierer to allow first name first to be extracted; added a new command and keyboard shortcut to quickly toggle the Streamlined Reading mode; added a new command to format a special Notenik URL to open the current Collection at a later date; added a new Merge Template Variable Modifier to perform a very rudimentary conversion of HTML to Markdown. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.9.0 - Taking Outlining to a New Level</title>
-	  <link>https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html</link>
-	  <guid>https://notenik.app/news/notenik-7.9.0-taking-outlining-to-a-new-level.html</guid>
-	  <pubDate>Tue, 04 Jan 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  This release includes a powerful new function for renumbering the Seq values for a range of Notes, indent and outdent commands, and some improvements to Web Book publishing. With these new options, outlining in Notenik is more powerful than ever. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 7.8.0 - Improvements to Streamlined Reading and Web Books</title>
-	  <link>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</link>
-	  <guid>https://notenik.app/news/notenik-7.8.0-improvements-to-streamlined-reading-and-web-books.html</guid>
-	  <pubDate>Mon, 13 Dec 2021 12:00:00 -0700</pubDate>
-	  <description>
-		  This release includes a new Notenik Intro, the addition of a new, optional header line when publishing a Web Book, a new <code>Include Children</code> field useful when using outlining with streamlined reading, and a new Sort option to view things in pure Date order (irrespective of Status). 
 	  </description>
 	</item>
   </channel>
