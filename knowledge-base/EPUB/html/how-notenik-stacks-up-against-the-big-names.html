@@ -77,6 +77,7 @@ window.MathJax = {
 <h2 id="7-wiki-style-links">7. Wiki-Style Links</h2>
 <p>Notenik supports wiki links. In other words, within the text of one note, you can type something like <code>[[another note]]</code> and then, once you view the formatted text, you will see a clickable link that will take you to the other note. </p>
 <p>When typing a wikilink, Notenik does not offer auto-completion of the target Note&#8217;s title, but does offer easy keyboard access to a Note Selector that allows you to first select another Note&#8217;s title by typing a few letters contained within, and then pasting that title (optionally formatted as a wikilink, with enclosing double brackets) back into the body of the Note you are editing. </p>
+<p>Notenik also supports the easy creation of wiki links from a note in one Collection to another note in a second Collection. </p>
 <h2 id="8-metadata">8. Metadata</h2>
 <p>The ability to smartly handle metadata (that is, data about a note, in addition to the note text itself) is a distinguishing feature of most advanced note-taking systems these days. </p>
 <p>Somewhat unfortunately, perhaps, the ways in which this sort of data is specified can vary quite a bit from one implementation to another. </p>
@@ -121,6 +122,7 @@ its own author.
 <p>Some users like to prefix their tags with a hash mark, as is the common style when using <a href="https://en.wikipedia.org/wiki/Hashtag">hashtags</a> in social media. Notenik doesn&#8217;t require these special characters, but it does recognize and preserve them, when found. </p>
 <h2 id="11-user-interface">11. User Interface</h2>
 <p>Notenik has a very traditional user interface. If you have been using a Mac for any length of time, then it will probably seem quite straightforward to you. Unlike a lot of modern apps these days, it does not try to look like a Web app, or like something you might see on a phone or a tablet. It has menus and windows and toolbars and tabs and buttons and keyboard shortcuts, and all of these are nicely labeled and in plain sight (unless you choose to hide them). </p>
+<p>One of the advantages of Notenik&#8217;s use of a traditional Mac interface is that, unlike many of its competitors, Notenik is fully accessible to vision-impaired users via <a href="https://www.apple.com/accessibility/vision/">VoiceOver</a>. </p>
 <p>The main window for a Collection is split into two sides. </p>
 <p>The left side shows the complete set of Notes in the Collection. </p>
 <p>The right side shows the single, currently selected Note. </p>
@@ -183,9 +185,10 @@ its own author.
 <p>On the other hand, the look and feel of the app can be tailored somewhat via Application and Collection Preferences and Display preferences, and the functionality for a Collection can be modified through the inclusion of one or more of a variety of special field types. </p>
 <p>If you&#8217;re interested, you can also write and supply your own custom CSS to change the appearance of your Notes on the Display tab. </p>
 <h2 id="21-templates">21. Templates</h2>
-<p>Notenik offers two levels of templating. </p>
+<p>Notenik offers three levels of templating. </p>
 <p>At the Collection level, a special file named <code>template.txt</code> contains an overall template to be applied to every Note in that Collection. The Collection template file defines the field labels and types that will be available for the Collection, as well as allowing customization of values and formatting for some field types. This file is ordinarily updated through the Collection Preferences window, but details can be tweaked directly using your preferred text editor. </p>
 <p>A second level of templating can be added by including the <code>Class</code> field for a Collection. You can then create a separate template file for each different Class of Note within a Collection. These Class template files define the particular fields to be used for that Class of Note, and can also supply any boilerplate content you wish to include for any of the fields. </p>
+<p>A third level of templating can be used when generating output for usage outside of Notenik &#8211; for generating a website, as an example. </p>
 <h2 id="22-import-and-export">22. Import and Export</h2>
 <p>If you already have a folder full of text files using Markdown, then you can just drag that folder and drop it onto the Notenik app icon, and the odds are very good that Notenik will simply open the file and show you your data. Your existing text files will remain in whatever format they started in, and you can typically continue to access that same folder of Notes from any of a variety of other text-based tools. </p>
 <p>There are also special import functions for comma- or tab-delimited files, OPML and XML. </p>

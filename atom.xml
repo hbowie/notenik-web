@@ -4,12 +4,42 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2022-05-10T09:00:00Z</updated>
+  <updated>2022-06-15T09:00:00Z</updated>
   <rights>Copyright © 2022, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 9.5.0 Plus a Discourse Community</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.5.0-plus-a-discourse-community.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.5.0-plus-a-discourse-community.html</id>
+	  <published>2022-06-15T09:00:00Z</published>
+	  <updated>2022-06-15T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  The big announcement this time is about the launch of a new Notenik community at discourse.notenik.app. But there&apos;s also info on an important bug fix and a few nice enhancements. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>This post announces some features and bug fixes new since 9.3.0 but, perhaps more importantly, announces the launch of a nascent Notenik Community Forum located at <a href="https://discourse.notenik.app">discourse.notenik.app</a>. </p>
+<p>I&apos;m excited about this new opportunity to create more of a community around Notenik, and hope you will take a look, sign up for membership, and contribute a question, a bug report, an improvement suggestion, or anything else that may be on your mind concerning Notenik! </p>
+<p>And now, with that announcement made, let&apos;s turn to the usual news of recent changes to the Notenik app. </p>
+<p>First of all, a user reported a rather nasty bug that could cause data loss when trying to adjust the Edit font size. This has been fixed in 9.5.0, and so it is once again safe to make use of this handy feature (which can be found beneath the <code>View</code> menu). </p>
+<p>The context for many of the other recent Notenik changes is really Notenik&apos;s ability to create Collections with complex sets of fields and field types and then to make good use of all this info. </p>
+<p>For example, some improvements were made in 9.4.0 regarding the dragging and dropping of a Note from one Collection to another. In some cases involving two Collections with complex but somewhat different sets of fields, Notenik was sometimes pasting the value of one incoming field into more than one field of the new Note being created. This has been corrected to ensure that no more than one field in the new Note is populated from one field in the Note being imported or copied. </p>
+<p>And then there were some improvements regarding the use of Combo Boxes &#8211; UI Controls that let a user type in a new text value or select from a list of previously entered values. First, the workings of combo boxes for fields of type <code>Lookup</code> were improved. And next, a new field type of <code>Combo</code> can be used to create a dynamic combo box for any field. Pretty handy! </p>
+<p>And then a new field type of <code>Teaser</code> was added, allowing such a field to be assigned a different label (something like <code>Summary</code>, for example). And then there&apos;s a new Markdown extension making use of this new field type, pulling teaser values (whatever you call them) from the children of a Note into the parent Note&apos;s body display. </p>
+<p>And then, finally, a new option has been added to the Note Selector function (invoked via CTRL-S) allowing the title of a selected Note to be inserted into a nicely formatted Markdown Include command, including the selected Note into the Note currently being edited. </p>
+<p>And that rounds out the set of changes in this latest release. See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+<p>Once again, though, I hope you&apos;ll find your way over to our new Notenik Community at <a href="https:discourse.notenik.app">discourse.notenik.app</a> and connect with someone or something you find there. There&apos;s always more to learn about Notenik, and more to share, and it&apos;s exciting that others can now take part in the dialogue. </p>
+
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 9.3.0 - Cool New Functions</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.3.0-cool-new-functions.html"/>
@@ -328,69 +358,6 @@
 <p>And, finally, this release includes a few fixes for MathJax processing that were pointed out to me by a kind and knowledgeable user. A couple of these came out in point releases after 8.2.0, and there are yet one or two more released first in 8.3.0. </p>
 <p>So that pretty much rounds out the list for 8.3.0. As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
 <p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.3.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 8.2.0 - Setting the Table for New Users</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.2.0-setting-the-table-for-new-users.html</id>
-	  <published>2022-01-28T09:00:00Z</published>
-	  <updated>2022-01-28T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added Markdown support for the creation of tables, using pipes and dashes; added a new command beneath the File menu to Open the current Collection&apos;s Folder in the macOS FInder; improved editing of Index fields; added new command to Clean a Link, removing common tracking parameters; improved the readability of the Keyboard Shortcuts Reference page in the Knowledge Base; added a new Markdown Cheat Sheet. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>For me, Notenik has always been an adventure as much as an application. </p>
-<p>I&apos;m currently reading <em><a href="https://www.amortowles.com/the-lincoln-highway-about-the-book/">The Lincoln Highway</a></em> by Amor Towles, a tale in which one surprise after another awaits our adventurers, who initially start out with such simple and straightforward and highly achievable intentions, only to find their plans and wants and needs changing beyond recognition almost as soon as they set out. </p>
-<p>Yes, I think to myself, Notenik has been a bit like that. </p>
-<p>Take Notenik&apos;s Markdown parser, for example. In the beginning there wasn&apos;t one. And I had no plans to write one. After all, two very accomplished open-source Markdown parsers already existed, so I could use one of them. Even better, I could allow the user to choose which one they wanted to use! And I could work on other things. </p>
-<p>But then I reached a point at which&hellip; I wanted to be able to link from one Note to another, wiki-style. And not only was this not part of the original Markdown syntax, it wasn&apos;t even widely available as a common extension. And so, I began to think&hellip; maybe I should write my own? </p>
-<p>And so I did. So now Notenik lets you choose between three parsers. But only the one allows inter-Note linking. </p>
-<p>But another part of the adventure has been feature requests from users. Someone wanted to know why I didn&apos;t support Mathjax, for people who wanted to do maths. Well, the last time I wrote anything that would require Mathjax was in my sophomore year of college&hellip; which was a <em>long</em> time ago. So I ignored that request for a while. But then I received an email from a Math professor in England who really, seriously, wanted Mathjax support. And who was willing to work with me until I got it right. </p>
-<p>And so I took a little side trip in order to incorporate Mathjax into Notenik. </p>
-<p>And then various people requested other Markdown extensions: footnotes, citations, fenced code blocks, etc. And while I had never planned to implement any of these, as each new request came in, I thought&hellip; &quot;Well, it can&apos;t be <em>that</em> hard, let me give it a go,&quot; and so each new extension became another chapter in the evolving saga. </p>
-<p>All of which is relevant, because a kind user on the Mac App Store recently left a nice review of my app, which included a feature request for Markdown tables. And, of course, I knew that this was a common Markdown extension that I had so far ignored, and thought would be more trouble than it was worth, but then I started thinking about it, and then thoughts turned into code, until now, with the latest release of Notenik, support for making tables from pipes and dashes is now supported. </p>
-<p>(Now I do have to admit that the same reviewer also said that, of the three parsers, only Down functions correctly. Unfortunately, he didn&apos;t give me anything else to go on, so I&apos;m not sure what sort of Markdown coding wasn&apos;t being parsed correctly by the Notenik parser. If he, or anyone else, has any problems that they&apos;d like to report, then I&apos;m always open to hearing problem reports via email.) </p>
-<p>Of course, there are also other improvements in the latest release (and the one before that, which I never got around to doing a write-up on, and so will include here). </p>
-<p>Let&apos;s see, in no particular order&hellip; </p>
-<ul>
-<li>
-<p>I used the new table formatting feature to reformat the keyboard shortcuts page into a table, to make it more readable. </p>
-</li>
-<li>
-<p>I also added a Markdown cheat sheet to the Knowledge base, along with a Help menu item to quickly pull it up, for those who have not yet memorized the basic syntax. </p>
-</li>
-<li>
-<p>Added a command to the <code>File</code> menu to open the current Collection folder in the macOS Finder. </p>
-</li>
-<li>
-<p>Expanded the size of the Edit widget for fields of type <code>Index</code>. </p>
-</li>
-<li>
-<p>Borrowed some <a href="https://github.com/rknightuk/TrackerZapper">code</a> from <a href="https://rknight.me">Robb Knight</a> to cobble together a new feature allowing you to clean a Link, stripping out various common tracking parameters, leaving you with the part of the URL actually needed to get you to your intended destination. </p>
-</li>
-<li>
-<p>You can now use the include style of <code>quote-body</code> to include only the body of a second Note, and format it as a <code>blockquote</code>. </p>
-</li>
-<li>
-<p>Cleaned up a couple of cases where Notes were showing up in lists, but didn&apos;t really need to be there. </p>
-</li>
-<li>
-<p>Included the Seq value on the Tags tab, for Collections sorted by Seq. </p>
-</li>
-<li>
-<p>And, finally, straightened out some issues with model Collections that were hampering users&apos; abilities to create new Collections, especially when launching Notenik for the first time.  </p>
-</li>
-</ul>
-<p>And that&apos;s it for the latest Notenik adventures! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.2.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
 
 		  ]]>
 	  </content>

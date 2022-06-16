@@ -86,12 +86,14 @@
     <item href="html/tables.html" id="tables" media-type="text/html"/>
     <item href="html/task-lists.html" id="tasklists" media-type="text/html"/>
     <item href="html/mathjax-support.html" id="mathjaxsupport" media-type="text/html"/>
+    <item href="html/single-line-commands.html" id="singlelinecommands" media-type="text/html"/>
     <item href="html/generate-a-note-table-of-contents.html" id="generateanotetableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-table-of-contents.html" id="generateacollectiontableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-index.html" id="generateacollectionindex" media-type="text/html"/>
     <item href="html/generate-a-tags-outline.html" id="generateatagsoutline" media-type="text/html"/>
     <item href="html/generate-a-tags-cloud.html" id="generateatagscloud" media-type="text/html"/>
     <item href="html/include-a-note-or-file.html" id="includeanoteorfile" media-type="text/html"/>
+    <item href="html/display-teasers.html" id="displayteasers" media-type="text/html"/>
     <item href="html/no-email-obfuscation.html" id="noemailobfuscation" media-type="text/html"/>
     <item href="html/no-backticks-style-quotes.html" id="nobackticksstylequotes" media-type="text/html"/>
     <item href="html/word-and-character-counts.html" id="wordandcharactercounts" media-type="text/html"/>
@@ -137,6 +139,7 @@
     <item href="html/boolean.html" id="boolean" media-type="text/html"/>
     <item href="html/class.html" id="class" media-type="text/html"/>
     <item href="html/special-class-values.html" id="specialclassvalues" media-type="text/html"/>
+    <item href="html/combo.html" id="combo" media-type="text/html"/>
     <item href="html/integer.html" id="integer" media-type="text/html"/>
     <item href="html/longtext.html" id="longtext" media-type="text/html"/>
     <item href="html/lookup.html" id="lookup" media-type="text/html"/>
@@ -221,6 +224,8 @@
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/make-a-project-launcher.html" id="makeaprojectlauncher" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-9.5.0.html" id="version950" media-type="text/html"/>
+    <item href="html/version-9.4.0.html" id="version940" media-type="text/html"/>
     <item href="html/version-9.3.0.html" id="version930" media-type="text/html"/>
     <item href="html/version-9.2.1.html" id="version921" media-type="text/html"/>
     <item href="html/version-9.2.0.html" id="version920" media-type="text/html"/>
@@ -329,6 +334,7 @@
     <item href="html/open-and-accessible-data.html" id="openandaccessibledata" media-type="text/html"/>
     <item href="html/designed-first-and-foremost-for-the-mac.html" id="designedfirstandforemostforthemac" media-type="text/html"/>
     <item href="html/frequent-incremental-improvements.html" id="frequentincrementalimprovements" media-type="text/html"/>
+    <item href="html/why-notenik-uses-plain-text-files.html" id="whynotenikusesplaintextfiles" media-type="text/html"/>
     <item href="html/how-notenik-stacks-up-against-the-big-names.html" id="hownotenikstacksupagainstthebignames" media-type="text/html"/>
     <item href="html/reference.html" id="reference" media-type="text/html"/>
     <item href="html/about.html" id="about" media-type="text/html"/>
@@ -424,12 +430,14 @@
     <itemref idref="tables" />
     <itemref idref="tasklists" />
     <itemref idref="mathjaxsupport" />
+    <itemref idref="singlelinecommands" />
     <itemref idref="generateanotetableofcontents" />
     <itemref idref="generateacollectiontableofcontents" />
     <itemref idref="generateacollectionindex" />
     <itemref idref="generateatagsoutline" />
     <itemref idref="generateatagscloud" />
     <itemref idref="includeanoteorfile" />
+    <itemref idref="displayteasers" />
     <itemref idref="noemailobfuscation" />
     <itemref idref="nobackticksstylequotes" />
     <itemref idref="wordandcharactercounts" />
@@ -475,6 +483,7 @@
     <itemref idref="boolean" />
     <itemref idref="class" />
     <itemref idref="specialclassvalues" />
+    <itemref idref="combo" />
     <itemref idref="integer" />
     <itemref idref="longtext" />
     <itemref idref="lookup" />
@@ -559,6 +568,8 @@
     <itemref idref="writeawebbook" />
     <itemref idref="makeaprojectlauncher" />
     <itemref idref="versionhistory" />
+    <itemref idref="version950" />
+    <itemref idref="version940" />
     <itemref idref="version930" />
     <itemref idref="version921" />
     <itemref idref="version920" />
@@ -667,6 +678,7 @@
     <itemref idref="openandaccessibledata" />
     <itemref idref="designedfirstandforemostforthemac" />
     <itemref idref="frequentincrementalimprovements" />
+    <itemref idref="whynotenikusesplaintextfiles" />
     <itemref idref="hownotenikstacksupagainstthebignames" />
     <itemref idref="reference" />
     <itemref idref="about" />
