@@ -1,0 +1,50 @@
+Title:  Notenik 9.6.0 - Choose Your Edit Fonts
+
+Page Title: Notenik 9.6.0 - Choose Your Edit Fonts
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   23 Jun 2022
+
+Teaser:
+
+You can now choose your own font(s) used on the Edit tab, and can also set default values for any of the fields in your Collection. 
+
+
+Body:
+
+Notenik has long allowed users to make all sorts of adjustments to the appearance of their Notes on the **Display** tab, and has for some time permitted adjustment of font size on the **Edit** tab, but did not previously give the users any choices as to the *font* used on the **Edit** tab. It was the macOS standard fonts, or the highway. 
+
+Now that era is behind us, already shrinking in our rear view mirror. 
+
+Starting with 9.6.0, users have a new option at the bottom of the **View** menu, allowing users to **Adjust Edit Fonts**. Once this selection has been made, a new **Edit Font Preferences** window makes its appearance. 
+
+This window allows the user to select any font available on their local system, as well as choose a font size. 
+
+But wait... there's more!
+
+Because there are really three different types of UI controls that show up on the **Edit** tab. 
+
++ Field Labels, telling you what sort of value comes next. 
++ Code values (including Links), where you'd generally prefer a monospaced font. 
++ Text values, for everything other than Code and Links. 
+
+And so Notenik now allows you to make separate adjustments for all three types of UI controls, as they appear on the **Edit** tab. 
+
+Not everyone wants or needs this level of user interface customization, of course, but this is one more case where Notenik tries to follow Alan Kay's famous dictum:
+
+> Simple things should be simple; complex things should be possible. 
+
+Of course this latest release includes a few more nice changes as well. 
+
+If you'd like to set default values for one or more of your fields, but don't need the complexity that comes with the **Class** field type, you can now create a `defaults` class template, and specify any non-blank values you'd like each new Note to start out with. 
+
+Then the **Code** field type has been enhanced to make sure that HTML code actually displays as code, and is not interpreted as HTML. 
+
+And then there's a new, quite handy, link beneath the **Help** menu to take you to the recently launched Notenik Community found at [discourse.notenik.app](https://discourse.notenik.app). 
+
+As usual, you can find more details in the Notenik Knowledge Base, but I would encourage you instead to make use of the new Notenik Community. All of the changes in the latest release have been posted in the **Pipeline** category, and tagged with the version number, so you read more about all of them at this link: [discourse.notenik.app/tags/c/pipeline/14/version-960](https://discourse.notenik.app/tags/c/pipeline/14/version-960).
+
+And, if you'd like to see what's [coming up for the next release](https://discourse.notenik.app/tags/c/pipeline/14/in-work), or make your own [feature requests](https://discourse.notenik.app/c/feature-requests/8) you can, of course, also do that in the new Notenik Community.

@@ -21,31 +21,31 @@ window.MathJax = {
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
 
-<p>5 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p>
-<h3 id="apis-for-hook-integration">5.13 APIs for Hook Integration</h3>
+
+<p>8 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p><h3 id="apis-for-hook-integration">8.14 APIs for Hook Integration</h3>
 <p>Notenik now has some minimal AppleScript support, developed specifically to allow integration with the <a href="https://hookproductivity.com">Hook app</a>. </p>
+
 <h4 id="applescript-commands">AppleScript Commands</h4>
+
 <p>The following AppleScript commands are available. </p>
+
 <ul>
-<li>
-<p><strong>GetSelectedNoteTitle</strong> &#8211; Returns the title of the last selected Note, from the frontmost Collection. No input parameters needed. </p>
-</li>
-<li>
-<p><strong>GetSelectedNoteBacklink</strong> &#8211; Returns a Notenik <a href="custom-url-scheme.html">Custom URL</a> pointing to the last selected Note, from the frontmost Collection. If a <a href="timestamp.html">timestamp</a> field is available, the returned URL will make use of that. No input parameters needed. </p>
-</li>
-<li>
-<p><strong>GetSelectedNoteFilePath</strong> &#8211; Returns the file path pointing to the file containing the last selected Note, from the frontmost Collection. No input parameters needed. </p>
-</li>
-<li>
-<p><strong>AddNote</strong> &#8211; Adds a new Note to the frontmost Collection, using three input parameters: title, link and tags. Returns a backlink to the new Note, if it was added successfully. </p>
-</li>
+<li><p><strong>GetSelectedNoteTitle</strong> &#8211; Returns the title of the last selected Note, from the frontmost Collection. No input parameters needed. </p></li>
+<li><p><strong>GetSelectedNoteBacklink</strong> &#8211; Returns a Notenik <a href="custom-url-scheme.html">Custom URL</a> pointing to the last selected Note, from the frontmost Collection. If a <a href="timestamp.html">timestamp</a> field is available, the returned URL will make use of that. No input parameters needed. </p></li>
+<li><p><strong>GetSelectedNoteFilePath</strong> &#8211; Returns the file path pointing to the file containing the last selected Note, from the frontmost Collection. No input parameters needed. </p></li>
+<li><p><strong>AddNote</strong> &#8211; Adds a new Note to the frontmost Collection, using three input parameters: title, link and tags. Returns a backlink to the new Note, if it was added successfully. </p></li>
 </ul>
+
 <h4 id="sample-scripts">Sample Scripts</h4>
+
 <p>Following are examples of how these commands might be used to enable Hook integration. </p>
+
 <h5 id="get-address">Get Address</h5>
+
 <p>The following script might be placed beneath the <code>Get Address</code> tab in the Scripts section of Hook Preferences. </p>
-<pre>
-<code>tell application "Notenik"
+
+<pre><code>
+tell application "Notenik"
 	if HasSelectedNote then
 		set theTitle to GetSelectedNoteTitle
 		set theUrl to GetSelectedNoteBacklink
@@ -53,19 +53,27 @@ window.MathJax = {
 	end if
 end tell
 </code></pre>
+
 <p>This script allows Hook to ask for the Title and the Backlink (see <a href="custom-url-scheme.html">Custom URL Scheme</a>) of the last Note to be selected. This information then allows Hook to later communicate with Notenik in order to pull up that same Note. </p>
+
 <h4 id="new-item">New Item</h4>
+
 <p>The following script might be placed beneath the <code>New Item</code> tab in the Scripts section of Hook Preferences. </p>
-<pre>
-<code>tell application "Notenik"
+
+<pre><code>
+tell application "Notenik"
 	return AddNote title "$title" link "$user_link" tags "hook"
 end tell
 </code></pre>
+
 <p>This script also returns the backlink to the Note of interest. </p>
+
 <h4 id="tips-for-hook-integration">Tips for Hook Integration</h4>
+
 <p>You will want to make sure the <a href="timestamp.html">Timestamp</a> field is included on any Collection you wish to use with Hook. This field allows Hook to reference a Note even if it has been renamed. </p>
+
 <p>Also note that, when Hook communicates with Notenik, it will get info and add info to the frontmost Collection, if you have more than one open. </p>
+
 <hr />
-<p>Next: <a href="markdown.html">Markdown</a></p>
-</body>
+<p>Next: <a href="actions-for-shortcuts.html">Actions for Shortcuts</a></p></body>
 </html>

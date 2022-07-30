@@ -21,11 +21,14 @@ window.MathJax = {
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
 
-<p>8.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p>
-<h4 id="formatting-string">8.3.34 Formatting String</h4>
+
+<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="formatting-string">11.3.35 Formatting String</h4>
 <p>A formatting string consists of a sequence of characters indicating how the variable is to be formatted. The formatting string, if specified, should follow any other variable modifiers. Any character other than the modifiers listed above will cause the remainder of the variable modifiers to be treated as a formatting string. Currently, a formatting string is valid only for dates &#8211; either for the special variable <code>today</code>, or for any variable date in &#8220;mm/dd/yy&#8221; format. </p>
+
 <p>A date formatting string follows the normal rules for date formatting. One or more occurrences of an upper-case &#8220;M&#8221; indicates a month, a lower-case &#8220;y&#8221; is used for a year, and a lower-case &#8220;d&#8221; is used for the day of the month. An upper-case &#8220;E&#8221; can be used for the day of the week. Generally, the number of occurrences of each letter you specify will be used to indicate the width of the field you want (&#8220;yyyy&#8221; for a 4-digit year, for example). Specifying more than two occurrences of &#8220;M&#8221; indicates you want the month represented by letters rather than numbers, with 4 or more occurrences indicating you want the month spelled out, and 3 occurrences indicating you want a three-letter abbreviation. </p>
+
 <p>See below for full definition of allowable characters and their meanings. </p>
+
 <table>
 <tr>
 <th>Symbol</th>
@@ -154,12 +157,17 @@ window.MathJax = {
 <td></td>
 </tr>
 </table>
+
 <p>The count of pattern letters determine the format. </p>
-<p><strong>(Text)</strong>: 4 or more pattern letters&#8211;use full form,  &lt; 4&#8211;use short or abbreviated form if one exists.</p>
-<p><strong>(Number)</strong>: the minimum number of digits. Shorter  numbers are zero-padded to this amount. Year is handled specially; that is, if the count of &#8216;y&#8217; is 2, the Year will be truncated to 2 digits.</p>
+
+<p><strong>(Text)</strong>: 4 or more pattern letters&#8211;use full form, &lt; 4&#8211;use short or abbreviated form if one exists.</p>
+
+<p><strong>(Number)</strong>: the minimum number of digits. Shorter numbers are zero-padded to this amount. Year is handled specially;that is, if the count of &#8216;y&#8217; is 2, the Year will be truncated to 2 digits.</p>
+
 <p><strong>(Text &amp; Number)</strong>: 3 or over, use text, otherwise use number. </p>
-<p>Any characters in the pattern that are not in the ranges of [&#8216;a&#8217;..&#8216;z&#8217;]  and [&#8216;A&#8217;..&#8216;Z&#8217;] will be treated as quoted text. For instance, characters like &#8216;:&#8217;, &#8216;.&#8217;, &#8216; &#8217;, &#8216;#&#8217; and &#8216;@&#8217; will appear in the resulting time text even they are not embraced within single quotes.</p>
+
+<p>Any characters in the pattern that are not in the ranges of [&#8216;a&#8217;..&#8216;z&#8217;] and [&#8216;A&#8217;..&#8216;Z&#8217;] will be treated as quoted text. For instance, characterslike &#8216;:&#8217;, &#8216;.&#8217;, &#8216; &#8217;, &#8216;#&#8217; and &#8216;@&#8217; will appear in the resulting time texteven they are not embraced within single quotes.</p>
+
 <hr />
-<p>Next: <a href="merge-commands.html">Merge Commands</a></p>
-</body>
+<p>Next: <a href="merge-commands.html">Merge Commands</a></p></body>
 </html>

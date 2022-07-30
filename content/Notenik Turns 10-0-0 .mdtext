@@ -1,0 +1,55 @@
+Title:  Notenik Turns 10.0.0!
+
+Page Title: Notenik Turns 10.0.0!
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   29 Jul 2022
+
+Teaser:
+
+Well, the version-ometer has clicked over once again -- as it tends to do every week or so with Notenik -- and look where we've landed: on the big 10.0.0! All those zeros seem to call for some sort of reflection on how we got here, so let's consider a few highlights.
+
+
+Body:
+
+Well, the version-ometer has clicked over once again -- as it tends to do every week or so with Notenik -- and look where we've landed: on the big 10.0.0! 
+
+All those zeros seem to call for some sort of reflection on how we got here, so let me offer a few highlights:
+
++ Notenik started life way back in 2009, as a desktop app written in Java;
++ The rewrite as a native Mac app began early in 2019;
++ Version 1.1.0 of the Swift app was released to the world six months later; 
++ Over the three years since then we've had ninety new releases containing some significant functional improvements (that's an average of one bundle of enhancements about every two weeks).
+
+In addition to the software itself (released as open source on [GitHub](https://github.com/hbowie/notenik-swift), and available as a free download through the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984)), Notenik has picked up some significant supporting resources along the way:
+
++ The [Notenik.app](https://notenik.app) website;
++ The Knowledge Base, available [on the web](https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html), and within the app itself;
++ A [Notenik 101](https://youtu.be/JR0kpAUXM5E) video with a brief intro to the app;
++ And, most recently, a new [Discourse Community](https://discourse.notenik.app) dedicated to discussion of all things Notenik.
+
+And then, there are the appreciative users, who have given Notenik an average rating of 4.9 on the App Store, making comments like these:
+
+> My favorite app: I can't say enough good things about Notenik. 
+
+> A hidden powerhouse, with loads of potential to become one of Mac OS's premier note taking applications. 
+
+> Powerful, thoughtful note taking software, flexible enough to fit any number of use cases, from simple to complex. 
+
+In spite of all the progress, though, there always seems more to do. 
+
+Take the latest release, which focuses on scripting, featuring:
+
++ Improved scripting documentation;
++ The ability to run a script as an export, specifying the output folder at execution time;
++ The ability to run a script with a macOS custom shortcut, using the Shortcuts app;
++ An enhancement to the recently added Query Builder, to show the query output within a Notenik window, instead of a web browser.
+
+And so the saga continues....
+
+Looking back on the past several years, what I'm most pleased by is the consistent, organic growth of the app and its user base. The goal has never been to corner any markets, or to beat out the competition, but rather to supply a unique and useful Mac app that might find a home in the `Applications` folder of some appreciative users, and could continue to evolve in interesting and useful ways.   
+
+So far I'd say we're right on track.

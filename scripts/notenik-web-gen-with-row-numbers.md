@@ -1,0 +1,57 @@
+| #  | module   | action   | modifier        | object     | value                                                                   |
+| -- | -------- | -------- | --------------- | ---------- | ----------------------------------------------------------------------- |
+| 1  | input    | set      |                 | xpltags    | FALSE                                                                   |
+| 2  | input    | set      |                 | dirdepth   | 1                                                                       |
+| 3  | input    | open     | notenik-defined |            | /Users/hbowie/Sites/notenik-web/content                                 |
+| 4  | filter   | clear    |                 |            |                                                                         |
+| 5  | filter   | add      | eq              | Type       | include                                                                 |
+| 6  | filter   | set      |                 | params     |                                                                         |
+| 7  | sort     | clear    |                 |            |                                                                         |
+| 8  | sort     | add      | ascending       | Title      |                                                                         |
+| 9  | sort     | set      |                 | params     |                                                                         |
+| 10 | template | webroot  |                 |            | /Users/hbowie/Sites/notenik-web                                         |
+| 11 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/include-template.html         |
+| 12 | template | generate |                 |            |                                                                         |
+| 13 | input    | set      |                 | xpltags    | FALSE                                                                   |
+| 14 | input    | set      |                 | dirdepth   | 1                                                                       |
+| 15 | input    | open     | notenik-defined |            | /Users/hbowie/Sites/notenik-web/content                                 |
+| 16 | filter   | clear    |                 |            |                                                                         |
+| 17 | filter   | add      | eq              | Type       | news                                                                    |
+| 18 | filter   | set      |                 | params     |                                                                         |
+| 19 | sort     | clear    |                 |            |                                                                         |
+| 20 | sort     | add      | descending      | Date       |                                                                         |
+| 21 | sort     | add      | ascending       | Page Title |                                                                         |
+| 22 | sort     | set      |                 | params     |                                                                         |
+| 23 | template | webroot  |                 |            | /Users/hbowie/Sites/notenik-web                                         |
+| 24 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/news-page-template.html       |
+| 25 | template | generate |                 |            |                                                                         |
+| 26 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/latest-news-template.html     |
+| 27 | template | generate |                 |            |                                                                         |
+| 28 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/rss-template.xml              |
+| 29 | template | generate |                 |            |                                                                         |
+| 30 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/atom-template.xml             |
+| 31 | template | generate |                 |            |                                                                         |
+| 32 | input    | set      |                 | xpltags    | FALSE                                                                   |
+| 33 | input    | set      |                 | dirdepth   | 1                                                                       |
+| 34 | input    | open     | notenik-defined |            | /Users/hbowie/Sites/notenik-web/content                                 |
+| 35 | filter   | clear    |                 |            |                                                                         |
+| 36 | filter   | add      | eq              | Type       | review                                                                  |
+| 37 | filter   | set      |                 | params     |                                                                         |
+| 38 | sort     | clear    |                 |            |                                                                         |
+| 39 | sort     | add      | descending      | Date       |                                                                         |
+| 40 | sort     | add      | ascending       | Page Title |                                                                         |
+| 41 | sort     | set      |                 | params     |                                                                         |
+| 42 | template | webroot  |                 |            | /Users/hbowie/Sites/notenik-web                                         |
+| 43 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/reviews-include-template.html |
+| 44 | template | generate |                 |            |                                                                         |
+| 45 | input    | set      |                 | xpltags    | FALSE                                                                   |
+| 46 | input    | set      |                 | dirdepth   | 1                                                                       |
+| 47 | input    | open     | notenik-defined |            | /Users/hbowie/Sites/notenik-web/content                                 |
+| 48 | sort     | clear    |                 |            |                                                                         |
+| 49 | sort     | add      | ascending       | Date       |                                                                         |
+| 50 | sort     | add      | ascending       | Page Title |                                                                         |
+| 51 | sort     | set      |                 | params     |                                                                         |
+| 52 | template | webroot  |                 |            | /Users/hbowie/Sites/notenik-web                                         |
+| 53 | template | open     |                 |            | /Users/hbowie/Sites/notenik-web/templates/content-template.html         |
+| 54 | template | generate |                 |            |                                                                         |
+| 55 | browse   | open     | url             |            | http://localhost/~hbowie/notenik-web/                                   |

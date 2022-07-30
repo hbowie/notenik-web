@@ -21,19 +21,22 @@ window.MathJax = {
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
 
-<p>6.2 <a href="notenik-markdown-parser.html">Notenik Markdown Parser</a>&nbsp;&#8593;</p>
-<h4 id="tables">6.2.10 Tables</h4>
+
+<p>9.2 <a href="notenik-markdown-parser.html">Notenik Markdown Parser</a>&nbsp;&#8593;</p><h4 id="tables">9.2.10 Tables</h4>
 <p>As an extension to the original Markdown spec from John Gruber, tables are supported.  </p>
+
 <p>This is an extension documented in the <a href="https://www.markdownguide.org/extended-syntax/#tables">Markdown Guide</a>. </p>
+
 <p>To create a table, use the pipe character (<code>|</code>)  to form a vertical border before, after, and/or between the columns, and use three or more consecutive dashes in each column to form a horizontal border between the header row and the start of the data rows, as in the following example: </p>
-<pre>
-<code>| Syntax      | Description |
+
+<pre><code>
+| Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
 </code></pre>
-<p>&#8230;which will then display as follows: </p>
-<table>
+
+<p>&#8230;which will then display as follows: </p><table>
 <tr>
 <th>
  Syntax      </th>
@@ -53,15 +56,17 @@ window.MathJax = {
  Text        </td>
 </tr>
 </table>
+
 <p>You can control horizontal alignment within each column by placing a colon before, after, or before and after the string of dashes, for left-, right- or centering alignment. See the following example: </p>
-<pre>
-<code>| Syntax      | Description | Test Text     |
+
+<pre><code>
+| Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | + more      |
 </code></pre>
-<p>&#8230;which will display as follows: </p>
-<table>
+
+<p>&#8230;which will display as follows: </p><table>
 <tr>
 <th style="text-align:left;">
  Syntax      </th>
@@ -87,15 +92,17 @@ window.MathJax = {
  + more      </td>
 </tr>
 </table>
+
 <p>Note that the pipes do not need to be lined up, and the trailing pipes are optional. So the following code is valid.  </p>
-<pre>
-<code>| Syntax      | Description | Test Text
+
+<pre><code>
+| Syntax      | Description | Test Text
 | :---        |    :----:   |          ---: 
 | Header      | Title       | Here's this   
 | Paragraph   | Text        | + more   
 </code></pre>
-<p>And will still display as desired: </p>
-<table>
+
+<p>And will still display as desired: </p><table>
 <tr>
 <th style="text-align:left;">
  Syntax      </th>
@@ -122,8 +129,9 @@ window.MathJax = {
  + more      </td>
 </tr>
 </table>
+
 <p>Leading pipes are required, however. Each table line must start with a pipe character. </p>
+
 <hr />
-<p>Next: <a href="task-lists.html">Task Lists</a></p>
-</body>
+<p>Next: <a href="task-lists.html">Task Lists</a></p></body>
 </html>

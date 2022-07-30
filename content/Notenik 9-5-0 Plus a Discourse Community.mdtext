@@ -1,0 +1,40 @@
+Title:  Notenik 9.5.0 Plus a Discourse Community
+
+Page Title: Notenik 9.5.0 Plus a Discourse Community
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   15 Jun 2022
+
+Teaser:
+
+The big announcement this time is about the launch of a new Notenik community at discourse.notenik.app. But there's also info on an important bug fix and a few nice enhancements.
+
+Body:
+
+This post announces some features and bug fixes new since 9.3.0 but, perhaps more importantly, announces the launch of a nascent Notenik Community Forum located at [discourse.notenik.app](https://discourse.notenik.app).
+
+I'm excited about this new opportunity to create more of a community around Notenik, and hope you will take a look, sign up for membership, and contribute a question, a bug report, an improvement suggestion, or anything else that may be on your mind concerning Notenik!
+
+And now, with that announcement made, let's turn to the usual news of recent changes to the Notenik app.
+
+First of all, a user reported a rather nasty bug that could cause data loss when trying to adjust the Edit font size. This has been fixed in 9.5.0, and so it is once again safe to make use of this handy feature (which can be found beneath the `View` menu).
+
+The context for many of the other recent Notenik changes is really Notenik's ability to create Collections with complex sets of fields and field types and then to make good use of all this info.
+
+For example, some improvements were made in 9.4.0 regarding the dragging and dropping of a Note from one Collection to another. In some cases involving two Collections with complex but somewhat different sets of fields, Notenik was sometimes pasting the value of one incoming field into more than one field of the new Note being created. This has been corrected to ensure that no more than one field in the new Note is populated from one field in the Note being imported or copied.
+
+And then there were some improvements regarding the use of Combo Boxes -- UI Controls that let a user type in a new text value or select from a list of previously entered values. First, the workings of combo boxes for fields of type `Lookup` were improved. And next, a new field type of `Combo` can be used to create a dynamic combo box for any field. Pretty handy!
+
+And then a new field type of `Teaser` was added, allowing such a field to be assigned a different label (something like `Summary`, for example). And then there's a new Markdown extension making use of this new field type, pulling teaser values (whatever you call them) from the children of a Note into the parent Note's body display.
+
+And then, finally, a new option has been added to the Note Selector function (invoked via CTRL-S) allowing the title of a selected Note to be inserted into a nicely formatted Markdown Include command, including the selected Note into the Note currently being edited.
+
+And that rounds out the set of changes in this latest release. See the [Notenik Version History page](../knowledge-base/EPUB/html/version-history.html) for additional details, with links to new and updated pages in the Notenik Knowledge Base.
+
+Once again, though, I hope you'll find your way over to our new Notenik Community at [discourse.notenik.app](https:discourse.notenik.app) and connect with someone or something you find there. There's always more to learn about Notenik, and more to share, and it's exciting that others can now take part in the dialogue.
+
+
+

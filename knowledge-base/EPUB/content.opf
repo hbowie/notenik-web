@@ -7,10 +7,52 @@
   </metadata>
   <manifest>
     <item href="html/notenik-knowledge-base.html" id="notenikknowledgebase" media-type="text/html"/>
-    <item href="html/basics.html" id="basics" media-type="text/html"/>
-    <item href="html/guiding-principles.html" id="guidingprinciples" media-type="text/html"/>
-    <item href="html/overview.html" id="overview" media-type="text/html"/>
-    <item href="html/introduction-to-the-mac-user-interface.html" id="introductiontothemacuserinterface" media-type="text/html"/>
+    <item href="html/intro-to-the-user-interface.html" id="intrototheuserinterface" media-type="text/html"/>
+    <item href="html/brief-overview.html" id="briefoverview" media-type="text/html"/>
+    <item href="html/is-notenik-right-for-you.html" id="isnotenikrightforyou" media-type="text/html"/>
+    <item href="html/supported-platforms.html" id="supportedplatforms" media-type="text/html"/>
+    <item href="html/synchronization.html" id="synchronization" media-type="text/html"/>
+    <item href="html/plain-text.html" id="plaintext" media-type="text/html"/>
+    <item href="html/folders-and-collections.html" id="foldersandcollections" media-type="text/html"/>
+    <item href="html/use-of-markdown.html" id="useofmarkdown" media-type="text/html"/>
+    <item href="html/links-between-notes.html" id="linksbetweennotes" media-type="text/html"/>
+    <item href="html/metadata.html" id="metadata" media-type="text/html"/>
+    <item href="html/organizing-with-tags.html" id="organizingwithtags" media-type="text/html"/>
+    <item href="html/a-personal-content-management-system.html" id="personalcontentmanagementsystem" media-type="text/html"/>
+    <item href="html/choosing-field-labels-and-types.html" id="choosingfieldlabelsandtypes" media-type="text/html"/>
+    <item href="html/user-interface.html" id="userinterface" media-type="text/html"/>
+    <item href="html/connections-between-notes.html" id="connectionsbetweennotes" media-type="text/html"/>
+    <item href="html/blocks-within-notes.html" id="blockswithinnotes" media-type="text/html"/>
+    <item href="html/search-capability.html" id="searchcapability" media-type="text/html"/>
+    <item href="html/programming-code.html" id="programmingcode" media-type="text/html"/>
+    <item href="html/daily-notes.html" id="dailynotes" media-type="text/html"/>
+    <item href="html/tasks.html" id="tasks" media-type="text/html"/>
+    <item href="html/integrating-with-other-apps.html" id="integratingwithotherapps" media-type="text/html"/>
+    <item href="html/customizing-appearance-and-functionality.html" id="customizingappearanceandfunctionality" media-type="text/html"/>
+    <item href="html/templates.html" id="templates" media-type="text/html"/>
+    <item href="html/import-and-export.html" id="importandexport" media-type="text/html"/>
+    <item href="html/publish-and-share.html" id="publishandshare" media-type="text/html"/>
+    <item href="html/accessibility.html" id="accessibility" media-type="text/html"/>
+    <item href="html/cost.html" id="cost" media-type="text/html"/>
+    <item href="html/development-and-support-model.html" id="developmentandsupportmodel" media-type="text/html"/>
+    <item href="html/bottom-line.html" id="bottomline" media-type="text/html"/>
+    <item href="html/the-notenik-manifesto.html" id="notenikmanifesto" media-type="text/html"/>
+    <item href="html/the-written-word.html" id="writtenword" media-type="text/html"/>
+    <item href="html/hypertext-markup-language.html" id="hypertextmarkuplanguage" media-type="text/html"/>
+    <item href="html/markdown-for-lightweight-markup.html" id="markdownforlightweightmarkup" media-type="text/html"/>
+    <item href="html/better-a-tool-than-an-app.html" id="betteratoolthananapp" media-type="text/html"/>
+    <item href="html/fields-for-organization.html" id="fieldsfororganization" media-type="text/html"/>
+    <item href="html/a-thinking-tool.html" id="thinkingtool" media-type="text/html"/>
+    <item href="html/personal-computing.html" id="personalcomputing" media-type="text/html"/>
+    <item href="html/software-that-i-want-to-use.html" id="softwarethatiwanttouse" media-type="text/html"/>
+    <item href="html/made-for-the-mac.html" id="madeforthemac" media-type="text/html"/>
+    <item href="html/the-joy-of-invention.html" id="joyofinvention" media-type="text/html"/>
+    <item href="html/popping-the-hood.html" id="poppingthehood" media-type="text/html"/>
+    <item href="html/plain-text-files.html" id="plaintextfiles" media-type="text/html"/>
+    <item href="html/one-tool-among-many.html" id="onetoolamongmany" media-type="text/html"/>
+    <item href="html/open-and-free.html" id="openandfree" media-type="text/html"/>
+    <item href="html/deliver-working-software-frequently.html" id="deliverworkingsoftwarefrequently" media-type="text/html"/>
+    <item href="html/perfect-is-the-enemy-of-good.html" id="perfectistheenemyofgood" media-type="text/html"/>
     <item href="html/creating-and-tailoring-a-collection-of-notes.html" id="creatingandtailoringacollectionofnotes" media-type="text/html"/>
     <item href="html/decisions-to-be-made.html" id="decisionstobemade" media-type="text/html"/>
     <item href="html/the-location-of-your-collection.html" id="locationofyourcollection" media-type="text/html"/>
@@ -27,9 +69,11 @@
     <item href="html/default-styling-for-headings.html" id="defaultstylingforheadings" media-type="text/html"/>
     <item href="html/add-delete-and-edit-your-notes.html" id="adddeleteandedityournotes" media-type="text/html"/>
     <item href="html/new-note-with-options.html" id="newnotewithoptions" media-type="text/html"/>
+    <item href="html/tailor-the-edit-tab.html" id="tailortheedittab" media-type="text/html"/>
     <item href="html/view-your-notes-as-a-list.html" id="viewyournotesasalist" media-type="text/html"/>
     <item href="html/search.html" id="search" media-type="text/html"/>
     <item href="html/select-a-note-for-action.html" id="selectanoteforaction" media-type="text/html"/>
+    <item href="html/insert-a-date.html" id="insertadate" media-type="text/html"/>
     <item href="html/files-and-folders.html" id="filesandfolders" media-type="text/html"/>
     <item href="html/note-files.html" id="notefiles" media-type="text/html"/>
     <item href="html/note-file-format.html" id="notefileformat" media-type="text/html"/>
@@ -37,6 +81,8 @@
     <item href="html/note-file-names.html" id="notefilenames" media-type="text/html"/>
     <item href="html/note-file-extensions.html" id="notefileextensions" media-type="text/html"/>
     <item href="html/the-collection-template-file.html" id="collectiontemplatefile" media-type="text/html"/>
+    <item href="html/class-template-files.html" id="classtemplatefiles" media-type="text/html"/>
+    <item href="html/the-defaults-class-template.html" id="defaultsclasstemplate" media-type="text/html"/>
     <item href="html/why-is-the-notenik-format-different.html" id="whyisthenotenikformatdifferent" media-type="text/html"/>
     <item href="html/use-of-a-text-editor.html" id="useofatexteditor" media-type="text/html"/>
     <item href="html/collection-folders.html" id="collectionfolders" media-type="text/html"/>
@@ -60,6 +106,7 @@
     <item href="html/import-and-export-your-notes.html" id="importandexportyournotes" media-type="text/html"/>
     <item href="html/import-from-omnifocus.html" id="importfromomnifocus" media-type="text/html"/>
     <item href="html/export-as-web-book.html" id="exportaswebbook" media-type="text/html"/>
+    <item href="html/export-using-script.html" id="exportusingscript" media-type="text/html"/>
     <item href="html/populate-app-catalog.html" id="populateappcatalog" media-type="text/html"/>
     <item href="html/export-to-notenik-vs-save-as-vs-move.html" id="exporttonotenikvssaveasvsmove" media-type="text/html"/>
     <item href="html/backup-to-zip.html" id="backuptozip" media-type="text/html"/>
@@ -67,10 +114,12 @@
     <item href="html/favorites-to-html.html" id="favoritestohtml" media-type="text/html"/>
     <item href="html/generating-reports.html" id="generatingreports" media-type="text/html"/>
     <item href="html/record-and-play-scripts.html" id="recordandplayscripts" media-type="text/html"/>
+    <item href="html/query-builder.html" id="querybuilder" media-type="text/html"/>
     <item href="html/mirror-your-notes.html" id="mirroryournotes" media-type="text/html"/>
     <item href="html/website-building.html" id="websitebuilding" media-type="text/html"/>
     <item href="html/custom-url-scheme.html" id="customurlscheme" media-type="text/html"/>
     <item href="html/apis-for-hook-integration.html" id="apisforhookintegration" media-type="text/html"/>
+    <item href="html/actions-for-shortcuts.html" id="actionsforshortcuts" media-type="text/html"/>
     <item href="html/markdown.html" id="markdown" media-type="text/html"/>
     <item href="html/choice-of-markdown-parsers.html" id="choiceofmarkdownparsers" media-type="text/html"/>
     <item href="html/notenik-markdown-parser.html" id="notenikmarkdownparser" media-type="text/html"/>
@@ -86,12 +135,14 @@
     <item href="html/tables.html" id="tables" media-type="text/html"/>
     <item href="html/task-lists.html" id="tasklists" media-type="text/html"/>
     <item href="html/mathjax-support.html" id="mathjaxsupport" media-type="text/html"/>
+    <item href="html/single-line-commands.html" id="singlelinecommands" media-type="text/html"/>
     <item href="html/generate-a-note-table-of-contents.html" id="generateanotetableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-table-of-contents.html" id="generateacollectiontableofcontents" media-type="text/html"/>
     <item href="html/generate-a-collection-index.html" id="generateacollectionindex" media-type="text/html"/>
     <item href="html/generate-a-tags-outline.html" id="generateatagsoutline" media-type="text/html"/>
     <item href="html/generate-a-tags-cloud.html" id="generateatagscloud" media-type="text/html"/>
     <item href="html/include-a-note-or-file.html" id="includeanoteorfile" media-type="text/html"/>
+    <item href="html/display-teasers.html" id="displayteasers" media-type="text/html"/>
     <item href="html/no-email-obfuscation.html" id="noemailobfuscation" media-type="text/html"/>
     <item href="html/no-backticks-style-quotes.html" id="nobackticksstylequotes" media-type="text/html"/>
     <item href="html/word-and-character-counts.html" id="wordandcharactercounts" media-type="text/html"/>
@@ -137,6 +188,7 @@
     <item href="html/boolean.html" id="boolean" media-type="text/html"/>
     <item href="html/class.html" id="class" media-type="text/html"/>
     <item href="html/special-class-values.html" id="specialclassvalues" media-type="text/html"/>
+    <item href="html/combo.html" id="combo" media-type="text/html"/>
     <item href="html/integer.html" id="integer" media-type="text/html"/>
     <item href="html/longtext.html" id="longtext" media-type="text/html"/>
     <item href="html/lookup.html" id="lookup" media-type="text/html"/>
@@ -168,6 +220,7 @@
     <item href="html/linked-tags-g.html" id="linkedtagsg" media-type="text/html"/>
     <item href="html/html-h.html" id="htmlh" media-type="text/html"/>
     <item href="html/initial-case-i.html" id="initialcasei" media-type="text/html"/>
+    <item href="html/to-identifier-i.html" id="toidentifieri" media-type="text/html"/>
     <item href="html/link-j.html" id="linkj" media-type="text/html"/>
     <item href="html/hour-of-day-k.html" id="hourofdayk" media-type="text/html"/>
     <item href="html/lowercase-modifier-l.html" id="lowercasemodifierl" media-type="text/html"/>
@@ -211,6 +264,7 @@
     <item href="html/template-module-parameters.html" id="templatemoduleparameters" media-type="text/html"/>
     <item href="html/output-module-parameters.html" id="outputmoduleparameters" media-type="text/html"/>
     <item href="html/browse-module-parameters.html" id="browsemoduleparameters" media-type="text/html"/>
+    <item href="html/script-file-example.html" id="scriptfileexample" media-type="text/html"/>
     <item href="html/putting-it-all-together.html" id="puttingitalltogether" media-type="text/html"/>
     <item href="html/create-a-simple-collection-of-notes.html" id="createasimplecollectionofnotes" media-type="text/html"/>
     <item href="html/create-a-collection-of-web-bookmarks.html" id="createacollectionofwebbookmarks" media-type="text/html"/>
@@ -221,6 +275,13 @@
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/make-a-project-launcher.html" id="makeaprojectlauncher" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-10.0.0.html" id="version1000" media-type="text/html"/>
+    <item href="html/version-9.9.0.html" id="version990" media-type="text/html"/>
+    <item href="html/version-9.8.0.html" id="version980" media-type="text/html"/>
+    <item href="html/version-9.7.0.html" id="version970" media-type="text/html"/>
+    <item href="html/version-9.6.0.html" id="version960" media-type="text/html"/>
+    <item href="html/version-9.5.0.html" id="version950" media-type="text/html"/>
+    <item href="html/version-9.4.0.html" id="version940" media-type="text/html"/>
     <item href="html/version-9.3.0.html" id="version930" media-type="text/html"/>
     <item href="html/version-9.2.1.html" id="version921" media-type="text/html"/>
     <item href="html/version-9.2.0.html" id="version920" media-type="text/html"/>
@@ -320,16 +381,6 @@
     <item href="html/version-1.3.0.html" id="version130" media-type="text/html"/>
     <item href="html/version-1.2.0.html" id="version120" media-type="text/html"/>
     <item href="html/version-1.1.0.html" id="version110" media-type="text/html"/>
-    <item href="html/the-philosophy-behind-notenik.html" id="philosophybehindnotenik" media-type="text/html"/>
-    <item href="html/the-joy-of-invention.html" id="joyofinvention" media-type="text/html"/>
-    <item href="html/a-labor-of-love.html" id="laboroflove" media-type="text/html"/>
-    <item href="html/better-a-tool-than-an-app.html" id="betteratoolthananapp" media-type="text/html"/>
-    <item href="html/personal-computing.html" id="personalcomputing" media-type="text/html"/>
-    <item href="html/a-tool-for-thinking.html" id="toolforthinking" media-type="text/html"/>
-    <item href="html/open-and-accessible-data.html" id="openandaccessibledata" media-type="text/html"/>
-    <item href="html/designed-first-and-foremost-for-the-mac.html" id="designedfirstandforemostforthemac" media-type="text/html"/>
-    <item href="html/frequent-incremental-improvements.html" id="frequentincrementalimprovements" media-type="text/html"/>
-    <item href="html/how-notenik-stacks-up-against-the-big-names.html" id="hownotenikstacksupagainstthebignames" media-type="text/html"/>
     <item href="html/reference.html" id="reference" media-type="text/html"/>
     <item href="html/about.html" id="about" media-type="text/html"/>
     <item href="html/about-those-other-names....html" id="aboutthoseothernames" media-type="text/html"/>
@@ -345,10 +396,52 @@
   </manifest>
   <spine toc="ncx">
     <itemref idref="notenikknowledgebase" />
-    <itemref idref="basics" />
-    <itemref idref="guidingprinciples" />
-    <itemref idref="overview" />
-    <itemref idref="introductiontothemacuserinterface" />
+    <itemref idref="intrototheuserinterface" />
+    <itemref idref="briefoverview" />
+    <itemref idref="isnotenikrightforyou" />
+    <itemref idref="supportedplatforms" />
+    <itemref idref="synchronization" />
+    <itemref idref="plaintext" />
+    <itemref idref="foldersandcollections" />
+    <itemref idref="useofmarkdown" />
+    <itemref idref="linksbetweennotes" />
+    <itemref idref="metadata" />
+    <itemref idref="organizingwithtags" />
+    <itemref idref="personalcontentmanagementsystem" />
+    <itemref idref="choosingfieldlabelsandtypes" />
+    <itemref idref="userinterface" />
+    <itemref idref="connectionsbetweennotes" />
+    <itemref idref="blockswithinnotes" />
+    <itemref idref="searchcapability" />
+    <itemref idref="programmingcode" />
+    <itemref idref="dailynotes" />
+    <itemref idref="tasks" />
+    <itemref idref="integratingwithotherapps" />
+    <itemref idref="customizingappearanceandfunctionality" />
+    <itemref idref="templates" />
+    <itemref idref="importandexport" />
+    <itemref idref="publishandshare" />
+    <itemref idref="accessibility" />
+    <itemref idref="cost" />
+    <itemref idref="developmentandsupportmodel" />
+    <itemref idref="bottomline" />
+    <itemref idref="notenikmanifesto" />
+    <itemref idref="writtenword" />
+    <itemref idref="hypertextmarkuplanguage" />
+    <itemref idref="markdownforlightweightmarkup" />
+    <itemref idref="betteratoolthananapp" />
+    <itemref idref="fieldsfororganization" />
+    <itemref idref="thinkingtool" />
+    <itemref idref="personalcomputing" />
+    <itemref idref="softwarethatiwanttouse" />
+    <itemref idref="madeforthemac" />
+    <itemref idref="joyofinvention" />
+    <itemref idref="poppingthehood" />
+    <itemref idref="plaintextfiles" />
+    <itemref idref="onetoolamongmany" />
+    <itemref idref="openandfree" />
+    <itemref idref="deliverworkingsoftwarefrequently" />
+    <itemref idref="perfectistheenemyofgood" />
     <itemref idref="creatingandtailoringacollectionofnotes" />
     <itemref idref="decisionstobemade" />
     <itemref idref="locationofyourcollection" />
@@ -365,9 +458,11 @@
     <itemref idref="defaultstylingforheadings" />
     <itemref idref="adddeleteandedityournotes" />
     <itemref idref="newnotewithoptions" />
+    <itemref idref="tailortheedittab" />
     <itemref idref="viewyournotesasalist" />
     <itemref idref="search" />
     <itemref idref="selectanoteforaction" />
+    <itemref idref="insertadate" />
     <itemref idref="filesandfolders" />
     <itemref idref="notefiles" />
     <itemref idref="notefileformat" />
@@ -375,6 +470,8 @@
     <itemref idref="notefilenames" />
     <itemref idref="notefileextensions" />
     <itemref idref="collectiontemplatefile" />
+    <itemref idref="classtemplatefiles" />
+    <itemref idref="defaultsclasstemplate" />
     <itemref idref="whyisthenotenikformatdifferent" />
     <itemref idref="useofatexteditor" />
     <itemref idref="collectionfolders" />
@@ -398,6 +495,7 @@
     <itemref idref="importandexportyournotes" />
     <itemref idref="importfromomnifocus" />
     <itemref idref="exportaswebbook" />
+    <itemref idref="exportusingscript" />
     <itemref idref="populateappcatalog" />
     <itemref idref="exporttonotenikvssaveasvsmove" />
     <itemref idref="backuptozip" />
@@ -405,10 +503,12 @@
     <itemref idref="favoritestohtml" />
     <itemref idref="generatingreports" />
     <itemref idref="recordandplayscripts" />
+    <itemref idref="querybuilder" />
     <itemref idref="mirroryournotes" />
     <itemref idref="websitebuilding" />
     <itemref idref="customurlscheme" />
     <itemref idref="apisforhookintegration" />
+    <itemref idref="actionsforshortcuts" />
     <itemref idref="markdown" />
     <itemref idref="choiceofmarkdownparsers" />
     <itemref idref="notenikmarkdownparser" />
@@ -424,12 +524,14 @@
     <itemref idref="tables" />
     <itemref idref="tasklists" />
     <itemref idref="mathjaxsupport" />
+    <itemref idref="singlelinecommands" />
     <itemref idref="generateanotetableofcontents" />
     <itemref idref="generateacollectiontableofcontents" />
     <itemref idref="generateacollectionindex" />
     <itemref idref="generateatagsoutline" />
     <itemref idref="generateatagscloud" />
     <itemref idref="includeanoteorfile" />
+    <itemref idref="displayteasers" />
     <itemref idref="noemailobfuscation" />
     <itemref idref="nobackticksstylequotes" />
     <itemref idref="wordandcharactercounts" />
@@ -475,6 +577,7 @@
     <itemref idref="boolean" />
     <itemref idref="class" />
     <itemref idref="specialclassvalues" />
+    <itemref idref="combo" />
     <itemref idref="integer" />
     <itemref idref="longtext" />
     <itemref idref="lookup" />
@@ -506,6 +609,7 @@
     <itemref idref="linkedtagsg" />
     <itemref idref="htmlh" />
     <itemref idref="initialcasei" />
+    <itemref idref="toidentifieri" />
     <itemref idref="linkj" />
     <itemref idref="hourofdayk" />
     <itemref idref="lowercasemodifierl" />
@@ -549,6 +653,7 @@
     <itemref idref="templatemoduleparameters" />
     <itemref idref="outputmoduleparameters" />
     <itemref idref="browsemoduleparameters" />
+    <itemref idref="scriptfileexample" />
     <itemref idref="puttingitalltogether" />
     <itemref idref="createasimplecollectionofnotes" />
     <itemref idref="createacollectionofwebbookmarks" />
@@ -559,6 +664,13 @@
     <itemref idref="writeawebbook" />
     <itemref idref="makeaprojectlauncher" />
     <itemref idref="versionhistory" />
+    <itemref idref="version1000" />
+    <itemref idref="version990" />
+    <itemref idref="version980" />
+    <itemref idref="version970" />
+    <itemref idref="version960" />
+    <itemref idref="version950" />
+    <itemref idref="version940" />
     <itemref idref="version930" />
     <itemref idref="version921" />
     <itemref idref="version920" />
@@ -658,16 +770,6 @@
     <itemref idref="version130" />
     <itemref idref="version120" />
     <itemref idref="version110" />
-    <itemref idref="philosophybehindnotenik" />
-    <itemref idref="joyofinvention" />
-    <itemref idref="laboroflove" />
-    <itemref idref="betteratoolthananapp" />
-    <itemref idref="personalcomputing" />
-    <itemref idref="toolforthinking" />
-    <itemref idref="openandaccessibledata" />
-    <itemref idref="designedfirstandforemostforthemac" />
-    <itemref idref="frequentincrementalimprovements" />
-    <itemref idref="hownotenikstacksupagainstthebignames" />
     <itemref idref="reference" />
     <itemref idref="about" />
     <itemref idref="aboutthoseothernames" />

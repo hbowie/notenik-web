@@ -21,33 +21,35 @@ window.MathJax = {
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
 
-<p>6.2 <a href="notenik-markdown-parser.html">Notenik Markdown Parser</a>&nbsp;&#8593;</p>
-<h4 id="heading-identification">6.2.2 Heading Identification</h4>
+
+<p>9.2 <a href="notenik-markdown-parser.html">Notenik Markdown Parser</a>&nbsp;&#8593;</p><h4 id="heading-identification">9.2.2 Heading Identification</h4>
 <p><a href="https://daringfireball.net/projects/markdown/syntax#header">John Gruber&#8217;s description of Markdown syntax</a> leaves room for some ambiguity surrounding two questions concerning the use of one or more hash characters to indicate a heading: </p>
+
 <ol>
-<li>
-<p>Must a heading line be preceded by a blank line? </p>
-</li>
-<li>
-<p>Must the string of hash characters be followed by a space, before beginning the text of the heading? </p>
-</li>
+<li><p>Must a heading line be preceded by a blank line? </p></li>
+<li><p>Must the string of hash characters be followed by a space, before beginning the text of the heading? </p></li>
 </ol>
+
 <p>The <a href="https://www.markdownguide.org/basic-syntax/#headings">Markdown Guide</a> makes note of this ambiguity, and the resulting differences in interpretation among various Markdown parsers, but does not provide a definitive resolution for either question. (See  <em>Heading Best Practices</em>.) </p>
+
 <p>Notenik&#8217;s own parser answers the questions above in the following manner. </p>
+
 <ol>
-<li>
-<p>A blank line before a heading is recommended (for readability, if nothing else), but is not required. </p>
-</li>
-<li>
-<p>A space after the last hash character is also recommended, but not required. </p>
-</li>
+<li><p>A blank line before a heading is recommended (for readability, if nothing else), but is not required. </p></li>
+<li><p>A space after the last hash character is also recommended, but not required. </p></li>
 </ol>
+
 <p><em>However</em>, if there is no intervening space, and the first character following the only hash character is a digit, then the Notenik parser will assume that the author&#8217;s intent was for the hash character to be read as &#8216;number&#8217;, rather than triggering a heading. </p>
+
 <p>For example: </p>
+
 <p>#7 is a good bet in the next race. </p>
+
 <p>But&#8230; </p>
+
 <h1 id="number-7-is-a-good-bet-in-the-next-race.">Number 7 is a good bet in the next race.</h1>
+
+
 <hr />
-<p>Next: <a href="wiki-style-links.html">Wiki Style Links</a></p>
-</body>
+<p>Next: <a href="wiki-style-links.html">Wiki Style Links</a></p></body>
 </html>

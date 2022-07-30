@@ -5,6 +5,33 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik Turns 10.0.0!</title>
+	  <link>https://notenik.app/news/notenik-turns-10.0.0.html</link>
+	  <guid>https://notenik.app/news/notenik-turns-10.0.0.html</guid>
+	  <pubDate>Fri, 29 Jul 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Well, the version-ometer has clicked over once again &#8211; as it tends to do every week or so with Notenik &#8211; and look where we&apos;ve landed: on the big 10.0.0! All those zeros seem to call for some sort of reflection on how we got here, so let&apos;s consider a few highlights. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 9.6.0 - Choose Your Edit Fonts</title>
+	  <link>https://notenik.app/news/notenik-9.6.0-choose-your-edit-fonts.html</link>
+	  <guid>https://notenik.app/news/notenik-9.6.0-choose-your-edit-fonts.html</guid>
+	  <pubDate>Thu, 23 Jun 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  You can now choose your own font(s) used on the Edit tab, and can also set default values for any of the fields in your Collection. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 9.5.0 Plus a Discourse Community</title>
+	  <link>https://notenik.app/news/notenik-9.5.0-plus-a-discourse-community.html</link>
+	  <guid>https://notenik.app/news/notenik-9.5.0-plus-a-discourse-community.html</guid>
+	  <pubDate>Wed, 15 Jun 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  The big announcement this time is about the launch of a new Notenik community at discourse.notenik.app. But there&apos;s also info on an important bug fix and a few nice enhancements. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 9.3.0 - Cool New Functions</title>
 	  <link>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</link>
 	  <guid>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</guid>
@@ -67,33 +94,6 @@
 	  <pubDate>Mon, 28 Feb 2022 12:00:00 -0700</pubDate>
 	  <description>
 		  Markdown Checklists are now available, as are more flexible options for formatting Note Titles, along with improved default CSS styling for headings, plus a new toggle for auto-creation of missing wiki link targets. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.5.0 - Support for YAML Metadata and Local Images</title>
-	  <link>https://notenik.app/news/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html</link>
-	  <guid>https://notenik.app/news/notenik-8.5.0-support-for-yaml-metadata-and-local-images.html</guid>
-	  <pubDate>Sun, 20 Feb 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  YAML metadata is now a thing, and Notenik now supports it, in addition to its own special format. And then there&apos;s the problem of how to load local images into a Note, which now has a solution, allowing them to show up in the Display tab for the Note within Notenik. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.3.0 - A Few Hot Tips for Users Old and New</title>
-	  <link>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</link>
-	  <guid>https://notenik.app/news/notenik-8.3.0-a-few-hot-tips-for-users-old-and-new.html</guid>
-	  <pubDate>Fri, 11 Feb 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Our first Notenik video, a new collection of brief Notenik Tips, the ability to jump to a random note in a collection, recall of Collection window sizes and positions, and a few more MathJax fixes &#8211; it&apos;s all part of the lastest Notenik release! 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.2.0 - Setting the Table for New Users</title>
-	  <link>https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html</link>
-	  <guid>https://notenik.app/news/notenik-8.2.0-setting-the-table-for-new-users.html</guid>
-	  <pubDate>Fri, 28 Jan 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Added Markdown support for the creation of tables, using pipes and dashes; added a new command beneath the File menu to Open the current Collection&apos;s Folder in the macOS FInder; improved editing of Index fields; added new command to Clean a Link, removing common tracking parameters; improved the readability of the Keyboard Shortcuts Reference page in the Knowledge Base; added a new Markdown Cheat Sheet. 
 	  </description>
 	</item>
   </channel>
