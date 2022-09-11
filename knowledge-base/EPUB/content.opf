@@ -126,6 +126,7 @@
     <item href="html/curly-apostrophes.html" id="curlyapostrophes" media-type="text/html"/>
     <item href="html/heading-identification.html" id="headingidentification" media-type="text/html"/>
     <item href="html/wiki-style-links.html" id="wikistylelinks" media-type="text/html"/>
+    <item href="html/wiki-links-between-collections.html" id="wikilinksbetweencollections" media-type="text/html"/>
     <item href="html/heading-auto-numbering.html" id="headingautonumbering" media-type="text/html"/>
     <item href="html/heading-id-generation.html" id="headingidgeneration" media-type="text/html"/>
     <item href="html/footnotes.html" id="footnotes" media-type="text/html"/>
@@ -238,6 +239,7 @@
     <item href="html/wiki-style-links-w.html" id="wikistylelinksw" media-type="text/html"/>
     <item href="html/xml-x.html" id="xmlx" media-type="text/html"/>
     <item href="html/year-y.html" id="yeary" media-type="text/html"/>
+    <item href="html/linked-tags-z.html" id="linkedtagsz" media-type="text/html"/>
     <item href="html/formatting-string.html" id="formattingstring" media-type="text/html"/>
     <item href="html/merge-commands.html" id="mergecommands" media-type="text/html"/>
     <item href="html/delims-command.html" id="delimscommand" media-type="text/html"/>
@@ -275,6 +277,9 @@
     <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
     <item href="html/make-a-project-launcher.html" id="makeaprojectlauncher" media-type="text/html"/>
     <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
+    <item href="html/version-10.3.0.html" id="version1030" media-type="text/html"/>
+    <item href="html/version-10.2.0.html" id="version1020" media-type="text/html"/>
+    <item href="html/version-10.1.0.html" id="version1010" media-type="text/html"/>
     <item href="html/version-10.0.0.html" id="version1000" media-type="text/html"/>
     <item href="html/version-9.9.0.html" id="version990" media-type="text/html"/>
     <item href="html/version-9.8.0.html" id="version980" media-type="text/html"/>
@@ -515,6 +520,7 @@
     <itemref idref="curlyapostrophes" />
     <itemref idref="headingidentification" />
     <itemref idref="wikistylelinks" />
+    <itemref idref="wikilinksbetweencollections" />
     <itemref idref="headingautonumbering" />
     <itemref idref="headingidgeneration" />
     <itemref idref="footnotes" />
@@ -627,6 +633,7 @@
     <itemref idref="wikistylelinksw" />
     <itemref idref="xmlx" />
     <itemref idref="yeary" />
+    <itemref idref="linkedtagsz" />
     <itemref idref="formattingstring" />
     <itemref idref="mergecommands" />
     <itemref idref="delimscommand" />
@@ -664,6 +671,9 @@
     <itemref idref="writeawebbook" />
     <itemref idref="makeaprojectlauncher" />
     <itemref idref="versionhistory" />
+    <itemref idref="version1030" />
+    <itemref idref="version1020" />
+    <itemref idref="version1010" />
     <itemref idref="version1000" />
     <itemref idref="version990" />
     <itemref idref="version980" />

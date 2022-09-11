@@ -1,0 +1,76 @@
+Title:  Notenik 10.3.0 - More Bells, More Whistles
+
+Page Title: Notenik 10.3.0 - More Bells, More Whistles
+
+Status: 9 - Published
+
+Type:   news
+
+Date:   10 Sep 2022
+
+Teaser:
+
+Parent Realms gain new powers; improved file handling; improvements to Merge Template commands, variables and modifiers; plus a handful of fixes and tweaks. 
+
+
+Body:
+
+Can Notenik have too many bells and whistles? 
+
+I certainly don't want to break things that users (myself included) have come to depend upon. And I don't want to make the basics any more complicated than they already are. And I don't want to create obscure options that get in the way of things that are more generally useful. 
+
+But, even given these constraints, I still find myself adding ever more options and capabilities to Notenik. 
+
+These last few releases (10.1.0, 10.2.0 and the just-released 10.3.0) provide a number of good examples. Not all of them will be your cup of tea, but hopefully at least one or two will tickle your fancy. 
+
+### Parent Realms Gain New Powers
+
+I find myself using Parent Realms more and more. If you're not familiar with this concept, it's a folder that acts as a container for one or more Notenik Collections. A number of new features pertain to these sorts of folders. 
+
++ A new file named '`- INFO-parent-realm.nnk`' now gets stashed within a parent realm folder when it is opened as such, and this file is then able to retain the last window coordinates for the parent realm window, so that they can be restored the next time you open that realm. I find this just makes use of these sorts of folders so much more pleasant -- they just appear where I expect them to be, and are sized as I would like them, so I can start using them right away. 
+
++ Wiki links between Collections are now possible, and these especially make sense when you are linking back and forth between Collections stored in a common Parent Realm. If this is something that sounds interesting to you, then see the new [Knowledge Base entry](https://notenik.app/knowledge-base/EPUB/html/wiki-links-between-collections.html) for all the details. 
+
++ BBEdit Project files now show up within a Parent Realm, so you can easily use a Parent Realm window to open your BBEdit project, at the same time you are opening one or more Notenik Collections within the realm. 
+
+### Changes to File Handling
+
++ A contiguous range of Notes may now be deleted from a Collection in one fell swoop, by selecting the range on the **List** tab, then selecting the **Delete Range** option from the List tab contextual menu. 
+
++ Deleted Notes are now moved to the Trash, rather than being completely deleted. 
+
++ Modified Notes now modify existing files on disk, rather than deleting and re-adding files. 
+
+### Merge Template Commands, Variables and Modifiers
+
+Several fixes and enhancements were made in this area.
+
++ The new Merge Templates System Variable '`display-css`' can be used to embed the CSS used within Notenik to style the Display tab. This new system variable might be used to populate the style section within the head of an HTML template, or might be used to populate a stand-alone CSS file.
+
++ The `'output'` command may now be qualified with an `'ifnew`' operand, to indicate that the output from the Merge Template will only be written if the file is new, to avoid overwriting an existing file. (This can be used in conjunction with the new '`display-css`' variable described above to initialize a CSS file, but then avoid re-initializing it after the user has modified it.) 
+
++ A new variable modifier of '`Z`' provides a new and more flexible way to transform the tags in a **Tags** field into a series of links.
+
++ The **summarize** variable modifier now recognizes a semicolon as a desirable stopping point for a summary, in addition to a period. 
+
++ The **wiki-style links** variable modifier was sometimes not working properly; this has been fixed. 
+
+### Fixes
+
+A few minor tweaks were made, and annoyances eliminated. 
+
++ Hard line breaks within paragraphs were sometimes causing the first word on a following line to run right up against the last word on the line above, without any intervening space. This has been corrected. 
+
++ The **Query Output** window size and location is now retained and restored from one usage to the next.
+
++ A potential citation numbering problem was corrected. This would only occur when you had a citation definition that was never referenced. 
+
++ Files with extensions of '`.svg`' are now properly recognized as potential image files. 
+
++ If the Notenik Markdown parser finds a reference link that is missing its corresponding definition, then Notenik will now skip generation of the anchor element altogether, rather than generating one with an empty `href` value, to avoid any possible confusion for a browser.
+
++ The **Minutes to Read** calculation was adjusted to use a value of 225 words per minute, instead of 200. While there is no absolute "right" number here, 225 produces results that seem more in line with popular blogging platforms.
+
++ The **List** tab would sometimes show a duplicate entry after an update; this has been fixed. 
+
+As usual, you can find more details in the [Notenik Knowledge Base](https://notenik.app/knowledge-base/EPUB/html/version-history.html).

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HierarchyData</key>
+	<array>
+		<string>57D758F9-ADCB-4C57-B12D-C3EC8A186F75</string>
+	</array>
+	<key>ProjectItems</key>
+	<dict>
+		<key>57D758F9-ADCB-4C57-B12D-C3EC8A186F75</key>
+		<dict>
+			<key>ItemData</key>
+			<dict>
+				<key>BookmarkData</key>
+				<data>
+				Ym9va7gCAAAAAAQQMAAAAM4NjcuPPCgmQAAPNnImdCnu
+				ZwiDqhfcrZBTfZqZ8HBttAEAAAQAAAADAwAAAAgAKAUA
+				AAABAQAAVXNlcnMAAAAGAAAAAQEAAGhib3dpZQAABQAA
+				AAEBAABTaXRlcwAAAAsAAAABAQAAbm90ZW5pay13ZWIA
+				EAAAAAEGAAAQAAAAIAAAADAAAABAAAAACAAAAAQDAACV
+				XAAAAAAAAAgAAAAEAwAA78MDAAAAAAAIAAAABAMAAC1c
+				MQAAAAAACAAAAAQDAABDqDIAAAAAABAAAAABBgAAbAAA
+				AHwAAACMAAAAnAAAAAgAAAAABAAAQcNyue0AAAAYAAAA
+				AQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAE
+				AwAAAgAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZp
+				bGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMA
+				AABQoRtzAAAACAAAAAAEAABBxEAH4AAAACQAAAABAQAA
+				QjZCNjYxOUMtMEIyNy00NTAzLUJFQUUtNjYyNzg2MzQ0
+				NzUzGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAA
+				AAABAAAAAQEAAC8AAAAAAAAAAQUAAMwAAAD+////AQAA
+				AAAAAAAQAAAABBAAAFQAAAAAAAAABRAAAKwAAAAAAAAA
+				EBAAANQAAAAAAAAAQBAAAMQAAAAAAAAAAiAAAKABAAAA
+				AAAABSAAABABAAAAAAAAECAAACABAAAAAAAAESAAAFQB
+				AAAAAAAAEiAAADQBAAAAAAAAEyAAAEQBAAAAAAAAICAA
+				AIABAAAAAAAAMCAAAKwBAAAAAAAAAcAAAPQAAAAAAAAA
+				EcAAACAAAAAAAAAAEsAAAAQBAAAAAAAAENAAAAQAAAAA
+				AAAA
+				</data>
+				<key>FileURL</key>
+				<string>file:///Users/hbowie/Sites/notenik-web/</string>
+				<key>HasSecurityScope</key>
+				<true/>
+				<key>RelativePath</key>
+				<string>./</string>
+				<key>TypeID</key>
+				<string>_CFileLocator</string>
+				<key>Version</key>
+				<integer>1</integer>
+			</dict>
+			<key>ItemName</key>
+			<string>notenik-web</string>
+			<key>ItemType</key>
+			<string>FolderReference</string>
+			<key>UserOverrideItemName</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>com.barebones.DocumentFormatVersion</key>
+	<integer>5</integer>
+	<key>com.barebones.DocumentType</key>
+	<string>Project</string>
+</dict>
+</plist>

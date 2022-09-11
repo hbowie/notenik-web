@@ -23,7 +23,11 @@ window.MathJax = {
 
 
 <p>11.4 <a href="merge-commands.html">Merge Commands</a>&nbsp;&#8593;</p><h4 id="output-command">11.4.3 output command</h4>
-<p>This command names and opens the output file, where the results of the template merge will be stored. The single operand is the name of the output file. This command would normally be the first line in your template file. Subsequent template records will be written to the output file. </p>
+<p>This command names and opens the output file, where the results of the template merge will be stored. The first (or sometimes only) operand is the name of the output file. </p>
+
+<p>An optional second operand may specify <code>ifnew</code>, meaning &#8220;only write the output file if it is new&#8221; (in other words, if a file with the same name and in the same location doesn&#8217;t already exist). This could be used, for example, in conjunction with the <code>display-css</code> Merge Template <a href="system-variables.html">System Variable</a>, to create a new CSS file if one does not already exist, but to avoid overwriting one that does exist. </p>
+
+<p>The <code>output</code> command would normally be the first line in your template file. Subsequent template records will be written to the output file. </p>
 
 <p>Note, however, that the filename can contain a <a href="merge-variables.html">Merge Variable</a>. In this case, the output command would follow the <a href="nextrec-command.html">nextrec command</a>, and a new output file would be opened for each row input. </p>
 

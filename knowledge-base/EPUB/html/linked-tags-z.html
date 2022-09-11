@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Linked Tags - Z</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+<p class="alignLeft">Notenik Knowledge Base</p>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+
+
+<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="linked-tags-z">11.3.35 Linked Tags - Z</h4>
+<p>This modifier is similar to <a href="linked-tags-g.html">Linked Tags - G</a>, but works slightly differently. </p>
+
+<p><a href="linked-tags-g.html">Linked Tags - G</a> works well when each tag will have a separate page listing posts/notes containing that tag. </p>
+
+<p>Linked Tags - Z works best when each tag will have a separate section within a single shared page. </p>
+
+<p>As with <a href="linked-tags-g.html">Linked Tags - G</a>, this modifier takes a <a href="tags.html">Tags</a> field, and then breaks it down into its constituent tags, creating an HTML hyperlink (using the Anchor tag) for each separate tag within the field. </p>
+
+<p>One to three strings may be specified after the &#8216;z&#8217; variable modifier, separated as needed by semicolons. </p>
+
+<ol>
+<li><p>The first string will be prepended to each tag value, within the generated <code>href</code> attribute. </p></li>
+<li><p>The second string will be appended to each tag value, within the generated <code>href</code> attribute. </p></li>
+<li><p>The third string can be used to supply an optional class value to be used within the generated anchor tags. </p></li>
+</ol>
+
+<p>Here&#8217;s an example of how this variable modifier might be used. </p>
+
+<p>Let&#8217;s suppose we have a post/note with a tags field containing &#8216;<code>god, religion</code>&#8217;. </p>
+
+<p>Now, let&#8217;s suppose we have the following variable within a <a href="merge-templates.html">Merge Template</a>. </p>
+
+<pre><code>
+=$tags&amp;ztopics.html#tags.;;;$=
+</code></pre>
+
+<p>When the tempate is generated, it would result in the following HTML: </p>
+
+<pre><code>
+&lt;a href='topics.html#tags.god' rel='tag'>god&lt;/a>, &lt;a href='topics.html#tags.religion' rel='tag'>religion&lt;/a>
+</code></pre>
+
+<p>Then, when the tags are clicked within the resulting web page, the links will take the user to the appropriate section for each tag within the &#8216;<code>topics.html</code>&#8217; page. </p>
+
+<hr />
+<p>Next: <a href="formatting-string.html">Formatting String</a></p></body>
+</html>

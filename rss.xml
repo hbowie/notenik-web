@@ -5,6 +5,15 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 10.3.0 - More Bells, More Whistles</title>
+	  <link>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</link>
+	  <guid>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</guid>
+	  <pubDate>Sat, 10 Sep 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Parent Realms gain new powers; improved file handling; improvements to Merge Template commands, variables and modifiers; plus a handful of fixes and tweaks. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik Turns 10.0.0!</title>
 	  <link>https://notenik.app/news/notenik-turns-10.0.0.html</link>
 	  <guid>https://notenik.app/news/notenik-turns-10.0.0.html</guid>
@@ -85,15 +94,6 @@
 	  <pubDate>Thu, 10 Mar 2022 12:00:00 -0700</pubDate>
 	  <description>
 		  Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik&apos;s Link field; and further refine the appearance of a Web Book. It&apos;s all here in the latest release. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options</title>
-	  <link>https://notenik.app/news/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html</link>
-	  <guid>https://notenik.app/news/notenik-8.6.0-checklists-and-improved-title-as-heading-options.html</guid>
-	  <pubDate>Mon, 28 Feb 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Markdown Checklists are now available, as are more flexible options for formatting Note Titles, along with improved default CSS styling for headings, plus a new toggle for auto-creation of missing wiki link targets. 
 	  </description>
 	</item>
   </channel>
