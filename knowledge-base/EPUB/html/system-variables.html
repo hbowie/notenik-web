@@ -17,12 +17,25 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.2 <a href="merge-variables.html">Merge Variables</a>&nbsp;&#8593;</p><h4 id="system-variables">11.2.1 System Variables</h4>
+</nav>
+
+<main>
+<p>14.2 <a href="merge-variables.html" class="nav-link">Merge Variables</a>&#160;&#8593;</p><h4 id="system-variables">14.2.1 System Variables</h4>
 <p>The following special variables are predefined and available for substitution, no matter what data source is being used. </p>
 
 <dl>
@@ -36,7 +49,7 @@ window.MathJax = {
 <dd>The default CSS used within Notenik for this Collection. This system variable can be placed in the <code>head</code> section of an HTML page, or copied into a stand-alone CSS file. </dd>
 
 <dt>exportpath </dt>
-<dd>When the script is being run from the Export menu, this variable will contain the path to the folder selected by the user. See <a href="export-using-script.html">Export Using Script</a> for additional details. </dd>
+<dd>When the script is being run from the Export menu, this variable will contain the path to the folder selected by the user. See <a href="export-using-script.html" class="wiki-link">Export Using Script</a> for additional details. </dd>
 
 <dt>nobr </dt>
 <dd>Placing the variable &#8216;nobr&#8217; anywhere on a line will cause that line to be written out without a trailing line break. The nobr variable itself will be removed from the line, without being replaced. </dd>
@@ -54,10 +67,21 @@ window.MathJax = {
 <dd>The entire parent path to the template file, excluding the file name itself. </dd>
 
 <dt>today </dt>
-<dd>The current date, at the time that template output is being generated. </dd>
+<dd>The current date, at the time that template output is being generated. Note that, if you specify a <a href="formatting-string.html" class="wiki-link">Formatting String</a> that includes time elements, then this value will be formatted as the current date and time (rather than just the date). </dd>
 </dl>
 
 
 <hr />
-<p>Next: <a href="variable-modifiers.html">Variable Modifiers</a></p></body>
+<div>
+
+<p>Next: <a href="derived-variables.html" class="nav-link">Derived Variables</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

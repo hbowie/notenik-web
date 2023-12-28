@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3 <a href="starting-collection-types.html" class="nav-link">Starting Collection Types</a>&#160;&#8593;</p><h4 id="website">7.3.12 Website</h4>
+<p>This is a starter pack meant to be used for authoring and publishing a website of some kind. See the enclosed <code>README.md</code> file for further info. </p>
+
+<p>With some editing and customizing of template files and generation scripts you are able to simply generate an entire website. Sample site contains </p>
+<ul>
+<li>Homepage (index) with welcome text and last dated posts as teasers </li>
+<li>Some blog-like posts as dated publish posts with simple navigation </li>
+<li>About page as page example for standalone pages for your website </li>
+</ul>
+
+<p>The top-level folder created is designed to be opened by Notenik as a <a href="open-parent-realm.html" class="wiki-link">parent realm</a>. </p>
+
+<p>The top-level folder will contain the following subfolders. </p>
+
+<h5 id="content"><code>content</code></h5>
+
+<p>This is the Notenik Collection that will contain your content. It provides the following <a href="lists-of-labels-and-types.html" class="wiki-link">fields</a> as defined in <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a>. </p>
+
+<pre><code>
+Title: &lt;title> 
+
+Tags: &lt;tags> 
+
+AKA: &lt;aka> 
+
+Link: &lt;link> 
+
+Status: 0 - Idea; 1 - Proposed; 2 - Approved; 3 - Planned; 4 - In Work; 5 - Held; 6 - Completed; 7 - FollowUp; 8 - Canceled; 9 - Closed;  
+
+Class: &lt;class:  home, page, post > 
+
+Date: &lt;date> 
+
+Author: &lt;author> 
+
+Teaser: &lt;teaser> 
+
+Date Added: &lt;dateadded> 
+
+Date Modified: &lt;datemodified> 
+
+Body:  
+
+
+</code></pre>
+
+<h5 id="factory"><code>factory</code></h5>
+
+<p>This folder will contain <a href="merge-templates.html" class="wiki-link">Merge Templates</a>, <a href="script-files.html" class="wiki-link">Script Files</a> and <a href="include-command.html" class="wiki-link">Include Files</a> used in generating the website from the content. </p>
+
+<h5 id="resources"><code>resources</code></h5>
+
+<p>This is another Notenik Collection containing links to various resources that the website creator may find useful. </p>
+
+<h5 id="web"><code>web</code></h5>
+
+<p>This is the folder containing the actual contents of the website generated from the contents by the factory. </p>
+
+<p>You may read also <a href="website-building.html" class="wiki-link">Website Building</a> for details about website creation. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="contacts.html" class="nav-link">Contacts</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

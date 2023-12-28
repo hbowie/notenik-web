@@ -1,0 +1,21 @@
+<?output "../includes-gen/usage-page.html"?>
+<?nextrec?>
+<?if "=$type&>$=" eq "usage" ?>
+				<article>
+					<h3>
+						<a class="invisi-link" href="usage/=$title&f$=.html">
+							=$page-title$=
+						</a>
+					</h3>
+
+					=$teaser&o$=
+
+					<p class="news-date">
+						=$date&d MMM, yyyy$=
+						<a href="usage/=$title&f$=.html">
+							read more&hellip;
+						</a>
+					</p>
+				<article>
+<?endif?>
+<?loop?>

@@ -1,0 +1,63 @@
+Title:  Notenik 11.0.0 - Driven by Discourse
+
+Page Title: Notenik 11.0.0 - Driven by Discourse
+
+Status: 9 - Published
+
+Type:   02 - news
+
+Date:   09 Dec 2022
+
+Teaser:
+
+Several of the app's recent changes have started out as requests or comments in the Notenik Discourse forum. 
+
+Body:
+
+It's been a few weeks since my last post, so let me share some of what's been going on in the world of Notenik. 
+
+The [Discourse Community](https://discourse.notenik.app) has been growing, and generating more good discussion of late. Three of the five latest app changes grew out of comments and requests on the forum, and I'm happy to be receiving such good input that helps me to continue to grow the app in healthy ways. 
+
+Partly because of the growth of this community, I've added a *Quick Links* banner at the top of the [Notenik.app](https://notenik.app) site, with links to the Discourse forum, as well as the online Knowledge Base, and the Version Notes. The idea is to make navigation to these important resources more accessible -- especially for more experienced users who may no longer be interested in much of the site content that is more introductory in nature. 
+
+So looking back over the last few releases, let me try to categorize what's been going on. 
+
+#### Terminology Change
+
+In line with the macOS Ventura changes, things that were previously called 'Preferences' are now referred to as 'Settings'. 
+
+#### Improved Documentation
+
+A couple of improvements here:
+
++ Improved Knowledge Base documentation for the available starting Collection types, when creating a new Collection. 
+
++ Created a **Notenik Master Class** focused primarily on using Notenik to generate websites. This is a new item beneath the **Help** menu. 
+
+#### Easier HTML Generation
+
+A few improvements have been made that are available when using Merge templates to generate HTML. 
+
++ Back Link fields (as well as Forward Links) can now be used to generate HTML that makes these appear much the same way they do within the app. 
+
++ New merge template fields called `Parent-Slug`, `Children-Slug` and `Next-Slug` are now available to make it easier to provide in-page navigational aids similar to those found when exporting a Collection as a Web Book. 
+
+#### Better Starting Point for Website Generation
+
+When creating a new Collection, users can now choose an option that will be configured for website generation using Merge Templates and Scripts. 
+
+#### Added Sort Options using the Class Field
+
+Users can now sort a Collection by **Class + Date** or **Class + Title**. And if no field of type Class is available, the sorts will look for a field named 'Type' and, if found, use that instead. 
+
+#### Additional Sharing Options
+
+The **Share w/Options** command is one of Notenik's best-kept secrets, since it allows the user to easily share a Note in a variety of different formats. Now two new options are available: one to format a Note as a microblog entry (suitable for use with Mastodon, let's say), and another to open a Note using your Web browser, thus enabling easy access to printing or saving as a PDF. 
+
+#### Bug Fixes and Functionality Refinements
+
+A few rough edges were sanded off. 
+
+#### And That's A Wrap!
+
+That's it for the latest round of improvements. Check out the [Discourse Forum](https://discourse.notenik.app) for the latest news and discussion. See the app's [Version History](https://notenik.app/knowledge-base/EPUB/html/version-history.html) for more details on changes. 

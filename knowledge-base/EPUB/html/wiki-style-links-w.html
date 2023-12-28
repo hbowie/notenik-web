@@ -17,18 +17,30 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="wiki-style-links-w">11.3.32 Wiki-Style Links - W</h4>
-<p><em>aka: Wiki-Style Links Mod</em></p><p>If your input is coming from a Collection using <a href="wiki-style-links.html">Wiki Style Links</a> (links to other Notes formed by placing the Title of the target note within double square brackets), then you will probably wish to convert these to functional links in your output. </p>
+</nav>
+
+<main>
+<p>14.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="wiki-style-links-w">14.3.33 Wiki-Style Links - W</h4>
+<p>If your input is coming from a Collection using <a href="wiki-style-links.html" class="wiki-link">Wiki Style Links</a> (links to other Notes formed by placing the Title of the target note within double square brackets), then you will probably wish to convert these to functional links in your output. </p>
 
 <p>You can accomplish this by using the letter &#8220;W&#8221; as a variable modifier to modify the Markdown code containing inter-note links. The &#8220;W&#8221; must then be followed by one of the following values. </p>
-
 <ul>
-<li><p>1 - The digit &#8216;1&#8217; will cause the target Note title to be converted to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. The &#8216;.html&#8217; file extension will then be appended as a suffix. This option can be used when each note has its own page. </p></li>
+<li><p>1 - The digit &#8216;1&#8217; will cause the target Note title to be converted to a conventional, universal file name, changing spaces to dashes, removing any odd characters, making all letters lower-case, and converting white space to hyphens. The &#8216;.html&#8217; file extension will then be appended as a suffix. This option can be used when each note has its own page. If you are using <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a>, then the string &#8216;<code>../</code>&#8217; will be preprended to each such link, with the assumption that cross-linking collections will each be placed in their own folder, and that these folders will all be at the same level in the resulting website. </p></li>
 <li><p>2 - The digit &#8216;2&#8217; will cause the Note title to be similarly converted, but then have a &#8216;#&#8217; prepended, with no suffix added. This option can be used when each note has its own heading within the same page. </p></li>
 </ul>
 
@@ -37,5 +49,16 @@ window.MathJax = {
 <p>Note also that this modifier should <em>only</em> be used in a Merge Template intended to create HTML files <em>external</em> to Notenik; if you are using a Merge Template simply to style the <em>internal</em> representation of a Note within Notenik, on the Display tab, then this modifier is not needed, and will actually cause your wiki-style links to break. </p>
 
 <hr />
-<p>Next: <a href="xml-x.html">XML - X</a></p></body>
+<div>
+
+<p>Next: <a href="xml-x.html" class="nav-link">XML - X</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

@@ -1,0 +1,79 @@
+Title:  Notenik 13.4.0 - Outlines, Contact Info, Calendars and Presentations
+
+Page Title: Notenik 13.4.0 - Outlines, Contact Info, Calendars and Presentations
+
+Status: 9 - Published
+
+Type:   02 - news
+
+Date:   2023-11-17
+
+Teaser:
+
+In this post I'll try to summarize the most significant changes made over the last six months or so, since the release of 12.0.0. 
+
+
+Body:
+
+In this post I'll try to summarize the most significant changes made over the last six months or so, since the release of [12.0.0](https://notenik.app/news/notenik-12.0.0-epubs-and-such.html). 
+
+As usual, there were lots of fixes and small improvements. You can always follow the Announcements category in the [Notenik Discourse forum](https://discourse.notenik.app) to see all the details of each release. I'll just hit the highlights here. 
+
+### New Field Types
+
+Much of Notenik's flexibility comes from its various field types, each of which carries with it some special functionality. The following new field types were added:
+
++ Address -- To contain a physical address that can be used by Apple Maps
++ Directions -- To show a clickable link to launch the Apple Maps directions from one address to another
++ Email -- To hold an email address, and generate a clickable link to start an email message to that address
++ Person -- To hold an individual's name, separated into its various possible components
++ Phone -- To contain a telephone number
+
+### Last Name First Sorting
+
+When using a Title field or an Author field, or simply using a Title field to contain a person's name, Notenik now offers a Collection Sort option to sort by last names, rather than by first names. 
+
+### Improved vCard Import
+
+With all of the new field types added above, it seemed [a good time](https://notenik.app/knowledge-base/EPUB/html/import-and-export-your-notes.html) to improve the vCard import functionality to take advantage of these. 
+
+### Outlining
+
+Outlines are darned useful things, and Notenik provides lots of different ways to use them. 
+
+[Version 12.1.0](https://notenik.app/knowledge-base/EPUB/html/version-12.1.0.html) added a couple of new Markdown extensions that allow outlines to be generated within the body of a Note, based either on the headings, or on an unordered list. In both cases, the result is a nice outline with disclosure triangles and indentation. And this is all done with HTML, so you can easily use the results in a web page. 
+
+[Version 12.9.0](https://notenik.app/knowledge-base/EPUB/html/version-12.9.0.html), on the other hand, provided the ability to generate an HTML outline based on all of the Notes within a Collection, using the Seq and Level fields to determine the structure of the outline. 
+
+### Calendars
+
+[Version 12.4.0](https://notenik.app/knowledge-base/EPUB/html/version-12.4.0.html) added the ability to generate a calendar within a Notenik page, using the dates and titles of other notes within the collection. And the first day of the week within the calendar will now respect the user's global macOS preferences. 
+
+### Improved Task Lists
+
+[Version 13.0.0](https://notenik.app/knowledge-base/EPUB/html/version-13.0.0.html) added the ability to check and uncheck task list items on the Display tab, without having to edit the Note. 
+
+### Improved Long Text Editing
+
+Notenik allows the use of Markdown in fields other than the body of a Note -- in a separate teaser field, for example. The editing of such fields has now been improved to allow -- via an application setting --  such fields to appear as a single line on the Edit tab, but with an option to open a secondary window that can be sized for editing larger chunks of text. 
+
+### Rapid Addition of Multiple Notes
+
+What if you want to rapidly add a bunch of Notes, specifying only a title for each?
+
+You can now use the Again button in the New Note with Options window to specify a title, add a new Note, and then immediately return to the same window to add another. 
+
+### Improved Collection Navigation
+
+Notenik now has multiple menu options, with associated shortcuts, to move back and forth in a Collection based on the Collection's sequence, and also to move back and forth in a Collection's navigation history.
+
+For longer structured Collections, [Version 13.1.0](https://notenik.app/knowledge-base/EPUB/html/version-13.1.0.html) added a Skip navigation link to skip lower-level detail and proceed forward to the next Note at the same level as the current Note. 
+
+### Added a Presentation Mode
+
+In addition to the Streamlined Reading mode, [Version 13.1.0](https://notenik.app/knowledge-base/EPUB/html/version-13.1.0.html) added a Presentation mode. This improves the ability to use Notenik to make a presentation to an audience.
+
+### And That's It!
+
+As you can see, that's a lot of new stuff added and improved over the last six months! Is there further room for improvement? Well, we'll have to wait and see what the next six months might hold! But I wouldn't yet say that the Notenik journey is over....
+

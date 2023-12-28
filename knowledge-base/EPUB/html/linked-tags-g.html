@@ -17,32 +17,70 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="linked-tags-g">11.3.14 Linked Tags - G</h4>
-<p><em>aka: Linked Tags</em></p><p>Each tag found in the variable will be made into a link, linking to &#8216;=$relative$=yypathyy/xxtagxx.html&#8217;, where &#8216;xxtagxx&#8217; is the tag, and &#8216;yypathyy&#8217; is the string of characters following the &#8216;g&#8217;. </p>
+</nav>
 
-<p>The contents of the class attribute for the anchor tag generated for each link can be supplied following the path, with an intervening semicolon to separate the two. </p>
+<main>
+<p>14.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="linked-tags-g">14.3.15 Linked Tags - G</h4>
+<p>This modifer is meant to be used specifically with the <a href="tags.html" class="wiki-link">Tags</a> field. </p>
+
+<p>This modifier is similar to <a href="linked-tags-z.html" class="wiki-link">Linked Tags - Z</a>, but works slightly differently. </p>
+
+<p>Linked Tags - G works well when each tag will have a separate page listing posts/notes containing that tag. </p>
+
+<p><a href="linked-tags-z.html" class="wiki-link">Linked Tags - Z</a> works best when each tag will have a separate section within a single shared page. </p>
+
+<p>Each tag found in the variable will be made into a link, linking to <em>tagfile.html</em>. </p>
+
+<p>The file name will be derived from the tag, converting upper-case characters to lower-case, replacing spaces with dashes, and so forth. </p>
+
+<p>Up to three positional parameters may be specified following the modifier of <code>g</code>, with semicolons separating/terminating the three. </p>
+<ol>
+<li><p>The path to the linked tag file, starting from the <em>web root</em> (see <a href="template-module-parameters.html" class="wiki-link">Template Module Parameters</a> for more info). . </p></li>
+<li><p>A class name to be applied to the generated anchor tags, for styling purposes. </p></li>
+<li><p>A separator to be used between tags, if there are more than one. This defaults to a comma followed by a space. </p></li>
+</ol>
 
 <p>Consider the following example. </p>
 
 <pre><code>
-=$tags&amp;gtags/;btn btn-secondary mx-1 pr-topic$=
+=$tags&amp;gtags/;tag-class; | $=
 </code></pre>
 
 <p>Where: </p>
-
 <ul>
 <li><code>tags</code> is the variable name; </li>
 <li><code>tags/</code> is the path, starting from the web root; </li>
-<li><code>btn btn-secondary mx-1 pr-topic</code> are classes to be applied to each link (<code>&lt;a </code>) HTML tag. </li>
+<li><code>tag-class</code> is the class to be applied to each link (<code>&lt;a </code>) HTML tag. </li>
+<li>&#8216;<code> | </code>&#8217; is the separator to be used between the links, for multiple tags. </li>
 </ul>
 
-<p>Also see <a href="linked-tags-z.html">Linked Tags - Z</a>. </p>
 
 <hr />
-<p>Next: <a href="html-h.html">HTML - H</a></p></body>
+<div>
+
+<p>Next: <a href="html-h.html" class="nav-link">HTML - H</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

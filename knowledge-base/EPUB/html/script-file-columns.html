@@ -17,12 +17,25 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>12 <a href="script-files.html">Script Files</a>&nbsp;&#8593;</p><h3 id="script-file-columns">12.1 Script File Columns</h3>
+</nav>
+
+<main>
+<p>15. <a href="script-files.html" class="nav-link">Script Files</a>&#160;&#8593;</p><h3 id="script-file-columns">15.2 Script File Columns</h3>
 <p>A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. </p>
 
 <p>Blank lines, as well as lines beginning with <code>&lt;!—</code>, will be ignored. </p><table>
@@ -40,7 +53,7 @@ window.MathJax = {
 <td>
  module  </td>
 <td>
- Specifies the <a href="scripting-modules.html">scripting module</a> to be used to execute the command.  </td>
+ Specifies the <a href="scripting-modules.html" class="wiki-link">scripting module</a> to be used to execute the command.  </td>
 </tr>
 <tr>
 <td>
@@ -79,7 +92,6 @@ window.MathJax = {
 <p>When the value column contains a path to a folder or a file, then a relative path may be indicated by specifying a prefix of <code>#PATH#</code>. The resulting path will be resolved relative to the location of the script file currently being executed. </p>
 
 <p>As examples: </p>
-
 <ul>
 <li><p><code>#PATH#../</code> would resolve to the folder 1 level above the location of the script file. </p></li>
 <li><p><code>#PATH#templates/page_template.html</code> would resolve to the file named <code>page_template.html</code> located in the <code>templates</code> folder, assuming the <code>templates</code> folder is located in the same parent as the script file itself. </p></li>
@@ -88,5 +100,16 @@ window.MathJax = {
 
 
 <hr />
-<p>Next: <a href="scripting-modules.html">Scripting Modules</a></p></body>
+<div>
+
+<p>Next: <a href="scripting-modules.html" class="nav-link">Scripting Modules</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

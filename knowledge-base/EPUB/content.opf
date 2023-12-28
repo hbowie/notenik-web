@@ -1,796 +1,532 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid">
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-identifier">
   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <dc:identifier id="uid">notenik-knowledge-base</dc:identifier>
-    <dc:title>Notenik Knowledge Base</dc:title>
-    <dc:language>en</dc:language>
+		<dc:identifier id="pub-identifier">notenik.app/kb</dc:identifier>
+		<dc:title id="pub-title">The Notenik Knowledge Base</dc:title>
+		<dc:creator id="author">Herb Bowie</dc:creator>
+		<dc:language id="pub-language">en</dc:language>
+		<meta property="dcterms:modified">2023-04-13T12:00:00Z</meta>
   </metadata>
   <manifest>
-    <item href="html/notenik-knowledge-base.html" id="notenikknowledgebase" media-type="text/html"/>
-    <item href="html/intro-to-the-user-interface.html" id="intrototheuserinterface" media-type="text/html"/>
-    <item href="html/brief-overview.html" id="briefoverview" media-type="text/html"/>
-    <item href="html/is-notenik-right-for-you.html" id="isnotenikrightforyou" media-type="text/html"/>
-    <item href="html/supported-platforms.html" id="supportedplatforms" media-type="text/html"/>
-    <item href="html/synchronization.html" id="synchronization" media-type="text/html"/>
-    <item href="html/plain-text.html" id="plaintext" media-type="text/html"/>
-    <item href="html/folders-and-collections.html" id="foldersandcollections" media-type="text/html"/>
-    <item href="html/use-of-markdown.html" id="useofmarkdown" media-type="text/html"/>
-    <item href="html/links-between-notes.html" id="linksbetweennotes" media-type="text/html"/>
-    <item href="html/metadata.html" id="metadata" media-type="text/html"/>
-    <item href="html/organizing-with-tags.html" id="organizingwithtags" media-type="text/html"/>
-    <item href="html/a-personal-content-management-system.html" id="personalcontentmanagementsystem" media-type="text/html"/>
-    <item href="html/choosing-field-labels-and-types.html" id="choosingfieldlabelsandtypes" media-type="text/html"/>
-    <item href="html/user-interface.html" id="userinterface" media-type="text/html"/>
-    <item href="html/connections-between-notes.html" id="connectionsbetweennotes" media-type="text/html"/>
-    <item href="html/blocks-within-notes.html" id="blockswithinnotes" media-type="text/html"/>
-    <item href="html/search-capability.html" id="searchcapability" media-type="text/html"/>
-    <item href="html/programming-code.html" id="programmingcode" media-type="text/html"/>
-    <item href="html/daily-notes.html" id="dailynotes" media-type="text/html"/>
-    <item href="html/tasks.html" id="tasks" media-type="text/html"/>
-    <item href="html/integrating-with-other-apps.html" id="integratingwithotherapps" media-type="text/html"/>
-    <item href="html/customizing-appearance-and-functionality.html" id="customizingappearanceandfunctionality" media-type="text/html"/>
-    <item href="html/templates.html" id="templates" media-type="text/html"/>
-    <item href="html/import-and-export.html" id="importandexport" media-type="text/html"/>
-    <item href="html/publish-and-share.html" id="publishandshare" media-type="text/html"/>
-    <item href="html/accessibility.html" id="accessibility" media-type="text/html"/>
-    <item href="html/cost.html" id="cost" media-type="text/html"/>
-    <item href="html/development-and-support-model.html" id="developmentandsupportmodel" media-type="text/html"/>
-    <item href="html/bottom-line.html" id="bottomline" media-type="text/html"/>
-    <item href="html/the-notenik-manifesto.html" id="notenikmanifesto" media-type="text/html"/>
-    <item href="html/the-written-word.html" id="writtenword" media-type="text/html"/>
-    <item href="html/hypertext-markup-language.html" id="hypertextmarkuplanguage" media-type="text/html"/>
-    <item href="html/markdown-for-lightweight-markup.html" id="markdownforlightweightmarkup" media-type="text/html"/>
-    <item href="html/better-a-tool-than-an-app.html" id="betteratoolthananapp" media-type="text/html"/>
-    <item href="html/fields-for-organization.html" id="fieldsfororganization" media-type="text/html"/>
-    <item href="html/a-thinking-tool.html" id="thinkingtool" media-type="text/html"/>
-    <item href="html/personal-computing.html" id="personalcomputing" media-type="text/html"/>
-    <item href="html/software-that-i-want-to-use.html" id="softwarethatiwanttouse" media-type="text/html"/>
-    <item href="html/made-for-the-mac.html" id="madeforthemac" media-type="text/html"/>
-    <item href="html/the-joy-of-invention.html" id="joyofinvention" media-type="text/html"/>
-    <item href="html/popping-the-hood.html" id="poppingthehood" media-type="text/html"/>
-    <item href="html/plain-text-files.html" id="plaintextfiles" media-type="text/html"/>
-    <item href="html/one-tool-among-many.html" id="onetoolamongmany" media-type="text/html"/>
-    <item href="html/open-and-free.html" id="openandfree" media-type="text/html"/>
-    <item href="html/deliver-working-software-frequently.html" id="deliverworkingsoftwarefrequently" media-type="text/html"/>
-    <item href="html/perfect-is-the-enemy-of-good.html" id="perfectistheenemyofgood" media-type="text/html"/>
-    <item href="html/creating-and-tailoring-a-collection-of-notes.html" id="creatingandtailoringacollectionofnotes" media-type="text/html"/>
-    <item href="html/decisions-to-be-made.html" id="decisionstobemade" media-type="text/html"/>
-    <item href="html/the-location-of-your-collection.html" id="locationofyourcollection" media-type="text/html"/>
-    <item href="html/the-name-of-your-collection.html" id="nameofyourcollection" media-type="text/html"/>
-    <item href="html/the-field-labels-and-types-for-your-collection.html" id="fieldlabelsandtypesforyourcollection" media-type="text/html"/>
-    <item href="html/file-extension-for-your-notes.html" id="fileextensionforyournotes" media-type="text/html"/>
-    <item href="html/menu-command-for-creating-a-new-collection.html" id="menucommandforcreatinganewcollection" media-type="text/html"/>
-    <item href="html/tailor-collection-preferences.html" id="tailorcollectionpreferences" media-type="text/html"/>
-    <item href="html/note-title-display.html" id="notetitledisplay" media-type="text/html"/>
-    <item href="html/streamlined-reading.html" id="streamlinedreading" media-type="text/html"/>
-    <item href="html/common-tasks.html" id="commontasks" media-type="text/html"/>
-    <item href="html/display-a-note.html" id="displayanote" media-type="text/html"/>
-    <item href="html/tailor-the-display.html" id="tailorthedisplay" media-type="text/html"/>
-    <item href="html/default-styling-for-headings.html" id="defaultstylingforheadings" media-type="text/html"/>
-    <item href="html/add-delete-and-edit-your-notes.html" id="adddeleteandedityournotes" media-type="text/html"/>
-    <item href="html/new-note-with-options.html" id="newnotewithoptions" media-type="text/html"/>
-    <item href="html/tailor-the-edit-tab.html" id="tailortheedittab" media-type="text/html"/>
-    <item href="html/view-your-notes-as-a-list.html" id="viewyournotesasalist" media-type="text/html"/>
-    <item href="html/search.html" id="search" media-type="text/html"/>
-    <item href="html/select-a-note-for-action.html" id="selectanoteforaction" media-type="text/html"/>
-    <item href="html/insert-a-date.html" id="insertadate" media-type="text/html"/>
-    <item href="html/files-and-folders.html" id="filesandfolders" media-type="text/html"/>
-    <item href="html/note-files.html" id="notefiles" media-type="text/html"/>
-    <item href="html/note-file-format.html" id="notefileformat" media-type="text/html"/>
-    <item href="html/note-file-format-example.html" id="notefileformatexample" media-type="text/html"/>
-    <item href="html/note-file-names.html" id="notefilenames" media-type="text/html"/>
-    <item href="html/note-file-extensions.html" id="notefileextensions" media-type="text/html"/>
-    <item href="html/the-collection-template-file.html" id="collectiontemplatefile" media-type="text/html"/>
-    <item href="html/class-template-files.html" id="classtemplatefiles" media-type="text/html"/>
-    <item href="html/the-defaults-class-template.html" id="defaultsclasstemplate" media-type="text/html"/>
-    <item href="html/why-is-the-notenik-format-different.html" id="whyisthenotenikformatdifferent" media-type="text/html"/>
-    <item href="html/use-of-a-text-editor.html" id="useofatexteditor" media-type="text/html"/>
-    <item href="html/collection-folders.html" id="collectionfolders" media-type="text/html"/>
-    <item href="html/file-attachments.html" id="fileattachments" media-type="text/html"/>
-    <item href="html/other-files-and-subfolders.html" id="otherfilesandsubfolders" media-type="text/html"/>
-    <item href="html/the-notenik-icloud-container.html" id="notenikicloudcontainer" media-type="text/html"/>
-    <item href="html/managing-a-bunch-of-collections.html" id="managingabunchofcollections" media-type="text/html"/>
-    <item href="html/open-parent-realm.html" id="openparentrealm" media-type="text/html"/>
-    <item href="html/navigate-your-collections-via-the-board.html" id="navigateyourcollectionsviatheboard" media-type="text/html"/>
-    <item href="html/take-quick-action.html" id="takequickaction" media-type="text/html"/>
-    <item href="html/disk-access-permissions.html" id="diskaccesspermissions" media-type="text/html"/>
-    <item href="html/sync-your-notes.html" id="syncyournotes" media-type="text/html"/>
-    <item href="html/existing-text-files.html" id="existingtextfiles" media-type="text/html"/>
-    <item href="html/rules-for-reading.html" id="rulesforreading" media-type="text/html"/>
-    <item href="html/rules-for-updating.html" id="rulesforupdating" media-type="text/html"/>
-    <item href="html/rules-for-new-notes.html" id="rulesfornewnotes" media-type="text/html"/>
-    <item href="html/converting-an-entire-collection.html" id="convertinganentirecollection" media-type="text/html"/>
-    <item href="html/backing-up.html" id="backingup" media-type="text/html"/>
-    <item href="html/getting-data-into-and-out-of-notenik.html" id="gettingdataintoandoutofnotenik" media-type="text/html"/>
-    <item href="html/copy-cut-paste-and-share-your-notes.html" id="copycutpasteandshareyournotes" media-type="text/html"/>
-    <item href="html/import-and-export-your-notes.html" id="importandexportyournotes" media-type="text/html"/>
-    <item href="html/import-from-omnifocus.html" id="importfromomnifocus" media-type="text/html"/>
-    <item href="html/export-as-web-book.html" id="exportaswebbook" media-type="text/html"/>
-    <item href="html/export-using-script.html" id="exportusingscript" media-type="text/html"/>
-    <item href="html/populate-app-catalog.html" id="populateappcatalog" media-type="text/html"/>
-    <item href="html/export-to-notenik-vs-save-as-vs-move.html" id="exporttonotenikvssaveasvsmove" media-type="text/html"/>
-    <item href="html/backup-to-zip.html" id="backuptozip" media-type="text/html"/>
-    <item href="html/publish-to-medium.html" id="publishtomedium" media-type="text/html"/>
-    <item href="html/favorites-to-html.html" id="favoritestohtml" media-type="text/html"/>
-    <item href="html/generating-reports.html" id="generatingreports" media-type="text/html"/>
-    <item href="html/record-and-play-scripts.html" id="recordandplayscripts" media-type="text/html"/>
-    <item href="html/query-builder.html" id="querybuilder" media-type="text/html"/>
-    <item href="html/mirror-your-notes.html" id="mirroryournotes" media-type="text/html"/>
-    <item href="html/website-building.html" id="websitebuilding" media-type="text/html"/>
-    <item href="html/custom-url-scheme.html" id="customurlscheme" media-type="text/html"/>
-    <item href="html/apis-for-hook-integration.html" id="apisforhookintegration" media-type="text/html"/>
-    <item href="html/actions-for-shortcuts.html" id="actionsforshortcuts" media-type="text/html"/>
-    <item href="html/markdown.html" id="markdown" media-type="text/html"/>
-    <item href="html/choice-of-markdown-parsers.html" id="choiceofmarkdownparsers" media-type="text/html"/>
-    <item href="html/notenik-markdown-parser.html" id="notenikmarkdownparser" media-type="text/html"/>
-    <item href="html/curly-apostrophes.html" id="curlyapostrophes" media-type="text/html"/>
-    <item href="html/heading-identification.html" id="headingidentification" media-type="text/html"/>
-    <item href="html/wiki-style-links.html" id="wikistylelinks" media-type="text/html"/>
-    <item href="html/wiki-links-between-collections.html" id="wikilinksbetweencollections" media-type="text/html"/>
-    <item href="html/heading-auto-numbering.html" id="headingautonumbering" media-type="text/html"/>
-    <item href="html/heading-id-generation.html" id="headingidgeneration" media-type="text/html"/>
-    <item href="html/footnotes.html" id="footnotes" media-type="text/html"/>
-    <item href="html/citations.html" id="citations" media-type="text/html"/>
-    <item href="html/fenced-code-blocks.html" id="fencedcodeblocks" media-type="text/html"/>
-    <item href="html/definition-lists.html" id="definitionlists" media-type="text/html"/>
-    <item href="html/tables.html" id="tables" media-type="text/html"/>
-    <item href="html/task-lists.html" id="tasklists" media-type="text/html"/>
-    <item href="html/mathjax-support.html" id="mathjaxsupport" media-type="text/html"/>
-    <item href="html/single-line-commands.html" id="singlelinecommands" media-type="text/html"/>
-    <item href="html/generate-a-note-table-of-contents.html" id="generateanotetableofcontents" media-type="text/html"/>
-    <item href="html/generate-a-collection-table-of-contents.html" id="generateacollectiontableofcontents" media-type="text/html"/>
-    <item href="html/generate-a-collection-index.html" id="generateacollectionindex" media-type="text/html"/>
-    <item href="html/generate-a-tags-outline.html" id="generateatagsoutline" media-type="text/html"/>
-    <item href="html/generate-a-tags-cloud.html" id="generateatagscloud" media-type="text/html"/>
-    <item href="html/include-a-note-or-file.html" id="includeanoteorfile" media-type="text/html"/>
-    <item href="html/display-teasers.html" id="displayteasers" media-type="text/html"/>
-    <item href="html/no-email-obfuscation.html" id="noemailobfuscation" media-type="text/html"/>
-    <item href="html/no-backticks-style-quotes.html" id="nobackticksstylequotes" media-type="text/html"/>
-    <item href="html/word-and-character-counts.html" id="wordandcharactercounts" media-type="text/html"/>
-    <item href="html/markdown-cheat-sheet.html" id="markdowncheatsheet" media-type="text/html"/>
-    <item href="html/field-labels-and-types.html" id="fieldlabelsandtypes" media-type="text/html"/>
-    <item href="html/what-we-mean-by-label-and-type.html" id="whatwemeanbylabelandtype" media-type="text/html"/>
-    <item href="html/functionality-associated-with-field-types.html" id="functionalityassociatedwithfieldtypes" media-type="text/html"/>
-    <item href="html/lists-of-labels-and-types.html" id="listsoflabelsandtypes" media-type="text/html"/>
-    <item href="html/the-basic-set-of-fields.html" id="basicsetoffields" media-type="text/html"/>
-    <item href="html/title.html" id="title" media-type="text/html"/>
-    <item href="html/tags.html" id="tags" media-type="text/html"/>
-    <item href="html/link.html" id="link" media-type="text/html"/>
-    <item href="html/launch-at-startup-tags.html" id="launchatstartuptags" media-type="text/html"/>
-    <item href="html/body.html" id="body" media-type="text/html"/>
-    <item href="html/fields-to-assist-with-note-linking.html" id="fieldstoassistwithnotelinking" media-type="text/html"/>
-    <item href="html/also-known-as.html" id="alsoknownas" media-type="text/html"/>
-    <item href="html/back-links.html" id="backlinks" media-type="text/html"/>
-    <item href="html/wiki-links.html" id="wikilinks" media-type="text/html"/>
-    <item href="html/fields-for-sequencing-and-outlining.html" id="fieldsforsequencingandoutlining" media-type="text/html"/>
-    <item href="html/seq.html" id="seq" media-type="text/html"/>
-    <item href="html/level.html" id="level" media-type="text/html"/>
-    <item href="html/include-children.html" id="includechildren" media-type="text/html"/>
-    <item href="html/task-related-fields.html" id="taskrelatedfields" media-type="text/html"/>
-    <item href="html/date.html" id="date" media-type="text/html"/>
-    <item href="html/status.html" id="status" media-type="text/html"/>
-    <item href="html/recurs.html" id="recurs" media-type="text/html"/>
-    <item href="html/web-making-fields.html" id="webmakingfields" media-type="text/html"/>
-    <item href="html/code.html" id="code" media-type="text/html"/>
-    <item href="html/index.html" id="index" media-type="text/html"/>
-    <item href="html/teaser.html" id="teaser" media-type="text/html"/>
-    <item href="html/minutes-to-read.html" id="minutestoread" media-type="text/html"/>
-    <item href="html/image-name.html" id="imagename" media-type="text/html"/>
-    <item href="html/short-id.html" id="shortid" media-type="text/html"/>
-    <item href="html/fields-useful-for-reviews-citations-and-quotations.html" id="fieldsusefulforreviewscitationsandquotations" media-type="text/html"/>
-    <item href="html/artist.html" id="artist" media-type="text/html"/>
-    <item href="html/attribution.html" id="attribution" media-type="text/html"/>
-    <item href="html/author.html" id="author" media-type="text/html"/>
-    <item href="html/rating.html" id="rating" media-type="text/html"/>
-    <item href="html/work-title.html" id="worktitle" media-type="text/html"/>
-    <item href="html/work-type.html" id="worktype" media-type="text/html"/>
-    <item href="html/work-link.html" id="worklink" media-type="text/html"/>
-    <item href="html/general-purpose-fields.html" id="generalpurposefields" media-type="text/html"/>
-    <item href="html/boolean.html" id="boolean" media-type="text/html"/>
-    <item href="html/class.html" id="class" media-type="text/html"/>
-    <item href="html/special-class-values.html" id="specialclassvalues" media-type="text/html"/>
-    <item href="html/combo.html" id="combo" media-type="text/html"/>
-    <item href="html/integer.html" id="integer" media-type="text/html"/>
-    <item href="html/longtext.html" id="longtext" media-type="text/html"/>
-    <item href="html/lookup.html" id="lookup" media-type="text/html"/>
-    <item href="html/pick-from.html" id="pickfrom" media-type="text/html"/>
-    <item href="html/string.html" id="string" media-type="text/html"/>
-    <item href="html/type.html" id="type" media-type="text/html"/>
-    <item href="html/system-assigned-dates-and-times.html" id="systemassigneddatesandtimes" media-type="text/html"/>
-    <item href="html/date-added.html" id="dateadded" media-type="text/html"/>
-    <item href="html/date-modified.html" id="datemodified" media-type="text/html"/>
-    <item href="html/timestamp.html" id="timestamp" media-type="text/html"/>
-    <item href="html/merge-templates.html" id="mergetemplates" media-type="text/html"/>
-    <item href="html/merge-delimiters.html" id="mergedelimiters" media-type="text/html"/>
-    <item href="html/merge-variables.html" id="mergevariables" media-type="text/html"/>
-    <item href="html/system-variables.html" id="systemvariables" media-type="text/html"/>
-    <item href="html/variable-modifiers.html" id="variablemodifiers" media-type="text/html"/>
-    <item href="html/email-apostrophes.html" id="emailapostrophes" media-type="text/html"/>
-    <item href="html/list-punctuation.html" id="listpunctuation" media-type="text/html"/>
-    <item href="html/underscore.html" id="underscore" media-type="text/html"/>
-    <item href="html/remove-paragraph-tags-hyphen.html" id="removeparagraphtagshyphen" media-type="text/html"/>
-    <item href="html/length-modifier.html" id="lengthmodifier" media-type="text/html"/>
-    <item href="html/author-name-modifier-a.html" id="authornamemodifiera" media-type="text/html"/>
-    <item href="html/am-pm-a.html" id="ampma" media-type="text/html"/>
-    <item href="html/base-file-name-b.html" id="basefilenameb" media-type="text/html"/>
-    <item href="html/word-demarcation-c.html" id="worddemarcationc" media-type="text/html"/>
-    <item href="html/day-of-month-dd.html" id="dayofmonthdd" media-type="text/html"/>
-    <item href="html/day-of-week-abbreviated-eee.html" id="dayofweekabbreviatedeee" media-type="text/html"/>
-    <item href="html/day-of-week-eeee.html" id="dayofweekeeee" media-type="text/html"/>
-    <item href="html/file-name-f.html" id="filenamef" media-type="text/html"/>
-    <item href="html/linked-tags-g.html" id="linkedtagsg" media-type="text/html"/>
-    <item href="html/html-h.html" id="htmlh" media-type="text/html"/>
-    <item href="html/initial-case-i.html" id="initialcasei" media-type="text/html"/>
-    <item href="html/to-identifier-i.html" id="toidentifieri" media-type="text/html"/>
-    <item href="html/link-j.html" id="linkj" media-type="text/html"/>
-    <item href="html/hour-of-day-k.html" id="hourofdayk" media-type="text/html"/>
-    <item href="html/lowercase-modifier-l.html" id="lowercasemodifierl" media-type="text/html"/>
-    <item href="html/month-or-minutes-m.html" id="monthorminutesm" media-type="text/html"/>
-    <item href="html/no-breaks-n.html" id="nobreaksn" media-type="text/html"/>
-    <item href="html/markdown-to-html-o.html" id="markdowntohtmlo" media-type="text/html"/>
-    <item href="html/punctuation-purification-p.html" id="punctuationpurificationp" media-type="text/html"/>
-    <item href="html/quotation-encasing-q.html" id="quotationencasingq" media-type="text/html"/>
-    <item href="html/keep-characters-on-the-right-r.html" id="keepcharactersontherightr" media-type="text/html"/>
-    <item href="html/readable-file-name-r.html" id="readablefilenamer" media-type="text/html"/>
-    <item href="html/summarize-s.html" id="summarizes" media-type="text/html"/>
-    <item href="html/html-to-markdown-t.html" id="htmltomarkdownt" media-type="text/html"/>
-    <item href="html/uppercase-modifier-u.html" id="uppercasemodifieru" media-type="text/html"/>
-    <item href="html/variance-v.html" id="variancev" media-type="text/html"/>
-    <item href="html/wiki-style-links-w.html" id="wikistylelinksw" media-type="text/html"/>
-    <item href="html/xml-x.html" id="xmlx" media-type="text/html"/>
-    <item href="html/year-y.html" id="yeary" media-type="text/html"/>
-    <item href="html/linked-tags-z.html" id="linkedtagsz" media-type="text/html"/>
-    <item href="html/formatting-string.html" id="formattingstring" media-type="text/html"/>
-    <item href="html/merge-commands.html" id="mergecommands" media-type="text/html"/>
-    <item href="html/delims-command.html" id="delimscommand" media-type="text/html"/>
-    <item href="html/set-command.html" id="setcommand" media-type="text/html"/>
-    <item href="html/output-command.html" id="outputcommand" media-type="text/html"/>
-    <item href="html/nextrec-command.html" id="nextreccommand" media-type="text/html"/>
-    <item href="html/definegroup-command.html" id="definegroupcommand" media-type="text/html"/>
-    <item href="html/ifendgroup-command.html" id="ifendgroupcommand" media-type="text/html"/>
-    <item href="html/trailing-command.html" id="trailingcommand" media-type="text/html"/>
-    <item href="html/ifnewgroup-command.html" id="ifnewgroupcommand" media-type="text/html"/>
-    <item href="html/if-command.html" id="ifcommand" media-type="text/html"/>
-    <item href="html/else-command.html" id="elsecommand" media-type="text/html"/>
-    <item href="html/endif-command.html" id="endifcommand" media-type="text/html"/>
-    <item href="html/copyfile-command.html" id="copyfilecommand" media-type="text/html"/>
-    <item href="html/include-command.html" id="includecommand" media-type="text/html"/>
-    <item href="html/allfields-command.html" id="allfieldscommand" media-type="text/html"/>
-    <item href="html/loop-command.html" id="loopcommand" media-type="text/html"/>
-    <item href="html/script-files.html" id="scriptfiles" media-type="text/html"/>
-    <item href="html/script-file-columns.html" id="scriptfilecolumns" media-type="text/html"/>
-    <item href="html/scripting-modules.html" id="scriptingmodules" media-type="text/html"/>
-    <item href="html/input-module-parameters.html" id="inputmoduleparameters" media-type="text/html"/>
-    <item href="html/filter-module-parameters.html" id="filtermoduleparameters" media-type="text/html"/>
-    <item href="html/sort-module-parameters.html" id="sortmoduleparameters" media-type="text/html"/>
-    <item href="html/template-module-parameters.html" id="templatemoduleparameters" media-type="text/html"/>
-    <item href="html/output-module-parameters.html" id="outputmoduleparameters" media-type="text/html"/>
-    <item href="html/browse-module-parameters.html" id="browsemoduleparameters" media-type="text/html"/>
-    <item href="html/script-file-example.html" id="scriptfileexample" media-type="text/html"/>
-    <item href="html/putting-it-all-together.html" id="puttingitalltogether" media-type="text/html"/>
-    <item href="html/create-a-simple-collection-of-notes.html" id="createasimplecollectionofnotes" media-type="text/html"/>
-    <item href="html/create-a-collection-of-web-bookmarks.html" id="createacollectionofwebbookmarks" media-type="text/html"/>
-    <item href="html/make-a-to-do-list.html" id="makeatodolist" media-type="text/html"/>
-    <item href="html/using-notenik-as-an-outliner.html" id="usingnotenikasanoutliner" media-type="text/html"/>
-    <item href="html/create-a-digital-commonplace-book-or-a-zettelkasten.html" id="createadigitalcommonplacebookorazettelkasten" media-type="text/html"/>
-    <item href="html/create-a-commonplace-book-with-lookup-fields.html" id="createacommonplacebookwithlookupfields" media-type="text/html"/>
-    <item href="html/write-a-web-book.html" id="writeawebbook" media-type="text/html"/>
-    <item href="html/make-a-project-launcher.html" id="makeaprojectlauncher" media-type="text/html"/>
-    <item href="html/version-history.html" id="versionhistory" media-type="text/html"/>
-    <item href="html/version-10.3.0.html" id="version1030" media-type="text/html"/>
-    <item href="html/version-10.2.0.html" id="version1020" media-type="text/html"/>
-    <item href="html/version-10.1.0.html" id="version1010" media-type="text/html"/>
-    <item href="html/version-10.0.0.html" id="version1000" media-type="text/html"/>
-    <item href="html/version-9.9.0.html" id="version990" media-type="text/html"/>
-    <item href="html/version-9.8.0.html" id="version980" media-type="text/html"/>
-    <item href="html/version-9.7.0.html" id="version970" media-type="text/html"/>
-    <item href="html/version-9.6.0.html" id="version960" media-type="text/html"/>
-    <item href="html/version-9.5.0.html" id="version950" media-type="text/html"/>
-    <item href="html/version-9.4.0.html" id="version940" media-type="text/html"/>
-    <item href="html/version-9.3.0.html" id="version930" media-type="text/html"/>
-    <item href="html/version-9.2.1.html" id="version921" media-type="text/html"/>
-    <item href="html/version-9.2.0.html" id="version920" media-type="text/html"/>
-    <item href="html/version-9.1.0.html" id="version910" media-type="text/html"/>
-    <item href="html/version-9.0.2.html" id="version902" media-type="text/html"/>
-    <item href="html/version-9.0.1.html" id="version901" media-type="text/html"/>
-    <item href="html/version-9.0.0.html" id="version900" media-type="text/html"/>
-    <item href="html/version-8.9.0.html" id="version890" media-type="text/html"/>
-    <item href="html/version-8.8.0.html" id="version880" media-type="text/html"/>
-    <item href="html/version-8.7.1.html" id="version871" media-type="text/html"/>
-    <item href="html/version-8.7.0.html" id="version870" media-type="text/html"/>
-    <item href="html/version-8.6.0.html" id="version860" media-type="text/html"/>
-    <item href="html/version-8.5.0.html" id="version850" media-type="text/html"/>
-    <item href="html/version-8.4.0.html" id="version840" media-type="text/html"/>
-    <item href="html/version-8.3.0.html" id="version830" media-type="text/html"/>
-    <item href="html/version-8.2.2.html" id="version822" media-type="text/html"/>
-    <item href="html/version-8.2.1.html" id="version821" media-type="text/html"/>
-    <item href="html/version-8.2.0.html" id="version820" media-type="text/html"/>
-    <item href="html/version-8.1.0.html" id="version810" media-type="text/html"/>
-    <item href="html/version-8.0.0.html" id="version800" media-type="text/html"/>
-    <item href="html/version-7.9.0.html" id="version790" media-type="text/html"/>
-    <item href="html/version-7.8.0.html" id="version780" media-type="text/html"/>
-    <item href="html/version-7.7.1.html" id="version771" media-type="text/html"/>
-    <item href="html/version-7.7.0.html" id="version770" media-type="text/html"/>
-    <item href="html/version-7.6.0.html" id="version760" media-type="text/html"/>
-    <item href="html/version-7.5.0.html" id="version750" media-type="text/html"/>
-    <item href="html/version-7.4.3.html" id="version743" media-type="text/html"/>
-    <item href="html/version-7.4.0.html" id="version740" media-type="text/html"/>
-    <item href="html/version-7.3.0.html" id="version730" media-type="text/html"/>
-    <item href="html/version-7.2.0.html" id="version720" media-type="text/html"/>
-    <item href="html/version-7.1.0.html" id="version710" media-type="text/html"/>
-    <item href="html/version-7.0.0.html" id="version700" media-type="text/html"/>
-    <item href="html/version-6.9.3.html" id="version693" media-type="text/html"/>
-    <item href="html/version-6.9.2.html" id="version692" media-type="text/html"/>
-    <item href="html/version-6.9.0.html" id="version690" media-type="text/html"/>
-    <item href="html/version-6.8.0.html" id="version680" media-type="text/html"/>
-    <item href="html/version-6.7.4.html" id="version674" media-type="text/html"/>
-    <item href="html/version-6.7.3.html" id="version673" media-type="text/html"/>
-    <item href="html/version-6.7.2.html" id="version672" media-type="text/html"/>
-    <item href="html/version-6.7.1.html" id="version671" media-type="text/html"/>
-    <item href="html/version-6.7.0.html" id="version670" media-type="text/html"/>
-    <item href="html/version-6.6.0.html" id="version660" media-type="text/html"/>
-    <item href="html/version-6.5.0.html" id="version650" media-type="text/html"/>
-    <item href="html/version-6.4.0.html" id="version640" media-type="text/html"/>
-    <item href="html/version-6.3.0.html" id="version630" media-type="text/html"/>
-    <item href="html/version-6.2.0.html" id="version620" media-type="text/html"/>
-    <item href="html/version-6.1.0.html" id="version610" media-type="text/html"/>
-    <item href="html/version-6.0.0.html" id="version600" media-type="text/html"/>
-    <item href="html/version-5.9.0.html" id="version590" media-type="text/html"/>
-    <item href="html/version-5.8.1.html" id="version581" media-type="text/html"/>
-    <item href="html/version-5.8.0.html" id="version580" media-type="text/html"/>
-    <item href="html/version-5.7.0.html" id="version570" media-type="text/html"/>
-    <item href="html/version-5.6.0.html" id="version560" media-type="text/html"/>
-    <item href="html/version-5.5.0.html" id="version550" media-type="text/html"/>
-    <item href="html/version-5.4.0.html" id="version540" media-type="text/html"/>
-    <item href="html/version-5.3.0.html" id="version530" media-type="text/html"/>
-    <item href="html/version-5.2.0.html" id="version520" media-type="text/html"/>
-    <item href="html/version-5.1.0.html" id="version510" media-type="text/html"/>
-    <item href="html/version-5.0.0.html" id="version500" media-type="text/html"/>
-    <item href="html/version-4.9.0.html" id="version490" media-type="text/html"/>
-    <item href="html/version-4.8.0.html" id="version480" media-type="text/html"/>
-    <item href="html/version-4.7.0.html" id="version470" media-type="text/html"/>
-    <item href="html/version-4.6.0.html" id="version460" media-type="text/html"/>
-    <item href="html/version-4.5.0.html" id="version450" media-type="text/html"/>
-    <item href="html/version-4.4.0.html" id="version440" media-type="text/html"/>
-    <item href="html/version-4.3.0.html" id="version430" media-type="text/html"/>
-    <item href="html/version-4.2.0.html" id="version420" media-type="text/html"/>
-    <item href="html/version-4.1.0.html" id="version410" media-type="text/html"/>
-    <item href="html/version-4.0.0.html" id="version400" media-type="text/html"/>
-    <item href="html/version-3.9.0.html" id="version390" media-type="text/html"/>
-    <item href="html/version-3.8.0.html" id="version380" media-type="text/html"/>
-    <item href="html/version-3.7.0.html" id="version370" media-type="text/html"/>
-    <item href="html/version-3.6.0.html" id="version360" media-type="text/html"/>
-    <item href="html/version-3.5.0.html" id="version350" media-type="text/html"/>
-    <item href="html/version-3.4.0.html" id="version340" media-type="text/html"/>
-    <item href="html/version-3.3.0.html" id="version330" media-type="text/html"/>
-    <item href="html/version-3.2.0.html" id="version320" media-type="text/html"/>
-    <item href="html/version-3.1.0.html" id="version310" media-type="text/html"/>
-    <item href="html/version-3.0.0.html" id="version300" media-type="text/html"/>
-    <item href="html/version-2.9.0.html" id="version290" media-type="text/html"/>
-    <item href="html/version-2.8.0.html" id="version280" media-type="text/html"/>
-    <item href="html/version-2.7.0.html" id="version270" media-type="text/html"/>
-    <item href="html/version-2.6.0.html" id="version260" media-type="text/html"/>
-    <item href="html/version-2.5.0.html" id="version250" media-type="text/html"/>
-    <item href="html/version-2.4.0.html" id="version240" media-type="text/html"/>
-    <item href="html/version-2.3.0.html" id="version230" media-type="text/html"/>
-    <item href="html/version-2.2.0.html" id="version220" media-type="text/html"/>
-    <item href="html/version-2.1.0.html" id="version210" media-type="text/html"/>
-    <item href="html/version-2.0.0.html" id="version200" media-type="text/html"/>
-    <item href="html/version-1.9.0.html" id="version190" media-type="text/html"/>
-    <item href="html/version-1.8.0.html" id="version180" media-type="text/html"/>
-    <item href="html/version-1.7.0.html" id="version170" media-type="text/html"/>
-    <item href="html/version-1.6.0.html" id="version160" media-type="text/html"/>
-    <item href="html/version-1.5.0.html" id="version150" media-type="text/html"/>
-    <item href="html/version-1.4.1.html" id="version141" media-type="text/html"/>
-    <item href="html/version-1.4.0.html" id="version140" media-type="text/html"/>
-    <item href="html/version-1.3.0.html" id="version130" media-type="text/html"/>
-    <item href="html/version-1.2.0.html" id="version120" media-type="text/html"/>
-    <item href="html/version-1.1.0.html" id="version110" media-type="text/html"/>
-    <item href="html/reference.html" id="reference" media-type="text/html"/>
-    <item href="html/about.html" id="about" media-type="text/html"/>
-    <item href="html/about-those-other-names....html" id="aboutthoseothernames" media-type="text/html"/>
-    <item href="html/license.html" id="license" media-type="text/html"/>
-    <item href="html/privacy.html" id="privacy" media-type="text/html"/>
-    <item href="html/support.html" id="support" media-type="text/html"/>
-    <item href="html/keyboard-shortcuts.html" id="keyboardshortcuts" media-type="text/html"/>
-    <item href="html/view-the-log.html" id="viewthelog" media-type="text/html"/>
-    <item href="html/index-to-the-knowledge-base.html" id="indextotheknowledgebase" media-type="text/html"/>
-    <item href="html/tags-outline.html" id="tagsoutline" media-type="text/html"/>
-    <item href="html/complete-table-of-contents.html" id="completetableofcontents" media-type="text/html"/>
-    <item href="html/links.html" id="links" media-type="text/html"/>
+    <item id="css-styles-css" href="css/styles.css" media-type="text/css"/>
   </manifest>
-  <spine toc="ncx">
-    <itemref idref="notenikknowledgebase" />
-    <itemref idref="intrototheuserinterface" />
-    <itemref idref="briefoverview" />
-    <itemref idref="isnotenikrightforyou" />
-    <itemref idref="supportedplatforms" />
-    <itemref idref="synchronization" />
-    <itemref idref="plaintext" />
-    <itemref idref="foldersandcollections" />
-    <itemref idref="useofmarkdown" />
-    <itemref idref="linksbetweennotes" />
-    <itemref idref="metadata" />
-    <itemref idref="organizingwithtags" />
-    <itemref idref="personalcontentmanagementsystem" />
-    <itemref idref="choosingfieldlabelsandtypes" />
-    <itemref idref="userinterface" />
-    <itemref idref="connectionsbetweennotes" />
-    <itemref idref="blockswithinnotes" />
-    <itemref idref="searchcapability" />
-    <itemref idref="programmingcode" />
-    <itemref idref="dailynotes" />
-    <itemref idref="tasks" />
-    <itemref idref="integratingwithotherapps" />
-    <itemref idref="customizingappearanceandfunctionality" />
-    <itemref idref="templates" />
-    <itemref idref="importandexport" />
-    <itemref idref="publishandshare" />
-    <itemref idref="accessibility" />
-    <itemref idref="cost" />
-    <itemref idref="developmentandsupportmodel" />
-    <itemref idref="bottomline" />
-    <itemref idref="notenikmanifesto" />
-    <itemref idref="writtenword" />
-    <itemref idref="hypertextmarkuplanguage" />
-    <itemref idref="markdownforlightweightmarkup" />
-    <itemref idref="betteratoolthananapp" />
-    <itemref idref="fieldsfororganization" />
-    <itemref idref="thinkingtool" />
-    <itemref idref="personalcomputing" />
-    <itemref idref="softwarethatiwanttouse" />
-    <itemref idref="madeforthemac" />
-    <itemref idref="joyofinvention" />
-    <itemref idref="poppingthehood" />
-    <itemref idref="plaintextfiles" />
-    <itemref idref="onetoolamongmany" />
-    <itemref idref="openandfree" />
-    <itemref idref="deliverworkingsoftwarefrequently" />
-    <itemref idref="perfectistheenemyofgood" />
-    <itemref idref="creatingandtailoringacollectionofnotes" />
-    <itemref idref="decisionstobemade" />
-    <itemref idref="locationofyourcollection" />
-    <itemref idref="nameofyourcollection" />
-    <itemref idref="fieldlabelsandtypesforyourcollection" />
-    <itemref idref="fileextensionforyournotes" />
-    <itemref idref="menucommandforcreatinganewcollection" />
-    <itemref idref="tailorcollectionpreferences" />
-    <itemref idref="notetitledisplay" />
-    <itemref idref="streamlinedreading" />
-    <itemref idref="commontasks" />
-    <itemref idref="displayanote" />
-    <itemref idref="tailorthedisplay" />
-    <itemref idref="defaultstylingforheadings" />
-    <itemref idref="adddeleteandedityournotes" />
-    <itemref idref="newnotewithoptions" />
-    <itemref idref="tailortheedittab" />
-    <itemref idref="viewyournotesasalist" />
-    <itemref idref="search" />
-    <itemref idref="selectanoteforaction" />
-    <itemref idref="insertadate" />
-    <itemref idref="filesandfolders" />
-    <itemref idref="notefiles" />
-    <itemref idref="notefileformat" />
-    <itemref idref="notefileformatexample" />
-    <itemref idref="notefilenames" />
-    <itemref idref="notefileextensions" />
-    <itemref idref="collectiontemplatefile" />
-    <itemref idref="classtemplatefiles" />
-    <itemref idref="defaultsclasstemplate" />
-    <itemref idref="whyisthenotenikformatdifferent" />
-    <itemref idref="useofatexteditor" />
-    <itemref idref="collectionfolders" />
-    <itemref idref="fileattachments" />
-    <itemref idref="otherfilesandsubfolders" />
-    <itemref idref="notenikicloudcontainer" />
-    <itemref idref="managingabunchofcollections" />
-    <itemref idref="openparentrealm" />
-    <itemref idref="navigateyourcollectionsviatheboard" />
-    <itemref idref="takequickaction" />
-    <itemref idref="diskaccesspermissions" />
-    <itemref idref="syncyournotes" />
-    <itemref idref="existingtextfiles" />
-    <itemref idref="rulesforreading" />
-    <itemref idref="rulesforupdating" />
-    <itemref idref="rulesfornewnotes" />
-    <itemref idref="convertinganentirecollection" />
-    <itemref idref="backingup" />
-    <itemref idref="gettingdataintoandoutofnotenik" />
-    <itemref idref="copycutpasteandshareyournotes" />
-    <itemref idref="importandexportyournotes" />
-    <itemref idref="importfromomnifocus" />
-    <itemref idref="exportaswebbook" />
-    <itemref idref="exportusingscript" />
-    <itemref idref="populateappcatalog" />
-    <itemref idref="exporttonotenikvssaveasvsmove" />
-    <itemref idref="backuptozip" />
-    <itemref idref="publishtomedium" />
-    <itemref idref="favoritestohtml" />
-    <itemref idref="generatingreports" />
-    <itemref idref="recordandplayscripts" />
-    <itemref idref="querybuilder" />
-    <itemref idref="mirroryournotes" />
-    <itemref idref="websitebuilding" />
-    <itemref idref="customurlscheme" />
-    <itemref idref="apisforhookintegration" />
-    <itemref idref="actionsforshortcuts" />
-    <itemref idref="markdown" />
-    <itemref idref="choiceofmarkdownparsers" />
-    <itemref idref="notenikmarkdownparser" />
-    <itemref idref="curlyapostrophes" />
-    <itemref idref="headingidentification" />
-    <itemref idref="wikistylelinks" />
-    <itemref idref="wikilinksbetweencollections" />
-    <itemref idref="headingautonumbering" />
-    <itemref idref="headingidgeneration" />
-    <itemref idref="footnotes" />
-    <itemref idref="citations" />
-    <itemref idref="fencedcodeblocks" />
-    <itemref idref="definitionlists" />
-    <itemref idref="tables" />
-    <itemref idref="tasklists" />
-    <itemref idref="mathjaxsupport" />
-    <itemref idref="singlelinecommands" />
-    <itemref idref="generateanotetableofcontents" />
-    <itemref idref="generateacollectiontableofcontents" />
-    <itemref idref="generateacollectionindex" />
-    <itemref idref="generateatagsoutline" />
-    <itemref idref="generateatagscloud" />
-    <itemref idref="includeanoteorfile" />
-    <itemref idref="displayteasers" />
-    <itemref idref="noemailobfuscation" />
-    <itemref idref="nobackticksstylequotes" />
-    <itemref idref="wordandcharactercounts" />
-    <itemref idref="markdowncheatsheet" />
-    <itemref idref="fieldlabelsandtypes" />
-    <itemref idref="whatwemeanbylabelandtype" />
-    <itemref idref="functionalityassociatedwithfieldtypes" />
-    <itemref idref="listsoflabelsandtypes" />
-    <itemref idref="basicsetoffields" />
-    <itemref idref="title" />
-    <itemref idref="tags" />
-    <itemref idref="link" />
-    <itemref idref="launchatstartuptags" />
-    <itemref idref="body" />
-    <itemref idref="fieldstoassistwithnotelinking" />
-    <itemref idref="alsoknownas" />
-    <itemref idref="backlinks" />
-    <itemref idref="wikilinks" />
-    <itemref idref="fieldsforsequencingandoutlining" />
-    <itemref idref="seq" />
-    <itemref idref="level" />
-    <itemref idref="includechildren" />
-    <itemref idref="taskrelatedfields" />
-    <itemref idref="date" />
-    <itemref idref="status" />
-    <itemref idref="recurs" />
-    <itemref idref="webmakingfields" />
-    <itemref idref="code" />
-    <itemref idref="index" />
-    <itemref idref="teaser" />
-    <itemref idref="minutestoread" />
-    <itemref idref="imagename" />
-    <itemref idref="shortid" />
-    <itemref idref="fieldsusefulforreviewscitationsandquotations" />
-    <itemref idref="artist" />
-    <itemref idref="attribution" />
-    <itemref idref="author" />
-    <itemref idref="rating" />
-    <itemref idref="worktitle" />
-    <itemref idref="worktype" />
-    <itemref idref="worklink" />
-    <itemref idref="generalpurposefields" />
-    <itemref idref="boolean" />
-    <itemref idref="class" />
-    <itemref idref="specialclassvalues" />
-    <itemref idref="combo" />
-    <itemref idref="integer" />
-    <itemref idref="longtext" />
-    <itemref idref="lookup" />
-    <itemref idref="pickfrom" />
-    <itemref idref="string" />
-    <itemref idref="type" />
-    <itemref idref="systemassigneddatesandtimes" />
-    <itemref idref="dateadded" />
-    <itemref idref="datemodified" />
-    <itemref idref="timestamp" />
-    <itemref idref="mergetemplates" />
-    <itemref idref="mergedelimiters" />
-    <itemref idref="mergevariables" />
-    <itemref idref="systemvariables" />
-    <itemref idref="variablemodifiers" />
-    <itemref idref="emailapostrophes" />
-    <itemref idref="listpunctuation" />
-    <itemref idref="underscore" />
-    <itemref idref="removeparagraphtagshyphen" />
-    <itemref idref="lengthmodifier" />
-    <itemref idref="authornamemodifiera" />
-    <itemref idref="ampma" />
-    <itemref idref="basefilenameb" />
-    <itemref idref="worddemarcationc" />
-    <itemref idref="dayofmonthdd" />
-    <itemref idref="dayofweekabbreviatedeee" />
-    <itemref idref="dayofweekeeee" />
-    <itemref idref="filenamef" />
-    <itemref idref="linkedtagsg" />
-    <itemref idref="htmlh" />
-    <itemref idref="initialcasei" />
-    <itemref idref="toidentifieri" />
-    <itemref idref="linkj" />
-    <itemref idref="hourofdayk" />
-    <itemref idref="lowercasemodifierl" />
-    <itemref idref="monthorminutesm" />
-    <itemref idref="nobreaksn" />
-    <itemref idref="markdowntohtmlo" />
-    <itemref idref="punctuationpurificationp" />
-    <itemref idref="quotationencasingq" />
-    <itemref idref="keepcharactersontherightr" />
-    <itemref idref="readablefilenamer" />
-    <itemref idref="summarizes" />
-    <itemref idref="htmltomarkdownt" />
-    <itemref idref="uppercasemodifieru" />
-    <itemref idref="variancev" />
-    <itemref idref="wikistylelinksw" />
-    <itemref idref="xmlx" />
-    <itemref idref="yeary" />
-    <itemref idref="linkedtagsz" />
-    <itemref idref="formattingstring" />
-    <itemref idref="mergecommands" />
-    <itemref idref="delimscommand" />
-    <itemref idref="setcommand" />
-    <itemref idref="outputcommand" />
-    <itemref idref="nextreccommand" />
-    <itemref idref="definegroupcommand" />
-    <itemref idref="ifendgroupcommand" />
-    <itemref idref="trailingcommand" />
-    <itemref idref="ifnewgroupcommand" />
-    <itemref idref="ifcommand" />
-    <itemref idref="elsecommand" />
-    <itemref idref="endifcommand" />
-    <itemref idref="copyfilecommand" />
-    <itemref idref="includecommand" />
-    <itemref idref="allfieldscommand" />
-    <itemref idref="loopcommand" />
-    <itemref idref="scriptfiles" />
-    <itemref idref="scriptfilecolumns" />
-    <itemref idref="scriptingmodules" />
-    <itemref idref="inputmoduleparameters" />
-    <itemref idref="filtermoduleparameters" />
-    <itemref idref="sortmoduleparameters" />
-    <itemref idref="templatemoduleparameters" />
-    <itemref idref="outputmoduleparameters" />
-    <itemref idref="browsemoduleparameters" />
-    <itemref idref="scriptfileexample" />
-    <itemref idref="puttingitalltogether" />
-    <itemref idref="createasimplecollectionofnotes" />
-    <itemref idref="createacollectionofwebbookmarks" />
-    <itemref idref="makeatodolist" />
-    <itemref idref="usingnotenikasanoutliner" />
-    <itemref idref="createadigitalcommonplacebookorazettelkasten" />
-    <itemref idref="createacommonplacebookwithlookupfields" />
-    <itemref idref="writeawebbook" />
-    <itemref idref="makeaprojectlauncher" />
-    <itemref idref="versionhistory" />
-    <itemref idref="version1030" />
-    <itemref idref="version1020" />
-    <itemref idref="version1010" />
-    <itemref idref="version1000" />
-    <itemref idref="version990" />
-    <itemref idref="version980" />
-    <itemref idref="version970" />
-    <itemref idref="version960" />
-    <itemref idref="version950" />
-    <itemref idref="version940" />
-    <itemref idref="version930" />
-    <itemref idref="version921" />
-    <itemref idref="version920" />
-    <itemref idref="version910" />
-    <itemref idref="version902" />
-    <itemref idref="version901" />
-    <itemref idref="version900" />
-    <itemref idref="version890" />
-    <itemref idref="version880" />
-    <itemref idref="version871" />
-    <itemref idref="version870" />
-    <itemref idref="version860" />
-    <itemref idref="version850" />
-    <itemref idref="version840" />
-    <itemref idref="version830" />
-    <itemref idref="version822" />
-    <itemref idref="version821" />
-    <itemref idref="version820" />
-    <itemref idref="version810" />
-    <itemref idref="version800" />
-    <itemref idref="version790" />
-    <itemref idref="version780" />
-    <itemref idref="version771" />
-    <itemref idref="version770" />
-    <itemref idref="version760" />
-    <itemref idref="version750" />
-    <itemref idref="version743" />
-    <itemref idref="version740" />
-    <itemref idref="version730" />
-    <itemref idref="version720" />
-    <itemref idref="version710" />
-    <itemref idref="version700" />
-    <itemref idref="version693" />
-    <itemref idref="version692" />
-    <itemref idref="version690" />
-    <itemref idref="version680" />
-    <itemref idref="version674" />
-    <itemref idref="version673" />
-    <itemref idref="version672" />
-    <itemref idref="version671" />
-    <itemref idref="version670" />
-    <itemref idref="version660" />
-    <itemref idref="version650" />
-    <itemref idref="version640" />
-    <itemref idref="version630" />
-    <itemref idref="version620" />
-    <itemref idref="version610" />
-    <itemref idref="version600" />
-    <itemref idref="version590" />
-    <itemref idref="version581" />
-    <itemref idref="version580" />
-    <itemref idref="version570" />
-    <itemref idref="version560" />
-    <itemref idref="version550" />
-    <itemref idref="version540" />
-    <itemref idref="version530" />
-    <itemref idref="version520" />
-    <itemref idref="version510" />
-    <itemref idref="version500" />
-    <itemref idref="version490" />
-    <itemref idref="version480" />
-    <itemref idref="version470" />
-    <itemref idref="version460" />
-    <itemref idref="version450" />
-    <itemref idref="version440" />
-    <itemref idref="version430" />
-    <itemref idref="version420" />
-    <itemref idref="version410" />
-    <itemref idref="version400" />
-    <itemref idref="version390" />
-    <itemref idref="version380" />
-    <itemref idref="version370" />
-    <itemref idref="version360" />
-    <itemref idref="version350" />
-    <itemref idref="version340" />
-    <itemref idref="version330" />
-    <itemref idref="version320" />
-    <itemref idref="version310" />
-    <itemref idref="version300" />
-    <itemref idref="version290" />
-    <itemref idref="version280" />
-    <itemref idref="version270" />
-    <itemref idref="version260" />
-    <itemref idref="version250" />
-    <itemref idref="version240" />
-    <itemref idref="version230" />
-    <itemref idref="version220" />
-    <itemref idref="version210" />
-    <itemref idref="version200" />
-    <itemref idref="version190" />
-    <itemref idref="version180" />
-    <itemref idref="version170" />
-    <itemref idref="version160" />
-    <itemref idref="version150" />
-    <itemref idref="version141" />
-    <itemref idref="version140" />
-    <itemref idref="version130" />
-    <itemref idref="version120" />
-    <itemref idref="version110" />
-    <itemref idref="reference" />
-    <itemref idref="about" />
-    <itemref idref="aboutthoseothernames" />
-    <itemref idref="license" />
-    <itemref idref="privacy" />
-    <itemref idref="support" />
-    <itemref idref="keyboardshortcuts" />
-    <itemref idref="viewthelog" />
-    <itemref idref="indextotheknowledgebase" />
-    <itemref idref="tagsoutline" />
-    <itemref idref="completetableofcontents" />
-    <itemref idref="links" />
+  <spine>
+    <itemref idref="notenik-knowledge-base-html" />
+    <itemref idref="intro-to-the-user-interface-html" />
+    <itemref idref="voiceover-usage-html" />
+    <itemref idref="product-vision-html" />
+    <itemref idref="brief-overview-html" />
+    <itemref idref="is-notenik-right-for-you-html" />
+    <itemref idref="supported-platforms-html" />
+    <itemref idref="synchronization-html" />
+    <itemref idref="plain-text-html" />
+    <itemref idref="folders-and-collections-html" />
+    <itemref idref="use-of-markdown-html" />
+    <itemref idref="links-between-notes-html" />
+    <itemref idref="metadata-html" />
+    <itemref idref="organizing-with-tags-html" />
+    <itemref idref="a-personal-content-management-system-html" />
+    <itemref idref="choosing-field-labels-and-types-html" />
+    <itemref idref="user-interface-html" />
+    <itemref idref="connections-between-notes-html" />
+    <itemref idref="blocks-within-notes-html" />
+    <itemref idref="search-capability-html" />
+    <itemref idref="programming-code-html" />
+    <itemref idref="daily-notes-html" />
+    <itemref idref="tasks-html" />
+    <itemref idref="integrating-with-other-apps-html" />
+    <itemref idref="customizing-appearance-and-functionality-html" />
+    <itemref idref="templates-html" />
+    <itemref idref="import-and-export-html" />
+    <itemref idref="publish-and-share-html" />
+    <itemref idref="accessibility-html" />
+    <itemref idref="cost-html" />
+    <itemref idref="development-and-support-model-html" />
+    <itemref idref="bottom-line-html" />
+    <itemref idref="the-notenik-manifesto-html" />
+    <itemref idref="the-written-word-html" />
+    <itemref idref="hypertext-markup-language-html" />
+    <itemref idref="markdown-for-lightweight-markup-html" />
+    <itemref idref="better-a-tool-than-an-app-html" />
+    <itemref idref="fields-for-organization-html" />
+    <itemref idref="a-thinking-tool-html" />
+    <itemref idref="personal-computing-html" />
+    <itemref idref="software-that-i-want-to-use-html" />
+    <itemref idref="made-for-the-mac-html" />
+    <itemref idref="the-joy-of-invention-html" />
+    <itemref idref="popping-the-hood-html" />
+    <itemref idref="plain-text-files-html" />
+    <itemref idref="one-tool-among-many-html" />
+    <itemref idref="open-and-free-html" />
+    <itemref idref="deliver-working-software-frequently-html" />
+    <itemref idref="perfect-is-the-enemy-of-good-html" />
+    <itemref idref="notenik-settings-html" />
+    <itemref idref="general-settings-html" />
+    <itemref idref="inline-editing-of-long-text-fields-html" />
+    <itemref idref="favorites-settings-html" />
+    <itemref idref="tags-export-settings-html" />
+    <itemref idref="markdown-settings-html" />
+    <itemref idref="creating-and-tailoring-a-collection-of-notes-html" />
+    <itemref idref="decisions-to-be-made-html" />
+    <itemref idref="the-location-of-your-collection-html" />
+    <itemref idref="the-name-of-your-collection-html" />
+    <itemref idref="the-field-labels-and-types-for-your-collection-html" />
+    <itemref idref="file-extension-for-your-notes-html" />
+    <itemref idref="menu-command-for-creating-a-new-collection-html" />
+    <itemref idref="starting-collection-types-html" />
+    <itemref idref="basic-notes-html" />
+    <itemref idref="notenik-intro-html" />
+    <itemref idref="web-links-html" />
+    <itemref idref="to-do-html" />
+    <itemref idref="sequenced-list-html" />
+    <itemref idref="zettelkasten-html" />
+    <itemref idref="blog-html" />
+    <itemref idref="commonplace-book-html" />
+    <itemref idref="outline-html" />
+    <itemref idref="web-book-html" />
+    <itemref idref="commonplace-with-lookups-html" />
+    <itemref idref="website-html" />
+    <itemref idref="contacts-html" />
+    <itemref idref="travel-planner-html" />
+    <itemref idref="code-snippets-html" />
+    <itemref idref="tailor-collection-settings-html" />
+    <itemref idref="collection-title-html" />
+    <itemref idref="note-title-display-html" />
+    <itemref idref="streamlined-reading-html" />
+    <itemref idref="presentation-mode-html" />
+    <itemref idref="rename-a-field-html" />
+    <itemref idref="common-tasks-html" />
+    <itemref idref="display-a-note-html" />
+    <itemref idref="tailor-the-display-html" />
+    <itemref idref="default-styling-for-headings-html" />
+    <itemref idref="add-delete-and-edit-your-notes-html" />
+    <itemref idref="new-note-with-options-html" />
+    <itemref idref="tailor-the-edit-tab-html" />
+    <itemref idref="flipping-between-the-display-and-edit-tabs-html" />
+    <itemref idref="view-your-notes-as-a-list-html" />
+    <itemref idref="change-the-sort-sequence-for-your-collection-html" />
+    <itemref idref="navigation-html" />
+    <itemref idref="search-html" />
+    <itemref idref="select-a-note-for-action-html" />
+    <itemref idref="insert-a-date-html" />
+    <itemref idref="files-and-folders-html" />
+    <itemref idref="note-files-html" />
+    <itemref idref="note-file-format-html" />
+    <itemref idref="note-file-format-example-html" />
+    <itemref idref="note-file-names-html" />
+    <itemref idref="note-file-extensions-html" />
+    <itemref idref="the-collection-template-file-html" />
+    <itemref idref="class-template-files-html" />
+    <itemref idref="the-defaults-class-template-html" />
+    <itemref idref="specifying-a-default-title-value-html" />
+    <itemref idref="why-is-the-notenik-format-different-html" />
+    <itemref idref="use-of-a-text-editor-html" />
+    <itemref idref="collection-folders-html" />
+    <itemref idref="file-attachments-html" />
+    <itemref idref="file-links-html" />
+    <itemref idref="other-files-and-subfolders-html" />
+    <itemref idref="the-notenik-icloud-container-html" />
+    <itemref idref="managing-a-bunch-of-collections-html" />
+    <itemref idref="open-parent-realm-html" />
+    <itemref idref="navigate-your-collections-via-the-board-html" />
+    <itemref idref="take-quick-action-html" />
+    <itemref idref="forget-all-shortcuts-html" />
+    <itemref idref="disk-access-permissions-html" />
+    <itemref idref="sync-your-notes-html" />
+    <itemref idref="existing-text-files-html" />
+    <itemref idref="rules-for-reading-html" />
+    <itemref idref="rules-for-updating-html" />
+    <itemref idref="rules-for-new-notes-html" />
+    <itemref idref="converting-an-entire-collection-html" />
+    <itemref idref="backing-up-html" />
+    <itemref idref="markdown-html" />
+    <itemref idref="choice-of-markdown-parsers-html" />
+    <itemref idref="notenik-markdown-parser-html" />
+    <itemref idref="curly-apostrophes-html" />
+    <itemref idref="heading-identification-html" />
+    <itemref idref="wiki-style-links-html" />
+    <itemref idref="wiki-links-between-collections-html" />
+    <itemref idref="heading-auto-numbering-html" />
+    <itemref idref="heading-id-generation-html" />
+    <itemref idref="footnotes-html" />
+    <itemref idref="citations-html" />
+    <itemref idref="fenced-code-blocks-html" />
+    <itemref idref="definition-lists-html" />
+    <itemref idref="tables-html" />
+    <itemref idref="task-lists-html" />
+    <itemref idref="mathjax-support-html" />
+    <itemref idref="single-line-commands-html" />
+    <itemref idref="collection-navigation-commands-html" />
+    <itemref idref="generate-a-note-table-of-contents-html" />
+    <itemref idref="generate-outline-based-on-headings-html" />
+    <itemref idref="generate-a-collection-table-of-contents-html" />
+    <itemref idref="generate-a-collection-calendar-html" />
+    <itemref idref="generate-a-collection-index-html" />
+    <itemref idref="generate-a-collection-search-page-html" />
+    <itemref idref="generate-a-tags-outline-html" />
+    <itemref idref="generate-a-tags-cloud-html" />
+    <itemref idref="go-to-random-note-html" />
+    <itemref idref="generate-a-bibliography-html" />
+    <itemref idref="include-a-note-or-file-html" />
+    <itemref idref="display-teasers-html" />
+    <itemref idref="make-a-table-sortable-html" />
+    <itemref idref="supply-a-page-header-html" />
+    <itemref idref="supply-page-navigation-html" />
+    <itemref idref="supply-a-page-footer-html" />
+    <itemref idref="supply-epub-metadata-html" />
+    <itemref idref="no-email-obfuscation-html" />
+    <itemref idref="no-backticks-style-quotes-html" />
+    <itemref idref="word-and-character-counts-html" />
+    <itemref idref="markdown-cheat-sheet-html" />
+    <itemref idref="generate-outline-based-on-unordered-list-items-html" />
+    <itemref idref="field-labels-and-types-html" />
+    <itemref idref="what-we-mean-by-label-and-type-html" />
+    <itemref idref="functionality-associated-with-field-types-html" />
+    <itemref idref="lists-of-labels-and-types-html" />
+    <itemref idref="the-basic-set-of-fields-html" />
+    <itemref idref="title-html" />
+    <itemref idref="tags-html" />
+    <itemref idref="link-html" />
+    <itemref idref="launch-at-startup-tags-html" />
+    <itemref idref="body-html" />
+    <itemref idref="fields-to-assist-with-note-linking-html" />
+    <itemref idref="also-known-as-html" />
+    <itemref idref="back-links-html" />
+    <itemref idref="wiki-links-html" />
+    <itemref idref="fields-for-sequencing-and-outlining-html" />
+    <itemref idref="seq-html" />
+    <itemref idref="level-html" />
+    <itemref idref="include-children-html" />
+    <itemref idref="display-seq-html" />
+    <itemref idref="task-related-fields-html" />
+    <itemref idref="date-html" />
+    <itemref idref="status-html" />
+    <itemref idref="recurs-html" />
+    <itemref idref="fields-for-contacts-html" />
+    <itemref idref="email-html" />
+    <itemref idref="phone-html" />
+    <itemref idref="person-html" />
+    <itemref idref="web-making-fields-html" />
+    <itemref idref="code-html" />
+    <itemref idref="index-html" />
+    <itemref idref="teaser-html" />
+    <itemref idref="minutes-to-read-html" />
+    <itemref idref="image-name-html" />
+    <itemref idref="short-id-html" />
+    <itemref idref="fields-useful-for-reviews-citations-and-quotations-html" />
+    <itemref idref="artist-html" />
+    <itemref idref="attribution-html" />
+    <itemref idref="author-html" />
+    <itemref idref="rating-html" />
+    <itemref idref="work-title-html" />
+    <itemref idref="work-type-html" />
+    <itemref idref="work-link-html" />
+    <itemref idref="work-rights-html" />
+    <itemref idref="work-rights-holder-html" />
+    <itemref idref="fields-used-to-identify-various-kinds-of-notes-html" />
+    <itemref idref="type-html" />
+    <itemref idref="class-html" />
+    <itemref idref="special-class-values-html" />
+    <itemref idref="rank-html" />
+    <itemref idref="text-format-html" />
+    <itemref idref="fields-for-travel-planning-html" />
+    <itemref idref="address-html" />
+    <itemref idref="directions-html" />
+    <itemref idref="general-purpose-fields-html" />
+    <itemref idref="boolean-html" />
+    <itemref idref="combo-html" />
+    <itemref idref="integer-html" />
+    <itemref idref="longtext-html" />
+    <itemref idref="lookup-html" />
+    <itemref idref="pick-from-html" />
+    <itemref idref="string-html" />
+    <itemref idref="system-assigned-dates-and-times-html" />
+    <itemref idref="date-added-html" />
+    <itemref idref="date-modified-html" />
+    <itemref idref="timestamp-html" />
+    <itemref idref="getting-data-into-and-out-of-notenik-html" />
+    <itemref idref="copy-cut-paste-and-share-your-notes-html" />
+    <itemref idref="share-with-options-html" />
+    <itemref idref="import-and-export-your-notes-html" />
+    <itemref idref="import-from-omnifocus-html" />
+    <itemref idref="import-settings-html" />
+    <itemref idref="import-vcards-html" />
+    <itemref idref="export-as-web-book-html" />
+    <itemref idref="export-using-script-html" />
+    <itemref idref="populate-app-catalog-html" />
+    <itemref idref="export-to-notenik-vs-save-as-vs-move-html" />
+    <itemref idref="backup-to-zip-html" />
+    <itemref idref="publish-to-medium-html" />
+    <itemref idref="generating-reports-html" />
+    <itemref idref="record-and-play-scripts-html" />
+    <itemref idref="query-builder-html" />
+    <itemref idref="query-output-window-html" />
+    <itemref idref="favorites-to-html-html" />
+    <itemref idref="dates-to-calendar-html" />
+    <itemref idref="mirror-your-notes-html" />
+    <itemref idref="website-building-html" />
+    <itemref idref="blog-website-creation-html" />
+    <itemref idref="website-with-content-creation-html" />
+    <itemref idref="website-generation-tips-html" />
+    <itemref idref="integration-html" />
+    <itemref idref="custom-url-scheme-html" />
+    <itemref idref="apis-for-hookmark-integration-html" />
+    <itemref idref="actions-for-shortcuts-html" />
+    <itemref idref="merge-templates-html" />
+    <itemref idref="merge-delimiters-html" />
+    <itemref idref="merge-variables-html" />
+    <itemref idref="system-variables-html" />
+    <itemref idref="derived-variables-html" />
+    <itemref idref="author-work-slug-html" />
+    <itemref idref="image-slug-html" />
+    <itemref idref="image-name-short-html" />
+    <itemref idref="known-work-title-html" />
+    <itemref idref="major-work-html" />
+    <itemref idref="the-work-type-slug-html" />
+    <itemref idref="work-rights-slug-html" />
+    <itemref idref="next-slug-html" />
+    <itemref idref="parent-slug-html" />
+    <itemref idref="children-slug-html" />
+    <itemref idref="title-display-slug-html" />
+    <itemref idref="variable-modifiers-html" />
+    <itemref idref="email-apostrophes-html" />
+    <itemref idref="list-punctuation-html" />
+    <itemref idref="underscore-html" />
+    <itemref idref="remove-paragraph-tags-hyphen-html" />
+    <itemref idref="take-text-from-right-html" />
+    <itemref idref="length-modifier-html" />
+    <itemref idref="author-name-modifier-a-html" />
+    <itemref idref="am-pm-a-html" />
+    <itemref idref="base-file-name-b-html" />
+    <itemref idref="word-demarcation-c-html" />
+    <itemref idref="day-of-month-dd-html" />
+    <itemref idref="day-of-week-abbreviated-eee-html" />
+    <itemref idref="day-of-week-eeee-html" />
+    <itemref idref="file-name-f-html" />
+    <itemref idref="linked-tags-g-html" />
+    <itemref idref="html-h-html" />
+    <itemref idref="initial-case-i-html" />
+    <itemref idref="to-identifier-i-html" />
+    <itemref idref="link-j-html" />
+    <itemref idref="hour-of-day-k-html" />
+    <itemref idref="lowercase-modifier-l-html" />
+    <itemref idref="month-or-minutes-m-html" />
+    <itemref idref="no-breaks-n-html" />
+    <itemref idref="markdown-to-html-o-html" />
+    <itemref idref="punctuation-purification-p-html" />
+    <itemref idref="quotation-encasing-q-html" />
+    <itemref idref="keep-characters-on-the-right-r-html" />
+    <itemref idref="readable-file-name-r-html" />
+    <itemref idref="summarize-s-html" />
+    <itemref idref="html-to-markdown-t-html" />
+    <itemref idref="uppercase-modifier-u-html" />
+    <itemref idref="variance-v-html" />
+    <itemref idref="wiki-style-links-w-html" />
+    <itemref idref="xml-x-html" />
+    <itemref idref="year-y-html" />
+    <itemref idref="linked-tags-z-html" />
+    <itemref idref="prep-for-json-html" />
+    <itemref idref="split-label-from-number-html" />
+    <itemref idref="domain-name-from-link-html" />
+    <itemref idref="formatting-string-html" />
+    <itemref idref="merge-commands-html" />
+    <itemref idref="delims-command-html" />
+    <itemref idref="set-command-html" />
+    <itemref idref="output-command-html" />
+    <itemref idref="nextrec-command-html" />
+    <itemref idref="definegroup-command-html" />
+    <itemref idref="ifendgroup-command-html" />
+    <itemref idref="trailing-command-html" />
+    <itemref idref="ifnewgroup-command-html" />
+    <itemref idref="if-command-html" />
+    <itemref idref="else-command-html" />
+    <itemref idref="endif-command-html" />
+    <itemref idref="copyfile-command-html" />
+    <itemref idref="include-command-html" />
+    <itemref idref="allfields-command-html" />
+    <itemref idref="loop-command-html" />
+    <itemref idref="script-files-html" />
+    <itemref idref="scripter-window-html" />
+    <itemref idref="script-file-columns-html" />
+    <itemref idref="scripting-modules-html" />
+    <itemref idref="input-module-parameters-html" />
+    <itemref idref="filter-module-parameters-html" />
+    <itemref idref="sort-module-parameters-html" />
+    <itemref idref="template-module-parameters-html" />
+    <itemref idref="output-module-parameters-html" />
+    <itemref idref="browse-module-parameters-html" />
+    <itemref idref="script-module-parameters-html" />
+    <itemref idref="script-file-example-html" />
+    <itemref idref="putting-it-all-together-html" />
+    <itemref idref="create-a-simple-collection-of-notes-html" />
+    <itemref idref="create-a-collection-of-web-bookmarks-html" />
+    <itemref idref="make-a-to-do-list-html" />
+    <itemref idref="using-notenik-as-an-outliner-html" />
+    <itemref idref="create-a-digital-commonplace-book-or-a-zettelkasten-html" />
+    <itemref idref="create-a-commonplace-book-with-lookup-fields-html" />
+    <itemref idref="write-a-web-book-html" />
+    <itemref idref="make-a-project-launcher-html" />
+    <itemref idref="using-notenik-as-a-trip-planner-html" />
+    <itemref idref="knowledge-base-navigation-html" />
+    <itemref idref="search-the-knowledge-base-html" />
+    <itemref idref="index-to-the-knowledge-base-html" />
+    <itemref idref="tags-outline-html" />
+    <itemref idref="complete-table-of-contents-html" />
+    <itemref idref="random-page-html" />
+    <itemref idref="reference-html" />
+    <itemref idref="about-html" />
+    <itemref idref="about-those-other-names...-html" />
+    <itemref idref="license-html" />
+    <itemref idref="privacy-html" />
+    <itemref idref="support-html" />
+    <itemref idref="keyboard-shortcuts-html" />
+    <itemref idref="html-class-values-html" />
+    <itemref idref="view-the-log-html" />
+    <itemref idref="links-html" />
+    <itemref idref="version-history-html" />
+    <itemref idref="version-13.6.0-html" />
+    <itemref idref="version-13.5.0-html" />
+    <itemref idref="version-13.4.0-html" />
+    <itemref idref="version-13.3.0-html" />
+    <itemref idref="version-13.2.0-html" />
+    <itemref idref="version-13.1.0-html" />
+    <itemref idref="version-13.0.0-html" />
+    <itemref idref="version-12.9.0-html" />
+    <itemref idref="version-12.8.0-html" />
+    <itemref idref="version-12.7.0-html" />
+    <itemref idref="version-12.6.0-html" />
+    <itemref idref="version-12.5.0-html" />
+    <itemref idref="version-12.4.0-html" />
+    <itemref idref="version-12.3.0-html" />
+    <itemref idref="version-12.2.0-html" />
+    <itemref idref="version-12.1.0-html" />
+    <itemref idref="version-12.0.0-html" />
+    <itemref idref="version-11.9.0-html" />
+    <itemref idref="version-11.8.0-html" />
+    <itemref idref="version-11.7.0-html" />
+    <itemref idref="version-11.6.0-html" />
+    <itemref idref="version-11.5.0-html" />
+    <itemref idref="version-11.4.0-html" />
+    <itemref idref="version-11.3.0-html" />
+    <itemref idref="version-11.2.0-html" />
+    <itemref idref="version-11.1.0-html" />
+    <itemref idref="version-11.0.0-html" />
+    <itemref idref="version-10.9.0-html" />
+    <itemref idref="version-10.8.0-html" />
+    <itemref idref="version-10.7.1-html" />
+    <itemref idref="version-10.7.0-html" />
+    <itemref idref="version-10.6.0-html" />
+    <itemref idref="version-10.5.0-html" />
+    <itemref idref="version-10.4.0-html" />
+    <itemref idref="version-10.3.0-html" />
+    <itemref idref="version-10.2.0-html" />
+    <itemref idref="version-10.1.0-html" />
+    <itemref idref="version-10.0.0-html" />
+    <itemref idref="version-9.9.0-html" />
+    <itemref idref="version-9.8.0-html" />
+    <itemref idref="version-9.7.0-html" />
+    <itemref idref="version-9.6.0-html" />
+    <itemref idref="version-9.5.0-html" />
+    <itemref idref="version-9.4.0-html" />
+    <itemref idref="version-9.3.0-html" />
+    <itemref idref="version-9.2.1-html" />
+    <itemref idref="version-9.2.0-html" />
+    <itemref idref="version-9.1.0-html" />
+    <itemref idref="version-9.0.2-html" />
+    <itemref idref="version-9.0.1-html" />
+    <itemref idref="version-9.0.0-html" />
+    <itemref idref="version-8.9.0-html" />
+    <itemref idref="version-8.8.0-html" />
+    <itemref idref="version-8.7.1-html" />
+    <itemref idref="version-8.7.0-html" />
+    <itemref idref="version-8.6.0-html" />
+    <itemref idref="version-8.5.0-html" />
+    <itemref idref="version-8.4.0-html" />
+    <itemref idref="version-8.3.0-html" />
+    <itemref idref="version-8.2.2-html" />
+    <itemref idref="version-8.2.1-html" />
+    <itemref idref="version-8.2.0-2-html" />
+    <itemref idref="version-8.2.0-html" />
+    <itemref idref="version-8.1.0-html" />
+    <itemref idref="version-8.0.0-html" />
+    <itemref idref="version-7.9.0-html" />
+    <itemref idref="version-7.8.0-html" />
+    <itemref idref="version-7.7.1-html" />
+    <itemref idref="version-7.7.0-html" />
+    <itemref idref="version-7.6.0-html" />
+    <itemref idref="version-7.5.0-html" />
+    <itemref idref="version-7.4.3-html" />
+    <itemref idref="version-7.4.0-html" />
+    <itemref idref="version-7.3.0-html" />
+    <itemref idref="version-7.2.0-html" />
+    <itemref idref="version-7.1.0-html" />
+    <itemref idref="version-7.0.0-html" />
+    <itemref idref="version-6.9.3-html" />
+    <itemref idref="version-6.9.2-html" />
+    <itemref idref="version-6.9.0-html" />
+    <itemref idref="version-6.8.0-html" />
+    <itemref idref="version-6.7.4-html" />
+    <itemref idref="version-6.7.3-html" />
+    <itemref idref="version-6.7.2-html" />
+    <itemref idref="version-6.7.1-html" />
+    <itemref idref="version-6.7.0-html" />
+    <itemref idref="version-6.6.0-html" />
+    <itemref idref="version-6.5.0-html" />
+    <itemref idref="version-6.4.0-html" />
+    <itemref idref="version-6.3.0-html" />
+    <itemref idref="version-6.2.0-html" />
+    <itemref idref="version-6.1.0-html" />
+    <itemref idref="version-6.0.0-html" />
+    <itemref idref="version-5.9.0-html" />
+    <itemref idref="version-5.8.1-html" />
+    <itemref idref="version-5.8.0-html" />
+    <itemref idref="version-5.7.0-html" />
+    <itemref idref="version-5.6.0-html" />
+    <itemref idref="version-5.5.0-html" />
+    <itemref idref="version-5.4.0-html" />
+    <itemref idref="version-5.3.0-html" />
+    <itemref idref="version-5.2.0-html" />
+    <itemref idref="version-5.1.0-html" />
+    <itemref idref="version-5.0.0-html" />
+    <itemref idref="version-4.9.0-html" />
+    <itemref idref="version-4.8.0-html" />
+    <itemref idref="version-4.7.0-html" />
+    <itemref idref="version-4.6.0-html" />
+    <itemref idref="version-4.5.0-html" />
+    <itemref idref="version-4.4.0-html" />
+    <itemref idref="version-4.3.0-html" />
+    <itemref idref="version-4.2.0-html" />
+    <itemref idref="version-4.1.0-html" />
+    <itemref idref="version-4.0.0-html" />
+    <itemref idref="version-3.9.0-html" />
+    <itemref idref="version-3.8.0-html" />
+    <itemref idref="version-3.7.0-html" />
+    <itemref idref="version-3.6.0-html" />
+    <itemref idref="version-3.5.0-html" />
+    <itemref idref="version-3.4.0-html" />
+    <itemref idref="version-3.3.0-html" />
+    <itemref idref="version-3.2.0-html" />
+    <itemref idref="version-3.1.0-html" />
+    <itemref idref="version-3.0.0-html" />
+    <itemref idref="version-2.9.0-html" />
+    <itemref idref="version-2.8.0-html" />
+    <itemref idref="version-2.7.0-html" />
+    <itemref idref="version-2.6.0-html" />
+    <itemref idref="version-2.5.0-html" />
+    <itemref idref="version-2.4.0-html" />
+    <itemref idref="version-2.3.0-html" />
+    <itemref idref="version-2.2.0-html" />
+    <itemref idref="version-2.1.0-html" />
+    <itemref idref="version-2.0.0-html" />
+    <itemref idref="version-1.9.0-html" />
+    <itemref idref="version-1.8.0-html" />
+    <itemref idref="version-1.7.0-html" />
+    <itemref idref="version-1.6.0-html" />
+    <itemref idref="version-1.5.0-html" />
+    <itemref idref="version-1.4.1-html" />
+    <itemref idref="version-1.4.0-html" />
+    <itemref idref="version-1.3.0-html" />
+    <itemref idref="version-1.2.0-html" />
+    <itemref idref="version-1.1.0-html" />
   </spine>
 </package>

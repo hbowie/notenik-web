@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Website with content creation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.13 <a href="website-building.html" class="nav-link">Website Building</a>&#160;&#8593;</p><h4 id="website-with-content-creation">12.13.2 Website with content creation</h4>
+<p>With embedded collection template you can easilly create simple website with informations, pages, news and another content. </p>
+
+<p>You may use the <a href="website.html" class="wiki-link">Website</a> template when you are <a href="creating-and-tailoring-a-collection-of-notes.html" class="wiki-link">Creating and Tailoring a Collection of Notes</a> and Notenik will create a simple blog. It may be divided to three important parts: </p>
+<ol>
+<li>Collection with content (in Contents directory) It contains preconfigured collection with all website contents in separate notes.  <br />
+</li>
+<li>Necessary templates, factory files and scripts for making the website (in Factory directory). These files and templates can export notes to a standalone website. </li>
+<li>Output folder with website itself (in Web directory), in which you find prepared website as generation result. </li>
+</ol>
+
+<p>Your collection contains preconfigured <a href="the-collection-template-file.html" class="wiki-link">The Collection Template File</a> with initial set of <a href="web-making-fields.html" class="wiki-link">Web-Making Fields</a> and predefined <a href="merge-templates.html" class="wiki-link">Merge Templates</a>,  CSS styles for web design and <a href="script-files.html" class="wiki-link">Script Files</a> for generating website from notes. Here is a summarized description of how it works: </p>
+<ol>
+<li>You create content by <a href="add-delete-and-edit-your-notes.html" class="wiki-link">Add, Delete and Edit Your Notes</a> in collections. There are important fields as <a href="title.html" class="wiki-link">Title</a> as page title, <a href="date.html" class="wiki-link">Date</a> as publish date and <a href="note.html" class="wiki-link">Note</a> as page content. Be aware, <a href="date-added.html" class="wiki-link">Date added</a> and <a href="date-modified.html" class="wiki-link">Date modified</a> do not affect publish date of pages. </li>
+<li>There are some prepared <a href="merge-templates.html" class="wiki-link">Merge Templates</a> to design and generate every HTML page from original notes using <a href="output.html" class="wiki-link">Output</a> command. You may edit these templates to suit design and content to your needs. </li>
+<li>By running &#8220;web-gen.tcz&#8221; script in &#8220;Factory&#8221; subdirectory you run generating whole website. Default output directory is &#8220;Web&#8221;, you may modify it by editing Output command in all desired templates in &#8220;Factory/Templates&#8221; subdirectory. </li>
+<li>Script generates HTML file for each note using desired template and include HTML and other files included in these templates. For example, there is <a href="include-command.html" class="wiki-link">include command</a> to include header of site (including &#8220;Factory/Includes/header.html&#8221;), footer of site (including &#8220;Factory/Includes/footer.html&#8221;) and HEAD contents and styles links for each page (including &#8220;Factory/Includes/head-links.html&#8221;). If script generates prepared parts of content, there are stored in &#8220;Factory/includes-gen&#8221; directory and these parts can by included by other templates. </li>
+<li>You must upload whole website directory as-is to your hosting provider or you can open &#8220;index.html&#8221; file to preview it. </li>
+</ol>
+
+<p>For linking within the website, you may use Classic <a href="wiki-style-links.html" class="wiki-link">Wiki Style Links</a> as the simplest way to implement <a href="connections-between-notes.html" class="wiki-link">Connections Between Notes</a>. Wiki links work as expected, but Back links does not work as referencing point in output. It is usefull to determine and use <a href="short-id.html" class="wiki-link">Short ID</a> in some situations, for example for scripting. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="website-generation-tips.html" class="nav-link">Website Generation Tips</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Share with Options</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.1 <a href="copy-cut-paste-and-share-your-notes.html" class="nav-link">Copy, Cut, Paste and Share your Notes</a>&#160;&#8593;</p><h4 id="share-with-options">12.1.1 Share with Options</h4>
+<p>The <strong>Share w/Options&#8230;</strong> command beneath the <strong>Note</strong> menu offers many powerful options for sharing the current Note. </p>
+
+<p>These options fall into three different categories. </p>
+
+<h5 id="content">Content</h5>
+
+<p>You can choose to share the entire Note, with all of its fields, or only the Body of the Note. </p>
+
+<h5 id="destination">Destination</h5>
+
+<p>Choose from one of the following options. </p>
+<ul>
+<li>Copy to Clipboard &#8211; You can then paste the results anywhere else on your Mac where text is accepted. </li>
+<li>Write to a File &#8211; You will be prompted to supply a file name and location, and the results will be written to disk. </li>
+<li>Open in Browser &#8211; The results will be written to a disk file within a sub-folder named <code>browse</code>, using a file name generated from your Note&#8217;s title, and your preferred Web browser will then be asked to open this file. Once the file is open within your browser, of course, then you can print the page, or generate a PDF from it. Note that, for this option, the format should generally be set to the <strong>HTML Document</strong> option.  </li>
+</ul>
+
+<h5 id="format">Format</h5>
+
+<p>Choose from any of the following options. </p>
+<ul>
+<li>HTML Document &#8211; This will convert the selected content to a complete HTML document that can be displayed in a Web browser. </li>
+<li>HTML Fragment &#8211; This will convert the selected content to a chunk of HTML suitable for insertion into an HTML document. </li>
+<li>HTLM Blockquote &#8211; This will place the Body of the Note within <code>blockquote</code> tags, and will try to appropriately format any other fields pertinent to a citation. </li>
+<li>JSON &#8211; This will convert the selected content (typically an Entire Note) into a block of JSON code. </li>
+<li>Markdown &#8211; This gives you the selected content without any converstion to HTML. </li>
+<li>Markdown Quote &#8211; Similar to HTML Blockquote, but without conversion to HTML. </li>
+<li>Notenik &#8211; This is the same format used when saving a Note to disk. </li>
+<li>Microblog Post &#8211; Formats your Note in a manner suitable for Mastodon (among others). Body comes first, followed by Tags, formatted with hashes and CamelCase. </li>
+<li>Using Merge Template &#8211; Formats your Note using a <a href="merge-templates.html" class="wiki-link">Merge Template</a> that you specify. If a <code>reports</code> subfolder is available within your Collection, then Notenik will start there. The Merge Template should start with a <code>nextrec</code> command, and end with a <code>loop</code> command. An <code>output</code> command need not be present, but will send the generated output to the specified file if it is present. </li>
+</ul>
+
+<h5 id="posting-to-a-microblog">Posting to a Microblog</h5>
+
+<p>On the Notenik General Settings you can set a Microblog handle and a Microblog domain for yourself. </p>
+
+<p>The handle should be entered without a preceding <code>@</code> sign. </p>
+
+<p>The domain should be entered without a preceding <code>@</code> sign, and without a preceding <code>https://</code>. </p>
+
+<p>If you have entered a domain, then if you later Share a Note with a format option of &#8216;Microblog Post&#8217;, and a destination of &#8216;Copy to Clipboard&#8217;, then Notenik will open the domain in your preferred Web browser after copying the formatted post to the clipboard. This makes it easy to paste the formatted post into a waiting text entry box. </p>
+
+<p>If you have entered a handle and a domain, and if the domain points to a Mastodon server, then invoking the option beneath the <strong>Notenik</strong> menu for <strong>Mastodon Profile</strong> will cause your preferred Web browser to open your profile page on your Mastodon server. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

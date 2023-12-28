@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Notenik Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options</title>
-		<meta name="description" content="The Notenik App for the Mac" />
+		<title>Notenik | Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options</title>
+		<meta name="description" content="The Notenik Mac App: Notenik 8.6.0 - Checklists and Improved Title-as-Heading Options" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- Start of include file head-links.html -->
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
@@ -16,6 +16,21 @@
 	</head>
 	<body>
 		<div id="wrapper">
+		
+		<p class="quick-links">
+			Quick Links: 
+			<a class="quick-link" href="https://discourse.notenik.app">
+				Discourse
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">
+					Knowledge Base
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">
+					Version Notes
+			</a>
+		</p>
 
 			<!-- Start of include file header.html -->
 			<header>
@@ -41,16 +56,17 @@
 			<!-- End of include file header.html -->
 
 
+
 			<!-- Start of include file nav-top.html -->
 			<nav id="nav-top">
 				<a class="another-page" href="../index.html">
 					Home
 				</a>
-				<a class="another-page" href="../links.html">
-					Links
-				</a>
-				<a class="another-page" href="../news.html">
+				<a class="current-page" href="../news.html">
 					News
+				</a>
+				<a class="another-page" href="../usage.html">
+					Usage
 				</a>
 				<a class="another-page" href="../docs.html">
 					Docs
@@ -63,11 +79,11 @@
 				<a class="another-page" href="../about.html">
 					About
 				</a>
-				<a class="another-page" href="../connect.html">
-					Connect
-				</a>
 				<a class="another-page" href="../license.html">
 					License
+				</a>
+				<a class="another-page" href="../donate.html">
+					Donate
 				</a>
 				<a class="another-page" href="../privacy.html">
 					Privacy
@@ -83,19 +99,19 @@
 				<p class="news-date">Posted on 28 Feb, 2022</p>
 
 				<div id="content">
-					<p>I&#8217;ve been gradually adding support for various common Markdown extensions, and the latest is support for checklists &#8211; also called <a href="https://www.markdownguide.org/extended-syntax/#task-lists">task lists</a>. You just put a pair of square brackets following a dash and a space, at the beginning of a line, and then either an &#8216;x&#8217; or a space inside the brackets, and &#8211; voila! &#8211; when you view the formatted display, you either see empty boxes, or boxes with check marks inside of them. A small thing, but a nice addition to the Notenik feature list. </p>
+					<p>I&#8217;ve been gradually adding support for various common Markdown extensions, and the latest is support for checklists &#8211; also called <a href="https://www.markdownguide.org/extended-syntax/#task-lists" class="ext-link" target="_blank" rel="noopener">task lists</a>. You just put a pair of square brackets following a dash and a space, at the beginning of a line, and then either an &#8216;x&#8217; or a space inside the brackets, and &#8211; voila! &#8211; when you view the formatted display, you either see empty boxes, or boxes with check marks inside of them. A small thing, but a nice addition to the Notenik feature list. </p>
 
 <p>And then there&#8217;s the way Note titles appear on the Display tab. There used to be a single, binary option: either display as level 1 HTML headings, or normal paragraphs with the text in bold. But that simple choice between two extremes &#8211; huge or small &#8211; had been nagging at me for a while. So now you can choose any heading level you like (or even vary the heading size based on a note&#8217;s level within its Collection hierarchy), or bold and/or italics at your normal text display size. Much nicer. </p>
 
 <p>And while I was at it, I tweaked the default CSS styling for the various heading levels &#8211; when headings are used for Note titles, but also for any normal Markdown headings you place within the body of a Note. You can view the default sizing within the Notenik Knowledge base, but the range seems a bit more refined now, at least to my eyes. (And, of course, you can still override with your own CSS, if that&#8217;s your thing.) </p>
 
-<p>And then, as part of my recent work to make Notenik more tolerant of YAML metadata, I added one more missing piece: the auto-creation of missing wiki link targets is now optional, and off by default. So if you use Notenik to open an existing folder of text files formatted with YAML metadata &#8211; perhaps even one you also use with another,  <a href="https://en.wikipedia.org/wiki/Electron_(software_framework)">electron</a>-based app&#8230;? &#8211; Notenik should now leave your Notes in a state perfectly suitable for continued access by other apps as well. </p>
+<p>And then, as part of my recent work to make Notenik more tolerant of YAML metadata, I added one more missing piece: the auto-creation of missing wiki link targets is now optional, and off by default. So if you use Notenik to open an existing folder of text files formatted with YAML metadata &#8211; perhaps even one you also use with another,  <a href="https://en.wikipedia.org/wiki/Electron_(software_framework)" class="ext-link" target="_blank" rel="noopener">electron</a>-based app&#8230;? &#8211; Notenik should now leave your Notes in a state perfectly suitable for continued access by other apps as well. </p>
 
-<p>And now that the Notenik/YAML reconciliation has been pretty much completed, I&#8217;d like to give a shout-out to Evan Travers. He has a nice little web page offering up his latest thoughts on creating a <a href="https://evantravers.com/simple-markdown-zettelkasten">Simple Markdown Zettelkasten</a>, including a list of supported tools, and it was this list &#8211; and his initial decision to drop Notenik, after briefly considering it &#8211; that caused me to reach out to him, and pursue the changes along this path that have been coming along of late. Evan has a nice <a href="https://evantravers.com/articles/2022/02/28/notenik/">Notenik post out now</a>, and I&#8217;m grateful to him for working with me to make Notenik potentially more useful to a larger audience. </p>
+<p>And now that the Notenik/YAML reconciliation has been pretty much completed, I&#8217;d like to give a shout-out to Evan Travers. He has a nice little web page offering up his latest thoughts on creating a <a href="https://evantravers.com/simple-markdown-zettelkasten" class="ext-link" target="_blank" rel="noopener">Simple Markdown Zettelkasten</a>, including a list of supported tools, and it was this list &#8211; and his initial decision to drop Notenik, after briefly considering it &#8211; that caused me to reach out to him, and pursue the changes along this path that have been coming along of late. Evan has a nice <a href="https://evantravers.com/articles/2022/02/28/notenik/" class="ext-link" target="_blank" rel="noopener">Notenik post out now</a>, and I&#8217;m grateful to him for working with me to make Notenik potentially more useful to a larger audience. </p>
 
-<p>So that&#8217;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&#8217;m always happy to entertain suggestions from users. </p>
+<p>So that&#8217;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app" class="wiki-link">drop me a line</a> and let me know how you think my little app can be further improved. I&#8217;m always happy to entertain suggestions from users. </p>
 
-<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.6.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.6.0.html" class="ext-link" target="_blank" rel="noopener">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
 				</div>
 
 				<hr />
@@ -111,7 +127,7 @@
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2022 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 		</div>  <!-- end of wrapper div -->

@@ -17,30 +17,42 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>12 <a href="script-files.html">Script Files</a>&nbsp;&#8593;</p><h3 id="script-file-example">12.3 Script File Example</h3>
+</nav>
+
+<main>
+<p>15. <a href="script-files.html" class="nav-link">Script Files</a>&#160;&#8593;</p><h3 id="script-file-example">15.4 Script File Example</h3>
 <p>In order to visualize how all of this works, it may help to review a sample script file. </p>
 
-<p>This is the actual script used to generate the <a href="https://notenik.app">Notenik.app</a> website, as of this writing. If you&#8217;d like to see more context, feel free to review additional code for the site on <a href="https://github.com/hbowie/notenik-web">GitHub</a>. </p>
+<p>This is the actual script used to generate the <a href="https://notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik.app</a> website, as of this writing. If you&#8217;d like to see more context, feel free to review additional code for the site on <a href="https://github.com/hbowie/notenik-web" class="ext-link" target="_blank" rel="noopener">GitHub</a>. </p>
 
 <p>As noted earlier, a script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. </p>
 
 <p>In order to make this example easier to read, I&#8217;ve formatted the columns as a table, and I&#8217;ve added the first column, containing a row number, so that I can refer back to specific rows in the notes that appear below the table. (This extra column is, as they say, only for illustrative purposes, and should not appear in an actual script file.) </p>
 
 <p>You&#8217;ll see that this script consists of multiple steps. The general sequence for each step is as follows: </p>
-
 <ol>
 <li>Open the input data source. </li>
 <li>Filter the data as needed, if you only want to use a subset of the data for this step. </li>
 <li>Sort the data into the desired sequence. </li>
-<li>Use one or more <a href="merge-templates.html">Merge Templates</a> to generate your desired output. If you have multiple templates needing the same data in the same sort sequence, then you can specify one after the other, without needing to repeat the <code>input</code>, <code>filter</code> and <code>sort</code> bits for each template. </li>
+<li>Use one or more <a href="merge-templates.html" class="wiki-link">Merge Templates</a> to generate your desired output. If you have multiple templates needing the same data in the same sort sequence, then you can specify one after the other, without needing to repeat the <code>input</code>, <code>filter</code> and <code>sort</code> bits for each template. </li>
 </ol>
 
-<p>One technique you&#8217;ll see below is that earlier steps can sometimes generate output that is used in later steps. Later steps often make use of the output from earlier steps by way of the Merge Template <a href="include-command.html">include command</a>.  </p><table>
+<p>One technique you&#8217;ll see below is that earlier steps can sometimes generate output that is used in later steps. Later steps often make use of the output from earlier steps by way of the Merge Template <a href="include-command.html" class="wiki-link">include command</a>.  </p><table>
 <tr>
 <th>
  #  </th>
@@ -934,5 +946,16 @@ window.MathJax = {
 
 
 <hr />
-<p>Next: <a href="putting-it-all-together.html">Putting It All Together</a></p></body>
+<div>
+
+<p>Next: <a href="putting-it-all-together.html" class="nav-link">Putting It All Together</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

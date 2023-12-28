@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Blog website creation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.13 <a href="website-building.html" class="nav-link">Website Building</a>&#160;&#8593;</p><h4 id="blog-website-creation">12.13.1 Blog website creation</h4>
+<p>With the embedded collection template you can easilly create simple personal blog with dated posts and other information. </p>
+
+<p>You may use the <a href="blog.html" class="wiki-link">Blog</a> template when you are <a href="creating-and-tailoring-a-collection-of-notes.html" class="wiki-link">Creating and Tailoring a Collection of Notes</a> and Notenik will create a simple blog. It may be divided to three important parts: </p>
+<ol>
+<li>Collection (content in Notes subdirectory): It contains each blog post as a Note with predefined fields set in Markdown format. </li>
+<li>Templates for blog website (in Mirror subdirectory) It contains simple <a href="merge-templates.html" class="wiki-link">Merge Templates</a> for generating pages for posts. </li>
+<li>Pregenerated HTML files of your blog website (in main directory) These files are generated automatically using the <a href="mirror-your-notes.html" class="wiki-link">Mirror Your Notes</a> mechanism. </li>
+</ol>
+
+<p>Creating a blog using this method is so simple, you only must <a href="add-delete-and-edit-your-notes.html" class="wiki-link">Add, Delete and Edit Your Notes</a> and mirroring mechanism will automatically generate content. Your blog is represented by posts, each post is a note in the collection with fields as <a href="date.html" class="wiki-link">Date</a>, <a href="teaser.html" class="wiki-link">Teaser</a> as introduction and <a href="body.html" class="wiki-link">Body</a>, you may add your own fields if you want. For example, you can create <a href="link.html" class="wiki-link">Link</a> field for some or all posts and it will store links to resources in post note. You can then edit template to include your new fields to generated output HTML post file. </p>
+
+<p>You can make changes and mirroring will regenerate your posts automatically. Only one thing you must to do is upload your whole blog to your hosting provider. </p>
+
+<p>If you want to alter blog design and functionality, you can edit &#8220;note_mirror.html&#8221; template placed in &#8220;Notes/Mirror/Templates&#8221; subdirectory. You can use all of <a href="merge-templates.html" class="wiki-link">Merge Templates</a> functions and tricks. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="website-with-content-creation.html" class="nav-link">Website with content creation</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -17,13 +17,26 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>10 <a href="field-labels-and-types.html">Field Labels and Types</a>&nbsp;&#8593;</p><h3 id="what-we-mean-by-label-and-type">10.1 What We Mean by Label and Type</h3>
-<p><em>aka: field label, field type</em></p><p>A field <em>label</em> is the thing you see identifying a particular field for each Note. </p>
+</nav>
+
+<main>
+<p>11. <a href="field-labels-and-types.html" class="nav-link">Field Labels and Types</a>&#160;&#8593;</p><h3 id="what-we-mean-by-label-and-type">11.1 What We Mean by Label and Type</h3>
+<p>A field <em>label</em> is the thing you see identifying a particular field for each Note. </p>
 
 <p>A field <em>type</em> identifies a set of behaviors and representations that will be available for a particular field. </p>
 
@@ -31,20 +44,19 @@ window.MathJax = {
 
 <p>Every field within a Collection must have its own unique label. However, you can often have multiple fields with different labels but of the same type. </p>
 
-<p>Both labels and types can be specified within <a href="the-collection-template-file.html">the Collection template file</a>. For example, consider the following line appearing at the top of a Collection&#8217;s template file: </p>
+<p>Both labels and types can be specified within <a href="the-collection-template-file.html" class="wiki-link">the Collection template file</a>. For example, consider the following line appearing at the top of a Collection&#8217;s template file: </p>
 
 <pre><code>
 Name: &lt;title>
 </code></pre>
 
-<p>Such a line would be used to specify a field with the label <code>Name</code>, and of the type <a href="title.html">Title</a>. </p>
+<p>Such a line would be used to specify a field with the label <code>Name</code>, and of the type <a href="title.html" class="wiki-link">Title</a>. </p>
 
-<p>Notenik only supports a limited set of field types, and all fields, no matter how they are labeled, will be assigned one of these predetermined types. The default will be a simple <a href="string.html">String</a>. </p>
+<p>Notenik only supports a limited set of field types, and all fields, no matter how they are labeled, will be assigned one of these predetermined types. The default will be a simple <a href="string.html" class="wiki-link">String</a>. </p>
 
 <p>A label matching the desired type is the easiest way to create a field of that type; however, by specifying an explicit type within a Collection&#8217;s template file (as in the example above), any type can be assigned to any label. </p>
 
 <p>You can make up your own field labels &#8211; you&#8217;re not constrained by the default set offered by Notenik. You&#8217;re only constrained by a couple of rules: </p>
-
 <ol>
 <li>A field label may not consist of more than 48 characters; </li>
 <li>A field label may not contain special characters, other than dashes and underscores. </li>
@@ -57,5 +69,16 @@ Name: &lt;title>
 <p>Each field label/type is discussed below, grouped into logical collections. </p>
 
 <hr />
-<p>Next: <a href="functionality-associated-with-field-types.html">Functionality Associated with Field Types</a></p></body>
+<div>
+
+<p>Next: <a href="functionality-associated-with-field-types.html" class="nav-link">Functionality Associated with Field Types</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

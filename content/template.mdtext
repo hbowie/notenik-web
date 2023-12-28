@@ -12,7 +12,7 @@ Secondary Menu:
 
 Status: 0 - Idea; 4 - In Work; 5 - Held; 6 - Completed; 8 - Canceled; 9 - Published;  
 
-Type: pick-from: chrome, include, news, page, review 
+Type: <rank: 1 - page; 2 - news; 3 - usage; 4 - review; 5 - chrome; 6 - include; 7 - press; > 
 
 Date: <date> 
 

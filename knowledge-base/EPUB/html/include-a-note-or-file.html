@@ -17,13 +17,26 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>9.2 <a href="notenik-markdown-parser.html">Notenik Markdown Parser</a>&nbsp;&#8593;</p><h4 id="include-a-note-or-file">9.2.20 Include a Note or File</h4>
-<p><em>aka: transclusion</em></p><p>As an extension to the original Markdown spec from John Gruber, a second Note or text file may be included by placing the literal <code>{:include:xxx}</code> on a line by itself (where &#8216;xxx&#8217; is replaced by the identifier for the text to be included), as in the following example: </p>
+</nav>
+
+<main>
+<p>10.2 <a href="notenik-markdown-parser.html" class="nav-link">Notenik Markdown Parser</a>&#160;&#8593;</p><h4 id="include-a-note-or-file">10.2.26 Include a Note or File</h4>
+<p>As an extension to the original Markdown spec from John Gruber, a second Note or text file may be included by placing the literal <code>{:include:xxx}</code> on a line by itself (where &#8216;xxx&#8217; is replaced by the identifier for the text to be included), as in the following example: </p>
 
 <pre><code>
 {:include:another-file.txt}
@@ -44,26 +57,54 @@ window.MathJax = {
 </code></pre>
 
 <p>The following styles are available at this time: </p>
-
 <ul>
 <li><p><code>body</code> - This is the default, and simply includes the body of the second Note. </p></li>
 <li><p><code>note</code> - This style includes the entire contents of the second Note as it would be saved to disk. </p></li>
-<li><p><code>quote</code> - The body of the included Note will be placed within Blockquotes, and an attempt will be made to format a quote attribution block to follow the quote, using the <a href="attribution.html">Attribution</a> field or the <a href="artist.html">Artist</a>/Author field, along with associated Work fields (<a href="work-title.html">Work Title</a>, <a href="work-type.html">Work Type</a>, <a href="work-link.html">Work Link</a>). </p></li>
+<li><p><code>quote</code> - The body of the included Note will be placed within Blockquotes, and an attempt will be made to format a quote attribution block to follow the quote, using the <a href="attribution.html" class="wiki-link">Attribution</a> field or the <a href="artist.html" class="wiki-link">Artist</a>/Author field, along with associated Work fields (<a href="work-title.html" class="wiki-link">Work Title</a>, <a href="work-type.html" class="wiki-link">Work Type</a>, <a href="work-link.html" class="wiki-link">Work Link</a>). </p></li>
 <li><p><code>quotebody</code> - The body of the included Note will be placed within Blockquotes, without any attempt to include an attribution (this style effectively implies that the surrounding text will provide sufficient attribution for the quote). </p></li>
 </ul>
 
 <p>Note that includes may be nested; in other words, if Note B includes Note C, and Note A includes Note B, then Note C will appear within Note A as well. </p>
 
-<p>Note also that, if a Note is included within the Body of a Note, via this Markdown extension, then that same Note will <strong>not</strong> be displayed at the bottom of the the parent Note&#8217;s page as part of the <a href="include-children.html">Include Children</a> display. </p>
+<p>Note also that, if a Note is included within the Body of a Note, via this Markdown extension, then that same Note will <strong>not</strong> be displayed at the bottom of the the parent Note&#8217;s page as part of the <a href="include-children.html" class="wiki-link">Include Children</a> display. </p>
 
-<p>Note that this format, and the intent of this Markdown extension, is slightly different from the <a href="include-command.html">Include Command</a> as implemented for <a href="merge-templates.html">Merge Templates</a>. </p>
-
+<p>Note that this format, and the intent of this Markdown extension, is slightly different from the <a href="include-command.html" class="wiki-link">Include Command</a> as implemented for <a href="merge-templates.html" class="wiki-link">Merge Templates</a>. </p>
 <ul>
 <li><p>The results of the Markdown extension described here will be visible within Notenik, when a Note is displayed; </p></li>
 <li><p>The results of the Merge Template Include command will only be visible when using the a Merge Template to generate some textual output outside of Notenik. </p></li>
 </ul>
 
+<h5 id="alternate-syntax">Alternate Syntax</h5>
+
+<p>Some other note processing software <a href="https://help.obsidian.md/How+to/Embed+files" class="ext-link" target="_blank" rel="noopener">uses the terminology <em>embed</em></a> rather than <em>include</em>, and uses the following syntax to embed a file. </p>
+
+<pre><code>
+![[another-file.txt]]
+</code></pre>
+
+<p>The following syntax is used to embed a Note: </p>
+
+<pre><code>
+![[A Second Note to be embedded]]
+</code></pre>
+
+<p>Notenik will try to respect this alternate syntax, in addition to its native syntax, as described above. </p>
+
+<h5 id="includes-between-collections">Includes Between Collections</h5>
+
+<p>Note that the same syntax and rules used to create <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a> can also be applied when including a Note or file. </p>
 
 <hr />
-<p>Next: <a href="display-teasers.html">Display Teasers</a></p></body>
+<div>
+
+<p>Next: <a href="display-teasers.html" class="nav-link">Display Teasers</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

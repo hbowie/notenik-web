@@ -17,18 +17,29 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.4 <a href="merge-commands.html">Merge Commands</a>&nbsp;&#8593;</p><h4 id="set-command">11.4.2 set command</h4>
+</nav>
+
+<main>
+<p>14.4 <a href="merge-commands.html" class="nav-link">Merge Commands</a>&#160;&#8593;</p><h4 id="set-command">14.4.2 set command</h4>
 <p>This command can define a global variable and set its value. This command would normally have three operands: the name of the global variable, an operator, and a value. </p>
-
 <ul>
 <li><p>Global variable name. This should not be the same as the name of any variable name specified by the input data file. The global variable name, when used as the object of a set command, should not be enclosed within the normal variable delimiters, since this would cause the variable name to be replaced by its current value. (On the other hand, you may include a variable name <em>within</em> the global variable name if you&#8217;d like to vary the global variable name based on another variable.) </p></li>
 <li><p>Operator. Any of the following operators can be used. </p>
-
 <ul>
 <li><p>=  — This will cause the global variable to be set equal to the following value. </p></li>
 <li><p>+= or simply + — This will cause the value to be added to the current value of the global variable. </p></li>
@@ -45,5 +56,16 @@ window.MathJax = {
 <p>Another common use for the set command is to preserve record variables in global variables so that they will be available within an ifendgroup block. </p>
 
 <hr />
-<p>Next: <a href="output-command.html">output command</a></p></body>
+<div>
+
+<p>Next: <a href="output-command.html" class="nav-link">output command</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

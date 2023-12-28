@@ -1,8 +1,8 @@
 <?output "../includes-gen/reviews.html"?>
 
-				<h2>What Users Are Saying</h2>
+				<h2>What People Are Saying</h2>
 <?nextrec?>
-<?if "=$type$=" eq "review" ?>
+<?if "=$type&>$=" eq "review" ?>
 				<article>
 					<h3>
 							&ldquo;=$page-title$=&rdquo;
@@ -18,6 +18,6 @@
 							=$source$=
 						</a>
 					</p>
-				<article>
+				</article>
 <?endif?>
 <?loop?>

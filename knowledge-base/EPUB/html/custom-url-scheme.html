@@ -17,19 +17,34 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>8 <a href="getting-data-into-and-out-of-notenik.html">Getting Data Into and Out of Notenik</a>&nbsp;&#8593;</p><h3 id="custom-url-scheme">8.13 Custom URL Scheme</h3>
-<p><em>aka: Custom URL</em></p><p>Notenik has its own custom URL scheme, which can be invoked by other apps as a means of integrating Notenik with these other applications. </p>
+</nav>
 
-<p>Note that URLs must in general be <a href="https://en.wikipedia.org/wiki/Percent-encoding">percent encoded</a>. The most common encoding is done by replacing each space with <code>%20</code>. </p>
+<main>
+<p>13. <a href="integration.html" class="nav-link">Integration</a>&#160;&#8593;</p><h3 id="custom-url-scheme">13.1 Custom URL Scheme</h3>
+<p>Notenik has its own custom URL scheme, which can be invoked by other apps as a means of integrating Notenik with these other applications. </p>
+
+<p>Note that URLs must in general be <a href="https://en.wikipedia.org/wiki/Percent-encoding" class="ext-link" target="_blank" rel="noopener">percent encoded</a>. The most common encoding is done by replacing each space with <code>%20</code>. </p>
 
 <p>The following commands are supported. </p>
 
 <h3 id="open">Open </h3>
+
+<p>This command opens a Collection and, optionally, a specific Note within that Collection. </p>
 
 <p>Following is a sample URL:  </p>
 
@@ -38,7 +53,6 @@ notenik://open?shortcut=todo&amp;id=pickupmilk
 </code></pre>
 
 <p>Let&#8217;s break this down: </p>
-
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>open</code> - The Notenik command to open a Collection and optionally a specific Note within the Collection. </li>
@@ -50,12 +64,11 @@ notenik://open?shortcut=todo&amp;id=pickupmilk
 </ul>
 
 <p>The <code>open</code> command accepts the following parameters following the question mark: </p>
-
 <ul>
 <li><code>shortcut</code> - The shortcut for the Collection to be opened. </li>
 <li><code>path</code> - The complete path to the Collection to be opened, with percent encoding. </li>
 <li><code>id</code> - The ID identifying the Note to be selected for display, which is generally the Note&#8217;s title, with spaces and punctuation removed, and converted to lowercase. </li>
-<li><code>timestamp</code> - A <a href="timestamp.html">timestamp</a> for a Note can be supplied, as an alternate to <code>id</code>, as a means of identifying a specific Note to be selected for display. </li>
+<li><code>timestamp</code> - A <a href="timestamp.html" class="wiki-link">timestamp</a> for a Note can be supplied, as an alternate to <code>id</code>, as a means of identifying a specific Note to be selected for display. </li>
 <li><code>notepath</code> - A complete file system path to a specific Note can be specified, as a means of specifying both a Collection and a Note within the Collection; again, the path will need to be percent encoded. </li>
 </ul>
 
@@ -72,7 +85,6 @@ notenik://add?shortcut=todo&amp;title=Pick%20up%20milk&amp;body=You%20gotta
 </code></pre>
 
 <p>Again, let&#8217;s break this down. </p>
-
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>add</code> - The Notenik command to add a new Note to an existing Collection. </li>
@@ -87,6 +99,34 @@ notenik://add?shortcut=todo&amp;title=Pick%20up%20milk&amp;body=You%20gotta
 
 <p>Other fields may also be specified for a new Note, using a similar <em>label=value</em> convention. </p>
 
+<h3 id="expand">Expand</h3>
+
+<p>This command expands the specified tag on the Tags tab of the Collection window.  </p>
+
+<p>Following is a sample URL:  </p>
+
+<pre><code>
+notenik://expand?shortcut=todo&amp;tag=shopping
+</code></pre>
+
+<p>Let&#8217;s break this down: </p>
+<ul>
+<li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
+<li><code>expand</code> - The Notenik command to expand a tag. </li>
+<li><code>?</code> - A question mark indicates the end of the command and the beginning of the query string. </li>
+<li><code>shortcut=todo</code> - The shortcut identifying the Collection to be opened. Note that shortcuts are defined in such a way that they will generally <em>not</em> need to be percent encoded. </li>
+<li><code>path=Users/user1/Sites/site1</code> - Specifying the complete path would be an alternate way of identifying the Collection to be opened. Path values generally <em>will</em> require percent encoding. </li>
+<li><code>&amp;</code> - An ampersand is used to separate each <code>label=value</code> parameter from the next. </li>
+<li><code>tag=shopping</code> - The tag to be expanded. </li>
+</ul>
+
+<p>The <code>expand</code> command accepts the following parameters following the question mark: </p>
+<ul>
+<li><code>shortcut</code> - The shortcut for the Collection to be opened. </li>
+<li><code>path</code> - The complete path to the Collection to be opened, with percent encoding. </li>
+<li><code>tag</code> - The tag to be expanded. </li>
+</ul>
+
 <h3 id="help">Help</h3>
 
 <p>Following is a sample URL: </p>
@@ -96,7 +136,6 @@ notenik://help?id=versionhistory
 </code></pre>
 
 <p>Once more, let&#8217;s break this down: </p>
-
 <ul>
 <li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
 <li><code>help</code> - The Notenik command to open the Notenik Knowledge Base supplied with Notenik. </li>
@@ -107,16 +146,27 @@ notenik://help?id=versionhistory
 
 <p>The query string is optional. If it is not supplied, then the Knowledge Base will be opened at the first Note in the Collection. </p>
 
-<h3 id="prefs">Prefs</h3>
+<h3 id="settings">Settings</h3>
 
 <p>Following is a sample URL: </p>
 
 <pre><code>
-notenik://prefs
+notenik://settings
 </code></pre>
 
-<p>This command simply brings up the overall Application Preferences window, to allow the user to adjust one or more of the global preferences. </p>
+<p>This command simply brings up the overall Application Settings window, to allow the user to adjust one or more of the global settings. </p>
 
 <hr />
-<p>Next: <a href="apis-for-hook-integration.html">APIs for Hook Integration</a></p></body>
+<div>
+
+<p>Next: <a href="apis-for-hookmark-integration.html" class="nav-link">APIs for Hookmark Integration</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

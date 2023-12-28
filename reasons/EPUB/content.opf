@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="pub-identifier">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="pub-identifier">reasons-to-use-notenik</dc:identifier>
+    <dc:title>Reasons to Use Notenik</dc:title>
+    <dc:language>en</dc:language>
+  </metadata>
+  <manifest>
+    <item id="css-styles-css" href="css/styles.css" media-type="text/css"/>
+  </manifest>
+  <spine>
+    <itemref idref="reasons-to-use-notenik-html" />
+    <itemref idref="you-are-a-serious-mac-user-html" />
+    <itemref idref="its-free-html" />
+    <itemref idref="no-data-collection-html" />
+    <itemref idref="no-advertising-html" />
+    <itemref idref="its-open-source-html" />
+    <itemref idref="you-like-the-mac-app-store-html" />
+    <itemref idref="you-like-text-html" />
+    <itemref idref="you-have-stuff-to-keep-track-of-html" />
+    <itemref idref="you-like-text-files-html" />
+    <itemref idref="you-dont-want-all-of-your-stuff-mixed-together-html" />
+    <itemref idref="youre-not-comfortable-with-the-cloud-html" />
+    <itemref idref="no-proprietary-file-formats-html" />
+    <itemref idref="no-mysterious-data-locations-html" />
+    <itemref idref="you-like-documentation-html" />
+    <itemref idref="you-like-markdown-html" />
+    <itemref idref="you-like-the-customary-markdown-extensions-html" />
+    <itemref idref="you-like-wiki-links-html" />
+    <itemref idref="you-like-to-organize-using-tags-html" />
+    <itemref idref="you-want-other-metadata-too-html" />
+    <itemref idref="for-its-native-mac-interface-html" />
+    <itemref idref="you-want-to-use-voiceover-html" />
+    <itemref idref="you-dont-need-cutting-edge-design-html" />
+    <itemref idref="you-want-a-proven-app-html" />
+    <itemref idref="you-like-white-text-on-a-black-background-html" />
+    <itemref idref="you-want-to-generate-content-for-a-web-page-html" />
+    <itemref idref="you-want-to-generate-an-entire-website-html" />
+    <itemref idref="you-want-a-responsive-developer-html" />
+    <itemref idref="you-want-frequent-releases-html" />
+    <itemref idref="you-dont-like-bugs-html" />
+    <itemref idref="you-like-enhancements-html" />
+    <itemref idref="you-want-simple-things-to-be-simple-html" />
+    <itemref idref="you-want-complex-things-to-be-possible-html" />
+    <itemref idref="you-like-to-stay-organized-html" />
+    <itemref idref="you-like-flexible-sorting-html" />
+    <itemref idref="you-miss-having-a-personal-database-on-your-mac-html" />
+    <itemref idref="header-page-html" />
+    <itemref idref="footer-page-html" />
+  </spine>
+</package>

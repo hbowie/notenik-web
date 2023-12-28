@@ -17,13 +17,26 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>14 <a href="version-history.html">Version History</a>&nbsp;&#8593;</p><h3 id="version-9.0.0">14.17 Version 9.0.0</h3>
-<p>Date: 29 Mar 2022</p><h5 id="fixed-timestamp-problem">Fixed Timestamp Problem</h5>
+</nav>
+
+<main>
+<p>19. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version-9.0.0">19.51 Version 9.0.0</h3>
+<p>Date: 29 Mar 2022 - Tuesday</p><h5 id="fixed-timestamp-problem">Fixed Timestamp Problem</h5>
 
 <p>Notenik was assigning the timestamp based on the file system creation date, which was not available until after the file had been saved. To make sure the timestamp is immediately saved within the Note&#8217;s text file, such a file is now re-saved after assignment of the timestamp. </p>
 
@@ -37,12 +50,11 @@ window.MathJax = {
 
 <h5 id="added-option-to-render-curly-apostrophes">Added Option to Render Curly Apostrophes</h5>
 
-<p>Added a new Collection Preference to allow control over rendering of apparent apostrophes as straight or curly, with the default now being curly. See <a href="curly-apostrophes.html">Curly Apostrophes</a> for details. </p>
+<p>Added a new Collection Preference to allow control over rendering of apparent apostrophes as straight or curly, with the default now being curly. See <a href="curly-apostrophes.html" class="wiki-link">Curly Apostrophes</a> for details. </p>
 
 <h5 id="added-list-contextual-menu-copy-options">Added List Contextual Menu Copy Options</h5>
 
 <p>When selecting the contextual menu from the List tab, two new options appear: </p>
-
 <ul>
 <li><code>Copy Title</code> </li>
 <li><code>Copy Timestamp</code> </li>
@@ -52,16 +64,27 @@ window.MathJax = {
 
 <h5 id="added-note-selector-action-options-for-timestamp">Added Note Selector Action Options for Timestamp</h5>
 
-<p>Added two new possible actions to the <a href="select-a-note-for-action.html">Note Selector</a> window. The first is to copy a timestamp value to the clipboard, and the second to copy and paste a timestamp. </p>
+<p>Added two new possible actions to the <a href="select-a-note-for-action.html" class="wiki-link">Note Selector</a> window. The first is to copy a timestamp value to the clipboard, and the second to copy and paste a timestamp. </p>
 
 <h5 id="added-additional-api-to-return-a-file-path">Added Additional API to Return a File Path</h5>
 
-<p>Added an additional AppleScript command, as part of <a href="apis-for-hook-integration.html">APIs for Hook Integration</a>, to allow Hook to request the file path pointing to a Note&#8217;s file. </p>
+<p>Added an additional AppleScript command, as part of <a href="version-10.5.0.html" class="wiki-link">APIs for Hook Integration</a>, to allow Hook to request the file path pointing to a Note&#8217;s file. </p>
 
 <h5 id="tab-characters-now-skip-to-next-field-from-a-link-field">Tab Characters Now Skip to Next Field from a Link Field</h5>
 
 <p>A Link field allows multiple lines of text to be entered, with scrolling. This sort of field normally allows a Tab character to be entered within the field. However, this makes no sense for a field intended to contain hyperlinks. So the behavior of a Link field has been modified, so that a Tab character will now cause the next field to be selected (as it does for most other other field types). </p>
 
 <hr />
-<p>Next: <a href="version-8.9.0.html">Version 8.9.0</a></p></body>
+<div>
+
+<p>Next: <a href="version-8.9.0.html" class="nav-link">Version 8.9.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

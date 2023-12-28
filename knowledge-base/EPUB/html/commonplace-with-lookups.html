@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Commonplace with Lookups</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3 <a href="starting-collection-types.html" class="nav-link">Starting Collection Types</a>&#160;&#8593;</p><h4 id="commonplace-with-lookups">7.3.11 Commonplace with Lookups</h4>
+<p>This is a more sophisticated version of a <a href="commonplace-book.html" class="wiki-link">Commonplace Book</a>. This starter pack actually consists of three different Collections that are tied together through the use of <a href="lookup.html" class="wiki-link">Lookup</a> fields. </p>
+
+<p>The first collection is designed to store quotations, and its template file looks like this: </p>
+
+<pre><code>
+Title: &lt;title> 
+
+Author: &lt;lookup: qauthors> 
+
+Date: &lt;date> 
+
+Tags: &lt;tags> 
+
+Work Title: &lt;lookup: qworks> 
+
+Work Pages:  
+
+Date Added: &lt;dateadded> 
+
+Body:  
+
+</code></pre>
+
+<p>Note that the <code>Work Title</code> field is configured to lookup the titles of books and such from the <code>qworks</code> Collection. This second Collection has a template file that looks like this: </p>
+
+<pre><code>
+Work Title: &lt;title> 
+
+Tags: &lt;tags> 
+
+Author: &lt;lookup: qauthors> 
+
+Work Type: &lt;worktype> 
+
+Work Minor Title:  
+
+Work Date: &lt;date> 
+
+Work Link: &lt;link> 
+
+Work ID:  
+
+Work Rights:  
+
+Work Rights Holder:  
+
+Publisher:  
+
+Publisher City:  
+
+Work Notes: &lt;body> 
+
+</code></pre>
+
+<p>And both the first Collection and the second one are configured to lookup the names of authors from the <code>qauthors</code> Collection. This third Collection has a template file that looks like this: </p>
+
+<pre><code>
+Author: &lt;title> 
+
+Tags: &lt;tags> 
+
+Author Info:  
+
+Author Years:  
+
+Author Link: &lt;link> 
+
+Author Notes: &lt;body> 
+
+</code></pre>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="website.html" class="nav-link">Website</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

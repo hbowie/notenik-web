@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Supply a Page Header</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10.2 <a href="notenik-markdown-parser.html" class="nav-link">Notenik Markdown Parser</a>&#160;&#8593;</p><h4 id="supply-a-page-header">10.2.29 Supply a Page Header</h4>
+<p>As an extension to the original Markdown spec from John Gruber, the content for a HTML <code>header</code> element may be provided following the literal <code>{:header}</code> on a line by itself, as in the following example: </p>
+
+<pre><code>
+{:header}
+The Notenik Knowledge Base
+</code></pre>
+
+<p>The content following this command within the body of the current Note will be used as the contents of a <code>header</code> element that will subsequently appear at the top of the display for every Note in the Collection, other than one with the <a href="special-class-values.html" class="wiki-link">Special Class Value</a> of <code>title-page</code>. </p>
+
+<p>This command should appear as the first line within the body of a Note, and the remainder of the body will be used, in its entirety, as the content appearing in the <code>header</code> element for every Note. </p>
+
+<p>A Note containing this command may appear anywhere within a Collection, and be given any convenient and meaningful title. </p>
+
+<p>See the <a href="header-page.html" class="wiki-link">header-page</a> within the Notenik Knowledge Base for an example. </p>
+
+<p>Since a Note containing such a command is not meant to be read sequentially as part of the overall Collection, Notenik will generally skip such pages when formatting <a href="streamlined-reading.html" class="wiki-link">Streamlined Reading</a> navigational elements. </p>
+
+<p>Default CSS will be provided to center the header contents, but this may of course be overridden. </p>
+
+<p>If such a command is used, then Notenik will place the <code>header</code> element before the <code>main</code> element (and before the <code>nav</code> element, if one is supplied). </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="supply-page-navigation.html" class="nav-link">Supply Page Navigation</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

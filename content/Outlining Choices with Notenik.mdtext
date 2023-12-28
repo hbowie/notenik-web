@@ -1,0 +1,109 @@
+Title:  Outlining Choices with Notenik
+
+Page Title: Outlining Choices with Notenik
+
+Seq:    6.2
+
+Status: 9 - Published
+
+Type:   03 - usage
+
+Date:   23 May 2023
+
+Teaser:
+
+Notenik offers several different ways to make outlines of your content, all of them building on standard Markdown and HTML. 
+
+Body:
+
+A [hierarchical outline](https://en.wikipedia.org/wiki/Outline_(list)) can be a darned useful thing, since it lets you organize content into a series of nested lists, allowing you to quickly zoom out to get the big picture, or zoom in to particular branches of the tree for all of the gory details. 
+
+Outlining is so useful, in fact, that the latest version of the Mac app Notenik (12.1.0) now supports not one, but four different ways of outlining. 
+
+## But first, a Caveat...
+
+If your goal is to brainstorm a list of items, and organize them into a hierarchy as you go, then you will probably want to use a dedicated outliner such as [Bike Outliner](https://www.hogbaysoftware.com/bike/) or [OmniOutliner](https://www.omnigroup.com/omnioutliner/), since tools like these allow you to quickly and easily move items up and down a list, as well as above and beneath other items. 
+
+Where Notenik can be useful is when you want to associate additional information with each item in the outline: a longer chunk of text, formatted using [Markdown](https://daringfireball.net/projects/markdown/), let's say, or a date, or a link, or whatever other fields might prove useful to the task at hand. 
+
+And an outline initially created using a dedicated tool can easily be saved into the [OPML](http://opml.org) format, and then imported into Notenik, once you are ready to start putting some flesh on the bones of your work. 
+
+So, with that important caveat out of the way, let's see what choices Notenik has to offer. 
+
+## Outlining Using Headings
+
+This approach is the first of two that creates an outline within a single Note. 
+
+Just place a command like this
+
+```
+{:outline-headings}
+```
+
+...at the top of a Note, and then all of the following headings (created via the regular [Markdown heading syntax](https://www.markdownguide.org/basic-syntax/#headings)) will become outline items preceded by disclosure triangles, and clicking on a triangle will then reveal everything that follows that heading, up to the next heading of the same level. 
+
+This sort of outlining is visible on the *Display* tab for a Note. 
+
+You can use the `File -> Import -> OPML using Headings` command to import an OPML file and have it formatted in this manner. 
+
+**Reference:**
+
++ [Generate Outline based on Headings](https://notenik.app/knowledge-base/EPUB/html/generate-outline-based-on-headings.html)
+
+## Outlining Using Unordered Lists
+
+This is the second approach that creates an outline within a single Note. 
+
+Just place a command like this
+
+```
+{:outline-bullets}
+```
+
+...at the top of a Note, and then all of the following unordered list items (created via the regular [Markdown syntax](https://www.markdownguide.org/basic-syntax/#unordered-lists)) will become outline items preceded by disclosure triangles, and clicking on a triangle will then reveal everything that follows that item, including any nested unordered lists. 
+
+This sort of outlining is visible on the *Display* tab for a Note. 
+
+You can use the `File -> Import -> OPML using Lists` command to import an OPML file and have it formatted in this manner. 
+
+**Reference:**
+
++ [Generate Outline based on Unordered List Items](https://notenik.app/knowledge-base/EPUB/html/generate-outline-based-on-unordered-list-items.html)
+
+## Using the Seq and Level Fields
+
+The third way to outline is to use an entire Collection as the contents to be outlined, with each Note in the collection becoming one item in the outline. The level field is then used to show the depth of each item in the hierarchical structure, and the seq field is used to keep everything in the desired sequence. 
+
+This sort of outlining is visible on the *List* tab. 
+
+The [Notenik Knowledge Base](https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html) itself is an example of this sort of outlining, (and see the [Complete Table of Contents page](https://notenik.app/knowledge-base/EPUB/html/complete-table-of-contents.html) for a single-page outline view of the overall hierarchy). 
+
+You can use the `File -> Import -> OPML using Seq & Level` command to import an OPML file and have Notes created in this manner. 
+
+**Reference:**
+
++ [Fields for Sequencing and Outlining](https://notenik.app/knowledge-base/EPUB/html/fields-for-sequencing-and-outlining.html)
+
++ [Using Notenik as an Outliner](https://notenik.app/knowledge-base/EPUB/html/using-notenik-as-an-outliner.html)
+
+## Outlining via Tags
+
+The fourth way to use outlining also uses an entire Collection as the contents to be outlined, but uses multi-level tags to organize the Notes into a hierarchical structure. This sort of outline is visible on the *Tags* tab. 
+
+**Reference:**
+
++ [The Tags field](https://notenik.app/knowledge-base/EPUB/html/tags.html)
+
+## A Word About HTML and CSS
+
+All of these approaches involve extensions to the original [Markdown spec from John Gruber](https://daringfireball.net/projects/markdown/syntax), but they all stay true to Notenik's core premise: we start with Markdown, throw in some metadata and useful extensions, and then generate HTML. 
+
+In particular, Notenik makes use of the HTML [details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details), along with its sidekick, the [disclosure summary element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary), in order to generate the disclosure triangles that are used by many of these outlining mechanisms. 
+
+The `details` and `summary` tags are relatively new within the history of HTML, but have been around long enough that they are now broadly supported by web browsers and other places where you might see HTML rendered (as in Notenik). 
+
+This is important because Notenik offers numerous ways to get the HTML for a single Note -- or for an entire Collection -- out of Notenik, and into a text file or a copy/paste buffer, ready for use wherever else you might need it. And so all of these forms of outlining can be easily exported to standard HTML.  
+
+## About Notenik
+
+Notenik is open source software that can be downloaded for free  from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984), where it currently has a cumulative rating of 4.9 on a scale of 1 to 5, based on feedback from more than fifty users. More info about the app is available from its website, at [Notenik.app](https://notenik.app). No data about users is collected by either the app or its website. Notenik also has its own [Discourse forum](https://discourse.notenik.app) where users can submit bug reports and enhancement requests, and exchange useful information with one another.

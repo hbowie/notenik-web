@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Prep for JSON</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>14.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="prep-for-json">14.3.37 Prep for JSON</h4>
+<p>Use a backslash to indicate that the variable value is to prepared for JSON storage by escaping embedded backslashes and removing line breaks. </p>
+
+<p>Note that this can be combined with other variable modifiers in useful ways. </p>
+
+<p>For example: </p>
+
+<pre><code>
+=$body&amp;so\$=
+</code></pre>
+
+<p>The line above would first use the <a href="summarize-s.html" class="wiki-link">Summarize mod</a> to extract a meaningful summary from the beginning of the body field, then use the <a href="markdown-to-html-o.html" class="wiki-link">Markdown to HTML</a> mod to convert the summary to HTML, and then use the Prep for JSON mod to prepare the HTML for storage using JSON notation. </p>
+
+<p>This modifier can be helpful when generating JavaScript code. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="split-label-from-number-.html" class="nav-link">Split Label from Number - ></a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

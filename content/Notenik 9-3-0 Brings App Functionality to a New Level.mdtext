@@ -1,0 +1,72 @@
+Title:  Notenik 9.3.0 Brings App Functionality to a New Level
+
+Page Title: Notenik 9.3.0 Brings App Functionality to a New Level
+
+Seq:    7.2
+
+Status: 9 - Published
+
+Type:   07 - press
+
+Date:   12 May 2022
+
+Body:
+
+SEATTLE, May 12 -- Notenik has seen several new versions published since 8.6.0 was released on February 28th, rounding out the functionality available within this free and open-source note-taking app for the Mac. 
+
+Significant improvements were made in the following areas. 
+
+### Wiki Links
+
++ New preference controlling auto-creation of missing wiki link targets.
++ New Note Selector window allowing the user to select another Note (in the same or a different Collection) and then perform any of a number of functions, including the formatting and insertion of a working wiki link into a Note being edited. 
+
+### Automation and Integration
+
++ New AppleScript APIs and custom URL commands. 
++ Integration with the Hook app, using new APIs.
+
+### Markdown
+
++ New command to generate a simple tags cloud. 
++ Optional transformation of apostrophes from straight to curly.  
+ 
+### Display Formatting
+ 
++ Note titles can now be displayed using any HTML heading level, or with a heading level dependent on the Level value set for each Note (useful for outlining). 
++ Formatting rules can now be specified for Seq fields. 
+
+### macOS Integration
+ 
++ A new command is available to grant Notenik access to an entire folder and its subfolders. 
++ A Note (and its Collection) can now be opened by dragging a single Note from a Collection folder and dropping it onto the Notenik app icon.
++ A single text file (in pretty much any format) can now be imported by dragging and dropping it onto a Collection's List tab. 
++ A folder full of such text files may now be imported using a new option available from the File menu. 
++ A text file to be imported may start with a UTF BOM character, and Notenik will now ignore such a character. 
+
+### URL Launching from a Link Field
+
++ Link launching has been improved in several ways, making it easier to use Notenik as a project launcher.
++ A new function to Populate an App Catalog can be used to load data from an Applications folder into a Notenik Collection, with working links to launch each Application.  
+
+### Starting Templates for New Collections
+
++ A Commonplace Book with Lookups (for authors and their works) is now available as a starting point that can be used to initialize a new Notenik Collection.
+
+### Overall Appearance
+
++ System appearance settings can now be overridden to specify a Notenik appearance that is always light or dark.
++ Expanded the width of the Body editing field.
+
+Details on these enhancements, as well as more minor bug fixes and improvements, are always available in the [Version History](https://notenik.app/knowledge-base/EPUB/html/version-history.html) section of the Notenik Knowledge Base, and more frequent descriptions of updates are available in the [News](https://notenik.app/news.html) section of the [Notenik.app](https://notenik.app/index.html) website, as well as in the site's [RSS feed](https://notenik.app/rss.xml). 
+
+Notenik is a free, flexible, open-source app for the Mac that stores all of a user's notes in simple text files. Notenik's flexibility starts with its ability to associate a set of custom fields with each Note, and grows with its ability to tailor the available custom fields by Collection, so that each new Collection can have a different set of fields, appropriate for a particular purpose. 
+
+Notenik supports the basic Markdown syntax, plus footnotes, citations, definition lists, task lists, Mathjax, tables, and wiki-style double bracket links to easily get from one Note to another. Extensive import, output and web publication capabilities are also available within the app. 
+
+A more expansive review of Notenik's functionality is available on the Web, titled "[How Notenik Stacks Up Against the Big Names](https://notenik.app/how-notenik-stacks-up-against-the-big-names.html)".
+ 
+Notenik can be downloaded for free from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984).  
+
+If you have questions, simply reply to this email, or send a note to [press@notenik.app](mailto:press@notenik.app). 
+

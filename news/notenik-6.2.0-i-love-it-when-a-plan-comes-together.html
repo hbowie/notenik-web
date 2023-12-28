@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Notenik Notenik 6.2.0 - I Love It When a Plan Comes Together</title>
-		<meta name="description" content="The Notenik App for the Mac" />
+		<title>Notenik | Notenik 6.2.0 - I Love It When a Plan Comes Together</title>
+		<meta name="description" content="The Notenik Mac App: Notenik 6.2.0 - I Love It When a Plan Comes Together" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- Start of include file head-links.html -->
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
@@ -16,6 +16,21 @@
 	</head>
 	<body>
 		<div id="wrapper">
+		
+		<p class="quick-links">
+			Quick Links: 
+			<a class="quick-link" href="https://discourse.notenik.app">
+				Discourse
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">
+					Knowledge Base
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">
+					Version Notes
+			</a>
+		</p>
 
 			<!-- Start of include file header.html -->
 			<header>
@@ -41,16 +56,17 @@
 			<!-- End of include file header.html -->
 
 
+
 			<!-- Start of include file nav-top.html -->
 			<nav id="nav-top">
 				<a class="another-page" href="../index.html">
 					Home
 				</a>
-				<a class="another-page" href="../links.html">
-					Links
-				</a>
-				<a class="another-page" href="../news.html">
+				<a class="current-page" href="../news.html">
 					News
+				</a>
+				<a class="another-page" href="../usage.html">
+					Usage
 				</a>
 				<a class="another-page" href="../docs.html">
 					Docs
@@ -63,11 +79,11 @@
 				<a class="another-page" href="../about.html">
 					About
 				</a>
-				<a class="another-page" href="../connect.html">
-					Connect
-				</a>
 				<a class="another-page" href="../license.html">
 					License
+				</a>
+				<a class="another-page" href="../donate.html">
+					Donate
 				</a>
 				<a class="another-page" href="../privacy.html">
 					Privacy
@@ -85,19 +101,19 @@
 				<div id="content">
 					<p>My preferred style of development is to release new versions frequently, and to make relatively small incremental changes with each release. &#8220;Slow but Steady&#8221; might be my mantra. </p>
 
-<p>This latest release finally implements a custom URL scheme for <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12">Notenik</a>. (I first received an email asking for something like this in January of 2020!) You can read all the details <a href="../knowledge-base/EPUB/html/custom-url-scheme.html">here</a>. </p>
+<p>This latest release finally implements a custom URL scheme for <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12" class="ext-link" target="_blank" rel="noopener">Notenik</a>. (I first received an email asking for something like this in January of 2020!) You can read all the details <a href="../knowledge-base/EPUB/html/custom-url-scheme.html" class="wiki-link">here</a>. </p>
 
 <p>What this means is that other apps can now easily integrate with Notenik. You can retrieve a <code>notenik://open&#8230;</code> link to a particular Note from within Notenik, then embed that URL in the content of another app such that, when you select it, Notenik will open and point you to that particular Note. </p>
 
-<p>The other sort of integration you can now implement is to format a <code>notenik://add&#8230;</code> URL that will take content from another app and then add it to Notenik. This sort of URL is generally implemented via an <em>Action</em> or a <em>Script</em> within the other app, depending on the terminology used. <a href="https://getdrafts.com">Drafts</a> is a natural for this sort of integration. Drafts has both macOS and iOS versions, and syncs effortlessly between platforms, so I can now use it to capture some text on my iPhone, and then easily add it to one of my Notenik collections when I&#8217;m back in front of my Mac. </p>
+<p>The other sort of integration you can now implement is to format a <code>notenik://add&#8230;</code> URL that will take content from another app and then add it to Notenik. This sort of URL is generally implemented via an <em>Action</em> or a <em>Script</em> within the other app, depending on the terminology used. <a href="https://getdrafts.com" class="ext-link" target="_blank" rel="noopener">Drafts</a> is a natural for this sort of integration. Drafts has both macOS and iOS versions, and syncs effortlessly between platforms, so I can now use it to capture some text on my iPhone, and then easily add it to one of my Notenik collections when I&#8217;m back in front of my Mac. </p>
 
 <p>One complication here is that Notenik, by design, allows and even, one might say, <em>encourages</em> you to maintain multiple Collections of Notes that may, for various good reasons, even be stored in varying locations within your home folder. So in order to access, or add, a Note, one must first specify which Collection to use for the desired operation. </p>
 
 <p>Normally the specification of a Collection would require a long and often somewhat gnarly path specification, calling out all the various folders and sub-folders in which your Collection of interest might be tucked away. </p>
 
-<p>This is where we get some help from our <a href="https://notenik.app/articles/collection-shortcuts-and-the-quick-action-window.html">Collection Shortcuts</a>, introduced in version 6.0.0. Add a shorty, pithy identifier to your frequently used Collections, and then easily call out that particular Collection in a <code>notenik://&#8230;</code> URL by specifying the shortcut, rather than the entire path. Sweet! For example, <code>todo</code> and <code>ideas</code> are a couple of shortcuts to two of my frequently used Collections. </p>
+<p>This is where we get some help from our <a href="https://notenik.app/articles/collection-shortcuts-and-the-quick-action-window.html" class="ext-link" target="_blank" rel="noopener">Collection Shortcuts</a>, introduced in version 6.0.0. Add a shorty, pithy identifier to your frequently used Collections, and then easily call out that particular Collection in a <code>notenik://&#8230;</code> URL by specifying the shortcut, rather than the entire path. Sweet! For example, <code>todo</code> and <code>ideas</code> are a couple of shortcuts to two of my frequently used Collections. </p>
 
-<p>I hope you find this new feature useful. Feel free to share it with your friends and neighbors! And if you have any questions or feedback, on this or any other aspect of Notenik, please drop me a line at <a href="mailto:hbowie@notenik.app">hbowie@notenik.app</a>. I&#8217;d love to hear from you! </p>
+<p>I hope you find this new feature useful. Feel free to share it with your friends and neighbors! And if you have any questions or feedback, on this or any other aspect of Notenik, please drop me a line at <a href="mailto:hbowie@notenik.app" class="wiki-link">hbowie@notenik.app</a>. I&#8217;d love to hear from you! </p>
 				</div>
 
 				<hr />
@@ -113,7 +129,7 @@
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2022 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 		</div>  <!-- end of wrapper div -->

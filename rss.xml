@@ -5,6 +5,60 @@
 	<description>What's New with the Notenik app?</description>
 	<language>en</language>
 	<item>
+	  <title>Notenik 13.4.0 - Outlines, Contact Info, Calendars and Presentations</title>
+	  <link>https://notenik.app/news/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html</link>
+	  <guid>https://notenik.app/news/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html</guid>
+	  <pubDate>Fri, 17 Nov 2023 12:00:00 -0700</pubDate>
+	  <description>
+		  In this post I&apos;ll try to summarize the most significant changes made over the last six months or so, since the release of 12.0.0. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 12.0.0 - EPUBs and Such</title>
+	  <link>https://notenik.app/news/notenik-12.0.0-epubs-and-such.html</link>
+	  <guid>https://notenik.app/news/notenik-12.0.0-epubs-and-such.html</guid>
+	  <pubDate>Thu, 11 May 2023 12:00:00 -0700</pubDate>
+	  <description>
+		  Lots of improvements, but EPUB generation is probably the biggest new feature. And did you know that e-books in the EPUB format can be pretty handy for private use, even if you have no aspirations to become a published author? 
+	  </description>
+	</item>
+	<item>
+	  <title>Calendars and Such</title>
+	  <link>https://notenik.app/news/calendars-and-such.html</link>
+	  <guid>https://notenik.app/news/calendars-and-such.html</guid>
+	  <pubDate>Mon, 30 Jan 2023 12:00:00 -0700</pubDate>
+	  <description>
+		  The 11.4.0 release of Notenik is out, and includes a new Calendar function&hellip; which was the first domino to fall. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik at Fifty</title>
+	  <link>https://notenik.app/news/notenik-at-fifty.html</link>
+	  <guid>https://notenik.app/news/notenik-at-fifty.html</guid>
+	  <pubDate>Mon, 16 Jan 2023 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik has just hit fifty – fifty ratings in the Mac App Store, that is! – so I thought this might be an opportune time to reflect a bit on how the app has evolved over the last several years. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 11.0.0 - Driven by Discourse</title>
+	  <link>https://notenik.app/news/notenik-11.0.0-driven-by-discourse.html</link>
+	  <guid>https://notenik.app/news/notenik-11.0.0-driven-by-discourse.html</guid>
+	  <pubDate>Fri, 09 Dec 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Several of the app&apos;s recent changes have started out as requests or comments in the Notenik Discourse forum. 
+	  </description>
+	</item>
+	<item>
+	  <title>Notenik 10.7.0 - The Beat Goes On</title>
+	  <link>https://notenik.app/news/notenik-10.7.0-the-beat-goes-on.html</link>
+	  <guid>https://notenik.app/news/notenik-10.7.0-the-beat-goes-on.html</guid>
+	  <pubDate>Fri, 04 Nov 2022 12:00:00 -0700</pubDate>
+	  <description>
+		  Here&apos;s a useful summary of recent changes, including Notenik versions 10.4.0 through 10.7.0. 
+	  </description>
+	</item>
+	<item>
 	  <title>Notenik 10.3.0 - More Bells, More Whistles</title>
 	  <link>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</link>
 	  <guid>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</guid>
@@ -38,62 +92,6 @@
 	  <pubDate>Wed, 15 Jun 2022 12:00:00 -0700</pubDate>
 	  <description>
 		  The big announcement this time is about the launch of a new Notenik community at discourse.notenik.app. But there&apos;s also info on an important bug fix and a few nice enhancements. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.3.0 - Cool New Functions</title>
-	  <link>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</link>
-	  <guid>https://notenik.app/news/notenik-9.3.0-cool-new-functions.html</guid>
-	  <pubDate>Tue, 10 May 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Expanded Note Selector to allow selection from other Collections; added an import option for a folder full of text files; modified the defaults for a new Level field to avoid values of zero; added a command to populate an app catalog; improved editing of the Status field. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.2.0 - Easy Commonplace Book with Lookup Fields</title>
-	  <link>https://notenik.app/news/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html</link>
-	  <guid>https://notenik.app/news/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html</guid>
-	  <pubDate>Wed, 20 Apr 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Added a new model Collection &#8211; a Commonplace Book using Lookup fields &#8211; that can be used to initialize a new Collection; added automatic generation of initial backlinks when adding a Backlinks field; straightened out some issues that could affect capture of metadata when importing/pasting a new Note into a Collection; fixed some problems associated with moving/copying a Collection, including initial population of a new Collection.  <br />
-
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.1.0 - Filling Some Holes</title>
-	  <link>https://notenik.app/news/notenik-9.1.0-filling-some-holes.html</link>
-	  <guid>https://notenik.app/news/notenik-9.1.0-filling-some-holes.html</guid>
-	  <pubDate>Fri, 15 Apr 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Added import option for a single text file (or simply drag and drop from the Finder); modified Discard of Edits to use a less common keyboard shortcut (Shift-CMD-D) and to provide a confirmation alert before proceeding; added a new Markdown command to produce a simple Tags Cloud; and added an option to remove all previously assigned tags based on level. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.0.1 - Hooked on Notenik</title>
-	  <link>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</link>
-	  <guid>https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html</guid>
-	  <pubDate>Thu, 31 Mar 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  The last couple of releases focused on better integration with other apps, including new Custom URL commands, new custom AppleScript commands, and the ability to integrate with the Hook app via their official scripts.  <br />
-
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.8.0 - Improvements to Note Editing</title>
-	  <link>https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html</link>
-	  <guid>https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html</guid>
-	  <pubDate>Fri, 18 Mar 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Added a Note Selector window that allows a user, while remaining on Display or Edit of one Note, to look up the title of a second Note, for possible insertion into the text of the first Note; also expanded the width of the Body text editing field, and made inclusion of a &apos;Body:&apos; field label optional, on the Edit tab as well as the Display tab. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 8.7.0 - A Chocolate and Vanilla Swirl</title>
-	  <link>https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</link>
-	  <guid>https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</guid>
-	  <pubDate>Thu, 10 Mar 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik&apos;s Link field; and further refine the appearance of a Web Book. It&apos;s all here in the latest release. 
 	  </description>
 	</item>
   </channel>

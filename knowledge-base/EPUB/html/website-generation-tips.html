@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Website Generation Tips</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.13 <a href="website-building.html" class="nav-link">Website Building</a>&#160;&#8593;</p><h4 id="website-generation-tips">12.13.3 Website Generation Tips</h4>
+<p>If you using Notenik to manage and generate websites or knowledge base sites from your notes, there are several very usefull tips to enhance output and add some functionality to your sites. </p>
+
+<p>First, remember that your sites are static sites. It means that some functionalities aren&#8217;t supported, because site is standalone folder with files in HTML (and some simple Javascript it may contain). But you can for example: </p>
+<ul>
+<li>Add Tags page to your site using <a href="generate-a-tags-cloud.html" class="wiki-link">Generate a Tags Cloud</a>. Browsing content by tags is good alternative to structural browsing and with Notenik it is as simple as create one special note in collection. If you are using nested tags, best alternative is <a href="generate-a-tags-outline.html" class="wiki-link">Generate a Tags Outline</a>. Your users will love it. </li>
+<li>Another way for browsing and grouping website content is making Index browsing using <a href="index.html" class="wiki-link">Index</a> keywords and finally <a href="generate-a-collection-index.html" class="wiki-link">Generate a Collection Index</a>. It is a super useful and cool method to quickly find relevant content in bigger sites. And with Notenik it is easy and automatic by autogenerating index page. Don&#8217;t forget to add your new index page to navigation of website. </li>
+<li>If you want to provide simple searching at your site, it is easy to <a href="generate-a-collection-search-page.html" class="wiki-link">Generate a Collection Search Page</a> and if you add Search page link to navigation, your users can search quickly. </li>
+<li>In many news sites there are special data about reading time for articles. In Notenik this is possible using <a href="minutes-to-read.html" class="wiki-link">Minutes to Read</a>. You must setup it manually, but it can improve UX of your site. </li>
+<li>There are two different ways to highlight and semantically give page title. First is using <a href="title.html" class="wiki-link">Title</a> field in H1 tag at <a href="merge-templates.html" class="wiki-link">Merge Templates</a>, this is recommended method. Alternativelly you can omit this and begin each <a href="note.html" class="wiki-link">Note</a> field with heading Manually. But you can setup and configure displaying alternate title field (for example &#8220;Heading Title&#8221; <a href="string.html" class="wiki-link">String</a> field) and have Title for classic main title and title page and Heading Title to display as H1 in HTML article body area. </li>
+<li>By editing &#8220;Factory/Includes/header.html&#8221; and &#8220;footer.html&#8221; respectivelly, you can include your own content and code (for example own JavaScripts) in each page. </li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="integration.html" class="nav-link">Integration</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

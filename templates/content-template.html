@@ -2,56 +2,84 @@
 <?set prior-page-title = "" ?>
 <?nextrec?>
 <?set folder-out = "" ?>
-<?if "=$type$=" eq "news" ?>
+<?if "=$type&>$=" eq "news" ?>
 <?set folder-out = "news/" ?>
 <?endif?>
-<?if "=$type$=" ne "review" ?>
+<?if "=$type&>$=" eq "usage" ?>
+<?set folder-out = "usage/" ?>
+<?endif?>
+<?if "=$type&>$=" eq "press" ?>
+<?set folder-out = "press/" ?>
+<?endif?>
+<?if "=$type&>$=" ne "review" ?>
 <?output "../=$folder-out$==$title&f$=.html"?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Notenik =$page-title$=</title>
-		<meta name="description" content="The Notenik App for the Mac" />
+		<title>Notenik | =$page-title$=</title>
+		<meta name="description" content="The Notenik Mac App: =$title$=" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <?include "../includes/head-links.html" ?>
 	</head>
 	<body>
 		<div id="wrapper">
+		
+<?include "../includes/quick-links.html"?>
 
 <?include "../includes/header.html" ?>
 
 <?set index-class = another-page ?>
 <?set links-class = another-page ?>
 <?set news-class = another-page ?>
+<?set usage-class = another-page ?>
 <?set docs-class = another-page ?>
 <?set about-class = another-page ?>
 <?set connect-class = another-page ?>
+<?set donate-class = another-page ?>
 <?set license-class = another-page ?>
 <?set privacy-class = another-page ?>
 <?set support-class = another-page ?>
+<?set press-class = another-page ?>
+
+<?if "=$type&>$=" eq "page" ?>
 <?set =$title$=-class = current-page ?>
+<?else?>
+<?set =$type&>$=-class = current-page ?>
+<?endif?>
 
 <?include "../includes/nav-top.html" ?>
 
 <?include "../includes/nav-bottom.html" ?>
 
 			<main id="main">
-<?if "=$type$=" ne "news" ?>
+<?if "=$type&>$=" ne "news" ?>
+<?if "=$type&>$=" ne "usage" ?>
+<?if "=$type&>$=" ne "press" ?>
 <?if "=$title$=" != "index" ?>
 				<h1>=$page-title$=</h1>
 <?endif?>
 <?endif?>
-<?if "=$type$=" eq "news" ?>
+<?endif?>
+<?endif?>
+<?if "=$type&>$=" eq "news" ?>
 				<h3>=$page-title$=</h3>
 				<p class="news-date">Posted on =$date&d MMM, yyyy$=</p>
+<?endif?>
+<?if "=$type&>$=" eq "usage" ?>
+				<h2>=$page-title$=</h2>
+				<p class="news-date">Posted on =$date&d MMM, yyyy$=</p>
+<?endif?>
+<?if "=$type&>$=" eq "press" ?>
+				<h2>Press Release</h2>
+				<h3>=$page-title$=</h3>
 <?endif?>
 
 				<div id="content">
 					=$body&o$=
 				</div>
 
-<?if "=$type$=" eq "news" ?>
+<?if "=$type&>$=" eq "news" ?>
 <?if "=$prior-title$=" ?>
 				<hr />
 
@@ -70,6 +98,9 @@
 <?endif?>
 <?if "=$title$=" eq "news" ?>
 <?include "../includes-gen/news-page.html" ?>
+<?endif?>
+<?if "=$title$=" eq "usage" ?>
+<?include "../includes-gen/usage-page.html" ?>
 <?endif?>
 
 			</main>

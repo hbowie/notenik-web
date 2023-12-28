@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Notenik | Notenik 10.7.0 - The Beat Goes On</title>
+		<meta name="description" content="The Notenik Mac App: Notenik 10.7.0 - The Beat Goes On" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Start of include file head-links.html -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../fonts/equity_cb.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/concourse_t3.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- End of include file head-links.html -->
+	</head>
+	<body>
+		<div id="wrapper">
+		
+		<p class="quick-links">
+			Quick Links: 
+			<a class="quick-link" href="https://discourse.notenik.app">
+				Discourse
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">
+					Knowledge Base
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">
+					Version Notes
+			</a>
+		</p>
+
+			<!-- Start of include file header.html -->
+			<header>
+				<div id="header-left">
+					<div id="header-logo-and-name">
+						<div id="header-logo">
+							<a href="../index.html">
+								<img class="header-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
+							</a>
+						</div>
+						<div id="header-title">
+							Notenik
+						</div>
+					</div>
+					<div id="header-slogan">
+						Do More With Your Notes
+					</div>
+				</div>
+				<div id="header-right">
+				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+				</div>
+			</header>
+			<!-- End of include file header.html -->
+
+
+
+			<!-- Start of include file nav-top.html -->
+			<nav id="nav-top">
+				<a class="another-page" href="../index.html">
+					Home
+				</a>
+				<a class="current-page" href="../news.html">
+					News
+				</a>
+				<a class="another-page" href="../usage.html">
+					Usage
+				</a>
+				<a class="another-page" href="../docs.html">
+					Docs
+				</a>
+			</nav>
+			<!-- End of include file nav-top.html -->
+
+			<!-- Start of include file nav-bottom.html -->
+			<nav id="nav-bottom">
+				<a class="another-page" href="../about.html">
+					About
+				</a>
+				<a class="another-page" href="../license.html">
+					License
+				</a>
+				<a class="another-page" href="../donate.html">
+					Donate
+				</a>
+				<a class="another-page" href="../privacy.html">
+					Privacy
+				</a>
+				<a class="another-page" href="../support.html">
+					Support
+				</a>
+			</nav>
+			<!-- End of include file nav-bottom.html -->
+
+			<main id="main">
+				<h3>Notenik 10.7.0 - The Beat Goes On</h3>
+				<p class="news-date">Posted on 4 Nov, 2022</p>
+
+				<div id="content">
+					<p>Well, a few more Notenik versions have been released since my last blog post on the website, so I thought it might be time for a fresh update. </p>
+
+<p>Let me sort the recent changes (from 10.4.0 through 10.7.0) into groups by Notenik function. </p>
+
+<h4 id="interoperability">Interoperability</h4>
+
+<p>As other applications have come along with their own ways of doing things, I&#8217;ve tried, wherever it makes sense, to support variations in the formatting of Note files that will make Notenik more compatible with Notes being created and manipulated by other pieces of software. </p>
+<ul>
+<li><p>Added a new Collection Pref to allow the user to explicitly select a <strong>Preferred File Format</strong> for a Collection. As an alternative to the Notenik format, the user can select YAML Frontmatter, MultiMarkdown, simple Markdown or plain text. Changing the format will convert any existing Notes to the newly selected format. </p></li>
+<li><p>Added another Collection Pref to allow the user to request that their <strong>Tags values always be saved with preceding Hash Marks</strong>, to support apps that look for that form of identification. </p></li>
+<li><p>When <strong>attaching files</strong> to a Note, Notenik now offers the option to move the existing file (thus preserving its identity) rather than copying it. This helps when using apps such as Hookmark to keep track of your files. </p></li>
+</ul>
+
+<h4 id="markdown-extensions">Markdown Extensions</h4>
+
+<p>These enhancements to the Notenik Markdown parser make Markdown within Notenik even more powerful and, in some cases, more compatible with other Markdown implementations. </p>
+<ul>
+<li><p>When you use the Markdown command to <strong>Generate a Collection Index</strong>, Notenik will now provide a one-line table of contents at the top of the page, with the line containing the starting letters of all the index terms appearing below, allowing the reader to click on a letter to be taken to that section of the generated Index. </p></li>
+<li><p>Added a new Markdown command to Generate a <strong>Collection Search Page</strong>, using embedded JavaScript as well as HTML. </p></li>
+<li><p>A vertical bar (‘|’) may now be used within a <strong>Wiki Style Link</strong> to introduce the text that is to appear as the link, if different from the title of the target Note. </p></li>
+<li><p>Added support for an <strong>alternate syntax for Note/file inclusion</strong>, so that something like the following: </p>
+
+<pre><code>
+![[embedded note]]
+</code></pre>
+
+<p>&#8230; may be used, as an alternate to: </p>
+
+<pre><code>
+{{include:embedded note}}
+</code></pre>
+</li>
+</ul>
+
+<h4 id="field-labels-and-types">Field Labels and Types</h4>
+
+<p>Notenik field types are one of its most powerful features, and a new arrow has been added to the quiver with this release. </p>
+<ul>
+<li>Added <strong>Rank</strong> as a new field type, allowing the user to select from a defined list, with each item containing both a number and a label. The number will be used for sorting, with the label providing meaning. Also added a new Merge Template Variable Modifier that will <strong>Take Text from the Right</strong>, allowing the label to be displayed without its corresponding number.  </li>
+</ul>
+
+<h4 id="website-generation">Website Generation</h4>
+
+<p>Not everyone uses Notenik as a static website generator, but I use it for this purpose all the time, and have recently extended Notenik&#8217;s capabilities in this area with the following enhancements. </p>
+<ul>
+<li><p>Added a new Merge Template Variable Modifier to <strong>Prep for JSON</strong>, preparing a variable to be stored using JSON. This can be useful if you are using a Merge Template to generate a Javascript file. </p></li>
+<li><p>When using the Merge Template Variable Modifier to <strong>Summarize</strong> the contents of a field (for use in a teaser, etc.), the logic has been improved so that it will try to avoid ending the summary with a period that follows a leading number on a line. </p></li>
+<li><p>Added several new <strong>Derived Variables</strong>, for use with Merge Templates, that are especially useful for HTML formatting of information about quotations and citations. These include <code>Author Work Slug</code>, <code>The Work Type Slug</code>, <code>Major Work</code>, <code>Work Rights Slug</code> and <code>Known Work Title</code>. Also added <code>Image Slug</code> to make it easer to format image fields into HTML. </p></li>
+<li><p>When <strong>generating an Index for a Collection</strong>, the population of the <code>Page Type</code> field has been expanded to include the Note&#8217;s class field, or the Collection&#8217;s enclosing folder name, if no <code>Type</code> field is present. </p></li>
+</ul>
+
+<h4 id="annoyance-eilimination">Annoyance Eilimination</h4>
+
+<p>A few little annoyances were sorted out. </p>
+<ul>
+<li><p>A new user pointed out that the keyboard shortcut of <strong>CMD right arrow</strong> will normally move the cursor to the end of the current line within a text box. Notenik was using this key combination as a shortcut to one of its own commands, which was blocking the normal usage. This has been fixed. </p></li>
+<li><p>I noticed that <strong>Note titles ending with a question mark</strong> were not generating reliable HTML for accessing attached Image files. This seems to be something that started with macOS Ventura (13.0). I&#8217;ve added additional code to make sure that question marks are appropriately encoded when included as part of a URL. </p></li>
+<li><p>Wiki Links will now look for singular variations, as well as plural, so if you create a wiki link like this &#8211; <code>[[Notes]]</code> &#8211; it will reliably link to another Note that is simply titled <code>Note</code> (without the &#8216;s&#8217;). </p></li>
+<li><p>Attempts to open <strong>duplicate parent realm windows</strong> will now result in only one window being opened, rather than allowing several windows all pointing to the same folder. </p></li>
+<li><p>Added a command beneath the File Menu to <strong>Forget All Shortcuts</strong>. This can be useful in order to reset your list of remembered Collection shortcuts, in cases where they are no longer behaving in a helpful manner. </p></li>
+</ul>
+
+<h4 id="bottom-line">Bottom Line</h4>
+
+<p>Hopefully there&#8217;s a little something for everyone in these last few releases. I&#8217;m continuing to release a new batch of enhancements about every couple of weeks, so if there&#8217;s something still missing that you&#8217;d like to see, don&#8217;t hesitate to <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">post something on the Discourse forum</a>! </p>
+				</div>
+
+				<hr />
+
+				<p>Earlier News:
+					<a href="notenik-10.3.0-more-bells-more-whistles.html">
+						Notenik 10.3.0 - More Bells, More Whistles
+					</a>
+				</p>
+
+			</main>
+
+			<!-- Start of include file footer.html -->
+			<footer id="footer">
+        <hr />
+Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+      </footer>
+			<!-- End of include file footer.html -->
+		</div>  <!-- end of wrapper div -->
+	</body>
+</html>

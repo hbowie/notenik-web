@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Version 10.5.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>19. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version-10.5.0">19.33 Version 10.5.0</h3>
+<p>Date: 09 Oct 2022 - Sunday</p><h5 id="wiki-links-will-look-for-singular-variation">Wiki Links Will Look for Singular Variation</h5>
+
+<p><a href="wiki-style-links.html" class="wiki-link">Wiki Style Links</a> will now look for a singular version of the link text, if the text ends with the letter &#8216;s&#8217;. </p>
+
+<h5 id="slight-variations-in-aka-values-suppressed">Slight Variations in AKA Values Suppressed </h5>
+
+<p>Notenik will sometimes show AKA values in a list of contents, if there is room. Notenik will now try to suppress AKA values that only represent slight variations in the Note&#8217;s title. </p>
+
+<h5 id="duplicate-parent-realm-windows-no-longer-opened">Duplicate Parent Realm Windows No Longer Opened</h5>
+
+<p>In general, if a user tries to open a Collection that is already open, Notenik will simply take the user to the existing window, rather than opening another copy of the Collection. This was not being done for <a href="open-parent-realm.html" class="wiki-link">Parent Realm</a> Collections, though. Now, when a user tries to open a duplicate Parent Realm window, Notenik will close the currently open window, and then reload the Parent Realm into a new window, in the same location. </p>
+
+<h5 id="added-prep-for-json-variable-modifier">Added Prep for JSON Variable Modifier</h5>
+
+<p>Added a new <a href="merge-templates.html" class="wiki-link">Merge Template</a> <a href="variable-modifiers.html" class="wiki-link">Variable Modifier</a> to <a href="prep-for-json.html" class="wiki-link">Prep for JSON</a>, preparing a variable to be stored using JSON. </p>
+
+<h5 id="added-several-new-derived-variables">Added Several New Derived Variables</h5>
+
+<p>Added several new <a href="derived-variables.html" class="wiki-link">Derived Variables</a>, including <a href="author-work-slug.html" class="wiki-link">Author Work Slug</a>, <a href="the-work-type-slug.html" class="wiki-link">The Work Type Slug</a>, <a href="major-work.html" class="wiki-link">Major Work</a>, <a href="work-rights-slug.html" class="wiki-link">Work Rights Slug</a> and <a href="known-work-title.html" class="wiki-link">Known Work Title</a>. These can be used to nicely format the sources for quotations. </p>
+
+<h5 id="added-a-command-to-forget-all-shortcuts">Added a Command to Forget All Shortcuts</h5>
+
+<p>Added a command beneath the File menu to <a href="forget-all-shortcuts.html" class="wiki-link">Forget All Shortcuts</a>. </p>
+
+<h5 id="expanded-page-type-field-for-index-generation">Expanded Page Type Field for Index Generation</h5>
+
+<p>When specifying the <a href="input-module-parameters.html" class="wiki-link">Input Module Parameters</a> for a <a href="script-files.html" class="wiki-link">Script File</a>, and specifying a modifier value of <code>notenik-index</code>, the population of the <code>Page Type</code> field has been expanded to optionally include a <a href="class.html" class="wiki-link">Class</a> field value, if no <a href="type.html" class="wiki-link">Type</a> field is present, and to include the folder name of the Collection, if neither Type nor Class is available. </p>
+
+<h5 id="further-improvements-to-summarize-variable-modifier">Further Improvements to Summarize Variable Modifier</h5>
+
+<p>When looking for a period that ends a sentence, the <a href="summarize-s.html" class="wiki-link">Summarize Mod</a> will now try to ignore a period found after a leading number on a line. </p>
+
+<h5 id="other-small-improvements">Other Small Improvements</h5>
+
+<p>Also made a few other small improvements, including a fix to the Collection Settings screen to retain the option to Create Notes for Missing Wiki Link Targets. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-10.4.0.html" class="nav-link">Version 10.4.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

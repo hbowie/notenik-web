@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Version 11.8.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>19. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version-11.8.0">19.19 Version 11.8.0</h3>
+<p>Date: 19 Apr 2023 - Wednesday</p><h5 id="improved-author-work-slug">Improved Author Work Slug</h5>
+
+<p>Improved the <a href="author-work-slug.html" class="wiki-link">Author Work Slug</a> code to make it more flexible and general-purpose. Fixed a bug in the way that an author line containing multiple authors was being handled. </p>
+
+<h5 id="improved-footnotes-and-citations">Improved Footnotes and Citations</h5>
+
+<p>When a Collection contains a <a href="short-id.html" class="wiki-link">Short ID</a> field, Notenik will now embed each Note&#8217;s short id into the HTML id fields generated for <a href="footnotes.html" class="wiki-link">Footnotes</a> and <a href="citations.html" class="wiki-link">Citations</a>, so that these IDs will continue to have unique values, even when combining the HTML for multiple Notes into a single Web page. </p>
+
+<h5 id="added-option-to-supply-header-nav-and-footer-elements">Added Option to Supply Header, Nav and Footer Elements</h5>
+
+<p>New Markdown commands were added that allow the user to specify elements that will be displayed on every page/note of a Collection: <a href="supply-a-page-header.html" class="wiki-link">Supply a Page Header</a>, <a href="supply-page-navigation.html" class="wiki-link">Supply Page Navigation</a> and <a href="supply-a-page-footer.html" class="wiki-link">Supply a Page Footer</a>. These are now put to use within the Notenik Knowledge Base. </p>
+
+<h5 id="added-title-page-as-a-class-value">Added title-page as a Class Value</h5>
+
+<p>Added <code>title-page</code> as one of the <a href="special-class-values.html" class="wiki-link">Special Class Values</a> recognized by Notenik. A Note marked with this class value will not have a page header or a page nav section applied to it. </p>
+
+<h5 id="knowledge-base-index-greatly-improved">Knowledge Base Index Greatly Improved</h5>
+
+<p>Every page of the Notenik Knowledge Base now features links to the Table of Contents and to the Index on the top right of each page, making it much easier to navigate back and forth between details and these two navigational pages. The <a href="index-to-the-knowledge-base.html" class="wiki-link">Index to the Knowledge Base</a>, in particular, has been significantly improved with this release, and should now be much more useful. </p>
+
+<h5 id="epub-metadata">EPUB Metadata</h5>
+
+<p>A new Markdown command to <a href="supply-epub-metadata.html" class="wiki-link">Supply EPUB Metadata</a> has been added, to aid in the creation of an EPUB file. </p>
+
+<h5 id="epub-creation-improved">EPUB Creation Improved </h5>
+
+<p>I&#8217;m sure there is still room for additional refinement here, but Notenik can now create a working e-book in the <a href="https://www.w3.org/TR/epub-overview-33/" class="ext-link" target="_blank" rel="noopener">EPUB 3</a> format via the <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a> function. </p>
+
+<h5 id="added-ability-to-format-current-date-and-time">Added Ability to Format Current Date and Time</h5>
+
+<p>When using the <code>today</code> <a href="system-variables.html" class="wiki-link">System Variable</a>, Notenik will now honor time formatting parameters, resulting in the current date and time, rather than just the date. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-11.7.0.html" class="nav-link">Version 11.7.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

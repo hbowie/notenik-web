@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Inline Editing of Long Text Fields</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>6.1 <a href="general-settings.html" class="nav-link">General Settings</a>&#160;&#8593;</p><h4 id="inline-editing-of-long-text-fields">6.1.1 Inline Editing of Long Text Fields</h4>
+<p>This setting defaults to on. This setting only affects the presentation of fields on the Edit tab; it has no affect on the appearance of any fields on the Display tab. </p>
+
+<p>This setting affects the editing of all &#8220;long text&#8221; (i.e., multi-line) <a href="field-labels-and-types.html" class="wiki-link">field types</a>, other than the <a href="body.html" class="wiki-link">Body</a> field itself, including the following: </p>
+<ul>
+<li><a href="attribution.html" class="wiki-link">Attribution</a> </li>
+<li><a href="code.html" class="wiki-link">Code</a> </li>
+<li><a href="index.html" class="wiki-link">Index</a> </li>
+<li><a href="link.html" class="wiki-link">Link</a> </li>
+<li><a href="longtext.html" class="wiki-link">longtext</a> </li>
+<li><a href="teaser.html" class="wiki-link">Teaser</a> </li>
+</ul>
+
+<p>When this option is set on, each field of this type will appear as a scrolling text view on the Edit tab, looking much like the editing presentation of the <a href="body.html" class="wiki-link">Body</a> field itself. </p>
+
+<p>When this option is set off, then each field of this type will appear on the Edit tab as a simple, single-line text field, followed by an Edit button. Clicking on the Edit button will open a scrolling text view for that field in a separate window. Click Cancel to cancel the edits without saving changes, or click OK to save the input you entered within this separate window. </p>
+
+<p>Why offer two ways to edit such fields? Well, there are pros and cons to each. </p>
+
+<p>Inline editing of long text fields is simpler and neater, and allows all of the input text to be viewed at once on the Edit tab, or to be accessed via scrolling the contents of that field. And traditionally, prior to <a href="version-11.3.0.html" class="wiki-link">Version 11.3.0</a>, this was the only way to edit such fields within Notenik. </p>
+
+<p>But this option also has several disadvantages: </p>
+<ul>
+<li><p>Recent changes from Apple seem to indicate that they would really prefer to have only one such field (an NSTextView field, to be technical) within a single window. In particular, when moving from one such field to another, the cursor tends to initially disappear. This is annoying and confusing for the user. I have no clear indication whether this is a temporary bug that will be fixed eventually, or simply something new that we all have to adapt to. </p></li>
+<li><p>The overall Edit tab can end up being very long, and the size of the Body field can be reduced, if a Collection has a number of such fields, possibly in combination with other field types. </p></li>
+<li><p>Since most such fields (with the exception of Link fields) allow tabs to be entered within the field, it is not possible to tab from one field to another. </p></li>
+</ul>
+
+<p>Hence the availability of the second option, which initially presents each long text field on a single line, while still allowing a scrolling, multi-line editing option when desired. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="favorites-settings.html" class="nav-link">Favorites Settings</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -17,20 +17,32 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="word-demarcation-c">11.3.9 Word Demarcation - C</h4>
-<p><em>aka: Word Demarcation</em></p><p>The letter &#8220;C&#8221; indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another. </p>
+</nav>
+
+<main>
+<p>14.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="word-demarcation-c">14.3.10 Word Demarcation - C</h4>
+<p>The letter &#8220;C&#8221; indicates that the variable consists of a series of words, and you wish to change or standardize the way in which the words are distinguished from one another. </p>
 
 <p>When parsing the variable, the beginning of a new word will be indicated by either whitespace or punctuation between words, or by a transition from lowercase to uppercase (as in CamelCase usage). In other words, &#8220;two words&#8221;, &#8220;TWO_WORDS&#8221; or &#8220;twoWords&#8221; would all be parsed into two separate words. </p>
 
 <p>What you want done with the word demarcation is defined by the characters following the &#8220;C&#8221; in the modifiers string. The letter &#8220;u&#8221; indicates a conversion to uppercase, the letter &#8220;l&#8221; indicates a conversion to lowercase, and the letter &#8220;a&#8221; indicates that the character should be left as-is. Anything other than these three characters (including a space) will be interpreted as a separator to be placed between the words. </p>
 
 <p>Note that the u/l/a indicator can be specified three different times. </p>
-
 <ol>
 <li>The first appearance will control the case of the first letter in the entire variable; </li>
 <li>The second appearance will control the case of the first letter of each word; </li>
@@ -40,7 +52,7 @@ window.MathJax = {
 <p>For example, if the template file contained the following: </p>
 
 <pre><code>
-=$name&amp;cuul$=
+=$name&amp;cuul $=
 </code></pre>
 
 <p>And the name variable was equal to: </p>
@@ -55,7 +67,31 @@ HERB BOWIE
 Herb Bowie
 </code></pre>
 
+<p>As another example, if the template contained the following: </p>
+
+<pre><code>
+=$name&amp;cuul&amp;nbsp;$=
+</code></pre>
+
+<p>Then the resulting name in the output text file would be: </p>
+
+<pre><code>
+Herb&amp;nbsp;Bowie
+</code></pre>
+
+<p>No other variable modifiers may follow this one. </p>
 
 <hr />
-<p>Next: <a href="day-of-month-dd.html">Day of Month - dd</a></p></body>
+<div>
+
+<p>Next: <a href="day-of-month-dd.html" class="nav-link">Day of Month - dd</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

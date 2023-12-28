@@ -4,12 +4,417 @@
   <subtitle>The latest news about the Notenik app</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2022-09-10T09:00:00Z</updated>
-  <rights>Copyright © 2022, Herb Bowie</rights>
+  <updated>2023-12-28T09:00:00Z</updated>
+  <rights>Copyright © 2023, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Notenik 13.4.0 - Outlines, Contact Info, Calendars and Presentations</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html</id>
+	  <published>2023-11-17T09:00:00Z</published>
+	  <updated>2023-11-17T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  In this post I&apos;ll try to summarize the most significant changes made over the last six months or so, since the release of 12.0.0. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>In this post I&apos;ll try to summarize the most significant changes made over the last six months or so, since the release of <a href="https://notenik.app/news/notenik-12.0.0-epubs-and-such.html" class="ext-link" target="_blank" rel="noopener">12.0.0</a>. </p>
+
+<p>As usual, there were lots of fixes and small improvements. You can always follow the Announcements category in the <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik Discourse forum</a> to see all the details of each release. I&apos;ll just hit the highlights here. </p>
+
+<h3 id="new-field-types">New Field Types</h3>
+
+<p>Much of Notenik&apos;s flexibility comes from its various field types, each of which carries with it some special functionality. The following new field types were added: </p>
+<ul>
+<li>Address &#8211; To contain a physical address that can be used by Apple Maps </li>
+<li>Directions &#8211; To show a clickable link to launch the Apple Maps directions from one address to another </li>
+<li>Email &#8211; To hold an email address, and generate a clickable link to start an email message to that address </li>
+<li>Person &#8211; To hold an individual&apos;s name, separated into its various possible components </li>
+<li>Phone &#8211; To contain a telephone number </li>
+</ul>
+
+<h3 id="last-name-first-sorting">Last Name First Sorting</h3>
+
+<p>When using a Title field or an Author field, or simply using a Title field to contain a person&apos;s name, Notenik now offers a Collection Sort option to sort by last names, rather than by first names. </p>
+
+<h3 id="improved-vcard-import">Improved vCard Import</h3>
+
+<p>With all of the new field types added above, it seemed <a href="https://notenik.app/knowledge-base/EPUB/html/import-and-export-your-notes.html" class="ext-link" target="_blank" rel="noopener">a good time</a> to improve the vCard import functionality to take advantage of these. </p>
+
+<h3 id="outlining">Outlining</h3>
+
+<p>Outlines are darned useful things, and Notenik provides lots of different ways to use them. </p>
+
+<p><a href="https://notenik.app/knowledge-base/EPUB/html/version-12.1.0.html" class="ext-link" target="_blank" rel="noopener">Version 12.1.0</a> added a couple of new Markdown extensions that allow outlines to be generated within the body of a Note, based either on the headings, or on an unordered list. In both cases, the result is a nice outline with disclosure triangles and indentation. And this is all done with HTML, so you can easily use the results in a web page. </p>
+
+<p><a href="https://notenik.app/knowledge-base/EPUB/html/version-12.9.0.html" class="ext-link" target="_blank" rel="noopener">Version 12.9.0</a>, on the other hand, provided the ability to generate an HTML outline based on all of the Notes within a Collection, using the Seq and Level fields to determine the structure of the outline. </p>
+
+<h3 id="calendars">Calendars</h3>
+
+<p><a href="https://notenik.app/knowledge-base/EPUB/html/version-12.4.0.html" class="ext-link" target="_blank" rel="noopener">Version 12.4.0</a> added the ability to generate a calendar within a Notenik page, using the dates and titles of other notes within the collection. And the first day of the week within the calendar will now respect the user&apos;s global macOS preferences. </p>
+
+<h3 id="improved-task-lists">Improved Task Lists</h3>
+
+<p><a href="https://notenik.app/knowledge-base/EPUB/html/version-13.0.0.html" class="ext-link" target="_blank" rel="noopener">Version 13.0.0</a> added the ability to check and uncheck task list items on the Display tab, without having to edit the Note. </p>
+
+<h3 id="improved-long-text-editing">Improved Long Text Editing</h3>
+
+<p>Notenik allows the use of Markdown in fields other than the body of a Note &#8211; in a separate teaser field, for example. The editing of such fields has now been improved to allow &#8211; via an application setting &#8211;  such fields to appear as a single line on the Edit tab, but with an option to open a secondary window that can be sized for editing larger chunks of text. </p>
+
+<h3 id="rapid-addition-of-multiple-notes">Rapid Addition of Multiple Notes</h3>
+
+<p>What if you want to rapidly add a bunch of Notes, specifying only a title for each? </p>
+
+<p>You can now use the Again button in the New Note with Options window to specify a title, add a new Note, and then immediately return to the same window to add another. </p>
+
+<h3 id="improved-collection-navigation">Improved Collection Navigation</h3>
+
+<p>Notenik now has multiple menu options, with associated shortcuts, to move back and forth in a Collection based on the Collection&apos;s sequence, and also to move back and forth in a Collection&apos;s navigation history. </p>
+
+<p>For longer structured Collections, <a href="https://notenik.app/knowledge-base/EPUB/html/version-13.1.0.html" class="ext-link" target="_blank" rel="noopener">Version 13.1.0</a> added a Skip navigation link to skip lower-level detail and proceed forward to the next Note at the same level as the current Note. </p>
+
+<h3 id="added-a-presentation-mode">Added a Presentation Mode</h3>
+
+<p>In addition to the Streamlined Reading mode, <a href="https://notenik.app/knowledge-base/EPUB/html/version-13.1.0.html" class="ext-link" target="_blank" rel="noopener">Version 13.1.0</a> added a Presentation mode. This improves the ability to use Notenik to make a presentation to an audience. </p>
+
+<h3 id="and-thataposs-it">And That&apos;s It!</h3>
+
+<p>As you can see, that&apos;s a lot of new stuff added and improved over the last six months! Is there further room for improvement? Well, we&apos;ll have to wait and see what the next six months might hold! But I wouldn&apos;t yet say that the Notenik journey is over&hellip;. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 12.0.0 - EPUBs and Such</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-12.0.0-epubs-and-such.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-12.0.0-epubs-and-such.html</id>
+	  <published>2023-05-11T09:00:00Z</published>
+	  <updated>2023-05-11T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Lots of improvements, but EPUB generation is probably the biggest new feature. And did you know that e-books in the EPUB format can be pretty handy for private use, even if you have no aspirations to become a published author? 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>There have been six Notenik releases since my last News post, so let me summarize some of the recent improvements. </p>
+
+<p>First, I must confess, there have been bugs &#8211; and they have been fixed. </p>
+
+<p>Next, there have been numerous small refinements. For example, when you drag and drop a Note from one Collection to another, any attachments are now copied as well, along with the contents of the Note. These are little things, but collectively they make Notenik easier and more enjoyable to use. </p>
+
+<p>Probably the biggest single new feature is the ability go export an entire Collection as an e-book in the EPUB format. A file created like this can then be opened by Apple Books, as well as other e-book readers. You might think that e-books are only for authors who want to distribute their products to the general public, but it turns out that such a format can also be pretty handy for private use as well, since it allows the contents of a Notenik Collection to be easily shared with, and read by, others, on devices other than Macs. </p>
+
+<p>Support for tables has been improved. There is now a new Markdown extension that uses embedded Javascript to make a table sortable, by clicking on the table&apos;s column headings. </p>
+
+<p>Support for plain text in the body field has been added, so that formats other than Markdown (such as that used by the Bike Outliner app) can be stored in Notenik. </p>
+
+<p>The appearance of headings can now be tailored to adjust centering options, font family and font size. </p>
+
+<p>And then there have been enhancements that allow you to specify a header, footer and nav bar to appear in the Display of every Note in a Collection. </p>
+
+<p>Finally, the <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html" class="ext-link" target="_blank" rel="noopener">Notenik Knowledge Base</a> has seen many improvements to make it easier to use. </p>
+
+<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html" class="ext-link" target="_blank" rel="noopener">Notenik Version History</a> for all the details. </p>
+
+<p>And see the <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik Discourse Forum</a> if you have comments or suggestions for further improvements. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Calendars and Such</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/calendars-and-such.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/calendars-and-such.html</id>
+	  <published>2023-01-30T09:00:00Z</published>
+	  <updated>2023-01-30T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  The 11.4.0 release of Notenik is out, and includes a new Calendar function&hellip; which was the first domino to fall. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>The 11.4.0 release of Notenik &#8211; hitting the App Store shelves on January 30, 2023 &#8211; has a bit of a story behind it. </p>
+
+<p>It started when my niece and her husband decided to move to Germany for a few years. </p>
+
+<p>My wife thought it would be a good idea to travel to Europe around the same time, to help our relatives get unpacked and situated in their new housing &#8211; and for us to see some sights, as long as we&apos;re there! </p>
+
+<p>So as I started making reservations for transport and lodging, I thought it might be helpful to create a new Notenik Collection that we could use to keep track of all the details. </p>
+
+<p>Of course the new Collection had a Date field, so that I could keep it sorted and organized by date. </p>
+
+<p>I was using the <strong>Date + Seq</strong> sort to keep everything in order and then I realized, as I began getting multiple Notes stacked up on the same date, that it would be useful to put a time of day in the Seq field, to keep them in a meaningful order. </p>
+
+<p>So that took a bit of code jiggering, so that Notenik would recognize that <code>1:00 pm</code>, <code>01:00 PM</code> and <code>13:00</code> all meant the same thing, and would all sort after 12:59 but before 01:01 pm. </p>
+
+<p>So that was the first bit. </p>
+
+<p>Then I thought it might be nice to see everything laid out in a traditional monthly calendar format, with successive weeks in one row after another, and with seven columns representing the days of the week. </p>
+
+<p>So I created a new <strong>Dates to Calendar</strong> function that would arrange the user&apos;s chosen range of months into that sort of grid arrangement. </p>
+
+<p>But then I thought that I could take the HTML used to create the calendar and show it to the user in the same window used for the Query Builder output. </p>
+
+<p>But then&hellip; I thought&hellip; what if my wife wanted to print the whole thing out? </p>
+
+<p>So I added a little pull-down button (actually a menu) to the bottom right corner of the output window, giving the user three choices: save the web page to disk, show it in your web browser, or save it to disk and then show it in your browser. (And, of course, once you&apos;re viewing it in your web browser, it&apos;s a piece of cake to print it from there.) </p>
+
+<p>But then, of course, that same new control became available for Query Builder output as well. </p>
+
+<p>But then I started thinking about the existing <strong>Favorites to HTML</strong> function. Why not send that output to the same window, with the same control for saving to disk, etc? </p>
+
+<p>And so that change was made. </p>
+
+<p>But now I had three different functions that all selected and formatted some of the Notes in a Collection and displayed them in HTML, all with the same output options, and it occurred to me that it was confusing to have these three functions appearing under different menus, in different locations. </p>
+
+<p>So I created a new <strong>Query</strong> menu, and put them all under that. </p>
+
+<p>But then I realized that the sequence of the menus might be more intuitive if the complex output functions were grouped farther to the right, so I moved the existing <strong>Transform</strong> menu over to the right of the <strong>View</strong> menu, just before the new <strong>Query</strong> menu. </p>
+
+<p>And then I started looking at how to document all of this in the Knowledge Base, and I thought the &quot;Getting Data Into and Out of Notenik&quot; section was growing a bit overlarge, so I broke out a few items into a new section called &quot;Integration.&quot; </p>
+
+<p>But then that got me thinking&hellip; </p>
+
+<p>So why were the &quot;Markdown&quot; and &quot;Field Labels and Types&quot; sections so far down in the reading order, following stuff like the aforementioned &quot;Getting Data Into and Out of Notenik&quot;? </p>
+
+<p>I had no idea. </p>
+
+<p>So I moved them closer to the top, after &quot;Common Tasks.&quot; </p>
+
+<p>And then, I thought&hellip; Jeez, that&apos;s probably enough for one release. Let&apos;s get it out there for new and prospective users to play with, and see what all of you think. </p>
+
+<p>So that&apos;s the story behind 11.4.0. </p>
+
+<p>And a little bit of insight into how my mind works, and how Notenik keeps growing and improving a few bits at a time, in a somewhat organic fashion. </p>
+
+<p>As always, let me know if you have complaints, concerns, questions, or suggestions for improvement. </p>
+
+<p>And the easiest way to communicate those is through the <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Discourse forum</a>. </p>
+
+<p>Happy note-taking! </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik at Fifty</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-at-fifty.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-at-fifty.html</id>
+	  <published>2023-01-16T09:00:00Z</published>
+	  <updated>2023-01-16T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Notenik has just hit fifty – fifty ratings in the Mac App Store, that is! – so I thought this might be an opportune time to reflect a bit on how the app has evolved over the last several years. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Notenik has just hit fifty &#8211; fifty ratings in the <a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12" class="ext-link" target="_blank" rel="noopener">Mac App Store</a>, that is! &#8211; so I thought this might be an opportune time to reflect a bit on how the app has evolved over the last several years. </p>
+
+<p>First, I&apos;m happy to report that the average rating is 4.9 out of 5 (and that&apos;s without ever asking Apple to reset the app&apos;s score, which is an option offered each time I submit a new version for review). Very cool, I think, and no small source of pride.   </p>
+
+<p>The first release of the current Swift version happened in July of 2019, and we can track the app&apos;s growth through some of its reviews.  </p>
+
+<p><em>Three</em> years ago, my first review said: </p>
+
+<p>&gt; There is nothing too special about this program other than you can use the available code to learn how to program using Swift. </p>
+
+<p>So true! <a href="https://en.wikipedia.org/wiki/Minimum_viable_product" class="ext-link" target="_blank" rel="noopener">Minimum Viable Product</a> goal accomplished! </p>
+
+<p>Then if we fast forward to <em>two</em> years ago, a reviewer said: </p>
+
+<p>&gt; I found this app to be very useful. Not only that, the developer is very hands on and responsive. I can highly recommend. </p>
+
+<p>By this point I had started to get some feedback about the app from users, and had implemented many improvements based on those comments, usually within a few weeks of their receipt. </p>
+
+<p>And then we can find a review from <em>one</em> year ago: </p>
+
+<p>&gt; Great native app. A clean, uncluttered look that is highly useful. The options for your lists and collections are just right &#8211; you get enough options for customization without being too overwhelmed with tons of features. </p>
+
+<p>By this time the app had grown quite a bit, with lots of new features, but the initial, basic interface remained nearly unchanged, with all of the controls being very familiar to anyone who has used a Mac for any length of time. </p>
+
+<p>And then, just <em>six months</em> ago: </p>
+
+<p>&gt; I can&apos;t say enough good things about Notenik. It&apos;s a no-frills, yet all the frills note-taking, personal knowledge management/information organization tool. It&apos;s always being updated and improved and seems to be created and cared for by a great developer. </p>
+
+<p>Wow! Thanks to <code>lorz617</code> for that! I couldn&apos;t conjure up nicer words in my wildest dreams! </p>
+
+<p>And now, we&apos;re starting 2023 with a <a href="https://pocketmags.com/us/macformat-magazine/january-2023/articles/1247651/notenik-10" class="ext-link" target="_blank" rel="noopener">full-page review by Kenny Hemphill</a> in both MacFormat and Mac|Life magazines, rating Notenik as <strong>GREAT</strong>, with a score of 4 out of 5. </p>
+
+<p>I couldn&apos;t be happier. </p>
+
+<p>Back at the start of this journey, in November of 2019, I wrote a piece titled &quot;<a href="https://hbowie.medium.com/notenik-a-contrarian-mix-of-old-and-new-5cd844d362fa" class="ext-link" target="_blank" rel="noopener">Notenik: A Contrarian Mix of Old and New</a>,&quot; that ended with this bottom line: </p>
+
+<p>&gt; I tend to view programming, as well as other forms of writing, as a means of finding out what I really want to say. Notenik is certainly not a perfect app, but it’s a pretty good expression of my intentions to create a Mac app that in many respects is fully modern, but that also carries forward many of the empowering aspects of personal computing that I’ve come to appreciate over the years. &gt; &gt; It certainly won’t be for everyone, but I’m hoping that at least a few other people will find it useful. </p>
+
+<p>From my perspective, I can say that the contrarian path I charted back then has worked out much as I had hoped, and I&apos;m also happy to see that my second intention has come to fruition, with a few others finding it useful as well. </p>
+
+<p>Thanks to everyone who has used the app, <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">submitted feedback</a>, rated the app and/or reviewed it. </p>
+
+<p>The <a href="https://notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik</a> journey is not done yet, but I have to say I&apos;m pretty happy with the state of our progress so far. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 11.0.0 - Driven by Discourse</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-11.0.0-driven-by-discourse.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-11.0.0-driven-by-discourse.html</id>
+	  <published>2022-12-09T09:00:00Z</published>
+	  <updated>2022-12-09T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Several of the app&apos;s recent changes have started out as requests or comments in the Notenik Discourse forum. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>It&apos;s been a few weeks since my last post, so let me share some of what&apos;s been going on in the world of Notenik. </p>
+
+<p>The <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Discourse Community</a> has been growing, and generating more good discussion of late. Three of the five latest app changes grew out of comments and requests on the forum, and I&apos;m happy to be receiving such good input that helps me to continue to grow the app in healthy ways. </p>
+
+<p>Partly because of the growth of this community, I&apos;ve added a <em>Quick Links</em> banner at the top of the <a href="https://notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik.app</a> site, with links to the Discourse forum, as well as the online Knowledge Base, and the Version Notes. The idea is to make navigation to these important resources more accessible &#8211; especially for more experienced users who may no longer be interested in much of the site content that is more introductory in nature. </p>
+
+<p>So looking back over the last few releases, let me try to categorize what&apos;s been going on. </p>
+
+<h4 id="terminology-change">Terminology Change</h4>
+
+<p>In line with the macOS Ventura changes, things that were previously called &apos;Preferences&apos; are now referred to as &apos;Settings&apos;. </p>
+
+<h4 id="improved-documentation">Improved Documentation</h4>
+
+<p>A couple of improvements here: </p>
+<ul>
+<li><p>Improved Knowledge Base documentation for the available starting Collection types, when creating a new Collection. </p></li>
+<li><p>Created a <strong>Notenik Master Class</strong> focused primarily on using Notenik to generate websites. This is a new item beneath the <strong>Help</strong> menu. </p></li>
+</ul>
+
+<h4 id="easier-html-generation">Easier HTML Generation</h4>
+
+<p>A few improvements have been made that are available when using Merge templates to generate HTML. </p>
+<ul>
+<li><p>Back Link fields (as well as Forward Links) can now be used to generate HTML that makes these appear much the same way they do within the app. </p></li>
+<li><p>New merge template fields called <code>Parent-Slug</code>, <code>Children-Slug</code> and <code>Next-Slug</code> are now available to make it easier to provide in-page navigational aids similar to those found when exporting a Collection as a Web Book. </p></li>
+</ul>
+
+<h4 id="better-starting-point-for-website-generation">Better Starting Point for Website Generation</h4>
+
+<p>When creating a new Collection, users can now choose an option that will be configured for website generation using Merge Templates and Scripts. </p>
+
+<h4 id="added-sort-options-using-the-class-field">Added Sort Options using the Class Field</h4>
+
+<p>Users can now sort a Collection by <strong>Class + Date</strong> or <strong>Class + Title</strong>. And if no field of type Class is available, the sorts will look for a field named &apos;Type&apos; and, if found, use that instead. </p>
+
+<h4 id="additional-sharing-options">Additional Sharing Options</h4>
+
+<p>The <strong>Share w/Options</strong> command is one of Notenik&apos;s best-kept secrets, since it allows the user to easily share a Note in a variety of different formats. Now two new options are available: one to format a Note as a microblog entry (suitable for use with Mastodon, let&apos;s say), and another to open a Note using your Web browser, thus enabling easy access to printing or saving as a PDF. </p>
+
+<h4 id="bug-fixes-and-functionality-refinements">Bug Fixes and Functionality Refinements</h4>
+
+<p>A few rough edges were sanded off. </p>
+
+<h4 id="and-thataposs-a-wrap">And That&apos;s A Wrap!</h4>
+
+<p>That&apos;s it for the latest round of improvements. Check out the <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Discourse Forum</a> for the latest news and discussion. See the app&apos;s <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html" class="ext-link" target="_blank" rel="noopener">Version History</a> for more details on changes. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Notenik 10.7.0 - The Beat Goes On</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-10.7.0-the-beat-goes-on.html"/>
+	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-10.7.0-the-beat-goes-on.html</id>
+	  <published>2022-11-04T09:00:00Z</published>
+	  <updated>2022-11-04T12:00:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+		<uri>https://hbowie.net/</uri>
+	  </author>
+	  <summary>
+		  Here&apos;s a useful summary of recent changes, including Notenik versions 10.4.0 through 10.7.0. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Well, a few more Notenik versions have been released since my last blog post on the website, so I thought it might be time for a fresh update. </p>
+
+<p>Let me sort the recent changes (from 10.4.0 through 10.7.0) into groups by Notenik function. </p>
+
+<h4 id="interoperability">Interoperability</h4>
+
+<p>As other applications have come along with their own ways of doing things, I&apos;ve tried, wherever it makes sense, to support variations in the formatting of Note files that will make Notenik more compatible with Notes being created and manipulated by other pieces of software. </p>
+<ul>
+<li><p>Added a new Collection Pref to allow the user to explicitly select a <strong>Preferred File Format</strong> for a Collection. As an alternative to the Notenik format, the user can select YAML Frontmatter, MultiMarkdown, simple Markdown or plain text. Changing the format will convert any existing Notes to the newly selected format. </p></li>
+<li><p>Added another Collection Pref to allow the user to request that their <strong>Tags values always be saved with preceding Hash Marks</strong>, to support apps that look for that form of identification. </p></li>
+<li><p>When <strong>attaching files</strong> to a Note, Notenik now offers the option to move the existing file (thus preserving its identity) rather than copying it. This helps when using apps such as Hookmark to keep track of your files. </p></li>
+</ul>
+
+<h4 id="markdown-extensions">Markdown Extensions</h4>
+
+<p>These enhancements to the Notenik Markdown parser make Markdown within Notenik even more powerful and, in some cases, more compatible with other Markdown implementations. </p>
+<ul>
+<li><p>When you use the Markdown command to <strong>Generate a Collection Index</strong>, Notenik will now provide a one-line table of contents at the top of the page, with the line containing the starting letters of all the index terms appearing below, allowing the reader to click on a letter to be taken to that section of the generated Index. </p></li>
+<li><p>Added a new Markdown command to Generate a <strong>Collection Search Page</strong>, using embedded JavaScript as well as HTML. </p></li>
+<li><p>A vertical bar (‘|’) may now be used within a <strong>Wiki Style Link</strong> to introduce the text that is to appear as the link, if different from the title of the target Note. </p></li>
+<li><p>Added support for an <strong>alternate syntax for Note/file inclusion</strong>, so that something like the following: </p>
+
+<pre><code>
+![[embedded note]]
+</code></pre>
+
+<p>&hellip; may be used, as an alternate to: </p>
+
+<pre><code>
+{{include:embedded note}}
+</code></pre>
+</li>
+</ul>
+
+<h4 id="field-labels-and-types">Field Labels and Types</h4>
+
+<p>Notenik field types are one of its most powerful features, and a new arrow has been added to the quiver with this release. </p>
+<ul>
+<li>Added <strong>Rank</strong> as a new field type, allowing the user to select from a defined list, with each item containing both a number and a label. The number will be used for sorting, with the label providing meaning. Also added a new Merge Template Variable Modifier that will <strong>Take Text from the Right</strong>, allowing the label to be displayed without its corresponding number.  </li>
+</ul>
+
+<h4 id="website-generation">Website Generation</h4>
+
+<p>Not everyone uses Notenik as a static website generator, but I use it for this purpose all the time, and have recently extended Notenik&apos;s capabilities in this area with the following enhancements. </p>
+<ul>
+<li><p>Added a new Merge Template Variable Modifier to <strong>Prep for JSON</strong>, preparing a variable to be stored using JSON. This can be useful if you are using a Merge Template to generate a Javascript file. </p></li>
+<li><p>When using the Merge Template Variable Modifier to <strong>Summarize</strong> the contents of a field (for use in a teaser, etc.), the logic has been improved so that it will try to avoid ending the summary with a period that follows a leading number on a line. </p></li>
+<li><p>Added several new <strong>Derived Variables</strong>, for use with Merge Templates, that are especially useful for HTML formatting of information about quotations and citations. These include <code>Author Work Slug</code>, <code>The Work Type Slug</code>, <code>Major Work</code>, <code>Work Rights Slug</code> and <code>Known Work Title</code>. Also added <code>Image Slug</code> to make it easer to format image fields into HTML. </p></li>
+<li><p>When <strong>generating an Index for a Collection</strong>, the population of the <code>Page Type</code> field has been expanded to include the Note&apos;s class field, or the Collection&apos;s enclosing folder name, if no <code>Type</code> field is present. </p></li>
+</ul>
+
+<h4 id="annoyance-eilimination">Annoyance Eilimination</h4>
+
+<p>A few little annoyances were sorted out. </p>
+<ul>
+<li><p>A new user pointed out that the keyboard shortcut of <strong>CMD right arrow</strong> will normally move the cursor to the end of the current line within a text box. Notenik was using this key combination as a shortcut to one of its own commands, which was blocking the normal usage. This has been fixed. </p></li>
+<li><p>I noticed that <strong>Note titles ending with a question mark</strong> were not generating reliable HTML for accessing attached Image files. This seems to be something that started with macOS Ventura (13.0). I&apos;ve added additional code to make sure that question marks are appropriately encoded when included as part of a URL. </p></li>
+<li><p>Wiki Links will now look for singular variations, as well as plural, so if you create a wiki link like this &#8211; <code>[[Notes]]</code> &#8211; it will reliably link to another Note that is simply titled <code>Note</code> (without the &apos;s&apos;). </p></li>
+<li><p>Attempts to open <strong>duplicate parent realm windows</strong> will now result in only one window being opened, rather than allowing several windows all pointing to the same folder. </p></li>
+<li><p>Added a command beneath the File Menu to <strong>Forget All Shortcuts</strong>. This can be useful in order to reset your list of remembered Collection shortcuts, in cases where they are no longer behaving in a helpful manner. </p></li>
+</ul>
+
+<h4 id="bottom-line">Bottom Line</h4>
+
+<p>Hopefully there&apos;s a little something for everyone in these last few releases. I&apos;m continuing to release a new batch of enhancements about every couple of weeks, so if there&apos;s something still missing that you&apos;d like to see, don&apos;t hesitate to <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">post something on the Discourse forum</a>! </p>
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Notenik 10.3.0 - More Bells, More Whistles</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html"/>
@@ -36,15 +441,13 @@
 <h3 id="parent-realms-gain-new-powers">Parent Realms Gain New Powers</h3>
 
 <p>I find myself using Parent Realms more and more. If you&apos;re not familiar with this concept, it&apos;s a folder that acts as a container for one or more Notenik Collections. A number of new features pertain to these sorts of folders. </p>
-
 <ul>
 <li><p>A new file named &apos;<code>- INFO-parent-realm.nnk</code>&apos; now gets stashed within a parent realm folder when it is opened as such, and this file is then able to retain the last window coordinates for the parent realm window, so that they can be restored the next time you open that realm. I find this just makes use of these sorts of folders so much more pleasant &#8211; they just appear where I expect them to be, and are sized as I would like them, so I can start using them right away. </p></li>
-<li><p>Wiki links between Collections are now possible, and these especially make sense when you are linking back and forth between Collections stored in a common Parent Realm. If this is something that sounds interesting to you, then see the new <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-links-between-collections.html">Knowledge Base entry</a> for all the details. </p></li>
+<li><p>Wiki links between Collections are now possible, and these especially make sense when you are linking back and forth between Collections stored in a common Parent Realm. If this is something that sounds interesting to you, then see the new <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-links-between-collections.html" class="ext-link" target="_blank" rel="noopener">Knowledge Base entry</a> for all the details. </p></li>
 <li><p>BBEdit Project files now show up within a Parent Realm, so you can easily use a Parent Realm window to open your BBEdit project, at the same time you are opening one or more Notenik Collections within the realm. </p></li>
 </ul>
 
 <h3 id="changes-to-file-handling">Changes to File Handling</h3>
-
 <ul>
 <li><p>A contiguous range of Notes may now be deleted from a Collection in one fell swoop, by selecting the range on the <strong>List</strong> tab, then selecting the <strong>Delete Range</strong> option from the List tab contextual menu. </p></li>
 <li><p>Deleted Notes are now moved to the Trash, rather than being completely deleted. </p></li>
@@ -54,7 +457,6 @@
 <h3 id="merge-template-commands-variables-and-modifiers">Merge Template Commands, Variables and Modifiers</h3>
 
 <p>Several fixes and enhancements were made in this area. </p>
-
 <ul>
 <li><p>The new Merge Templates System Variable &apos;<code>display-css</code>&apos; can be used to embed the CSS used within Notenik to style the Display tab. This new system variable might be used to populate the style section within the head of an HTML template, or might be used to populate a stand-alone CSS file. </p></li>
 <li><p>The <code>&amp;apos;output&amp;apos;</code> command may now be qualified with an <code>&amp;apos;ifnew</code>&apos; operand, to indicate that the output from the Merge Template will only be written if the file is new, to avoid overwriting an existing file. (This can be used in conjunction with the new &apos;<code>display-css</code>&apos; variable described above to initialize a CSS file, but then avoid re-initializing it after the user has modified it.) </p></li>
@@ -66,7 +468,6 @@
 <h3 id="fixes">Fixes</h3>
 
 <p>A few minor tweaks were made, and annoyances eliminated. </p>
-
 <ul>
 <li><p>Hard line breaks within paragraphs were sometimes causing the first word on a following line to run right up against the last word on the line above, without any intervening space. This has been corrected. </p></li>
 <li><p>The <strong>Query Output</strong> window size and location is now retained and restored from one usage to the next. </p></li>
@@ -77,7 +478,7 @@
 <li><p>The <strong>List</strong> tab would sometimes show a duplicate entry after an update; this has been fixed. </p></li>
 </ul>
 
-<p>As usual, you can find more details in the <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">Notenik Knowledge Base</a>. </p>
+<p>As usual, you can find more details in the <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html" class="ext-link" target="_blank" rel="noopener">Notenik Knowledge Base</a>. </p>
 		  ]]>
 	  </content>
 	</entry>
@@ -99,7 +500,6 @@
 		  <p>Well, the version-ometer has clicked over once again &#8211; as it tends to do every week or so with Notenik &#8211; and look where we&apos;ve landed: on the big 10.0.0! </p>
 
 <p>All those zeros seem to call for some sort of reflection on how we got here, so let me offer a few highlights: </p>
-
 <ul>
 <li>Notenik started life way back in 2009, as a desktop app written in Java; </li>
 <li>The rewrite as a native Mac app began early in 2019; </li>
@@ -107,13 +507,12 @@
 <li>Over the three years since then we&apos;ve had ninety new releases containing some significant functional improvements (that&apos;s an average of one bundle of enhancements about every two weeks). </li>
 </ul>
 
-<p>In addition to the software itself (released as open source on <a href="https://github.com/hbowie/notenik-swift">GitHub</a>, and available as a free download through the <a href="https://apps.apple.com/us/app/notenik/id1465997984">Mac App Store</a>), Notenik has picked up some significant supporting resources along the way: </p>
-
+<p>In addition to the software itself (released as open source on <a href="https://github.com/hbowie/notenik-swift" class="ext-link" target="_blank" rel="noopener">GitHub</a>, and available as a free download through the <a href="https://apps.apple.com/us/app/notenik/id1465997984" class="ext-link" target="_blank" rel="noopener">Mac App Store</a>), Notenik has picked up some significant supporting resources along the way: </p>
 <ul>
-<li>The <a href="https://notenik.app">Notenik.app</a> website; </li>
-<li>The Knowledge Base, available <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">on the web</a>, and within the app itself; </li>
-<li>A <a href="https://youtu.be/JR0kpAUXM5E">Notenik 101</a> video with a brief intro to the app; </li>
-<li>And, most recently, a new <a href="https://discourse.notenik.app">Discourse Community</a> dedicated to discussion of all things Notenik. </li>
+<li>The <a href="https://notenik.app" class="ext-link" target="_blank" rel="noopener">Notenik.app</a> website; </li>
+<li>The Knowledge Base, available <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html" class="ext-link" target="_blank" rel="noopener">on the web</a>, and within the app itself; </li>
+<li>A <a href="https://youtu.be/JR0kpAUXM5E" class="ext-link" target="_blank" rel="noopener">Notenik 101</a> video with a brief intro to the app; </li>
+<li>And, most recently, a new <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Discourse Community</a> dedicated to discussion of all things Notenik. </li>
 </ul>
 
 <p>And then, there are the appreciative users, who have given Notenik an average rating of 4.9 on the App Store, making comments like these: </p>
@@ -127,7 +526,6 @@
 <p>In spite of all the progress, though, there always seems more to do. </p>
 
 <p>Take the latest release, which focuses on scripting, featuring: </p>
-
 <ul>
 <li>Improved scripting documentation; </li>
 <li>The ability to run a script as an export, specifying the output folder at execution time; </li>
@@ -169,7 +567,6 @@
 <p>But wait&hellip; there&apos;s more! </p>
 
 <p>Because there are really three different types of UI controls that show up on the <strong>Edit</strong> tab. </p>
-
 <ul>
 <li>Field Labels, telling you what sort of value comes next. </li>
 <li>Code values (including Links), where you&apos;d generally prefer a monospaced font. </li>
@@ -188,11 +585,11 @@
 
 <p>Then the <strong>Code</strong> field type has been enhanced to make sure that HTML code actually displays as code, and is not interpreted as HTML. </p>
 
-<p>And then there&apos;s a new, quite handy, link beneath the <strong>Help</strong> menu to take you to the recently launched Notenik Community found at <a href="https://discourse.notenik.app">discourse.notenik.app</a>. </p>
+<p>And then there&apos;s a new, quite handy, link beneath the <strong>Help</strong> menu to take you to the recently launched Notenik Community found at <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">discourse.notenik.app</a>. </p>
 
-<p>As usual, you can find more details in the Notenik Knowledge Base, but I would encourage you instead to make use of the new Notenik Community. All of the changes in the latest release have been posted in the <strong>Pipeline</strong> category, and tagged with the version number, so you read more about all of them at this link: <a href="https://discourse.notenik.app/tags/c/pipeline/14/version-960">version-960</a>. </p>
+<p>As usual, you can find more details in the Notenik Knowledge Base, but I would encourage you instead to make use of the new Notenik Community. All of the changes in the latest release have been posted in the <strong>Pipeline</strong> category, and tagged with the version number, so you read more about all of them at this link: <a href="https://discourse.notenik.app/tags/c/pipeline/14/version-960" class="ext-link" target="_blank" rel="noopener">discourse.notenik.app/tags/c/pipeline/14/version-960</a>. </p>
 
-<p>And, if you&apos;d like to see what&apos;s <a href="https://discourse.notenik.app/tags/c/pipeline/14/in-work">coming up for the next release</a>, or make your own <a href="https://discourse.notenik.app/c/feature-requests/8">feature requests</a> you can, of course, also do that in the new Notenik Community. </p>
+<p>And, if you&apos;d like to see what&apos;s <a href="https://discourse.notenik.app/tags/c/pipeline/14/in-work" class="ext-link" target="_blank" rel="noopener">coming up for the next release</a>, or make your own <a href="https://discourse.notenik.app/c/feature-requests/8" class="ext-link" target="_blank" rel="noopener">feature requests</a> you can, of course, also do that in the new Notenik Community. </p>
 		  ]]>
 	  </content>
 	</entry>
@@ -211,7 +608,7 @@
 	  </summary>
 	  <content type="html">
 		  <![CDATA[
-		  <p>This post announces some features and bug fixes new since 9.3.0 but, perhaps more importantly, announces the launch of a nascent Notenik Community Forum located at <a href="https://discourse.notenik.app">discourse.notenik.app</a>. </p>
+		  <p>This post announces some features and bug fixes new since 9.3.0 but, perhaps more importantly, announces the launch of a nascent Notenik Community Forum located at <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">discourse.notenik.app</a>. </p>
 
 <p>I&apos;m excited about this new opportunity to create more of a community around Notenik, and hope you will take a look, sign up for membership, and contribute a question, a bug report, an improvement suggestion, or anything else that may be on your mind concerning Notenik! </p>
 
@@ -229,267 +626,9 @@
 
 <p>And then, finally, a new option has been added to the Note Selector function (invoked via CTRL-S) allowing the title of a selected Note to be inserted into a nicely formatted Markdown Include command, including the selected Note into the Note currently being edited. </p>
 
-<p>And that rounds out the set of changes in this latest release. See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+<p>And that rounds out the set of changes in this latest release. See the <a href="../knowledge-base/EPUB/html/version-history.html" class="wiki-link">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
 
-<p>Once again, though, I hope you&apos;ll find your way over to our new Notenik Community at <a href="https:discourse.notenik.app">discourse.notenik.app</a> and connect with someone or something you find there. There&apos;s always more to learn about Notenik, and more to share, and it&apos;s exciting that others can now take part in the dialogue. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 9.3.0 - Cool New Functions</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.3.0-cool-new-functions.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.3.0-cool-new-functions.html</id>
-	  <published>2022-05-10T09:00:00Z</published>
-	  <updated>2022-05-10T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Expanded Note Selector to allow selection from other Collections; added an import option for a folder full of text files; modified the defaults for a new Level field to avoid values of zero; added a command to populate an app catalog; improved editing of the Status field. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This latest version of Notenik includes a couple of significant new functions that you might find useful, along with some nice enhancements to existing functionality. </p>
-
-<h3 id="link-to-a-note-in-a-second-collection">Link to a Note in a Second Collection</h3>
-
-<p>The Note Selector (introduced in Version 8.8.0) allowed the user to quickly and easily select another Note and then perform one of a number of actions on it &#8211; including formatting a Wiki Link to reference that Note, ready for insertion into the body of the Note being edited. </p>
-
-<p>However a Wiki Link can only link to another Note within the same Collection. </p>
-
-<p>But one can construct something like a Wiki Link to another Note in a different Collection by using the Notenik Custom URL Scheme in combination with Collection Shortcuts. </p>
-
-<p>So the Note Selector window now includes a Collection Shortcut field. It&apos;s initially blank, indicating that the current Collection is to be referenced. But you can use the dropdown to select a different Collection, and then perform similar/equivalent actions on a Note from the other Collection &#8211; effectively allowing you to link from a Note in one Collection to another Note in a second Collection. </p>
-
-<p>Not everyone needs or wants this level of interconnectivity, but some users may find it extremely useful. </p>
-
-<h3 id="populate-an-app-catalog-for-your-mac">Populate an App Catalog for your Mac</h3>
-
-<p>The second new function can be found beneath the <code>File</code> menu, and is called <code>Populate App Catalog</code>. You can point this function at your local <code>Applications</code> folder on your Mac, and it will then extract information about all the apps found therein, and use that info to populate your frontmost Collection with information about your apps. This is not something that will appeal to everyone, but it is a way of maintaining a user-editable, taggable, searchable, info repository about the applications that you use on your Mac. </p>
-
-<h3 id="import-a-folder-of-text-files">Import a Folder of Text Files</h3>
-
-<p>Also included is a new Import option that will allow you to import a folder full of existing text files in just about any format. (You could import one at a time previously, or drag and drop a bunch onto the List tab, but this new Import option may be easier to use in some cases.) </p>
-
-<h3 id="improved-status-field-editing">Improved Status Field Editing</h3>
-
-<p>Version 8.5.0 opened up the Status field to allow input that did not match any of the preset values, but also left a few problems behind. The Status field now combines the best of both worlds, allowing easy selection from a list of tailorable presets, or from any free-form status values encountered within the open Collection. </p>
-
-<h3 id="additional-info">Additional Info</h3>
-
-<p>And that rounds out the set of changes in this latest release. As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 9.2.0 - Easy Commonplace Book with Lookup Fields</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.2.0-easy-commonplace-book-with-lookup-fields.html</id>
-	  <published>2022-04-20T09:00:00Z</published>
-	  <updated>2022-04-20T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added a new model Collection &#8211; a Commonplace Book using Lookup fields &#8211; that can be used to initialize a new Collection; added automatic generation of initial backlinks when adding a Backlinks field; straightened out some issues that could affect capture of metadata when importing/pasting a new Note into a Collection; fixed some problems associated with moving/copying a Collection, including initial population of a new Collection.  <br />
-
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>One of the things that Notenik can be used for is the creation and maintenance of a <a href="https://www.nytimes.com/2021/02/10/technology/personaltech/make-digital-commonplace-book.html">Digital Commonplace Book</a>. In fact, this was one of my original intentions motivating the creation of Notenik, and I&apos;ve been using my software to maintain my own Commonplace Book for quite a number of years (going all the way back to <a href="https://iwisdom.en.softonic.com/mac">iWisdom</a>, as a matter of fact). </p>
-
-<p>Using software to create a list of notable quotations is easy enough, but it gets a little more challenging when you want to record associated information about the author of each quote, and the work from which the quote was taken. At some point, you begin to see that you need something like a relational database, with a separate table for authors, and another for works (books, etc.), and finally one for quotes, that can reference the other two. </p>
-
-<p>As it turns out, all of this can be done using Notenik, taking advantage of the Lookup field type. But setting all of this up can be a bit daunting, requiring use of an external text editor to customize your Collection template files in various ways. </p>
-
-<p>It all became a bit easier with the latest release, though. Now, when creating a new Collection, you can select an option of <code>Commonplace with Lookups</code> as a model Collection with which to initialize your own, and all of this will get set up for you automatically.  </p>
-
-<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/create-a-commonplace-book-with-lookup-fields.html">Create a Commonplace Book with Lookup Fields</a> article for more info on how all of this works. </p>
-
-<p>And if you&apos;re wanting to see an example of how to use Lookup fields, perhaps with some different intent, this is still a great place to start. </p>
-
-<p>One of the things I did here &#8211; which I had never done before &#8211; was to <em>nest</em> Notenik Collections, putting one Collection folder inside of another. To tell the truth, I wasn&apos;t even sure that this would work! But it all seems to work seamlessly, and helps to keep things straight. </p>
-
-<p>Copying the model data from a secure location within the Notenik app bundle to the user&apos;s desired location, though, didn&apos;t initially work so well. So Notenik&apos;s ability to move or copy a Collection has been enhanced/corrected with this release, as well. </p>
-
-<p>And then there was a problem with capturing metadata from an external text file when it got dragged into Notenik &#8211; so that&apos;s been fixed also. </p>
-
-<p>And then, even though the Collection Preferences screen would let a user add a Backlinks field to an existing Collection, Notenik didn&apos;t automatically generate the initial set of Backlinks as part of that process. So that&apos;s been fixed up in this release as well. </p>
-
-<p>And that rounds out the set of changes in this latest release. As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 9.1.0 - Filling Some Holes</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.1.0-filling-some-holes.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.1.0-filling-some-holes.html</id>
-	  <published>2022-04-15T09:00:00Z</published>
-	  <updated>2022-04-15T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added import option for a single text file (or simply drag and drop from the Finder); modified Discard of Edits to use a less common keyboard shortcut (Shift-CMD-D) and to provide a confirmation alert before proceeding; added a new Markdown command to produce a simple Tags Cloud; and added an option to remove all previously assigned tags based on level. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>The latest release focused on smoothing out a few rough spots. </p>
-
-<p>First, even though Notenik has gotten much more friendly of late in terms of working with text files in a variety of formats (YAML front matter, MultiMarkdown metadata, plain old Markdown, etc.), it was pointed out to me that there was not yet an easy and intuitive way to add a single existing text file to a Collection. So there is now an additional File Import option to import a single text file (in pretty much any format). Even easier, you can start in the Finder and drag such a file onto the List tab of any open Collection in order to add the Note to that Collection.  </p>
-
-<p>Next there is the matter of the command to Discard Edits for a Note currently being entered. This is not an option that was ever meant to be used all that often &#8211; you only need it when you&apos;ve already entered some stuff, and just want to throw away your edits and start over &#8211; and yet it was all too easy to invoke this command unintentionally, and lose some of your work. So two changes were made: first, the keyboard shortcut is no longer just CMD-D, but now Shift-CMD-D; second, an alert now pops up when you enter this command, asking if you are sure you want to throw away any in-flight changes. These changes should help prevent any accidental data loss. </p>
-
-<p>And then a couple of bugs were fixed that prevented use of an Author Lookup field. This should once again be working as intended. </p>
-
-<p>If you&apos;re using the Level field to structure your Notes into a sort of outline, then a command had previously been provided to add special Tags entries reflecting this outline structure. But what if you decided you just wanted to get rid of all such Tags? There was no easy way to do so previously &#8211; but now there is. </p>
-
-<p>And then there&apos;s a new Markdown command to create a sort of Tags Cloud based on the Tags you have entered for a Collection. This is an alternative to use of the existing command to create a Tags Outline. If you have multi-level tags on a Collection, then the Outline will probably be the best way to allow easy navigation. But if you&apos;re using a bunch of single-level Tags, then the new Tags Cloud format may be preferable. </p>
-
-<p>So that&apos;s it for the latest updates! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 9.0.1 - Hooked on Notenik</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-9.0.1-hooked-on-notenik.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-9.0.1-hooked-on-notenik.html</id>
-	  <published>2022-03-31T09:00:00Z</published>
-	  <updated>2022-03-31T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  The last couple of releases focused on better integration with other apps, including new Custom URL commands, new custom AppleScript commands, and the ability to integrate with the Hook app via their official scripts.  <br />
-
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>The last couple of releases focused on integration with the <a href="https://hookproductivity.com">Hook app</a>. I&apos;ve had people ask me about Hook integration for a while now, and I finally invested enough time and energy to figure out how all of this might work. <a href="https://twitter.com/luccogzest">Luc Beaudoin</a> and his team were very helpful and responsive when I had questions, with the happy result that they have just today <a href="https://discourse.hookproductivity.com/t/integration-with-notenik-note-taking-app/4889/3">announced the availability of their integration scripts for Notenik</a>. It&apos;s been a pleasure working with the team, and it&apos;s nice to see one more user requested fulfilled. </p>
-
-<p>There were some other enhancements as part of 8.9.0, 9.0.0 and 9.0.1 &#8211; generally along this same theme of integration. A couple of new commands were added to the custom URL scheme, to make it possible to access a Note via a complete file path as well as via its Timestamp. Hook integration was enabled via the addition of some new custom AppleScript commands. Also, you can now drag a text file onto Notenik&apos;s app icon, and Notenik will attempt to open the enclosing folder as a Collection, and then select the dropped Note. </p>
-
-<p>Also corrected a problem with Notenik&apos;s Markdown parser that affected a list of numbers, one per line, without any spacing or punctuation. And also added a Collection pref to allow the Notenik parser to turn straight apostrophes into curly ones. </p>
-
-<p>Oh, and when you hit the tab key while in a Link field, Notenik will now advance you to the next field, as one might expect, instead of actually inserting a tab character into the middle of a hyperlink. </p>
-
-<p>And there&apos;s also a new addition to the Notenik documentation. Articles such as <a href="https://thesweetsetup.com/obsidian-vs-roam/">this one from The Sweet Setup</a> go into quite a bit of detail comparing various players in the Personal Knowledge Management (PKM) space, so I thought it might be time to offer up a description of Notenik features that is equally detailed, without being as lengthy and comprehensive as the Notenik Knowledge Base. The result is a new guide to Notenik&apos;s features, formatted in a way that makes it easy to compare to some of these other apps. You can find it <a href="https://notenik.app/features/EPUB/html/notenik-features.html">here</a> on the website. Feel free to check it out, and recommend it to others.  </p>
-
-<p>So that&apos;s it for the latest updates! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="../knowledge-base/EPUB/html/version-history.html">Notenik Version History page</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 8.8.0 - Improvements to Note Editing</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.8.0-improvements-to-note-editing.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.8.0-improvements-to-note-editing.html</id>
-	  <published>2022-03-18T09:00:00Z</published>
-	  <updated>2022-03-18T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Added a Note Selector window that allows a user, while remaining on Display or Edit of one Note, to look up the title of a second Note, for possible insertion into the text of the first Note; also expanded the width of the Body text editing field, and made inclusion of a &apos;Body:&apos; field label optional, on the Edit tab as well as the Display tab. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>In other comparable note-taking apps, a common feature is to allow the user to easily select a second Note to become the target of a wiki-style link in a Note being edited. This has been sort of a &quot;missing feature&quot; in Notenik for a while now &#8211; but has finally shown up in this latest release. </p>
-
-<p>Here&apos;s the way it works. </p>
-
-<ol>
-<li><p>Hit the keyboard shortcut of CTRL-S. Note that you can do this at any time &#8211; whether you are in Edit mode or Display mode. If you are in Edit mode, then you will remain in Edit mode. </p></li>
-<li><p>Watch the &apos;Note Selector&apos; window appear. </p></li>
-<li><p>Type 3 or more letters in the text field at the top of the new window. After typing the third letter, you will see a list of all Notes in the Collection whose titles contain that sequence of characters anywhere within. Case (upper- or lower-) is not significant for this operation. </p></li>
-<li><p>Select the row containing the title of the Note you are looking for. You can do this in one of several ways: </p>
-
-<ul>
-<li>Keep typing letters until the Note of interest is first in the list; </li>
-<li>Use the down (and up, if you go too far) arrow keys to position yourself on the Note of interest; </li>
-<li>Use your pointing device to click on the Note of interest. </li>
-</ul>
-</li>
-<li><p>Select your desired action from the drop-down menu at the bottom of the window. </p></li>
-<li><p>Hit the OK button to take the indicated action with the selected Note. </p></li>
-<li><p>Alternatively, use a keyboard shortcut to combine steps 5 and 6. </p></li>
-</ol>
-
-<p>Here&apos;s the list of available actions, with their associated keyboard shortcuts. </p>
-
-<ul>
-<li><p><code>Copy Title</code> &#8211; Simply copy the selected Title to the System clipboard, ready to be pasted anywhere else you would like it to appear. (<code>CMD-C</code>) </p></li>
-<li><p><code>Copy and Paste Title</code> &#8211; This action will copy the selected value to the clipboard, as above, but then will also attempt to paste that value into whatever text field you are currently editing. (<code>CMD-V</code>) </p></li>
-<li><p><code>Copy Wikilink</code> &#8211; This action will copy the selected value to the clipboard, as above, but will enclose the value within double brackets, in order to form a wikilink. (<code>OPT-CMD-C</code>) </p></li>
-<li><p><code>Copy and Paste Wikilink</code> &#8211; This action will copy the selected value to the clipboard, as above, but will enclose the value within double brackets, and then paste the resulting wikilink into whatever text field you are currently editing. (<code>OPT-CMD-V</code>) </p></li>
-<li><p><code>Go To</code> &#8211; Navigate to the selected Note. (<code>CMD-G</code>) </p></li>
-<li><p><code>Launch Link</code> &#8211; Launch the Link field of the selected Note. (<code>CMD-L</code>) </p></li>
-</ul>
-
-<p>Note that, so long as the Note Selector window is still frontmost, the keyboard shortcuts indicated above will override their usual meanings within the application. </p>
-
-<p>Also note that you can add other modifier keys if that will help avoid invocation of some app other than Notenik: for example, SHIFT-OPT-CMD-V will work as well as OPT-CMD-V, to copy and paste the selected title as a wikilink. </p>
-
-<p>So now, if you&apos;re editing the body of a Note, and want to add a wiki link to a second Note, you can insert a perfectly formatted wikilink with just a few strokes on your keyboard. </p>
-
-<p>Of course, as indicated by the action list above, you can perform other tasks as well, but insertion of wikilinks is the requested feature that has been missing until now. </p>
-
-<p>Oh, and let&apos;s see &#8211; there are a couple of other new things to mention as well. </p>
-
-<p>First, I created a litte more space for body text on the Edit tab. The Edit tab is split into two columns, with field labels on the left, and with values on the right. This arrangement generally works well, especially for fields with compact values, but makes less sense for the body of the Note itself, especially if the text is of any significant length. So the field for the body value now appears below any label field, and spreads out over both columns, allowing more room for text entry. Additionally, if the user has turned off the Collection Preferences option to include an explicit body field label, then the Body label will also be excluded on the Edit tab &#8211; again providing more space for entry of body text. </p>
-
-<p>Next, there&apos;s a new document available on the website: &quot;<a href="../how-notenik-stacks-up-against-the-big-names.html">How Notenik Stacks Up Against the Big Names</a>&quot;. My intent here was to lay out various features of Notenik in a way that would make it easy to compare Notenik to other better-known apps in the Zettelkasten/Personal Knowledge Management space. If you think I&apos;ve missed something here, then please let me know! </p>
-
-<p>So that&apos;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="../knowledge-base/EPUB/html/version-8.8.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik 8.7.0 - A Chocolate and Vanilla Swirl</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/news/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html"/>
-	  <id>https://notenik.app/knowledge-base/EPUB/html/notenik-8.7.0-a-chocolate-and-vanilla-swirl.html</id>
-	  <published>2022-03-10T09:00:00Z</published>
-	  <updated>2022-03-10T12:00:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-		<uri>https://hbowie.net/</uri>
-	  </author>
-	  <summary>
-		  Mix a dark appearance in Notenik with a light System appearance; use Notenik as a project launcher, leveraging the versatility of Notenik&apos;s Link field; and further refine the appearance of a Web Book. It&apos;s all here in the latest release. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Henry Ford once remarked that a customer could have &quot;any color so long as it was black&quot;. Apple had a similar policy with the Mac interface for many years, telling customers that they could have any appearance so long as it was black text on a white background, which they dubbed &quot;light&quot;. </p>
-
-<p>Apple doubled users&apos; options a few years ago when they added a General Appearance preference to allow them to choose either dark (white text on a black background) or light. </p>
-
-<p>And Notenik added an option a little while back to follow the System Preference, so that when the System pref is light, Notenik will be light, and when the System pref is dark, so shall Notenik be dark. </p>
-
-<p>But some people like to mix and match their light and dark, just as some like to swirl their chocolate and vanilla in their cones, and so the latest release of Notenik has its own App preference to set its appearance to either light or dark &#8211; no matter what the rest of the system is doing.  </p>
-
-<p>So if you like Notenik in dark mode &#8211; but want to keep the rest of the system a bit lighter in appearance &#8211; you can now choose that option. </p>
-
-<p>A few other options in this release help a bit with nicely formatting a Web Book. You can see the results on a new website I&apos;m working on. The site is <a href="https://keylists.org">here</a>, and all of the source files are <a href="https://github.com/hbowie/key-lists">here</a>. One of the enhancements allows the creation of a <a href="https://keylists.org/lists-by-tag.html">tags outline</a> without having to include untagged Notes. The other enhancement allows finer control of Seq formatting for differing numbering levels. On my new site, for example, the <a href="https://keylists.org/key-lists.html">lists themselves</a>, at the top level of numbering, are not showing their Seq numbers at all. Once you dive down a level, though, the items within each list are <a href="https://keylists.org/motivational-factors-for-complex-work.html">showing their numbers</a>. </p>
-
-<p>I&apos;ve also added an article in the Knowledge Base describing how Notenik can be used as a <a href="https://notenik.app/knowledge-base/EPUB/html/make-a-project-launcher.html">project launcher</a>, and that takes advantage of some other enhancements appearing in this latest release. Notenik&apos;s logic for handling folders has been refined a bit, to more usefully distinguish between different types (packages, etc.). And a new command has been added beneath the <code>File</code> menu to <code>Grant Folder Access</code>, in case you want Notes in one Collection to be able to open files and folders located somewhere else. Also, you can now Launch Links from the Tags tab, as well as the List tab, and you can launch Links from multiple selected Notes all at once, again from either of these tabs. </p>
-
-<p>So that&apos;s it for the latest release! As always, if you have something on your Notenik wish list that is still not there, feel free to <a href="mailto:support@notenik.app">drop me a line</a> and let me know how you think my little app can be further improved. I&apos;m always happy to entertain suggestions from users. </p>
-
-<p>See the <a href="https://notenik.app/knowledge-base/EPUB/html/version-8.7.0.html">Version History entry</a> for additional details, with links to new and updated pages in the Notenik Knowledge Base. </p>
+<p>Once again, though, I hope you&apos;ll find your way over to our new Notenik Community at <a href="https:discourse.notenik.app" class="wiki-link">discourse.notenik.app</a> and connect with someone or something you find there. There&apos;s always more to learn about Notenik, and more to share, and it&apos;s exciting that others can now take part in the dialogue. </p>
 		  ]]>
 	  </content>
 	</entry>

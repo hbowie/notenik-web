@@ -1,0 +1,31 @@
+Title:  Notenik 8.6.0 Concludes a Series of Rapid Enhancements
+
+Page Title: Notenik 8.6.0 Concludes a Series of Rapid Enhancements
+
+Seq:    7.3
+
+Status: 9 - Published
+
+Type:   07 - press
+
+Date:   28 Feb 2022
+
+Body:
+
+SEATTLE, FEB 28 -- Notenik has seen a handful of new versions since 8.0.0 was released on January 18th, bringing a bevy of enhancements to new and existing users. 
+
+Let's start with improved support for YAML front matter. The intent of Notenik has always been to encourage the use of plain text files for storing notes and, even though the app has its own slightly idiosyncratic way of saving multiple fields into files like this, it's always tried to recognize and respect other formats, such as MultiMarkdown metadata. Use of YAML for formatting this sort of front matter has become more popular of late, and so Notenik now respects and preserves this format when the app opens a folder of existing text files.  
+
+Support for formatting of HTML tables using pipes and dashes has also been incorporated recently, as has the formatting of task lists with check marks, adding to a growing list of Markdown extensions available within the app. 
+
+Support for Markdown image references to local files has been added as well, allowing for the display of local image files within the display of a note. 
+
+A variety of other refinements and enhancements have also been added over the last five weeks. Details are always available in the [Version History](https://notenik.app/knowledge-base/EPUB/html/version-history.html) section of the Notenik Knowledge Base, and more frequent descriptions of updates are available in the [News](https://notenik.app/news.html) section of the [Notenik.app](https://notenik.app/index.html) website, as well as in the site's [RSS feed](https://notenik.app/rss.xml). 
+
+Notenik is a free, flexible, open-source app for the Mac that stores all of a user's notes in simple text files. Notenik's flexibility starts with its ability to associate a set of custom fields with each Note, and grows with its ability to tailor the available custom fields by Collection, so that each new Collection can have a different set of fields, appropriate for a particular purpose. 
+
+Notenik supports the basic Markdown syntax, plus footnotes, citations, definition lists, Mathjax, tables, and wiki-style double bracket links to easily get from one Note to another. Extensive import, output and web publication capabilities are also available within the app. 
+ 
+Notenik can be downloaded from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984).  
+
+If you have questions, simply reply to this email, or send a note to [press@notenik.app](mailto:press@notenik.app). 

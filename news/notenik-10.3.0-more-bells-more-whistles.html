@@ -2,8 +2,8 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>Notenik Notenik 10.3.0 - More Bells, More Whistles</title>
-		<meta name="description" content="The Notenik App for the Mac" />
+		<title>Notenik | Notenik 10.3.0 - More Bells, More Whistles</title>
+		<meta name="description" content="The Notenik Mac App: Notenik 10.3.0 - More Bells, More Whistles" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <!-- Start of include file head-links.html -->
     <link rel="icon" href="../favicon.ico" type="image/x-icon" />
@@ -16,6 +16,21 @@
 	</head>
 	<body>
 		<div id="wrapper">
+		
+		<p class="quick-links">
+			Quick Links: 
+			<a class="quick-link" href="https://discourse.notenik.app">
+				Discourse
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">
+					Knowledge Base
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">
+					Version Notes
+			</a>
+		</p>
 
 			<!-- Start of include file header.html -->
 			<header>
@@ -41,16 +56,17 @@
 			<!-- End of include file header.html -->
 
 
+
 			<!-- Start of include file nav-top.html -->
 			<nav id="nav-top">
 				<a class="another-page" href="../index.html">
 					Home
 				</a>
-				<a class="another-page" href="../links.html">
-					Links
-				</a>
-				<a class="another-page" href="../news.html">
+				<a class="current-page" href="../news.html">
 					News
+				</a>
+				<a class="another-page" href="../usage.html">
+					Usage
 				</a>
 				<a class="another-page" href="../docs.html">
 					Docs
@@ -63,11 +79,11 @@
 				<a class="another-page" href="../about.html">
 					About
 				</a>
-				<a class="another-page" href="../connect.html">
-					Connect
-				</a>
 				<a class="another-page" href="../license.html">
 					License
+				</a>
+				<a class="another-page" href="../donate.html">
+					Donate
 				</a>
 				<a class="another-page" href="../privacy.html">
 					Privacy
@@ -94,15 +110,13 @@
 <h3 id="parent-realms-gain-new-powers">Parent Realms Gain New Powers</h3>
 
 <p>I find myself using Parent Realms more and more. If you&#8217;re not familiar with this concept, it&#8217;s a folder that acts as a container for one or more Notenik Collections. A number of new features pertain to these sorts of folders. </p>
-
 <ul>
 <li><p>A new file named &#8216;<code>- INFO-parent-realm.nnk</code>&#8217; now gets stashed within a parent realm folder when it is opened as such, and this file is then able to retain the last window coordinates for the parent realm window, so that they can be restored the next time you open that realm. I find this just makes use of these sorts of folders so much more pleasant &#8211; they just appear where I expect them to be, and are sized as I would like them, so I can start using them right away. </p></li>
-<li><p>Wiki links between Collections are now possible, and these especially make sense when you are linking back and forth between Collections stored in a common Parent Realm. If this is something that sounds interesting to you, then see the new <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-links-between-collections.html">Knowledge Base entry</a> for all the details. </p></li>
+<li><p>Wiki links between Collections are now possible, and these especially make sense when you are linking back and forth between Collections stored in a common Parent Realm. If this is something that sounds interesting to you, then see the new <a href="https://notenik.app/knowledge-base/EPUB/html/wiki-links-between-collections.html" class="ext-link" target="_blank" rel="noopener">Knowledge Base entry</a> for all the details. </p></li>
 <li><p>BBEdit Project files now show up within a Parent Realm, so you can easily use a Parent Realm window to open your BBEdit project, at the same time you are opening one or more Notenik Collections within the realm. </p></li>
 </ul>
 
 <h3 id="changes-to-file-handling">Changes to File Handling</h3>
-
 <ul>
 <li><p>A contiguous range of Notes may now be deleted from a Collection in one fell swoop, by selecting the range on the <strong>List</strong> tab, then selecting the <strong>Delete Range</strong> option from the List tab contextual menu. </p></li>
 <li><p>Deleted Notes are now moved to the Trash, rather than being completely deleted. </p></li>
@@ -112,7 +126,6 @@
 <h3 id="merge-template-commands-variables-and-modifiers">Merge Template Commands, Variables and Modifiers</h3>
 
 <p>Several fixes and enhancements were made in this area. </p>
-
 <ul>
 <li><p>The new Merge Templates System Variable &#8216;<code>display-css</code>&#8217; can be used to embed the CSS used within Notenik to style the Display tab. This new system variable might be used to populate the style section within the head of an HTML template, or might be used to populate a stand-alone CSS file. </p></li>
 <li><p>The <code>'output'</code> command may now be qualified with an <code>'ifnew</code>&#8216; operand, to indicate that the output from the Merge Template will only be written if the file is new, to avoid overwriting an existing file. (This can be used in conjunction with the new &#8217;<code>display-css</code>' variable described above to initialize a CSS file, but then avoid re-initializing it after the user has modified it.) </p></li>
@@ -124,7 +137,6 @@
 <h3 id="fixes">Fixes</h3>
 
 <p>A few minor tweaks were made, and annoyances eliminated. </p>
-
 <ul>
 <li><p>Hard line breaks within paragraphs were sometimes causing the first word on a following line to run right up against the last word on the line above, without any intervening space. This has been corrected. </p></li>
 <li><p>The <strong>Query Output</strong> window size and location is now retained and restored from one usage to the next. </p></li>
@@ -135,7 +147,7 @@
 <li><p>The <strong>List</strong> tab would sometimes show a duplicate entry after an update; this has been fixed. </p></li>
 </ul>
 
-<p>As usual, you can find more details in the <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">Notenik Knowledge Base</a>. </p>
+<p>As usual, you can find more details in the <a href="https://notenik.app/knowledge-base/EPUB/html/version-history.html" class="ext-link" target="_blank" rel="noopener">Notenik Knowledge Base</a>. </p>
 				</div>
 
 				<hr />
@@ -151,7 +163,7 @@
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2022 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 		</div>  <!-- end of wrapper div -->

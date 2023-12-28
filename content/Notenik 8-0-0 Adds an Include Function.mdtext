@@ -1,0 +1,27 @@
+Title:  Notenik 8.0.0 Adds an Include Function
+
+Seq:    7.4
+
+Status: 9 - Published
+
+Type:   07 - press
+
+Date:   20 Jan 2022
+
+Body:
+
+SEATTLE, Jan 20 -- The latest release of Notenik adds a Markdown extension that allows inclusion of a second item within the body of a note. The second item can be another note within the same collection, or any sort of external text file. If the included item is a note, then several different styles of inclusion are available, to include the entire note, only its body, or to format the second note's body (and possible attribution block) as a quotation. 
+
+This release also includes a `Collection` menu command to generate a custom Notenik URL to open the collection. The generated URL is copied to the clipboard, and from there it can be pasted into another app, and then used at any point in the future to request Notenik to re-open the collection. 
+
+See the full [Version Release notes](https://notenik.app/knowledge-base/EPUB/html/version-8.0.0.html) for additional details, including a couple of other small enhancements. 
+
+Notenik is a free, flexible, open-source app for the Mac that stores all of a user's notes in simple text files. Notenik's flexibility starts with its ability to associate a set of custom fields with each Note, and grows with its ability to tailor the available custom fields by Collection, so that each new Collection can have a different set of fields, appropriate for a particular purpose. 
+
+Notenik supports the basic Markdown syntax, plus footnotes, citations, definition lists, Mathjax, and wiki-style double bracket links to easily get from one Note to another. Extensive import, output and web publication capabilities are also available within the app. 
+ 
+Notenik can be downloaded from the [Mac App Store](https://apps.apple.com/us/app/notenik/id1465997984). 
+
+See [Notenik.app](https://notenik.app) on the Web for additional info. 
+
+If you have questions, simply reply to this email, or send a note to [press@notenik.app](mailto:press@notenik.app). 

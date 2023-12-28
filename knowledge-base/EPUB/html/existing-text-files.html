@@ -17,12 +17,25 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>7 <a href="files-and-folders.html">Files and Folders</a>&nbsp;&#8593;</p><h3 id="existing-text-files">7.9 Existing Text Files</h3>
+</nav>
+
+<main>
+<p>9. <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="existing-text-files">9.10 Existing Text Files</h3>
 <p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following alternate text file formats.  </p>
 
 <p>In all cases, the body of the Note will be treated as Markdown. </p>
@@ -32,6 +45,8 @@ window.MathJax = {
 <p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
 
 <p>And when adding new Notes to a Collection, Notenik will attempt to use whatever format is already found in the folder. </p>
+
+<p>Note that, beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set/change a Collection&#8217;s preferred file format when you <a href="tailor-collection-settings.html" class="wiki-link">Tailor Collection Settings</a>. </p>
 
 <h2 id="plain-text">Plain Text</h2>
 
@@ -43,7 +58,7 @@ window.MathJax = {
 
 <h2 id="multimarkdown">MultiMarkdown </h2>
 
-<p>The MultiMarkdown format has a special syntax for metadata stored at the top of a Markdown document. Notenik will attempt to recognize and parse such a document according to <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html">this specification</a>. </p>
+<p>The MultiMarkdown format has a special syntax for metadata stored at the top of a Markdown document. Notenik will attempt to recognize and parse such a document according to <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html" class="ext-link" target="_blank" rel="noopener">this specification</a>. </p>
 
 <h2 id="yaml-frontmatter">YAML Frontmatter</h2>
 
@@ -52,7 +67,6 @@ window.MathJax = {
 <h2 id="notenik">Notenik</h2>
 
 <p>The Notenik format differs from those above in the following significant ways. </p>
-
 <ul>
 <li><p>While Notenik will create a Note&#8217;s file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example: </p>
 
@@ -76,16 +90,28 @@ And this is the first line of the body.
 
 <hr />
 <h4>Contents</h4>
-
-<ul>
-<li>7.9.1 <a href="rules-for-reading.html">Rules for Reading</a></li>
-<li>7.9.2 <a href="rules-for-updating.html">Rules for Updating</a></li>
-<li>7.9.3 <a href="rules-for-new-notes.html">Rules for New Notes</a></li>
-<li>7.9.4 <a href="converting-an-entire-collection.html">Converting an Entire Collection</a></li>
-<li>7.9.5 <a href="backing-up.html">Backing Up</a></li>
+<ul class="notenik-toc">
+<li>9.10.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></li>
+<li>9.10.2 <a href="rules-for-updating.html" class="nav-link">Rules for Updating</a></li>
+<li>9.10.3 <a href="rules-for-new-notes.html" class="nav-link">Rules for New Notes</a></li>
+<li>9.10.4 <a href="converting-an-entire-collection.html" class="nav-link">Converting an Entire Collection</a></li>
+<li>9.10.5 <a href="backing-up.html" class="nav-link">Backing Up</a></li>
 </ul>
 
 <hr />
 
-<p>Next: <a href="rules-for-reading.html">Rules for Reading</a></p></body>
+<div>
+
+<p class="float-left">Next: <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></p>
+
+<p class="float-right">Skip to: <a href="markdown.html" class="nav-link">10. Markdown</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

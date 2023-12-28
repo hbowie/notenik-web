@@ -17,12 +17,25 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>12.2 <a href="scripting-modules.html">Scripting Modules</a>&nbsp;&#8593;</p><h4 id="input-module-parameters">12.2.1 Input Module Parameters</h4>
+</nav>
+
+<main>
+<p>15.3 <a href="scripting-modules.html" class="nav-link">Scripting Modules</a>&#160;&#8593;</p><h4 id="input-module-parameters">15.3.1 Input Module Parameters</h4>
 <p>The action for an input command may be either &#8216;set&#8217; or &#8216;open&#8217;. The set command(s) should precede the open command to which they will apply. </p>
 
 <h4 id="set">Set</h4>
@@ -30,7 +43,6 @@ window.MathJax = {
 <p>When using &#8216;set&#8217;, the variable to be set would be named in the object column, and the value to which it should be set would be supplied in the value column. </p>
 
 <p>The following variables may be set. </p>
-
 <ul>
 <li><p>xpltags - Set this variable to &#8216;true&#8217; to create a row for each tag included in the original row&#8217;s Tags field. A field called &#8216;Tag&#8217; will be added to the data source. Set the variable to &#8216;false&#8217; to bypass tags explosion. </p></li>
 <li><p>dirdepth - The number of levels of folders to be considered, when reading from a data source that might drill down into multiple folders. The top level folder specified counts as 1. </p></li>
@@ -43,7 +55,6 @@ window.MathJax = {
 <p>The object field is normally left blank, but an object of &#8216;merge&#8217; can be used to cause the current data source to be merged with the prior data source, rather than replacing it. </p>
 
 <p>The following modifier values are valid: </p>
-
 <ul>
 <li><p>dir - Reads the directory entries from the specified directory (including sub-directories, if the dirdepth variable has been set to a value greater than 1). </p></li>
 <li><p>file - Reads an input text file with columns separated by tabs or commas. </p></li>
@@ -52,14 +63,13 @@ window.MathJax = {
 <li><p>notenik+ - Reads a Notenik collection with a broad set of standard fields. </p></li>
 <li><p>notenik-general - Reads a Notenik Collection with any set of fields. </p></li>
 <li><p>notenik-index - Reads a Notenik Collection using the Index field, and generates one row for each index term, containing the following columns. </p>
-
 <ul>
 <li>Initial Letter - The first letter of the index term. </li>
 <li>Term - The term being indexed. </li>
 <li>Lower Case Term - The same index term, but converted to lowercase. </li>
 <li>Term Link - A definitive link that has been supplied for this term. </li>
 <li>Page - The Title of the Note containing this index term. </li>
-<li>Page Type - The Type of the Note containing this index term. </li>
+<li>Page Type - The Type of the Note containing this index term. If the Collection has a field named <code>Type</code>, then the contents of this field will be used; if no such field exists, then a <code>Class</code> field will be used, if one exists for the Collection; if neither of these fields are present, then the name of the folder containing the Collection will be used. </li>
 <li>Anchor - </li>
 </ul>
 </li>
@@ -69,5 +79,16 @@ window.MathJax = {
 
 
 <hr />
-<p>Next: <a href="filter-module-parameters.html">Filter Module Parameters</a></p></body>
+<div>
+
+<p>Next: <a href="filter-module-parameters.html" class="nav-link">Filter Module Parameters</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

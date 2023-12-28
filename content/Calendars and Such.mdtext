@@ -1,0 +1,76 @@
+Title:  Calendars and Such
+
+Page Title: Calendars and Such
+
+Status: 9 - Published
+
+Type:   02 - news
+
+Date:   30 Jan 2023
+
+Teaser:
+
+The 11.4.0 release of Notenik is out, and includes a new Calendar function... which was the first domino to fall. 
+
+Body:
+
+The 11.4.0 release of Notenik -- hitting the App Store shelves on January 30, 2023 -- has a bit of a story behind it. 
+
+It started when my niece and her husband decided to move to Germany for a few years. 
+
+My wife thought it would be a good idea to travel to Europe around the same time, to help our relatives get unpacked and situated in their new housing -- and for us to see some sights, as long as we're there!
+
+So as I started making reservations for transport and lodging, I thought it might be helpful to create a new Notenik Collection that we could use to keep track of all the details. 
+
+Of course the new Collection had a Date field, so that I could keep it sorted and organized by date. 
+
+I was using the **Date + Seq** sort to keep everything in order and then I realized, as I began getting multiple Notes stacked up on the same date, that it would be useful to put a time of day in the Seq field, to keep them in a meaningful order. 
+
+So that took a bit of code jiggering, so that Notenik would recognize that `1:00 pm`, `01:00 PM` and `13:00` all meant the same thing, and would all sort after 12:59 but before 01:01 pm. 
+
+So that was the first bit. 
+
+Then I thought it might be nice to see everything laid out in a traditional monthly calendar format, with successive weeks in one row after another, and with seven columns representing the days of the week. 
+
+So I created a new **Dates to Calendar** function that would arrange the user's chosen range of months into that sort of grid arrangement. 
+
+But then I thought that I could take the HTML used to create the calendar and show it to the user in the same window used for the Query Builder output. 
+
+But then... I thought... what if my wife wanted to print the whole thing out? 
+
+So I added a little pull-down button (actually a menu) to the bottom right corner of the output window, giving the user three choices: save the web page to disk, show it in your web browser, or save it to disk and then show it in your browser. (And, of course, once you're viewing it in your web browser, it's a piece of cake to print it from there.) 
+
+But then, of course, that same new control became available for Query Builder output as well. 
+
+But then I started thinking about the existing **Favorites to HTML** function. Why not send that output to the same window, with the same control for saving to disk, etc? 
+
+And so that change was made. 
+
+But now I had three different functions that all selected and formatted some of the Notes in a Collection and displayed them in HTML, all with the same output options, and it occurred to me that it was confusing to have these three functions appearing under different menus, in different locations. 
+
+So I created a new **Query** menu, and put them all under that. 
+
+But then I realized that the sequence of the menus might be more intuitive if the complex output functions were grouped farther to the right, so I moved the existing **Transform** menu over to the right of the **View** menu, just before the new **Query** menu. 
+
+And then I started looking at how to document all of this in the Knowledge Base, and I thought the "Getting Data Into and Out of Notenik" section was growing a bit overlarge, so I broke out a few items into a new section called "Integration."
+
+But then that got me thinking...
+
+So why were the "Markdown" and "Field Labels and Types" sections so far down in the reading order, following stuff like the aforementioned "Getting Data Into and Out of Notenik"?
+
+I had no idea. 
+
+So I moved them closer to the top, after "Common Tasks."
+
+And then, I thought... Jeez, that's probably enough for one release. Let's get it out there for new and prospective users to play with, and see what all of you think. 
+
+So that's the story behind 11.4.0. 
+
+And a little bit of insight into how my mind works, and how Notenik keeps growing and improving a few bits at a time, in a somewhat organic fashion. 
+
+As always, let me know if you have complaints, concerns, questions, or suggestions for improvement. 
+
+And the easiest way to communicate those is through the [Discourse forum](https://discourse.notenik.app).
+
+Happy note-taking!
+

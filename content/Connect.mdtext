@@ -6,23 +6,14 @@ Seq:    2.2
 
 Status: 9 - Published
 
-Type:   page
+Type:   01 - page
 
-Body: 
+Body:
 
-Stay connected with the Notenik community via any or all of the following channels. 
+The best way to connect with others in the Notenik community is through participation in our [Discourse Forum](https://discourse.notenik.app). This is a place where you can see the latest news, ask questions, make suggestions and report problems. 
 
-### Reddit
+If you'd like to follow via RSS, use the following URL: 
 
-+ [r/notenik](https://www.reddit.com/r/notenik)
-
-### RSS
-
-+ [ATOM Format](atom.xml)
-+ [RSS Format](rss.xml)
-
-### Twitter
-
-+ [@NotenikApp](https://twitter.com/NotenikApp)
++ [discourse.notenik.app/posts.rss](https://discourse.notenik.app/posts.rss)
 
 

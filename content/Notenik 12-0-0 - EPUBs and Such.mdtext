@@ -1,0 +1,39 @@
+Title:  Notenik 12.0.0 - EPUBs and Such
+
+Tags:   news
+
+Page Title: Notenik 12.0.0 - EPUBs and Such
+
+Status: 9 - Published
+
+Type:   02 - news
+
+Date:   11 May 2023
+
+Teaser:
+
+Lots of improvements, but EPUB generation is probably the biggest new feature. And did you know that e-books in the EPUB format can be pretty handy for private use, even if you have no aspirations to become a published author?
+
+Body:
+
+There have been six Notenik releases since my last News post, so let me summarize some of the recent improvements. 
+
+First, I must confess, there have been bugs -- and they have been fixed. 
+
+Next, there have been numerous small refinements. For example, when you drag and drop a Note from one Collection to another, any attachments are now copied as well, along with the contents of the Note. These are little things, but collectively they make Notenik easier and more enjoyable to use. 
+
+Probably the biggest single new feature is the ability go export an entire Collection as an e-book in the EPUB format. A file created like this can then be opened by Apple Books, as well as other e-book readers. You might think that e-books are only for authors who want to distribute their products to the general public, but it turns out that such a format can also be pretty handy for private use as well, since it allows the contents of a Notenik Collection to be easily shared with, and read by, others, on devices other than Macs. 
+
+Support for tables has been improved. There is now a new Markdown extension that uses embedded Javascript to make a table sortable, by clicking on the table's column headings. 
+
+Support for plain text in the body field has been added, so that formats other than Markdown (such as that used by the Bike Outliner app) can be stored in Notenik. 
+
+The appearance of headings can now be tailored to adjust centering options, font family and font size. 
+
+And then there have been enhancements that allow you to specify a header, footer and nav bar to appear in the Display of every Note in a Collection. 
+
+Finally, the [Notenik Knowledge Base](https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html) has seen many improvements to make it easier to use. 
+
+See the [Notenik Version History](https://notenik.app/knowledge-base/EPUB/html/version-history.html) for all the details. 
+
+And see the [Notenik Discourse Forum](https://discourse.notenik.app) if you have comments or suggestions for further improvements.

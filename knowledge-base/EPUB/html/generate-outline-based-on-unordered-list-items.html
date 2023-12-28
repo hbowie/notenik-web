@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<title>Generate Outline Based on Unordered List Items</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10. <a href="markdown.html" class="nav-link">Markdown</a>&#160;&#8593;</p><h3 id="generate-outline-based-on-unordered-list-items">10.3 Generate Outline Based on Unordered List Items</h3>
+<p>As an extension to the original Markdown spec from John Gruber, a Note&#8217;s <a href="body.html" class="wiki-link">body</a> field can be formatted as an outline, using the Note&#8217;s <a href="https://www.markdownguide.org/basic-syntax/#unordered-lists" class="ext-link" target="_blank" rel="noopener">unordered list items</a> as the items in the outline. </p>
+
+<p>This outline formatting is requested by placing the following command line in the body field, before the appearance of any lists. </p>
+
+<pre><code>
+{:outline-bullets}
+</code></pre>
+
+<p>Unordered list items can then be indicated using the usual Markdown syntax. Notenik will then wrap each list item within a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" class="ext-link" target="_blank" rel="noopener">summary</a> element, with the list item line and any following indented content enclosed within a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" class="ext-link" target="_blank" rel="noopener">details</a> element. </p>
+
+<p>The result will be that each list item will start with a disclosure triangle, with the details following the list item initially hidden. Clicking on the disclosure triangle will then reveal the details following the list item line (including any lower-level lists, whose items will in turn have their own disclosure triangles). </p>
+
+<p>For example&#8230; </p>
+<ul class="outline-list">
+<li><details class="list-item-1-details">
+
+<p>
+
+<summary>
+Styling with CSS </summary>
+</p>
+
+<p>Each <code>&lt;details&gt;</code> tag will have a css class assigned, in the format <code>list-item-x-details</code>, where <code>x</code> is the depth of the list, starting with <code>1</code>. </p>
+
+<p>Similarly, each <code>&lt;summary&gt;</code> tag will have a css class assigned in the format <code>list-item-x-summary</code>, where <code>x</code> is again the depth of the list, starting with <code>1</code>. </p>
+
+<p>Notenik will supply default styling for these classes in order to appropriately indent each level of the outline, and to suppress the normal bullets (effectively replacing them with disclosure triangles), but this default styling can be overridden by the user to modify the appearance of the headings. </p></details>
+</li>
+<li><details class="list-item-1-details">
+
+<p>
+
+<summary>
+Expanding the Initial Outline Display </summary>
+</p>
+
+<p>If you wish the initial Note display to show multiple levels of lists, then place a colon and a single digit  after the command itself. A value of <code>0</code> or <code>1</code> will just show the first level of list items &#8211; the same as the default, without any modifier. A value of &#8216;2&#8217; will result in two levels of lists being initially visible, and so on. </p>
+
+<p>For an example, see the following line: </p>
+
+<pre><code>
+{:outline-headings:3}
+</code></pre>
+</details>
+</li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="field-labels-and-types.html" class="nav-link">Field Labels and Types</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

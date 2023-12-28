@@ -17,22 +17,34 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>11.3 <a href="variable-modifiers.html">Variable Modifiers</a>&nbsp;&#8593;</p><h4 id="linked-tags-z">11.3.35 Linked Tags - Z</h4>
-<p>This modifier is similar to <a href="linked-tags-g.html">Linked Tags - G</a>, but works slightly differently. </p>
+</nav>
 
-<p><a href="linked-tags-g.html">Linked Tags - G</a> works well when each tag will have a separate page listing posts/notes containing that tag. </p>
+<main>
+<p>14.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="linked-tags-z">14.3.36 Linked Tags - Z</h4>
+<p>This modifier is similar to <a href="linked-tags-g.html" class="wiki-link">Linked Tags - G</a>, but works slightly differently. </p>
+
+<p><a href="linked-tags-g.html" class="wiki-link">Linked Tags - G</a> works well when each tag will have a separate page listing posts/notes containing that tag. </p>
 
 <p>Linked Tags - Z works best when each tag will have a separate section within a single shared page. </p>
 
-<p>As with <a href="linked-tags-g.html">Linked Tags - G</a>, this modifier takes a <a href="tags.html">Tags</a> field, and then breaks it down into its constituent tags, creating an HTML hyperlink (using the Anchor tag) for each separate tag within the field. </p>
+<p>As with <a href="linked-tags-g.html" class="wiki-link">Linked Tags - G</a>, this modifier takes a <a href="tags.html" class="wiki-link">Tags</a> field, and then breaks it down into its constituent tags, creating an HTML hyperlink (using the Anchor tag) for each separate tag within the field. </p>
 
 <p>One to three strings may be specified after the &#8216;z&#8217; variable modifier, separated as needed by semicolons. </p>
-
 <ol>
 <li><p>The first string will be prepended to each tag value, within the generated <code>href</code> attribute. </p></li>
 <li><p>The second string will be appended to each tag value, within the generated <code>href</code> attribute. </p></li>
@@ -43,7 +55,7 @@ window.MathJax = {
 
 <p>Let&#8217;s suppose we have a post/note with a tags field containing &#8216;<code>god, religion</code>&#8217;. </p>
 
-<p>Now, let&#8217;s suppose we have the following variable within a <a href="merge-templates.html">Merge Template</a>. </p>
+<p>Now, let&#8217;s suppose we have the following variable within a <a href="merge-templates.html" class="wiki-link">Merge Template</a>. </p>
 
 <pre><code>
 =$tags&amp;ztopics.html#tags.;;;$=
@@ -58,5 +70,16 @@ window.MathJax = {
 <p>Then, when the tags are clicked within the resulting web page, the links will take the user to the appropriate section for each tag within the &#8216;<code>topics.html</code>&#8217; page. </p>
 
 <hr />
-<p>Next: <a href="formatting-string.html">Formatting String</a></p></body>
+<div>
+
+<p>Next: <a href="prep-for-json.html" class="nav-link">Prep for JSON</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

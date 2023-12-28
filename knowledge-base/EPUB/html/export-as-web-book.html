@@ -17,36 +17,69 @@ window.MathJax = {
 </script>
 </head>
 <body>
-<p class="alignLeft">Notenik Knowledge Base</p>
+
+<header>
 <p class= "alignRight"><em>Back to <a href="../../../index.html">Notenik.app</a></em></p>
 <hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
 
 
-<p>8.2 <a href="import-and-export-your-notes.html">Import and Export Your Notes</a>&nbsp;&#8593;</p><h4 id="export-as-web-book">8.2.2 Export as Web Book</h4>
+</nav>
+
+<main>
+<p>12.2 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a>&#160;&#8593;</p><h4 id="export-as-web-book">12.2.4 Export as Web Book</h4>
 <p>The <code>Web Book</code> export format will transform an entire Collection into a series of HTML pages that can be read as if they were chapters in a book. </p>
 
 <p>Here&#8217;s the way this feature works. </p>
 
+<h5 id="web-book-as-epub-folder">Web Book as EPUB Folder</h5>
 <ol>
-<li><p>Your Collection should have a  <a href="seq.html">Seq</a> field, and optionally a <a href="level.html">Level</a> field, in addition to the usual <a href="title.html">Title</a> and <a href="body.html">Body</a> fields. See <a href="using-notenik-as-an-outliner.html">Using Notenik as an Outliner</a> for further useful info on how these two fields can be used together. </p></li>
+<li><p>Your Collection should have a  <a href="seq.html" class="wiki-link">Seq</a> field, and optionally a <a href="level.html" class="wiki-link">Level</a> field, in addition to the usual <a href="title.html" class="wiki-link">Title</a> and <a href="body.html" class="wiki-link">Body</a> fields. See <a href="using-notenik-as-an-outliner.html" class="wiki-link">Using Notenik as an Outliner</a> for further useful info on how these two fields can be used together. </p></li>
 <li><p>All of the Notes in your Collection should be numbered sequentially using the Seq field. If the Level field is present, then it should be used to indicate the depth of each Note within the overall outline hierarchy. </p></li>
 <li><p>The first Note in the Collection should be given a Seq value of zero, or blank. The Title of this first Note should reflect the overall title for the resulting Web Book, and its Level field (if present) should have a value of 1. </p></li>
 <li><p>When the command is invoked, the user will be prompted to specify an output folder into which the generated files will be placed. </p></li>
 <li><p>All of the Web material will be placed in a subfolder named &#8216;EPUB&#8217;. </p></li>
 <li><p>One output HTML page will be generated for each Note in the Collection, and these files will be placed in an EPUB sub-folder named &#8216;html&#8217;. File names will be created by taking each Note&#8217;s title, changing all letters to lower-case, and replacing spaces and punctuation with dashes. A file extension of &#8216;.html&#8217; will be appended to each file name. </p></li>
-<li><p><a href="wiki-style-links.html">Wiki Style Links</a> will be converted to relative web links, so that the intent of the original links will be preserved. (In other words, note-to-note links will still work.) </p></li>
-<li><p>Each Note will be formatted for streamlined reading. (You are again referred to the instructions on how to <a href="using-notenik-as-an-outliner.html">Using Notenik as an Outliner</a> for further explanation of what this means.) </p></li>
-<li><p>As with Streamlined Reading within Notenik, each page will have a link to its parent in the hierarchy, as well as links to any children. Each page will also end with a link to the next page in the Collection. </p></li>
+<li><p><a href="wiki-style-links.html" class="wiki-link">Wiki Style Links</a> will be converted to relative web links, so that the intent of the original links will be preserved. (In other words, note-to-note links will still work.) </p></li>
+<li><p>Each Note will be formatted for streamlined reading. (You are again referred to the instructions on how to <a href="using-notenik-as-an-outliner.html" class="wiki-link">Using Notenik as an Outliner</a> for further explanation of what this means.) </p></li>
+<li><p>As with Streamlined Reading within Notenik, each page will have a link to its parent in the hierarchy, as well as links to any children. Each page will also end with a link to the next page in the Collection. If the next page link would take you lower in the page hierarchy &#8211; to a deeper level &#8211; then to the right of the next page link there will also appear a &#8220;Skip to&#8221; link that can skip lower-level details and take you straight to the next Note at the same or higher level. </p></li>
 <li><p>The first time a Web Book folder is populated, Notenik will create another EPUB sub-folder, this one named &#8216;css&#8217;, into which a file named &#8216;styles.css&#8217; will be placed, containing body formatting reflecting the current Display Fonts chosen within Notenik. Once this file has been created, though, Notenik will not replace it, so you are free to modify this CSS stylesheet in any way you would like. Each HTML page generated will link to this stylesheet for its formatting. </p></li>
 <li><p>If a file named &#8216;header.html&#8217; is found within the output folder, at the top level, then the HTML code within this file will be included at the top of each generated page. </p></li>
-<li><p>You may find other files within the output folder. These are generally intended to make it easier to publish the resulting output in the <a href="https://en.wikipedia.org/wiki/EPUB">EPUB</a> format, although the ability to generate such output from Notenik is still largely aspirational at this point. </p></li>
+<li><p>You may find other files within the output folder. These are generally intended to make it easier to publish the resulting output in the <a href="https://en.wikipedia.org/wiki/EPUB" class="ext-link" target="_blank" rel="noopener">EPUB</a> format. </p></li>
 <li><p>A user may now load the Title page of the book into a Web browser &#8211; either from a location on their local drive, or from a site on the Web &#8211; and then navigate from there through the entire Web Book. </p></li>
 </ol>
 
-<p>For an example of a Web Book, see the <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">one on the Notenik.app website</a> that was generated from this Notenik Knowledge Base itself. </p>
+<p>For an example of a Web Book, see the <a href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html" class="ext-link" target="_blank" rel="noopener">one on the Notenik.app website</a> that was generated from this Notenik Knowledge Base itself. </p>
+
+<h5 id="web-book-as-site">Web Book as Site</h5>
 
 <p>If you select the option to export to a Web Book as a Site, then the HTML pages will be generated at the top of the output folder, instead of within an <code>EPUB</code> folder, and the other EPUB-specific outputs will be skipped. Additionally, the first page of the &#8216;book&#8217; will be written twice, once with a file name of <code>index.html</code>. </p>
 
+<h5 id="web-book-as-epub">Web Book as EPUB</h5>
+
+<p>With this option, an actual file with an <code>.epub</code> extension will be generated. The required metadata should be supplied via the <a href="supply-epub-metadata.html" class="wiki-link">Supply EPUB Metadata</a> Markdown command. </p>
+
+<p>The output will be in <a href="https://www.w3.org/TR/epub-overview-33/" class="ext-link" target="_blank" rel="noopener">EPUB 3</a> format. </p>
+
 <hr />
-<p>Next: <a href="export-using-script.html">Export Using Script</a></p></body>
+<div>
+
+<p>Next: <a href="export-using-script.html" class="nav-link">Export Using Script</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
 </html>

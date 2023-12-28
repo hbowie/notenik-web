@@ -1,14 +1,18 @@
 Title: Notenik 2 content
 
+Title Set by User: true
+
 Link: /Users/hbowie/Sites/notenik-web/content
 
-Sort Parm: 0
+Sort Parm: 1
 
 Sort Descending: false
 
+Sort Blank Dates Last: true
+
 Other Fields Allowed: false
 
-Last Index Selected: 13
+Last Index Selected: 48
 
 Mirror Auto Index: false
 
@@ -16,7 +20,7 @@ Display Body Label: true
 
 Title Display Option: h1
 
-Streamlined Reading: false
+Display Mode: normal
 
 MathJax: false
 
@@ -26,5 +30,15 @@ Missing Targets: false
 
 Curly Apostrophes: true
 
-Window Numbers: 592.0;85.0;1250.0;1330.0;517.5;
+Ext Links Open in New Windows: true
+
+Scrolling Sync: false
+
+Note File Format: nnk
+
+Hash Tags: false
+
+Window Numbers: 125.0;28.0;1291.0;1330.0;517.5;
+
+Column Widths: author: 100, 200, 1000; tags: 50, 100, 1200; statusdigit: 20, 30, 50; dateadded: 100, 180, 250; x: 12, 20, 50; title: 200, 503, 1500; klass: 60, 80, 1500; datemod: 100, 180, 250; rank: 50, 80, 1500; seq: 30, 80, 1500; date: 80, 120, 500; 
 

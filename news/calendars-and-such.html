@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Notenik | Calendars and Such</title>
+		<meta name="description" content="The Notenik Mac App: Calendars and Such" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!-- Start of include file head-links.html -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../fonts/equity_cb.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/concourse_t3.css" type="text/css" />
+    <link rel="stylesheet" href="../fonts/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- End of include file head-links.html -->
+	</head>
+	<body>
+		<div id="wrapper">
+		
+		<p class="quick-links">
+			Quick Links: 
+			<a class="quick-link" href="https://discourse.notenik.app">
+				Discourse
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/notenik-knowledge-base.html">
+					Knowledge Base
+			</a>
+			&nbsp;
+			<a class="quick-link" href="https://notenik.app/knowledge-base/EPUB/html/version-history.html">
+					Version Notes
+			</a>
+		</p>
+
+			<!-- Start of include file header.html -->
+			<header>
+				<div id="header-left">
+					<div id="header-logo-and-name">
+						<div id="header-logo">
+							<a href="../index.html">
+								<img class="header-logo-image" alt="Notenik Logo" src="../images/notenik-logo.png" />
+							</a>
+						</div>
+						<div id="header-title">
+							Notenik
+						</div>
+					</div>
+					<div id="header-slogan">
+						Do More With Your Notes
+					</div>
+				</div>
+				<div id="header-right">
+				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+				</div>
+			</header>
+			<!-- End of include file header.html -->
+
+
+
+			<!-- Start of include file nav-top.html -->
+			<nav id="nav-top">
+				<a class="another-page" href="../index.html">
+					Home
+				</a>
+				<a class="current-page" href="../news.html">
+					News
+				</a>
+				<a class="another-page" href="../usage.html">
+					Usage
+				</a>
+				<a class="another-page" href="../docs.html">
+					Docs
+				</a>
+			</nav>
+			<!-- End of include file nav-top.html -->
+
+			<!-- Start of include file nav-bottom.html -->
+			<nav id="nav-bottom">
+				<a class="another-page" href="../about.html">
+					About
+				</a>
+				<a class="another-page" href="../license.html">
+					License
+				</a>
+				<a class="another-page" href="../donate.html">
+					Donate
+				</a>
+				<a class="another-page" href="../privacy.html">
+					Privacy
+				</a>
+				<a class="another-page" href="../support.html">
+					Support
+				</a>
+			</nav>
+			<!-- End of include file nav-bottom.html -->
+
+			<main id="main">
+				<h3>Calendars and Such</h3>
+				<p class="news-date">Posted on 30 Jan, 2023</p>
+
+				<div id="content">
+					<p>The 11.4.0 release of Notenik &#8211; hitting the App Store shelves on January 30, 2023 &#8211; has a bit of a story behind it. </p>
+
+<p>It started when my niece and her husband decided to move to Germany for a few years. </p>
+
+<p>My wife thought it would be a good idea to travel to Europe around the same time, to help our relatives get unpacked and situated in their new housing &#8211; and for us to see some sights, as long as we&#8217;re there! </p>
+
+<p>So as I started making reservations for transport and lodging, I thought it might be helpful to create a new Notenik Collection that we could use to keep track of all the details. </p>
+
+<p>Of course the new Collection had a Date field, so that I could keep it sorted and organized by date. </p>
+
+<p>I was using the <strong>Date + Seq</strong> sort to keep everything in order and then I realized, as I began getting multiple Notes stacked up on the same date, that it would be useful to put a time of day in the Seq field, to keep them in a meaningful order. </p>
+
+<p>So that took a bit of code jiggering, so that Notenik would recognize that <code>1:00 pm</code>, <code>01:00 PM</code> and <code>13:00</code> all meant the same thing, and would all sort after 12:59 but before 01:01 pm. </p>
+
+<p>So that was the first bit. </p>
+
+<p>Then I thought it might be nice to see everything laid out in a traditional monthly calendar format, with successive weeks in one row after another, and with seven columns representing the days of the week. </p>
+
+<p>So I created a new <strong>Dates to Calendar</strong> function that would arrange the user&#8217;s chosen range of months into that sort of grid arrangement. </p>
+
+<p>But then I thought that I could take the HTML used to create the calendar and show it to the user in the same window used for the Query Builder output. </p>
+
+<p>But then&#8230; I thought&#8230; what if my wife wanted to print the whole thing out? </p>
+
+<p>So I added a little pull-down button (actually a menu) to the bottom right corner of the output window, giving the user three choices: save the web page to disk, show it in your web browser, or save it to disk and then show it in your browser. (And, of course, once you&#8217;re viewing it in your web browser, it&#8217;s a piece of cake to print it from there.) </p>
+
+<p>But then, of course, that same new control became available for Query Builder output as well. </p>
+
+<p>But then I started thinking about the existing <strong>Favorites to HTML</strong> function. Why not send that output to the same window, with the same control for saving to disk, etc? </p>
+
+<p>And so that change was made. </p>
+
+<p>But now I had three different functions that all selected and formatted some of the Notes in a Collection and displayed them in HTML, all with the same output options, and it occurred to me that it was confusing to have these three functions appearing under different menus, in different locations. </p>
+
+<p>So I created a new <strong>Query</strong> menu, and put them all under that. </p>
+
+<p>But then I realized that the sequence of the menus might be more intuitive if the complex output functions were grouped farther to the right, so I moved the existing <strong>Transform</strong> menu over to the right of the <strong>View</strong> menu, just before the new <strong>Query</strong> menu. </p>
+
+<p>And then I started looking at how to document all of this in the Knowledge Base, and I thought the &#8220;Getting Data Into and Out of Notenik&#8221; section was growing a bit overlarge, so I broke out a few items into a new section called &#8220;Integration.&#8221; </p>
+
+<p>But then that got me thinking&#8230; </p>
+
+<p>So why were the &#8220;Markdown&#8221; and &#8220;Field Labels and Types&#8221; sections so far down in the reading order, following stuff like the aforementioned &#8220;Getting Data Into and Out of Notenik&#8221;? </p>
+
+<p>I had no idea. </p>
+
+<p>So I moved them closer to the top, after &#8220;Common Tasks.&#8221; </p>
+
+<p>And then, I thought&#8230; Jeez, that&#8217;s probably enough for one release. Let&#8217;s get it out there for new and prospective users to play with, and see what all of you think. </p>
+
+<p>So that&#8217;s the story behind 11.4.0. </p>
+
+<p>And a little bit of insight into how my mind works, and how Notenik keeps growing and improving a few bits at a time, in a somewhat organic fashion. </p>
+
+<p>As always, let me know if you have complaints, concerns, questions, or suggestions for improvement. </p>
+
+<p>And the easiest way to communicate those is through the <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">Discourse forum</a>. </p>
+
+<p>Happy note-taking! </p>
+				</div>
+
+				<hr />
+
+				<p>Earlier News:
+					<a href="notenik-at-fifty.html">
+						Notenik at Fifty
+					</a>
+				</p>
+
+			</main>
+
+			<!-- Start of include file footer.html -->
+			<footer id="footer">
+        <hr />
+Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+      </footer>
+			<!-- End of include file footer.html -->
+		</div>  <!-- end of wrapper div -->
+	</body>
+</html>

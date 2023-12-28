@@ -1,0 +1,84 @@
+Title:  Notenik 10.7.0 - The Beat Goes On
+
+Page Title: Notenik 10.7.0 - The Beat Goes On
+
+Status: 9 - Published
+
+Type:   02 - news
+
+Date:   04 Nov 2022
+
+Teaser:
+
+Here's a useful summary of recent changes, including Notenik versions 10.4.0 through 10.7.0. 
+
+Body:
+
+Well, a few more Notenik versions have been released since my last blog post on the website, so I thought it might be time for a fresh update. 
+
+Let me sort the recent changes (from 10.4.0 through 10.7.0) into groups by Notenik function. 
+
+#### Interoperability
+
+As other applications have come along with their own ways of doing things, I've tried, wherever it makes sense, to support variations in the formatting of Note files that will make Notenik more compatible with Notes being created and manipulated by other pieces of software. 
+
++ Added a new Collection Pref to allow the user to explicitly select a **Preferred File Format** for a Collection. As an alternative to the Notenik format, the user can select YAML Frontmatter, MultiMarkdown, simple Markdown or plain text. Changing the format will convert any existing Notes to the newly selected format. 
+
++ Added another Collection Pref to allow the user to request that their **Tags values always be saved with preceding Hash Marks**, to support apps that look for that form of identification. 
+
++ When **attaching files** to a Note, Notenik now offers the option to move the existing file (thus preserving its identity) rather than copying it. This helps when using apps such as Hookmark to keep track of your files. 
+
+#### Markdown Extensions
+
+These enhancements to the Notenik Markdown parser make Markdown within Notenik even more powerful and, in some cases, more compatible with other Markdown implementations. 
+
++ When you use the Markdown command to **Generate a Collection Index**, Notenik will now provide a one-line table of contents at the top of the page, with the line containing the starting letters of all the index terms appearing below, allowing the reader to click on a letter to be taken to that section of the generated Index. 
+
++ Added a new Markdown command to Generate a **Collection Search Page**, using embedded JavaScript as well as HTML. 
+
++ A vertical bar (‘|’) may now be used within a **Wiki Style Link** to introduce the text that is to appear as the link, if different from the title of the target Note.
+
++ Added support for an **alternate syntax for Note/file inclusion**, so that something like the following: 
+
+		![[embedded note]]
+
+	... may be used, as an alternate to:
+
+		{{include:embedded note}}
+
+
+#### Field Labels and Types
+
+Notenik field types are one of its most powerful features, and a new arrow has been added to the quiver with this release. 
+
++ Added **Rank** as a new field type, allowing the user to select from a defined list, with each item containing both a number and a label. The number will be used for sorting, with the label providing meaning. Also added a new Merge Template Variable Modifier that will **Take Text from the Right**, allowing the label to be displayed without its corresponding number.  
+
+#### Website Generation
+
+Not everyone uses Notenik as a static website generator, but I use it for this purpose all the time, and have recently extended Notenik's capabilities in this area with the following enhancements. 
+
++ Added a new Merge Template Variable Modifier to **Prep for JSON**, preparing a variable to be stored using JSON. This can be useful if you are using a Merge Template to generate a Javascript file. 
+
++ When using the Merge Template Variable Modifier to **Summarize** the contents of a field (for use in a teaser, etc.), the logic has been improved so that it will try to avoid ending the summary with a period that follows a leading number on a line. 
+
++ Added several new **Derived Variables**, for use with Merge Templates, that are especially useful for HTML formatting of information about quotations and citations. These include `Author Work Slug`, `The Work Type Slug`, `Major Work`, `Work Rights Slug` and `Known Work Title`. Also added `Image Slug` to make it easer to format image fields into HTML. 
+
++ When **generating an Index for a Collection**, the population of the `Page Type` field has been expanded to include the Note's class field, or the Collection's enclosing folder name, if no `Type` field is present. 
+
+#### Annoyance Eilimination
+
+A few little annoyances were sorted out. 
+
++ A new user pointed out that the keyboard shortcut of **CMD right arrow** will normally move the cursor to the end of the current line within a text box. Notenik was using this key combination as a shortcut to one of its own commands, which was blocking the normal usage. This has been fixed. 
+
++ I noticed that **Note titles ending with a question mark** were not generating reliable HTML for accessing attached Image files. This seems to be something that started with macOS Ventura (13.0). I've added additional code to make sure that question marks are appropriately encoded when included as part of a URL. 
+
++ Wiki Links will now look for singular variations, as well as plural, so if you create a wiki link like this -- `[[Notes]]` -- it will reliably link to another Note that is simply titled `Note` (without the 's'). 
+
++ Attempts to open **duplicate parent realm windows** will now result in only one window being opened, rather than allowing several windows all pointing to the same folder.
+
++ Added a command beneath the File Menu to **Forget All Shortcuts**. This can be useful in order to reset your list of remembered Collection shortcuts, in cases where they are no longer behaving in a helpful manner. 
+
+#### Bottom Line
+
+Hopefully there's a little something for everyone in these last few releases. I'm continuing to release a new batch of enhancements about every couple of weeks, so if there's something still missing that you'd like to see, don't hesitate to [post something on the Discourse forum](https://discourse.notenik.app)!

@@ -8,7 +8,7 @@ Main Menu: Home
 
 Status: 9 - Published
 
-Type:   page
+Type:   01 - page
 
 Body:
 
@@ -20,7 +20,7 @@ If you're looking for a note-taking app that does more than just record your not
 
 ### &bull; Proudly Made for the Mac
 
-Just in time for the modern resurgence of Apple's premier platform, and M1-ready, Notenik runs with ease on all reasonably modern Macs. 
+Just in time for the modern resurgence of Apple's premier platform, and Apple silicon-ready, Notenik runs with ease on all reasonably modern Macs. 
 
 ### &bull; 100% Free and Open-Source
 
@@ -48,4 +48,4 @@ The Notenik Knowledge Base contains everything you might ever want to know about
 
 ### &bull; Actively Supported, Maintained and Enhanced
 
-I'm Herb Bowie, the developer. I respond to all emails, and am generally happy to accommodate requests for fixes and further enhancements. I try to publish one or two significant updates each month. If you have a missing feature or software quirk that's bothering you, then let me know, and I'll see what I can do.
+I'm Herb Bowie, the developer. I've provided a [Discourse forum](https://discourse.notenik.app) for users, and I'm generally happy to accommodate requests for fixes and further enhancements. I try to publish one or two significant updates each month. If you have a missing feature or software quirk that's bothering you, then just post something in the forum, and I'll see what I can do.
