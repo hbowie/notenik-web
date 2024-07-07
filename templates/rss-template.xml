@@ -1,24 +1,20 @@
 <?output "../rss.xml"?>
 <rss version="2.0">
   <channel>
-	<title>Notenik News</title>
+	<title>Adventures with Notenik</title>
 	<link>https://notenik.app</link>
-	<description>What's New with the Notenik app?</description>
+	<description>The Latest Adventures with Notenik</description>
 	<language>en</language>
-<?set item-count = 0 ?>
 <?nextrec?>
-<?set item-count += 1 ?>
-<?if =$item-count$= le 10 ?>
 	<item>
 	  <title>=$title&x$=</title>
-	  <link>https://notenik.app/news/=$title&f$=.html</link>
-	  <guid>https://notenik.app/news/=$title&f$=.html</guid>
+	  <link>https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html</link>
+	  <guid>https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html</guid>
 	  <pubDate>=$date&EEE, dd MMM yyyy$= 12:00:00 -0700</pubDate>
 	  <description>
 		  =$teaser&xo-$=
 	  </description>
 	</item>
-<?endif?>
 <?loop?>
   </channel>
 </rss>

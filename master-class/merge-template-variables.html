@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Merge Template Variables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>8 <a href="contents-of-a-merge-template.html" class="nav-link">Contents of a Merge Template</a>&#160;&#8593;</p><h4 id="merge-template-variables">8.3 Merge Template Variables</h4>
+<p>So <a href="merge-template-literals.html" class="wiki-link">Merge Template Literals</a> provide the fixed content of your output. </p>
+
+<p>And <a href="merge-template-commands.html" class="wiki-link">Merge Template Commands</a> control the overall flow of the processing. </p>
+
+<p>But how do you actually specify what data to insert, and where to insert it? </p>
+
+<p>That&#8217;s the job for Merge Template Variables. </p>
+
+<p>Following is an illustration of the basic syntax. </p>
+
+<pre><code>
+&lt;p>Note Title: =$title$=&lt;/p>
+
+&lt;p>Body: &lt;/p>
+
+=$body$=
+
+</code></pre>
+
+<p>If you&#8217;re unfamiliar with HTML, <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> are the ways you start and end a paragraph. </p>
+
+<p>So the way you indicate the placement of field values is by placing <code>=$</code> and <code>$=</code>  around a field label. </p>
+
+<p>BTW, capitalization, spacing and punctuation are not significant when specifying a field label. So <code>=$publication-date$=</code> will work just as well as <code>=$Publication Date$=</code>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="merge-template-variable-modifiers.html" class="nav-link">Merge Template Variable Modifiers</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

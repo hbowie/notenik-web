@@ -1,0 +1,27 @@
+<?output "../includes-gen/latest-adventure.html"?>
+
+				<h2>Adventures with Notenik</h2>
+
+<?include "../includes/latest-adventure-intro.html"?>
+<?set count = 0 ?>
+<?nextrec?>
+<?if =$count$= lt 1 ?>
+					<article>
+						<h3>
+							<a class="invisi-link" href="news/=$title&f$=.html">
+								=$title$=
+							</a>
+						</h3>
+						<p class="news-date">Adventure # =$seq$= &bull;  =$date&EEEE, MMMM d, yyyy$=</p>
+
+						=$teaser&o$=
+
+						<p class="news-date">
+							<a href="adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html">
+								read more&hellip;
+							</a>
+						</p>
+					</article>
+<?endif?>
+<?set count += 1 ?>
+<?loop?>

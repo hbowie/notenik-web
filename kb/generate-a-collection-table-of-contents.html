@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Generate a Collection Table of Contents</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.8 <a href="collection-navigation-commands.html" class="nav-link">Collection Navigation Commands</a>&#160;&#8593;</p><h5 id="generateacollectiontableofcontents">7.3.8.3 Generate a Collection Table of Contents</h5>
+<p>As an extension to the original Markdown spec from John Gruber, a Table of Contents may be generated for an entire Collection. </p>
+
+<p>This feature may be invoked with a line like the following: </p>
+
+<pre><code>{:collection-toc}
+</code></pre>
+
+<p>This makes the most sense for a Collection that has a <a href="seq.html" class="wiki-link">Seq</a> field. </p>
+
+<p>The order of the table of contents will be determined by the currently selected <a href="change-the-sort-sequence-for-your-collection.html" class="wiki-link">Sort Sequence</a> for the Collection. This command will typically make the most sense for a Collection sorted by <code>Seq + Title</code>. </p>
+
+<p>If the Collection has a <a href="level.html" class="wiki-link">Level</a> field, then the contents of the level field will be used to control indentation and the nesting of lists, so that the table of contents will appear in an indented outline format. </p>
+
+<p>The generated Table of Contents will support direct linking from any ToC entry to the represented Note itself. </p>
+
+<p>See this Collection&#8217;s <a href="complete-table-of-contents.html" class="wiki-link">Complete Table of Contents</a> for an example. </p>
+
+<p>With options similar to those available to <a href="generate-a-note-table-of-contents.html" class="wiki-link">generate a Note Table of Contents</a>, this command may be followed by one or two digits to indicate, respectively, the lowest level to be included in the ToC, and the highest level. </p>
+
+<p>The Note in which the ToC appears will not itself be included in the generated Table. </p>
+
+<p>This command generates the table of contents using unordered list items, and placing the command to <a href="generate-outline-based-on-unordered-list-items.html" class="wiki-link">Generate Outline Based on Unordered List Items</a> before this command will add disclosure triangles to the table of contents. </p>
+
+<p>Note that, when using <a href="merge-templates.html" class="wiki-link">Merge Templates</a> and converting <a href="markdown-to-html-o.html" class="wiki-link">Markdown to HTML</a>, you will likely also need to use the <a href="variable-modifiers.html" class="wiki-link">Variable Modifier</a> identified as the <a href="wiki-style-links-w.html" class="wiki-link">Wiki-Style Links Mod</a>, typically with a value of &#8216;<code>w1</code>&#8217;, in order to make sure that this command resolves effectively, since it generates wiki-style links in Markdown before the conversion to HTML takes place. </p>
+
+<p>If the Collection is sorted by <code>Date + Seq</code>, then an outline item will be generated for each Date, and then lower-level outline items will be generated for each Note, showing the Seq field followed by the Title field. </p>
+
+<p>Note that when you <a href="import-and-export-your-notes.html" class="wiki-link">export your Notes</a> using the Concatenated Markdown option, Notenik will attempt to generate a Collection Table of Contents in Markdown format, so that the resulting Markdown output may be opened and viewed in apps other than Notenik. However the usability of the links in the Table of Contents may be limited, since there seems to be little agreement about the formatting of automatically generated <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" class="ext-link" target="_blank" rel="noopener">HTML ids</a> from <a href="https://daringfireball.net/projects/markdown/syntax#header" class="ext-link" target="_blank" rel="noopener">Markdown headers</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="generate-a-collection-index.html" class="nav-link">Generate a Collection Index</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

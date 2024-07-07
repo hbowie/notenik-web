@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Script File Columns</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>13. <a href="script-files.html" class="nav-link">Script Files</a>&#160;&#8593;</p><h3 id="scriptfilecolumns">13.2 Script File Columns</h3>
+<p>A script file is a text file formatted into five columns, using either tabs or commas as delimiters to separate the columns. </p>
+
+<p>Blank lines, as well as lines beginning with <code>&lt;!—</code>, will be ignored. </p><table>
+<tr>
+<th>
+  #  </th>
+<th>
+ Heading </th>
+<th>
+ Contents </th>
+ </tr>
+<tr>
+<td>
+  1  </td>
+<td>
+ module  </td>
+<td>
+ Specifies the <a href="scripting-modules.html" class="wiki-link">scripting module</a> to be used to execute the command.  </td>
+</tr>
+<tr>
+<td>
+  2  </td>
+<td>
+ action  </td>
+<td>
+ The action to be taken by the indicated module.  </td>
+</tr>
+<tr>
+<td>
+  3  </td>
+<td>
+ modifier </td>
+<td>
+ A field used to modify the effects of the action in some way.  </td>
+</tr>
+<tr>
+<td>
+  4  </td>
+<td>
+ object  </td>
+<td>
+ Names the object of the action.  </td>
+</tr>
+<tr>
+<td>
+  5  </td>
+<td>
+ value   </td>
+<td>
+ Specifies a value to be assigned, or to be compared.  </td>
+</tr>
+</table>
+
+<p>When the value column contains a path to a folder or a file, then a relative path may be indicated by specifying a prefix of <code>#PATH#</code>. The resulting path will be resolved relative to the location of the script file currently being executed. </p>
+
+<p>As examples: </p>
+<ul>
+<li><p><code>#PATH#../</code> would resolve to the folder 1 level above the location of the script file. </p></li>
+<li><p><code>#PATH#templates/page_template.html</code> would resolve to the file named <code>page_template.html</code> located in the <code>templates</code> folder, assuming the <code>templates</code> folder is located in the same parent as the script file itself. </p></li>
+<li><p><code>#PATH#../templates/page_template.html</code> would resolve to the file named <code>page_template.html</code> located in the <code>templates</code> folder, assuming the script is located in something like a <code>scripts</code> folder that is a peer to the <code>templates</code> folder. </p></li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="scripting-modules.html" class="nav-link">Scripting Modules</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

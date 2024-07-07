@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Citations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.4 <a href="multimarkdown-extensions.html" class="nav-link">MultiMarkdown Extensions</a>&#160;&#8593;</p><h5 id="citations">7.3.4.1 Citations</h5>
+<p>As an extension to the original Markdown spec from John Gruber, citations are supported using the <a href="https://fletcher.github.io/MultiMarkdown-6/syntax/citation.html" class="ext-link" target="_blank" rel="noopener">MultiMarkdown syntax</a>. </p>
+
+<p>This is how your text would be formatted at the point of the citation. </p>
+
+<pre><code>This is a statement that should be attributed to
+its source[p. 23][#Bowie:2016].
+</code></pre>
+
+<p>And following is an example of how the citation definition would appear. </p>
+
+<pre><code>[#Bowie:2016]: Herb Bowie. *Soft Dev Big Ideas*.  PowerSurge Publishing, 2016.
+</code></pre>
+
+<p>You are not required to use a locator (e.g. &#8220;p. 23&#8221;), and there are no special rules on what can be used as a locator if you choose to use one. If you prefer to omit the locator, just use an empty set of square brackets before the citation, as in the following example. </p>
+
+<pre><code>This is a statement that should be attributed to its 
+source[][#Bowie:2016].
+</code></pre>
+
+<p>There are no rules on the citation key format that you use (e.g. &#8220;Bowie:2016&#8221;), but it must be preceded by a &#8216;<code>#</code>&#8217;, just as footnotes use &#8216;<code>^</code>&#8217;. </p>
+
+<p>As for the reference description, you can use Markup code within this section. </p>
+
+<p>If you want to include a source in your bibliography that was not cited, you may use the following: </p>
+
+<pre><code>[Not cited][#citekey]
+</code></pre>
+
+<p>The <code>Not cited</code> bit is case insensitive. </p>
+
+<p>Note that if you include a citation definition without any referencing citation at all, then that citation will not appear within the formatted display. </p>
+
+<p>As with <a href="footnotes.html" class="wiki-link">Footnotes</a>, Notenik adds a special feature for Citations. If you include a <a href="short-id.html" class="wiki-link">Short ID</a> field in a Collection, then Notenik will automatically incorporate the Short ID for each Note into the code that creates the links from the referencing text to the appropriate citation, and then back again to the referencing text, so that the resulting IDs will be unique, even if the resulting code for multiple Notes is combined into a single page. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="mathjax-support.html" class="nav-link">MathJax Support</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

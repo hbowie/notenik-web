@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>See a Daily Quote</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>14. <a href="putting-it-all-together.html" class="nav-link">Putting It All Together</a>&#160;&#8593;</p><h3 id="seeadailyquote">14.10 See a Daily Quote</h3>
+<p>If you have a digital <a href="https://en.wikipedia.org/wiki/Commonplace_book" class="ext-link" target="_blank" rel="noopener">commonplace book</a> in Notenik, then you might wish &#8211; as I recently did &#8211; to see a random quote from your Collection on a daily basis. </p>
+
+<p>See <a href="create-a-digital-commonplace-book-or-a-zettelkasten.html" class="wiki-link">Create a Digital Commonplace Book or a Zettelkasten</a> or <a href="create-a-commonplace-book-with-lookup-fields.html" class="wiki-link">Create a Commonplace Book with Lookup Fields</a> for help setting up a commonplace book. </p>
+
+<p>Once you have that in place, here&#8217;s how you can see a daily quote from it. </p>
+
+<h5 id="1-open-your-collection-of-quotations">1. Open Your Collection of Quotations</h5>
+
+<p>Open your commonplace book in Notenik. </p>
+
+<h5 id="2-grab-the-notenik-url-for-this-collection">2. Grab the Notenik URL for this Collection</h5>
+
+<p>Look beneath the Collection menu and select the option to Copy Notenik URL for Collection. This will be formatted using Notenik&#8217;s <a href="custom-url-scheme.html" class="wiki-link">Custom URL Scheme</a>, and will be placed on the macOS clipboard. </p>
+
+<h5 id="3-paste-the-url-somewhere">3. Paste the URL Somewhere</h5>
+
+<p>This could be into a Notenik Link field, or into a new document created by your trusty text editor. </p>
+
+<p>You should have something like this: </p>
+
+<pre><code>notenik://open?path=/Users/BigJim/quotes
+</code></pre>
+
+<h5 id="4-add-some-parameters">4. Add Some Parameters</h5>
+
+<p>Now add a couple of additional parameters to the URL. </p>
+
+<p>Add a parameter of <code>&amp;select=random</code> to select a random Note within the Collection. </p>
+
+<p>Then add a parameter of <code>&amp;mode=quotes</code> to hide the list view, and switch the Display mode to <a href="quotations-mode.html" class="wiki-link">Quotations Mode</a>. </p>
+
+<p>So you should then have a URL like the following: </p>
+
+<pre><code>notenik://open?path=/Users/BigJim/quotes/&amp;select=random&amp;mode=quotes
+</code></pre>
+
+<h5 id="5-save-the-url-in-your-project-launcher">5. Save the URL in your Project Launcher</h5>
+
+<p>Assuming you have a Notenik <a href="make-a-project-launcher.html" class="wiki-link">Project Launcher</a>, then create an entry for a daily quote and place your enhanced URL in the Link field. </p>
+
+<p>But, of course, you could save it somewhere else as well &#8211; anyplace that can store URLs. </p>
+
+<h5 id="6-launch-at-startup">6. Launch at Startup</h5>
+
+<p>Finally, add <a href="launch-at-startup-tags.html" class="wiki-link">Launch at Startup Tags</a> to your Project Launcher entry. </p>
+
+<h5 id="putting-it-all-together">Putting It All Together</h5>
+
+<p>Now every day when I start or restart my Mac, and then launch Notenik, Notenik will automatically show me a random quotation from my Commonplace book. </p>
+
+<p>Of course, this depends on you having permissions to access your Commonplace book. But if you open it daily it should stay in your Open Recent list, and so should retain your permissions. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="reference.html" class="nav-link">Reference</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

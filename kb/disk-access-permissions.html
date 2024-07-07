@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Disk Access Permissions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>8. <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="diskaccesspermissions">8.8 Disk Access Permissions</h3>
+<p>Notenik is a modern, well-mannered Mac application, which means that it does not presume to have free run of your hard drive, roaming wantonly wherever it will. </p>
+
+<p>In other words, to use the official jargon, Notenik is <a href="https://en.wikipedia.org/wiki/Sandbox_(computer_security)" class="ext-link" target="_blank" rel="noopener">sandboxed</a>. </p>
+
+<p>At the same time, Notenik does not take all the data you have given it and stash it away in some secret location that only Notenik can access because — well, it&#8217;s your data. You can store it wherever you like. It&#8217;s stored in plain sight. You can see it whenever you want. And if you want to open that data using your favorite text editor, then more power to you. Have at it. Knock yourself out. </p>
+
+<p>These two Notenik traits can sometimes come into conflict, however. If you store your Notenik data in lots of different Collections, and store those Collections in different places, then Notenik may sometimes have trouble getting access to them. </p>
+
+<p>Here&#8217;s how this works. </p>
+<ol>
+<li><p>Any Collection stored within the <a href="the-notenik-icloud-container.html" class="wiki-link">The Notenik iCloud Container</a> will always be accessible by Notenik, and the <a href="navigate-your-collections-via-the-board.html" class="wiki-link">Nav Board</a> can be used to easily open any of the Collections within this special container, or to create a new Collection within this container. </p></li>
+<li><p>Any Collection folder that you select through the Open command under the File menu will be available to you, because you have explicitly selected it for use by Notenik. (Note that you can also achieve these same results by using the macOS Finder to drag a folder and drop it onto the Notenik app icon.) </p></li>
+<li><p>Any Collection folder that you select using the Open Recent command under the File menu will be available to you, because macOS remembers that you previously gave Notenik permission to access that Collection. </p></li>
+<li><p>If you use the Open Parent Realm command under the File menu to have Notenik search for its Collections and Scripts within a parent folder, then those Collections and Scripts will be available to be opened, because you have explicitly given Notenik permission to access everything within that parent folder. </p></li>
+<li><p>If you use the <code>Grant Folder Access&#8230;</code> command beneath the <code>File</code> menu to select a folder you wish to authorize for Notenik access, then Notenik will then have unfettered access to anything within that folder. </p></li>
+<li><p>If you change the <strong>Grant Access</strong> option on the <strong>General</strong> tab of the <strong>Notenik  Settings</strong> to prompt you to grant access <strong>At Startup</strong>, then Notenik will automatically prompt you to grant access to a folder (perhaps your user folder?) whenever Notenik is launched. This option can be useful if you store your Notenik Collections in a variety of locations, and if you wish to be able to open them without explicitly selecting them each time (if, for example, you are using Notenik as a <a href="make-a-project-launcher.html" class="wiki-link">Project Launcher</a>. </p></li>
+</ol>
+
+<p>In general, the rules above will be enough to cover most situations. If they prove too restrictive, though, you can always grant Notenik full disk access in the Security &amp; Privacy pane of System Settings. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="sync-your-notes.html" class="nav-link">Sync Your Notes</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Tailor Collection Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5. <a href="creating-and-tailoring-a-collection-of-notes.html" class="nav-link">Creating and Tailoring a Collection of Notes</a>&#160;&#8593;</p><h3 id="tailorcollectionsettings">5.4 Tailor Collection Settings</h3>
+<p>You will be presented with the Settings for your Collection immediately after creating it. </p>
+
+<p>But you can always access these Settings later by selecting <code>Settings&#8230;</code> beneath the <code>Collection</code> menu. </p>
+
+<p>(Note that these are different from the <a href="notenik-settings.html" class="wiki-link">application settings</a>, found beneath the <code>Notenik</code> menu. The Application Settings apply globally to all of your Collections.) </p>
+
+<p>The left side of the Collection Settings allows you to tweak the Collection Title, the file extension used for Notes, and a few other settings. </p>
+
+<p>See the <a href="collection-title.html" class="wiki-link">Collection Title</a> page for details on that field. </p>
+
+<p>Each Note file is an ordinary text file, and can be opened using any text editor, in addition to being editable within Notenik. Depending on what application you might wish to be the default text editor for your notes, you may wish to pick some special file extension to be used. The file extension of <code>.md</code> is often used for Markdown documents. (If you don&#8217;t care about this, or this doesn&#8217;t make any sense to you, then feel free to just ignore this whole paragraph and leave the Preferred File Extension set to the normal default of <code>txt</code>.) </p>
+
+<p>Note that, if you later decide to change the <code>Preferred File Extension</code> for a Collection, Notenik will automatically rename all of the existing files within that Collection to reflect your new choice. </p>
+
+<p>Beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set the <code>Preferred File Format</code> to be used. This will change the way each Note is internally formatted on disk. The default is to use a special Notenik <a href="note-file-format.html" class="wiki-link">Note File Format</a>. If you wish to make your Notes compatible with other software, however, you may wish to make a different choice. Both YAML and MultiMarkdown allow for metadata (fields other than <a href="title.html" class="wiki-link">Title</a> and <a href="body.html" class="wiki-link">Body</a>), but in a slightly different format than that preferred by Notenik. See <a href="existing-text-files.html" class="wiki-link">Existing Text Files</a> for more info on alternate formats. </p>
+
+<p>Also beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set the option to save Tags with Hash signs. This will change the way each Note is internally formatted on disk. Again, this may increase interoperability of your Notes when using other software.  </p>
+
+<p>Note that, if you change the <code>Preferred File Format</code>, or the hash tags option, then Notenik will reformat all of the Notes in your Collection to use the new format. Data loss is possible when doing this, so you may wish to backup your Notes before making such a change. </p>
+
+<p>Enter a shortcut for a Collection as one way to reference it later, via a <a href="collection-identifiers.html" class="wiki-link">Collection Identifier</a>. </p>
+
+<p>Select an option to tailor your <a href="note-title-display.html" class="wiki-link">Note Title Display</a>. The default is a normal font size, with a bold style applied. See the separate page below for details. </p>
+
+<p>The following controls are available and can be used to modify/augment the appearance of Notes on the Display tab. </p>
+<ul>
+<li><p>Include Explicit Body field label for Note? &#8211; This is checked by default, but you can uncheck it if you&#8217;d prefer to see your Notes displayed without a leading &#8216;Body:&#8217; label.  </p></li>
+<li><p>Display Mode &#8211; This allows the user to select from four options: normal, <a href="streamlined-reading.html" class="wiki-link">Streamlined Reading</a>, <a href="presentation-mode.html" class="wiki-link">Presentation Mode</a>, or <a href="quotations-mode.html" class="wiki-link">Quotations Mode</a>, with normal being the default. </p></li>
+<li><p>Rerun Mirror Indexing with every Update? &#8211; See the <a href="mirror-your-notes.html" class="wiki-link">Mirror your Notes</a> page for more info. </p></li>
+<li><p>Enable Mathjax V3? &#8211; Check this box to load the Mathjax javascript package, so that math symbols and equations will display properly. This is off by default. See the <a href="mathjax-support.html" class="wiki-link">Mathjax Support</a> page for more info. </p></li>
+<li><p>Enable Local Image References? &#8211; This is off by default, because in order to enable local image file references, the HTML formatted for the Display tab must first be written to disk, instead of being loaded from memory. If you have stored images somewhere in your Collection folder, and you want them to appear on the Display tab, then check this box. </p></li>
+<li><p>Create Notes for Missing Wiki Link Targets? &#8211; This option is off by default. If you turn it on for a Collection, then whenever Notenik encounters a Note containing a wiki-style link to a second Note, and that Note does not yet exist, Notenik will create a Note with the targeted title, and with text in the body of the new Note pointing back to the referencing Note. </p></li>
+<li><p>Open External Links in new Tabs/Windows? &#8211; If this option is checked, then Markdown links other than Wiki Links will have the code <code>target="_blank" rel="noopener"</code> included in their anchor elements, which should result in the target of the link being opened in a new browser window (or tab, depending on the user&#8217;s browser settings). </p></li>
+<li><p>Attempt to Sync Display and Edit Scrolling? &#8211; If this is off, which is the default, then Notenik will return the user to the last scroll position in their editing of the <a href="body.html" class="wiki-link">Body</a> field, and to their last position on the Display tab, when the user is switching back and forth between the Edit and Dispay tabs while working on the same Note. When this setting if off, though, scrolling to a new position on the Display tab will not result in a change in the scroll position on the Edit tab, nor will the reverse occur. When this setting is on, then scrolling on one tab will result in Notenik <em>attempting</em> to scroll to an equivalent position on the other tab. Such attempts will tend to be imperfect, though, since the Display tab scroller is for the entire Note (all fields), and the Edit scroller is only for the Body field. This sort of synchronized scrolling may work reasonably well in some cases, but not in others, so adjust this setting accordingly. </p></li>
+<li><p>Minimum Body Edit Height in Lines &#8211; This numeric value can be adjusted using the provided slider, just below. It defaults to 5 lines, but can be set as high as 60 lines. This value can also be adjusted up or down, in increments of 5 lines, by using the appropriate menu items beneath the View menu. Adjusting this value upwards can be useful if you have a Collection with lots of metadata fields, and you are finding that the Edit tab is sometimes devoting too little space to the actual body of the Note. </p></li>
+</ul>
+
+<h5 id="list-of-fields">List of Fields</h5>
+
+<p>The right side of the window allows you to choose the fields you would like to include in the Collection. Feel free to check additional ones if they seem useful to you. </p>
+
+<p>If you would like to further customize the list of fields for a Collection, read about <a href="the-collection-template-file.html" class="wiki-link">the Collection Template file</a>, consulting the section on <a href="field-labels-and-types.html" class="wiki-link">Field Labels and Types</a> as necessary. </p>
+
+<h5 id="other-fields-allowed">Other Fields Allowed?</h5>
+
+<p>Note that the last checkbox on the right side is a bit different from the others. It asks if `Other Fields Allowed?'. This is unchecked by default, which means that Notenik will only recognize a field in a Note if it has been defined in advance for the Collection &#8211; either by checking the field label here, on the Collection Settings window, or by adding it to the template file directly, via an external text editor. </p>
+
+<p>If you check this box, then anything in any of your Notes that looks like a separate field will be treated as such, whether or not it starts with one of your predefined field labels for the Collection. </p>
+
+<p>In general, it is better to not allow other, random fields to be recognized as such, to prevent cases of misinterpretation of your Notes. On the other hand, there may be cases where the additional flexibility is worth the risk. </p>
+
+<hr />
+<h4>Contents</h4>
+<ul class="notenik-toc">
+<li>5.4.1 <a href="collection-title.html" class="nav-link">Collection Title</a></li>
+<li>5.4.2 <a href="note-title-display.html" class="nav-link">Note Title Display</a></li>
+<li>5.4.3 <a href="streamlined-reading.html" class="nav-link">Streamlined Reading</a></li>
+<li>5.4.4 <a href="presentation-mode.html" class="nav-link">Presentation Mode</a></li>
+<li>5.4.5 <a href="quotations-mode.html" class="nav-link">Quotations Mode</a></li>
+</ul>
+
+<hr />
+
+<div>
+
+<p class="float-left">Next: <a href="collection-title.html" class="nav-link">Collection Title</a></p>
+
+<p class="float-right">Skip to: <a href="rename-a-field.html" class="nav-link">5.5 Rename a Field</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

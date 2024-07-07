@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Tables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.3 <a href="common-markdown-extensions.html" class="nav-link">Common Markdown Extensions</a>&#160;&#8593;</p><h5 id="tables">7.3.3.1 Tables</h5>
+<p>As an extension to the original Markdown spec from John Gruber, tables are supported.  </p>
+
+<p>This is an extension documented in the <a href="https://www.markdownguide.org/extended-syntax/#tables" class="ext-link" target="_blank" rel="noopener">Markdown Guide</a>. </p>
+
+<p>(Also see the <a href="make-a-table-sortable.html" class="wiki-link">Make a Table Sortable</a> command if you&#8217;d like the user to be able to click on a column heading in order to sort the table by the values in that column.) </p>
+
+<p>To create a table, use the pipe character (<code>|</code>)  to form a vertical border before, after, and/or between the columns, and use three or more consecutive dashes in each column to form a horizontal border between the header row and the start of the data rows, as in the following example: </p>
+
+<pre><code>| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+</code></pre>
+
+<p>&#8230;which will then display as follows: </p><table>
+<tr>
+<th>
+ Syntax      </th>
+<th>
+ Description </th>
+ </tr>
+<tr>
+<td>
+ Header      </td>
+<td>
+ Title       </td>
+</tr>
+<tr>
+<td>
+ Paragraph   </td>
+<td>
+ Text        </td>
+</tr>
+</table>
+
+<p>You can control horizontal alignment within each column by placing a colon before, after, or before and after the string of dashes, for left-, right- or centering alignment. See the following example: </p>
+
+<pre><code>| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | + more      |
+</code></pre>
+
+<p>&#8230;which will display as follows: </p><table>
+<tr>
+<th style="text-align:left;">
+ Syntax      </th>
+<th style="text-align:center;">
+ Description </th>
+<th style="text-align:right;">
+ Test Text     </th>
+ </tr>
+<tr>
+<td style="text-align:left;">
+ Header      </td>
+<td style="text-align:center;">
+ Title       </td>
+<td style="text-align:right;">
+ Here&#8217;s this   </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ Paragraph   </td>
+<td style="text-align:center;">
+ Text        </td>
+<td style="text-align:right;">
+ + more      </td>
+</tr>
+</table>
+
+<p>Note that the pipes do not need to be lined up, and the trailing pipes are optional. So the following code is valid.  </p>
+
+<pre><code>| Syntax      | Description | Test Text
+| :---        |    :----:   |          ---: 
+| Header      | Title       | Here's this   
+| Paragraph   | Text        | + more   
+</code></pre>
+
+<p>And will still display as desired: </p><table>
+<tr>
+<th style="text-align:left;">
+ Syntax      </th>
+<th style="text-align:center;">
+ Description </th>
+<th style="text-align:right;">
+ Test Text </th>
+</tr>
+<tr>
+<td style="text-align:left;">
+ Header      </td>
+<td style="text-align:center;">
+ Title       </td>
+<td style="text-align:right;">
+ Here&#8217;s this   </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ Paragraph   </td>
+<td style="text-align:center;">
+ Text        </td>
+<td style="text-align:right;">
+ + more      </td>
+</tr>
+</table>
+
+<p>Leading pipes are required, however. Each table line must start with a pipe character. </p>
+
+<p>Pipe characters may be escaped in order to include them as part of the contents of a cell, rather than having them mark the end of the column. </p>
+
+<p>Per the <a href="https://fletcher.github.io/MultiMarkdown-5/tables.html" class="ext-link" target="_blank" rel="noopener">MultiMarkdown</a> convention, you can indicate that a cell should span multiple columns by simply adding additional pipes (|) at the end of the cell. The number of pipes equals the number of columns the cell should span. </p>
+
+<p>So the following code: </p>
+
+<pre><code>| First Header | Second Header | Third Header |
+| ------------ | :-----------: | -----------: |
+| Content      |          *Long Cell*        ||
+| Content       |   **Cell**   |         Cell |
+| And more      | With an escaped '\|'       || 
+</code></pre>
+
+<p>Will render as follows: </p><table>
+<tr>
+<th>
+ First Header </th>
+<th style="text-align:center;">
+ Second Header </th>
+<th style="text-align:right;">
+ Third Header </th>
+ </tr>
+<tr>
+<td>
+ Content      </td>
+<td style="text-align:center;" colspan="2">
+          <em>Long Cell</em>        </td>
+</tr>
+<tr>
+<td>
+ Content       </td>
+<td style="text-align:center;">
+   <strong>Cell</strong>   </td>
+<td style="text-align:right;">
+         Cell </td>
+</tr>
+<tr>
+<td>
+ And more      </td>
+<td style="text-align:center;" colspan="2">
+ With an escaped &#8216;|&#8217;       </td>
+ </tr>
+</table>
+
+<h5 id="unsupported-multimarkdown-features">Unsupported MultiMarkdown Features</h5>
+
+<p>There are several differences between <a href="https://fletcher.github.io/MultiMarkdown-5/tables.html" class="ext-link" target="_blank" rel="noopener">MultiMarkdown (MMD) tables</a> and what one might call <a href="https://www.markdownguide.org/extended-syntax/#tables" class="ext-link" target="_blank" rel="noopener">more ordinary Markdown tables</a>, as currently implemented by Notenik. </p>
+
+<p>Here are the more notable differences: </p>
+<ol>
+<li><p>MMD allows for multiple lines of table headings, where Notenik only expects one.  </p></li>
+<li><p>MMD is rather liberal in terms of its requirement for each line to start with a pipe character; Notenik allows a trailing pipe character to be omitted, but not the starting pipe. </p></li>
+<li><p>MMD has some extra syntax to specify table captions, whereas Notenik does not. </p></li>
+<li><p>Notenik does not support use of a blank line to create a new TBODY tag, as does MMD. </p></li>
+</ol>
+
+<p>While these additional features are fully supported by apps such as iA Writer and Marked, Notenik does not currently support them. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="fenced-code-blocks.html" class="nav-link">Fenced Code Blocks</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

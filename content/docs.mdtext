@@ -12,21 +12,23 @@ Type:   01 - page
 
 Body:
 
-If you're still wondering if Notenik is right for you, you might want to refer to the numerous [Reasons to Use Notenik](reasons/EPUB/html/reasons-to-use-notenik.html).
+We have a variety of different documents ready to help you with Notenik. 
 
-If you're new to Notenik, you might want to start with a brief [Notenik Intro](intro/EPUB/html/welcome-to-notenik.html), complete with screenshots. 
++ If you're still wondering if Notenik is right for you, you might want to refer to the numerous [Reasons to Use Notenik](reasons/index.html).
 
-Or, perhaps, you'd like to see a summary of Notenik features, arranged for easy comparison to other apps in this space. In other words: "[How Notenik Stacks Up Against the Big Names](how-notenik-stacks-up-against-the-big-names.html)".
++ If you're curious about the goals and constraints for Notenik development, you might wish to review the [Product Vision](vision.html) for the app. 
 
-When you're ready for more detail, you'll want to consult the Notenik Knowledge Base, which is, itself, a Notenik Collection. 
++ If you're new to Notenik, you might want to start with a brief [Notenik Intro](intro/welcome-to-notenik.html), complete with screenshots. 
 
-You can open it from the [Help menu within Notenik](notenik://help).
++ When you're ready for more detail, you'll want to consult the Notenik Knowledge Base, which is, itself, a Notenik Collection. 
 
-You can find it on GitHub at [hbowie/notenik-KB](https://github.com/hbowie/notenik-KB).
+	+ You can open it from the [Help menu within Notenik](notenik://help).
 
-To review recent changes to the app, see the [Version History](notenik://help?id=versionhistory) section of the Knowledge Base. 
+	+ If you'd rather consult the Knowledge Base without use of Notenik, please view the [Web Book](kb/notenik-knowledge-base.html) stored on this site, and available for viewing within your Web browser.
 
-If you'd rather consult the Knowledge Base without use of Notenik, please view the [Web Book](knowledge-base/EPUB/html/notenik-knowledge-base.html) stored on this site, and available for viewing within your Web browser.
++ To review recent changes to the app, see the [Version History](kb/version-history.html) section of the Knowledge Base. 
+
++ When you're ready for more advanced topics, you might want to review the [Notenik Master Class](master-class/index.html). 
 
 And if you'd like a quick, 10-minute video tour of the Notenik basics...
 

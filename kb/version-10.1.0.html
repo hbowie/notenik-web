@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 10.1.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version10.1.0">16.50 Version 10.1.0</h3>
+<p>Date: 11 Aug 2022 - Thursday</p><h5 id="query-output-window-size-and-location-now-restored">Query Output Window Size and Location Now Restored</h5>
+
+<p>The last size and position of the Query Output window will now be saved, and restored the next time the window is used. This window is used to show the results of a query, when using the <a href="query-builder.html" class="wiki-link">Query Builder</a>. </p>
+
+<h5 id="new-merge-variable-for-default-css">New Merge Variable for Default CSS</h5>
+
+<p>The new <a href="merge-templates.html" class="wiki-link">Merge Templates</a> <a href="system-variables.html" class="wiki-link">System Variable</a> <code>display-css</code> can be used to embed the CSS used within Notenik to style the Display tab. This new system variable might be used to populate the style section within the head of an HTML template, or might be used to populate a stand-alone CSS file. </p>
+
+<h5 id="added-ifnew-option-for-output-merge-command">Added ifnew Option for Output Merge Command</h5>
+
+<p>An optional second operand to the <a href="output-command.html" class="wiki-link">output command</a> may now be provided. If this operand is the literal <code>ifnew</code>, then the designated output from the <a href="merge-templates.html" class="wiki-link">Merge Template</a> will only be written if the file is new (if it doesn&#8217;t already exist). This could be used, for example, in conjunction with the new <code>display-css</code> Merge Variable, to create a new CSS file if one does not already exist, but to avoid overwriting one that does exist. </p>
+
+<h5 id="added-bbedit-project-files-to-parent-realm-collections">Added BBEdit Project Files to Parent Realm Collections</h5>
+
+<p><a href="https://www.barebones.com/products/bbedit/benefitscommand.html" class="ext-link" target="_blank" rel="noopener">BBEdit Project Files</a> will now be included as launchable items when viewing a <a href="open-parent-realm.html" class="wiki-link">parent realm</a>. The titles displayed for the items in a parent realm have also been simplified, and now only show the folder / file name. </p>
+
+<h5 id="deleted-notes-now-moved-to-trash">Deleted Notes now Moved to Trash</h5>
+
+<p>Deleted Notes are now moved to the Trash, instead of being permanently deleted. </p>
+
+<h5 id="modified-notes-no-longer-generate-deletes-and-adds">Modified Notes No Longer Generate Deletes and Adds</h5>
+
+<p>Notenik had previously been implementing a Note modification by first deleting the Note, and then adding it. This logic has been changed to avoid deleting the Note before rewriting it, and to rename the file when the generated file name changes. </p>
+
+<h5 id="now-possible-to-delete-a-range-of-notes">Now Possible to Delete a Range of Notes</h5>
+
+<p>A contiguous range of Notes may now be deleted from a Collection in one fell swoop. First, select the range of Notes on the List tab, by clicking on the first Note, then shift-clicking on the last Note. Then right-click on one of the Notes in the range to bring up the Contextual menu. Then select the <strong>Delete Range</strong> option. You will always see a Confirmation Dialog before the Notes are deleted (whether or not this App Setting is set for the normal single-Note deletion). Click OK if everything looks good, and the entire range of Notes will be removed from the Collection, and the corresponding Note files will be moved to the Trash.  </p>
+
+<h5 id="changes-to-loading-of-shortcuts">Changes to Loading of Shortcuts</h5>
+
+<p>A couple of changes are being made to the way <a href="tailor-collection-settings.html" class="wiki-link">Collection Shortcuts</a> are loaded at startup. First, the attempt to load them will not be made until after the optional Startup Access Grant (documented in <a href="disk-access-permissions.html" class="wiki-link">Disk Access Permissions</a>). Second, each one found will be written to the log so that they are available when you <a href="view-the-log.html" class="wiki-link">View the Log</a>. </p>
+
+<h5 id="notenik-101-video-link-added">Notenik 101 Video Link Added</h5>
+
+<p>A new item was added to the Help menu that will take the user to the Notenik 101 video on YouTube. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-10.0.0.html" class="nav-link">Version 10.0.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

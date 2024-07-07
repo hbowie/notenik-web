@@ -1,0 +1,5 @@
+module	action	modifier	object	value
+input	set		xpltags	true
+input	set		dirdepth	1
+input	open	notenik-split-tags		/Users/hbowie/Xcode/NotenikDocs/adventures
+output	open			/Users/hbowie/Downloads/adventures-xpl.csv

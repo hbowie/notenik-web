@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Existing Text Files</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>8. <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="existingtextfiles">8.10 Existing Text Files</h3>
+<p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following alternate text file formats.  </p>
+
+<p>In all cases, the body of the Note will be treated as Markdown. </p>
+
+<p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of each text file. </p>
+
+<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
+
+<p>And when adding new Notes to a Collection, Notenik will attempt to use whatever format is already found in the folder. </p>
+
+<p>Note that, beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set/change a Collection&#8217;s preferred file format when you <a href="tailor-collection-settings.html" class="wiki-link">Tailor Collection Settings</a>. </p>
+
+<h2 id="plain-text">Plain Text</h2>
+
+<p>The first line of the file contains neither a Title label nor a Markdown level 1 heading. The title is taken from the file name (minus the extension) and the entire file contents make up the body. No metadata, no field labels, and no tags. </p>
+
+<h2 id="markdown">Markdown</h2>
+
+<p>The first line of the file contains a level 1 heading, and this is used as the Note&#8217;s title. The second line may optionally contain tags for the Note, identified by a hash mark in the first position of the line, immediately followed by tag(s), with no intervening spaces. The rest of the file makes up the Note&#8217;s body. No metadata, and no field labels. </p>
+
+<h2 id="multimarkdown">MultiMarkdown </h2>
+
+<p>The MultiMarkdown format has a special syntax for metadata stored at the top of a Markdown document. Notenik will attempt to recognize and parse such a document according to <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html" class="ext-link" target="_blank" rel="noopener">this specification</a>. </p>
+
+<h2 id="yaml-frontmatter">YAML Frontmatter</h2>
+
+<p>Metadata is present at the beginning of the document and expressed using the <a href="https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started" class="ext-link" target="_blank" rel="noopener">YAML syntax</a>. A line with three dashes indicates the beginning of the metadata block, and appears on the first line of the file. The end of the metadata block is indicated by another line with three dashes, or a line with three dots. Between these delimiters metadata is expressed in a fashion very similar to the MultiMarkdown format, with the following differences: </p>
+<ul>
+<li>fields capable of possessing multiple values (<a href="tags.html" class="wiki-link">tags</a>, <a href="author.html" class="wiki-link">author</a>, etc.) have each of those values expressed on a separate line, with each value preceded by a dash. </li>
+<li>parent field labels are allowed, and are automatically prepended to following child labels in order to ensure unique IDs for each label. </li>
+</ul>
+
+<h2 id="notenik">Notenik</h2>
+
+<p>The Notenik format differs from those above in the following significant ways. </p>
+<ul>
+<li><p>While Notenik will create a Note&#8217;s file name from its title, Notenik expects the title of the note to be explicitly identified in the first line of the file, as in the following example: </p>
+
+<pre><code>Title: Supported Variations in Text File Formats
+</code></pre>
+</li>
+<li><p>Notenik will generally write out a blank line between fields, to aid in readability, which means that the beginning of the body is not triggered by the first blank line. </p></li>
+<li><p>Notenik will explicitly identify the start of the Note&#8217;s body with a body label, as in the following example: </p>
+
+<pre><code>Body: 
+</code></pre>
+
+<pre><code>And this is the first line of the body.
+</code></pre>
+</li>
+</ul>
+
+
+<hr />
+<h4>Contents</h4>
+<ul class="notenik-toc">
+<li>8.10.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></li>
+<li>8.10.2 <a href="rules-for-updating.html" class="nav-link">Rules for Updating</a></li>
+<li>8.10.3 <a href="rules-for-new-notes.html" class="nav-link">Rules for New Notes</a></li>
+<li>8.10.4 <a href="converting-an-entire-collection.html" class="nav-link">Converting an Entire Collection</a></li>
+<li>8.10.5 <a href="backing-up.html" class="nav-link">Backing Up</a></li>
+</ul>
+
+<hr />
+
+<div>
+
+<p class="float-left">Next: <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></p>
+
+<p class="float-right">Skip to: <a href="field-labels-and-types.html" class="nav-link">9. Field Labels and Types</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

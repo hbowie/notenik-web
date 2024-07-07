@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Recording a Script</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>11 <a href="scripting.html" class="nav-link">Scripting</a>&#160;&#8593;</p><h4 id="recording-a-script">11.3 Recording a Script</h4>
+<p>Notenik has a window called the <strong>Scripter</strong> window, which can be accessed by looking beneath the <strong>Window</strong> menu. </p>
+
+<p>At the very top of the window, you can see what is essentially one row of a script, with each of the five columns presented in its own widget: either a popup or a dropdown menu. </p>
+
+<p>There are two additional controls positioned to the far right of the same row, beyond the menus representing the five columns. </p>
+
+<p>The first control is a small button labeled as &#8216;@&#8217;. Click on this button and Notenik will present you with a standard file chooser, with the path to the chosen file then being placed in the <code>Value</code> field. This can be used for any action that expects a file identifier to be found in the Value field. </p>
+
+<p>The next button is labeled &#8216;Go&#8217;, and clicking on this button will cause Notenik to attempt to execute the scripting action entered to the left. </p>
+
+<p>Results will be shown in the scrolling text box below. </p>
+
+<p>Note that, after execution of one action (invoked by clicking on &#8216;Go&#8217;), Notenik will often attempt to adjust the values in one or more of the widgets to prepare for a likely next action. </p>
+
+<p>In order to begin recording a script, you will need to identify the name and location of your desired script file with a Module of <code>script</code> and an Action of <code>open</code>, a Modifier of <code>output</code> and a Value containing the path to your desired output file. </p>
+
+<p>After opening the output script file, you will then need to execute another command with a Module of <code>script</code> and an Action of <code>record</code>. </p>
+
+<p>At this point, Notenik will start recording all of your following actions. </p>
+
+<p>When you are done recording a script, you must execute one final action, to say <code>script / stop</code>. This will stop recording and write all of your recorded actions to your output script file. <strong>IF YOU SKIP THIS STEP, THEN ALL OF YOUR RECORDED ACTIONS WILL BE LOST</strong>, so be sure to make this your last step. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="editing-a-script-file.html" class="nav-link">Editing a Script File</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 9.2.1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version9.2.1">16.59 Version 9.2.1</h3>
+<p>Date: 21 Apr 2022 - Thursday</p><h5 id="dropping-invisible-character-at-start-of-text-file">Dropping Invisible Character at Start of Text File</h5>
+
+<p>A user recently sent me a text file that wouldn&#8217;t import properly into Notenik. After doing some digging, it turned out that the file in question had some sort of mysterious, invisible character at the very start of the file &#8211; probably a Unicode BOM character &#8211; and this was throwing off the import. So Notenik now explicitly looks for such a character and, if found, discards it. </p>
+
+<h5 id="restoring-file-name-as-default-note-title">Restoring File Name as Default Note Title</h5>
+
+<p>Some recent changes inadvertently eliminated the option to simply use the filename of a text file as a Note&#8217;s title. This has been fixed. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-9.2.0.html" class="nav-link">Version 9.2.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

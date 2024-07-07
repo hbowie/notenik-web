@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>System Variables</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.2 <a href="merge-variables.html" class="nav-link">Merge Variables</a>&#160;&#8593;</p><h4 id="systemvariables">12.2.1 System Variables</h4>
+<p>The following special variables are predefined and available for substitution, no matter what data source is being used. </p>
+
+<dl>
+<dt>datacount </dt>
+<dd>The count of data records/notes being input. This starts at 1 for the first record/note, and is incremented by 1 for each successive input row. </dd>
+
+<dt>datafilename </dt>
+<dd>The name of the data source being used. </dd>
+
+<dt>datamax </dt>
+<dd>The total number of input notes/records/rows. </dd>
+
+<dt>dataparent </dt>
+<dd>The path to the enclosing folder for the current data file. This can be used as part of an output command to specify an output file in the same folder as the data file. </dd>
+
+<dt>displaycss </dt>
+<dd>The default CSS used within Notenik for this Collection. This system variable can be placed in the <code>head</code> section of an HTML page, or copied into a stand-alone CSS file. </dd>
+
+<dt>exportpath </dt>
+<dd>When the script is being run from the Export menu, this variable will contain the path to the folder selected by the user. See <a href="export-using-script.html" class="wiki-link">Export Using Script</a> for additional details. </dd>
+
+<dt>includefailure </dt>
+<dd>Set to <code>false</code> if the last <a href="include-command.html" class="wiki-link">include command</a> found and included a file; set to <code>true</code> if the last include command failed. </dd>
+
+<dt>nobr </dt>
+<dd>Placing the variable &#8216;nobr&#8217; anywhere on a line will cause that line to be written out without a trailing line break. The nobr variable itself will be removed from the line, without being replaced. </dd>
+
+<dt>parentfolder </dt>
+<dd>The lowest-level folder immediately enclosing the data file. </dd>
+
+<dt>relative </dt>
+<dd>If a Web Root directory has been specified, then this variable will be replaced by the relative path from the output file being created back to the root directory. </dd>
+
+<dt>templatefilename </dt>
+<dd>The name of the template file (not including the path to the template file). </dd>
+
+<dt>templateparent </dt>
+<dd>The entire parent path to the template file, excluding the file name itself. </dd>
+
+<dt>today </dt>
+<dd>The current date, at the time that template output is being generated. Note that, if you specify a <a href="formatting-string.html" class="wiki-link">Formatting String</a> that includes time elements, then this value will be formatted as the current date and time (rather than just the date). </dd>
+</dl>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="derived-variables.html" class="nav-link">Derived Variables</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

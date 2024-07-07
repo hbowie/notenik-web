@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Query Builder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10. <a href="getting-data-into-and-out-of-notenik.html" class="nav-link">Getting Data Into and Out of Notenik</a>&#160;&#8593;</p><h3 id="querybuilder">10.9 Query Builder</h3>
+<p>Starting in <a href="version-9.9.0.html" class="wiki-link">Version 9.9.0</a>, a <strong>Query Builder</strong> function is available beneath the <strong>Query</strong> menu. Selecting this item will bring up a <strong>Query Builder</strong> window. </p>
+
+<p>At the top of the window you will see a text field where you can enter a name for the query, if it is something you will want to be able to find and run later. </p>
+
+<p>Beneath the name field you will see a list of all the fields defined for your Collection. For each field, you will see three accompanying controls to the right of the field label. </p>
+
+<p><strong>Order</strong> &#8211; Select an appropriate value from the popup menu. A numeric value will set that field as a sort field, in the specified sequence. A value of &#8216;<code>X</code>&#8217; will cause the field to be included in the resulting list, but without being part of the sort key for the list. A blank value means that the field will not be included in the list, and will not participate in the sort. </p>
+
+<p><strong>Filter</strong> &#8211; Select from this popup menu to indicate that you wish to filter the contents of the list to only include Notes that satisfy this matching operation. You may choose any of the following values: </p><table>
+<tr>
+<th>
+ Code </th>
+<th>
+ Meaning </th>
+ </tr>
+<tr>
+<td>
+ <code>eq</code> </td>
+<td>
+ equal to</td>
+</tr>
+<tr>
+<td>
+ <code>gt</code> </td>
+<td>
+ greater than</td>
+</tr>
+<tr>
+<td>
+ <code>ge</code> </td>
+<td>
+ greater than or equal to</td>
+</tr>
+<tr>
+<td>
+ <code>lt</code> </td>
+<td>
+ less than</td>
+</tr>
+<tr>
+<td>
+ <code>le</code> </td>
+<td>
+ less than or equal to</td>
+</tr>
+<tr>
+<td>
+ <code>ne</code> </td>
+<td>
+ not equal to</td>
+</tr>
+<tr>
+<td>
+ <code>co</code> </td>
+<td>
+ contains</td>
+</tr>
+<tr>
+<td>
+ <code>nc</code> </td>
+<td>
+ does not contain</td>
+</tr>
+<tr>
+<td>
+ <code>st</code> </td>
+<td>
+ starts with</td>
+</tr>
+<tr>
+<td>
+ <code>ns</code> </td>
+<td>
+ does not start with</td>
+</tr>
+<tr>
+<td>
+ <code>fi</code> </td>
+<td>
+ finishes with</td>
+</tr>
+<tr>
+<td>
+ <code>nf</code> </td>
+<td>
+ does not finish with</td>
+</tr>
+</table>
+
+<p><strong>Literal</strong> &#8211; This is the literal value that will participate in the comparison using the filter operator, as specified above. </p>
+
+<p>After making your entries, press the <strong>OK</strong> button to cause the following actions to occur. </p>
+<ol>
+<li><p>Notenik will <a href="generating-reports.html" class="wiki-link">generate a report</a> template for you, named using whatever <strong>Report Name</strong> you specified above, or the default of <code>query</code>. The template will use an HTML table to list your Notes, including whatever columns you requested. </p></li>
+<li><p>Notenik will <a href="record-and-play-scripts.html" class="wiki-link">record a script</a> for you that will sort and filter your Notes per your specification, and then use the just-created merge template to generate a list. Again, the script will be named per your request. </p></li>
+<li><p>Notenik will run the script for you and display the results in a new window, titled <strong>Query Output</strong>. </p></li>
+</ol>
+
+<p>All of this can be done pretty quickly and easily, but the user may wish to be aware of the following going on under the hood. </p>
+<ul>
+<li><p>The merge template and script file will be created in a Collection subfolder named <code>reports</code>, using the name you supplied for the query. </p></li>
+<li><p>After generating a query, you may run it at any time, against the latest data in your Collection, by selecting the query beneath the <strong>Reports</strong> menu, found in the Collection window&#8217;s toolbar, using the name you specified.  </p></li>
+<li><p>You may also subsequently use a text editor to modify/enhance the <a href="merge-templates.html" class="wiki-link">Merge Template</a> and/or the <a href="script-files.html" class="wiki-link">Script File</a> following the documentation for those files. </p></li>
+<li><p>If you later rerun the Query Builder using the same Report Name, then the files previously generated (along with any custom edits you may have made) will be overwritten, without warning. </p></li>
+<li><p>The <strong>Title</strong> values that appear in the resulting query will be clickable links, and clicking one should cause the associated Note to be opened for you within Notenik. </p></li>
+</ul>
+
+
+<hr />
+<div>
+
+<p class="float-left">Next: <a href="query-output-window.html" class="nav-link">Query Output Window</a></p>
+
+<p class="float-right">Skip to: <a href="favorites-to-html.html" class="nav-link">10.10 Favorites to HTML</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Rank</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>9.13 <a href="fields-used-to-identify-various-kinds-of-notes.html" class="nav-link">Fields Used to Identify Various Kinds of Notes</a>&#160;&#8593;</p><h4 id="rank">9.13.3 Rank</h4>
+<p>The word <code>Rank</code> can be used as both a label and a type. </p>
+
+<p>A Collection is not expected to have more than one field of type <code>rank</code>. </p>
+
+<p>A <code>rank</code> value consists of both a number (an integer) and an alphabetic label, separated by spaces and a hyphen. </p>
+
+<p>The numeric portion of the value will be used for sorting. </p>
+
+<p>A <code>Rank</code> field is useful when you wish to assign meaningful labels to your Notes, but also wish to independently control the sequence in which these labels appear. </p>
+
+<p>You must make <a href="use-of-a-text-editor.html" class="wiki-link">use of a Text Editor</a> to edit <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a> in order to add a <code>Rank</code> field to a Collection, and you must specify all allowable values for the field in your template entry. </p>
+
+<p>Here&#8217;s an example of how you might do this: </p>
+
+<pre><code>Category: &lt;rank: 1 - Foundational; 2 - Canonical; 3 - Topical; >
+</code></pre>
+
+<p>As always, be sure to Reload the Collection after making changes to the Collection template! </p>
+
+<p>When editing a Note containing a <code>Rank</code> field, the user may type either the numeric portion or the alphabetic portion in order to select a value. </p>
+
+<p>Note that beneath the <strong>Collection > Sort</strong> menu, you will find an option to sort a Collection by <strong>Rank + Seq + Title</strong>. </p>
+
+<p>A Rank field may also be specified as a Sort field within <a href="script-files.html" class="wiki-link">Script Files</a>. </p>
+
+<p>The <a href="take-text-from-right.html" class="wiki-link">Take Text from Right</a> <a href="variable-modifiers.html" class="wiki-link">Variable Modifier</a> can be used to extract just the label portion of the field when creating a <a href="merge-templates.html" class="wiki-link">Merge Template</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="text-format.html" class="nav-link">Text Format</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

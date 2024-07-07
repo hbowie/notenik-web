@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Folder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>9.8 <a href="fields-for-organizing.html" class="nav-link">Fields for Organizing</a>&#160;&#8593;</p><h4 id="folder">9.8.1 Folder</h4>
+<p>The word <code>Folder</code> can be used as both a label and a type. </p>
+
+<p>A Collection is not expected to have more than one field of type <code>folder</code>. </p>
+
+<p>This special field can be used to group your Notes into sub-folders within a parent folder. </p>
+
+<p>Each sub-folder can then be accessed through Notenik as part of its parent Collection, or on its own, and sub-folders can be moved/archived and still be accessed via Notenik. </p>
+
+<p>Notenik only supports one level of sub-folders, so you cannot place sub-folders within other sub-folders. </p>
+
+<p>The values appearing for this field are not stored within the text files for your Notes, but are taken from the actual names of the sub-folders found within your parent folder. Specifying a new value for this field will create a new sub-folder with the name you have specified. Changing the value for this field will move your Note from one sub-folder to another. If this field is left blank, then the Note will be stored in the parent folder itself. </p>
+
+<p>The value of the <code>folder</code> field is saved to disk as the enclosing folder name. In order to change this value outside of Notenik, you can create new folders and move notes between folders using whatever tools (the Finder, the command line, etc.) you would normally use for these sorts of file and folder management tasks. You would then need to reload the Collection to see the changes made outside of Notenik, just as you would if you had changed other field values with an external text editor. </p>
+
+<p>The <code>Folder</code> field would need to be specified in <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a> for the parent Collection. The Collection Template files for the sub-folders will be created automatically, with the same fields specified for the parent Collection, with the exception of the <code>Folder</code> field itself, which will be  omitted. </p>
+
+<p>The <code>folder</code> field will appear as a <a href="https://developer.apple.com/design/human-interface-guidelines/combo-boxes" class="ext-link" target="_blank" rel="noopener">combo box</a> on the Edit tab, allowing selection from a list of existing sub-folders, or creation of a new one. </p>
+
+<p>When the parent collection is opened, it will show Notes stored directly in the parent folder, plus Notes stored in sub-folders. </p>
+
+<p>If a sub-folder is opened directly, then it will appear as an ordinary Notenik Collection, with no folder field. </p>
+
+<p>Note Identifiers (normally consisting of the Title field) will need to be unique across all included folders; that is, the same Note identifier cannot be repeated across subfolders. </p>
+
+<p>In terms of merge template/report/query/script processing, Notenik always creates an internal model of a collection within memory, and then uses that memory model for all of its query/reporting functions.  So <code>folder</code> field values can be used in these reporting contexts just like any other fields. </p>
+
+<p>There are two options to <a href="change-the-sort-sequence-for-your-collection.html" class="wiki-link">Change the Sort Sequence for your Collection</a> that incoporate the <code>folder field</code>: </p>
+<ul>
+<li>Folder + TItle </li>
+<li>Folder + Date + Title </li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="fields-to-modify-a-notes-display.html" class="nav-link">Fields to Modify a Note's Display</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

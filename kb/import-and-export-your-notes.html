@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Import and Export Your Notes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10. <a href="getting-data-into-and-out-of-notenik.html" class="nav-link">Getting Data Into and Out of Notenik</a>&#160;&#8593;</p><h3 id="importandexportyournotes">10.2 Import and Export Your Notes</h3>
+<p>You can import and export a Collection in a variety of formats, using commands found under the File menu. Following are the supported formats. </p>
+<ul>
+<li><p>Import/Export in Notenik Format  </p>
+
+<p>You can import and export your Notes in the current collection from/to a folder in the same Notenik format. You can apply <a href="import-settings.html" class="wiki-link">Import Settings</a> to the import operation. </p></li>
+<li><p>Export in YAML Format </p>
+
+<p>You can export your Notes into a new folder, using YAML metadata rather than the Notenik format. The new folder will be formatted so that it can be opened by Notenik as a Collection, which means that it will have some &#8216;extra&#8217; files: <code>- INFO.nnk</code>, <code>- README.txt</code> and <code>template.md</code>. Feel free to delete these if they are not needed. </p></li>
+<li><p>Import/Export in Tab-Delimited Format  </p>
+
+<p>Each Note will be represented as one row/line, and each field will be represented in a separate column. Tabs are used to separate columns. This format is suitable for import into MS Excel, for example. </p></li>
+<li><p>Import/Export in CSV Format </p>
+
+<p>Each Note will be represented as one row/line, and each field will be represented in a separate column. Commas are used to separate columns. This format is suitable for import into MS Excel, for example. You can apply <a href="import-settings.html" class="wiki-link">Import Settings</a> to the import operation. </p></li>
+<li><p>Import from OmniFocus </p>
+
+<p>You can use either the plain text or csv exports from OmniFocus. See the next section, <a href="import-from-omnifocus.html" class="wiki-link">Import from OmniFocus</a>, for further info specific to this topic. </p></li>
+<li><p>Import Text File </p>
+
+<p>You can select a single text file to be imported. This can be in simple Markdown format, or in any format valid for <a href="existing-text-files.html" class="wiki-link">Existing Text Files</a>. (The same effect can be achieved from the Finder, by dragging the text file onto the List tab of the target Collection window.) </p></li>
+<li><p>Import Folder of Text Files </p>
+
+<p>When importing a folder of text files, Notenik will suspend its usual rule about respecting existing Collection field definitions, and will instead add all fields found in the input to the existing Collection, even if they are not already defined for the Collection. </p></li>
+<li><p>Import in XML format </p>
+
+<p>This option allows former users of iWisdom to import the most important fields in their collections into Notenik. Selecting a folder will cause Notenik to try to import all files with the &#8216;.xml&#8217; extension within that folder and its subfolders. </p></li>
+<li><p>Export in JSON Format </p>
+
+<p>Each Note will be represented as one JSON object. </p></li>
+<li><p>Export in <a href="https://en.wikipedia.org/wiki/OPML" class="ext-link" target="_blank" rel="noopener">OPML</a> Format </p>
+
+<p>Each Note will be represented as an outline object. See how to <a href="using-notenik-as-an-outliner.html" class="wiki-link">Using Notenik as an Outliner</a> for more info on outlining. </p></li>
+<li><p>Import OPML using Seq &amp; Level </p>
+
+<p>Each outline object will be added as a separate Note, and the Seq and Level fields will be used to indicate the sequence and depth of the items. </p></li>
+<li><p>Import OPML using Headings </p>
+
+<p>The entire outline defined in the OPML file will be loaded into the body of one new Note, using the <a href="generate-outline-based-on-headings.html" class="wiki-link">Generate Outline Based on Headings</a> Markdown extension. </p></li>
+<li><p>Import OPML using Lists </p>
+
+<p>The entire outline defined in the OPML fild will be loaded into the body of one new Note, using the <a href="generate-outline-based-on-unordered-list-items.html" class="wiki-link">Generate Outline Based on Unordered List Items</a> Markdown extension. </p></li>
+<li><p>Import vCards </p>
+
+<p>This can be used to import a standard vCard file (with the extension of <code>.vcf</code>) in order to create Notes representing contact cards. This is probably easier if you start with the <a href="contacts.html" class="wiki-link">Contacts</a> starter pack when creating a new Collection (although it is not necessary). See the <a href="import-vcards.html" class="wiki-link">Import vCards</a> section for further information. </p></li>
+<li><p>Export in Concatenated HTML or Markdown </p>
+
+<p>A single file will be produced, with all Notes in the Collection appearing one after another, in the selected format (HTML or Markdown). Notes will appear in whatever Sort Sequence you have currently selected for the Collection. If you&#8217;ve selected the Streamlined Reading option in the Collection Settings, then the focus of the content will be on the <a href="seq.html" class="wiki-link">Seq</a>, Title and Body fields. The overall intent is to combine all of the Notes in your Collection into a single document.  If you <a href="generate-a-collection-table-of-contents.html" class="wiki-link">Generate a Collection Table of Contents</a> in one of the Collection&#8217;s Notes, then the generated Table of Contents will appear in the output &#8211; even for the Concatenated Markdown option. </p></li>
+<li><p>Export to HTML Outline </p>
+
+<p>As with Concatenated HTML, a single file will be produced, with all Notes in the Collection appearing one after another. In order to use this export option effectively, the Collection should have a <a href="seq.html" class="wiki-link">Seq</a> field and a <a href="level.html" class="wiki-link">Level</a> field, and should be sorted by the Seq field. (See <a href="using-notenik-as-an-outliner.html" class="wiki-link">Using Notenik as an Outliner</a> for additional info.) Each Note&#8217;s Title will appear with a disclosure triangle to the left, and clicking on the triangle will reveal the body of that Note, plus any additional Notes that are effectively children of the current Note in the outline. </p></li>
+<li><p>Export as a Web Book </p>
+
+<p>See the following section, <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a>, for further info on this option. </p></li>
+</ul>
+
+<p>When exporting the Notes in a Collection, you will be presented with a few options for the export. </p>
+<ul>
+<li><p>Output Format: Described above. </p></li>
+<li><p>File extension: Pick from the list or type in a custom extension. </p></li>
+<li><p>Use Tags Export Settings? Select &#8216;Yes&#8217;' if you wish the current Tags Export Settings to be applied. You may filter the notes to be exported, for any of the output formats (other than the Notenik format), by adjusting the entries in the Tags Export settings. You may specify one or more Tags to be selected, so that only notes containing those Tags will be exported. You may also suppress one or more Tags, meaning that exported notes will have those Tags removed from the resulting output. </p>
+
+<p>For example, if you have a collection of blog entries stored as a Collection of Notes, and you have multiple blogs to which they are published, you can specify Tags for the relevant blogs for each note, and then select only those Notes when publishing a particular blog (and suppress the Tags for the other blogs). </p>
+
+<p>If you leave the Tags to Select field blank, then all Notes will be exported. </p>
+
+<p>Note that the Tags Export Settings are global across all Collections. </p></li>
+<li><p>Split Tags? Select &#8216;Yes&#8217; if you wish one row to be written for each Tag on each Note. This will result in a special export in which each Note may be written multiple times, once for each Tag in the Note&#8217;s Tags field. Notes without any Tags will be written only once, with a blank Tag field. In other cases, the Tag field will contain a single Tag, even if the Tags field contains multiple Tags. </p></li>
+<li><p>Add Web Extensions? Select &#8216;Yes&#8217; to add a number of fields that can be useful for generating Web pages. </p></li>
+</ul>
+
+<h5 id="quick-export-and-open">Quick Export and Open</h5>
+
+<p>An alternative export method is available at the bottom of the File menu, to perform a <code>Quick Export and Open</code>. This command will export the current Collection to a CSV (comma-separated values) file located within a sub-folder named <code>quick-export</code> and named <code>export.csv</code>. If the export was successful, then Notenik will ask the operating system to open the CSV file using the default app for handling &#8216;.csv&#8217; files (such as the Numbers app). </p>
+
+<hr />
+<h4>Contents</h4>
+<ul class="notenik-toc">
+<li>10.2.1 <a href="import-from-omnifocus.html" class="nav-link">Import from OmniFocus</a></li>
+<li>10.2.2 <a href="import-settings.html" class="nav-link">Import Settings</a></li>
+<li>10.2.3 <a href="import-vcards.html" class="nav-link">Import vCards</a></li>
+<li>10.2.4 <a href="export-to-ical.html" class="nav-link">Export to iCal</a></li>
+<li>10.2.5 <a href="export-as-web-book.html" class="nav-link">Export as Web Book</a></li>
+<li>10.2.6 <a href="export-using-script.html" class="nav-link">Export Using Script</a></li>
+</ul>
+
+<hr />
+
+<div>
+
+<p class="float-left">Next: <a href="import-from-omnifocus.html" class="nav-link">Import from OmniFocus</a></p>
+
+<p class="float-right">Skip to: <a href="populate-app-catalog.html" class="nav-link">10.3 Populate App Catalog</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

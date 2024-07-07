@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Supply EPUB Metadata</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.9 <a href="supply-collection-data.html" class="nav-link">Supply Collection Data</a>&#160;&#8593;</p><h5 id="supplyepubmetadata">7.3.9.4 Supply EPUB Metadata</h5>
+<p>As an extension to the original Markdown spec from John Gruber, the content for the metadata section of an EPUB opf file may be provided following the literal <code>{:metadata}</code> on a line by itself, as in the following example: </p>
+
+<pre><code>{:metadata}
+		&lt;dc:identifier id="pub-identifier">notenik.app/kb&lt;/dc:identifier>
+		&lt;dc:title id="pub-title">The Notenik Knowledge Base&lt;/dc:title>
+		&lt;dc:creator id="author">Herb Bowie&lt;/dc:creator>
+		&lt;dc:language id="pub-language">en&lt;/dc:language>
+		&lt;meta property="dcterms:modified">2023-04-13T12:00:00Z&lt;/meta>
+</code></pre>
+
+<p>Note that the metadata elements shown above are considered mandatory in order to create a valid EPUB. </p>
+
+<p>The content following this command within the body of the current Note will be used as the publication metadata when using the <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a> function to create an actual EPUB file. </p>
+
+<p>This command should appear as the first line within the body of a Note, and the remainder of the body will be used, in its entirety, and without further parsting, as the content appearing in the metadata element for a generated EPUB opf file.  </p>
+
+<p>A Note containing this command may appear anywhere within a Collection, and be given any convenient and meaningful title. </p>
+
+<p>See the <a href="epub-metadata.html" class="wiki-link">EPUB Metadata</a> Note within the Notenik Knowledge Base for an example. </p>
+
+<p>Since a Note containing such a command is not meant to be read sequentially as part of the overall Collection, Notenik will generally skip such pages when formatting <a href="streamlined-reading.html" class="wiki-link">Streamlined Reading</a> navigational elements. </p>
+
+<h5 id="varying-the-modified-date">Varying the modified date</h5>
+
+<p>Note that the <code>dcterms:modified</code> value is used as part of the key to form a unique identifier for an ebook. So if you have multiple copies of the same book, and this date-and-time value does not change, then e-book readers such as Apple Books will not be able to distinguish between them (and may in fact refuse to import something it considers a duplicate). </p>
+
+<p>In order to avoid such duplicates, the user may wish to replace a line like the one above &#8211; containing a fixed value &#8211; with something like the line below: </p>
+
+<pre><code>	&lt;meta property="dcterms:modified">=$today&amp;yyyy-MM-dd'T'HH:mm:ss'Z'$=&lt;/meta>
+</code></pre>
+
+<p>Notenik will then replace the <code>=$today&amp;yyyy-MM-dd'T'HH:mm:ss'Z'$=</code> string with the properly formatted current date and time, as part of the EPUB export operation. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="files-and-folders.html" class="nav-link">Files and Folders</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 14.8.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version14.8.0">16.1 Version 14.8.0</h3>
+<p>Date: 02 Jul 2024 - Tuesday</p><h5 id="new-data-count-merge-template-variables">New Data Count Merge Template Variables</h5>
+
+<p>Added two new <a href="merge-templates.html" class="wiki-link">Merge Template</a> <a href="system-variables.html" class="wiki-link">System Variables</a>: <code>datacount</code> identifies the sequence number of the current note/record/row being processed, starting at 1 for the first; <code>datamax</code> provides the total number of input notes/records/rows. </p>
+
+<h5 id="added-data-count-script-filter-variable">Added Data Count Script Filter Variable</h5>
+
+<p>When setting <a href="filter-module-parameters.html" class="wiki-link">Filter Module Parameters</a> within the <a href="scripting-modules.html" class="wiki-link">Scripting Module</a>, the <a href="script-file-columns.html" class="wiki-link">Script File Column</a> for <code>Object</code> may now reference a variable named <code>datacount</code>. </p>
+
+<h5 id="tweaked-the-linked-tags-z-variable-modifier">Tweaked the Linked Tags - Z Variable Modifier</h5>
+
+<p>Tweaked the <a href="linked-tags-z.html" class="wiki-link">Linked Tags - Z</a> <a href="variable-modifiers.html" class="wiki-link">Variable Modifier</a> so that, if the prefix contains the Notenik <a href="custom-url-scheme.html" class="wiki-link">Custom URL Scheme</a>, periods in nested tags will be left as-is (rather then converting them to dashes). </p>
+
+<h5 id="added-a-merge-variable-to-test-for-include-failure">Added a Merge Variable to Test for Include Failure</h5>
+
+<p>Added a new <a href="merge-variables.html" class="wiki-link">Merge Variable</a> of <code>includefailure</code> that can be used to test for the failure of a preceding <a href="include-command.html" class="wiki-link">include command</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-14.7.0.html" class="nav-link">Version 14.7.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

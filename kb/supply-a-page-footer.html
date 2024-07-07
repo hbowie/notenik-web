@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Supply a Page Footer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.9 <a href="supply-collection-data.html" class="nav-link">Supply Collection Data</a>&#160;&#8593;</p><h5 id="supplyapagefooter">7.3.9.3 Supply a Page Footer</h5>
+<p>As an extension to the original Markdown spec from John Gruber, the content for an HTML <code>footer</code> element may be provided following the literal <code>{:footer}</code> on a line by itself, as in the following example: </p>
+
+<pre><code>{:footer}
+Authored by Herb Bowie as  open source software.
+</code></pre>
+
+<p>The content following this command within the body of the current Note will be used as the contents of a <code>footer</code> element that will subsequently appear at the bottom of the display for every Note in the Collection. </p>
+
+<p>This command should appear as the first line within the body of a Note, and the remainder of the body will be used, in its entirety, as the content appearing in the <code>footer</code> element for every Note. </p>
+
+<p>A Note containing this command may appear anywhere within a Collection, and be given any convenient and meaningful title. </p>
+
+<p>See the <a href="footer-page.html" class="wiki-link">footer-page</a> within the Notenik Knowledge Base for an example. </p>
+
+<p>Since a Note containing such a command is not meant to be read sequentially as part of the overall Collection, Notenik will generally skip such pages when formatting <a href="streamlined-reading.html" class="wiki-link">Streamlined Reading</a> navigational elements. </p>
+
+<p>Default CSS will be provided to format the footer contents, but this may of course be overridden (see <a href="tailor-the-display.html" class="wiki-link">Tailor the Display</a> for more info). </p>
+
+<p>If such a command is used, then Notenik will place the <code>footer</code> element after the <code>main</code> element. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="supply-epub-metadata.html" class="nav-link">Supply EPUB Metadata</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

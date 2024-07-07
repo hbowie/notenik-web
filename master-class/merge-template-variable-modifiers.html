@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Merge Template Variable Modifiers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>8 <a href="contents-of-a-merge-template.html" class="nav-link">Contents of a Merge Template</a>&#160;&#8593;</p><h4 id="merge-template-variable-modifiers">8.4 Merge Template Variable Modifiers</h4>
+<p>There&#8217;s one last piece to the puzzle when it comes to the contents of a merge template, and that is the use of variable modifiers. </p>
+
+<p>A variable modifier applies some sort of transformation to a merge template variable before it is inserted into the output from a template. </p>
+
+<p>A variable modifier is generally a single character, sometimes with following attributes. </p>
+
+<p>Zero to many variable modifiers may be applied to a single variable. The transformations will generally be applied in the sequence in which they are specified. </p>
+
+<p>The modifiers appear after the name of the variable, and before the closing &#8216;<code>$=</code>&#8217;. </p>
+
+<p>An ampersand character is used to indicate the beginning of the variable modifier(s). </p>
+
+<p>Following is an example: </p>
+
+<pre><code>
+=$body&amp;o$=
+</code></pre>
+
+<p>In this case the variable modifier of &#8216;<code>o</code>&#8217; indicates that the body field value of each Note should be converted from Markdown to HTML. </p>
+
+<p>Here&#8217;s another example: </p>
+
+<pre><code>
+&lt;?output "=$title&amp;f$=.html"?>
+</code></pre>
+
+<p>In this case the variable modifier of &#8216;<code>f</code>&#8217; is used to transform the title of each Note into a conventional, universal file name, replacing spaces with dashes and converting upper-case letters to lower-case. </p>
+
+<p>The Notenik Knowledge Base contains a complete list of all available <a href="https://notenik.app/knowledge-base/EPUB/html/variable-modifiers.html" class="ext-link" target="_blank" rel="noopener">variable modifiers</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="using-a-merge-template-to-tailor-the-display-tab.html" class="nav-link">Using a Merge Template to Tailor the Display Tab</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

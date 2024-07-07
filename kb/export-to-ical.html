@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Export to iCal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10.2 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a>&#160;&#8593;</p><h4 id="exporttoical">10.2.4 Export to iCal</h4>
+<h5 id="export-to-ical">Export to iCal</h5>
+
+<p>If you have a Collection in which Notes represent events, you may select one of them, or a range of them, on the List tab, and then select <code>Export to iCal</code> from the contextual menu for one of them. An <a href="https://en.wikipedia.org/wiki/ICalendar" class="ext-link" target="_blank" rel="noopener">iCalendar file</a> will be created in the <code>quick-export</code> sub-folder, and named <code>export.ics</code>. Notenik will then ask macOS to open the file using the default app for the file extension, which will generally result in importing the events into your Calendar app. </p>
+
+<p>Note that fields named &#8220;Supplier&#8221; and &#8220;Confirmation&#8221; will be placed in the desciption field for the event, preceding whatever text may exist in the Body field. </p><table>
+<tr>
+<th>
+ iCalendar Label </th>
+<th>
+ Notenik Field </th>
+<th>
+ Notes </th>
+ </tr>
+<tr>
+<td>
+  UID </td>
+<td>
+ Collection ID + Note ID </td>
+<td>
+ </td>
+</tr>
+<tr>
+<td>
+ DTSTAMP </td>
+<td>
+  File Modification Date </td>
+<td>
+ Provided by macOS </td>
+ </tr>
+<tr>
+<td>
+ SUMMARY </td>
+<td>
+ <a href="title.html" class="wiki-link">Title</a> </td>
+<td>
+ </td>
+</tr>
+<tr>
+<td>
+ DTSTART </td>
+<td>
+ <a href="date.html" class="wiki-link">Date</a> + <a href="seq.html" class="wiki-link">Seq</a> </td>
+<td>
+ If the time of day is not contained in the date field, then Notenik will look for it in the Seq field. </td>
+</tr>
+<tr>
+<td>
+ DTEND </td>
+<td>
+ <a href="duration.html" class="wiki-link">Duration</a> </td>
+<td>
+ Calculated by adding the duration to the start date and time. If no duration is present, then a default of 15 minutes will be used. </td>
+ </tr>
+<tr>
+<td>
+ LOCATION </td>
+<td>
+ <a href="address.html" class="wiki-link">Address</a> </td>
+<td>
+ </td>
+</tr>
+<tr>
+<td>
+ DESCRIPTION </td>
+<td>
+ Supplier + Confirmation + Body </td>
+</tr>
+<tr>
+<td>
+ URL </td>
+<td>
+ <a href="link.html" class="wiki-link">Link</a> </td>
+<td>
+ </td>
+</tr>
+</table>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="export-as-web-book.html" class="nav-link">Export as Web Book</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 13.0.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version13.0.0">16.20 Version 13.0.0</h3>
+<p>Date: 29 Sep 2023 - Friday</p><h5 id="added-ability-to-specify-a-default-title-value">Added Ability to Specify a Default Title Value</h5>
+
+<p><a href="specifying-a-default-title-value.html" class="wiki-link">Specifying a Default Title Value</a> via a <a href="class-template-files.html" class="wiki-link">Class Template File</a> is now an option, including the ability to auto-number Note titles. </p>
+
+<h5 id="added-squeeze-option-for-punctuation-purification">Added Squeeze Option for Punctuation Purification</h5>
+
+<p>The <a href="punctuation-purification-p.html" class="wiki-link">Punctuation Purification</a> variable modifier now has an option to squeeze out any punctuation, instead of replacing these characters with spaces. </p>
+
+<h5 id="made-tasklists-dynamic-and-functional">Made Tasklists Dynamic and Functional</h5>
+
+<p><a href="task-lists.html" class="wiki-link">Task Lists</a> appearing within the Body field will now by dynamic and functional, meaning that the boxes can be checked and unchecked on the Display tab, and those changes will be reflected in the body of the note. </p>
+
+<h5 id="fixed-a-problem-with-link-interpretation">Fixed a Problem with Link Interpretation</h5>
+
+<p>Previously a valid website URL containing an &#8216;<code>@</code>&#8217; sign would be erroneously interpreted as an email address; this has been corrected. </p>
+
+<h5 id="fix-for-seq-field-formatting-on-secondary-displays">Fix for Seq Field Formatting on Secondary Displays</h5>
+
+<p>Formatting of the <a href="seq.html" class="wiki-link">Seq</a> field on Secondary Displays has been corrected so that, if no formatting codes are specified, the Seq field is displayed as originally input. </p>
+
+<h5 id="fix-for-seq-field-display-on-list-tab">Fix for Seq Field Display on List Tab</h5>
+
+<p>A field of type <a href="seq.html" class="wiki-link">Seq</a> should now consistently be displayed on the List tab in a monospaced font, even when the field title is something other than &#8216;Seq&#8217;. </p>
+
+<h5 id="fixed-a-markdown-parser-problem-with-isolated-numbers">Fixed a Markdown Parser Problem with Isolated Numbers</h5>
+
+<p>When a lone number was appearing on a line by itself, the last digit was sometimes getting truncated. This has been fixed. </p>
+
+<h5 id="fixed-a-problem-with-blank-lines-in-yaml-front-matter">Fixed a Problem with Blank Lines in YAML front matter</h5>
+
+<p>A blank line in YAML front matter was previously terminating the metadata parsing; now, so long as the front matter begins with a line of three dashes, metadata parsing will continue until another line of three dashes is encountered. </p>
+
+<h5 id="fixed-a-horizontal-rule-problem">Fixed a Horizontal Rule Problem</h5>
+
+<p>A <a href="https://daringfireball.net/projects/markdown/syntax#hr" class="ext-link" target="_blank" rel="noopener">horizontal rule</a> placed between two list items was appearing above its preceding list item; this has been corrected. </p>
+
+<h5 id="fixed-a-title-display-problem">Fixed a Title Display Problem</h5>
+
+<p>When the Collection Settings specified the Note title to be displayed in italics, the entire Note was being displayed in italics. This has been fixed. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-12.9.0.html" class="nav-link">Version 12.9.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

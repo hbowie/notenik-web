@@ -1,97 +1,52 @@
 <rss version="2.0">
   <channel>
-	<title>Notenik News</title>
+	<title>Adventures with Notenik</title>
 	<link>https://notenik.app</link>
-	<description>What's New with the Notenik app?</description>
+	<description>The Latest Adventures with Notenik</description>
 	<language>en</language>
 	<item>
-	  <title>Notenik 13.4.0 - Outlines, Contact Info, Calendars and Presentations</title>
-	  <link>https://notenik.app/news/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html</link>
-	  <guid>https://notenik.app/news/notenik-13.4.0-outlines-contact-info-calendars-and-presentations.html</guid>
-	  <pubDate>Fri, 17 Nov 2023 12:00:00 -0700</pubDate>
+	  <title>Introduction</title>
+	  <link>https://notenik.app/adventures/2024-07-03-introduction.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-03-introduction.html</guid>
+	  <pubDate>Wed, 03 Jul 2024 12:00:00 -0700</pubDate>
 	  <description>
-		  In this post I&apos;ll try to summarize the most significant changes made over the last six months or so, since the release of 12.0.0. 
+		  A brief intro to some of my adventures with Notenik, and with software development more generally, as well as a summary of expectations for this blog. 
 	  </description>
 	</item>
 	<item>
-	  <title>Notenik 12.0.0 - EPUBs and Such</title>
-	  <link>https://notenik.app/news/notenik-12.0.0-epubs-and-such.html</link>
-	  <guid>https://notenik.app/news/notenik-12.0.0-epubs-and-such.html</guid>
-	  <pubDate>Thu, 11 May 2023 12:00:00 -0700</pubDate>
+	  <title>Adding a Web Feed to Your Site</title>
+	  <link>https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html</guid>
+	  <pubDate>Thu, 04 Jul 2024 12:00:00 -0700</pubDate>
 	  <description>
-		  Lots of improvements, but EPUB generation is probably the biggest new feature. And did you know that e-books in the EPUB format can be pretty handy for private use, even if you have no aspirations to become a published author? 
+		  If you have a website to which you regularly add content, then at some point you will probably want to add a web feed to your site. You can use a combination of Notenik&apos;s Script files and Merge templates to easily generate such web feeds, in any or all of the major formats. It&apos;s always been possible to do this sort of counting with Notenik, but a system variable called datacount now makes this easier than ever. 
 	  </description>
 	</item>
 	<item>
-	  <title>Calendars and Such</title>
-	  <link>https://notenik.app/news/calendars-and-such.html</link>
-	  <guid>https://notenik.app/news/calendars-and-such.html</guid>
-	  <pubDate>Mon, 30 Jan 2023 12:00:00 -0700</pubDate>
+	  <title>Adding an RSS Feed to Your Site</title>
+	  <link>https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html</guid>
+	  <pubDate>Fri, 05 Jul 2024 12:00:00 -0700</pubDate>
 	  <description>
-		  The 11.4.0 release of Notenik is out, and includes a new Calendar function&hellip; which was the first domino to fall. 
+		  An RSS feed is one kind of web feed that you can use on your site. This is the oldest of the various feed formats, and is XML-based. 
 	  </description>
 	</item>
 	<item>
-	  <title>Notenik at Fifty</title>
-	  <link>https://notenik.app/news/notenik-at-fifty.html</link>
-	  <guid>https://notenik.app/news/notenik-at-fifty.html</guid>
-	  <pubDate>Mon, 16 Jan 2023 12:00:00 -0700</pubDate>
+	  <title>Adding an Atom Feed to Your Site</title>
+	  <link>https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html</guid>
+	  <pubDate>Sat, 06 Jul 2024 12:00:00 -0700</pubDate>
 	  <description>
-		  Notenik has just hit fifty – fifty ratings in the Mac App Store, that is! – so I thought this might be an opportune time to reflect a bit on how the app has evolved over the last several years. 
+		  An Atom feed is another kind of web feed that you can use on your site. This is newer than RSS, and is also XML-based. 
 	  </description>
 	</item>
 	<item>
-	  <title>Notenik 11.0.0 - Driven by Discourse</title>
-	  <link>https://notenik.app/news/notenik-11.0.0-driven-by-discourse.html</link>
-	  <guid>https://notenik.app/news/notenik-11.0.0-driven-by-discourse.html</guid>
-	  <pubDate>Fri, 09 Dec 2022 12:00:00 -0700</pubDate>
+	  <title>Adding a JSON Feed to Your Site</title>
+	  <link>https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html</guid>
+	  <pubDate>Sun, 07 Jul 2024 12:00:00 -0700</pubDate>
 	  <description>
-		  Several of the app&apos;s recent changes have started out as requests or comments in the Notenik Discourse forum. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 10.7.0 - The Beat Goes On</title>
-	  <link>https://notenik.app/news/notenik-10.7.0-the-beat-goes-on.html</link>
-	  <guid>https://notenik.app/news/notenik-10.7.0-the-beat-goes-on.html</guid>
-	  <pubDate>Fri, 04 Nov 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Here&apos;s a useful summary of recent changes, including Notenik versions 10.4.0 through 10.7.0. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 10.3.0 - More Bells, More Whistles</title>
-	  <link>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</link>
-	  <guid>https://notenik.app/news/notenik-10.3.0-more-bells-more-whistles.html</guid>
-	  <pubDate>Sat, 10 Sep 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Parent Realms gain new powers; improved file handling; improvements to Merge Template commands, variables and modifiers; plus a handful of fixes and tweaks. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik Turns 10.0.0!</title>
-	  <link>https://notenik.app/news/notenik-turns-10.0.0.html</link>
-	  <guid>https://notenik.app/news/notenik-turns-10.0.0.html</guid>
-	  <pubDate>Fri, 29 Jul 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  Well, the version-ometer has clicked over once again &#8211; as it tends to do every week or so with Notenik &#8211; and look where we&apos;ve landed: on the big 10.0.0! All those zeros seem to call for some sort of reflection on how we got here, so let&apos;s consider a few highlights. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.6.0 - Choose Your Edit Fonts</title>
-	  <link>https://notenik.app/news/notenik-9.6.0-choose-your-edit-fonts.html</link>
-	  <guid>https://notenik.app/news/notenik-9.6.0-choose-your-edit-fonts.html</guid>
-	  <pubDate>Thu, 23 Jun 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  You can now choose your own font(s) used on the Edit tab, and can also set default values for any of the fields in your Collection. 
-	  </description>
-	</item>
-	<item>
-	  <title>Notenik 9.5.0 Plus a Discourse Community</title>
-	  <link>https://notenik.app/news/notenik-9.5.0-plus-a-discourse-community.html</link>
-	  <guid>https://notenik.app/news/notenik-9.5.0-plus-a-discourse-community.html</guid>
-	  <pubDate>Wed, 15 Jun 2022 12:00:00 -0700</pubDate>
-	  <description>
-		  The big announcement this time is about the launch of a new Notenik community at discourse.notenik.app. But there&apos;s also info on an important bug fix and a few nice enhancements. 
+		  A JSON feed is another kind of web feed that you can add to your site using Notenik. Here&apos;s an example of how you might do that. 
 	  </description>
 	</item>
   </channel>

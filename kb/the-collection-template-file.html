@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Collection Template File</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>8.1 <a href="note-files.html" class="nav-link">Note Files</a>&#160;&#8593;</p><h4 id="thecollectiontemplatefile">8.1.5 The Collection Template File</h4>
+<p>Within each Collection folder Notenik stores a special file that it uses as a template for creating Notes within that Collection. </p>
+
+<p>The file name is always <code>template</code>. The file extension of the template file is used as an indicator of the file extension that should be used when creating new Notes within that Collection. </p>
+
+<p>The contents of the Collection template are generally similar to the usual <a href="note-file-format.html" class="wiki-link">Note File Format</a>. The Collection template should contain a <a href="what-we-mean-by-label-and-type.html" class="wiki-link">field label</a> for every field that the user will be allowed to add or edit within the Collection. </p>
+
+<p>You may leave the value (the text following the colon) blank, in which case the field type will be inferred from the label. Alternatively, you may specify the desired type for the field within less than/greater than signs, as in the following example: </p>
+
+<pre><code>Author Info: &lt;longtext>
+</code></pre>
+
+<p>For some field types, a list of allowable values may also accompany the type itself. </p>
+
+<p>Notenik will create and edit a Collection&#8217;s template file for you, in most cases, but for very complex or specialized sets of <a href="field-labels-and-types.html" class="wiki-link">field labels and types</a>, you may wish to make <a href="use-of-a-text-editor.html" class="wiki-link">use of a text editor</a> to modify the file directly. </p>
+
+<p>Note that Collection templates are very different from <a href="merge-templates.html" class="wiki-link">Merge Templates</a>, so you should not confuse the two. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="class-template-files.html" class="nav-link">Class Template Files</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

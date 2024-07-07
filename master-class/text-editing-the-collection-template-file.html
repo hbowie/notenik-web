@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Text Editing the Collection Template File</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>6 <a href="configuring-your-collection.html" class="nav-link">Configuring Your Collection</a>&#160;&#8593;</p><h4 id="text-editing-the-collection-template-file">6.3 Text Editing the Collection Template File</h4>
+<p>The final, and most powerful, way to change the configuration of a collection is by using your text editor to directly modify the collection template file. </p>
+
+<p>This file is named <code>template.txt</code> (or <code>template.md</code>) with the file extension of the template file indicating the file extension to be used for all of the note files in the collection. </p>
+
+<p>The easiest way to open this in your text editor from within Notenik is to use the keyboard shortcut OPT-CMD-T. </p>
+
+<p>(And then, when you done editing this file, be sure to use OPT-CMD-J within Notenik to reload the collection using the new configuration.) </p>
+
+<p>As an example, here is the current template file for this collection (the one I&#8217;m using to create this master class). </p>
+
+<pre><code>
+Title: &lt;title> 
+
+AKA: &lt;aka> 
+
+Tags: &lt;tags> 
+
+Link: &lt;link> 
+
+Seq: &lt;seq> 
+
+Level: &lt;level: 1 - Class Title; 2 - Section; 3 - Topic; > 
+
+Body:  
+
+</code></pre>
+
+<p>The first thing you&#8217;ll notice here is that the template file looks much like any of the note files. That is, you see a series of field labels, with each label immediately followed by a colon. </p>
+
+<p>What makes the template file different (other than its name) is that the text following each field label and colon is used to indicate the configuration of that field. </p>
+
+<p>The first part of each field&#8217;s configuration is the field type. Now you&#8217;ll notice here that this seems redundant &#8211; each field label is just followed by the same value, without the leading upper-case letter. However, each field label and its associated field type need not align so closely. </p>
+
+<p>For example, you might have a collection in which you wish to have a field explicitly labeled <code>Publication Date</code>. So this is a different field label, but it&#8217;s not a new field type &#8211; it&#8217;s just another date field, in terms of how it will be displayed, presented for editing, and sorted. </p>
+
+<p>And so your collection template file might have a line like this: </p>
+
+<pre><code>
+Publication Date: &lt;date>
+</code></pre>
+
+<p>In general, Notenik will try to pick the appropriate type based on the field label, if a type is not explicitly stated, and if the label is one that is aligned with a corresponding type. That being said, it&#8217;s never a bad idea to explicitly identify a type for each field. </p>
+
+<p>Finally, for some field types, additional following text in the template definition will be used to specify the allowable values for that field &#8211; as you can see with the <code>Level</code> field specification above. </p>
+
+<p>Notenik has many different field types &#8211; too many to go into here. But you can always consult the page titled <a href="notenik://help?id=listsoflabelsandtypes" class="wiki-link">Lists of Labels and Types</a> within the Notenik Knowledge Base for a complete list. </p>
+
+<p>One final comment about editing a collection&#8217;s template file: by rearranging the fields within the template file, you can control the order in which they are presented on the Edit tab within Notenik. The only constraint here is that the Title field must come first, and the Body field must come last. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="merge-templates.html" class="nav-link">Merge Templates</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

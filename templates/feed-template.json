@@ -1,0 +1,32 @@
+<?output "../feed.json"?>
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Adventures with Notenik",
+    "home_page_url": "https://notenik.app/",
+    "feed_url": "https://notenik.app/feed.json",
+    "description": "The Latest Adventures with the Mac App Notenik",
+    "authors": [
+    	{
+    		"name": "Herb Bowie and the Notenik Community"
+    	}
+    ],
+    "language": "en-US",
+    "items": [
+<?nextrec?>
+        {
+            "id": "notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=",
+            "url": "https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html",
+						"title": "=$title$=",
+<?if "=$imagelink$=" ?>
+						"image": "=$imagelink$=",
+<?endif?>
+						"content_html": "=$body&w1o\$=",
+						"date_published": "=$date&yyyy-MM-ddTHH:mm:ssZ$="
+<?if =$data-count$= < =$data-max$= ?>
+        },
+<?else?>
+        }
+<?endif?>
+<?loop?>
+    ]
+}

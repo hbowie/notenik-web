@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 11.4.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version11.4.0">16.36 Version 11.4.0</h3>
+<p>Date: 30 Jan 2023 - Monday</p><h5 id="a-seq-field-can-now-be-used-to-store-a-time-of-day">A Seq Field Can Now Be Used to Store a Time of Day</h5>
+
+<p>The logic for the <a href="seq.html" class="wiki-link">Seq</a> field has been modified to accommodate its use as a time of day. This can be handy when used in combination with a <a href="date.html" class="wiki-link">Date</a> field. You can then sort a Collection by Date + Seq and see things sort into the expected sequence, and display as expected. </p>
+
+<h5 id="menu-reorganization">Menu Reorganization</h5>
+
+<p>Notenik now sports a new menu titled <strong>Query</strong>. This is the place to find actions that will manipulate a Collection in order to produce some sort of combined output in HTML. The output HTML can be viewed internally within a Notenik window, or viewed externally, within a web browser. </p>
+
+<p>The <a href="query-builder.html" class="wiki-link">Query Builder</a> item has been moved here. You will also now find the <a href="favorites-to-html.html" class="wiki-link">Favorites to HTML</a> function here (now simply called <strong>Favorites</strong>). And the new <a href="dates-to-calendar.html" class="wiki-link">Dates to Calendar</a> function (see below) can also be found here. </p>
+
+<p>Additionally, the <strong>Transform</strong> menu was moved to the right of the <strong>View</strong> menu. </p>
+
+<h5 id="expanded-use-of-query-output-window">Expanded Use of Query Output Window</h5>
+
+<p>The <a href="query-builder.html" class="wiki-link">Query Builder</a> previously sent its output to an internal <a href="query-output-window.html" class="wiki-link">Query Output Window</a>. The new <a href="dates-to-calendar.html" class="wiki-link">Dates to Calendar</a> function also sends its output to this same window (although with a suitably differentiated title). And the <a href="favorites-to-html.html" class="wiki-link">Favorites to HTML</a> function now also sends its output to this same window. </p>
+
+<p>In all cases, this window now has a pull-down button, titled <strong>Web Page</strong>, in the lower right corner, from which any of the following actions can be selected: </p>
+<ol>
+<li><p><strong>Save to Disk&#8230;</strong> </p>
+
+<p>This function allows the user to select a folder and file name to which the output HTML will be saved. </p></li>
+<li><p><strong>Browse</strong> </p>
+
+<p>This function saves the HTML to a temporary location, and then sends a request to macOS to open this file in the user&#8217;s default Web browser. </p></li>
+<li><p><strong>Save and Browse&#8230;</strong> </p>
+
+<p>This function allows the user to select a folder and file name, saves the HTML to that location, and then sends a request to macOS to open this saved file in the user&#8217;s default Web browser. </p></li>
+</ol>
+
+<h5 id="knowledge-base-reorganization">Knowledge Base Reorganization</h5>
+
+<p>The Knowledge Base has been reorganized a bit. The section on &#8220;Getting Data Into and Out of Notenik&#8221; has been moved behind the two other sections discussing &#8220;Markdown&#8221; and &#8220;Field Labels and Types.&#8221; And a new &#8220;Integration&#8221; section has been broken out. And a few other smaller changes have been made as well. </p>
+
+<h5 id="new-function-to-generate-a-calendar">New Function to Generate a Calendar</h5>
+
+<p>A new item beneath the <strong>Query</strong> menu, titled <a href="dates-to-calendar.html" class="wiki-link">Dates to Calendar</a>, allows you to generate a traditional monthly calendar from one or more Notes within a Collection. The Collection must have a <a href="date.html" class="wiki-link">Date</a> field and must be sorted by Date. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-11.3.0.html" class="nav-link">Version 11.3.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": "Adventures with Notenik",
+    "home_page_url": "https://notenik.app/",
+    "feed_url": "https://notenik.app/micro.json",
+    "description": "Adventures with Notenik feed for microblogs",
+    "authors": [
+    	{
+    		"name": "Herb Bowie and the Notenik Community"
+    	}
+    ],
+    "language": "en-US",
+    "items": [
+        {
+            "id": "notenik.app/adventures/2024-07-03-introduction",
+            "url": "https://notenik.app/adventures/2024-07-03-introduction.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-03-introduction.html\">Introduction</a> – <br />A brief intro to some of my adventures with Notenik, and with software development more generally, as well as a summary of expectations for this blog.  </p>",
+						"date_published": "2024-07-07T15:39:47Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site",
+            "url": "https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html\">Adding a Web Feed to Your Site</a> – <br />If you have a website to which you regularly add content, then at some point you will probably want to add a web feed to your site. You can use a combination of Notenik&#8217;s Script files and Merge templates to easily generate such web feeds, in any or all of the major formats. It&#8217;s always been possible to do this sort of counting with Notenik, but a system variable called datacount now makes this easier than ever.  </p>",
+						"date_published": "2024-07-07T15:39:47Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site",
+            "url": "https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html\">Adding an RSS Feed to Your Site</a> – <br />An RSS feed is one kind of web feed that you can use on your site. This is the oldest of the various feed formats, and is XML-based.  </p>",
+						"date_published": "2024-07-07T15:39:47Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site",
+            "url": "https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html\">Adding an Atom Feed to Your Site</a> – <br />An Atom feed is another kind of web feed that you can use on your site. This is newer than RSS, and is also XML-based.  </p>",
+						"date_published": "2024-07-07T15:39:47Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site",
+            "url": "https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html\">Adding a JSON Feed to Your Site</a> – <br />A JSON feed is another kind of web feed that you can add to your site using Notenik. Here&#8217;s an example of how you might do that.  </p>",
+						"date_published": "2024-07-07T15:39:47Z"
+        }
+    ]
+}

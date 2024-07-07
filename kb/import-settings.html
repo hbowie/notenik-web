@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Import Settings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10.2 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a>&#160;&#8593;</p><h4 id="importsettings">10.2.2 Import Settings</h4>
+<p>For certain types of Imports &#8211; currently only for CSV and Tab-delimited files, and Notenik Collections &#8211; Notenik will allow the user to adjust a few useful Import Settings. </p>
+
+<h5 id="additional-fields">Additional Fields</h5>
+
+<p>This setting tells Notenik how to handle fields found in the Import file that do not already exist in the Collection. </p>
+<ul>
+<li><p>Ignore &#8211; Additional fields are ignored. This is the default setting. </p></li>
+<li><p>Add &#8211; Additional fields will be added to the Collection. </p></li>
+<li><p>Replace &#8211; Additional fields will be added to the Collection and, in addition, a field named &#8220;Name&#8221; or &#8220;Full Name&#8221; will be used as the new <a href="title.html" class="wiki-link">Title</a> field for the Collection. This option should only be used for a new Collection, and existing Notes should probably be deleted after the Import operation has been completed. </p></li>
+</ul>
+
+<h5 id="rows-aka-notes">Rows (aka Notes)</h5>
+
+<p>This setting tells Notenik how to handle the rows (potential Notes) found in the import file. </p>
+<ul>
+<li><p>Add &#8211; All rows in the import file are added, becoming new Notes. </p></li>
+<li><p>Match and Add &#8211; Before adding a new Note, Notenik will first look for a match for each imported row and, if an existing Note with a matching <a href="change-note-id-configuration.html" class="wiki-link">Note Identifier</a> is found, then any data found on the imported row will replace the data for the corresponding fields in the existing Note. Imported rows that do not match existing Notes will be added as new Notes. </p></li>
+<li><p>Match Only &#8211; Similar to <em>Match and Add</em>, but non-matching rows will be dropped, and no new Notes will be created. </p></li>
+</ul>
+
+<h5 id="consolidate-lookups">Consolidate Lookups</h5>
+
+<p>This setting is only meaningful when importing from another Notenik Collection that uses one or more <a href="lookup.html" class="wiki-link">Lookup</a> fields. If this box is checked, then Notenik will attempt to convert the looked up fields into fields embedded directly within the current Collection. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="import-vcards.html" class="nav-link">Import vCards</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

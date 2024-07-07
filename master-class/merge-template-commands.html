@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Merge Template Commands</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>8 <a href="contents-of-a-merge-template.html" class="nav-link">Contents of a Merge Template</a>&#160;&#8593;</p><h4 id="merge-template-commands">8.2 Merge Template Commands</h4>
+<p>Commands provide overall instructions to Notenik for how to merge the note data with the template. </p>
+
+<p>Following are the three most important commands. </p>
+
+<pre><code>
+&lt;?output "filename.ext"?>
+
+&lt;?nextrec?>
+
+&lt;?loop?>
+</code></pre>
+
+<p>The <code>output</code> command provides a name and location for the output file to be created. </p>
+
+<p>The lines before the <code>nextrec</code> command will only be written out once. </p>
+
+<p>Lines between <code>nextrec</code> and <code>loop</code> will be written out for each note being processed. </p>
+
+<p>Any lines following the <code>loop</code> command will only be written out once, following the processing of the last note. </p>
+
+<p>An important concept to understand is that the output filename can be based on a variable &#8211; on the contents of one of the fields within each note. A related concept is that the <code>output</code> command may either precede or follow the <code>nextrec</code> command. </p>
+
+<p>If the <code>output</code> command precedes the <code>nextrec</code> command, then only one output file will be created, and the file name to be output cannot contain a variable. This would typically be used to create an index file, or a list. </p>
+
+<p>On the other hand if the <code>output</code> command follows the <code>nextrec</code> command, then one output file will be created for each note, and the output file name should include a variable from each note, so that a unique file name is generated for each note. This would typically be used to create one web page for each note. </p>
+
+<p>See the Knowledge Base for a complete list of <a href="notenik://help?id=mergecommands" class="wiki-link">Merge Template Commands</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="merge-template-variables.html" class="nav-link">Merge Template Variables</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

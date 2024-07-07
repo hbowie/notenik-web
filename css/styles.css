@@ -317,6 +317,7 @@ nav a.another-page:hover {
 
 p.news-date {
 	font-style: italic;
+	font-size: 1.3rem;
 }
 
 blockquote {
@@ -370,5 +371,7 @@ blockquote {
 ul.outline-list {
     list-style-type: none;
 }
-
+pre {
+	overflow-x: auto;
+}
 

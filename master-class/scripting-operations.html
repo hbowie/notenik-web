@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Scripting Operations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Master Class </p>
+
+</header>
+
+<main>
+<p>11 <a href="scripting.html" class="nav-link">Scripting</a>&#160;&#8593;</p><h4 id="scripting-operations">11.1 Scripting Operations</h4>
+<p>A script file works its magic by generally executing the following operations, in the following sequence. </p>
+<ol>
+<li><p>Identify an <strong>input</strong> data source: typically a Notenik Collection, but other options are available as well. </p>
+
+<p>Each new data source typically replaces any others that were previously identified, but a <em>merge</em> option is available to allow combining of multiple sources. </p>
+
+<p>Any data input is now treated as a series of rows arranged into columns, with each Note becoming a separate row, and each Field becoming a separate column. </p></li>
+<li><p>Optionally <strong>filter</strong> the data to exclude some of the rows that are not needed for subsequent operations. </p></li>
+<li><p>Optionally <strong>sort</strong> the data by one or more columns to get rows into some desired sequence to be used for subsequent operations. </p></li>
+<li><p>Process a merge <strong>template</strong>, running the filtered and sorted data through the template, and generating whatever output was specified by the template. </p></li>
+<li><p>Optionally generate an <strong>output</strong> file directly, without the use of a merge template. </p></li>
+<li><p>Direct your web browser to <strong>browse</strong> a local URL at which you would expect to find your generated website. </p></li>
+</ol>
+
+<p>This same general series of operations may be repeated as many times as is needed, depending on your goals, your data sources, and your merge templates. </p>
+
+<p>Note that in the Knowledge Base, each of these operations is performed by its own <a href="notenik://help?id=scriptingmodules" class="wiki-link">Scripting Module</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="script-files.html" class="nav-link">Script Files</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

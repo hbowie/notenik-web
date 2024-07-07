@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Generate Outline Based on Headings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.7 <a href="intra-note-commands.html" class="nav-link">Intra-Note Commands</a>&#160;&#8593;</p><h5 id="generateoutlinebasedonheadings">7.3.7.3 Generate Outline Based on Headings</h5>
+<p>As an extension to the original Markdown spec from John Gruber, a Note&#8217;s <a href="body.html" class="wiki-link">body</a> field can be formatted as an outline, using the Note&#8217;s embedded <a href="https://www.markdownguide.org/basic-syntax/#headings" class="ext-link" target="_blank" rel="noopener">headings</a> as the items in the outline. </p>
+
+<p>This outline formatting is requested by placing the following command line in the body field, before the appearance of any headings. </p>
+
+<pre><code>{:outline-headings}
+</code></pre>
+
+<p>Headings can then be indicated using the usual Markdown syntax. However instead of formatting each heading line with the usual <code>h1</code> through <code>h6</code> tags, Notenik will make each heading a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/summary" class="ext-link" target="_blank" rel="noopener">summary</a> element, with the heading line and all following content &#8211; up to the next heading at the same level &#8211; enclosed within a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" class="ext-link" target="_blank" rel="noopener">details</a> element. </p>
+
+<p>The result will be that each heading line will start with a disclosure triangle, with the details following the heading line initially hidden. Clicking on the disclosure triangle will then reveal the details following the heading line (including any lower-level headings, which will in turn have their own disclosure triangles). </p>
+
+<p>For example&#8230; </p>
+
+<details class="heading-5-details">
+
+<summary id="styling-with-css" class="heading-5-summary">
+Styling with CSS</summary>
+
+<p>Each <code>&lt;details&gt;</code> tag will have a css class assigned, in the format <code>heading-x-details</code>, where <code>x</code> is the level of the heading (normally indicated by the number of hash marks used). </p>
+
+<p>Similarly, each <code>&lt;summary&gt;</code> tag will have a css class assigned in the format <code>heading-x-summary</code>, where <code>x</code> is again the level of the heading. </p>
+
+<p>Notenik will supply default styling for these classes in order to appropriately indent each level of the outline, but this default styling can be overridden by the user to modify the appearance of the headings. </p></details>
+
+<details class="heading-5-details">
+
+<summary id="expanding-the-initial-outline-display" class="heading-5-summary">
+Expanding the Initial Outline Display</summary>
+
+<p>If you wish the initial Note display to show multiple levels of headings, then place a colon and a single digit  after the command itself. A value of <code>0</code> or <code>1</code> will just show the first level of headings &#8211; the same as the default, without any modifier. A value of &#8216;2&#8217; will result in two levels of headings being initially visible, and so on. </p>
+
+<p>For an example, see the following line: </p>
+
+<pre><code>{:outline-headings:3}
+</code></pre>
+</details>
+
+<details class="heading-5-details">
+
+<summary id="heading-levels" class="heading-5-summary">
+Heading Levels</summary>
+
+<p>Note that this command will work just as well no matter what heading levels you choose to use. In other words, you could start with a level 1, followed by a level 2 (levels indicated by numbers of hash marks), but you could also start with a level 2 (two hash marks) followed by level 4 headings (four hash marks). </p></details>
+
+<details class="heading-5-details">
+
+<summary id="opml-conversion" class="heading-5-summary">
+OPML Conversion</summary>
+
+<p><a href="http://opml.org" class="ext-link" target="_blank" rel="noopener">OPML</a> stands for &#8220;Outline Processor Markup Language,&#8221; and is a text-based format designed to store and exchange outlines with attributes. Most outlining applications (such as the <a href="https://www.hogbaysoftware.com/bike/" class="ext-link" target="_blank" rel="noopener">Bike Outiner</a> and <a href="https://www.omnigroup.com/omnioutliner/" class="ext-link" target="_blank" rel="noopener">OmniOutliner</a> can save and/or export outlines in the OPML format. </p>
+
+<p>If you drag such a file (with a file extension of <code>.opml</code>) from the Finder and drop it onto the List tab of an open Notenik Collection (positioning the drop before or after an existing Note, but not directly on it), then Notenik will convert the OPML file into a Notenik Note that starts with the <code>{:outline-headings}</code> command and has headings representing the outline items. </p></details>
+
+
+<hr />
+<div>
+
+<p>Next: <a href="generate-a-list-of-attachments.html" class="nav-link">Generate a List of Attachments</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

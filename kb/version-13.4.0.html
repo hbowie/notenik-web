@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 13.4.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version13.4.0">16.16 Version 13.4.0</h3>
+<p>Date: 16 Nov 2023 - Thursday</p><h5 id="added-show-in-finder-for-notes">Added Show in Finder for Notes</h5>
+
+<p>At the top of the contextual menu for Notes on the List tab, you will now find an option to <code>Show in Finder</code>. Selecting this option will reveal the file in the macOS Finder. </p>
+
+<h5 id="added-optional-separator-for-linked-tags">Added Optional Separator for Linked Tags</h5>
+
+<p>When using the <a href="linked-tags-g.html" class="wiki-link">Linked Tags - G</a> variable modifier, an optional third parameter may now be specified, in order to use a separator between tags of something other than a comma. </p>
+
+<h5 id="added-script-include-option">Added Script Include Option</h5>
+
+<p>One <a href="script-files.html" class="wiki-link">Script File</a> may now include another, by specifying the name of a second file as a <a href="script-module-parameters.html" class="wiki-link">Script Module parameter</a>. </p>
+
+<h5 id="added-script-lognoise-setting">Added Script Lognoise Setting</h5>
+
+<p>The <a href="script-module-parameters.html" class="wiki-link">Script Module Parameter</a> of <code>lognoise</code> can be used to suppress some common error messages. </p>
+
+<h5 id="improved-display-for-link-fields">Improved Display for Link Fields</h5>
+
+<p>This version makes a couple of changes to the display of <a href="link.html" class="wiki-link">Link</a> fields. </p>
+
+<p>First, link fields are new styled with the <code>ext-link</code> class, which is an existing class defined on the <a href="html-class-values.html" class="wiki-link">HTML Class Values</a> page. This will generally make the styling of links here consistent with the appearance of links within the <a href="body.html" class="wiki-link">Body</a> of the note. </p>
+
+<p>Second, the contents of the display string shown for a link field can now be modified using a special set of values to be placed in the <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a>. </p>
+
+<p>See the following for an example. </p>
+
+<pre><code>Ref Link: &lt;link: x|s|s|x|x > 
+</code></pre>
+
+<p>Notice there are five separate single-character values separated by pipe characters. </p>
+
+<p>Each position can have one of the following values: </p>
+<ul>
+<li>a - Display this part of the link as-is, without any modification. </li>
+<li>x - Exclude this component of the link. </li>
+<li>s - Simplify the representation of this component of the link (see explanation below). </li>
+</ul>
+
+<p>And the five positions represent the following five <a href="https://www.tutorialrepublic.com/html-tutorial/html-url.php" class="ext-link" target="_blank" rel="noopener">components of a URL</a>: </p>
+<ul>
+<li>Scheme (as in <code>http://</code> or <code>https://</code>) </li>
+<li>Host (as in <code>en.wikipedia.org</code>) </li>
+<li>Path (as in <code>/wiki/Main_Page</code>) </li>
+<li>Query (as in <code>?what-the-heck</code>) </li>
+<li>Fragment (as in <code>#section-3</code>) </li>
+</ul>
+
+<p>A couple of things to note: </p>
+<ul>
+<li>Such a formatting string will only be applied to links that appear to be valid URLs with a scheme of <code>http</code> or <code>https</code>. Anything else will simply be displayed as-is. </li>
+<li>If you fail to supply any formatting string, then the default will be to display all links as-is. </li>
+</ul>
+
+<p>And now, to explain what we mean by simplifying the presentation of a component. </p>
+
+<p>First, this only applies to the Host and the Path. There are no simplification algorithms for the other three parts, so they will be displayed as-is, unless they are excluded. </p>
+
+<p>For the Host, the following rules will be applied: </p>
+<ul>
+<li>Any leading characters followed by a period (such as <code>www</code>) will be dropped, along with the following period. </li>
+<li>If the last part of the host &#8211; the Top Level Domain &#8211; is <code>.com</code> or <code>.org</code>, then it will be dropped. Other TLDs will be included in the display. </li>
+<li>The first character of the second-level domain will be capitalized. </li>
+</ul>
+
+<p>For the Path, the following rules will be applied: </p>
+<ul>
+<li>If the path ends with a file extension (such as <code>.html</code> or <code>.php</code>, then that will be dropped. </li>
+<li>Any elements of the path other than the last will be dropped. </li>
+<li>Spaces will replace any dashes or underscores. </li>
+</ul>
+
+<p>And then, if the host and/or the path were simplified, then the two will be separated by a colon and a space, rather than a slash. </p>
+
+<p>So, for example, given the formatting string above, this URL: </p>
+
+<pre><code>https://en.wikipedia.org/wiki/Comparison_of_note-taking_software
+</code></pre>
+
+<p>&#8230;would be displayed like this: </p>
+
+<pre><code>Wikipedia: Comparison of note-taking software
+</code></pre>
+
+<p>Depending on what you are using a Collection for, and what sort of links you are recording, this sort of formatting may or may not be useful to you. </p>
+
+<p>In some cases, though, it can make the text of the link much easier to read for humans trying to parse all the pieces. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="version-13.3.0.html" class="nav-link">Version 13.3.0</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>
