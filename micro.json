@@ -15,31 +15,79 @@
             "id": "notenik.app/adventures/2024-07-03-introduction",
             "url": "https://notenik.app/adventures/2024-07-03-introduction.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-03-introduction.html\">Introduction</a> – <br />A brief intro to some of my adventures with Notenik, and with software development more generally, as well as a summary of expectations for this blog.  </p>",
-						"date_published": "2024-07-07T15:39:47Z"
+						"date_published": "2024-07-17T15:29:02Z"
         },
         {
             "id": "notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site",
             "url": "https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-04-adding-a-web-feed-to-your-site.html\">Adding a Web Feed to Your Site</a> – <br />If you have a website to which you regularly add content, then at some point you will probably want to add a web feed to your site. You can use a combination of Notenik&#8217;s Script files and Merge templates to easily generate such web feeds, in any or all of the major formats. It&#8217;s always been possible to do this sort of counting with Notenik, but a system variable called datacount now makes this easier than ever.  </p>",
-						"date_published": "2024-07-07T15:39:47Z"
+						"date_published": "2024-07-17T15:29:02Z"
         },
         {
             "id": "notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site",
             "url": "https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-05-adding-an-rss-feed-to-your-site.html\">Adding an RSS Feed to Your Site</a> – <br />An RSS feed is one kind of web feed that you can use on your site. This is the oldest of the various feed formats, and is XML-based.  </p>",
-						"date_published": "2024-07-07T15:39:47Z"
+						"date_published": "2024-07-17T15:29:02Z"
         },
         {
             "id": "notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site",
             "url": "https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-06-adding-an-atom-feed-to-your-site.html\">Adding an Atom Feed to Your Site</a> – <br />An Atom feed is another kind of web feed that you can use on your site. This is newer than RSS, and is also XML-based.  </p>",
-						"date_published": "2024-07-07T15:39:47Z"
+						"date_published": "2024-07-17T15:29:02Z"
         },
         {
             "id": "notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site",
             "url": "https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-07-adding-a-json-feed-to-your-site.html\">Adding a JSON Feed to Your Site</a> – <br />A JSON feed is another kind of web feed that you can add to your site using Notenik. Here&#8217;s an example of how you might do that.  </p>",
-						"date_published": "2024-07-07T15:39:47Z"
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-08-notenik-201-video-now-available",
+            "url": "https://notenik.app/adventures/2024-07-08-notenik-201-video-now-available.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-08-notenik-201-video-now-available.html\">Notenik 201 Video Now Available</a> – <br />Due to popular demand, there&#8217;s now a second Notenik video available! Hopefully it won&#8217;t take me another two years before I tackle the next one!  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-09-using-match-merge-logic-in-notenik",
+            "url": "https://notenik.app/adventures/2024-07-09-using-match-merge-logic-in-notenik.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-09-using-match-merge-logic-in-notenik.html\">Using Match-Merge Logic in Notenik</a> – <br />Notenik has a powerful ability to apply match-merge logic to an imported data set. Here&#8217;s how it works.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-10-how-to-build-a-website",
+            "url": "https://notenik.app/adventures/2024-07-10-how-to-build-a-website.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-10-how-to-build-a-website.html\">How To Build A Website</a> – <br />I&#8217;ve used Notenik to build several different websites. Here&#8217;s the general workflow that I use.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-11-cross-posting-to-mastodon",
+            "url": "https://notenik.app/adventures/2024-07-11-cross-posting-to-mastodon.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-11-cross-posting-to-mastodon.html\">Cross-Posting to Mastodon</a> – <br />It&#8217;s taken a few tries to get this working but from now on I believe all of the Adventures with Notenik blog posts (starting with this one!) should be automatically cross-posting to @notenik@mastodon.social.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-12-use-merge-templates-to-format-output",
+            "url": "https://notenik.app/adventures/2024-07-12-use-merge-templates-to-format-output.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-12-use-merge-templates-to-format-output.html\">Use Merge Templates to Format Output</a> – <br />Merge Templates are one of Notenik&#8217;s most powerful features, because they allow you to easily format the data in your Notes into any output format that can be expressed within a text file.  HTML, XML, JSON, CSV, tab-delimited and plain text files can all be generated easily, whenever you like.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-15-three-types-of-merge-templates",
+            "url": "https://notenik.app/adventures/2024-07-15-three-types-of-merge-templates.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-15-three-types-of-merge-templates.html\">Three Types of Merge Templates</a> – <br />Notenik supports essentially three different types of merge templates. Learn what each one is used for, and how they differ from one another.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-16-mac-menus",
+            "url": "https://notenik.app/adventures/2024-07-16-mac-menus.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-16-mac-menus.html\">Mac Menus</a> – <br />There are some nice side benefits to Notenik&#8217;s use of traditional Mac menus.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
+        },
+        {
+            "id": "notenik.app/adventures/2024-07-17-custom-display-mode",
+            "url": "https://notenik.app/adventures/2024-07-17-custom-display-mode.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/2024-07-17-custom-display-mode.html\">Custom Display Mode</a> – <br />Notenik 14.9.0 adds a new custom display mode.  </p>",
+						"date_published": "2024-07-17T15:29:02Z"
         }
     ]
 }

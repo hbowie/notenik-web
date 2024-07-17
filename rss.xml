@@ -49,5 +49,77 @@
 		  A JSON feed is another kind of web feed that you can add to your site using Notenik. Here&apos;s an example of how you might do that. 
 	  </description>
 	</item>
+	<item>
+	  <title>Notenik 201 Video Now Available</title>
+	  <link>https://notenik.app/adventures/2024-07-08-notenik-201-video-now-available.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-08-notenik-201-video-now-available.html</guid>
+	  <pubDate>Mon, 08 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  Due to popular demand, there&apos;s now a second Notenik video available! Hopefully it won&apos;t take me another two years before I tackle the next one! 
+	  </description>
+	</item>
+	<item>
+	  <title>Using Match-Merge Logic in Notenik</title>
+	  <link>https://notenik.app/adventures/2024-07-09-using-match-merge-logic-in-notenik.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-09-using-match-merge-logic-in-notenik.html</guid>
+	  <pubDate>Tue, 09 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik has a powerful ability to apply match-merge logic to an imported data set. Here&apos;s how it works. 
+	  </description>
+	</item>
+	<item>
+	  <title>How To Build A Website</title>
+	  <link>https://notenik.app/adventures/2024-07-10-how-to-build-a-website.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-10-how-to-build-a-website.html</guid>
+	  <pubDate>Wed, 10 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  I&apos;ve used Notenik to build several different websites. Here&apos;s the general workflow that I use. 
+	  </description>
+	</item>
+	<item>
+	  <title>Cross-Posting to Mastodon</title>
+	  <link>https://notenik.app/adventures/2024-07-11-cross-posting-to-mastodon.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-11-cross-posting-to-mastodon.html</guid>
+	  <pubDate>Thu, 11 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  It&apos;s taken a few tries to get this working but from now on I believe all of the Adventures with Notenik blog posts (starting with this one!) should be automatically cross-posting to @notenik@mastodon.social. 
+	  </description>
+	</item>
+	<item>
+	  <title>Use Merge Templates to Format Output</title>
+	  <link>https://notenik.app/adventures/2024-07-12-use-merge-templates-to-format-output.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-12-use-merge-templates-to-format-output.html</guid>
+	  <pubDate>Fri, 12 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  Merge Templates are one of Notenik&apos;s most powerful features, because they allow you to easily format the data in your Notes into any output format that can be expressed within a text file.  HTML, XML, JSON, CSV, tab-delimited and plain text files can all be generated easily, whenever you like. 
+	  </description>
+	</item>
+	<item>
+	  <title>Three Types of Merge Templates</title>
+	  <link>https://notenik.app/adventures/2024-07-15-three-types-of-merge-templates.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-15-three-types-of-merge-templates.html</guid>
+	  <pubDate>Mon, 15 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik supports essentially three different types of merge templates. Learn what each one is used for, and how they differ from one another. 
+	  </description>
+	</item>
+	<item>
+	  <title>Mac Menus</title>
+	  <link>https://notenik.app/adventures/2024-07-16-mac-menus.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-16-mac-menus.html</guid>
+	  <pubDate>Tue, 16 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  There are some nice side benefits to Notenik&apos;s use of traditional Mac menus. 
+	  </description>
+	</item>
+	<item>
+	  <title>Custom Display Mode</title>
+	  <link>https://notenik.app/adventures/2024-07-17-custom-display-mode.html</link>
+	  <guid>https://notenik.app/adventures/2024-07-17-custom-display-mode.html</guid>
+	  <pubDate>Wed, 17 Jul 2024 12:00:00 -0700</pubDate>
+	  <description>
+		  Notenik 14.9.0 adds a new custom display mode. 
+	  </description>
+	</item>
   </channel>
 </rss>

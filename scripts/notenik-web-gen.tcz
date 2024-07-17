@@ -46,6 +46,8 @@ sort	add	descending	Date
 sort	add	descending	Timestamp	
 sort	add	ascending	Title	
 sort	set		params	
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-next-template.html
+template	generate
 template	webroot			/Users/hbowie/Sites/notenik-web
 template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-template.html
 template	generate			
@@ -54,8 +56,6 @@ template	generate
 template	open			/Users/hbowie/Sites/notenik-web/templates/adventures-full-content-template.html
 template	generate			
 template	open			/Users/hbowie/Sites/notenik-web/templates/latest-adventure-template.html
-template	generate
-template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-next-template.html
 template	generate
 filter	clear			
 filter	set		params	

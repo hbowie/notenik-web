@@ -18,9 +18,13 @@ Mirror Auto Index: false
 
 Display Body Label: true
 
+Minimum Body Edit View Height: 5.0
+
 Title Display Option: h1
 
 Display Mode: normal
+
+Override Custom Display: false
 
 MathJax: false
 
@@ -40,5 +44,5 @@ Hash Tags: false
 
 Window Numbers: 578.0;0.0;1291.0;1330.0;517.5;
 
-Column Widths: klass: 60, 80, 1500; rank: 50, 80, 1500; title: 200, 503, 1500; date: 80, 120, 500; author: 100, 200, 1000; tags: 50, 100, 1200; datemod: 100, 180, 250; statusdigit: 20, 30, 50; seq: 30, 80, 1500; x: 12, 20, 50; dateadded: 100, 180, 250; 
+Column Widths: klass: 60, 80, 1500; date: 80, 120, 500; x: 12, 20, 50; seq: 30, 80, 1500; datemod: 100, 180, 250; author: 100, 200, 1000; dateadded: 100, 180, 250; tags: 50, 100, 1200; statusdigit: 20, 30, 50; rank: 50, 80, 1500; title: 200, 503, 1500; 
 

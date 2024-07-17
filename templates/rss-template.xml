@@ -11,9 +11,7 @@
 	  <link>https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html</link>
 	  <guid>https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html</guid>
 	  <pubDate>=$date&EEE, dd MMM yyyy$= 12:00:00 -0700</pubDate>
-	  <description>
-		  =$teaser&xo-$=
-	  </description>
+	  <description>=$teaser&xo-$=</description>
 	</item>
 <?loop?>
   </channel>
