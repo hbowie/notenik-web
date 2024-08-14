@@ -12,20 +12,24 @@
     ],
     "language": "en-US",
     "items": [
+<?set count = 0 ?>
 <?nextrec?>
+<?if =$count$= lt 20 ?>
         {
-            "id": "notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=",
-            "url": "https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html",
+            "id": "notenik.app/adventures/=$title&f$=",
+            "url": "https://notenik.app/adventures/=$title&f$=.html",
 <?if "=$imagelink$=" ?>
 						"image": "=$imagelink$=",
 <?endif?>
-						"content_html": "<p><a href=\"https://notenik.app/adventures/=$date&yyyy-MM-dd$=-=$title&f$=.html\">=$title&\$=</a> – <br />=$teaser&o-\$= </p>",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/=$title&f$=.html\">=$title&\$=</a> – <br />=$teaser&o-\$= </p>",
 						"date_published": "=$date&yyyy-MM-ddTHH:mm:ssZ$="
-<?if =$data-count$= < =$data-max$= ?>
+<?if =$count$= < 19 ?>
         },
 <?else?>
         }
 <?endif?>
+<?endif?>
+<?set count += 1 ?>
 <?loop?>
     ]
 }

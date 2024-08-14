@@ -1,15 +1,13 @@
-<?set prev-date = "" ?>
 <?set prev-title = "" ?>
 <?nextrec?>
 <?if "=$prev-title$=" ?>
-<?output "../includes-gen/next-adventures/=$prev-date&yyyy-MM-dd$=-=$prev-title&f$=.html"?>
+<?output "../includes-gen/next-adventures/=$prev-title&f$=.html"?>
 <p>
 Prior Adventure: 
-<a href="=$date&yyyy-MM-dd$=-=$title&f$=.html">
+<a href="=$title&f$=.html">
 =$title$= | =$date&d MMM, yyyy$=
 </a>
 </p>
 <?endif?>
-<?set prev-date = "=$date$=" ?>
 <?set prev-title = "=$title$= ?>
 <?loop?>

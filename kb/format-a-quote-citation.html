@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Format a Quote Citation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav>
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.7 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a>&#160;&#8593;</p><h5 id="formataquotecitation">7.3.7.1 Format a Quote Citation</h5>
+<p>HTML has a handy <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" class="ext-link" target="_blank" rel="noopener">blockquote</a> element, and Markdown has a <a href="https://www.markdownguide.org/basic-syntax/#blockquotes-1" class="ext-link" target="_blank" rel="noopener">convenient syntax</a> for generating these. And of course you can tailor the appearance of blockquotes in any one of hundreds of ways with a little application of CSS. </p>
+
+<p>But it is very common to want to supply a citation following such a blockquote, to identify the original source from which the quotation was taken. Unfortunately, though, there are no dedicated tags for formatting citations like these, and seemingly no wide agreement on what sort of HTML tags should ideally be used to format such a citation. </p>
+
+<p>To address this problem, Notenik is introducing a custom Markdown command that will produce a nice citation line that can be easily styled. </p>
+
+<p>Here is an example illustrating how this command can be used </p>
+
+<pre><code>> As Nietzsche put it, if you have a why to live, you can bear almost any how. 
+
+{:quote-from:Yuval Noah Harari|2015|book|Sapiens: A Brief History of Humankind|https://www.ynharari.com|https://www.ynharari.com/book/sapiens-2/}
+
+</code></pre>
+
+<p>And here is how this will appear once formatted by Notenik, using Notenik&#8217;s default CSS. </p>
+
+<blockquote>
+
+<p>As Nietzsche put it, if you have a why to live, you can bear almost any how. </p>
+</blockquote>
+
+<p class="quote-from"><a href="https://www.ynharari.com" class="ext-link" target="_blank" rel="noopener">Yuval Noah Harari</a>, 2015, from the book <a href="https://www.ynharari.com/book/sapiens-2/" class="ext-link" target="_blank" rel="noopener"><cite>Sapiens: A Brief History of Humankind</cite></a></p>
+
+<p>And here is the HTML that is generated for the <code>quote-from</code> line: </p>
+
+<pre><code>&lt;p class="quote-from">&lt;a href="https://www.ynharari.com" class="ext-link" target="_blank" rel="noopener">Yuval Noah Harari&lt;/a>, 2015, from the book &lt;a href="https://www.ynharari.com/book/sapiens-2/" class="ext-link" target="_blank" rel="noopener">&lt;cite>Sapiens: A Brief History of Humankind&lt;/cite>&lt;/a>&lt;/p>
+</code></pre>
+
+<p>As the example illustrates, the <code>quote-from</code> command has six positional parameters that can follow the colon, with pipe characters separating them from each other. The parameters should be specified in the following order. </p>
+<ol>
+<li>Author </li>
+<li>Date of Publication (often just a year, as in the example) </li>
+<li>Work Type, using values from the <a href="work-type.html" class="wiki-link">Work Type</a> field type </li>
+<li>Work Title, excluding any surrounding punctuation or tags </li>
+<li>Author Link, if you wish to specify an absolute or relative URL for the author </li>
+<li>Work Link, if you wish to specify an absolute or relative URL for the work </li>
+</ol>
+
+<p>Any of these parameters may be left blank, if unavailable. </p>
+
+<p>As you can see, Notenik applies the <code>quote-from</code> class to the <code>&lt;p&gt;</code>  tag, so that the appearance of the citation line can be easily modified by supplying your own <code>display.css</code> file when you <a href="tailor-the-display.html" class="wiki-link">Tailor the Display</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="intra-note-commands.html" class="nav-link">Intra-Note Commands</a></p></div>
+
+
+</main>
+
+<footer>
+<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>
