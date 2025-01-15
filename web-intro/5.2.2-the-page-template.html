@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The page template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5.2. <a href="5.2-navigating-between-pages.html" class="nav-link">Navigating between pages</a>&#160;&#8593;</p><h5 id="thepagetemplate">5.2.2 The page template</h5>
+<p>Use your trusty text editor to open the <code>chapter 05 - page template.html</code> file. It should look just like the previous version, but with the addition of the following lines just after the <code>&lt;header&gt;</code> tag. </p>
+
+<pre><code>&lt;?clearglobals?>
+&lt;?set =$title&amp;f$=-aria-current = page ?>
+&lt;?include "../includes-gen/nav-bar.html" ?>
+</code></pre>
+
+<p>The first of these lines clears the value of all global variables, to ensure we don&#8217;t have anything lingering from a previous execution of the loop. </p>
+
+<p>The next line sets a global variable to the value of <code>page</code>, with the name of the variable being set varying based on the Title value of the current note. </p>
+
+<p>And then the third line pulls in the <code>nav-bar.html</code> file we generated earlier. </p>
+
+<p>Recall that this include file contained this code. </p>
+
+<pre><code> 		&lt;nav>
+			&lt;a href="index.html" aria-current="=$index-aria-current$=">
+				Home
+			&lt;/a>
+			&lt;a href="about.html" aria-current="=$about-aria-current$=">
+				About
+			&lt;/a>
+		&lt;/nav>
+</code></pre>
+
+<p>So the <code>aria-current</code> value for each nav bar item will be set to the value of a variable with a name corresponding to that item, and only one of these variable values — the one corresponding to the page currently being generated — will be set to <code>page</code>. </p>
+
+<p>Go ahead and run the script named <code>chapter 05 - page script.tsv</code> within Notenik, then double-click on one of the resulting pages in the Finder. You should see a nice navigational menu at the top of each page, with the item for the current page being suitably highlighted. </p>
+
+<p>Now, as we add additional pages, they will automatically be included in the menu for every page! </p>
+
+<hr />
+<div>
+
+<p>Next: 5.3. <a href="5.3-homepage-cleanup.html" class="nav-link">Homepage cleanup</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

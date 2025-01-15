@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The nav template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5.2. <a href="5.2-navigating-between-pages.html" class="nav-link">Navigating between pages</a>&#160;&#8593;</p><h5 id="thenavtemplate">5.2.1 The nav template</h5>
+<p>The first template file, named <code>chapter 05 - nav template.html</code>, will generate our <code>nav</code> menu. </p>
+
+<p>Here&#8217;s what it should look like (omitting any comment lines). </p>
+
+<pre><code>&lt;?output "../includes-gen/nav-bar.html" ?>
+ 		&lt;nav>
+&lt;?nextrec?>
+&lt;?set link-text = "=$title$=" ?>
+&lt;?if "=$title$=" eq "Index" ?>
+&lt;?set link-text = "Home" ?>
+&lt;?endif?>
+			&lt;a href="=$title&amp;f$=.html" aria-current="\=\$=$title&amp;f$=-aria-current\$\=">
+				=$link-text$=
+			&lt;/a>
+&lt;?loop?>
+		&lt;/nav>
+
+</code></pre>
+
+<p>Let&#8217;s walk through this. </p>
+
+<p>The output command will direct all of the output to a single file, to be named <code>nav-bar.html</code>, located in a new folder named <code>includes-gen</code>. This new folder (still located within the <code>factory</code> parent) will be a place where we can generate include files with one template, and then include those generated files into another template later. </p>
+
+<p>The next line starts the <code>nav</code> menu. </p>
+
+<p>Then we have the <code>nextrec</code> command, which signals the start of the code to be repeated for each note/page. </p>
+
+<p>The next four lines create a new variable named <code>link-text</code> and set that to the value of the Title field, with one exception: the <code>Index</code> file will be called <code>Home</code>.  </p>
+
+<p>And then we have the code for the link on the next three lines. Here we&#8217;re using variables instead of literals: <code>=$title&amp;f$=.html</code> for the <code>href</code> value, and <code>=$linktext$=</code> for the text to be displayed to the user. </p>
+
+<p>For the <code>aria-current</code> value, we&#8217;re using the Title value to name a new variable, with the new variable not being replaced until the generated include file is actually used in a later template. </p>
+
+<p>Then we end the loop, and provide a closing <code>&lt;/nav&gt;</code> tag. </p>
+
+<p>You should also find a script file named <code>chapter 05 - nav script.tsv</code>. </p>
+
+<p>Here&#8217;s what it should look like. </p>
+
+<p><img src="images/ch-05-nav-script.png" alt="Chapter 05 nav script in Numbers" /> </p>
+
+<p>Notice we&#8217;ve added some <code>sort</code> module actions that will sort the pages by the Seq field. This will ensure that the Home page (which should have a Seq value of <code>1</code>) will appear first in the generated menu. </p>
+
+<p>Double-click on this row within your Notenik project folder collection, then click on <em>Go</em> to run the script. </p>
+
+<p>Then use your text editor to open the output <code>nav-bar.html</code> file in the newly created <code>includes-gen</code> folder. It should look like this. </p>
+
+<pre><code> 		&lt;nav>
+			&lt;a href="index.html" aria-current="=$index-aria-current$=">
+				Home
+			&lt;/a>
+			&lt;a href="about.html" aria-current="=$about-aria-current$=">
+				About
+			&lt;/a>
+		&lt;/nav>
+</code></pre>
+
+<p>This file will be included into our page-template, which we&#8217;ll look at next. </p>
+
+<hr />
+<div>
+
+<p>Next: 5.2.2 <a href="5.2.2-the-page-template.html" class="nav-link">The page template</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

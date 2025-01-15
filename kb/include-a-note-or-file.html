@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -57,6 +57,7 @@ window.MathJax = {
 <li><p><code>body</code> - This is the default, and simply includes the body of the second Note. </p></li>
 <li><p><code>note</code> - This style includes the entire contents of the second Note as it would be saved to disk. </p></li>
 <li><p><code>quote</code> - The body of the included Note will be placed within Blockquotes, and an attempt will be made to format a quote attribution block to follow the quote, using the <a href="attribution.html" class="wiki-link">Attribution</a> field or the <a href="artist.html" class="wiki-link">Artist</a>/Author field, along with associated Work fields (<a href="work-title.html" class="wiki-link">Work Title</a>, <a href="work-type.html" class="wiki-link">Work Type</a>, <a href="work-link.html" class="wiki-link">Work Link</a>). </p></li>
+<li><p><code>quotebiblio</code> - The body of the included Note will be placed within Blockquotes, and an attempt will be made to format a quote attribution in a style consistent with the the one used when you <a href="format-a-quote-citation.html" class="wiki-link">Format a Quote Citation</a> using that special Markdown <a href="single-line-commands.html" class="wiki-link">Single-Line Command</a>, obtaining information about the author and the work from the quotation&#8217;s parent Notes, which are expected to be organized as they would be when you <a href="generate-a-bibliography.html" class="wiki-link">Generate a Bibliography</a>. </p></li>
 <li><p><code>quotebody</code> - The body of the included Note will be placed within Blockquotes, without any attempt to include an attribution (this style effectively implies that the surrounding text will provide sufficient attribution for the quote). </p></li>
 </ul>
 
@@ -69,6 +70,8 @@ window.MathJax = {
 <li><p>The results of the Markdown extension described here will be visible within Notenik, when a Note is displayed; </p></li>
 <li><p>The results of the Merge Template Include command will only be visible when using the a Merge Template to generate some textual output outside of Notenik. </p></li>
 </ul>
+
+<section id="section-for-alternate-syntax">
 
 <h5 id="alternate-syntax">Alternate Syntax</h5>
 
@@ -84,20 +87,27 @@ window.MathJax = {
 
 <p>Notenik will try to respect this alternate syntax, in addition to its native syntax, as described above. </p>
 
+</section>
+
+<section id="section-for-includes-between-collections">
+
 <h5 id="includes-between-collections">Includes Between Collections</h5>
 
 <p>Note that the same syntax and rules used to create <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a> can also be applied when including a Note or file. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="single-line-commands.html" class="nav-link">Single-Line Commands</a></p></div>
+<p>Next: 7.3.6 <a href="single-line-commands.html" class="nav-link">Single-Line Commands</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

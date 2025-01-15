@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Review the page template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>6. <a href="6-adding-a-blog.html" class="nav-link">Adding a blog</a>&#160;&#8593;</p><h4 id="reviewthepagetemplate">6.12. Review the page template</h4>
+<p>Let&#8217;s review the <code>templates</code> file named <code>chapter 06 - page template.html</code>. </p>
+
+<p>This template will create a web page for each note in the <code>pages</code> collection. </p>
+
+<p>Here&#8217;s what it should look like. </p>
+
+<pre><code>&lt;?copycss?>
+&lt;?nextrec?>
+&lt;?output "../../web/=$title&amp;f$=.html"?>
+&lt;!doctype html>
+&lt;html>
+  &lt;head>
+	&lt;meta charset="utf-8">
+	&lt;title>=$header$=&lt;/title>
+	&lt;link rel="stylesheet" href="css/styles.css">
+  &lt;/head>
+  &lt;body>
+	&lt;header>
+&lt;?clearglobals?>
+&lt;?set =$title&amp;f$=-aria-current = page ?>
+&lt;?include "../includes-gen/nav-bar.html" ?>
+	  &lt;h1>=$header$=&lt;/h1>
+	&lt;/header>
+	&lt;main>
+&lt;?if "=$Title$=" eq "Blog" ?>
+&lt;?include "../includes-gen/blog.html" ?>
+&lt;?endif?>
+	  =$body&amp;fo$=
+	&lt;/main>
+&lt;?copyimages?>
+	&lt;footer>
+	  &lt;p>Made with ❤️ and ☕️ by Herb Bowie.&lt;/p>
+	&lt;/footer>
+  &lt;/body>
+&lt;/html>
+&lt;?loop?>
+</code></pre>
+
+<p>Most of this should look pretty familiar, as we&#8217;ve seen many of these lines in prior versions of the page template. </p>
+
+<p>But here we&#8217;ve introduced something new. </p>
+
+<pre><code>&lt;?if "=$Title$=" eq "Blog" ?>
+&lt;?include "../includes-gen/blog.html" ?>
+&lt;?endif?>
+</code></pre>
+
+<p>Do you see what we&#8217;re doing? If this is the blog page, then we&#8217;re pulling in the blog include we generated earlier, before we include the body text. </p>
+
+<p>So now, perhaps, we can see what we need to do next. </p>
+
+<hr />
+<div>
+
+<p>Next: 6.13. <a href="6.13-create-the-blog-home.html" class="nav-link">Create the blog home</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

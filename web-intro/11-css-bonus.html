@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>CSS Bonus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p><a href="intro-to-website-creation-using-notenik.html" class="nav-link">Intro to Website Creation using Notenik</a>&#160;&#8593;</p><h3 id="cssbonus">11. CSS Bonus</h3>
+<p>Blake&#8217;s bonus chapters on CSS are both worth reading and reviewing, even though implementing CSS changes in Notenik will proceed on a slightly different path. </p>
+<ul>
+<li><a href="https://www.htmlforpeople.com/customizing-simple-css/" class="ext-link" target="_blank" rel="noopener">Customizing Simple.css</a> </li>
+<li><a href="https://www.htmlforpeople.com/css-basics/" class="ext-link" target="_blank" rel="noopener">CSS basics</a> </li>
+</ul>
+
+<p>Notenik offers several different approaches to handling the CSS used to display your content. </p>
+
+<hr />
+<main>
+<details>
+<summary>11.1. Default CSS</summary>
+<p>Notenik will happily supply its own CSS by default, if you take no other action. The default CSS provided by Notenik will generally make your content look quite presentable. The default CSS embedded within Notenik is also updated and extended from time to time, through the normal <a href="https://notenik.app/kb/version-history.html" class="ext-link" target="_blank" rel="noopener">Notenik update process</a>, to make occasional improvements. </p></details>
+
+</main>
+<main>
+<details>
+<summary>11.2. Tweaking Notenik&apos;s default CSS</summary>
+<p>Notenik allows you to easily tweak the default CSS that it uses, without requiring you to learn any CSS. </p>
+
+<p>To take this approach, open <em>Notenik > Display Appearance</em>. </p>
+
+<p>Here you&#8217;ll find a number of options. </p>
+<ul>
+<li><p>You can center headings for any sequence of levels. </p></li>
+<li><p>You can modify the fonts used for body text and/or for headings and/or for the List tab on the left. </p></li>
+<li><p>You can choose from a short list of common fonts, or elect to choose from the full list of fonts installed on your system. </p></li>
+<li><p>And you can also modify font sizes. </p></li>
+</ul>
+
+<p>All of this can be done without learning any CSS syntax. You can see the CSS being generated for you, though, and you can see what effect your updates will have. </p>
+
+<p>Once you&#8217;re done making your adjustments, just hit <em>OK</em> to put them into effect. </p>
+
+<p>Note that changes made here will affect the display of <em>all</em> of your collections — not just the one currently open. </p>
+
+<p>Also, assuming you are interested in publishing your site to the web, be sure and choose <a href="https://www.dreamhost.com/blog/web-safe-fonts/" class="ext-link" target="_blank" rel="noopener">web safe fonts</a>. Implementation of custom fonts is beyond the scope of this tutorial, and you must understand that, just because a particular font is available on your Mac, that doesn&#8217;t mean that it will be available to your readers when they access your site from the web. </p></details>
+
+</main>
+<main>
+<details>
+<summary>11.3. Supplying your own CSS file</summary>
+<p>Yet another option for adjusting the CSS used within Notenik is to place a file named <code>display.css</code> within your collection folder. This CSS will then be used in place of Notenik&#8217;s default CSS for that collection. </p>
+
+<p>An easy way to start this process is to select <em>Collection > Generate Sample Display Template</em>. </p>
+
+<p>Two new files will then be generated within your collection folder. </p>
+<ul>
+<li><code>display.css</code> </li>
+<li><code>display.html</code> </li>
+</ul>
+
+<p>For our purposes now, delete the <code>display.html</code> file, since we won&#8217;t need that just to customize our CSS. </p>
+
+<p>Then open the <code>display.css</code> file with your trusty text editor. </p>
+
+<p>What you&#8217;ll see now will be all of the default CSS supplied by the version of Notenik that you are using. </p>
+
+<p>Now feel free to completely replace all of this, or to add/delete/modify any bits and bobs that aren&#8217;t quite to your satisfaction. </p>
+
+<p>When you&#8217;re done making your edits, save your changes within your text editor, then go back to your Notenik collection and select <em>Collection > Reload Collection</em> (Opt-Cmd-J). You should now see the results of your CSS changes. </p></details>
+
+</main>
+<main>
+<details>
+<summary>11.4. Selecting from alternatives</summary>
+<p>As described earlier, in our discussion of <a href="4.2-css-frameworks.html" class="wiki-link">4.2 CSS frameworks</a>, you can drop several different CSS files into a special collection subfolder named <code>css</code>, and then choose to apply any one of them using <em>Collection > Settings</em> (Cmd-;). </p>
+
+<p>Such a choice would override any of the other Notenik CSS options we&#8217;ve described so far. </p></details>
+
+</main>
+<main>
+<details>
+<summary>11.5. Applying add-ins</summary>
+<p>And then the final option for modifying the CSS used by Notenik is to provide one or more <code>.css</code> files within the special <code>add-ins</code> folder, as described previously in our discussion of <a href="9.4-embedded-video.html" class="wiki-link">9.4 Embedded video</a>. </p>
+
+<p>Note that any CSS &#8220;add-ins&#8221; will be applied <em>in addition to</em> whatever other CSS options you have chosen, through one of the means above, and not <em>instead of</em> any of those other options. </p></details>
+
+</main>
+
+
+<hr />
+
+<div>
+
+<p>Next: 12. <a href="12-reusable-html.html" class="nav-link">Reusable HTML</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

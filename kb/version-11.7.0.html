@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,50 +34,96 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version11.7.0">16.35 Version 11.7.0</h3>
-<p>Date: 27 Mar 2023 - Monday</p><h5 id="added-a-text-format-field-type">Added a Text Format Field Type</h5>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version11.7.0">16.47 Version 11.7.0</h3>
+<p>Date: 27 Mar 2023 - Monday</p><section id="section-for-added-a-text-format-field-type">
+
+<h5 id="added-a-text-format-field-type">Added a Text Format Field Type</h5>
 
 <p>A new <a href="text-format.html" class="wiki-link">Text Format</a> field type can be used to specify that the body field for a Note is to be displayed as-is, rather than being run through a Markdown parser. This is especially useful for Notes that use leading white space on a line to indicate levels of indentation within an outline structure. </p>
+
+</section>
+
+<section id="section-for-upgraded-note-selector-to-include-collection-shortcuts">
 
 <h5 id="upgraded-note-selector-to-include-collection-shortcuts">Upgraded Note Selector to Include Collection Shortcuts</h5>
 
 <p>When using the <a href="select-a-note-for-action.html" class="wiki-link">Note Selector</a> to select a Note from another Collection (using a <a href="tailor-collection-settings.html" class="wiki-link">collection shortcut</a>), Notenik will now do a better job of including the target Collection&#8217;s shortcut as part of the generated wiki link or include. </p>
 
+</section>
+
+<section id="section-for-added-a-check-to-prevent-a-note-titled-template-from-being-added">
+
 <h5 id="added-a-check-to-prevent-a-note-titled-template-from-being-added">Added a Check to Prevent a Note titled &#8216;Template&#8217; from being Added</h5>
 
 <p>A user recently pointed out that Notenik was not preventing him from adding a Note with a title of &#8216;Template&#8217;, even though such a Note would cause <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a> to be overwritten! This has been corrected such that future attempts will be treated in the same way as attempts to create other duplicates, by adding a &#8216;1&#8217; to the end of the Title field. </p>
+
+</section>
+
+<section id="section-for-fixed-some-problems-with-backlinks">
 
 <h5 id="fixed-some-problems-with-backlinks">Fixed Some Problems with Backlinks</h5>
 
 <p>Fixed a couple of problems affecting <a href="back-links.html" class="wiki-link">Back Links</a>, especially when combined with MultiMarkdown/YAML metadata. </p>
 
+</section>
+
+<section id="section-for-added-web-page-as-a-standard-work-type">
+
 <h5 id="added-web-page-as-a-standard-work-type">Added Web Page as a Standard Work Type</h5>
 
 <p>The value <code>Web Page</code> has been added as a standard <a href="work-type.html" class="wiki-link">Work Type</a>. </p>
+
+</section>
+
+<section id="section-for-added-command-to-generate-a-bibliography">
 
 <h5 id="added-command-to-generate-a-bibliography">Added Command to Generate a Bibliography</h5>
 
 <p>A new Markdown command to <a href="generate-a-bibliography.html" class="wiki-link">Generate a Bibliography</a> has been added. </p>
 
+</section>
+
+<section id="section-for-added-new-field-type-of-display-seq">
+
 <h5 id="added-new-field-type-of-display-seq">Added New Field Type of Display-Seq</h5>
 
 <p>A new field type of <a href="display-seq.html" class="wiki-link">Display Seq</a> has been added. This can be used to complement the presence of a <a href="seq.html" class="wiki-link">Seq</a> field, allowing an author to specify an alternate numbering scheme to be displayed to readers. </p>
+
+</section>
+
+<section id="section-for-heading-centering-can-now-be-set-in-display-settings">
 
 <h5 id="heading-centering-can-now-be-set-in-display-settings">Heading Centering Can Now be Set in Display Settings</h5>
 
 <p>The <a href="tailor-the-display.html" class="wiki-link">Display Settings</a> can now be used to optionally center a range of heading levels. </p>
 
+</section>
+
+<section id="section-for-font-family-and-size-can-now-be-separately-set-for-headings">
+
 <h5 id="font-family-and-size-can-now-be-separately-set-for-headings">Font Family and Size Can Now be Separately Set for Headings</h5>
 
 <p>The <a href="tailor-the-display.html" class="wiki-link">Display Settings</a> can now be used to specify a font-family, and a size, to be used for all headings. Previously any headings would simply use the same font-family as body text, and a fixed set of sizes. </p>
+
+</section>
+
+<section id="section-for-paragraph-margins-modified">
 
 <h5 id="paragraph-margins-modified">Paragraph Margins Modified</h5>
 
 <p>The CSS styling for paragraphs was modified to reduce the top margin, so that headings can be more closely associated with paragraphs that follow. </p>
 
+</section>
+
+<section id="section-for-added-new-derived-variable">
+
 <h5 id="added-new-derived-variable">Added New Derived Variable</h5>
 
 <p>Added a new <a href="derived-variables.html" class="wiki-link">Derived Variable</a> called <a href="title-display-slug.html" class="wiki-link">Title Display Slug</a> to wrap a Note title in the appropriate HTML code, based on the <a href="tailor-collection-settings.html" class="wiki-link">Collection Setting</a> used to control <a href="note-title-display.html" class="wiki-link">Note Title Display</a>. </p>
+
+</section>
+
+<section id="section-for-startup-completion-signaled-earlier-in-process">
 
 <h5 id="startup-completion-signaled-earlier-in-process">Startup Completion Signaled Earlier in Process</h5>
 
@@ -87,16 +133,19 @@ window.MathJax = {
 
 <p>This has been fixed. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-11.6.0.html" class="nav-link">Version 11.6.0</a></p></div>
+<p>Next: 16.48 <a href="version-11.6.0.html" class="nav-link">Version 11.6.0</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

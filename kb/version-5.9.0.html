@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,31 +34,44 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version5.9.0">16.109 Version 5.9.0</h3>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version5.9.0">16.121 Version 5.9.0</h3>
 <p>Date: 10 May 2021 - Monday</p><p>Released on 10 May 2021 </p>
+
+<section id="section-for-merge-templates-no-longer-write-unmodified-files">
 
 <h5 id="merge-templates-no-longer-write-unmodified-files">Merge Templates No Longer Write Unmodified Files</h5>
 
 <p>Before writing an output file from a Merge Template operation and overwriting an existing file, Notenik will now first read the existing file, and compare it to the file about to be written. If the contents are identical, then Notenik will skip the write operation. This helps to preserve last modified dates, which in turn helps to prevent unnecessary FTP operations when updating a website. </p>
 
+</section>
+
+<section id="section-for-added-new-customization-options-for-the-display-tab">
+
 <h5 id="added-new-customization-options-for-the-display-tab">Added New Customization Options for the Display Tab</h5>
 
 <p>The layout and appearance of the Display tab can now be modified by supplying a <code>display.css</code> file within a Notes Collection, or by supplying a <code>display.html</code> template file. </p>
+
+</section>
+
+<section id="section-for-added-allfields-command-to-merge-templates">
 
 <h5 id="added-allfields-command-to-merge-templates">Added allfields command to Merge Templates</h5>
 
 <p>The <code>&lt;?allfields?&gt;</code> command can now be used to insert all of the fields from an input record/note into the output, formatted into HTML in the same way that they would be on the Display tab within Notenik. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-5.8.1.html" class="nav-link">Version 5.8.1</a></p></div>
+<p>Next: 16.122 <a href="version-5.8.1.html" class="nav-link">Version 5.8.1</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

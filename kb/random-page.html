@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -124,6 +124,10 @@ fileNames[ix] = "presentation-mode.html";
 ix++;
 fileNames[ix] = "quotations-mode.html";
 ix++;
+fileNames[ix] = "tags-handling.html";
+ix++;
+fileNames[ix] = "outline-tab.html";
+ix++;
 fileNames[ix] = "rename-a-field.html";
 ix++;
 fileNames[ix] = "change-note-id-configuration.html";
@@ -141,6 +145,8 @@ ix++;
 fileNames[ix] = "tags-export-settings.html";
 ix++;
 fileNames[ix] = "markdown-settings.html";
+ix++;
+fileNames[ix] = "reset-to-defaults.html";
 ix++;
 fileNames[ix] = "display-a-note.html";
 ix++;
@@ -206,6 +212,8 @@ fileNames[ix] = "definition-lists.html";
 ix++;
 fileNames[ix] = "strikethrough.html";
 ix++;
+fileNames[ix] = "highlight.html";
+ix++;
 fileNames[ix] = "task-lists.html";
 ix++;
 fileNames[ix] = "subscript.html";
@@ -231,6 +239,22 @@ ix++;
 fileNames[ix] = "formatting-commands.html";
 ix++;
 fileNames[ix] = "format-a-quote-citation.html";
+ix++;
+fileNames[ix] = "format-a-byline.html";
+ix++;
+fileNames[ix] = "start-a-figure.html";
+ix++;
+fileNames[ix] = "start-a-figure-caption.html";
+ix++;
+fileNames[ix] = "end-a-figure.html";
+ix++;
+fileNames[ix] = "inject-block-attributes.html";
+ix++;
+fileNames[ix] = "start-a-segment.html";
+ix++;
+fileNames[ix] = "end-a-segment.html";
+ix++;
+fileNames[ix] = "generate-sections-for-headings.html";
 ix++;
 fileNames[ix] = "intra-note-commands.html";
 ix++;
@@ -306,13 +330,15 @@ fileNames[ix] = "file-links.html";
 ix++;
 fileNames[ix] = "other-files-and-subfolders.html";
 ix++;
+fileNames[ix] = "stash-noteniks-special-files.html";
+ix++;
 fileNames[ix] = "the-notenik-icloud-container.html";
 ix++;
 fileNames[ix] = "managing-a-bunch-of-collections.html";
 ix++;
 fileNames[ix] = "collection-identifiers.html";
 ix++;
-fileNames[ix] = "open-parent-realm.html";
+fileNames[ix] = "open-project-folder.html";
 ix++;
 fileNames[ix] = "navigate-your-collections-via-the-board.html";
 ix++;
@@ -500,6 +526,8 @@ fileNames[ix] = "export-using-script.html";
 ix++;
 fileNames[ix] = "populate-app-catalog.html";
 ix++;
+fileNames[ix] = "new-note-from-wikiquote.html";
+ix++;
 fileNames[ix] = "export-to-notenik-vs-save-as-vs-move.html";
 ix++;
 fileNames[ix] = "backup-to-zip.html";
@@ -536,11 +564,15 @@ fileNames[ix] = "apis-for-hookmark-integration.html";
 ix++;
 fileNames[ix] = "actions-for-shortcuts.html";
 ix++;
+fileNames[ix] = "add-ins-for-css-and-javascript.html";
+ix++;
 fileNames[ix] = "merge-templates.html";
 ix++;
 fileNames[ix] = "merge-delimiters.html";
 ix++;
 fileNames[ix] = "merge-variables.html";
+ix++;
+fileNames[ix] = "global-variables.html";
 ix++;
 fileNames[ix] = "system-variables.html";
 ix++;
@@ -652,11 +684,15 @@ fileNames[ix] = "split-label-from-number-.html";
 ix++;
 fileNames[ix] = "domain-name-from-link-.html";
 ix++;
+fileNames[ix] = "repeat-r.html";
+ix++;
 fileNames[ix] = "formatting-string.html";
 ix++;
 fileNames[ix] = "merge-commands.html";
 ix++;
 fileNames[ix] = "delims-command.html";
+ix++;
+fileNames[ix] = "clearglobals-command.html";
 ix++;
 fileNames[ix] = "set-command.html";
 ix++;
@@ -678,7 +714,13 @@ fileNames[ix] = "else-command.html";
 ix++;
 fileNames[ix] = "endif-command.html";
 ix++;
+fileNames[ix] = "copyaddins-command.html";
+ix++;
+fileNames[ix] = "copycss-command.html";
+ix++;
 fileNames[ix] = "copyfile-command.html";
+ix++;
+fileNames[ix] = "copyimages-command.html";
 ix++;
 fileNames[ix] = "include-command.html";
 ix++;
@@ -753,6 +795,30 @@ ix++;
 fileNames[ix] = "links.html";
 ix++;
 fileNames[ix] = "version-history.html";
+ix++;
+fileNames[ix] = "version-16.2.0.html";
+ix++;
+fileNames[ix] = "version-16.1.0.html";
+ix++;
+fileNames[ix] = "version-16.0.0.html";
+ix++;
+fileNames[ix] = "version-15.9.0.html";
+ix++;
+fileNames[ix] = "version-15.8.0.html";
+ix++;
+fileNames[ix] = "version-15.7.0.html";
+ix++;
+fileNames[ix] = "version-15.6.0.html";
+ix++;
+fileNames[ix] = "version-15.5.0.html";
+ix++;
+fileNames[ix] = "version-15.4.0.html";
+ix++;
+fileNames[ix] = "version-15.3.0.html";
+ix++;
+fileNames[ix] = "version-15.2.0.html";
+ix++;
+fileNames[ix] = "version-15.1.0.html";
 ix++;
 fileNames[ix] = "version-15.0.0.html";
 ix++;
@@ -1107,13 +1173,13 @@ function randomNote() {
 <hr />
 <div>
 
-<p>Next: <a href="application-overview.html" class="nav-link">Application Overview</a></p></div>
+<p>Next: 3. <a href="application-overview.html" class="nav-link">Application Overview</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

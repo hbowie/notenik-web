@@ -54,7 +54,9 @@
 					</div>
 				</div>
 				<div id="header-right">
-				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+					<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&itscg=30200&itsct=apps_box_badge&mttnsubad=1465997984" style="display: inline-block;">
+					<img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1559606400" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+					</a>
 				</div>
 			</header>
 			<!-- End of include file header.html -->
@@ -104,6 +106,8 @@
 
 <p>Let me sort the recent changes (from 10.4.0 through 10.7.0) into groups by Notenik function. </p>
 
+<section id="section-for-interoperability">
+
 <h4 id="interoperability">Interoperability</h4>
 
 <p>As other applications have come along with their own ways of doing things, I&#8217;ve tried, wherever it makes sense, to support variations in the formatting of Note files that will make Notenik more compatible with Notes being created and manipulated by other pieces of software. </p>
@@ -112,6 +116,10 @@
 <li><p>Added another Collection Pref to allow the user to request that their <strong>Tags values always be saved with preceding Hash Marks</strong>, to support apps that look for that form of identification. </p></li>
 <li><p>When <strong>attaching files</strong> to a Note, Notenik now offers the option to move the existing file (thus preserving its identity) rather than copying it. This helps when using apps such as Hookmark to keep track of your files. </p></li>
 </ul>
+
+</section>
+
+<section id="section-for-markdown-extensions">
 
 <h4 id="markdown-extensions">Markdown Extensions</h4>
 
@@ -132,12 +140,20 @@
 </li>
 </ul>
 
+</section>
+
+<section id="section-for-field-labels-and-types">
+
 <h4 id="field-labels-and-types">Field Labels and Types</h4>
 
 <p>Notenik field types are one of its most powerful features, and a new arrow has been added to the quiver with this release. </p>
 <ul>
 <li>Added <strong>Rank</strong> as a new field type, allowing the user to select from a defined list, with each item containing both a number and a label. The number will be used for sorting, with the label providing meaning. Also added a new Merge Template Variable Modifier that will <strong>Take Text from the Right</strong>, allowing the label to be displayed without its corresponding number.  </li>
 </ul>
+
+</section>
+
+<section id="section-for-website-generation">
 
 <h4 id="website-generation">Website Generation</h4>
 
@@ -148,6 +164,10 @@
 <li><p>Added several new <strong>Derived Variables</strong>, for use with Merge Templates, that are especially useful for HTML formatting of information about quotations and citations. These include <code>Author Work Slug</code>, <code>The Work Type Slug</code>, <code>Major Work</code>, <code>Work Rights Slug</code> and <code>Known Work Title</code>. Also added <code>Image Slug</code> to make it easer to format image fields into HTML. </p></li>
 <li><p>When <strong>generating an Index for a Collection</strong>, the population of the <code>Page Type</code> field has been expanded to include the Note&#8217;s class field, or the Collection&#8217;s enclosing folder name, if no <code>Type</code> field is present. </p></li>
 </ul>
+
+</section>
+
+<section id="section-for-annoyance-eilimination">
 
 <h4 id="annoyance-eilimination">Annoyance Eilimination</h4>
 
@@ -160,9 +180,16 @@
 <li><p>Added a command beneath the File Menu to <strong>Forget All Shortcuts</strong>. This can be useful in order to reset your list of remembered Collection shortcuts, in cases where they are no longer behaving in a helpful manner. </p></li>
 </ul>
 
+</section>
+
+<section id="section-for-bottom-line">
+
 <h4 id="bottom-line">Bottom Line</h4>
 
 <p>Hopefully there&#8217;s a little something for everyone in these last few releases. I&#8217;m continuing to release a new batch of enhancements about every couple of weeks, so if there&#8217;s something still missing that you&#8217;d like to see, don&#8217;t hesitate to <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">post something on the Discourse forum</a>! </p>
+
+</section>
+
 				</div>
 
 				<hr />
@@ -178,7 +205,7 @@
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2025 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 		</div>  <!-- end of wrapper div -->

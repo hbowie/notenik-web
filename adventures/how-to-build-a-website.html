@@ -58,7 +58,9 @@
 					</div>
 				</div>
 				<div id="header-right">
-				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+					<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&itscg=30200&itsct=apps_box_badge&mttnsubad=1465997984" style="display: inline-block;">
+					<img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1559606400" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+					</a>
 				</div>
 			</header>
 			<!-- End of include file header.html -->
@@ -114,29 +116,55 @@
 
 <p>And here&#8217;s a general workflow for building such sites, with indications of where Notenik can be used. </p>
 
+<section id="section-for-1-identify-types-of-content">
+
 <h3 id="1-identify-types-of-content">1. Identify Types of Content</h3>
 
 <p>For any website, you will have one or more types of content. For a simple blog, for example, you will have blog posts. Where Notenik excels, though, is in building sites with more complex content types, and with multiple types. But you need to start out by identifying these. </p>
+
+</section>
+
+<section id="section-for-2-identify-organizational-schemes">
 
 <h3 id="2-identify-organizational-schemes">2. Identify Organizational Schemes</h3>
 
 <p>How will you present your content to site visitors? A blog typically shows the latest post, followed by more recent ones, plus some sort of archive access. Depending on your content type(s), different means of filtering and ordering your content may be appropriate. Figure out what makes the most sense for your site. </p>
 
+</section>
+
+<section id="section-for-3-identify-fields-for-each-content-type">
+
 <h3 id="3-identify-fields-for-each-content-type">3. Identify Fields for each Content Type</h3>
 
 <p>What information do you want to present? What sorts of data may benefit from separate handling? What fields will you need for filtering and sorting, based on your organizational schemes? </p>
+
+</section>
+
+<section id="section-for-4-figure-out-where-to-store-everything">
 
 <h3 id="4-figure-out-where-to-store-everything">4. Figure Out Where to Store Everything</h3>
 
 <p>When building a website, I typically don&#8217;t use the default location of the iCloud Notenik folder, because I end up with many different folders that I need to access in a variety of ways. The Sites folder within your home folder (as a peer to your Documents folder) is the traditional location for website stuff. If it doesn&#8217;t already exist, then create it, and then create a subfolder for your site, and everything related to it. Then create a <code>content</code> folder. </p>
 
+</section>
+
+<section id="section-for-5-build-your-notenik-collections">
+
 <h3 id="5-build-your-notenik-collections">5. Build Your Notenik Collections</h3>
 
 <p>Now it&#8217;s time to build the Notenik Collections that will house your content. Typically you would want a separate Collection for each content type although, in some cases, it might be beneficial to house them all in one Collection, with a different <a href="https://notenik.app/kb/class.html" class="ext-link" target="_blank" rel="noopener">Class</a> value for each different content type. If in doubt, though, start with a separate Collection for each content type. Place all of these Collections within the <code>content</code> folder you created above. </p>
 
+</section>
+
+<section id="section-for-6-implement-version-control">
+
 <h3 id="6-implement-version-control">6. Implement Version Control</h3>
 
 <p>I would typically use Git, and use Tower as my Git client. But once you start creating files within your site&#8217;s folder, you probably want to use some sort of version control, and start checking stuff in regularly. </p>
+
+</section>
+
+<section id="section-for-7-identify-your-web-page-layouts">
 
 <h3 id="7-identify-your-web-page-layouts">7. Identify Your Web Page Layouts</h3>
 
@@ -149,25 +177,48 @@
 
 <p>Figure out what you want each page to look like. </p>
 
+</section>
+
+<section id="section-for-8-create-notenik-merge-templates">
+
 <h3 id="8-create-notenik-merge-templates">8. Create Notenik Merge Templates</h3>
 
 <p>Now create a <a href="https://notenik.app/kb/merge-templates.html" class="ext-link" target="_blank" rel="noopener">Merge Template</a> for each page layout. These would contain HTML tags, as well as your Merge Commands and Merge Variables. You would create these with your trusty text editor. Typically I would place these in a folder named <code>templates</code>, within a folder named <code>factory</code>, which would be a peer to the <code>content</code> folder you created earlier. It is the templates that specify the names and location of the actual web pages being created. Typically I would put these in a folder called <code>web</code>, that would be a peer to my <code>content</code> and <code>factory</code> folders. </p>
+
+</section>
+
+<section id="section-for-9-create-and-run-notenik-scripts">
 
 <h3 id="9-create-and-run-notenik-scripts">9. Create and Run Notenik Scripts</h3>
 
 <p>Finally create and run your <a href="https://notenik.app/kb/script-files.html" class="ext-link" target="_blank" rel="noopener">Script Files</a>. Your script files pull everything together, reading from your Collections, sorting and filtering those Notes, and then using your templates to generate actual web pages. I would put these into a <code>scripts</code> folder that would be a peer to your <code>templates</code> folder, and also within the <code>factory</code> folder. Your script files will typically contain many steps. I often use Notenik to create the first step, and then go back to my trusty text editor to create others, copying and pasting and tweaking as I go. </p>
 
+</section>
+
+<section id="section-for-10-test-and-tweak">
+
 <h3 id="10-test-and-tweak">10. Test and Tweak</h3>
 
 <p>In this phase you run your scripts and tweak your content and templates until you are happy with the results. </p>
+
+</section>
+
+<section id="section-for-11-upload-to-a-web-server">
 
 <h3 id="11-upload-to-a-web-server">11. Upload to a Web Server</h3>
 
 <p>When everything looks the way you would like, you will want to upload the web pages to your actual site that is resident on an actual web server. I use Transmit as my FTP client, and use A2 Hosting for my web server, but there are many other choices available. </p>
 
+</section>
+
+<section id="section-for-12-maintain-and-enhance">
+
 <h3 id="12-maintain-and-enhance">12. Maintain and Enhance</h3>
 
 <p>At any point after initial publication, can can add new content to your Collections, and tweak your templates, then rerun your scripts, then upload changes to your web server. Each time you run your scripts your entire site will be rebuilt. However script execution should happen in only a few seconds. </p>
+
+</section>
+
 					
 					<p>tags: <a href='../adventure-tags.html#website' rel='tag'>website</a></p>
 				</div>
@@ -188,7 +239,7 @@ Using Match-Merge Logic in Notenik | 9 Jul, 2024
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2025 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 

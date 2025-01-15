@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -36,7 +36,7 @@ window.MathJax = {
 <main>
 <p>15. <a href="reference.html" class="nav-link">Reference</a>&#160;&#8593;</p><h3 id="htmlclassvalues">15.7 HTML Class Values</h3>
 <p>The following HTML class values are assigned by Notenik. Click on a column heading to sort by the values in that column. Click again to reverse the sort. </p><script>
-function sortTable(n) {
+function sortTable(tableID, n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   var firstElement = "";
   var nextElement = "";
@@ -46,7 +46,7 @@ function sortTable(n) {
   var nextNumber = 0;
   var firstValue = 0;
   var nextValue = 0;
-  table = document.getElementById("class-table");
+  table = document.getElementById(tableID);
   switching = true;
   // Set the sorting direction to ascending:
   dir = "asc";
@@ -117,11 +117,11 @@ function sortTable(n) {
 
 <table id="class-table">
 <tr>
-<th onclick="sortTable(0)" style="text-align:left;">
+<th onclick="sortTable('class-table',0)" style="text-align:left;">
  Element </th>
-<th onclick="sortTable(1)" style="text-align:left;">
+<th onclick="sortTable('class-table',1)" style="text-align:left;">
  Class </th>
-<th onclick="sortTable(2)" style="text-align:left;">
+<th onclick="sortTable('class-table',2)" style="text-align:left;">
  Condition </th>
  </tr>
 <tr>
@@ -346,13 +346,13 @@ function sortTable(n) {
 <hr />
 <div>
 
-<p>Next: <a href="view-the-log.html" class="nav-link">View the Log</a></p></div>
+<p>Next: 15.8 <a href="view-the-log.html" class="nav-link">View the Log</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

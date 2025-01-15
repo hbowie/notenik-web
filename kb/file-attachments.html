@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -45,13 +45,19 @@ window.MathJax = {
 
 <p>Once a Note has attachments, you may open one of them by selecting it from the same Attachments menu in the Toolbar. The request will then be passed on to the operating system, and the attachment will be opened in whatever application is assigned to files of that type. </p>
 
-<p>If you change the Title of a Note, then any files attached to the Note will be automaticallly renamed to match the new Title for the Note. </p>
+<p>If you change the Title of a Note, then any files attached to the Note will be automaticallly renamed to match the new Title for the Note. Additionally, if your <a href="body.html" class="wiki-link">Body</a> field contains any references to those files, then those references will also be updated to reflect the new Note title. </p>
 
 <p>If you delete a Note, then its attachments (if any) will be deleted as well. </p>
+
+<section id="section-for-embedding-a-list-of-attachments">
 
 <h5 id="embedding-a-list-of-attachments">Embedding a List of Attachments</h5>
 
 <p>See the Markdown command to <a href="generate-a-list-of-attachments.html" class="wiki-link">Generate a List of Attachments</a> for a way of embedding a clickable list of attachments within the <a href="body.html" class="wiki-link">Body</a> of a Note. </p>
+
+</section>
+
+<section id="section-for-file-system-details">
 
 <h5 id="file-system-details">File System Details</h5>
 
@@ -70,17 +76,19 @@ window.MathJax = {
 <li><code>.ext</code> is the file extension. </li>
 </ul>
 
+</section>
+
 
 <hr />
 <div>
 
-<p>Next: <a href="file-links.html" class="nav-link">File Links</a></p></div>
+<p>Next: 8.4 <a href="file-links.html" class="nav-link">File Links</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

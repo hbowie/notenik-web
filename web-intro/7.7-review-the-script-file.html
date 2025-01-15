@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Review the script file</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7. <a href="7-adding-a-résumé-or-cv.html" class="nav-link">Adding a résumé (or CV)</a>&#160;&#8593;</p><h4 id="reviewthescriptfile">7.7. Review the script file</h4>
+<p>Use your text editor to open <code>chapter 07 - build script.tsv</code>. </p>
+
+<p>You&#8217;ll see we&#8217;ve added the following lines to the beginning of the script. </p><table>
+<tr>
+<th style="text-align:left;">
+ module </th>
+<th style="text-align:left;">
+ action </th>
+<th style="text-align:left;">
+ modifier        </th>
+<th style="text-align:left;">
+ object </th>
+<th style="text-align:left;">
+ value                           </th>
+ </tr>
+<tr>
+<td style="text-align:left;">
+ input  </td>
+<td style="text-align:left;">
+ open   </td>
+<td style="text-align:left;">
+ notenik-defined </td>
+<td style="text-align:left;">
+        </td>
+<td style="text-align:left;">
+ #PATH#../../content/cv-sections </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ sort   </td>
+<td style="text-align:left;">
+ clear  </td>
+<td style="text-align:left;">
+                 </td>
+<td style="text-align:left;">
+        </td>
+<td style="text-align:left;">
+                                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ sort   </td>
+<td style="text-align:left;">
+ add    </td>
+<td style="text-align:left;">
+ ascending       </td>
+<td style="text-align:left;">
+ Seq    </td>
+<td style="text-align:left;">
+                                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ sort   </td>
+<td style="text-align:left;">
+ add    </td>
+<td style="text-align:left;">
+ ascending       </td>
+<td style="text-align:left;">
+ Title  </td>
+<td style="text-align:left;">
+                                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ sort   </td>
+<td style="text-align:left;">
+ set    </td>
+<td style="text-align:left;">
+                 </td>
+<td style="text-align:left;">
+ params </td>
+<td style="text-align:left;">
+                                 </td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ template </td>
+<td style="text-align:left;">
+ open </td>
+<td style="text-align:left;">
+  </td>
+<td style="text-align:left;">
+  </td>
+<td style="text-align:left;">
+ #PATH#../templates/chapter 07 - cv template.html </td>
+ </tr>
+<tr>
+<td style="text-align:left;">
+ template </td>
+<td style="text-align:left;">
+ generate </td>
+<td style="text-align:left;">
+    </td>
+<td style="text-align:left;">
+   </td>
+<td style="text-align:left;">
+   </td>
+</tr>
+</table>
+
+<p>(You might also observe that we&#8217;re using the <a href="https://notenik.app/kb/tables.html" class="ext-link" target="_blank" rel="noopener">Tables Markdown Extension</a> to show you the contentes of the script, nicely aligned into columns, using only Markdown.) </p>
+
+<p>So what are we doing here? </p>
+<ol>
+<li>Using the <code>cv-sections</code> Notenik collection as input; </li>
+<li>Sorting the contents in ascending sequence by Seq; </li>
+<li>Using the template named <code>chapter 07 - cv template.html</code> to generate some sort of output. </li>
+</ol>
+
+<p>The rest of the build script for this chapter remains the same. </p>
+
+<p>So now let&#8217;s see what our new template is doing, shall we? </p>
+
+<hr />
+<div>
+
+<p>Next: 7.8. <a href="7.8-review-the-template-files.html" class="nav-link">Review the template files</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

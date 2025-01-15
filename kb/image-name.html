@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -53,16 +53,25 @@ window.MathJax = {
 
 <p>Image Name is presented to the user on the Edit tab as a drop-down list including all of the Note&#8217;s currently recognized file attachments. An assigned image name will not be preserved if the underlying file attachment is removed or renamed. </p>
 
+<p>Note that an alternate image can be optionally supplied for use with a dark system appearance through use of a second <code>image-name</code> field having the word <code>dark</code> in its label. See the following for an example of what this might look like in the Collection&#8217;s template file. </p>
+
+<pre><code>Image Name: &lt;imagename>
+
+Image Name Dark: &lt;imagename>
+</code></pre>
+
+<p>Also see the <a href="image-slug.html" class="wiki-link">Image Slug</a> <a href="derived-variables.html" class="wiki-link">Derived Variable</a>. </p>
+
 <hr />
 <div>
 
-<p>Next: <a href="short-id.html" class="nav-link">Short ID</a></p></div>
+<p>Next: 9.11.6 <a href="short-id.html" class="nav-link">Short ID</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

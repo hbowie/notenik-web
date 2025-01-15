@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<main>
+<p>15. <a href="15-navigation.html" class="nav-link">Navigation</a>&#160;&#8593;</p><h4 id="search">Search</h4>
+<p>This page allows you to search the site. </p><div class="search-page">
+
+<div class="search-form">
+
+<form action="https://duckduckgo.com/" method="get" id="form-search">
+
+<label for="input-search">Enter your search term:</label>
+
+<input type="text" name="q" id="input-search">
+
+<input type="hidden" name="sites">
+
+<button type="submit" class="btn btn-primary" id="submit-search">Search</button></form></div>
+
+<div id="search-results">
+</div>
+</div>
+<script>
+let searchIndex = [ 
+    { 
+        title: "Intro to Website Creation using Notenik", 
+        date: "", 
+        url: "intro-to-website-creation-using-notenik.html", 
+        summary: "<p><img src=\"images/notenik-on-mbair.png\" alt=\"Notenik running on a MacBook Air\" /> </p>\n\n<p>I&#8217;m <a href=\"https://hbowie.net\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Herb Bowie</a>, a web author and developer of the Mac app <a href=\"https://notenik.app\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Notenik</a>. </p>", 
+        content: " Notenik running on a MacBook Air images notenik on mbair png I m Herb Bowie https hbowie net a web author and developer of the Mac app Notenik https notenik app Notenik can be used to help an individual create their own website but many people are put off by the idea of getting anywhere close to HTML believing it to be too difficult a topic for ordinary people working outside of the tech industry Blake Watson s web book HTML for People https www htmlforpeople com goes a long way towards solving this problem providing a gentle and fun introduction to the whole process of building a website using HyperText Markup Language https developer mozilla org en US docs Web HTML Blake s site made me wonder if I could leverage his work by providing a companion document that would allow readers to quickly see at every step of the way how comparable tasks can be accomplished using Notenik And so this document is the result If you re wondering how Notenik can be used by anyone to create their own website then I suggest you work your way through the pages that follow referencing relevant chapters of Blake s book as you go I ll be looking forward to hearing feedback https discourse notenik app t the notenik companion to html for people 625 u=hbowie about how this might work for people Thanks for reading"
+    }, 
+    { 
+        title: "0.1 Introduction", 
+        date: "", 
+        url: "0.1-introduction.html", 
+        summary: "<p>Start by reading the <a href=\"https://www.htmlforpeople.com/intro/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people Introduction</a>. </p>\n\n<p>I agree entirely with Blake&#8217;s points about HTML simply being the document format for the web, and something that everyone should have some familiarity with. </p>", 
+        content: "Start by reading the HTML for people Introduction https www htmlforpeople com intro I agree entirely with Blake s points about HTML simply being the document format for the web and something that everyone should have some familiarity with I ll go a little further though Many of the modern technologies we use are entirely flat and opaque We are presented with a nice looking user interface with no ability at all to peer beneath the surface to see what s going on below no ability to actually understand how something works no ability to conceptualize how things might be tweaked or rearranged to make them into something new something better something more suited to our needs But thankfully HTML and the web are different All of the websites we see all of the digital content we consume is created using HTML But HTML as we will see can be used to create very small simple but still satisfying things as well as very complex things But the basic building blocks are all the same And so once we understand some of the basics it allows us to create our own things but also empowers us as digital citizens because we now know a little more about how the things around us are being put together Who is this book for This companion is aimed at the same audience as Blake s with the caveat that only Mac users can make use of Notenik What do I need You need a Mac https www apple com mac with internet access and a copy of Notenik https apps apple com us app notenik id1465997984 downloaded and installed on your Mac If this is your first experience with Notenik then it may help to orient yourself to the app s operation by viewing the Notenik 101 video https youtu be JR0kpAUXM5E si=rIkuQHWtj4YbCOd6 which will only take a few minutes How to proceed Note that there are two ways to use the HTML for People https htmlforpeople com book while working your way through this companion document 1 Read each chapter of Blake s book as it is referenced gaining a growing understanding of how HTML works then read the corresponding chapter of this companion document and work through the actions described herein 2 Actually work through the instructions given in both Blake s book and this companion document In this case you will be building two separate websites in two separate folders I think either of these approaches can work Your choice"
+    }, 
+    { 
+        title: "1 Zero to internet: your first website", 
+        date: "", 
+        url: "1-zero-to-internet-your-first-website.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/zero-to-internet-your-first-website/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>Now let&#8217;s see how Notenik can help you build your first website. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com zero to internet your first website Now let s see how Notenik can help you build your first website"
+    }, 
+    { 
+        title: "1.1 Terms and concepts", 
+        date: "", 
+        url: "1.1-terms-and-concepts.html", 
+        summary: "<p>As we gain more experience with website creation, we will see that our concerns can be separated into three different areas: </p>\n<ol>\n<li>Content — the words and images we wish to share; </li>\n<li>Site and Page Structure — the skeletal structure into which we pour&#8230; </li>\n</ol>\n", 
+        content: "As we gain more experience with website creation we will see that our concerns can be separated into three different areas 1 Content the words and images we wish to share 2 Site and Page Structure the skeletal structure into which we pour our content 3 Style font choices color schemes text adornment and so on Each piece of content we wish to publish on our website should probably be unique no point in repeating ourselves is there But the site and page structure should generally not be unique as visitors move around our site we probably wish to see common elements such as navigation bars on every page and wish to see each page laid out in roughly the same fashion And then we probably wish to see a consistent style across our site as well As we continue our website creation journey we will learn that our website s style is generally defined using a different language something called CSS short for Cascading Style Sheets and that HTML makes it easy to put all of your stylistic elements into a single file and then reference that same style sheet consistently from every page of your site So that handles the issue of style easy to keep it consistent across your entire site and easy to implement changes across your entire site by making changes to a single file But then that still leaves us with the issue of site and page structure Here s where Notenik can help out Notenik can assist you in creating and maintaining a website by acting as a static site generator https en wikipedia org wiki Static site generator diagram showing static site generation images static flow png This means that instead of mixing your page site structure and content together on every page you will be creating content as notes within Notenik and then creating one or more templates that will contain page site structure Each note containing content will eventually become a web page or a post Each note is saved as an ordinary text file and you can always open and view each note using your trusty text editor Each note contains two or more fields a Title and a Body at a minimum but also other handy fields as they are needed such as a Seq field that can be used to sort your notes into a desired order Notenik uses the term collection to refer to a folder full of notes Our demo project will contain a few collections within our `content` folder one for pages that are relatively static one for posts that we will be creating as we continue to maintain our site and one for the various sections of our résumé otherwise known as a CV Your content will then be poured into templates in order to apply consistent page site structure to the completed web pages And the scripts will sort and filter your notes and then match up the appropriate content with the corresponding templates in the correct sequence in order to create your complete site As we continue on our HTML journey we will see that some elements of HTML fall more into the page site structure area while others tend to fall into the content area So some of the HTML that we learn from Blake will go into our template files to define page and site structure while other HTML elements will go into our notes to structure our text into things like paragraphs and lists and to provide various forms of emphasis as writers tend to do with things like bold type italics and underlines And then we will see that much of the HTML going into our content can be more concisely expressed using Markdown https www markdownguide org Again though the elements we will learn from Blake will be the same we will just be using a sort of shorthand to make it easier for us to write those elements and easier for us to work with our content All static site generators involve tradeoffs Their advantage is that they eliminate repetitive HTML coding saving time and preventing errors and making changes easier Their disadvantage is that they add an extra step to website creation by requiring a build step Notenik s build step consists of running one or more scripts using Notenik s script runner As we work through this tutorial there will be actions to be taken within Notenik others within our text editor and still others to be taken with the macOS Finder I ll try to clearly identify which steps are to be taken with which tool BTW all of the details about Notenik can be found in the Notenik Knowledge Base which can be found either on the web https notenik app kb notenik knowledge base html or within Notenik notenik help itself From time to time I ll provide links to relevant sections within the web version of this document in case you want more details on any particular topic discussed here I think that s enough of a conceptual overview for now let s start creating"
+    }, 
+    { 
+        title: "1.2 Create a New Notenik project", 
+        date: "", 
+        url: "1.2-create-a-new-notenik-project.html", 
+        summary: "<p>Fire up Notenik and select <em>File > New Collection</em>. </p>\n\n<p>On the first pane that appears, select <em>A location of your choosing</em>. </p>\n\n<p>Next select the parent folder in which your website project will be created. </p>", 
+        content: "Fire up Notenik and select File > New Collection On the first pane that appears select A location of your choosing Next select the parent folder in which your website project will be created This would typically be a folder named `Sites` that would exist immediately below your user home folder and would be a peer to other top level folders such as `Documents` Next specify a name for your new Collection This will become a folder name For this tutorial we can call it `my notenik project` or anything else you d like Next select the sort of Collection you would like For this tutorial select 16 HTML for People demo Once you re done with this tutorial you might wish to select 12 Website the next time you d like a starter pack for a website in order to skip straight to the final state of the tutorial demo project Next you will see a Notenik project window for your new project Click on the `README md` row to see the README file for the project Next double click the `content pages` row Your first content collection window will then open"
+    }, 
+    { 
+        title: "1.3 Create your Index note", 
+        date: "", 
+        url: "1.3-create-your-index-note.html", 
+        summary: "<p>Make sure you have the <code>content / pages</code> window frontmost within Notenik. </p>\n\n<p>You should see an existing note with a title of <code>Index</code>, with the following body value. </p>\n\n<pre><code>My name is Herb.\n</code></pre>\n", 
+        content: "Make sure you have the `content pages` window frontmost within Notenik You should see an existing note with a title of `Index` with the following body value ``` My name is Herb I enjoy making websites and making software to make it easier to make websites ``` Go ahead and edit this note changing the body to reflect your name and a little bit about yourself You will see that the `pages` collection offers multiple fields for each note Change the Header line to enter the text you wish to see at the top of your website s homepage You can leave the Sub Header field blank Make sure the Seq field is set to a value of `1` Now save this note by clicking on the Display tab or by selecting Note > Save Note or pressing Command S"
+    }, 
+    { 
+        title: "1.4 Run the Notenik build script", 
+        date: "", 
+        url: "1.4-run-the-notenik-build-script.html", 
+        summary: "<p>Now go back to your overall project window within Notenik, where you will see a row that&#8217;s titled <code>scripts / chapter 01 - build script.tsv</code>, and double-click on this row on the <em>List</em> tab. This will open the <em>Scripter</em> window. </p>", 
+        content: "Now go back to your overall project window within Notenik where you will see a row that s titled `scripts chapter 01 build script tsv` and double click on this row on the List tab This will open the Scripter window Click on the Go button to run the script"
+    }, 
+    { 
+        title: "1.5 Preview your website", 
+        date: "", 
+        url: "1.5-preview-your-website.html", 
+        summary: "<p>Using the Finder, you will see a file named <code>index.html</code> inside of the <code>web</code> folder within your project folder. </p>", 
+        content: "Using the Finder you will see a file named `index html` inside of the `web` folder within your project folder Both the folder and the file were just created by the build script Double click this file in the Finder and it should open in your default browser and it should contain the same text you typed earlier as the body of your `Index` note"
+    }, 
+    { 
+        title: "1.6 Review the merge template", 
+        date: "", 
+        url: "1.6-review-the-merge-template.html", 
+        summary: "<p>Now let&#8217;s take a look at a couple of Notenik files that were invoked when you double-clicked on your build script. </p>", 
+        content: "Now let s take a look at a couple of Notenik files that were invoked when you double clicked on your build script These files can be opened using the same text editor you used to view the `index html` file Let s look first at the merge template https notenik app kb merge templates html file named `chapter 01 page template html` which you will find within the `factory templates` folder Here s what you should see ``` < nextrec > < output web =$title f$= html > =$body$= < loop > ``` Let s take these lines one at a time `< nextrec >` This is a Notenik Merge Template command https notenik app kb merge commands html that tells Notenik to repeat the following lines for each note found in the input Right now we only have the `Index` page but as we add other pages they would take advantage of this same code `< output web =$title f$= html >` This line tells Notenik to open a new output file into which the following lines will be copied Because this line follows the `nextrec` command it will be repeated for each input note Following the name of the command we find the output path and filename for the file to be created Each ` ` takes Notenik up a level in the folder structure starting from the location of the template file until we get to the project folder itself and then we direct the output into the `web` folder What follows is the file name which will be formed from the title field of the input note The ` f` is a Merge Variable Modifier https notenik app kb variable modifiers html telling Notenik to make all letters lowercase and to replace spaces with dashes to create a universally readable filename to be accessed from the web Then finally the ` html` specifies the file extension to be used for the output file `=$body$=` This merge variable https notenik app kb merge variables html tells Notenik to place the entire body of the input note into the resulting web page `< loop >` This command tells Notenik that it has reached the end of the lines to be repeated for each input note So in this case the only contents of the output `index html` file will be the body of the note So that s it for the merge template for now Pretty simple right"
+    }, 
+    { 
+        title: "1.7 Review the Script File", 
+        date: "", 
+        url: "1.7-review-the-script-file.html", 
+        summary: "<p>Now let&#8217;s look at the <a href=\"https://notenik.app/kb/script-files.html\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">script file</a> we used. </p>\n\n<p>You&#8217;ll find this in the <code>factory/scripts</code> folder. </p>\n\n<p>Again, you can open it using any text editor. However a Notenik script file is in [tab-delimited](https://en. </p>", 
+        content: "Now let s look at the script file https notenik app kb script files html we used You ll find this in the `factory scripts` folder Again you can open it using any text editor However a Notenik script file is in tab delimited https en wikipedia org wiki Tab separated values format with its data in columns so it may be easier to view when opened with a spreadsheet editor such as Apple s Numbers app Here s what the script file looks like when viewed in Numbers Chapter 1 Script File images ch 01 script png The first row contains column headings These are always the same The second row opens the `pages` collection as input The third row opens the template file we just reviewed And the fourth line tells Notenik to merge the content into the template producing whatever output is specified within the template Note that the ` PATH ` constant tells Notenik to interpret what follows as a relative path starting from the location of the script file So now you ve seen everything used to produce our starting web page"
+    }, 
+    { 
+        title: "2 Add content to your website", 
+        date: "", 
+        url: "2-add-content-to-your-website.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/add-content-to-your-website/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>Notenik allows you to preview your content right within the app, by viewing the <em>Display</em> tab, so we won&#8217;t be running our&#8230; </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com add content to your website Notenik allows you to preview your content right within the app by viewing the Display tab so we won t be running our build script and regenerating our `index html` file until we are done adding all of the new content for this chapter"
+    }, 
+    { 
+        title: "2.1 Add a heading", 
+        date: "", 
+        url: "2.1-add-a-heading.html", 
+        summary: "<p>Go back to your Index note within your <code>pages</code> collection, and click on the <em>Edit</em> tab again. </p>", 
+        content: "Go back to your Index note within your `pages` collection and click on the Edit tab again Make sure the Header field of your first note contains the possessive form of your name followed by Homepage For example mine would read `Herb s Homepage` Now save your edits by clicking on the Display tab Now you ll see your page heading entered into your Header field Now let s edit your Body field to add some additional content"
+    }, 
+    { 
+        title: "2.2 Linking to other websites", 
+        date: "", 
+        url: "2.2-linking-to-other-websites.html", 
+        summary: "<p>With Notenik you can code HTML tags if you want to, but you may also use the <a href=\"https://daringfireball.net/projects/markdown/syntax\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Markdown syntax</a>, which is a sort of shorthand for coding many HTML tags. </p>", 
+        content: "With Notenik you can code HTML tags if you want to but you may also use the Markdown syntax https daringfireball net projects markdown syntax which is a sort of shorthand for coding many HTML tags We can use the Markdown syntax to add links to our text Just add the following to your body text ``` Check out these cool app reviews from Lou Plummer s AppAddict page https apps louplummer lol ``` Do you see what we ve done We ve added a new paragraph just by virtue of inserting a blank line before the addtional text and the text to serve as the visible link is placed within square brackets and then followed immediately by the `href` value within parentheses Now hit the Display tab again and you can preview your work again right within Notenik"
+    }, 
+    { 
+        title: "2.3 Lists of things", 
+        date: "", 
+        url: "2.3-lists-of-things.html", 
+        summary: "<p>As you might have guessed, Markdown also has a shorthand syntax for lists. </p>\n\n<p>Here&#8217;s an example of an <a href=\"https://www.markdownguide.org/basic-syntax/#unordered-lists\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">unordered list</a> (aka <em>bulleted list</em>) you can add to your home page. </p>", 
+        content: "As you might have guessed Markdown also has a shorthand syntax for lists Here s an example of an unordered list https www markdownguide org basic syntax unordered lists aka bulleted list you can add to your home page This example also introduces the Markdown syntax for headings https www markdownguide org basic syntax headings using one or more hash marks at the beginning of a line to indicate a heading ``` Favorite Movies + It s A Wonderful Life + The Long Goodbye + The Thin Man ``` Notice we used two leading hash marks to indicate a level 2 heading and started each list item with a plus sign And to make an ordered aka numbered list https www markdownguide org basic syntax ordered lists Just number your items as in the following example ``` How to make a website 1 Create some content 2 Create a merge template 3 Create a script 4 Run the script 5 Open the output with your web browser ``` Note that even if the numbers are not in sequence because of an insertion for example the rendered numbered list will still be numbered consecutively starting at 1"
+    }, 
+    { 
+        title: "2.4 Add images to your website", 
+        date: "", 
+        url: "2.4-add-images-to-your-website.html", 
+        summary: "<p>Once you have an image file that you&#8217;d like to use, go to the Finder and drop it into a new folder named <code>images</code> that you will create within your <code>content/pages</code> folder. </p>", 
+        content: "Once you have an image file that you d like to use go to the Finder and drop it into a new folder named `images` that you will create within your `content pages` folder Back in Notenik you can then add the image to your `Index` content with a line like the following ``` Photograph of Seattle at duskl images seattle at dusk jpg ``` This is an example of the Markdown syntax for images https www markdownguide org basic syntax images 1 There is no Markdown syntax for specifying the size of the image but later we will be able to do this with CSS styling if we would like"
+    }, 
+    { 
+        title: "2.5 Add comments to your code", 
+        date: "", 
+        url: "2.5-add-comments-to-your-code.html", 
+        summary: "<p>There is no special Markdown syntax for comments, but you can use normal HTML comments freely within the body of a note, without having them show up in the output. </p>\n\n<p>You can also use HTML comments within your template files. </p>", 
+        content: "There is no special Markdown syntax for comments but you can use normal HTML comments freely within the body of a note without having them show up in the output You can also use HTML comments within your template files Here s a particularly useful set of lines you will often see ``` < This html was generated by Notenik using the merge template named =$template file name$= and the data at =$parent folder$= > ``` The two variables https notenik app kb system variables html here `=$template file name$=` and `=$parent folder$=` will be replaced with the names of the template file and the data file used to generate a resulting bit of HTML Then when you are looking at a final web page you ll see comments reminding you how that particular chunk of HTML was generated"
+    }, 
+    { 
+        title: "2.6 Review the merge template", 
+        date: "", 
+        url: "2.6-review-the-merge-template.html", 
+        summary: "<p>Here we are going to use the same HTML offered by Blake, but place it in our <em>template file</em>, instead of our content. </p>", 
+        content: "Here we are going to use the same HTML offered by Blake but place it in our template file instead of our content Use your trusty text editor to look at the updated merge template https notenik app kb merge templates html file named `chapter 02 page template html` which you will find within the `factory templates` folder Here s what you should see ``` < nextrec > < output web =$title f$= html > < doctype html> <html> <head> <meta charset= utf 8 > <title>=$header$=< title> < head> <body> <h1>=$header$=< h1> =$body fo$= < copyimages > < body> < html> < loop > ``` Notice that the `nextrec` `output` and `loop` lines are unchanged Following the `nextrec` and `output` lines you should see HTML tags much like the ones described by Blake The `=$header$=` variable is being used for the web page s title and for its first heading We can still see the `=$body$=` variable but now we ve added a couple of useful variable modifiers https notenik app kb variable modifiers html with the embedded string ` fo` Here the ampersand indicates that one or more variable modifiers will be following the `o` requests that the body text be converted from Markdown to HTML and the `f` requests that any local image file names be converted to a web frienldy format if they are not already formatted in that way And then we have the addition of the `copyimages` command which will copy any referenced local image files from the content folder to the web folder One important thing to remember is that merge commands such as `< nextrec >` and `< copyimages >` must always start in the first column of a new line and be on a line by themselves Merge variables such as `=$body$=` on the other hand can appear anywhere So that s it for the merge template"
+    }, 
+    { 
+        title: "2.7 Review the script file", 
+        date: "", 
+        url: "2.7-review-the-script-file.html", 
+        summary: "<p>We also have an updated script file for chapter 02, but you will see that there are only two differences from the one we used in chapter 01. </p>", 
+        content: "We also have an updated script file for chapter 02 but you will see that there are only two differences from the one we used in chapter 01 Chapter 1 Script File images ch 02 script png The first change is simply to pull in the chapter 02 template rather than the one from chapter 01 The second change is a little more interesting We ve added a `template webroot` script command to tell Notenik where we expect to find the top level of the website we are building In this case we re pointing to the `web` folder This will help Notenik figure out the correct destination for the image files to be copied"
+    }, 
+    { 
+        title: "2.8 Run the Notenik build script", 
+        date: "", 
+        url: "2.8-run-the-notenik-build-script.html", 
+        summary: "<p>Now go back to your overall Notenik project window, where you will see a row that&#8217;s titled <code>scripts / chapter 02 - build script.tsv</code>, and double-click on this row on the <em>List</em> tab. This will open the <em>Scripter</em> window. </p>", 
+        content: "Now go back to your overall Notenik project window where you will see a row that s titled `scripts chapter 02 build script tsv` and double click on this row on the List tab This will open the Scripter window Hit the Go button to run the script"
+    }, 
+    { 
+        title: "2.9 Preview your website", 
+        date: "", 
+        url: "2.9-preview-your-website.html", 
+        summary: "<p>The <code>index.html</code> file within your <code>web</code> folder should now have been updated. </p>", 
+        content: "The `index html` file within your `web` folder should now have been updated Double click this file in the Finder to see what it looks like in your default browser"
+    }, 
+    { 
+        title: "2.12 Review the index.html file", 
+        date: "", 
+        url: "2.12-review-the-index.html-file.html", 
+        summary: "<p>Now use your text editor to open the new <code>index.html</code> file in the <code>web</code> folder. </p>", 
+        content: "Now use your text editor to open the new `index html` file in the `web` folder The file you find there should look very much like the one fashioned by hand in the HTML for People chapter"
+    }, 
+    { 
+        title: "2.13 Update your live website", 
+        date: "", 
+        url: "2.13-update-your-live-website.html", 
+        summary: "<p>You can do this in the same fashion described by Blake, just using the files in the <code>web</code> folder. </p>", 
+        content: "You can do this in the same fashion described by Blake just using the files in the `web` folder And that s a wrap for Chapter 2"
+    }, 
+    { 
+        title: "3 Intermission: upgrade your text editor", 
+        date: "", 
+        url: "3-intermission-upgrade-your-text-editor.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/intermission-upgrade-your-text-editor/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>There are many good text editors for the Mac. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com intermission upgrade your text editor There are many good text editors for the Mac I tend to use BBEdit https www barebones com products bbedit and or Nova https nova app BBEdit allows you to create a project file that you can use to view one or more folders in your sidebar When found in a Notenik project folder Notenik allows you to open a BBEdit project right from within Notenik If you re using Nova then modify the Notenik General Settings to turn On the option to Gen Open in Nova Items which will cause Notenik to generate an item titled Open in Nova for every project folder This is what an early version of our demo project looks like when opened within Nova Screenshot of Nova App images nova png Both BBEdit and Nova help with HTML formatting and viewing VSCode is also available for the Mac and is used by many CotEditor https coteditor com is another option It s free and open source and made exclusively for the Mac"
+    }, 
+    { 
+        title: "4 A website with style", 
+        date: "", 
+        url: "4-a-website-with-style.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/a-website-with-style/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a> </p>\n\n<p>All of Blake&#8217;s comments about the use of CSS are relevant to Notenik as well. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com a website with style All of Blake s comments about the use of CSS are relevant to Notenik as well"
+    }, 
+    { 
+        title: "4.1 Notenik's default CSS", 
+        date: "", 
+        url: "4.1-noteniks-default-css.html", 
+        summary: "<p>Notenik uses a combination of HTML and CSS to format each note for viewing on its Display tab. </p>\n\n<p>Notenik provides its own default CSS, in case you don&#8217;t wish to be bothered with providing any. </p>", 
+        content: "Notenik uses a combination of HTML and CSS to format each note for viewing on its Display tab Notenik provides its own default CSS in case you don t wish to be bothered with providing any It s not particularly fancy though This is the styling you ve been seeing so far within Notenik"
+    }, 
+    { 
+        title: "4.2 CSS frameworks", 
+        date: "", 
+        url: "4.2-css-frameworks.html", 
+        summary: "<p>You can use any of the classless CSS frameworks that Blake mentions within Notenik as well. </p>\n\n<p>Start by using the Finder to create a folder named <code>css</code> within your <code>pages</code> folder. </p>", 
+        content: "You can use any of the classless CSS frameworks that Blake mentions within Notenik as well Start by using the Finder to create a folder named `css` within your `pages` folder Using your web browser download the CSS file you wish to use and move or copy it into the `css` folder you just created If you d like to try more than one then download as many as you would like and place them in the same folder Here are the current links to all of the frameworks mentioned by Blake + Pico https picocss com + Sakura https github com oxalorg sakura + Simple css https simplecss org + Water css https watercss kognise dev Now open your `posts` collection within Notenik and select Collection > Settings There you will see a dropdown menu labeled css file Use the dropdown to pick whichever css file you would like to try then click the OK button in the lower right You should now see your starting Index note displayed using the css file you have selected"
+    }, 
+    { 
+        title: "4.3 Review the merge template", 
+        date: "", 
+        url: "4.3-review-the-merge-template.html", 
+        summary: "<p>Whichever CSS option you choose, you can elect to copy that CSS into an output file, so that it can be used by your website. </p>\n\n<p>Use your text editor to open your merge template for chapter 04. </p>", 
+        content: "Whichever CSS option you choose you can elect to copy that CSS into an output file so that it can be used by your website Use your text editor to open your merge template for chapter 04 You ll see two new lines related to CSS ``` < copycss > ``` ``` <link rel= stylesheet href= css styles css > ``` The Notenik command of `copycss` will copy whatever CSS you are using for your collection into a file named `styles css` within a folder named `css` Note that this command is placed before the `nextrec` command since it only needs to be done once not once for every note page The HTML `link` tag is very similar to the one provided by Blake and ensures that each HTML page created will reference that same set of styles You ll also see that we ve added `<header>` `<main>` and <`footer>` tags per Blake s suggestions"
+    }, 
+    { 
+        title: "4.4 Build and Review", 
+        date: "", 
+        url: "4.4-build-and-review.html", 
+        summary: "<p>Now go back to your overall project window within Notenik, where you will see a row that&#8217;s titled <code>scripts / chapter 04 - build script.tsv</code>, and double-click on this row on the <em>List</em> tab. This will open the <em>Scripter</em> window. </p>", 
+        content: "Now go back to your overall project window within Notenik where you will see a row that s titled `scripts chapter 04 build script tsv` and double click on this row on the List tab This will open the Scripter window Hit the Go button to run the script Now use your text editor to open the new `index html` file in the `web` folder The file you find there should look very much like the one fashioned by hand in the HTML for People chapter You can then upload your folders and files from your `web` folder to the live website in the same fashion described by Blake And that s a wrap for Chapter 4"
+    }, 
+    { 
+        title: "5 Adding an about page", 
+        date: "", 
+        url: "5-adding-an-about-page.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/adding-an-about-page/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>&#8230;. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com adding an about page"
+    }, 
+    { 
+        title: "5.1 Create a second content page", 
+        date: "", 
+        url: "5.1-create-a-second-content-page.html", 
+        summary: "<p>We&#8217;re going to create a second content page. </p>\n\n<p>And we&#8217;re going to do this within Notenik. </p>", 
+        content: "We re going to create a second content page And we re going to do this within Notenik Start by selecting your home aka Index page then right click on the row in the List tab then select duplicate This will create a copy of your first note ready for modification Go ahead and change the Title to `About` Change the Header to `About ` with your name replacing the underscores I ll enter `About Herb` for mine Then enter `2` in the Seq field Then go through and modify the Body in the ways suggested by Blake Don t forget that you ll generally be using Markdown instead of HTML within the Body field Here s a handy little Markdown Cheat Sheet https www markdownguide org cheat sheet you can refer to as needed Here s my text within the Body field ``` Photo of Herb images herb and hank jpg My name is Herb I enjoy making websites and making software to make it easier to make websites I was inspired by HTML for People https htmlforpeople com to write a companion guide showing any Mac user how they can start making their own websites using my app Notenik I ve made a number of websites including Reason to Rock https reasontorock com the Lexicon of Song https lexiconofsong org and the Big Ideas in Software Development https www softdevbigideas com 🐘 Feel free to contact me on Mastodon https c im hbowie Favorite Movies + It s A Wonderful Life + The Long Goodbye + The Thin Man ``` When you re done entering your Body text click on the Display tab to see the results Here s what mine looks like About Herb page images about herb png"
+    }, 
+    { 
+        title: "5.2 Navigating between pages", 
+        date: "", 
+        url: "5.2-navigating-between-pages.html", 
+        summary: "<p>So now I&#8217;m going to show you how to automatically generate the <code>nav</code> menu for your site. </p>\n\n<p>So now, for Chapter 5, we are going to see two template files, each with its own script file. </p>", 
+        content: "So now I m going to show you how to automatically generate the `nav` menu for your site So now for Chapter 5 we are going to see two template files each with its own script file"
+    }, 
+    { 
+        title: "5.2.1 The nav template", 
+        date: "", 
+        url: "5.2.1-the-nav-template.html", 
+        summary: "<p>The first template file, named <code>chapter 05 - nav template.html</code>, will generate our <code>nav</code> menu. </p>\n\n<p>Here&#8217;s what it should look like (omitting any comment lines). </p>", 
+        content: "The first template file named `chapter 05 nav template html` will generate our `nav` menu Here s what it should look like omitting any comment lines ``` < output includes gen nav bar html > <nav> < nextrec > < set link text = =$title$= > < if =$title$= eq Index > < set link text = Home > < endif > <a href= =$title f$= html aria current= = $=$title f$= aria current $ = > =$link text$= < a> < loop > < nav> ``` Let s walk through this The output command will direct all of the output to a single file to be named `nav bar html` located in a new folder named `includes gen` This new folder still located within the `factory` parent will be a place where we can generate include files with one template and then include those generated files into another template later The next line starts the `nav` menu Then we have the `nextrec` command which signals the start of the code to be repeated for each note page The next four lines create a new variable named `link text` and set that to the value of the Title field with one exception the `Index` file will be called `Home` And then we have the code for the link on the next three lines Here we re using variables instead of literals `=$title f$= html` for the `href` value and `=$linktext$=` for the text to be displayed to the user For the `aria current` value we re using the Title value to name a new variable with the new variable not being replaced until the generated include file is actually used in a later template Then we end the loop and provide a closing `< nav>` tag You should also find a script file named `chapter 05 nav script tsv` Here s what it should look like Chapter 05 nav script in Numbers images ch 05 nav script png Notice we ve added some `sort` module actions that will sort the pages by the Seq field This will ensure that the Home page which should have a Seq value of `1` will appear first in the generated menu Double click on this row within your Notenik project folder collection then click on Go to run the script Then use your text editor to open the output `nav bar html` file in the newly created `includes gen` folder It should look like this ``` <nav> <a href= index html aria current= =$index aria current$= > Home < a> <a href= about html aria current= =$about aria current$= > About < a> < nav> ``` This file will be included into our page template which we ll look at next"
+    }, 
+    { 
+        title: "5.2.2 The page template", 
+        date: "", 
+        url: "5.2.2-the-page-template.html", 
+        summary: "<p>Use your trusty text editor to open the <code>chapter 05 - page template.html</code> file. </p>", 
+        content: "Use your trusty text editor to open the `chapter 05 page template html` file It should look just like the previous version but with the addition of the following lines just after the `<header>` tag ``` < clearglobals > < set =$title f$= aria current = page > < include includes gen nav bar html > ``` The first of these lines clears the value of all global variables to ensure we don t have anything lingering from a previous execution of the loop The next line sets a global variable to the value of `page` with the name of the variable being set varying based on the Title value of the current note And then the third line pulls in the `nav bar html` file we generated earlier Recall that this include file contained this code ``` <nav> <a href= index html aria current= =$index aria current$= > Home < a> <a href= about html aria current= =$about aria current$= > About < a> < nav> ``` So the `aria current` value for each nav bar item will be set to the value of a variable with a name corresponding to that item and only one of these variable values the one corresponding to the page currently being generated will be set to `page` Go ahead and run the script named `chapter 05 page script tsv` within Notenik then double click on one of the resulting pages in the Finder You should see a nice navigational menu at the top of each page with the item for the current page being suitably highlighted Now as we add additional pages they will automatically be included in the menu for every page"
+    }, 
+    { 
+        title: "5.3 Homepage cleanup", 
+        date: "", 
+        url: "5.3-homepage-cleanup.html", 
+        summary: "<p>Let&#8217;s go ahead and make the sorts of changes to our Index note that Blake recommends. We&#8217;ll do this within Notenik. </p>\n\n<p>Here&#8217;s how we can create a figure with a caption using Notenik&#8217;s Markdown parser. </p>", 
+        content: "Let s go ahead and make the sorts of changes to our Index note that Blake recommends We ll do this within Notenik Here s how we can create a figure with a caption using Notenik s Markdown parser ``` figure Photograph of Seattle at dusk images seattle at dusk jpg caption An autumn Seattle Skyline at sunset Photo source https www istockphoto com photo seattle fall skyline gm1183468338 332764260 endfigure ``` We use the Notenik Markdown ` figure ` command to start the figure Then we use standard Markdown to generate the code for the figure itself Then we use the Notenik Markdown ` caption ` command to indicate the start of a caption Then again we use standard Markdown to generate the code for the caption And finally we close everything up with the Notenik Markdown ` endfigure ` command And here s how we would create the notice within Notenik ``` inject p | notice Want to learn how to make a website like this Check out the free web book HTML for People https htmlforpeople com along with the Notenik Companion https notenik app web intro It s made for everyone and teaches you how to make a website in a friendly approachable way ``` The `inject` command can be used to specify a class value for the following paragraph Here we supply a parameter of `p` to indicate we want to inject the class into the following paragraph and then supply a parameter of `notice` to supply the desired `class` value for the paragraph"
+    }, 
+    { 
+        title: "5.4 Build and Review", 
+        date: "", 
+        url: "5.4-build-and-review.html", 
+        summary: "<p>You can go ahead and run the chapter 05 build scripts again, and then review your output files. </p>", 
+        content: "You can go ahead and run the chapter 05 build scripts again and then review your output files Notice however that Notenik allows you to review the generated HTML content within Notenik and allows you to navigate between pages so there is no strong need to rerun the build scripts at this point just to review your updated content And that s a wrap for Chapter 5"
+    }, 
+    { 
+        title: "6 Adding a blog", 
+        date: "", 
+        url: "6-adding-a-blog.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/adding-a-blog/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>But we&#8217;re going to proceed here in a slightly different fashion. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com adding a blog But we re going to proceed here in a slightly different fashion We ll start by creating some posts for our blog then circle back to see how we create the blog home page and updated navigation"
+    }, 
+    { 
+        title: "6.1 Create some posts", 
+        date: "", 
+        url: "6.1-create-some-posts.html", 
+        summary: "<p>Go back to your overall Notenik project window. You should see a row named <code>posts</code>. Double-click to open the collection that will contain your blog posts. </p>\n\n<p>You should see one note here named <code>Notenik</code>. </p>", 
+        content: "Go back to your overall Notenik project window You should see a row named `posts` Double click to open the collection that will contain your blog posts You should see one note here named `Notenik` Go ahead and hit the Edit tab to start editing this note You should see the following fields Title This should contain a brief title for your post Tags This field can be used to organize your posts We ll leave this field alone for now Date This should contain the date of the blog post Note you can click on the Today button to set the value of the field to today s date Teaser Use this for a brief one sentence summary of your post This will be shown on the index page to give readers some idea of what the post is about before they click to see the entire thing Body This will contain the full body of your blog post formatted again using Markdown Go ahead and change the title of this starting note to something else to whatever you d like to write about Then go ahead and fill in some of the other fields You can add a few more posts as well just to give us a few to play with Give them each different dates and different titles if possible"
+    }, 
+    { 
+        title: "6.2 Text formatting", 
+        date: "", 
+        url: "6.2-text-formatting.html", 
+        summary: "<p>Markdown has some <a href=\"https://daringfireball.net/projects/markdown/syntax#em\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">shorthand for emphasizing strings of text</a>, using bold and/or italics. </p>\n\n<p>Here&#8217;s an example of the code. </p>", 
+        content: "Markdown has some shorthand for emphasizing strings of text https daringfireball net projects markdown syntax em using bold and or italics Here s an example of the code ``` After just three days Whiskers can now create web pages better than I can ``` And this is what it looks like > After just three days Whiskers can now create web pages better than I can Notice you surround your text with a pair of asterisks on each end to create bold and with single asterisks for italics"
+    }, 
+    { 
+        title: "6.3 Block quotes", 
+        date: "", 
+        url: "6.3-block-quotes.html", 
+        summary: "<p>Using Markdown, we can create a <a href=\"https://daringfireball.net/projects/markdown/syntax#blockquote\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">blockquote</a> by prefixing the quoted lines with <code>&gt;</code> characters. </p>\n\n<p>Here&#8217;s how you would code it. </p>", 
+        content: "Using Markdown we can create a blockquote https daringfireball net projects markdown syntax blockquote by prefixing the quoted lines with `>` characters Here s how you would code it ``` > HTML is elementary my dear Watson > Whiskers probably ``` And here s what it would look like > HTML is elementary my dear Watson > Whiskers probably On the other hand here s a different way to format the citation using a special Notenik Markdown command https notenik app kb format a quote citation html > I once addressed on a Christmas day many years ago on behalf of the United Nations an audience of about two thousand school children in London As on this occasion I knew in general what I was going to say but I did not know exactly what I was going to say and in a moment of abandon I said to them This is how the world goes you are going to have to make it different you are going to have to stop listening to your parents If you go on obeying your parents the world will never be a better place And at that moment twenty newspaper men representing the European press got up from the front row and rushed for the telephone boxes And by the time I got home one of the more adventurous correspondents from Geneva had actually phoned my daughter then aged seven at school in order to ask her whether she was encouraged to disobey her parents at home quote from Jacob Bronowski|1979|Book|The Origins of Knowledge and Imagination|| The quotation is formatted using the standard Markdown syntax for a blockquote but then followed by the special Notenik command looking like this ``` quote from Jacob Bronowski|1979|Book|The Origins of Knowledge and Imagination|| ``` Note that there are several optional parameters separated by `|` characters that can identify the date and source of the quotation in addition to the name of the author"
+    }, 
+    { 
+        title: "6.4 Recap: headings and lists", 
+        date: "", 
+        url: "6.4-recap-headings-and-lists.html", 
+        summary: "<p>You can create headings at any level by placing that number of <code>#</code> characters at the beginning of a line. </p>\n\n<p>For example, this would produce a level 3 heading. </p>\n\n<pre><code>### Level 3 Heading\n</code></pre>\n\n<p>And here&#8217;s our sample unordered list. </p>", 
+        content: "You can create headings at any level by placing that number of ` ` characters at the beginning of a line For example this would produce a level 3 heading ``` Level 3 Heading ``` And here s our sample unordered list ``` + Bread + Sugar + Hole ``` And here s what this would look like + Bread + Sugar + Hole And here s an ordered list first in code and then rendered as HTML ``` 1 Portable Happiness Donuts are the perfect grab and go food You can take them anywhere to work to the park or on a road trip They re like little circles of happiness that fit in your hand 2 Instant Mood Boost Feeling down Have a donut It s scientifically proven that donuts can turn a frown upside down Not actually proven but we all know it s true 3 Endless Creativity Donut shops are constantly coming up with new and exciting flavors From maple bacon to matcha green tea the possibilities are endless It s like a delicious adventure every time you visit ``` 1 Portable Happiness Donuts are the perfect grab and go food You can take them anywhere to work to the park or on a road trip They re like little circles of happiness that fit in your hand 2 Instant Mood Boost Feeling down Have a donut It s scientifically proven that donuts can turn a frown upside down Not actually proven but we all know it s true 3 Endless Creativity Donut shops are constantly coming up with new and exciting flavors From maple bacon to matcha green tea the possibilities are endless It s like a delicious adventure every time you visit One thing to point out here is that we had to use a backslash before each asterisk in the second item to prevent those asterisks from being interpreted as part of our Markdown syntax This is called a backslash escape https daringfireball net projects markdown syntax backslash Markdown also allows you to nest one list within another simply by indenting the lower level list with four leading spaces or one leading tab character Here s an example in code ``` + First main point + Sub point + Another sub point + Second main point + Sub point + Another sub point ``` And here s how it will render + First main point + Sub point + Another sub point + Second main point + Sub point + Another sub point"
+    }, 
+    { 
+        title: "6.5 Breaking up content", 
+        date: "", 
+        url: "6.5-breaking-up-content.html", 
+        summary: "<p>You can create a line break in Markdown by ending a line with two (or more) spaces. </p>", 
+        content: "You can create a line break in Markdown by ending a line with two or more spaces Notenik also supports the alternate syntax https www markdownguide org basic syntax line breaks of placing a space and a backslash at the end of a line in order to request a line break Some writers prefer this syntax because it is easier to see Here s an example of the standard syntax ``` A timeless red orb floats lazy in the ether unimpressed by war ``` And here s the alternate syntax ``` A timeless red orb floats lazy in the ether unimpressed by war ``` Both should render in the same way A timeless red orb floats lazy in the ether unimpressed by war You can insert a horizontal rule https www markdownguide org basic syntax horizontal rules with a line containing three or more hyphens Here s an example of the Markdown syntax ``` ``` And here s how it renders And that s the end of our section on breaking up content"
+    }, 
+    { 
+        title: "6.6 Code and pre-formatted text", 
+        date: "", 
+        url: "6.6-code-and-pre-formatted-text.html", 
+        summary: "<p>Markdown makes it easy to write about code, and about HTML in particular. </p>", 
+        content: "Markdown makes it easy to write about code and about HTML in particular First it provides automatic escaping for special characters https daringfireball net projects markdown syntax autoescape and then you can indicate code https daringfireball net projects markdown syntax code simply by surrounding a short span of code with backtick quotes Here s an example of both features First in code ``` By the end of day one he was familiar with basic tags like `<html>` `<head>` and `<body>` On day two he was creating paragraphs and lists By day three he had moved on to creating stunning layouts with `<article>` and `<section>` ``` And then as rendered into HTML By the end of day one he was familiar with basic tags like `<html>` `<head>` and `<body>` On day two he was creating paragraphs and lists By day three he had moved on to creating stunning layouts with `<article>` and `<section>` You can display multiple lines of code https www markdownguide org basic syntax code blocks by indenting each line with a tab or four spaces a common Markdown extension also allows a block of code to be indicated using fenced code blocks https www markdownguide org extended syntax fenced code blocks preceding and concluding the block with three backticks isolated on lines by themselves"
+    }, 
+    { 
+        title: "6.7 Asides", 
+        date: "", 
+        url: "6.7-asides.html", 
+        summary: "<p>As you become more comfortable with Markdown, you should be aware that there are three levels of Markdown standardization. </p>", 
+        content: "As you become more comfortable with Markdown you should be aware that there are three levels of Markdown standardization First there is the standard established by John Gruber on his Daring Fireball syntax page https daringfireball net projects markdown syntax You can also find this documented as the Basic Syntax https www markdownguide org basic syntax at the Markdown Guide Next there are a number of extensions to the original syntax that have become widely accepted and supported and you can find these documented at the Markdown Guide https www markdownguide org extended syntax Finally there are further extensions that work within Notenik even though they may be supported nowhere else There are a number of reasons why I ve invented these additional extensions in general because I ve found them to be useful So there are two issues to be aware of here 1 If you take Markdown written in Notenik that uses these extensions then they may not be recognized in any kind of useful way by other Markdown parsers found in other Markdown editing tools 2 However the HTML generated by Notenik from these extensions will be perfectly portable and should produce the intended effects in any web browser And I mention all of this because there is no way to produce an aside https developer mozilla org en US docs Web HTML Element aside tag using standard Markdown or using any common Markdown extension But it can be easily done in Notenik I ll insert the aside here you ll probably see it floating off to the right so long as your viewing column is wide enough to accommodate segment aside Donut Ingredients + Bread + Sugar + Hole endsegment And here s what the code looks like ``` segment aside Donut Ingredients + Bread + Sugar + Hole endsegment ```"
+    }, 
+    { 
+        title: "6.8 Mark, strikethrough, deletion, insertion", 
+        date: "", 
+        url: "6.8-mark-strikethrough-deletion-insertion.html", 
+        summary: "<p>Notenik supports special syntax for strikethrough and highligting, as specified in the <a href=\"https://www.markdownguide.org/extended-syntax/#strikethrough\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Markdown Guide Extended Syntax</a>, but has no special syntax for deletion and insertion. </p>", 
+        content: "Notenik supports special syntax for strikethrough and highligting as specified in the Markdown Guide Extended Syntax https www markdownguide org extended syntax strikethrough but has no special syntax for deletion and insertion Here s an example of all four Here s the code ``` Let s ==highlight a few words== and then ~~strike out a phrase~~ and then <ins>insert some text< ins> and <del>delete some other stuff< del> ``` And here s how it renders Let s ==highlight a few words== and then ~~strike out a phrase~~ and then <ins>insert some text< ins> and <del>delete some other stuff< del>"
+    }, 
+    { 
+        title: "6.9 Review the script file", 
+        date: "", 
+        url: "6.9-review-the-script-file.html", 
+        summary: "<p>As perhaps you might have noticed by now, it is the Notenik script file that drives all of the action of building your site. </p>\n\n<p>So let&#8217;s start by looking at the <code>scripts</code> file named <code>Chapter 06 - build script.tsv</code>. </p>", 
+        content: "As perhaps you might have noticed by now it is the Notenik script file that drives all of the action of building your site So let s start by looking at the `scripts` file named `Chapter 06 build script tsv` This is what it should look like when viewed in the Numbers app Chapter 06 build script as seen in Numbers images ch 06 script png Note that we re going to start by opening the `posts` collection and then sorting it in descending order by Date so that the most recent posts will appear at the top Then we will generate output with two merge templates Following this we we will open the `pages` collection and then sort it using the Seq field This should look familiar Now let s look at the merge templates"
+    }, 
+    { 
+        title: "6.10 Review the blog template", 
+        date: "", 
+        url: "6.10-review-the-blog-template.html", 
+        summary: "<p>Let&#8217;s review the <code>templates</code> file named <code>chapter 06 - blog template.html</code>. </p>\n\n<p>This will generate an include file to be pulled in later. This is what the template looks like. </p>", 
+        content: "Let s review the `templates` file named `chapter 06 blog template html` This will generate an include file to be pulled in later This is what the template looks like ``` < output includes gen blog html > < nextrec > <article> <h2> <a href= posts =$date yyyy MM dd$= =$title f$= html > =$title$= < a> < h2> <p><time datetime= =$date yyyy MM dd$= >=$date MMM d yyyy$=< time>< p> =$teaser o$= < article> < loop > ``` You should be able to see that this looks very much like Blake s index page https www htmlforpeople com adding a blog fill out our blog index page except that we re using variables rather than actual literal values You may notice we re using the merge variable formatting string https notenik app kb formatting string html of ` yyyy MM dd$` to format the date field into a year month day format and then using a different string ` MMM d yyyy` to format it into a more readable format with the month first and spelled out using a 3 letter abbreviation You can also see that we re displaying the Teaser field here to give readers some idea of what each post is about and are using the ` o` merge variable modifier which will apply Markdown parsing to the field This means that we can use the Markdown syntax in the Teaser field as well as in the Body field"
+    }, 
+    { 
+        title: "6.11 Review the post template", 
+        date: "", 
+        url: "6.11-review-the-post-template.html", 
+        summary: "<p>Let&#8217;s review the <code>templates</code> file named <code>chapter 06 - post template.html</code>. </p>\n\n<p>This template will create the full post page for each note in the <code>posts</code> collection. </p>\n\n<p>Here&#8217;s what it should look like. </p>", 
+        content: "Let s review the `templates` file named `chapter 06 post template html` This template will create the full post page for each note in the `posts` collection Here s what it should look like ``` < nextrec > < output web posts =$date yyyy MM dd$= =$title f$= html > < doctype html> <html> <head> <meta charset= utf 8 > <title>=$title$=< title> <link rel= stylesheet href= =$relative$=css styles css > < head> <body> <header> < clearglobals > < set blog aria current = true > < include includes gen nav bar html > <h1>=$title$=< h1> <p><time datetime= =$date yyyy MM dd$= >=$date MMM d yyyy$=< time>< p> < header> <main> =$body fo$= <a href= =$relative$=blog html class= button > larr Back to the blog< a> < main> < copyimages > <footer> <p> copy 2024 2025 Herb Bowie< p> < footer> < body> < html> < loop > ``` By now you should be able to work your way through this template and understand what s going on Note that the post entries are going into a folder named `posts` The files are being named using a combination of Date and Title as suggested by Blake One new element you might notice is the Notenik Merge Template System Variable https notenik app kb system variables html of `=$relative$=` This variable will be replaced with zero or more occurrences of ` ` with the number depending on the level of the generated file relative to the webroot folder In essence what this means is that you can specify a path to a file starting from the top of your website rather than from the location of the current file We re using this trick to get us back to the `css styles css` file and to the blog index page"
+    }, 
+    { 
+        title: "6.12 Review the page template", 
+        date: "", 
+        url: "6.12-review-the-page-template.html", 
+        summary: "<p>Let&#8217;s review the <code>templates</code> file named <code>chapter 06 - page template.html</code>. </p>\n\n<p>This template will create a web page for each note in the <code>pages</code> collection. </p>\n\n<p>Here&#8217;s what it should look like. </p>", 
+        content: "Let s review the `templates` file named `chapter 06 page template html` This template will create a web page for each note in the `pages` collection Here s what it should look like ``` < copycss > < nextrec > < output web =$title f$= html > < doctype html> <html> <head> <meta charset= utf 8 > <title>=$header$=< title> <link rel= stylesheet href= css styles css > < head> <body> <header> < clearglobals > < set =$title f$= aria current = page > < include includes gen nav bar html > <h1>=$header$=< h1> < header> <main> < if =$Title$= eq Blog > < include includes gen blog html > < endif > =$body fo$= < main> < copyimages > <footer> <p>Made with ❤️ and ☕️ by Herb Bowie < p> < footer> < body> < html> < loop > ``` Most of this should look pretty familiar as we ve seen many of these lines in prior versions of the page template But here we ve introduced something new ``` < if =$Title$= eq Blog > < include includes gen blog html > < endif > ``` Do you see what we re doing If this is the blog page then we re pulling in the blog include we generated earlier before we include the body text So now perhaps we can see what we need to do next"
+    }, 
+    { 
+        title: "6.13 Create the blog home", 
+        date: "", 
+        url: "6.13-create-the-blog-home.html", 
+        summary: "<p>Let&#8217;s go back to our <code>pages</code> collection in Notenik. </p>\n\n<p>Let&#8217;s add a new note. </p>\n\n<p>Give it a Title of <code>Blog</code>. </p>\n\n<p>Then enter a Header of <code>Herb's Blog</code> (replacing my name with yours). </p>\n\n<p>Enter a Seq value of <code>2</code>. </p>\n\n<p>You can omit any value for the Body. </p>", 
+        content: "Let s go back to our `pages` collection in Notenik Let s add a new note Give it a Title of `Blog` Then enter a Header of `Herb s Blog` replacing my name with yours Enter a Seq value of `2` You can omit any value for the Body Now save your new note Now go back to the `About` note and change its Seq value to `3` so that it will appear to the right of the Blog button in the Nav bar"
+    }, 
+    { 
+        title: "6.14 Build and Review", 
+        date: "", 
+        url: "6.14-build-and-review.html", 
+        summary: "<p>Now run your Chapter 06 build script, and review the results. </p>", 
+        content: "Now run your Chapter 06 build script and review the results You should see that your new blog now appears and is integrated into your overall site Congratulations You ve just created a blog and you can now add new posts just by adding them to the `posts` collection"
+    }, 
+    { 
+        title: "7 Adding a résumé (or CV)", 
+        date: "", 
+        url: "7-adding-a-résumé-or-cv.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/adding-a-resume/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>And then we&#8217;ll see how can do it with Notenik. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com adding a resume And then we ll see how can do it with Notenik"
+    }, 
+    { 
+        title: "7.1 A document with sections", 
+        date: "", 
+        url: "7.1-a-document-with-sections.html", 
+        summary: "<p>The approach we&#8217;re going to take here is to fill out one note in the <code>content / cv-sections</code> collection for each section we want to appear in our CV. </p>\n\n<p>We&#8217;ll see later how we pull these together into a single document. </p>", 
+        content: "The approach we re going to take here is to fill out one note in the `content cv sections` collection for each section we want to appear in our CV We ll see later how we pull these together into a single document"
+    }, 
+    { 
+        title: "7.2 Skills", 
+        date: "", 
+        url: "7.2-skills.html", 
+        summary: "<p>You should already find a <code>cv-section</code> named <code>Skills</code>. Leave the Seq value here at 1, and then modify the unordered list provided in the Body to reflect whatever skills you want to highlight. </p>", 
+        content: "You should already find a `cv section` named `Skills` Leave the Seq value here at 1 and then modify the unordered list provided in the Body to reflect whatever skills you want to highlight If you d like your skills list to show in two columns as Blake suggested then try inserting the following line just before the first item in the list ``` inject ul | | | columns 2 ``` This makes use of the special Notenik Markdown command to inject attributes https notenik app kb inject block attributes html into an HTML block to follow In this case we re injecting a `style` attribute into the upcoming `ul` element"
+    }, 
+    { 
+        title: "7.3 Experience", 
+        date: "", 
+        url: "7.3-experience.html", 
+        summary: "<p>Now add a new note in the <code>cv-sections</code> collection and give it a Title of <code>Experience</code>, and a Seq of <code>2</code>. </p>\n\n<p>Then go ahead and add some of your professional experience in the Body. </p>\n\n<p>For example, here&#8217;s some of mine. </p>", 
+        content: "Now add a new note in the `cv sections` collection and give it a Title of `Experience` and a Seq of `2` Then go ahead and add some of your professional experience in the Body For example here s some of mine ``` Indie Developer 2016 Present + Design and development of the Notenik app on the Mac using Swift and AppKit Boeing Puget Sound Region 2006 2016 + Manage a Software Development Improvement Office + Manage teams of developers supporting Engineering Flight Test ```"
+    }, 
+    { 
+        title: "7.4 Selected projects", 
+        date: "", 
+        url: "7.4-selected-projects.html", 
+        summary: "<p>Go ahead and add another note titled <code>Selected Projects</code>, and give it a Seq of <code>3</code>. </p>\n\n<p>Go ahead and enter the projects you&#8217;d like to feature. </p>\n\n<p>Here&#8217;s the way I would enter one of mine. </p>", 
+        content: "Go ahead and add another note titled `Selected Projects` and give it a Seq of `3` Go ahead and enter the projects you d like to feature Here s the way I would enter one of mine ``` Notenik Mac app This started out as software I developed in Java to help me create and maintain my multiple websites It gradually evolved into a more generalized app to collect notes along with metadata fields containing information about the notes And then as Apple s support for Java gradually waned I rewrote the thing in Swift using AppKit Notenik app https notenik app ```"
+    }, 
+    { 
+        title: "7.5 Education", 
+        date: "", 
+        url: "7.5-education.html", 
+        summary: "<p>This will be our fourth and final note for this collection. </p>\n\n<p>Give it a Title of <code>Education</code> and a Seq of <code>4</code>. </p>\n\n<p>Then add your significant educational accomplishments in the Body. </p>\n\n<p>Here&#8217;s a sample entry for me. </p>\n\n<pre><code>**B.A.\n</code></pre>\n", 
+        content: "This will be our fourth and final note for this collection Give it a Title of `Education` and a Seq of `4` Then add your significant educational accomplishments in the Body Here s a sample entry for me ``` B A in English Literature 1973 Ann Arbor Michigan ```"
+    }, 
+    { 
+        title: "7.6 Create the CV page", 
+        date: "", 
+        url: "7.6-create-the-cv-page.html", 
+        summary: "<p>Now let&#8217;s add a new page to the <code>pages</code> collection. </p>\n\n<p>Here&#8217;s what mine looks like: </p><table>\n<tr>\n<th style=\"text-align:left;\">\n Label </th>\n<th style=\"text-align:left;\">\n Value </th>\n </tr>\n<tr>\n<td style=\"text-align:left;\">\n Title: </td>\n<td style=\"text-align:left;\">\n CV </td>\n</tr>\n<tr>\n<td style=\"text-align:left;\">\n Header: </td>\n<td style=\"text-align:left;\">\n Résumé for Herb Bowie </td>\n</tr>\n<tr>\n<td style=\"text-align:left;\">\n Seq: </td>\n<td style=\"text-align:left;\">\n 4 </td>\n</tr>\n</table>\n\n<p>You can leave the Body field empty. </p>", 
+        content: "Now let s add a new page to the `pages` collection Here s what mine looks like | Label | Value | | | | | Title | CV | | Header | Résumé for Herb Bowie | | Seq | 4 | You can leave the Body field empty"
+    }, 
+    { 
+        title: "7.7 Review the script file", 
+        date: "", 
+        url: "7.7-review-the-script-file.html", 
+        summary: "<p>Use your text editor to open <code>chapter 07 - build script.tsv</code>. </p>\n\n<p>You&#8217;ll see we&#8217;ve added the following lines to the beginning of the script. </p>", 
+        content: "Use your text editor to open `chapter 07 build script tsv` You ll see we ve added the following lines to the beginning of the script | module | action | modifier | object | value | | | | | | | | input | open | notenik defined | | PATH content cv sections | | sort | clear | | | | | sort | add | ascending | Seq | | | sort | add | ascending | Title | | | sort | set | | params | | | template | open | | | PATH templates chapter 07 cv template html | | template | generate | | | | You might also observe that we re using the Tables Markdown Extension https notenik app kb tables html to show you the contentes of the script nicely aligned into columns using only Markdown So what are we doing here 1 Using the `cv sections` Notenik collection as input 2 Sorting the contents in ascending sequence by Seq 3 Using the template named `chapter 07 cv template html` to generate some sort of output The rest of the build script for this chapter remains the same So now let s see what our new template is doing shall we"
+    }, 
+    { 
+        title: "7.8 Review the template files", 
+        date: "", 
+        url: "7.8-review-the-template-files.html", 
+        summary: "<p>Now use your text editor to review the template file named <code>chapter 07 - cv template.html</code>. </p>\n\n<p>This is what you should expect to find. </p>", 
+        content: "Now use your text editor to review the template file named `chapter 07 cv template html` This is what you should expect to find ``` < output includes gen cv html > < nextrec > <section> <h2>=$title$=< h2> =$body o$= < section> < loop > ``` Here s what s going on 1 We re creating a new file in the `includes gen` folder and naming it `cv html` 2 For each section in our input content we re generating an HTML section https developer mozilla org en US docs Web HTML Element section element 3 We re creating a second level heading from the section s Title field 4 We re inserting the Body value after parsing the Markdown to turn it into HTML And now let s take a look at the file named `chapter 07 page template html` And you ll see that we ve added the following lines ``` < if =$title$= eq CV > < include includes gen cv html > < endif > ``` So now when we encounter the `CV` page we ll pull in the include we just generated And that s it for changes to our templates"
+    }, 
+    { 
+        title: "7.9 Build and Review", 
+        date: "", 
+        url: "7.9-build-and-review.html", 
+        summary: "<p>Now run your Chapter 07 build script, and review the results. </p>\n\n<p>You should see that your new CV now appears, and is integrated into your overall site. </p>", 
+        content: "Now run your Chapter 07 build script and review the results You should see that your new CV now appears and is integrated into your overall site"
+    }, 
+    { 
+        title: "8 Intermission: installing a local web server", 
+        date: "", 
+        url: "8-intermission-installing-a-local-web-server.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/intermission-installing-a-local-web-server/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>Blake&#8217;s information here is all perfectly applicable to web-building with Notenik. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com intermission installing a local web server Blake s information here is all perfectly applicable to web building with Notenik I will add another option that I use Each time that macOS undergoes a major upgrade I pick the right link on this page https discussions apple com docs DOC 3083 and carefully follow the instructions there The latest one at the time of this writing is titled Setting up a local web server on macOS 15 Sequoia https discussions apple com docs DOC 250008906 These instructions require use of the Terminal app plus editing of hidden files If you are uncomfortable with these tasks then best to stick to Blake s recommendation I will confess that I use BBEdit to make the configuration file edits rather than vi or nano Also it helps to know that CMD Shift dot ⌘+⇧+ will toggle the display of hidden files in the Finder I think the advantage of this approach is that you can then use localhost https blog hubspot com website what is localhost to view your web work in your browser For example here s the URL I would use in my browser to view a local copy of `my notenik project` with that folder located within my `Sites` folder ``` http localhost ~hbowie my notenik project web ``` And here s a command I could place at the end of my Notenik build script to ask that my site be opened in my web browser | module| action| modifier| object| value | | | | | | | | browse| open| url| | http localhost ~hbowie my notenik project web |"
+    }, 
+    { 
+        title: "9 Adding a fun page", 
+        date: "", 
+        url: "9-adding-a-fun-page.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/adding-a-fun-page/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>&#8230;. </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com adding a fun page"
+    }, 
+    { 
+        title: "9.1 Create the fun page", 
+        date: "", 
+        url: "9.1-create-the-fun-page.html", 
+        summary: "<p>We&#8217;ll create our fun page in Notenik in our <code>pages</code> collection. </p>\n\n<p>Start by creating a new note, entering the following values. </p>", 
+        content: "We ll create our fun page in Notenik in our `pages` collection Start by creating a new note entering the following values | Label | Value | | | | | Title | `Fun` | | Header | `Fun ` | | Seq | `5` | | Body | ` section headings ` | For now we ll just add the one line to the Body This is a Notenik Markdown command that will generate section tags for us based on the location of the heading tags This will save us from having to manually enter `<section>` and `< section>` tags for every section of the page The HTML that gets generated will still have all the recommended `section` tags but we will be saved from having to enter them and from having to mix page structure tags with our content Save the note and then we ll begin to add some fun content"
+    }, 
+    { 
+        title: "9.2 Jokes", 
+        date: "", 
+        url: "9.2-jokes.html", 
+        summary: "<p>Let&#8217;s add a level 2 heading to the body of our new note. </p>", 
+        content: "Let s add a level 2 heading to the body of our new note ``` Jokes ``` Now within Notenik s version of Markdown you can make use of the HTML `<details>` and `<summary>` tags in a couple of different ways It s very common to have a series of items using these features and so Notenik makes it easy to create a sort of outline using bulleted lists Here s the way we might create the jokes content in this manner ``` outline bullets + Why wouldn t the skeleton cross the road It didn t have the guts + Why was the math book sad It had too many problems + Why don t scientists trust atoms Because they make up everything ``` And here s the way this renders outline bullets + Why wouldn t the skeleton cross the road It didn t have the guts + Why was the math book sad It had too many problems + Why don t scientists trust atoms Because they make up everything The other approach here is to simply embed the HTML tags within the Markdown Here s an example of using this approach ``` <details> <summary>Why wouldn t the skeleton cross the road < summary> It didn t have the guts < details> ``` And here s the way this renders <details> <summary>Why wouldn t the skeleton cross the road < summary> It didn t have the guts < details> You can choose whichever approach you prefer when putting together your Jokes section"
+    }, 
+    { 
+        title: "9.3 Using tables for tabletop gaming", 
+        date: "", 
+        url: "9.3-using-tables-for-tabletop-gaming.html", 
+        summary: "<p>As it happens, Notenik supports a common Markdown extension that provides a shorthand syntax for <a href=\"https://notenik.app/kb/tables.html\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">defining HTML tables</a>. </p>\n\n<p>Here&#8217;s the entire contents of our D&D section. </p>", 
+        content: "As it happens Notenik supports a common Markdown extension that provides a shorthand syntax for defining HTML tables https notenik app kb tables html Here s the entire contents of our D D section ``` D D Stuff Dungeons Dragons D D is a fun tabletop game where you create characters and go on epic adventures with friends Guided by a Dungeon Master DM you ll roll dice to see what happens next It s all about creativity teamwork and having a blast as you tackle quests fight monsters and find awesome treasures Random encounter table This is a table you can use to randomly decide what enemy or creature the players are going to encounter Just roll a d8 | Roll 1d8 | Encounter | | | | | 1 | Band of Goblins | | 2 | Wandering Merchant | | 3 | Group of Bandits | | 4 | Pack of Wolves | | 5 | Traveling Minstrels | | 6 | Lost Child | | 7 | Hidden Trap | | 8 | Old Hermit | ``` And here s how the table renders | Roll 1d8 | Encounter | | | | | 1 | Band of Goblins | | 2 | Wandering Merchant | | 3 | Group of Bandits | | 4 | Pack of Wolves | | 5 | Traveling Minstrels | | 6 | Lost Child | | 7 | Hidden Trap | | 8 | Old Hermit | You ll notice we re using pipe characters to draw the outlines of our columns And then you ll see that we have a special row between the table headings and the table data in which we place three or more dashes denoting each column If we start the dashes with a colon then that indicates that we want that column heading left justified instead of the default centering A few additional table taming tips + If you use a monospaced font for your editing then it s sometimes tempting and fun to insert enough spaces at various places so that the pipe characters line up in your Markdown source But this is strictly optional and won t affect the final HTML output + Beneath the Notenik Edit menu we can find an item titled Paste CSV > Table which will take a comma separated values text block from the System clipboard and reformat it into a Markdown table before pasting it into our note + TableFlip https tableflipapp com is a handy app for working with Markdown tables"
+    }, 
+    { 
+        title: "9.4 Embedded video", 
+        date: "", 
+        url: "9.4-embedded-video.html", 
+        summary: "<p>I&#8217;ve made a couple of nice Notenik videos that are both available on YouTube, so let&#8217;s embed those. </p>\n\n<p>For our first pass at this, we&#8217;re just going to copy and embed the HTML  code provided by YouTube, in just the same way that Blake did. </p>", 
+        content: "I ve made a couple of nice Notenik videos that are both available on YouTube so let s embed those For our first pass at this we re just going to copy and embed the HTML code provided by YouTube in just the same way that Blake did There is nothing particular to Markdown or Notenik here Here s the way the code looks ``` <iframe width= 560 height= 315 src= https www youtube com embed JR0kpAUXM5E si=b6oOKKQGSMSweqTv title= YouTube video player frameborder= 0 allow= accelerometer autoplay clipboard write encrypted media gyroscope picture in picture web share referrerpolicy= strict origin when cross origin allowfullscreen>< iframe> ``` And here s what happens when you embed it in your Body <iframe width= 560 height= 315 src= https www youtube com embed JR0kpAUXM5E si=b6oOKKQGSMSweqTv title= YouTube video player frameborder= 0 allow= accelerometer autoplay clipboard write encrypted media gyroscope picture in picture web share referrerpolicy= strict origin when cross origin allowfullscreen>< iframe> That s the first way to do this but it has all the same issues that Blake identified So now we ll see how to do it the second way Custom HTML tags Let s see how we can make use of the same web component that Blake found called Lite YouTube Embed https github com paulirish lite youtube embed readme Here s how we ll install it for use within Notenik First download the same two files + JS file https cdnjs cloudflare com ajax libs lite youtube embed 0 3 2 lite yt embed min js https cdnjs cloudflare com ajax libs lite youtube embed 0 3 2 lite yt embed min js + CSS file https cdnjs cloudflare com ajax libs lite youtube embed 0 3 2 lite yt embed min css https cdnjs cloudflare com ajax libs lite youtube embed 0 3 2 lite yt embed min css Next let s create a new folder within the `posts` content folder and call it `add ins` And then let s drag the two files we downloaded into our new `add ins` folder Finally let s reload our collection in Notenik to make sure Notenik is aware of our new add ins We can do this with Collection > Reload Collection Opt Cmd J Now we re ready to add the new `lite youtube` tags to the body of our `Fun` note So here s what our Videos section will end up looking like ``` Notenik Videos Here are a couple of short 10 minute videos demonstrating how to use Notenik <lite youtube videoid= JR0kpAUXM5E >< lite youtube> <lite youtube videoid= Qy0hejViBHI >< lite youtube> ``` And here s the first video as it will be embedded using `lite youtube` <lite youtube videoid= Qy0hejViBHI >< lite youtube>"
+    }, 
+    { 
+        title: "9.5 Template changes", 
+        date: "", 
+        url: "9.5-template-changes.html", 
+        summary: "<p>Now let&#8217;s review the changes we need to make to our merge templates. </p>\n\n<p>The page template is the only one that needs to change, so let&#8217;s use our text editor to look at <code>chapter 09 - page template.html</code>. </p>\n\n<p>We only need to make two changes. </p>", 
+        content: "Now let s review the changes we need to make to our merge templates The page template is the only one that needs to change so let s use our text editor to look at `chapter 09 page template html` We only need to make two changes First let s add a `copyaddins` command just following the `copycss` command Here s what it will look like ``` < copyaddins > ``` The effect of this command will be to copy our `add ins` folder to our output `web` folder Then the next change will be to add the following two lines into our `<head>` section ``` <link rel= stylesheet href= add ins lite yt embed min css > <script src= add ins lite yt embed min js >< script> ``` And those are the only template changes we will need for this chapter"
+    }, 
+    { 
+        title: "9.6 Review and run the script file", 
+        date: "", 
+        url: "9.6-review-and-run-the-script-file.html", 
+        summary: "<p>Now use your text editor to look at the file <code>chapter 09 - build script.tsv</code>. </p>\n\n<p>The first change is simply to update the template file names to the <code>chapter 09</code> versions. </p>", 
+        content: "Now use your text editor to look at the file `chapter 09 build script tsv` The first change is simply to update the template file names to the `chapter 09` versions And then the second change is to add the following line at the very end of the file | module| action| modifier| object| value | | | | | | | | browse| open| url| | http localhost ~hbowie my notenik project web | This assumes that you have a local web browser running You ll need to change `~hbowie` to your user id And then if you ve named your folder something other than `my notenik project` you ll need to make that change as well Now run your chapter 09 build script and review the results You should see your new Fun page nicely integrated into the rest of your site You can now upload your `web` folder to your actual website if you would like"
+    }, 
+    { 
+        title: "10 Achievement unlocked: Hypertexter", 
+        date: "", 
+        url: "10-achievement-unlocked-hypertexter.html", 
+        summary: "<p>Start by reading the corresponding <a href=\"https://www.htmlforpeople.com/achievement-unlocked-hypertexter/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">HTML for people chapter</a>. </p>\n\n<p>And yes, if you&#8217;ve made it this far, then congratulations are in&#8230; </p>", 
+        content: "Start by reading the corresponding HTML for people chapter https www htmlforpeople com achievement unlocked hypertexter And yes if you ve made it this far then congratulations are in order"
+    }, 
+    { 
+        title: "11 CSS Bonus", 
+        date: "", 
+        url: "11-css-bonus.html", 
+        summary: "<p>Blake&#8217;s bonus chapters on CSS are both worth reading and reviewing, even though implementing CSS changes in Notenik will proceed on a slightly different path. </p>", 
+        content: "Blake s bonus chapters on CSS are both worth reading and reviewing even though implementing CSS changes in Notenik will proceed on a slightly different path + Customizing Simple css https www htmlforpeople com customizing simple css + CSS basics https www htmlforpeople com css basics Notenik offers several different approaches to handling the CSS used to display your content"
+    }, 
+    { 
+        title: "11.1 Default CSS", 
+        date: "", 
+        url: "11.1-default-css.html", 
+        summary: "<p>Notenik will happily supply its own CSS by default, if you take no other action. The default CSS provided by Notenik will generally make your content look quite presentable. </p>", 
+        content: "Notenik will happily supply its own CSS by default if you take no other action The default CSS provided by Notenik will generally make your content look quite presentable The default CSS embedded within Notenik is also updated and extended from time to time through the normal Notenik update process https notenik app kb version history html to make occasional improvements"
+    }, 
+    { 
+        title: "11.2 Tweaking Notenik's default CSS", 
+        date: "", 
+        url: "11.2-tweaking-noteniks-default-css.html", 
+        summary: "<p>Notenik allows you to easily tweak the default CSS that it uses, without requiring you to learn any CSS. </p>\n\n<p>To take this approach, open <em>Notenik > Display Appearance</em>. </p>\n\n<p>Here you&#8217;ll find a number of options. </p>", 
+        content: "Notenik allows you to easily tweak the default CSS that it uses without requiring you to learn any CSS To take this approach open Notenik > Display Appearance Here you ll find a number of options + You can center headings for any sequence of levels + You can modify the fonts used for body text and or for headings and or for the List tab on the left + You can choose from a short list of common fonts or elect to choose from the full list of fonts installed on your system + And you can also modify font sizes All of this can be done without learning any CSS syntax You can see the CSS being generated for you though and you can see what effect your updates will have Once you re done making your adjustments just hit OK to put them into effect Note that changes made here will affect the display of all of your collections not just the one currently open Also assuming you are interested in publishing your site to the web be sure and choose web safe fonts https www dreamhost com blog web safe fonts Implementation of custom fonts is beyond the scope of this tutorial and you must understand that just because a particular font is available on your Mac that doesn t mean that it will be available to your readers when they access your site from the web"
+    }, 
+    { 
+        title: "11.3 Supplying your own CSS file", 
+        date: "", 
+        url: "11.3-supplying-your-own-css-file.html", 
+        summary: "<p>Yet another option for adjusting the CSS used within Notenik is to place a file named <code>display.css</code> within your collection folder. This CSS will then be used in place of Notenik&#8217;s default CSS for that collection. </p>", 
+        content: "Yet another option for adjusting the CSS used within Notenik is to place a file named `display css` within your collection folder This CSS will then be used in place of Notenik s default CSS for that collection An easy way to start this process is to select Collection > Generate Sample Display Template Two new files will then be generated within your collection folder + `display css` + `display html` For our purposes now delete the `display html` file since we won t need that just to customize our CSS Then open the `display css` file with your trusty text editor What you ll see now will be all of the default CSS supplied by the version of Notenik that you are using Now feel free to completely replace all of this or to add delete modify any bits and bobs that aren t quite to your satisfaction When you re done making your edits save your changes within your text editor then go back to your Notenik collection and select Collection > Reload Collection Opt Cmd J You should now see the results of your CSS changes"
+    }, 
+    { 
+        title: "11.4 Selecting from alternatives", 
+        date: "", 
+        url: "11.4-selecting-from-alternatives.html", 
+        summary: "<p>As described earlier, in our discussion of <a href=\"4.2-css-frameworks.html\" class=\"wiki-link\">4.2 CSS frameworks</a>, you can drop several different CSS files into a special collection subfolder named <code>css</code>, and then choose to apply any one of them using <em>Collection > Settings</em> (Cmd-;). </p>", 
+        content: "As described earlier in our discussion of 4 2 CSS frameworks you can drop several different CSS files into a special collection subfolder named `css` and then choose to apply any one of them using Collection > Settings Cmd Such a choice would override any of the other Notenik CSS options we ve described so far"
+    }, 
+    { 
+        title: "11.5 Applying add-ins", 
+        date: "", 
+        url: "11.5-applying-add-ins.html", 
+        summary: "<p>And then the final option for modifying the CSS used by Notenik is to provide one or more <code>.css</code> files within the special <code>add-ins</code> folder, as described previously in our discussion of <a href=\"9.4-embedded-video.html\" class=\"wiki-link\">9.4 Embedded video</a>. </p>\n\n<p>Note that any CSS &#8220;add-ins&#8221; will be&#8230; </p>", 
+        content: "And then the final option for modifying the CSS used by Notenik is to provide one or more ` css` files within the special `add ins` folder as described previously in our discussion of 9 4 Embedded video Note that any CSS add ins will be applied in addition to whatever other CSS options you have chosen through one of the means above and not instead of any of those other options"
+    }, 
+    { 
+        title: "12 Reusable HTML", 
+        date: "", 
+        url: "12-reusable-html.html", 
+        summary: "<p>Blake&#8217;s bonus chapter on <a href=\"https://www.htmlforpeople.com/reusable-html-with-php/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Reusable HTML with PHP</a> describes an alternative to use of Notenik&#8217;s merge templates, and I&#8217;ve already shown you how to use those to avoid duplicating HTML boilerplate. </p>", 
+        content: "Blake s bonus chapter on Reusable HTML with PHP https www htmlforpeople com reusable html with php describes an alternative to use of Notenik s merge templates and I ve already shown you how to use those to avoid duplicating HTML boilerplate So no need to read this bonus chapter from Blake unless you wish to explore alternatives to use of Notenik"
+    }, 
+    { 
+        title: "13 Next Steps", 
+        date: "", 
+        url: "13-next-steps.html", 
+        summary: "<p>This tutorial has focused on the basics of building a simple personal website using Notenik. </p>", 
+        content: "This tutorial has focused on the basics of building a simple personal website using Notenik If and when you re ready for a more advanced and more general guide on building any kind of website using Notenik check out the Guide to Creating a Website using Notenik https notenik app web guide index html"
+    }, 
+    { 
+        title: "14 Resources and links", 
+        date: "", 
+        url: "14-resources-and-links.html", 
+        summary: "<p>Here are a number of useful links to helpful resources, organized by topic. </p>\n<ul>\n<li>HTML for People \n<ul>\n<li><a href=\"https://www.htmlforpeople.com/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">Home page</a> . The starting point for Blake&#8217;s book. </li>\n</ul>\n</li>\n</ul>\n", 
+        content: "Here are a number of useful links to helpful resources organized by topic + HTML for People + Home page https www htmlforpeople com The starting point for Blake s book + Blake s resources and links https www htmlforpeople com achievement unlocked hypertexter resources from this book I haven t attempted to duplicate all of these here so you may well wish to reference Blake s list in addition to the items on this page + Blake s Ko fi donation page https ko fi com blakewatson If you ve made it this far then I encourage you to thank Blake for his work by buying him a virtual coffee + HTML and General Web + HTML Reference from MDN https developer mozilla org en US docs Web HTML This is generally the place to go for definitive information on HTML tags + Web Safe Fonts https www dreamhost com blog web safe fonts A list of fonts that are generally available in all browsers on all platforms + Butterick s Practical Typography https practicaltypography com Like Blake I m a fan of Matthew Butterick s work + EntityCode https entitycode com A clear and quick reference to the codes to be used for various HTML entities copyright symbol dash variations and so on + Markdown + Markdown syntax https daringfireball net projects markdown syntax The definitive syntax as defined by its creator John Gruber + Basic Syntax https www markdownguide org basic syntax The basic syntax as explained at the Markdown Guide + Extended Syntax https www markdownguide org extended syntax The common extensions as defined at the Markdown Guide + Cheat Sheet https www markdownguide org cheat sheet A handy quick reference + Notenik Markdown Extensions https notenik app kb notenik markdown parser html A list of the Markdown extensions and variations supported by the Notenik Markdown parser including a number unique to Notenik + Notenik + Notenik Knowledge Base https notenik app kb notenik knowledge base html The definitive reference for all things Notenik This is also available from the Help menu within Notenik itself + Notenik 101 Video https youtu be JR0kpAUXM5E A ten minute video introducing the new user to Notenik + Notenik 201 Video https youtu be Qy0hejViBHI A more advanced video describing ways in which a user can customize a collection for a particular purpose + Notenik Discourse Forum https discourse notenik app A discussion forum on which users can ask questions request new features report bugs discuss issues and provide general feedback + Text Editors + BBEdit https www barebones com products bbedit The granddaddy of all Mac text editors famously and aptly described with the pithy tag line It doesn t suck Still great still evolving still useful Notenik provides special support for BBEdit project files + CotEditor https coteditor com It s free and open source and made exclusively for the Mac + Nova https nova app Another great native Mac editor Notenik also provides special support for Nova projects + CSS + CSS Reference from MDN https developer mozilla org en US docs Web CSS A great reference on CSS syntax"
+    }, 
+    { 
+        title: "15 Navigation", 
+        date: "", 
+        url: "15-navigation.html", 
+        summary: "<p>Here are some other ways to navigate through this web book. </p>", 
+        content: "Here are some other ways to navigate through this web book"
+    }, 
+    { 
+        title: "15.1 Detailed Table of Contents", 
+        date: "", 
+        url: "15.1-detailed-table-of-contents.html", 
+        summary: "<p>This page contains a detailed table of contents, showing all levels and pages in a single outline. </p>", 
+        content: "This page contains a detailed table of contents showing all levels and pages in a single outline collection toc"
+    }, 
+    { 
+        title: "15.2 Search", 
+        date: "", 
+        url: "15.2-search.html", 
+        summary: "<p>This page allows you to search the site. </p>", 
+        content: "This page allows you to search the site search"
+    }, 
+    { 
+        title: "99.1 header-page", 
+        date: "", 
+        url: "99.1-header-page.html", 
+        summary: "<p>Intro to Website Creation using&#8230; </p>", 
+        content: " header Intro to Website Creation using Notenik"
+    }, 
+    { 
+        title: "99.2 nav-page", 
+        date: "", 
+        url: "99.2-nav-page.html", 
+        summary: "<ul>\n<li>[[15.1 Detailed Table of&#8230; </li>\n</ul>\n", 
+        content: " nav + 15 1 Detailed Table of Contents|Contents"
+    }, 
+    { 
+        title: "99.3 footer-page", 
+        date: "", 
+        url: "99.3-footer-page.html", 
+        summary: "<p>Authored by Herb Bowie, licensed under <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\" class=\"ext-link\" target=\"_blank\" rel=\"noopener\">CC BY-NC-SA 4.0</a>. </p>", 
+        content: " footer Authored by Herb Bowie licensed under CC BY NC SA 4 0 https creativecommons org licenses by nc sa 4 0"
+    }, 
+]; 
+/**
+ * Based on Go Make Things blog post at:
+ * https://gomakethings.com/how-to-create-a-vanilla-js-search-page-for-a-static-website/
+ */
+(function (window, document, undefined) {
+
+    'use strict';
+
+    //
+    // Variables
+    //
+
+    let form = document.querySelector('#form-search');
+    let input = document.querySelector('#input-search');
+    let resultList = document.querySelector('#search-results');
+
+    //
+    // Methods
+    //
+
+    /**
+     * Create the HTML for each result
+     * @param  {Object} article The article
+     * @param  {Number} id      The result index
+     * @return {String}         The markup
+     */
+    let createHTML = function (article, id) {
+        let html =
+            '<div id="search-result-' + id + '">' +
+                '<h4>' +
+                    '<a href="' + article.url + '" class="nav-link">' +
+                        article.title +
+                    '</a>' +
+                '</h2>' +
+                article.summary + '<br>' +
+            '</div>';
+        return html;
+    };
+
+    /**
+     * Create the markup for results
+     * @param  {Array} results The results to display
+     * @return {String}        The results HTML
+     */
+    let createResultsHTML = function (results) {
+        let html = '<p>Found ' + results.length + ' matching pages</p>';
+        html += results.map(function (article, index) {
+            return createHTML(article, index);
+        }).join('');
+        return html;
+    };
+
+    /**
+     * Create the markup when no results are found
+     * @return {String} The markup
+     */
+    let createNoResultsHTML = function () {
+        return '<p>Sorry, no matches were found.</p>';
+    };
+
+    /**
+     * Search for matches
+     * @param  {String} query The term to search for
+     */
+    let search = function (query) {
+
+        // Variables
+        let reg = new RegExp(query, 'gi');
+        let priority1 = []
+        let priority2 = []
+
+        searchIndex.forEach(function (article) {
+            if (reg.test(article.title)) return priority1.push(article);
+            if (reg.test(article.content)) priority2.push(article);
+        });
+
+        let results = [].concat(priority1, priority2)
+
+        // Display the results
+        resultList.innerHTML = results.length < 1 ? createNoResultsHTML() : createResultsHTML(results);
+    };
+
+    /**
+     * Handle submit events
+     */
+    let submitHandler = function (event) {
+        event.preventDefault();
+        search(input.value);
+    };
+
+    //
+    // Inits & Event Listeners
+    //
+
+    // Make sure required content exists
+    if (!form || !input || !resultList || !searchIndex) return;
+
+    // Create a submit handler
+    form.addEventListener('submit', submitHandler);
+
+})(window, document);
+
+</script>
+
+
+
+<hr />
+<p>Back to Top: <a href="intro-to-website-creation-using-notenik.html" class="nav-link">Intro to Website Creation using Notenik</a></p>
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

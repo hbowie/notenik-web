@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,29 +34,42 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version12.0.0">16.32 Version 12.0.0</h3>
-<p>Date: 09 May 2023 - Tuesday</p><h5 id="corrected-hour-formatting-in-timestamp-values">Corrected Hour Formatting in Timestamp values</h5>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version12.0.0">16.44 Version 12.0.0</h3>
+<p>Date: 09 May 2023 - Tuesday</p><section id="section-for-corrected-hour-formatting-in-timestamp-values">
+
+<h5 id="corrected-hour-formatting-in-timestamp-values">Corrected Hour Formatting in Timestamp values</h5>
 
 <p>Notenik had been formatting the <a href="timestamp.html" class="wiki-link">Timestamp</a> field using an hour range of 1 - 24, which could result in a time in the midnight hour being sorted after an hour occurring later in the same day. This has been changed to a range of 0 - 23. </p>
+
+</section>
+
+<section id="section-for-fixed-a-bug-involving-timestamps-and-classes">
 
 <h5 id="fixed-a-bug-involving-timestamps-and-classes">Fixed a Bug involving Timestamps and Classes</h5>
 
 <p>When both a <a href="timestamp.html" class="wiki-link">Timestamp</a> field and a <a href="class.html" class="wiki-link">Class</a> field were defined for a Collection, timestamp values would sometimes fail to be newly initialized for each new instance of a Note. This has been corrected. </p>
 
+</section>
+
+<section id="section-for-fixed-some-problems-with-the-display-template">
+
 <h5 id="fixed-some-problems-with-the-display-template">Fixed Some Problems with the Display Template</h5>
 
 <p>When using a <code>display.html</code> file to <a href="tailor-the-display.html" class="wiki-link">Tailor the Display</a>, several potential problems could arise. I believe these have all been sorted. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-11.9.0.html" class="nav-link">Version 11.9.0</a></p></div>
+<p>Next: 16.45 <a href="version-11.9.0.html" class="nav-link">Version 11.9.0</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

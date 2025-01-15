@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Review the merge template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>1. <a href="1-zero-to-internet-your-first-website.html" class="nav-link">Zero to internet: your first website</a>&#160;&#8593;</p><h4 id="reviewthemergetemplate">1.6. Review the merge template</h4>
+<p>Now let&#8217;s take a look at a couple of Notenik files that were invoked when you double-clicked on your build script. </p>
+
+<p>These files can be opened using the same text editor you used to view the <code>index.html</code> file. </p>
+
+<p>Let&#8217;s look first at the <a href="https://notenik.app/kb/merge-templates.html" class="ext-link" target="_blank" rel="noopener">merge template</a> file named <code>chapter 01 - page template.html</code>, which you will find within the <code>factory/templates</code> folder. </p>
+
+<p>Here&#8217;s what you should see. </p>
+
+<pre><code>&lt;?nextrec?>
+&lt;?output "../../web/=$title&amp;f$=.html"?>
+=$body$=
+&lt;?loop?>
+</code></pre>
+
+<p>Let&#8217;s take these lines one at a time. </p>
+
+<p><code>&lt;?nextrec?&gt;</code> </p>
+
+<p>This is a Notenik <a href="https://notenik.app/kb/merge-commands.html" class="ext-link" target="_blank" rel="noopener">Merge Template command</a> that tells Notenik to repeat the following lines for each note found in the input. Right now we only have the <code>Index</code> page but, as we add other pages, they would take advantage of this same code. </p>
+
+<p><code>&lt;?output "../../web/=$title&amp;f$=.html"?&gt;</code> </p>
+
+<p>This line tells Notenik to open a new output file into which the following lines will be copied. Because this line follows the <code>nextrec</code> command, it will be repeated for each input note. </p>
+
+<p>Following the name of the command we find the output path and filename for the file to be created. Each <code>../</code> takes Notenik up a level in the folder structure, starting from the location of the template file, until we get to the project folder itself, and then we direct the output into the <code>web</code> folder. What follows is the file name, which will be formed from the title field of the input note. </p>
+
+<p>The <code>&amp;f</code> is a <a href="https://notenik.app/kb/variable-modifiers.html" class="ext-link" target="_blank" rel="noopener">Merge Variable Modifier</a> telling Notenik to make all letters lowercase, and to replace spaces with dashes, to create a universally readable filename to be accessed from the web. </p>
+
+<p>Then finally the <code>.html</code> specifies the file extension to be used for the output file. </p>
+
+<p><code>=$body$=</code> </p>
+
+<p>This <a href="https://notenik.app/kb/merge-variables.html" class="ext-link" target="_blank" rel="noopener">merge variable</a> tells Notenik to place the entire body of the input note into the resulting web page. </p>
+
+<p><code>&lt;?loop?&gt;</code> </p>
+
+<p>This command tells Notenik that it has reached the end of the lines to be repeated for each input note. So, in this case, the only contents of the output <code>index.html</code> file will be the body of the note. </p>
+
+<p>So that&#8217;s it for the merge template, for now. Pretty simple, right? </p>
+
+<hr />
+<div>
+
+<p>Next: 1.7. <a href="1.7-review-the-script-file.html" class="nav-link">Review the Script File</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

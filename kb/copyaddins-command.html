@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>copyaddins command</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.4 <a href="merge-commands.html" class="nav-link">Merge Commands</a>&#160;&#8593;</p><h4 id="copyaddinscommand">12.4.13 copyaddins command</h4>
+<p>The <code>copyaddins</code> command can be used to copy <code>.css</code> and <code>.js</code> files from the collection <a href="other-files-and-subfolders.html" class="wiki-link">add-ins folder</a> to a comparable folder in an output location (such as a <code>web</code> folder). </p>
+
+<p>The command line should appear as follows: </p>
+
+<pre><code>&lt;?copyaddins?>
+</code></pre>
+
+<p>The output location will default to a folder named <code>add-ins</code> within the folder identified by the scripting <a href="template-module-parameters.html" class="wiki-link">webroot action</a>. </p>
+
+<p>If you wish to change the name of the output folder, you can supply a parameter to the command, as in the following example. </p>
+
+<pre><code>&lt;?copyaddins "mixins" ?>
+</code></pre>
+
+
+<hr />
+<div>
+
+<p>Next: 12.4.14 <a href="copycss-command.html" class="nav-link">copycss command</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

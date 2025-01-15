@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -35,30 +35,33 @@ window.MathJax = {
 
 <main>
 <p>12. <a href="merge-templates.html" class="nav-link">Merge Templates</a>&#160;&#8593;</p><h3 id="mergevariables">12.2 Merge Variables</h3>
-<p>Variables will be replaced by values taken from the corresponding fields of the current Note, or from an internal table of global variables. Variables must be enclosed in the chosen delimiters. Each variable name must match a field label from the data source, or a global name specified in a SET command. The comparison ignores case (upper or lower), embedded spaces and embedded punctuation when looking for a matching field label. So a field label of &#8220;First Name&#8221; will match with a variable of &#8220;firstname&#8221;, for example. </p>
+<p>Variables will be replaced by values taken from the corresponding fields of the current Note, or from one of the special sets of variables described below. </p>
+
+<p>Variables must be enclosed in the chosen delimiters. Each variable name must match a field label from the data source, or one of the special variables described below. The comparison ignores case (upper or lower), embedded spaces and embedded punctuation when looking for a matching field label. So a field label of &#8220;First Name&#8221; will match with a variable of &#8220;firstname&#8221;, for example. </p>
 
 <p>A variable, unlike a command, can appear anywhere within the template file, and need not be isolated on a line by itself. More than one variable can appear on the same line. Variables can be used within template commands, as well as other places within the template file. </p>
 
 <hr />
 <h4>Contents</h4>
 <ul class="notenik-toc">
-<li>12.2.1 <a href="system-variables.html" class="nav-link">System Variables</a></li>
-<li>12.2.2 <a href="derived-variables.html" class="nav-link">Derived Variables</a></li>
+<li>12.2.1 <a href="global-variables.html" class="nav-link">Global Variables</a></li>
+<li>12.2.2 <a href="system-variables.html" class="nav-link">System Variables</a></li>
+<li>12.2.3 <a href="derived-variables.html" class="nav-link">Derived Variables</a></li>
 </ul>
 
 <hr />
 
 <div>
 
-<p class="float-left">Next: <a href="system-variables.html" class="nav-link">System Variables</a></p>
+<p class="float-left">Next: 12.2.1 <a href="global-variables.html" class="nav-link">Global Variables</a></p>
 
-<p class="float-right">Skip to: <a href="variable-modifiers.html" class="nav-link">12.3 Variable Modifiers</a></p></div>
+<p class="float-right">Skip to: <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

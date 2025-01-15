@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,8 +34,10 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version12.9.0">16.23 Version 12.9.0</h3>
-<p>Date: 15 Sep 2023 - Friday</p><h5 id="improvements-to-file-links">Improvements to File Links</h5>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version12.9.0">16.35 Version 12.9.0</h3>
+<p>Date: 15 Sep 2023 - Friday</p><section id="section-for-improvements-to-file-links">
+
+<h5 id="improvements-to-file-links">Improvements to File Links</h5>
 
 <p>The Set Local Link command was not working correctly to set <a href="file-links.html" class="wiki-link">File Links</a>. This has been corrected. </p>
 
@@ -43,52 +45,91 @@ window.MathJax = {
 
 <p>Also, a new command beneath the Note menu will Convert a Local Link to an Attachment, if the user would prefer to access the external file in that manner. </p>
 
+</section>
+
+<section id="section-for-improvements-to-author-name-modifier">
+
 <h5 id="improvements-to-author-name-modifier">Improvements to Author Name Modifier</h5>
 
 <p>Improved the <a href="author-name-modifier-a.html" class="wiki-link">Author Name Modifier</a> to show all last names when multiple authors are combined into a single entry. </p>
+
+</section>
+
+<section id="section-for-improvements-to-the-wiki-style-links-variable-modifier">
 
 <h5 id="improvements-to-the-wiki-style-links-variable-modifier">Improvements to the Wiki Style Links Variable Modifier</h5>
 
 <p>The <a href="wiki-style-links-w.html" class="wiki-link">Wiki-Style Links Mod</a> has been enhanced to recognize <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a>, and to handle them in such a way that these links can still work reliably when generating HTML output pages for a website. </p>
 
+</section>
+
+<section id="section-for-added-export-to-html-outline-option">
+
 <h5 id="added-export-to-html-outline-option">Added Export to HTML Outline Option</h5>
 
 <p>Added a new <a href="import-and-export-your-notes.html" class="wiki-link">Export</a> option to generate a single HTML file containing an outline structure housing all of a Collection&#8217;s Notes. </p>
+
+</section>
+
+<section id="section-for-fixed-a-problem-with-the-rank-field">
 
 <h5 id="fixed-a-problem-with-the-rank-field">Fixed a Problem with the Rank Field</h5>
 
 <p>This bug may have been affecting some other field types as well. </p>
 
+</section>
+
+<section id="section-for-added-share-using-merge-template">
+
 <h5 id="added-share-using-merge-template">Added Share Using Merge Template</h5>
 
 <p>The <a href="share-with-options.html" class="wiki-link">Share with Options</a> command now offers an option to format the selected Note using a Merge Template specified by the user. </p>
+
+</section>
+
+<section id="section-for-fixed-level-1-headings-beginning-with-digits">
 
 <h5 id="fixed-level-1-headings-beginning-with-digits">Fixed Level 1 Headings Beginning with Digits</h5>
 
 <p>The number sign (&#8216;#&#8217;) can have multiple meanings. When 1 - 6 of these symbols are placed at the beginning of a line, then Markdown interprets the line as a heading. But this symbol can also be used as part of ordinary writing to indicate that a number follows. Previously, when a line started with one of these symbols, and was followed by a space, but the space was then followed by a digit, the Notenik Markdown parser interpreted this as an attempt to identify the digit(s) as a number, rather than indicating a level 1 heading. The parser has now been modified to only make this assumption (number sign rather than heading indicator) when the symbol is <em>not</em> immediately followed by a space. </p>
 
+</section>
+
+<section id="section-for-auto-creation-of-missing-wiki-link-targets">
+
 <h5 id="auto-creation-of-missing-wiki-link-targets">Auto-Creation of Missing Wiki Link Targets </h5>
 
 <p>When creating <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a>, the Collection Setting to Create Notes for Missing Wiki Link Targets will now be respected, resulting in missing Notes being automatically created for the user. </p>
+
+</section>
+
+<section id="section-for-apostrophes-now-allowed-in-file-names">
 
 <h5 id="apostrophes-now-allowed-in-file-names">Apostrophes Now Allowed in File Names</h5>
 
 <p>The apostrophe/single quote character is now allowed to remain in file names, when these are found in Note titles. These characters were previously being replaced with a space and a dash. </p>
 
+</section>
+
+<section id="section-for-added-html-style-for-checklist-items">
+
 <h5 id="added-html-style-for-checklist-items">Added HTML Style for Checklist Items</h5>
 
 <p>List items for Checklists are now written out with an <a href="html-class-values.html" class="wiki-link">HTML class value</a> of &#8216;<code>checklist-item</code>&#8217;. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-12.8.0.html" class="nav-link">Version 12.8.0</a></p></div>
+<p>Next: 16.36 <a href="version-12.8.0.html" class="nav-link">Version 12.8.0</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

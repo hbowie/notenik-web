@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Create Notenik Merge Templates</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+
+
+</header>
+
+<main>
+<p><a href="create-a-website-using-notenik.html" class="nav-link">Create a Website using Notenik</a>&#160;&#8593;</p><h2 id="createnotenikmergetemplates">12. Create Notenik Merge Templates</h2>
+<p>Now create a <a href="https://notenik.app/kb/merge-templates.html" class="ext-link" target="_blank" rel="noopener">Merge Template</a> for each page layout. These would contain HTML tags, as well as your Merge Commands and Merge Variables. You would create these with your trusty text editor. </p>
+
+<h3 id="example">Example</h3>
+
+<p>The Website starter pack contains three merge templates, and these are representative of ones you would typically create. Two of these are used to display content pages for your two content types, and the remaining one is used to create an include file of teasers. </p>
+
+<p>The HTML commands you see in the template files are pretty basic, and I will not provide any further explanation here. </p>
+
+<p>In addition to the HTML, you will find some <a href="https://notenik.app/kb/merge-commands.html" class="ext-link" target="_blank" rel="noopener">Merge commands</a> and <a href="https://notenik.app/kb/merge-variables.html" class="ext-link" target="_blank" rel="noopener">Merge variables</a>. </p>
+
+<p>Let me discuss a few examples of each. </p>
+
+<h4 id="nextrec-command">Nextrec command</h4>
+
+<p>A <code>nextrec</code> command such as the following indicates to Notenik that the lines of code following the command should be generated for each input Note. </p>
+
+<pre><code>&lt;?nextrec?>
+</code></pre>
+
+<h4 id="output-command">Output command</h4>
+
+<p>An <code>output</code> command indicates the name and location of the output file which is to receive the following lines of code. </p>
+
+<p>Here is an example: </p>
+
+<pre><code>&lt;?output "../../web/=$title&amp;f$=.html"?>
+</code></pre>
+
+<h4 id="title-field">Title field </h4>
+
+<p>Note that the string <code>=$title&amp;f$=</code> represents a merge variable: in this case, the title field. The <code>&amp;f</code> within represents a variable modifier: in this case, a request to modify the title field to make it more web-friendly <a href="https://notenik.app/kb/file-name-f.html" class="ext-link" target="_blank" rel="noopener">file name</a>. </p>
+
+<h4 id="loop-command">Loop command</h4>
+
+<p>A <code>loop</code> command must always follow a <code>nextrec</code> command, to indicate the end of the code to be produced repetitively. See below for an example. </p>
+
+<pre><code>&lt;?loop?>
+</code></pre>
+
+<h4 id="body-field">Body field</h4>
+
+<p>Here is one more important example of a merge variable with modifiers. </p>
+
+<pre><code>=$body&amp;w1o$=
+</code></pre>
+
+<p>This will cause the body of the Note to appear within the output page, but it has two important modifiers. The <a href="https://notenik.app/kb/markdown-to-html-o.html" class="ext-link" target="_blank" rel="noopener"><code>o</code> modifier</a> will convert the Markdown syntax to HTML. The preceding <a href="https://notenik.app/kb/markdown-to-html-o.html" class="ext-link" target="_blank" rel="noopener"><code>w1</code> modifier</a> will cause any embedded <a href="https://notenik.app/kb/wiki-style-links.html" class="ext-link" target="_blank" rel="noopener">wiki-style links</a> to be appropriately formatted for inter-page linkage on your website. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="image-handling.html" class="nav-link">Image Handling</a></p></div>
+
+
+</main>
+</body>
+</html>

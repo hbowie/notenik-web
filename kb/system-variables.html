@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,7 +34,7 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>12.2 <a href="merge-variables.html" class="nav-link">Merge Variables</a>&#160;&#8593;</p><h4 id="systemvariables">12.2.1 System Variables</h4>
+<p>12.2 <a href="merge-variables.html" class="nav-link">Merge Variables</a>&#160;&#8593;</p><h4 id="systemvariables">12.2.2 System Variables</h4>
 <p>The following special variables are predefined and available for substitution, no matter what data source is being used. </p>
 
 <dl>
@@ -62,6 +62,9 @@ window.MathJax = {
 <dt>nobr </dt>
 <dd>Placing the variable &#8216;nobr&#8217; anywhere on a line will cause that line to be written out without a trailing line break. The nobr variable itself will be removed from the line, without being replaced. </dd>
 
+<dt>notefilename </dt>
+<dd>The file name of the Note being used as input data. This includes the base name as well as the file extension, but does not include any preceding path info that would define enclosing folders. </dd>
+
 <dt>parentfolder </dt>
 <dd>The lowest-level folder immediately enclosing the data file. </dd>
 
@@ -82,13 +85,13 @@ window.MathJax = {
 <hr />
 <div>
 
-<p>Next: <a href="derived-variables.html" class="nav-link">Derived Variables</a></p></div>
+<p>Next: 12.2.3 <a href="derived-variables.html" class="nav-link">Derived Variables</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

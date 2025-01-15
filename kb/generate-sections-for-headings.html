@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Generate Sections for Headings</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.7 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a>&#160;&#8593;</p><h5 id="generatesectionsforheadings">7.3.7.9 Generate Sections for Headings</h5>
+<p>The <code>section-headings</code> command can be used to divide the HTML output into sections, using the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" class="ext-link" target="_blank" rel="noopener">section</a> element, with the start of a new section indicated by the presence of a <a href="https://www.markdownguide.org/basic-syntax/#headings" class="ext-link" target="_blank" rel="noopener">heading</a> of a certain level. </p>
+
+<p>If no heading level is specified, as in the following example, the first heading encountered will set the sectioning heading level. </p>
+
+<pre><code>{:section-headings}
+</code></pre>
+
+<p>An alternative is to specify the desired sectioning heading level directly, as in the following example. </p>
+
+<pre><code>{:section-headings: 2}
+</code></pre>
+
+<p>This command should generally be placed at or near the top of the text field, before the appearance of the first heading. </p>
+
+<p>The <code>&lt;section&gt;</code> tags generated will have <code>id</code> attributes supplied, with the literal <code>section-for-</code> being prepended to the <a href="heading-id-generation.html" class="wiki-link">Heading ID</a> generated for the triggering heading. </p>
+
+<hr />
+<div>
+
+<p>Next: 7.3.8 <a href="intra-note-commands.html" class="nav-link">Intra-Note Commands</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

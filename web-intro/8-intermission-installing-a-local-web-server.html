@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Intermission: installing a local web server</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p><a href="intro-to-website-creation-using-notenik.html" class="nav-link">Intro to Website Creation using Notenik</a>&#160;&#8593;</p><h3 id="intermissioninstallingalocalwebserver">8. Intermission: installing a local web server</h3>
+<p>Start by reading the corresponding <a href="https://www.htmlforpeople.com/intermission-installing-a-local-web-server/" class="ext-link" target="_blank" rel="noopener">HTML for people chapter</a>. </p>
+
+<p>Blake&#8217;s information here is all perfectly applicable to web-building with Notenik. </p>
+
+<p>I will add another option that I use. </p>
+
+<p>Each time that macOS undergoes a major upgrade, I pick the right link <a href="https://discussions.apple.com/docs/DOC-3083" class="ext-link" target="_blank" rel="noopener">on this page</a> and carefully follow the instructions there. </p>
+
+<p>The latest one at the time of this writing is titled <a href="https://discussions.apple.com/docs/DOC-250008906" class="ext-link" target="_blank" rel="noopener">Setting up a local web server on macOS 15 &#8220;Sequoia&#8221;</a>. </p>
+
+<p>These instructions require use of the Terminal app, plus editing of hidden files. </p>
+
+<p>If you are uncomfortable with these tasks, then best to stick to Blake&#8217;s recommendation. </p>
+
+<p>I will confess that I use BBEdit to make the configuration file edits, rather than vi or nano. </p>
+
+<p>Also it helps to know that CMD-Shift-dot ( ⌘+⇧+. ) will toggle the display of hidden files in the Finder. </p>
+
+<p>I think the advantage of this approach is that you can then use <a href="https://blog.hubspot.com/website/what-is-localhost" class="ext-link" target="_blank" rel="noopener">localhost</a> to view your web work in your browser. </p>
+
+<p>For example, here&#8217;s the URL I would use in my browser to view a local copy of <code>my-notenik-project</code> (with that folder located within my <code>Sites</code> folder).   </p>
+
+<pre><code>http://localhost/~hbowie/my-notenik-project/web/
+</code></pre>
+
+<p>And here&#8217;s a command I could place at the end of my Notenik build script to ask that my site be opened in my web browser. </p><table>
+<tr>
+<th>
+ module</th>
+<th>
+ action</th>
+<th>
+ modifier</th>
+<th>
+ object</th>
+<th>
+ value </th>
+ </tr>
+<tr>
+<td>
+ browse</td>
+<td>
+ open</td>
+<td>
+ url</td>
+<td>
+ </td>
+<td>
+ http://localhost/~hbowie/my-notenik-project/web/ </td>
+</tr>
+</table>
+
+
+<hr />
+<div>
+
+<p>Next: 9. <a href="9-adding-a-fun-page.html" class="nav-link">Adding a fun page</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

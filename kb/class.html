@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -50,6 +50,13 @@ window.MathJax = {
 
 <p>In other words, enter the usual field label, followed by a colon, and then follow that with the possible values, separated using commas or semicolons. </p>
 
+<p>You can also specify a default value by placing an asterisk after your desired default, as in the following example: </p>
+
+<pre><code>Class: &lt;class: biblio, cover, def, quote, text*, title>
+</code></pre>
+
+<p>Note that the default will cause the field to be populated when creating a new Note, but will not cause any associated class template file to be immediately applied. </p>
+
 <p>As always, be sure to Reload the Collection after making changes to the Collection template! </p>
 
 <p>Each class value may have an associated <a href="class-template-files.html" class="wiki-link">Class Template File</a>. </p>
@@ -57,15 +64,15 @@ window.MathJax = {
 <hr />
 <div>
 
-<p class="float-left">Next: <a href="special-class-values.html" class="nav-link">Special Class Values</a></p>
+<p class="float-left">Next: 9.13.2.1 <a href="special-class-values.html" class="nav-link">Special Class Values</a></p>
 
-<p class="float-right">Skip to: <a href="rank.html" class="nav-link">9.13.3 Rank</a></p></div>
+<p class="float-right">Skip to: <a href="rank.html" class="nav-link">Rank</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,35 +34,52 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version1.6.0">16.153 Version 1.6.0</h3>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version1.6.0">16.165 Version 1.6.0</h3>
 <p>Released on 15 Oct 2019 </p>
+
+<section id="section-for-various-minor-tweaks">
 
 <h5 id="various-minor-tweaks">Various Minor Tweaks</h5>
 
 <p>Made a number of tweaks to fix bugs and/or improve operation. </p>
 
+</section>
+
+<section id="section-for-textile-parser-added">
+
 <h5 id="textile-parser-added">Textile Parser Added</h5>
 
 <p>A homegrown &#8220;good enough&#8221; Textile Parser has been added to Notenik. It can be invoked by including a file with a &#8216;.textile&#8217; file extension when generating HTML output. </p>
+
+</section>
+
+<section id="section-for-template-include-file-conversion-honored">
 
 <h5 id="template-include-file-conversion-honored">Template Include File Conversion Honored</h5>
 
 <p>When using the Include command within a Scripting Template file to include another file, automatic conversion will now be done when the included file extension differs from the output file extension. In particular, Markdown and Textile documents will be converted to HTML, when appropriate. Note that the Textile parser used is one internal to Notenik, and is at best a &#8220;good enough&#8221; tool, but one that is far from comprehensive. </p>
 
+</section>
+
+<section id="section-for-seq-field-prefix-now-honored">
+
 <h5 id="seq-field-prefix-now-honored">Seq Field Prefix Now Honored</h5>
 
 <p>Field names beginning with &#8220;Seq&#8221; will now be treated as Seq fields for the purpose of sorting when using the Scripting Engine. This will cause numeric fields, for example, to sort into their proper numeric sequence, instead of treating them as alphanumeric fields. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-1.5.0.html" class="nav-link">Version 1.5.0</a></p></div>
+<p>Next: 16.166 <a href="version-1.5.0.html" class="nav-link">Version 1.5.0</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

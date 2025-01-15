@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Recap: headings and lists</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>6. <a href="6-adding-a-blog.html" class="nav-link">Adding a blog</a>&#160;&#8593;</p><h4 id="recapheadingsandlists">6.4. Recap: headings and lists</h4>
+<p>You can create headings at any level by placing that number of <code>#</code> characters at the beginning of a line. </p>
+
+<p>For example, this would produce a level 3 heading. </p>
+
+<pre><code>### Level 3 Heading
+</code></pre>
+
+<p>And here&#8217;s our sample unordered list. </p>
+
+<pre><code>+ Bread
++ Sugar
++ Hole
+</code></pre>
+
+<p>And here&#8217;s what this would look like. </p>
+<ul>
+<li>Bread </li>
+<li>Sugar </li>
+<li>Hole </li>
+</ul>
+
+<p>And here&#8217;s an ordered list, first in code, and then rendered as HTML. </p>
+
+<pre><code>1. **Portable Happiness:** Donuts are the perfect grab-and-go food. You can take them anywhere: to work, to the park, or on a road trip. They’re like little circles of happiness that fit in your hand.
+2. **Instant Mood Boost:** Feeling down? Have a donut. It’s scientifically proven\* that donuts can turn a frown upside down. (\*Not actually proven, but we all know it’s true.)
+3. **Endless Creativity:** Donut shops are constantly coming up with new and exciting flavors. From maple bacon to matcha green tea, the possibilities are endless. It’s like a delicious adventure every time you visit.
+</code></pre>
+<ol>
+<li><strong>Portable Happiness:</strong> Donuts are the perfect grab-and-go food. You can take them anywhere: to work, to the park, or on a road trip. They’re like little circles of happiness that fit in your hand. </li>
+<li><strong>Instant Mood Boost:</strong> Feeling down? Have a donut. It’s scientifically proven* that donuts can turn a frown upside down. (*Not actually proven, but we all know it’s true.) </li>
+<li><strong>Endless Creativity:</strong> Donut shops are constantly coming up with new and exciting flavors. From maple bacon to matcha green tea, the possibilities are endless. It’s like a delicious adventure every time you visit. </li>
+</ol>
+
+<p>One thing to point out here is that we had to use a  backslash before each asterisk in the second item to prevent those asterisks from being interpreted as part of our Markdown syntax. This is called a <a href="https://daringfireball.net/projects/markdown/syntax#backslash" class="ext-link" target="_blank" rel="noopener">backslash escape</a>. </p>
+
+<p>Markdown also allows you to nest one list within another, simply by indenting the lower-level list with four leading spaces, or one leading tab character. </p>
+
+<p>Here&#8217;s an example in code. </p>
+
+<pre><code>+ First main point
+	+ Sub point
+	+ Another sub-point
++ Second main point
+	+ Sub point
+	+ Another sub-point
+</code></pre>
+
+<p>And here&#8217;s how it will render. </p>
+<ul>
+<li>First main point 
+<ul>
+<li>Sub point </li>
+<li>Another sub-point </li>
+</ul>
+</li>
+<li>Second main point 
+<ul>
+<li>Sub point </li>
+<li>Another sub-point </li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: 6.5. <a href="6.5-breaking-up-content.html" class="nav-link">Breaking up content</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

@@ -28,6 +28,12 @@ We have a variety of different documents ready to help you with Notenik.
 
 + To review recent changes to the app, see the [Version History](kb/version-history.html) section of the Knowledge Base. 
 
++ To use Notenik as a static website generator:
+
+	+ If you're new to HTML, start with the [Intro to Website Creation using Notenik](web-intro/index.html).
+
+	+ If you just want to focus on Notenik capabilities, try the [Guide to Creating a Website using Notenik](web-guide/index.html). 
+
 + When you're ready for more advanced topics, you might want to review the [Notenik Master Class](master-class/index.html). 
 
 And if you'd like a quick, 10-minute video tour of the Notenik basics...

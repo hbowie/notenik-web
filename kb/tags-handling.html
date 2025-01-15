@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Tags Handling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5.4 <a href="tailor-collection-settings.html" class="nav-link">Tailor Collection Settings</a>&#160;&#8593;</p><h4 id="tagshandling">5.4.6 Tags Handling</h4>
+<p>The Collection Settings contain an option for Tags Handling. You can choose from one of the following options. </p>
+
+<section id="section-for-notenik-field">
+
+<h5 id="notenik-field">Notenik Field</h5>
+
+<p>This is the normal default value, indicating that the <a href="tags.html" class="wiki-link">Tags</a> field will be used to store the tags associated with each Note, and that the user will enter the desired tags directly into the Tags field. </p>
+
+</section>
+
+<section id="section-for-notenik-field-with-signs">
+
+<h5 id="notenik-field-with-signs">Notenik Field with # signs</h5>
+
+<p>This is similar to the default option, except that tags will be expected to start with hash signs (&#8216;<code>#</code>&#8217;) when read from disk, and will be written to disk with preceding hash symbols. This will change the way each Note is internally formatted on disk. Formatting your tags in this fashion may increase interoperability of your Notes when using other software for viewing and editing. </p>
+
+</section>
+
+<section id="section-for-inline-hashtags-within-body">
+
+<h5 id="inline-hashtags-within-body">Inline hashtags within Body</h5>
+
+<p>With this option, Notenik will parse the <a href="body.html" class="wiki-link">Body</a> of each Note looking for inline hashtags. This option will observe the following rules. </p>
+<ol>
+<li><p>A hashtag will be recognized within the body of each Note for each hash mark (&#8216;<code>#</code>&#8217;)  immediately followed (with no intervening spaces or punctuation) by a string of characters starting with a letter. </p></li>
+<li><p>Hashtags may contain letters, digits (if not leading), ordinary dashes and underline characters. Anything else will terminate the string. </p></li>
+<li><p>Each such string will be recognized as a tag for the note, and will be treated internally just as if it had been read from the Tags field for the Note. </p></li>
+<li><p>The set of all such hash tags for a Note will replace any tags values (if any) read from the normal Tags field found in the Note as stored on disk. </p></li>
+<li><p>No separate Tags field will be written to disk for Notes within the Collection. </p></li>
+<li><p>A space after a leading hash sign will be required for the line to be recognized as a level 1 heading, and a leading hash tag without a following space will be treated as a hashtag. This is a modification to Notenik&#8217;s usual handling of such a case, as documented in <a href="minor-markdown-variations.html" class="wiki-link">Minor Markdown Variations</a>. </p></li>
+<li><p>When initially loading a Collection, Notenik will parse all of its body fields in order to extract the hashtags. This may cause some slight delay before the fully loaded Collection appears to the user. </p></li>
+<li><p>Even though hashtag values will not be stored as a separate field, the Collection must still have a Tags field defined as a valid field. </p></li>
+<li><p>When converting the body to HTML, each hashtag will be made into a link, with a class specification of <code>hashtag</code>. When clicked the link will expand that tag on the Tags tab. </p></li>
+</ol>
+
+</section>
+
+
+<hr />
+<div>
+
+<p>Next: 5.4.7 <a href="outline-tab.html" class="nav-link">Outline Tab</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -34,29 +34,42 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version8.4.0">16.73 Version 8.4.0</h3>
-<p>Date: 15 Feb 2022 - Tuesday</p><h5 id="added-support-for-yaml-frontmatter">Added Support for YAML Frontmatter</h5>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version8.4.0">16.85 Version 8.4.0</h3>
+<p>Date: 15 Feb 2022 - Tuesday</p><section id="section-for-added-support-for-yaml-frontmatter">
+
+<h5 id="added-support-for-yaml-frontmatter">Added Support for YAML Frontmatter</h5>
 
 <p>Notenik had previously supported MultiMarkdown metadata, but had not explicitly supported YAML frontmatter. The omission was most problematic when multiple values for a field were expressed on multiple lines following the label, with each line starting with a dash. Notenik now supports this sort of metadata, both when reading existing files, and when modifying or adding files in this format. See the revised documentation on <a href="existing-text-files.html" class="wiki-link">Existing Text Files</a> for details. </p>
+
+</section>
+
+<section id="section-for-general-improvements-in-handling-alternate-metadata-formats">
 
 <h5 id="general-improvements-in-handling-alternate-metadata-formats">General Improvements in Handling Alternate Metadata Formats</h5>
 
 <p>Made several miscellaneous improvements in the way that Notenik handles text files in alternate text file formats. </p>
 
+</section>
+
+<section id="section-for-increased-respect-for-existing-collection-formats">
+
 <h5 id="increased-respect-for-existing-collection-formats">Increased Respect for Existing Collection Formats</h5>
 
 <p>When creating a new Note, Notenik would previously always use the Notenik format, even when adding a Note to a Collection containing text files in alternate formats. Notenik will now attempt to add new Notes in a format consistent with that of existing Notes in the folder. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="version-8.3.0.html" class="nav-link">Version 8.3.0</a></p></div>
+<p>Next: 16.86 <a href="version-8.3.0.html" class="nav-link">Version 8.3.0</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

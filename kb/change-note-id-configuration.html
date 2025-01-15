@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -53,6 +53,8 @@ window.MathJax = {
 
 <p>Starting with 14.0.0, however, a new option can be found beneath the Collection menu, called &#8216;Note ID Config&#8230;&#8217;.  Selecting this option will bring up a window containing four fields and two buttons. </p>
 
+<section id="section-for-note-identifier-rule">
+
 <h5 id="note-identifier-rule">Note Identifier Rule</h5>
 
 <p>This can be set to one of four values. </p>
@@ -63,21 +65,41 @@ window.MathJax = {
 <li><code>no title - auxiliary field only</code> - This removes the Title altogether, relying entirely on the secondary field to ensure uniqueness. </li>
 </ul>
 
+</section>
+
+<section id="section-for-auxiliary-field">
+
 <h5 id="auxiliary-field">Auxiliary Field </h5>
 
 <p>This is the label of the secondary field to be used to form a unique identifier for each Note. This defaults to &#8216;- none -&#8217;. </p>
+
+</section>
+
+<section id="section-for-text-id-rule">
 
 <h5 id="text-id-rule">Text ID Rule</h5>
 
 <p>This can have any of the same four values as the Note Identifier Rule, but this applies to how the Title and another optional field may be combined in order to identify a Note to the user. Notenik does not require such a display ID to be unique. </p>
 
+</section>
+
+<section id="section-for-text-id-separator">
+
 <h5 id="text-id-separator">Text ID Separator</h5>
 
 <p>This is a string that the user wishes to see between the Title field and the auxiliary field, when combining them for display to the user. For example, one might set it to &#8216; on &#8217; for use with an auxiliary date field, so that a user display might read &#8216;Hike in the Woods on 2024-02-15&#8217;. </p>
 
+</section>
+
+<section id="section-for-cancel">
+
 <h5 id="cancel">Cancel</h5>
 
 <p>Press this button to dismiss the Note Identification screen without making any changes. </p>
+
+</section>
+
+<section id="section-for-ok">
 
 <h5 id="ok">OK</h5>
 
@@ -96,16 +118,19 @@ window.MathJax = {
 
 <p>Notenik will attempt to rename existing Note files to conform to a modified configuration, but it will not update any links between Notes, so it&#8217;s best to finalize the Note ID Configuration for a Collection before adding any such links. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="common-tasks.html" class="nav-link">Common Tasks</a></p></div>
+<p>Next: 6. <a href="common-tasks.html" class="nav-link">Common Tasks</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

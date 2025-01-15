@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Repeat - ^R</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="repeat-r">12.3.41 Repeat - ^R</h4>
+<p>This variable modifier makes use of the &#8216;<code>^</code>&#8217; key to <em>shift</em> Notenik into a different set of functions to be performed by the following letters. </p>
+
+<p>When the letter &#8216;<code>R</code>&#8217; follows this <em>shift</em> character, it will engage the <em>Repeat</em> function, which will repeat a given string <em>x</em> number of times, with the variable being modified supplying the starting value for <em>x</em>. </p>
+
+<p>Two integer values may optionally be specified before the start of the string to be repeated. </p>
+
+<p>The first integer, which may be positive or negative, specifies a value to be added to the initial starting value supplied by the variable. It should be followed by a comma as a delimiter. If unspecified, this value will default to zero. </p>
+
+<p>The second integer will act as a multiplier. This too should be followed by a comma to act as a delimiter. If unspecified, this value will default to 1. </p>
+
+<p>The string following these first two values (up to the end of the variable, or to the next <em>Shift</em> character  of &#8216;<code>^</code>&#8217;) will be repeated <em>x</em> number of times, where the variable itself provides the starting value of <em>x</em>. </p>
+
+<p>The following example may be helpful. </p>
+
+<pre><code>=$level&amp;^r-1,2,&amp;nbsp;^$=
+</code></pre>
+
+<p>In this example, a non-breaking space](https://www.freecodecamp.org/news/html-space-how-to-add-a-non-breaking-space-with-the-nbsp-character-entity/) will be repeated <em>x</em> times, with the <a href="level.html" class="wiki-link">Level</a> variable supplying the starting value for <em>x</em>. </p>
+
+<p>The first integer supplied is &#8216;-1&#8217;, which means that a value of 1 will be subtracted from the level field. </p>
+
+<p>The second integer supplied is &#8216;2&#8217;, which means that the adjusted level field will be multiplied by two. </p>
+
+<p>The effect will be to indent the following content based on the depth of the level field, with a level of 1 producing no indentation, and with two non-breaking spaces being used for indentation for each higher level value. </p>
+
+<hr />
+<div>
+
+<p>Next: 12.3.42 <a href="formatting-string.html" class="nav-link">Formatting String</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

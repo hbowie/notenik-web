@@ -54,7 +54,9 @@
 					</div>
 				</div>
 				<div id="header-right">
-				<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/black/en-us?size=250x83&amp;releaseDate=1559606400&h=a4b914b28dab824baf057a0d2c8cbb5f" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"></a>
+					<a href="https://apps.apple.com/us/app/notenik/id1465997984?mt=12&itscg=30200&itsct=apps_box_badge&mttnsubad=1465997984" style="display: inline-block;">
+					<img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1559606400" alt="Download on the App Store" style="width: 245px; height: 82px; vertical-align: middle; object-fit: contain;" />
+					</a>
 				</div>
 			</header>
 			<!-- End of include file header.html -->
@@ -106,6 +108,8 @@
 
 <p>I&#8217;ll try to break this down into a rough sequence of separate steps, to make it easier to understand, but you don&#8217;t necessarily need to do all of this in any strict progression.  </p>
 
+<section id="section-for-1-set-notenik-to-request-access-at-startup">
+
 <h4 id="1-set-notenik-to-request-access-at-startup">1. Set Notenik to Request Access at Startup</h4>
 
 <p>Notenik does not require Full Disk Access, and it is not set to request it. But if you want to use Notenik to its fullest as a project launcher, you might want to give it broad access to your files and folders. </p>
@@ -114,13 +118,25 @@
 
 <p>As an alternative to setting this as a Notenik preference, you can just use the <strong>Grant Folder Access</strong> menu item at any point later to accomplish the same thing. </p>
 
+</section>
+
+<section id="section-for-2-set-up-your-project-launcher">
+
 <h4 id="2-set-up-your-project-launcher">2. Set Up Your Project Launcher </h4>
 
 <p>Create a <strong>New Collection</strong>. You can store it wherever you like, but I placed mine in the <strong>Notenik folder within iCloud Drive</strong>, just to make it easy to access. You can initialize it as a <strong>Sequenced List</strong>. However you initialize it, though, make sure the <strong>Link</strong>, <strong>Seq</strong> and <strong>Level</strong> fields are selected in your <strong>Collection Preferences</strong>, and then use <strong>Collection > Sort</strong> to sequence your list by <strong>Seq + Title</strong>. Name it however you like, but I called mine <em>Project Launcher</em>, just to show that I had no fear of the obvious. </p>
 
+</section>
+
+<section id="section-for-3-make-the-project-launcher-essential">
+
 <h4 id="3-make-the-project-launcher-essential">3. Make the Project Launcher Essential</h4>
 
 <p>Use <strong>File > Make This Collection Essential</strong> so that it automatically opens for you whenever you launch Notenik. I then position it in the upper left corner of my screen. </p>
+
+</section>
+
+<section id="section-for-4-add-things-you-want-to-work-on">
 
 <h4 id="4-add-things-you-want-to-work-on">4. Add Things You Want to Work On</h4>
 
@@ -132,11 +148,19 @@
 
 <p>As you add items to your project launcher, consider all of the different <em>kinds</em> of things that Notenik can launch for you. </p>
 
+</section>
+
+<section id="section-for-5-web-locations">
+
 <h4 id="5-web-locations">5. Web Locations</h4>
 
 <p>Starting with the most obvious, you can stash a web URL in a <strong>Link</strong> field, in order to later open that site/page. (One easy way to do this is to drag a URL from your web browser&#8217;s <strong>Location/Search</strong> field into the <strong>List</strong> tab for your collection.) </p>
 
 <p>If you&#8217;d like one or more web locations to automatically launch when your <em>Project Launcher</em> collection is opened, just give them <strong>Tags</strong> values of <em>Launch at Startup</em>. </p>
+
+</section>
+
+<section id="section-for-6-other-notenik-collections">
 
 <h4 id="6-other-notenik-collections">6. Other Notenik Collections</h4>
 
@@ -157,13 +181,25 @@
 
 <p>Now all you have to do is double-click that item in your project launcher collection to open that other collection. </p>
 
+</section>
+
+<section id="section-for-7-custom-url-actions">
+
 <h4 id="7-custom-url-actions">7. Custom URL Actions</h4>
 
 <p>Notenik, as well as many other Mac apps, have what are known as <em>Custom URL Schemes</em>, in which the name of the app appears at the beginning of the URL, instead of the usual <code>https</code>. You can use a launcher note to fire off any of these custom URL actions for Notenik or for any other app. </p>
 
+</section>
+
+<section id="section-for-8-local-files">
+
 <h4 id="8-local-files">8. Local Files</h4>
 
 <p>Once you&#8217;ve created a new note, and while you&#8217;re still on the <strong>Edit</strong> tab, you can use <strong>Set Local Link</strong> beneath the <strong>Note</strong> menu to pick a local file that you wish to be opened by the new note. For example, selecting an Xcode project file will cause that Xcode project to be opened when the Link is launched. </p>
+
+</section>
+
+<section id="section-for-9-notenik-parent-realms">
 
 <h4 id="9-notenik-parent-realms">9. Notenik Parent Realms</h4>
 
@@ -180,6 +216,10 @@
 
 <p>In my case, many of my projects are websites that I&#8217;ve created, with each folder containing the generated HTML, as well as Notenik collections, scripts and merge templates. So I store each website project folder as a separate item to be launched within my project launcher. Then, once I&#8217;ve opened the parent realm for a project, I can proceed to open items within that parent realm. </p>
 
+</section>
+
+<section id="section-for-10-bbedit-project-files">
+
 <h4 id="10-bbedit-project-files">10. BBEdit Project Files</h4>
 
 <p>I mentioned above that Notenik will help you open BBEdit project files found within a parent realm. </p>
@@ -190,9 +230,17 @@
 
 <p>Now when I open a parent realm from my launcher I&#8217;ll see a BBEdit project file listed, and can double-click on that to open  the entire project folder in BBEdit. Then, if I later request from Notenik to <strong>Text Edit</strong> a note or a collection template file, that file will open within the BBEdit project window. </p>
 
+</section>
+
+<section id="section-for-11-opening-folders-in-the-finder">
+
 <h4 id="11-opening-folders-in-the-finder">11. Opening Folders in the Finder</h4>
 
 <p>It&#8217;s also worth mentioning that, once you have opened a parent realm (or a simple collection, for that matter), you can ask Notenik to open the corresponding folder in the macOS Finder by using <strong>Open Folder in Finder</strong> beneath the <strong>File</strong> menu. </p>
+
+</section>
+
+<section id="section-for-12-putting-it-all-together">
 
 <h4 id="12-putting-it-all-together">12. Putting It All Together</h4>
 
@@ -211,6 +259,9 @@
 <p>And then start to get work done on the new project. </p>
 
 <p>Anyway, it&#8217;s all working pretty well for me, so I thought I would share. </p>
+
+</section>
+
 				</div>
 
 
@@ -219,7 +270,7 @@
 			<!-- Start of include file footer.html -->
 			<footer id="footer">
         <hr />
-Copyright &copy; 2019 - 2024 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
+Copyright &copy; 2019 - 2025 by <a class="subtle-link" href="https://hbowie.net">Herb Bowie</a> and published as open source software under the terms of the <a class="subtle-link" href="https://opensource.org/licenses/MIT">MIT license</a>
       </footer>
 			<!-- End of include file footer.html -->
 		</div>  <!-- end of wrapper div -->

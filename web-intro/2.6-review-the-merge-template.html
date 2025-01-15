@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Review the merge template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>2. <a href="2-add-content-to-your-website.html" class="nav-link">Add content to your website</a>&#160;&#8593;</p><h4 id="reviewthemergetemplate">2.6. Review the merge template</h4>
+<p>Here we are going to use the same HTML offered by Blake, but place it in our <em>template file</em>, instead of our content. </p>
+
+<p>Use your trusty text editor to look at the updated  <a href="https://notenik.app/kb/merge-templates.html" class="ext-link" target="_blank" rel="noopener">merge template</a> file named <code>chapter 02 - page template.html</code>, which you will find within the <code>factory/templates</code> folder. </p>
+
+<p>Here&#8217;s what you should see. </p>
+
+<pre><code>&lt;?nextrec?>
+&lt;?output "../../web/=$title&amp;f$=.html"?>
+&lt;!doctype html>
+&lt;html>
+  &lt;head>
+  	&lt;meta charset="utf-8">
+	&lt;title>=$header$=&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;h1>=$header$=&lt;/h1>
+    =$body&amp;fo$=
+&lt;?copyimages?>
+  &lt;/body>
+&lt;/html>
+&lt;?loop?>
+</code></pre>
+
+<p>Notice that the <code>nextrec</code>, <code>output</code> and <code>loop</code> lines are unchanged. </p>
+
+<p>Following the <code>nextrec</code> and <code>output</code> lines you should see HTML tags much like the ones described by Blake. </p>
+
+<p>The <code>=$header$=</code> variable is being used for the web page&#8217;s title and for its first heading. </p>
+
+<p>We can still see the <code>=$body$=</code> variable, but now we&#8217;ve added a couple of useful <a href="https://notenik.app/kb/variable-modifiers.html" class="ext-link" target="_blank" rel="noopener">variable modifiers</a> with the embedded string <code>&amp;fo</code>.  Here the ampersand indicates that one or more variable modifiers will be following, the <code>o</code> requests that the body text be converted from Markdown to HTML, and the <code>f</code> requests that any local image file names be converted to a web-frienldy format, if they are not already formatted in that way. </p>
+
+<p>And then we have the addition of the <code>copyimages</code> command, which will copy any referenced local image files from the content folder to the web folder. </p>
+
+<p>One important thing to remember is that merge <em>commands</em>, such as <code>&lt;?nextrec?&gt;</code> and <code>&lt;?copyimages?&gt;</code>, must always start in the first column of a new line, and be on a line by themselves. Merge variables such as <code>=$body$=</code>, on the other hand, can appear anywhere. </p>
+
+<p>So that&#8217;s it for the merge template. </p>
+
+<hr />
+<div>
+
+<p>Next: 2.7. <a href="2.7-review-the-script-file.html" class="nav-link">Review the script file</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

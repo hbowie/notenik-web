@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>copyimages command</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>12.4 <a href="merge-commands.html" class="nav-link">Merge Commands</a>&#160;&#8593;</p><h4 id="copyimagescommand">12.4.16 copyimages command</h4>
+<p>The <em>copyimages</em> command can be used to copy local image files from a content collection to an output website folder. </p>
+
+<p>The command line should appear as follows: </p>
+
+<pre><code>&lt;?copyimages?>
+</code></pre>
+
+<p>The images to be copied will be obtained from the last field output via a merge variable with a modifier of <a href="markdown-to-html-o.html" class="wiki-link">Markdown to HTML - O</a>, so this command line should normally immediately follow the line containing the <code>=$body&amp;o$=</code> string. </p>
+
+<p>Any local image files referenced in the input will be copied to the output folder identified by the script command identifying the <code>webroot</code> to be used by the template, preserving any folder structure. </p>
+
+<p>So an image file identied by a Markdown line such as the following: </p>
+
+<pre><code>![Sample image file](images/sample.jpg)
+</code></pre>
+
+<p>&#8230; would be copied to <code>images/sample.jpg</code> within the output web folder. </p>
+
+<p>This command can be used in conjunction with the <a href="file-name-f.html" class="wiki-link">File Name - F</a> variable modifier to convert normal macOS local image file names (with spaces, capital letters, etc.) to web-friendly file names. </p>
+
+<p>See the following example for how this might be used within a merge template. </p>
+
+<pre><code>=$body&amp;fo$=
+&lt;?copyimages?>
+</code></pre>
+
+<p>So, in this case, a local image file at &#8220;<code>images/Herb with Hank.jpg&#8221; would be copied to '</code>images/herb-with-hank.jpg`' within the output web folder. </p>
+
+<hr />
+<div>
+
+<p>Next: 12.4.17 <a href="include-command.html" class="nav-link">include command</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

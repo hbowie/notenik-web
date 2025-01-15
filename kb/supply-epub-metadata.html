@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -57,6 +57,8 @@ window.MathJax = {
 
 <p>Since a Note containing such a command is not meant to be read sequentially as part of the overall Collection, Notenik will generally skip such pages when formatting <a href="streamlined-reading.html" class="wiki-link">Streamlined Reading</a> navigational elements. </p>
 
+<section id="section-for-varying-the-modified-date">
+
 <h5 id="varying-the-modified-date">Varying the modified date</h5>
 
 <p>Note that the <code>dcterms:modified</code> value is used as part of the key to form a unique identifier for an ebook. So if you have multiple copies of the same book, and this date-and-time value does not change, then e-book readers such as Apple Books will not be able to distinguish between them (and may in fact refuse to import something it considers a duplicate). </p>
@@ -68,16 +70,19 @@ window.MathJax = {
 
 <p>Notenik will then replace the <code>=$today&amp;yyyy-MM-dd'T'HH:mm:ss'Z'$=</code> string with the properly formatted current date and time, as part of the EPUB export operation. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="files-and-folders.html" class="nav-link">Files and Folders</a></p></div>
+<p>Next: 8. <a href="files-and-folders.html" class="nav-link">Files and Folders</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

@@ -1,0 +1,57 @@
+module	action	modifier	object	value
+
+<!-- Generate Adventures -->
+
+input	set		xpltags	false
+input	set		dirdepth	1
+input	open	notenik-defined		/Users/hbowie/Xcode/NotenikDocs/adventures
+filter	clear			
+filter	add	ge	Status	6
+filter	set		params	
+sort	clear			
+sort	add	descending	Date	
+sort	add	descending	Timestamp	
+sort	add	ascending	Title	
+sort	set		params	
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-next-template.html
+template	generate
+template	webroot			/Users/hbowie/Sites/notenik-web
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-template.html
+template	generate			
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventures-index-template.html
+template	generate			
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventures-full-content-template.html
+template	generate			
+template	open			/Users/hbowie/Sites/notenik-web/templates/latest-adventure-template.html
+template	generate
+filter	clear			
+filter	set		params	
+filter	add	ge	Status	6
+filter	add	le	data-count	20
+filter	set		params	
+template	open			/Users/hbowie/Sites/notenik-web/templates/atom-template.xml
+template	generate
+template	open			/Users/hbowie/Sites/notenik-web/templates/feed-template.json
+template	generate
+template	open			/Users/hbowie/Sites/notenik-web/templates/micro-template.json
+template	generate
+template	open			/Users/hbowie/Sites/notenik-web/templates/rss-template.xml
+template	generate
+
+<!-- Generate Tags Explosion for Adventures -->
+
+input	set		xpltags	true
+input	set		dirdepth	1
+input	open	notenik-split-tags		/Users/hbowie/Xcode/NotenikDocs/adventures
+filter	clear			
+filter	add	ge	Status	6
+filter	set		params	
+sort	clear			
+sort	add	ascending	Tag	
+sort	add	descending	Date	
+sort	add	descending	Timestamp	
+sort	add	ascending	Title	
+sort	set		params	
+template	open			/Users/hbowie/Sites/notenik-web/templates/adventure-tags-template.html
+template	generate
+

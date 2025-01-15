@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Review the blog template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>6. <a href="6-adding-a-blog.html" class="nav-link">Adding a blog</a>&#160;&#8593;</p><h4 id="reviewtheblogtemplate">6.10. Review the blog template</h4>
+<p>Let&#8217;s review the <code>templates</code> file named <code>chapter 06 - blog template.html</code>. </p>
+
+<p>This will generate an include file to be pulled in later. This is what the template looks like. </p>
+
+<pre><code>&lt;?output "../includes-gen/blog.html" ?>
+&lt;?nextrec?>
+      &lt;article>
+        &lt;h2>
+          &lt;a href="posts/=$date&amp;yyyy-MM-dd$=-=$title&amp;f$=.html">
+            =$title$=
+          &lt;/a>
+        &lt;/h2>
+        &lt;p>&lt;time datetime="=$date&amp;yyyy-MM-dd$=">=$date&amp;MMM d, yyyy$=&lt;/time>&lt;/p>
+        =$teaser&amp;o$=
+    &lt;/article>
+&lt;?loop?>
+</code></pre>
+
+<p>You should be able to see that this looks very much like Blake&#8217;s <a href="https://www.htmlforpeople.com/adding-a-blog/#fill-out-our-blog-index-page" class="ext-link" target="_blank" rel="noopener">index page</a>, except that we&#8217;re using variables rather than actual literal values. </p>
+
+<p>You may notice we&#8217;re using the merge variable <a href="https://notenik.app/kb/formatting-string.html" class="ext-link" target="_blank" rel="noopener">formatting string</a> of <code>&amp;yyyy-MM-dd$</code> to format the date field into a year-month-day format, and then using a different string, <code>&amp;MMM d, yyyy</code>, to format it into a more readable format, with the month first, and spelled out using a 3-letter abbreviation. </p>
+
+<p>You can also see that we&#8217;re displaying the Teaser field here, to give readers some idea of what each post is about, and are using the <code>&amp;o</code> merge variable modifier, which will apply Markdown parsing to the field. (This means that we can use the Markdown syntax in the Teaser field, as well as in the Body field!) </p>
+
+<hr />
+<div>
+
+<p>Next: 6.11. <a href="6.11-review-the-post-template.html" class="nav-link">Review the post template</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

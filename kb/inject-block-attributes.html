@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Inject Block Attributes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.7 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a>&#160;&#8593;</p><h5 id="injectblockattributes">7.3.7.6 Inject Block Attributes</h5>
+<p>The <code>inject</code> command can be used to specify an HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class" class="ext-link" target="_blank" rel="noopener">class</a>, an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id" class="ext-link" target="_blank" rel="noopener">id</a> and/or <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style" class="ext-link" target="_blank" rel="noopener">style</a> for the following block level element, such as a paragraph or an unordered list. </p>
+
+<p>The command takes from 2 - 4 parameters, separated by <code>|</code> characters. </p>
+
+<p>Here is a general form of the command. </p>
+
+<p><code>{:inject:</code> <em>element</em> <code>|</code> <em>class</em> <code>|</code> <em>id</em> <code>|</code> <em>style</em> <code>}</code> </p>
+
+<p>Here&#8217;s an example of the sort of code you might use. </p>
+
+<pre><code>{:inject: p | notice }
+**Want to learn how to make a website like this?**   
+Check out the free web book [HTML for People](https://htmlforpeople.com), along with the Notenik Companion. It's made for everyone and teaches you how to make a website in a friendly, approachable way.
+</code></pre>
+
+<p>The first parameter, the <code>p</code>, indicates that the block level element to be modified is a paragraph. The second parameter, the <code>notice</code>, specifies the desired class value to be injected into the HTML. </p>
+
+<p>And here&#8217;s the way it might appear (depending on CSS styling). </p>
+
+<p class="notice"><strong>Want to learn how to make a website like this?</strong>   <br />
+Check out the free web book <a href="https://htmlforpeople.com" class="ext-link" target="_blank" rel="noopener">HTML for People</a>, along with the Notenik Companion. It&#8217;s made for everyone and teaches you how to make a website in a friendly, approachable way. </p>
+
+<p>Notiice that standard Markdown syntax can be freely employed within the following block, and that the specified class value is only applied to a single block element. </p>
+
+<hr />
+<div>
+
+<p>Next: 7.3.7.7 <a href="start-a-segment.html" class="nav-link">Start a Segment</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

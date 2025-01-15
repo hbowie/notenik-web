@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Terms and concepts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>1. <a href="1-zero-to-internet-your-first-website.html" class="nav-link">Zero to internet: your first website</a>&#160;&#8593;</p><h4 id="termsandconcepts">1.1. Terms and concepts</h4>
+<p>As we gain more experience with website creation, we will see that our concerns can be separated into three different areas: </p>
+<ol>
+<li>Content — the words and images we wish to share; </li>
+<li>Site and Page Structure — the skeletal structure into which we pour our content; </li>
+<li>Style — font choices, color schemes, text adornment, and so on. </li>
+</ol>
+
+<p>Each piece of <em>content</em> we wish to publish on our website should probably be unique — no point in repeating ourselves, is there? </p>
+
+<p>But the <em>site and page structure</em> should generally <em>not</em> be unique: as visitors move around our site, we probably wish to see common elements such as navigation bars on every page, and wish to see each page laid out in roughly the same fashion. </p>
+
+<p>And then we probably wish to see a consistent <em>style</em> across our site as well. </p>
+
+<p>As we continue our website creation journey, we will learn that our website&#8217;s style is generally defined using a different language, something called CSS (short for Cascading Style Sheets), and that HTML makes it easy to put all of your stylistic elements into a single file, and then reference that same style sheet consistently from every page of your site. </p>
+
+<p>So that handles the issue of style: easy to keep it consistent across your entire site, and easy to implement changes across your entire site, by making changes to a single file. </p>
+
+<p>But then that still leaves us with the issue of site and page structure. </p>
+
+<p>Here&#8217;s where Notenik can help out. </p>
+
+<p>Notenik can assist you in creating and maintaining a website by acting as a <a href="https://en.wikipedia.org/wiki/Static_site_generator" class="ext-link" target="_blank" rel="noopener">static site generator</a>. </p>
+
+<p><img src="images/static-flow.png" alt="diagram showing static site generation" /> </p>
+
+<p>This means that, instead of mixing your page/site structure and content together on every page, you will be creating content as <em>notes</em> within Notenik, and then creating one or more <em>templates</em> that will contain page/site structure. </p>
+
+<p>Each note containing content will eventually become a web page or a post. Each note is saved as an ordinary text file, and you can always open and view each note using your trusty text editor. Each note contains two or more fields: a Title and a Body, at a minimum, but also other handy fields, as they are needed, such as a <em>Seq</em> field that can be used to sort your notes into a desired order. </p>
+
+<p>Notenik uses the term <em>collection</em> to refer to a folder full of notes. Our demo project will contain a few collections within our <code>content</code> folder: one for <em>pages</em> that are relatively static, one for <em>posts</em> that we will be creating as we continue to maintain our site, and one for the various <em>sections</em> of our <em>résumé</em> (otherwise known as a <em>CV</em>). </p>
+
+<p>Your content will then be poured into templates in order to apply consistent page/site structure to the completed web pages. </p>
+
+<p>And the scripts will sort and filter your notes, and then match up the appropriate content with the corresponding templates, in the correct sequence, in order to create your complete site. </p>
+
+<p>As we continue on our HTML journey, we will see that some elements of HTML fall more into the page/site structure area, while others tend to fall into the content area. </p>
+
+<p>So some of the HTML that we learn from Blake will go into our template files, to define page and site structure, while other HTML elements will go into our notes, to structure our text into things like paragraphs and lists, and to provide various forms of emphasis, as writers tend to do with things like bold type, italics and underlines. </p>
+
+<p>And then we will see that much of the HTML going into our content can be more concisely expressed using <a href="https://www.markdownguide.org/" class="ext-link" target="_blank" rel="noopener">Markdown</a>. Again, though, the elements we will learn from Blake will be the same — we will just be using a sort of shorthand to make it easier for us to write those elements, and easier for us to work with our content.  </p>
+
+<p>All static site generators involve tradeoffs. Their advantage is that they eliminate repetitive HTML coding, saving time and preventing errors, and making changes easier. Their disadvantage is that they add an extra step to website creation, by requiring a <em>build</em> step.  Notenik&#8217;s build step consists of running one or more scripts using Notenik&#8217;s script runner. </p>
+
+<p>As we work through this tutorial, there will be actions to be taken within Notenik, others within our text editor, and still others to be taken with the macOS Finder. I&#8217;ll try to clearly identify which steps are to be taken with which tool. </p>
+
+<p>BTW, all of the details about Notenik can be found in the Notenik Knowledge Base, which can be found either <a href="https://notenik.app/kb/notenik-knowledge-base.html" class="ext-link" target="_blank" rel="noopener">on the web</a>, or <a href="notenik://help" class="wiki-link">within Notenik</a> itself. From time to time I&#8217;ll provide links to relevant sections within the web version of this document, in case you want more details on any particular topic discussed here. </p>
+
+<p>I think that&#8217;s enough of a conceptual overview for now&#8230; let&#8217;s start creating! </p>
+
+<hr />
+<div>
+
+<p>Next: 1.2. <a href="1.2-create-a-new-notenik-project.html" class="nav-link">Create a New Notenik project</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

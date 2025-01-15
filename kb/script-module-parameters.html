@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -37,11 +37,17 @@ window.MathJax = {
 <p>13.3 <a href="scripting-modules.html" class="nav-link">Scripting Modules</a>&#160;&#8593;</p><h4 id="scriptmoduleparameters">13.3.7 Script Module Parameters</h4>
 <p>The following actions are allowed. </p>
 
+<section id="section-for-include">
+
 <h4 id="include">Include</h4>
 
-<p>The value field should specify the name of the file to be included. It must be in the same directory as the script being executed, and its file extension must be &#8216;<code>.tcz</code>&#8217;. The file extension may be omitted. </p>
+<p>The value field should specify the name of the file to be included. It must be in the same directory as the script being executed. If the file extension is omitted, then it will be assumed to have have the same extension as the including file. </p>
 
 <p>Note that one include may not be nested within another. </p>
+
+</section>
+
+<section id="section-for-set">
 
 <h4 id="set">Set</h4>
 
@@ -52,17 +58,19 @@ window.MathJax = {
 <li>lognoise - Specify a value of either <code>quiet</code> or <code>noisy</code>.  A value of <code>quiet</code> will suppress some common error messages, such as a template variable with no value. </li>
 </ul>
 
+</section>
+
 
 <hr />
 <div>
 
-<p>Next: <a href="script-file-example.html" class="nav-link">Script File Example</a></p></div>
+<p>Next: 13.4 <a href="script-file-example.html" class="nav-link">Script File Example</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

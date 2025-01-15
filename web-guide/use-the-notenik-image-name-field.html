@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Use the Notenik Image-Name field</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+
+<header>
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+
+
+</header>
+
+<main>
+<p>13. <a href="image-handling.html" class="nav-link">Image Handling</a>&#160;&#8593;</p><h3 id="usethenotenikimage-namefield">13.3 Use the Notenik Image-Name field</h3>
+<p>This option will allow you to optionally place one image at the top of each piece of content. </p>
+
+<p>There are several different Notenik pieces here that need to be coordinated. </p>
+
+<p>a. As with option #2, above, you will need to Enable Local Image References on your <a href="https://notenik.app/kb/tailor-collection-settings.html" class="ext-link" target="_blank" rel="noopener">Collection Settings</a>. </p>
+
+<p>b. You will need to add the <a href="https://notenik.app/kb/image-name.html" class="ext-link" target="_blank" rel="noopener">Image Name</a> field to your <a href="https://notenik.app/kb/the-collection-template-file.html" class="ext-link" target="_blank" rel="noopener">Collection Template file</a>. </p>
+
+<p>c. You may wish to also add fields named <code>Image Alt</code>, <code>Image Caption</code>, <code>Image Credit</code> and/or <code>Image Credit Link</code>, if you wish to supply any of this information along with your images. </p>
+
+<p>d. You may then add one image file to each of your Notes as a <a href="https://notenik.app/kb/file-attachments.html" class="ext-link" target="_blank" rel="noopener">File Attachment</a>, generally just by dragging an image file from the Finder and then dropping it onto the row for the intended Note on the List tab of your Collection window. These image files will then be stored in the <code>files</code> folder inside of your content folder. </p>
+
+<p>e. If the desired file is not already showing up at the top of your Display, then you may edit your Note and explicitly select the desired file from the <code>Image Name</code> dropdown. You may also wish to fill in the associated metadata fields, if you have included them in your Collection template file. </p>
+
+<p>f. In your <a href="https://notenik.app/kb/merge-templates.html" class="ext-link" target="_blank" rel="noopener">Merge Template(s)</a> then, you can use the <a href="https://notenik.app/kb/image-slug.html" class="ext-link" target="_blank" rel="noopener">Image Slug</a> derived variable to nicely format each image at the top of each page. </p>
+
+<p>g. Just preceding the appearance of the <code>Image Slug</code> variable, you can then include a <a href="https://notenik.app/kb/copyfile-command.html" class="ext-link" target="_blank" rel="noopener">copyfile merge command</a>. The two lines together, then, might look as follows. </p>
+
+<pre><code>&lt;?copyfile "../../content/files/=$imagename$=" "../../web/images/=$imagename&amp;f$=" ?>
+=$image-slug$=
+</code></pre>
+
+<p>This command, then, as shown above, would copy each named image file from your content <code>files</code> folder to your web <code>images</code> folder. </p>
+
+<hr />
+<div>
+
+<p>Next: <a href="create-and-run-notenik-scripts.html" class="nav-link">Create and Run Notenik Scripts</a></p></div>
+
+
+</main>
+</body>
+</html>

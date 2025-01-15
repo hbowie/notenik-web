@@ -12,7 +12,7 @@
 	  <title>=$title&x$=</title>
 	  <link>https://notenik.app/adventures/=$title&f$=.html</link>
 	  <guid>https://notenik.app/adventures/=$title&f$=.html</guid>
-	  <pubDate>=$date&EEE, dd MMM yyyy$= 12:00:00 -0700</pubDate>
+	  <pubDate>=$date&EEE, dd MMM yyyy$= 09:00:00 -0700</pubDate>
 	  <description>=$teaser&xo-$=</description>
 	</item>
 <?endif?>

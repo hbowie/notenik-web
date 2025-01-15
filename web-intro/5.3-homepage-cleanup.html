@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Homepage cleanup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5. <a href="5-adding-an-about-page.html" class="nav-link">Adding an about page</a>&#160;&#8593;</p><h4 id="homepagecleanup">5.3. Homepage cleanup</h4>
+<p>Let&#8217;s go ahead and make the sorts of changes to our Index note that Blake recommends. We&#8217;ll do this within Notenik. </p>
+
+<p>Here&#8217;s how we can create a figure with a caption using Notenik&#8217;s Markdown parser. </p>
+
+<pre><code>{:figure}
+![Photograph of Seattle at dusk](images/seattle-at-dusk.jpg)
+{:caption}
+An autumn Seattle Skyline at sunset. [Photo source](https://www.istockphoto.com/photo/seattle-fall-skyline-gm1183468338-332764260)
+{:endfigure}
+</code></pre>
+
+<p>We use the Notenik Markdown <code>{:figure}</code> command to start the figure. </p>
+
+<p>Then we use standard Markdown to generate the code for the figure itself. </p>
+
+<p>Then we use the Notenik Markdown <code>{:caption}</code> command to indicate the start of a caption. </p>
+
+<p>Then, again, we use standard Markdown to generate the code for the caption. </p>
+
+<p>And finally we close everything up with the Notenik Markdown <code>{:endfigure}</code> command. </p>
+
+<p>And here&#8217;s how we would create the notice within Notenik. </p>
+
+<pre><code>{:inject: p | notice }
+**Want to learn how to make a website like this?**   
+Check out the free web book [HTML for People](https://htmlforpeople.com), along with the [Notenik Companion](https://notenik.app/web-intro/). It's made for everyone and teaches you how to make a website in a friendly, approachable way.
+</code></pre>
+
+<p>The <code>inject</code> command can be used to specify a class value for the following paragraph. Here we supply a parameter of <code>p</code> to indicate we want to inject the class into the following paragraph, and then supply a parameter of <code>notice</code> to supply the desired <code>class</code> value for the paragraph. </p>
+
+<hr />
+<div>
+
+<p>Next: 5.4. <a href="5.4-build-and-review.html" class="nav-link">Build and Review</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

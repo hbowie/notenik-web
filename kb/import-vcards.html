@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -156,6 +156,8 @@ window.MathJax = {
 
 <p>When performing a vCard import, Notenik will unlock the Collection dictionary so that any missing fields may be added, to avoid data loss. So even if you start with <a href="basic-notes.html" class="wiki-link">Basic Notes</a>, the import will add the needed field definitions. </p>
 
+<section id="section-for-multiple-values">
+
 <h6 id="multiple-values">Multiple Values</h6>
 
 <p>Note that both the Apple Contacts app and the vCard spec support multiple values for certain fields, such as ADR, EMAIL, TEL and URL. </p>
@@ -167,17 +169,19 @@ window.MathJax = {
 <li>TEL - The first telephone number found for a contact will become the <code>Phone</code> field; additional ones will be differentiated by a suffix: either <code>-cell</code>, <code>-home</code>, or <code>-work</code>, of using a trailing integer suffix if there are no other distinguising qualifiers. </li>
 </ul>
 
+</section>
+
 
 <hr />
 <div>
 
-<p>Next: <a href="export-to-ical.html" class="nav-link">Export to iCal</a></p></div>
+<p>Next: 10.2.4 <a href="export-to-ical.html" class="nav-link">Export to iCal</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

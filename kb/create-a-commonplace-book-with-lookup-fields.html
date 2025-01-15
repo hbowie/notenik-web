@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -45,6 +45,8 @@ window.MathJax = {
 
 <p>In order to understand all the details, it may help at times to make <a href="use-of-a-text-editor.html" class="wiki-link">use of a text editor</a> in order to see what&#8217;s going on under the hood. </p>
 
+<section id="section-for-three-nested-collections">
+
 <h5 id="three-nested-collections">Three Nested Collections</h5>
 
 <p>First, we need to understand that our Commonplace book consists of three different Notenik Collections. We might arrange these Collections in a variety of positions relative to each other, but my model implementation has these three Collections nested within one other. The <code>author-notes</code> folder is at the bottom, within the <code>author-works</code> folder, and the <code>author-works</code> folder is within the main folder (however you have named it). There are a couple of advantages to arranging things this way: </p>
@@ -55,7 +57,11 @@ window.MathJax = {
 
 <p>So now let&#8217;s look at each Collection in turn, starting at the bottom. We&#8217;ll look at <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a> for each Collection, since this is where the fields are defined, as well as the relationships between Collections. </p>
 
-<p>You may find it handy to use the <a href="open-parent-realm.html" class="wiki-link">Open Parent Realm</a> command on the top folder of your new Commonplace book, since this will give you a convenient way to open each of the three Collections in turn. </p>
+<p>You may find it handy to use the <a href="open-project-folder.html" class="wiki-link">Open Project Folder</a> command on the top folder of your new Commonplace book, since this will give you a convenient way to open each of the three Collections in turn. </p>
+
+</section>
+
+<section id="section-for-author-notes">
 
 <h5 id="author-notes">Author Notes</h5>
 
@@ -86,6 +92,10 @@ Author Notes: &lt;body>
 <p>BTW, you&#8217;ll see that I&#8217;m entering the author names with first names first: in other words, &#8216;Raymond Chandler&#8217;, as opposed to &#8216;Chandler, Raymond&#8217;. I recommend you do the same, and make this practice consistent. </p>
 
 <p>One other important point is the shortcut assigned to the Collection on the Collection Settings screen. It should be set to <code>qauthors</code>. This is the field that will allow your other Collections to lookup information in this Collection. </p>
+
+</section>
+
+<section id="section-for-author-works">
 
 <h5 id="author-works">Author Works</h5>
 
@@ -129,6 +139,10 @@ Work Notes: &lt;body>
 
 <p>If you look at this Collection&#8217;s Settings, you should see that a shortcut of <code>qworks</code> has been assigned. </p>
 
+</section>
+
+<section id="section-for-commonplace-book">
+
 <h5 id="commonplace-book">Commonplace Book</h5>
 
 <p>And now, finally, we&#8217;re ready to look at the commonplace book itself. I&#8217;ve called mine <code>commonplace-book</code>, and here&#8217;s its template file: </p>
@@ -164,6 +178,10 @@ Body:
 
 <p>At first glance, the field <code>Work Pages</code> field may seem like information about a work that could be moved to the Author Works Notes, but this is actually meant to call out the pages of the work on which this particular quotation was found, and so remains information about the quotation, and not about the work more generally. </p>
 
+</section>
+
+<section id="section-for-making-use-of-your-commonplace-book">
+
 <h5 id="making-use-of-your-commonplace-book">Making Use of Your Commonplace Book</h5>
 
 <p>When viewing one of your quotations on the Display tab, you&#8217;ll see that both of the lookup fields &#8211; <code>Author</code> and <code>Work Title</code> &#8211; appear following disclosure triangles (so long as there is some additional info to disclose). Click on one of the triangles, and you&#8217;ll see additional info appear that is being pulled from the appropriate Lookup Collection. </p>
@@ -172,20 +190,27 @@ Body:
 
 <p>Edit one of your quotations, and you will see that the Author and the Work Title both appear as drop-down menus, allowing you to select an existing value from one of these Lookup Collections. </p>
 
+</section>
+
+<section id="section-for-summary">
+
 <h5 id="summary">Summary </h5>
 
 <p><code>Lookup</code> fields can be used for many more purposes, but this project should give you some idea about how to implement them in at least one practical, real-world example. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="write-a-web-book.html" class="nav-link">Write a Web Book</a></p></div>
+<p>Next: 14.7 <a href="write-a-web-book.html" class="nav-link">Write a Web Book</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

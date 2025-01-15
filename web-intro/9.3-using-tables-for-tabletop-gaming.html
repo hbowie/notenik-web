@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Using tables for tabletop gaming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="add-ins/lite-yt-embed.min.css" type="text/css" />
+<script src="add-ins/lite-yt-embed.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Intro to Website Creation using Notenik </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="15.1-detailed-table-of-contents.html" class="wiki-link">Contents</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>9. <a href="9-adding-a-fun-page.html" class="nav-link">Adding a fun page</a>&#160;&#8593;</p><h4 id="usingtablesfortabletopgaming">9.3. Using tables for tabletop gaming</h4>
+<p>As it happens, Notenik supports a common Markdown extension that provides a shorthand syntax for <a href="https://notenik.app/kb/tables.html" class="ext-link" target="_blank" rel="noopener">defining HTML tables</a>. </p>
+
+<p>Here&#8217;s the entire contents of our D&D section. </p>
+
+<pre><code>## D&amp;D Stuff
+
+Dungeons &amp; Dragons (D&amp;D) is a fun tabletop game 
+where you create characters and go on epic adventures 
+with friends. Guided by a Dungeon Master (DM), you'll 
+roll dice to see what happens next. It's all about creativity, 
+teamwork, and having a blast as you tackle quests, 
+fight monsters, and find awesome treasures.
+
+### Random encounter table
+
+This is a table you can use to randomly decide what enemy 
+or creature the players are going to encounter. Just roll a d8.
+
+| Roll (1d8) | Encounter |
+| --------- | :-------- |
+| 1 | Band of Goblins |
+| 2 | Wandering Merchant |
+| 3 | Group of Bandits |
+| 4 | Pack of Wolves |
+| 5 | Traveling Minstrels |
+| 6 | Lost Child |
+| 7 | Hidden Trap |
+| 8 | Old Hermit |
+</code></pre>
+
+<p>And here&#8217;s how the table renders. </p><table>
+<tr>
+<th>
+ Roll (1d8) </th>
+<th style="text-align:left;">
+ Encounter </th>
+ </tr>
+<tr>
+<td>
+ 1 </td>
+<td style="text-align:left;">
+ Band of Goblins </td>
+</tr>
+<tr>
+<td>
+ 2 </td>
+<td style="text-align:left;">
+ Wandering Merchant </td>
+</tr>
+<tr>
+<td>
+ 3 </td>
+<td style="text-align:left;">
+ Group of Bandits </td>
+</tr>
+<tr>
+<td>
+ 4 </td>
+<td style="text-align:left;">
+ Pack of Wolves </td>
+</tr>
+<tr>
+<td>
+ 5 </td>
+<td style="text-align:left;">
+ Traveling Minstrels </td>
+</tr>
+<tr>
+<td>
+ 6 </td>
+<td style="text-align:left;">
+ Lost Child </td>
+</tr>
+<tr>
+<td>
+ 7 </td>
+<td style="text-align:left;">
+ Hidden Trap </td>
+</tr>
+<tr>
+<td>
+ 8 </td>
+<td style="text-align:left;">
+ Old Hermit </td>
+</tr>
+</table>
+
+<p>You&#8217;ll notice we&#8217;re using pipe characters to draw the outlines of our columns. </p>
+
+<p>And then you&#8217;ll see that we have a special row between the table headings and the table data, in which we place three or more dashes denoting each column. If we start the dashes with a colon, then that indicates that we want that column heading left-justified, instead of the default centering. </p>
+
+<p>A few additional table-taming tips: </p>
+<ul>
+<li><p>If you use a monospaced font for your editing, then it&#8217;s sometimes tempting (and fun!) to insert enough spaces at various places so that the pipe characters line up in your Markdown source. But this is strictly optional, and won&#8217;t affect the final HTML output. </p></li>
+<li><p>Beneath the Notenik Edit menu we can find an item titled <em>Paste CSV -> Table</em>, which will take a comma-separated values text block from the System clipboard and reformat it into a Markdown table before pasting it into our note. </p></li>
+<li><p><a href="https://tableflipapp.com/" class="ext-link" target="_blank" rel="noopener">TableFlip</a> is a handy app for working with Markdown tables. </p></li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: 9.4. <a href="9.4-embedded-video.html" class="nav-link">Embedded video</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie, licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>. </p>
+
+</footer>
+</body>
+</html>

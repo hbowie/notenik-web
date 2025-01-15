@@ -17,14 +17,14 @@ window.MathJax = {
 </head>
 <body>
 
-<header>
+<header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
 <p>The Notenik Knowledge Base </p>
 
 </header>
 
-<nav>
+<nav class="nnk-nav">
 <ul>
 <li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
@@ -39,9 +39,15 @@ window.MathJax = {
 
 <p>These options fall into three different categories. </p>
 
+<section id="section-for-content">
+
 <h5 id="content">Content</h5>
 
-<p>You can choose to share the entire Note, with all of its fields, or only the Body of the Note. </p>
+<p>You can choose to share the entire Note, with all of its fields, or only the Body of the Note, or only the Teaser field. </p>
+
+</section>
+
+<section id="section-for-destination">
 
 <h5 id="destination">Destination</h5>
 
@@ -51,6 +57,10 @@ window.MathJax = {
 <li>Write to a File &#8211; You will be prompted to supply a file name and location, and the results will be written to disk. </li>
 <li>Open in Browser &#8211; The results will be written to a disk file within a sub-folder named <code>browse</code>, using a file name generated from your Note&#8217;s title, and your preferred Web browser will then be asked to open this file. Once the file is open within your browser, of course, then you can print the page, or generate a PDF from it. Note that, for this option, the format should generally be set to the <strong>HTML Document</strong> option.  </li>
 </ul>
+
+</section>
+
+<section id="section-for-format">
 
 <h5 id="format">Format</h5>
 
@@ -68,6 +78,10 @@ window.MathJax = {
 <li>Using Merge Template &#8211; Formats your Note using a <a href="merge-templates.html" class="wiki-link">Merge Template</a> that you specify. If a <code>reports</code> subfolder is available within your Collection, then Notenik will start there. The Merge Template should start with a <code>nextrec</code> command, and end with a <code>loop</code> command. An <code>output</code> command need not be present, but will send the generated output to the specified file if it is present. </li>
 </ul>
 
+</section>
+
+<section id="section-for-posting-to-a-microblog">
+
 <h5 id="posting-to-a-microblog">Posting to a Microblog</h5>
 
 <p>On the Notenik General Settings you can set a Microblog handle and a Microblog domain for yourself. </p>
@@ -80,16 +94,19 @@ window.MathJax = {
 
 <p>If you have entered a handle and a domain, and if the domain points to a Mastodon server, then invoking the option beneath the <strong>Notenik</strong> menu for <strong>Mastodon Profile</strong> will cause your preferred Web browser to open your profile page on your Mastodon server. </p>
 
+</section>
+
+
 <hr />
 <div>
 
-<p>Next: <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a></p></div>
+<p>Next: 10.2 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a></p></div>
 
 
 </main>
 
-<footer>
-<p>Authored by Herb Bowie as  open source software under the terms of the MIT License. </p>
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
 
 </footer>
 </body>

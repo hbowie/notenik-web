@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Start a Figure</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>7.3.7 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a>&#160;&#8593;</p><h5 id="startafigure">7.3.7.3 Start a Figure</h5>
+<p>It&#8217;s sometimes handy to use an HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" class="ext-link" target="_blank" rel="noopener">figure</a> element, along with a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" class="ext-link" target="_blank" rel="noopener">figcaption</a> element, to display some item with a caption beneath. </p>
+
+<p>It&#8217;s certainly possible to insert a block of HTML into a Markdown field in order to take advantage of these elements, but then one must also use straight HTML for the figured item and for the caption, which may well be more HTML than one wants to tackle without any parsing assistance. </p>
+
+<p>Notenik offers a better (or at least a different) way. </p>
+
+<p>Here&#8217;s an example of the Notenik way to provide a figure with a caption. </p>
+
+<pre><code>{:figure}
+![Photograph of Seattle at duskl](images/seattle-at-dusk.jpg)
+{:caption}
+An autumn Seattle Skyline at sunset, purchased from [iStock](https://www.istockphoto.com/photo/seattle-fall-skyline-gm1183468338-332764260).
+{:endfigure}
+</code></pre>
+
+<p>The <code>{:figure}</code> command generates an HTML <code>&lt;figure&gt;</code> opening tag. </p>
+
+<p>The following line uses standard Markdown to generate an <code>&lt;img&gt;</code> tag. </p>
+
+<p>The <code>{:caption}</code> line then generates an HTML <code>&lt;figcaption&gt;</code> opening tag. </p>
+
+<p>And then the following line includes a standard Markdown link. </p>
+
+<p>And finally the <code>{:endfigure}</code> line generates both a closing <code>&lt;/figcaption&gt;</code> tag and a closing <code>&lt;/figure&gt;</code> tag. </p>
+
+<p>These three commands make the presentation of a captioned figure both easier and more straightforward. </p>
+
+<hr />
+<div>
+
+<p>Next: 7.3.7.4 <a href="start-a-figure-caption.html" class="nav-link">Start a Figure Caption</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>
