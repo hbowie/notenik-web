@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Paste Specialized Text to Markdown</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10. <a href="getting-data-into-and-out-of-notenik.html" class="nav-link">Getting Data Into and Out of Notenik</a>&#160;&#8593;</p><h3 id="pastespecializedtexttomarkdown">10.2 Paste Specialized Text to Markdown</h3>
+<p>Notenik has two specialized Paste functions available beneath the <em>Edit</em> menu. </p>
+
+<p>Both of these start with the item currently stored in the system clipboard, perform the desired transformation, and then paste the results into the text field currently being edited. </p>
+<ul>
+<li><p><em>Paste CSV -> Table</em> — This function assumes the clipboard contains text formatted with comma-separated values, and with the first row containing column headings. Notenik will attempt to transform this text into a Markdown <a href="tables.html" class="wiki-link">Table</a>. </p></li>
+<li><p><em>Paste Formatted -> Markdown</em> (Ctrl-V) — This function will attempt to convert the contents of the system clipboard to Markdown, with first priority being given to RTF (rich text) if it is available, otherwise HTML. The HTML function uses the open source package <a href="https://github.com/ActuallyTaylor/SwiftHTMLToMarkdown" class="ext-link" target="_blank" rel="noopener">SwiftHTMLToMarkdown</a>. The conversion from RTF is intended to be helpful, but is certainly not comprehensive at this point. </p></li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: 10.3 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

@@ -37,6 +37,50 @@ window.MathJax = {
 <p>8.1 <a href="note-files.html" class="nav-link">Note Files</a>&#160;&#8593;</p><h4 id="notefilenames">8.1.3 Note File Names</h4>
 <p>A Notenik file name is generally identical to the Note&#8217;s title, with the exception of a few occasional tweaks to avoid running afoul of various common operating system limitations. Spaces and capitalization are preserved. </p>
 
+<p>A dot, or period, in a filename (other than the separator before the file extension) can cause much confusion, so Notenik will scrub these from the filenames used when creating new notes. In some cases Notenik will simply drop the dot, while in other cases, the dot will be replaced with a dash. Which action is taken depends on the characters surrounding the period. </p><table>
+<tr>
+<th>
+ before dot </th>
+<th>
+ after dot </th>
+<th>
+ dot replacement action </th>
+ </tr>
+<tr>
+<td>
+ space </td>
+<td>
+ space </td>
+<td>
+ replace with dash </td>
+</tr>
+<tr>
+<td>
+ space </td>
+<td>
+ non-space </td>
+<td>
+ just drop it </td>
+</tr>
+<tr>
+<td>
+ non-space </td>
+<td>
+ space </td>
+<td>
+ just drop it </td>
+</tr>
+<tr>
+<td>
+ non-space </td>
+<td>
+ non-space </td>
+<td>
+ replace with dash </td>
+</tr>
+</table>
+
+
 <hr />
 <div>
 

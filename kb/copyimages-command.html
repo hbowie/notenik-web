@@ -63,6 +63,8 @@ window.MathJax = {
 
 <p>So, in this case, a local image file at &#8220;<code>images/Herb with Hank.jpg&#8221; would be copied to '</code>images/herb-with-hank.jpg`' within the output web folder. </p>
 
+<p>Note that the <code>copyimages</code> command will copy to the top of the output folder, as specified by the <a href="template-module-parameters.html" class="wiki-link">webroot action</a>, and if the <a href="output-command.html" class="wiki-link">output command</a> is writing to a lower level folder, then the <code>f</code> variable modifier before the <code>o</code> modifier will also cause a relative path to the top level folder to be inserted at the beginning of each image&#8217;s source path. </p>
+
 <hr />
 <div>
 

@@ -4,12 +4,246 @@
   <subtitle>The Latest Adventures with the Notenik Mac App</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2025-01-15T09:00:00Z</updated>
+  <updated>2025-03-08T09:00:00Z</updated>
   <rights>Copyright © 2025, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie and the Notenik Community</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Starter Packs for Notenik</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/starter-packs-for-notenik.html"/>
+	  <id>https://notenik.app/adventures/starter-packs-for-notenik.html</id>
+	  <published>2025-03-08T09:00:00Z</published>
+	  <updated>2025-03-09T00:16:00Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  Now you can create your own custom Starter Packs, and then use them to initialize new collections! 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Version 16.5.0 of Notenik adds support for custom Starter Packs. </p>
+
+<p>Unlike many other (perhaps <em>all</em>&#8230;?) somewhat comparable note-taking apps, Notenik allows you to tailor each different collection (aka <em>folder</em>) full of notes in several meaningful ways. Most significantly, you can customize the particular set of <a href="https://notenik.app/kb/field-labels-and-types.html" class="ext-link" target="_blank" rel="noopener">field labels and field types</a> used within each Collection, so that different collections can be used for quite different purposes. And then you can also tailor the look and feel of a collection by changing the CSS used for the display of its notes, and even the HTML layout used. </p>
+
+<p>All of these changes can be made simply by editing a few text files but, for some time now, when you create a new collection, Notenik has allowed you to choose from a number of different <a href="https://notenik.app/kb/built-in-starter-packs.html" class="ext-link" target="_blank" rel="noopener">Starter Packs</a> that can be used to initialize your new collection with a particular configuration. </p>
+
+<p>I&apos;ve added new Starter Packs to Notenik every once in a while but, still, as the developer, I&apos;ve been the only person with the power to create a new one, or to enable other users to make use of one. </p>
+
+<p>Up until now, that is! </p>
+
+<p>The latest version includes two related features. </p>
+
+<p>The first is called <em>Clone</em>, and can be found beneath the <em>File</em> menu. This function will copy the selected collection to a new location, but leaving behind the actual notes that make up the content of the collection. </p>
+
+<p>The user may then use their trusty text editor to make any further changes to the clone (such as adding more sample data), before using it as a custom Starter Pack. </p>
+
+<p>Once these further edits are complete, the user may copy this cloned collection into the <code>Starter Packs</code> folder within the user&apos;s iCloud Drive Notenik folder. </p>
+
+<p>It will then become available as an option the next time the user executes the process of creating a <em>New Collection</em>. </p>
+
+<p>Note that, when exchanging Starter Packs with other users, it will be most convenient to first compress each Pack into a single Zip file. The user will then need to decompress the Pack before making use of it. </p>
+
+<p>Also note that the Notenik Discourse Forum now has a <a href="https://discourse.notenik.app/c/starter-pack-sharing/22" class="ext-link" target="_blank" rel="noopener">new category</a> set up specifically for Starter Pack Sharing. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Using Notenik as an App Launcher</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/using-notenik-as-an-app-launcher.html"/>
+	  <id>https://notenik.app/adventures/using-notenik-as-an-app-launcher.html</id>
+	  <published>2025-02-22T09:00:00Z</published>
+	  <updated>2025-02-22T17:51:53Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  With the latest release, Notenik can be used as an app launcher, with some interesting features. Is this a compelling use case? Heck, I don&apos;t know. But it&apos;s kind of fun! 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>The <a href="https://notenik.app/kb/version-16.4.0.html" class="ext-link" target="_blank" rel="noopener">16.4.0 version of Notenik</a> makes it a little easier to use Notenik as a Mac application launcher. </p>
+
+<p>Is this a good idea? </p>
+
+<p>Heck, I don&apos;t know. </p>
+
+<p>There are certainly many other ways to launch an app on your Mac, including software designed specifically for this purpose. </p>
+
+<p>But you be the judge. </p>
+
+<p>Let me show you how you can use Notenik in this way, and then you decide if this use case makes any sense. </p>
+
+<section id="section-for-step-1-create-an-apps-catalog">
+
+<h3 id="step-1-create-an-apps-catalog">Step 1: Create an Apps Catalog</h3>
+
+<p>This is pretty easy to do. <a href="https://notenik.app/kb/creating-and-tailoring-a-collection-of-notes.html" class="ext-link" target="_blank" rel="noopener">Create a new Collection</a> somewhere handy, such as the Notenik Folder within iCloud Drive. You can just pick <em>Basic Notes</em> as your starting point. Call it whatever makes sense to you, such as <code>Apps Catalog</code>. </p>
+
+</section>
+
+<section id="section-for-step-2-import-your-applications-metadata">
+
+<h3 id="step-2-import-your-applications-metadata">Step 2: Import your Applications Metadata</h3>
+
+<p>Now it&apos;s time to <a href="https://notenik.app/kb/import-apps-folder.html" class="ext-link" target="_blank" rel="noopener">Import your Apps Folder</a> by selecting <em>File &gt; Import &gt; Apps Catalog</em>. </p>
+
+<p>You&apos;ll then see the <a href="https://notenik.app/kb/import-settings.html" class="ext-link" target="_blank" rel="noopener">Import Settings</a> window. Make sure <em>Additional Fields</em> is set to <em>Add</em>, and <em>Rows (aka Notes)</em> is set to <em>Match and Add</em>. </p>
+
+<p>Now pick your primary <em>Applications</em> folder as the import source, and click <em>OK</em>. </p>
+
+<p>Notenik will then import the names of those applications, along with a few metadata fields, into your Apps Catalog. </p>
+
+<p>Note that this step can be repeated later as changes are made to your <em>Applications</em> folder. New applications will be added, and any firm metadata changes will be updated. </p>
+
+</section>
+
+<section id="section-for-step-3-add-any-useful-info">
+
+<h3 id="step-3-add-any-useful-info">Step 3: Add Any Useful Info</h3>
+
+<p>In particular, you can use the <a href="https://notenik.app/kb/tags.html" class="ext-link" target="_blank" rel="noopener">Tags</a> field to categorize your apps in any way that is meaningful to you. For example, I&apos;ve assigned <code>markdown</code> to the various apps that can be used as Markdown editors/parsers. Note that, although the Tags field may be initially populated with an app&apos;s <em>Application Category</em>, it will not be overridden by a later import if the field has been user-modified. </p>
+
+</section>
+
+<section id="section-for-step-4-set-a-keyboard-shortcut">
+
+<h3 id="step-4-set-a-keyboard-shortcut">Step 4: Set a Keyboard Shortcut</h3>
+
+<p>Start by using the <em>Collection &gt; Copy Notenik URL for Collection</em> item to get a <a href="https://notenik.app/kb/custom-url-scheme.html" class="ext-link" target="_blank" rel="noopener">Notenik Custom URL</a> into your system clipboard. </p>
+
+<p>Here&apos;s what this might look like, when you paste it into an empty document using your text editor. </p>
+
+<pre><code>notenik://open?path=/Users/hbowie/Library/Mobile%20Documents/iCloud~com~powersurgepub~notenik~shared/Documents/Apps%20Catalog
+</code></pre>
+
+<p>Now add <code>&amp;amp;select=action</code> to the end of this string, with no intervening spaces or punctuation, so that the result looks something like this. </p>
+
+<pre><code>notenik://open?path=/Users/hbowie/Library/Mobile%20Documents/iCloud~com~powersurgepub~notenik~shared/Documents/Apps%20Catalog&amp;amp;select=action
+</code></pre>
+
+<p>Now assign this URL to an available keyboard shortcut, using whatever app/tool you prefer. </p>
+
+<p>I&apos;m using <a href="https://www.keyboardmaestro.com/main/" class="ext-link" target="_blank" rel="noopener">Keyboard Maestro</a>. </p>
+
+<p>I&apos;ve assigned the Hot Key CTRL-OPT-R to a Macro titled &apos;Notenik Apps Catalog&apos;. The Macro only contains one Action, of type <em>Open a URL</em>. Then paste the complete URL you&apos;ve created into the URL field. </p>
+
+</section>
+
+<section id="section-for-step-5-type-your-keyboard-shortcut">
+
+<h3 id="step-5-type-your-keyboard-shortcut">Step 5: Type Your Keyboard Shortcut</h3>
+
+<p>Now when you type your new Keyboard Shortcut, two things will happen: </p>
+<ol>
+<li>Notenik will open your Apps Catalog (or bring it to the front, if it&apos;s already open); </li>
+<li>Notenik will pop up its <a href="https://notenik.app/kb/select-a-note-for-action.html" class="ext-link" target="_blank" rel="noopener">Note Selector</a> window. </li>
+</ol>
+
+</section>
+
+<section id="section-for-step-6-select-your-application">
+
+<h3 id="step-6-select-your-application">Step 6: Select Your Application</h3>
+
+<p>Now you can select one of your applications, via either of two means: </p>
+<ul>
+<li>Type three or more letters found anywhere in the name of the application; </li>
+<li>Type a pound sign, followed by three or more letters found in the <em>Tags</em> field of any of your App Notes. </li>
+</ul>
+
+<p>Whichever method you use, select the desired app from the list that results (if it&apos;s not already selected).  </p>
+
+<p>Next make sure the Action popup at the bottom of the <em>Note Selector</em> window is set to <em>Launch Link</em>. (Note that this popup will default to whatever value was last selected for the the given Collection, so you should only have to pick this once.) </p>
+
+<p>Then hit the <em>OK</em> button, or simply press <em>return</em> on your keyboard. </p>
+
+<p>Then your App should launch, using the <a href="https://notenik.app/kb/link.html" class="ext-link" target="_blank" rel="noopener">Link to Launch field</a>! </p>
+
+<p>Voila! </p>
+
+</section>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>What Makes Notenik Different? Collection Templates</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/what-makes-notenik-different-collection-templates.html"/>
+	  <id>https://notenik.app/adventures/what-makes-notenik-different-collection-templates.html</id>
+	  <published>2025-02-06T09:00:00Z</published>
+	  <updated>2025-02-06T18:39:33Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  Sometimes it&apos;s hard to figure out what makes Notenik different from all the other note-taking, Markdown-parsing, text-file-wrangling apps out there. So let&apos;s start with the most significant, core differentiator: each folder of text files managed by Notenik has its own unique template file, and each template file defines a set of fields for the notes within that folder. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>Sometimes it&apos;s hard to figure out what makes Notenik different from all the other note-taking, Markdown-parsing, text-file-wrangling apps out there. </p>
+
+<p>So let&apos;s start with the most significant, core differentiator: </p>
+<ul>
+<li><p>Each folder of text files managed by Notenik has its own unique <em>template</em> file&#8230; </p></li>
+<li><p>And each template file defines a set of <em>fields</em> for the notes within that folder&#8230; </p></li>
+<li><p>And each field is defined by a <em>label</em>, a <em>type</em>, and (sometimes) a <em>configuration</em>&#8230; </p></li>
+<li><p>And the file extension for the template file specifies the file extension to be used for notes created within that folder. </p></li>
+</ul>
+
+<p>Let&apos;s look at an example of how this works in practice. </p>
+
+<p>Here are the contents of a sample template file, which is just an ordinary text file that you can open with your favorite text editor. Here I&apos;m using BBEdit. </p>
+
+<p><img src="images/Sample Template File.png" alt="Sample template file, viewed within BBEdit" /> </p>
+
+<p>And here&apos;s what the <em>Edit</em> tab will look like when adding a new note to the collection (aka <em>folder</em>) using this template. </p>
+
+<p><img src="images/Sample Edit Window.png" alt="The Edit Tab within Notenik" /> </p>
+
+<p>So let me just point out a few interesting bits here: </p>
+<ul>
+<li><p>Every note must start with a Title field, and conclude with a Body field (although they can be given different labels). </p></li>
+<li><p>In between those two, a note can have many different fields, of many different types. </p></li>
+<li><p>The field type will, among other things, determine what sort of widget appears on the <em>Edit</em> tab for that field, when adding a new note within that folder, or when editing an existing note. </p></li>
+<li><p>Some field types, such as <em>status</em>, can also have a configuration specified in the template. In this case, the allowable status values are being specified, and these are the values that will appear in the drop-down menu when selecting a value for this field. </p></li>
+</ul>
+
+<p>So here&apos;s what a sample note might look like after being added to this collection, and when viewed on Notenik&apos;s <em>Display</em> tab. </p>
+
+<p><img src="images/Sample Display Tab.png" alt="The Display Tab within Notenik" /> </p>
+
+<p>And, just to round things out, and remove the last bit of mystery, here&apos;s what the resulting note file might look like (again viewing with BBEdit). </p>
+
+<p><img src="images/Sample Note File.png" alt="Sample note file" /> </p>
+
+<p>And then, perhaps, I should make one final point for today&apos;s <em>Adventure</em> post. </p>
+
+<p>One may always edit a Notenik template file directly, if one is so inclined, and this is sometimes the best way to build some new and exotic sort of collection. </p>
+
+<p>However, direct editing of the template file is generally a last resort, and Notenik offers these other ways of tailoring a template file, before resorting to direct editing. </p>
+<ul>
+<li><p>When creating a new collection, Notenik currently offers sixteen different <a href="https://notenik.app/kb/starting-collection-types.html" class="ext-link" target="_blank" rel="noopener">Starting Collection Types</a> from which you may choose, each with a different collection template. Even when creating something new, you can help yourself by picking a good starting point from this list.  </p></li>
+<li><p>The <em>Collection Settings</em> window allows you to pick from several common field labels and types in order to add them to your collection template. </p></li>
+<li><p>After initial creation, Notenik offers a handy window to <em>Rename, Add or Remove</em> a field, available beneath the <em>Collection</em> menu. </p></li>
+</ul>
+
+<p>It&apos;s generally best to exercise these options to get you as far as possible, and then perform direct editing of your template file to implement any final tweaks. </p>
+
+<p>Hopefully this post has helped to explain one of the key ways in which Notenik differs from other similar apps. </p>
+
+<p>Now, as to <em>why</em> Notenik works this way&#8230;? </p>
+
+<p>Well, when creating a list of items, with each row containing a number of columns, I often wished to have one or more columns containing some significant amount of text&#8230; but then a traditional spreadsheet app quickly gets awkward and unwieldy. </p>
+
+<p>And then when writing some significant chunks of text, I often wished to organize many such chunks into a coherent collection, and then sort, filter and format those chunks using some set of discrete fields, in addition to the more free-form bits of text&#8230; but then a traditional document editing app proves disappointing. </p>
+
+<p>So Notenik attempts to provide a happy medium in between these two extremes, and the collection template file is the key to pulling this all together. </p>
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>HTML for People Companion Ready for Use</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/adventures/html-for-people-companion-ready-for-use.html"/>
@@ -79,7 +313,7 @@
 	  <link rel="related" type="text/html" href="https://notenik.app/adventures/progress-on-html-for-people-companion.html"/>
 	  <id>https://notenik.app/adventures/progress-on-html-for-people-companion.html</id>
 	  <published>2024-12-11T09:00:00Z</published>
-	  <updated>2024-12-11T19:40:49Z</updated>
+	  <updated>2025-01-15T19:05:58Z</updated>
 	  <author>
 		<name>Herb Bowie</name>
 	  </author>
@@ -562,137 +796,6 @@
 <li><code>OPT-CMD-[</code> will outdent the selected note(s). </li>
 </ul>
 
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Indentation to Show Outline Levels</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/indentation-to-show-outline-levels.html"/>
-	  <id>https://notenik.app/adventures/indentation-to-show-outline-levels.html</id>
-	  <published>2024-08-15T09:00:00Z</published>
-	  <updated>2024-08-15T17:44:46Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  When you sort by Seq + Title, Notenik will automatically pad the Title field display on the List tab to create indentation reflective of your overall outline structure. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This post is part of an evolving series that can somewhat usefully be read in order. </p>
-<ol>
-<li><a href="https://ntnk.app/outliningwithnotenik" class="wiki-link">Outlining with Notenik</a> </li>
-<li><a href="https://ntnk.app/automaticallyincrementingsequencenumbers" class="wiki-link">Automatically Incrementing Sequence Numbers</a> </li>
-<li><a href="https://ntnk.app/incrementinganexistingsequencenumber" class="wiki-link">Incrementing an Existing Sequence Number</a> </li>
-<li>Indentation to Show Outline Levels (this post) </li>
-</ol>
-
-<hr />
-
-<p>As you create your outline, you will probably want your Collection sorted by <code>Seq + Title</code>. The List tab will then show two columns, one for Seq and one for Title. The Seq field will display first, without any modification. But then the Title values will be padded on the left to reflect your outline structure — making it easier to see the structure of your outline at a glance. The effect will be to create indentation, with each successive level indented a bit further to the right. </p>
-
-<p>And here&apos;s a tip: you can increase or decrease the amount of padding added per level through a setting in the Notenik Application settings (available beneath the Notenik menu). </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Incrementing an Existing Sequence Number</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/incrementing-an-existing-sequence-number.html"/>
-	  <id>https://notenik.app/adventures/incrementing-an-existing-sequence-number.html</id>
-	  <published>2024-08-14T09:00:00Z</published>
-	  <updated>2024-08-15T17:45:43Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  I&apos;ve talked previously about Automatically Incrementing Sequence Numbers for new notes, using any of several different methods. But what if you want to insert something new in the middle somewhere? Here&apos;s the answer to that problem. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This post is part of an evolving series that can somewhat usefully be read in order. </p>
-<ol>
-<li><a href="https://ntnk.app/outliningwithnotenik" class="wiki-link">Outlining with Notenik</a> </li>
-<li><a href="https://ntnk.app/automaticallyincrementingsequencenumbers" class="wiki-link">Automatically Incrementing Sequence Numbers</a> </li>
-<li>Incrementing an Existing Sequence Number (this post) </li>
-<li><a href="https://ntnk.app/indentationtoshowoutlinelevels" class="wiki-link">Indentation to Show Outline Levels</a> <hr />
-</li>
-</ol>
-
-<p>In a recent post I talked about <a href="https://ntnk.app/automaticallyincrementingsequencenumbers" class="wiki-link">Automatically Incrementing Sequence Numbers</a>, using any of several different methods. The use case for all of these is the user&apos;s intent to add a new note following an existing note, and keeping the new note in sequence with the preceding one(s). This works well when you are adding on to the end of an outline. </p>
-
-<p>But what if you want to insert something new in the middle somewhere? </p>
-
-<p>In this case, you will first want to select the note currently occupying the position at which you wish to insert the new note, then use the <code>Increment</code> command beneatht the <code>Note</code> menu (or just use the CMD-I keyboard shortcut). The effect of this Increment action will be to increment the Seq value of the selected note — <em>plus all following notes that would otherwise collide</em> &#8211; conveniently making room for the new note. </p>
-
-<p>Once you&apos;ve incremented the Seq values for the existing notes, you can apply any of the methods described in the prior post to add the new note, first selecting the existing note that is to become the new note&apos;s predecessor. </p>
-
-<p>I find this to be an invaluable tool when I&apos;m building an outline, and one that I use all the time. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Changing Adventure URLs</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/changing-adventure-urls.html"/>
-	  <id>https://notenik.app/adventures/changing-adventure-urls.html</id>
-	  <published>2024-08-14T09:00:00Z</published>
-	  <updated>2024-08-14T16:16:00Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  I&apos;m making a few changes to the <em>Adventures</em> blog. Most significantly, the blog post URLs are changing, dropping dates in favor of simple titles. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>I&apos;m making a few updates to the <em>Adventures</em> blog. </p>
-<ol>
-<li><p>The blog post URLs are changing. I had previously been prefixing each post with the date of the post, followed by the title. As things evolved, though, I realized I wanted to use wiki links between some of the entries, and the date prefixes made it harder to translate these links from the Notenik collection to the actual website. Also, I realized that, as these posts began to evolve, I really wanted each post to have a unique title anyway. So the dates are gone. And good riddance, I say. But if you&apos;ve bookmarked any of these, then you&apos;ll need to update your bookmarks. Sorry for my lack of prescience on this issue. </p></li>
-<li><p>On the Notenik Discourse forum, @ThePrinter made the <a href="https://discourse.notenik.app/t/outlining-with-notenik/530/2?u=hbowie" class="ext-link" target="_blank" rel="noopener">excellent suggestion</a> of modifying the HTML title of each post to place the title of the post before the name of the blog, to make it easier to distinguish between tabs, when viewing more than one. This too has been implemented. </p></li>
-<li><p>I had previously been offering two different versions of the blog page, one with full posts, and one only with summaries of each post. But the wiki links between posts also proved problematic when showing a page of full posts, so I&apos;ve eliminated this version. (I&apos;d grown to prefer the summaries page anyway; hopefully others feel the same.) </p></li>
-</ol>
-
-<p>Hopefully none of these changes will prove too disruptive for anyone, and together I hope they will smooth the path to continued useful evolution of these <em>Adventures</em>. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Automatically Incrementing Sequence Numbers</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/automatically-incrementing-sequence-numbers.html"/>
-	  <id>https://notenik.app/adventures/automatically-incrementing-sequence-numbers.html</id>
-	  <published>2024-08-13T09:00:00Z</published>
-	  <updated>2024-08-15T17:45:32Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  Notenik offers three slightly different approaches to adding Notes in sequence, such that Notenik will automatically increment your Seq values as you go. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>This post is part of an evolving series that can somewhat usefully be read in order. </p>
-<ol>
-<li><a href="https://ntnk.app/outliningwithnotenik" class="wiki-link">Outlining with Notenik</a> </li>
-<li>Automatically Incrementing Sequence Numbers (this post) </li>
-<li><a href="https://ntnk.app/incrementinganexistingsequencenumber" class="wiki-link">Incrementing an Existing Sequence Number</a> </li>
-<li><a href="https://ntnk.app/indentationtoshowoutlinelevels" class="wiki-link">Indentation to Show Outline Levels</a> <hr />
-</li>
-</ol>
-
-<p>Upon first consideration, having to manually wrangle sequence and level numbers in order to create an outline might seem unnecessarily difficult. </p>
-
-<p>And so it would be, were it not for a number of convenient features that Notenik supplies specifically for working with outlines. </p>
-
-<p>The first group of these helps by automatically incrementing sequence numbers. </p>
-
-<p>This can work in three somewhat distinct ways. </p>
-
-<p>First, if you position the current Note selection (using any of the views on the left of the Collection Window), and then request the addition of a New Note (which can be done most readily with the keyboard shortcut of CMD-N), you will see that your Seq value has been automatically incremented for you, and the Level value set to match the preceding Note — the one you initially selected. And so you can easily continue adding Notes to an outline without having to worry about Seq and Level numbers. Nifty! </p>
-
-<p>Second, if you instead use the <code>New Note w/Options</code> item (just beneath the <code>New Note</code> item described above, towards the top of the <code>Note</code> menu, and easily accessible with a keyboard shortcut of OPT-CMD-N), you will see a little window allowing you to enter several fields at once. You can enter the Title of the Note, along with the Level and Seq fields. But here you will also see <code>+</code> and <code>-</code> keys that can be used to increment/decrement the Level value and — as you do so — the Seq field will be automatically adjusted to fit into the appropriate numbering sequence for the chosen Level! This can be super handy when you are adding Notes in sequence, but they are not all at the same level of indention. Click <code>OK</code> when you are done, and then your values will be pre-populated on the Edit tab for you. </p>
-
-<p>And then, third, as a minor variation of the second option, if you click on the <code>Again</code> button instead of the <code>OK</code> button, you can skip the Edit tab, have Notenik add the Note for you —with just the fields you have entered in the <code>New Note with Options</code> window — and then immediately return to the <code>New Note with Options</code> window to add the next Note. This can be especially handy when you are trying to quickly capture the bare bones of an outline, with just Title fields and positions, leaving the possibility of fleshing out additional details later. </p>
-
-<p>So there you have it! Three ways to have Notenik automatically increment your Seq values, without you having to manually enter any value other than the first! </p>
 		  ]]>
 	  </content>
 	</entry>

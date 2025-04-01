@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Notenik URL Open Command</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>11.1 <a href="custom-url-scheme.html" class="nav-link">Custom URL Scheme</a>&#160;&#8593;</p><h4 id="notenikurlopencommand">11.1.1 Notenik URL Open Command</h4>
+<p>This command opens a Collection and, optionally, a specific Note within that Collection and. optionally, at attachment for that Note. </p>
+
+<p>Following is a sample URL:  </p>
+
+<pre><code>notenik://open?shortcut=todo&amp;id=pickupmilk
+</code></pre>
+
+<p>Let&#8217;s break this down: </p>
+<ul>
+<li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
+<li><code>open</code> - The Notenik command to open a Collection and optionally a specific Note within the Collection. </li>
+<li><code>?</code> - A question mark indicates the end of the command and the beginning of the query string. </li>
+<li><code>shortcut=todo</code> - The shortcut identifying the Collection to be opened. Note that shortcuts are defined in such a way that they will generally <em>not</em> need to be percent encoded. </li>
+<li><code>path=Users/user1/Sites/site1</code> - Specifying the complete path would be an alternate way of identifying the Collection to be opened. Path values generally <em>will</em> require percent encoding. </li>
+<li><code>&amp;</code> - An ampersand is used to separate each <code>label=value</code> parameter from the next. </li>
+<li><code>id=pickupmilk</code> - The ID identifying the Note to be selected for Display. Note that a Note ID is defined in such a way (removing spaces, etc.) that it will <em>not</em> need to be percent encoded. </li>
+</ul>
+
+<p>The <code>open</code> command accepts the following parameters following the question mark: </p>
+<ul>
+<li><code>shortcut</code> - The shortcut for the Collection to be opened. </li>
+<li><code>path</code> - The complete path to the Collection to be opened, with percent encoding. </li>
+<li><code>id</code> - The ID identifying the Note to be selected for display, which is generally the Note&#8217;s title, with spaces and punctuation removed, and converted to lowercase. </li>
+<li><code>timestamp</code> - A <a href="timestamp.html" class="wiki-link">timestamp</a> for a Note can be supplied, as an alternate to <code>id</code>, as a means of identifying a specific Note to be selected for display. </li>
+<li><code>notepath</code> - A complete file system path to a specific Note can be specified, as a means of specifying both a Collection and a Note within the Collection; again, the path will need to be percent encoded. </li>
+<li><code>attachment</code> - The name of an attachment can be specified, in which case the attachment will be opened. The name should only consist of the portion of the filename following the title of the Note ad the pipe separator, and should not include the file extension. </li>
+<li><code>select</code> - Specify a value of <code>random</code> to select a random Note within the Collection. This is an alternative to specifying a specific Note to be opened via one of the other parameters. Specify a value of <code>randompick</code> to select a random Note within the Collection, and to set the <em>Date Picked</em> for the Note selected. Specify a value of <code>action</code> to cause the <a href="select-a-note-for-action.html" class="wiki-link">Select a Note for Action</a> window to be opened, allowing the user to quickly select a note and specify an action to take. </li>
+<li><code>mode</code> - Specify a value of <code>quotes</code> to change the Display mode to <a href="quotations-mode.html" class="wiki-link">Quotations Mode</a>, and to hide the left-hand List of Notes, producing a compact display focused on one quotation at a time. </li>
+</ul>
+
+<p>An easy way to obtain a complete URL that can be used to later open a specific Note is to right-click the Note&#8217;s row on the List tab within Notenik, and then select <code>Copy Notenik URL</code> from the contextual menu that will pop up. This will copy a complete Notenik URL to the clipboard, from which it can then be pasted into another location. </p>
+
+<p>To obtain a URL to open the Collection only, without specifying a specific Note, select <code>Copy Notenik URL for Collection</code> from beneath the <code>Collection</code> menu, then paste into the desired location. </p>
+
+<hr />
+<div>
+
+<p>Next: 11.1.2 <a href="notenik-url-add-command.html" class="nav-link">Notenik URL Add Command</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

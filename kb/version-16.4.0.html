@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 16.4.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version16.4.0">16.3 Version 16.4.0</h3>
+<p>Date: 20 Feb 2025 - Thursday</p><section id="section-for-fixed-cross-collection-wikilink-bug">
+
+<h5 id="fixed-cross-collection-wikilink-bug">Fixed Cross-Collection WikiLink Bug</h5>
+
+<p>There was a problem when clicking on <a href="wiki-links-between-collections.html" class="wiki-link">Wiki Links Between Collections</a>. This has been fixed. </p>
+
+</section>
+
+<section id="section-for-fixed-copyimages-issues">
+
+<h5 id="fixed-copyimages-issues">Fixed Copyimages Issues</h5>
+
+<p>When using the <a href="copyimages-command.html" class="wiki-link">copyimages command</a> in conjunction with the <a href="file-name-f.html" class="wiki-link">File Name - F</a> variable modifier, the <code>src</code> attribute for the output <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" class="ext-link" target="_blank" rel="noopener">img</a> element was not correctly referencing the copied image file, in cases where the output HTML was being written to a subfolder within the output website. This has been fixed through the insertion of a relative path up to the top level of the output website, when needed. </p>
+
+</section>
+
+<section id="section-for-populate-app-catalog-function-replaced">
+
+<h5 id="populate-app-catalog-function-replaced">Populate App Catalog Function Replaced</h5>
+
+<p>The <em>Populate App Catalog</em> function has now been replaced with a new import option, <a href="import-apps-folder.html" class="wiki-link">Import Apps Folder</a>, which uses the <a href="import-settings.html" class="wiki-link">Import Settings</a> to determine when to add columns and rows. </p>
+
+</section>
+
+<section id="section-for-note-selector-last-action-now-saved-per-collection">
+
+<h5 id="note-selector-last-action-now-saved-per-collection">Note Selector Last Action Now Saved Per Collection</h5>
+
+<p>When using the <a href="select-a-note-for-action.html" class="wiki-link">Note Selector</a>, Notenik will remember the last action chosen and make that the default the next time the Note Selector is used. This was previously a global default, but is now a separate default value for each Collection. </p>
+
+</section>
+
+<section id="section-for-added-action-parameter-to-the-custom-url-definition">
+
+<h5 id="added-action-parameter-to-the-custom-url-definition">Added Action Parameter to the Custom URL Definition</h5>
+
+<p>When specifying a <a href="custom-url-scheme.html" class="wiki-link">Custom URL</a>, the user may now specify <code>select=action</code> in order to pop up the <a href="select-a-note-for-action.html" class="wiki-link">Select a Note for Action</a> screen. </p>
+
+</section>
+
+
+<hr />
+<div>
+
+<p>Next: 16.4 <a href="version-16.3.0.html" class="nav-link">Version 16.3.0</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

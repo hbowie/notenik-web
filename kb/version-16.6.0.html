@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 16.6.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>16. <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version16.6.0">16.1 Version 16.6.0</h3>
+<p>Date: 30 Mar 2025 - Sunday</p><section id="section-for-changed-dot-handling-in-filenames">
+
+<h5 id="changed-dot-handling-in-filenames">Changed dot handling in filenames</h5>
+
+<p>A dot, or period, in a <a href="note-file-names.html" class="wiki-link">Note File Name</a> (other than the separator before the file extension) can cause much confusion, so Notenik will scrub these from the filenames used when creating new notes. In some cases Notenik will simply drop the dot, while in other cases, the dot will be replaced with a dash. Which action is taken depends on the characters surrounding the period. </p><table>
+<tr>
+<th>
+ before dot </th>
+<th>
+ after dot </th>
+<th>
+ dot replacement action </th>
+ </tr>
+<tr>
+<td>
+ space </td>
+<td>
+ space </td>
+<td>
+ replace with dash </td>
+</tr>
+<tr>
+<td>
+ space </td>
+<td>
+ non-space </td>
+<td>
+ just drop it </td>
+</tr>
+<tr>
+<td>
+ non-space </td>
+<td>
+ space </td>
+<td>
+ just drop it </td>
+</tr>
+<tr>
+<td>
+ non-space </td>
+<td>
+ non-space </td>
+<td>
+ replace with dash </td>
+</tr>
+</table>
+
+</section>
+
+<section id="section-for-added-a-new-date-picked-field-type">
+
+<h5 id="added-a-new-date-picked-field-type">Added a new <code>Date Picked</code> field type</h5>
+
+<p>A new field type of <a href="date-picked.html" class="wiki-link">Date Picked</a> has been added. </p>
+
+</section>
+
+<section id="section-for-added-a-custom-url-randompick-parm">
+
+<h5 id="added-a-custom-url-randompick-parm">Added a Custom URL <code>randompick</code> parm</h5>
+
+<p>Added a <code>randompick</code> parm to the <a href="custom-url-scheme.html" class="wiki-link">Custom URL Scheme</a> to allow a Note to be selected at random, and then to have its <a href="date-picked.html" class="wiki-link">Date Picked</a> value set at the same time. </p>
+
+</section>
+
+<section id="section-for-added-a-custom-url-run-command">
+
+<h5 id="added-a-custom-url-run-command">Added a Custom URL Run Command</h5>
+
+<p>Added a <a href="notenik-url-run-command.html" class="wiki-link">Notenik URL Run Command</a> to run a <a href="script-files.html" class="wiki-link">Script File</a>. </p>
+
+</section>
+
+<section id="section-for-added-useful-notenik-custom-urls-for-project-folders">
+
+<h5 id="added-useful-notenik-custom-urls-for-project-folders">Added Useful Notenik Custom URLs for Project Folders</h5>
+
+<p>When viewing a <a href="open-project-folder.html" class="wiki-link">project folder</a>, users may now use the contextual menu item of <em>Copy Notenik URL</em> from the <em>List</em> tab, and get back workable URLs that can be used to run a script file, or to open a collection. </p>
+
+</section>
+
+<section id="section-for-skipping-links-for-non-html-author-work-slug">
+
+<h5 id="skipping-links-for-non-html-author-work-slug">Skipping Links for non-HTML author-work-slug</h5>
+
+<p>The <a href="author-work-slug.html" class="wiki-link">Author Work Slug</a> <a href="derived-variables.html" class="wiki-link">Derived Variable</a> will now omit any links if the merge template&#8217;s file extension is neither <code>htm</code> nor <code>html</code>; this can be useful when formatting an RSS feed, for example. </p>
+
+</section>
+
+<section id="section-for-sorting-launch-at-startup-notes">
+
+<h5 id="sorting-launch-at-startup-notes">Sorting Launch at Startup Notes</h5>
+
+<p>When using <a href="launch-at-startup-tags.html" class="wiki-link">Launch at Startup Tags</a>, the tagged notes are now sorted (using the collection&#8217;s current sort sequence) before their links are launched. </p>
+
+</section>
+
+<section id="section-for-fixed-some-markdown-parsing-errors">
+
+<h5 id="fixed-some-markdown-parsing-errors">Fixed Some Markdown Parsing Errors</h5>
+
+<p>Improved handling of ampersands, and distinguishing intended ampersands vs. HTML <a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references" class="ext-link" target="_blank" rel="noopener">character entity references</a>. </p>
+
+</section>
+
+<section id="section-for-added-variable-modifier-for-alternate-numbering">
+
+<h5 id="added-variable-modifier-for-alternate-numbering">Added Variable Modifier for Alternate Numbering </h5>
+
+<p>Added a new <a href="variable-modifiers.html" class="wiki-link">Variable Modifier</a> for <a href="alternate-numbering-at-sign.html" class="wiki-link">Alternate Numbering - At Sign</a>, to convert an integer into a roman numeral or a letter, when displaying within a <a href="merge-templates.html" class="wiki-link">Merge Template</a>. </p>
+
+</section>
+
+<section id="section-for-improved-the-epub-export">
+
+<h5 id="improved-the-epub-export">Improved the EPUB Export</h5>
+
+<p>When choosing to <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a>, and when selecting an EPUB output format, some of the corrections noted above will allow a valid EPUB to be generated. In addition, when you <a href="export-your-notes.html" class="wiki-link">Export Your Notes</a>, you will see a new option to set the Table of Contents (aka <em>ToC</em>) depth. The ToC depth setting will only affect the export output when an EPUB format is selected. </p>
+
+</section>
+
+<section id="section-for-modifed-the-outline-tab">
+
+<h5 id="modifed-the-outline-tab">Modifed the Outline Tab</h5>
+
+<p>The <a href="outline-tab.html" class="wiki-link">Outline Tab</a> now has the option of showing note titles only, without the appearance of any <a href="seq.html" class="wiki-link">Seq</a> fields. In order to provide this option, the <em>Show/Hide Outline Tab</em> menu item has been replaced with an <em>Outline Tab</em> submenu that allows selection of either of the two presentation styles. </p>
+
+</section>
+
+
+<hr />
+<div>
+
+<p>Next: 16.2 <a href="version-16.5.0.html" class="nav-link">Version 16.5.0</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

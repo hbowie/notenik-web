@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Notenik URL Expand Command</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>11.1 <a href="custom-url-scheme.html" class="nav-link">Custom URL Scheme</a>&#160;&#8593;</p><h4 id="notenikurlexpandcommand">11.1.3 Notenik URL Expand Command</h4>
+<p>This command expands the specified tag on the Tags tab of the Collection window.  </p>
+
+<p>Following is a sample URL:  </p>
+
+<pre><code>notenik://expand?shortcut=todo&amp;tag=shopping
+</code></pre>
+
+<p>Let&#8217;s break this down: </p>
+<ul>
+<li><code>notenik://</code> - The custom scheme that will invoke the Notenik app. </li>
+<li><code>expand</code> - The Notenik command to expand a tag. </li>
+<li><code>?</code> - A question mark indicates the end of the command and the beginning of the query string. </li>
+<li><code>shortcut=todo</code> - The shortcut identifying the Collection to be opened. Note that shortcuts are defined in such a way that they will generally <em>not</em> need to be percent encoded. </li>
+<li><code>path=Users/user1/Sites/site1</code> - Specifying the complete path would be an alternate way of identifying the Collection to be opened. Path values generally <em>will</em> require percent encoding. </li>
+<li><code>&amp;</code> - An ampersand is used to separate each <code>label=value</code> parameter from the next. </li>
+<li><code>tag=shopping</code> - The tag to be expanded. </li>
+</ul>
+
+<p>The <code>expand</code> command accepts the following parameters following the question mark: </p>
+<ul>
+<li><code>shortcut</code> - The shortcut for the Collection to be opened. </li>
+<li><code>path</code> - The complete path to the Collection to be opened, with percent encoding. </li>
+<li><code>tag</code> - The tag to be expanded. </li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: 11.1.4 <a href="notenik-url-run-command.html" class="nav-link">Notenik URL Run Command</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

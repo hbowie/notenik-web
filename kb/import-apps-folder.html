@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>Populate App Catalog</title>
+<title>Import Apps Folder</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="css/styles.css" type="text/css" />
 <script type="text/javascript"> 
@@ -34,28 +34,25 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>10. <a href="getting-data-into-and-out-of-notenik.html" class="nav-link">Getting Data Into and Out of Notenik</a>&#160;&#8593;</p><h3 id="populateappcatalog">10.3 Populate App Catalog</h3>
-<p>This command can be found beneath the <code>File</code> menu. </p>
+<p>10.3 <a href="import-and-export-your-notes.html" class="nav-link">Import and Export Your Notes</a>&#160;&#8593;</p><h4 id="importappsfolder">10.3.1 Import Apps Folder</h4>
+<p>This import option can be used to create an App Catalog, containing information about the apps installed on your Mac. </p>
 
-<p>Before executing this command, the user should have opened an existing App Catalog Collection, or a new Collection with minimal content and field definitions. (The <code>Basic Notes</code> Collection template will work just fine.) </p>
+<p>Before executing this sort of import, the user should have opened an existing App Catalog Collection, or a new Collection with minimal content and field definitions. (The <code>Basic Notes</code> Collection template will work just fine.) </p>
 
-<p>After executing this command, the user will be prompted to select an input folder containing macOS Applications &#8211; typically the Mac&#8217;s primary <code>Applications</code> folder. </p>
+<p>When the user is prompted for <a href="import-settings.html" class="wiki-link">Import Settings</a>, the <em>Additional Fields</em> option should be set to <em>Add</em>, and the Rows options should be normally set to <em>Match and Add</em>. </p>
+
+<p>After selecting this format, the user will be prompted to select an input folder containing macOS Applications &#8211; typically the Mac&#8217;s primary <code>Applications</code> folder. </p>
 
 <p>Notenik will then populate the frontmost Collection with information about the apps found in the specified input folder, using info from the file system, as well as from the <code>Info.plist</code> files found within the application bundles. </p>
-
-<p>This is similar to an <code>Import</code> operation, but with some key differences: </p>
-<ul>
-<li><p>If not already present, Notenik will add the normal App Catalog fields to the Collection Settings. </p></li>
-<li><p>If a Note for an app does not yet exist, then one will be added; however, if such a Note already exists, then it will be updated as appropriate to reflect the latest information found in the input Applications folder. </p></li>
-</ul>
 
 <p>The following <a href="field-labels-and-types.html" class="wiki-link">Field Labels and Types</a> will be defined, if needed, and populated. </p>
 <ul>
 <li><p><code>Title</code> (<a href="title.html" class="wiki-link">title</a>) &#8211; This will be populated with the name of the application. </p></li>
+<li><p><code>Tags</code> (<a href="tags.html" class="wiki-link">Tags</a>) &#8211; This will be populated with the Application Category. </p></li>
 <li><p><code>Link to Launch</code> (<a href="link.html" class="wiki-link">link</a>) - This will be populated with a <code>file://</code> URL pointing to the application. Launching this link will in turn launch the application (assuming that Notenik has the appropriate <a href="disk-access-permissions.html" class="wiki-link">Disk Access Permissions</a>). </p></li>
 <li><p><code>Web Link</code> (<a href="link.html" class="wiki-link">link</a>) &#8211; This is intended to hold a link to a website with more information about the application. Notenik will attempt to populate this field, if it is blank, but the results may not be accurate and up-to-date in all cases. </p></li>
 <li><p><code>App Date</code> (<a href="date.html" class="wiki-link">date</a>) &#8211; This will be populated with the last modified date for the application. </p></li>
-<li><p>`Minimum System Version (<a href="seq.html" class="wiki-link">seq</a>) &#8211; This will be populated with the Minimum System (macOS) version required in order to run the application. </p></li>
+<li><p><code>Minimum System Version</code> (<a href="seq.html" class="wiki-link">seq</a>) &#8211; This will be populated with the Minimum System (macOS) version required in order to run the application. </p></li>
 <li><p><code>App Version</code> (<a href="seq.html" class="wiki-link">seq</a>) &#8211; This will be populated with the version of the application. </p></li>
 <li><p><code>License Key</code> (<a href="longtext.html" class="wiki-link">longtext</a>) &#8211; This field will be defined, but will not be populated. </p></li>
 </ul>
@@ -64,7 +61,7 @@ window.MathJax = {
 <hr />
 <div>
 
-<p>Next: 10.4 <a href="new-note-from-wikiquote.html" class="nav-link">New Note from WikiQuote</a></p></div>
+<p>Next: 10.3.2 <a href="import-from-omnifocus.html" class="nav-link">Import from OmniFocus</a></p></div>
 
 
 </main>

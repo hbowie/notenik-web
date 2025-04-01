@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>How To Create A Starter Pack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>5.3 <a href="starter-packs.html" class="nav-link">Starter Packs</a>&#160;&#8593;</p><h4 id="howtocreateastarterpack">5.3.1 How To Create A Starter Pack</h4>
+<p>A Starter Pack may be used to initialize a new Notenik Collection, or to initialize a new Notenik Project folder, potentially containing multiple related Collections. </p>
+
+<p>In either case, the easiest way to start is to use <em>File > Clone&#8230;</em> and then specify an existing working Project or Collection as the input folder. The output of the Clone operation should be sent to any convenient working location, such as the user&#8217;s <em>Desktop</em>. </p>
+
+<p>The <em>Clone</em> operation will copy the structure of the Collection, while omiting the actual data stored within the Collection. </p>
+
+<p>The user should then edit the text file named <code>- starter-INFO.nnk</code>, which should be in the following format: </p>
+
+<pre><code>Title: xxx
+
+Seq: 
+
+Teaser:
+
+xxx
+
+Body:
+</code></pre>
+
+<p>At a minimum, the user should specify a <em>Title</em> value and a <em>Teaser</em> value. The title should be no more than three or four words, and the teaser should use five to twenty-five words to provide some additional explanatory description. </p>
+
+<p>The <em>Seq</em> value can be left blank, or set to <code>999</code>. </p>
+
+<p>This file should be located at the top level within the project/collection folder. </p>
+
+<p>The folder containing the Starter Pack should be named in a way that reflects the pack&#8217;s title. </p>
+
+<p>This entire folder can then be placed within the <code>Starter Packs</code> folder within the iCloud Drive Notenik folder. </p>
+
+<p>Subsequent executions of <em>File > New</em> will then show any added Starter Packs at the end of the list presented to the user, following the built-in Starter Packs. </p>
+
+<hr />
+<div>
+
+<p>Next: 5.4 <a href="built-in-starter-packs.html" class="nav-link">Built-In Starter Packs</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

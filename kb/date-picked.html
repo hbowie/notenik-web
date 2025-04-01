@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Date Picked</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>The Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>9.16 <a href="system-assigned-dates-and-times.html" class="nav-link">System-Assigned Dates and Times</a>&#160;&#8593;</p><h4 id="datepicked">9.16.3 Date Picked</h4>
+<p>The phrase <code>Date Picked</code> can be used as both a label and a type. </p>
+
+<p>A Collection should never have more than one field of this type. </p>
+
+<p>This field is left blank until a user &#8216;picks&#8217; a particular note, at which point Notenik assigns the current date and time to the field. </p>
+
+<p>This field is system-maintained, and is not directly editable by the user. </p>
+
+<p>The field is generally displayed below all user-editable fields, and may be separated from these other fields by a divider. </p>
+
+<p>The <em>Note</em> menu contains a <em>Pick Note</em> function, as well as an <em>Unpick Note</em> function. These will be applied to the currently selected note as viewed on the <em>Display</em> tab. These changes are made outside of the normal editing process, and so the note in question should not be in <em>Edit</em> mode when these menu selections are made. </p>
+
+<p>Also see the <code>randompick</code> parm within the <a href="custom-url-scheme.html" class="wiki-link">Custom URL Scheme</a> for a way to select a random Note, and then set the <em>Date Picked</em> for that note. </p>
+
+<p>The <em>Collection</em> menu also contains a function to <em>Clear All Picks</em>, which will reset all picked notes to an unpicked status (with blank dates picked). </p>
+
+<p>When you <a href="change-the-sort-sequence-for-your-collection.html" class="wiki-link">Change the Sort Sequence for your Collection</a>, you will have an option to sort your Collection by <em>Date Picked</em>. </p>
+
+<p>Note that if you search for the word <code>pick</code> beneath the <em>Help</em> menu, you will see all of the available menu options that I have just described. This can be a handy shortcut, if you have trouble recalling exactly where these are all located within the menu structure. </p>
+
+<p>This field might be useful in a couple of different ways. </p>
+<ul>
+<li><p>Simply checking for the presence of a value can be used to distinguish <em>picked</em> notes from <em>unpicked</em> notes. </p></li>
+<li><p>Sorting by this value could be useful in some circumstances, such as when generating an RSS file showing the latest <em>picks</em> first. </p></li>
+</ul>
+
+
+<hr />
+<div>
+
+<p>Next: 9.16.4 <a href="timestamp.html" class="nav-link">Timestamp</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>
