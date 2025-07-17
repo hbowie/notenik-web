@@ -20,44 +20,65 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p><a href="notenik-knowledge-base.html" class="nav-link">Notenik Knowledge Base</a>&#160;&#8593;</p><h2 id="markdown">7. Markdown</h2>
-<p><a href="http://daringfireball.net/projects/markdown/" class="ext-link" target="_blank" rel="noopener">Markdown</a> is a simple syntax for formatting plain text files so that they can be easily read and written by humans, but also can easily be converted into HTML for use on the Web. If you&#8217;d like, you can use the Markdown syntax for formatting the body of each note.  </p>
+<p><a href="notenik-knowledge-base.html" class="nav-link">Notenik Knowledge Base</a>&#160;&#8593;</p><h2 id="markdown">4 Markdown</h2>
+<p><a href="http://daringfireball.net/projects/markdown/" class="ext-link" target="_blank" rel="noopener">Markdown</a> is a simple syntax for formatting plain text so that it can be easily read and written by humans, but also can easily be converted into HTML. If you&#8217;d like, you can use the Markdown syntax for formatting the body of each note. </p>
 
-<p>If you&#8217;re new to Markdown, and would like to read about some of its advantages, feel free to consult my blog post titled <a href="https://hbowie.net/writings/why-i-use-markdown-and-why-you-should-too.html" class="ext-link" target="_blank" rel="noopener">Why I Use Markdown (And Why You Should Too)</a>. </p>
+<p>If you&#8217;re new to Markdown, and would like to read about some of its advantages, feel free to consult my blog post titled <a href="https://hbowie.net/writings/why-i-use-markdown-and-why-you-should-too.html" class="ext-link" target="_blank" rel="noopener">Why I Use Markdown (And Why You Should Too)</a>. Another good piece on the topic is <a href="https://ia.net/topics/markdown-and-the-slow-fade-of-the-formatting-fetish" class="ext-link" target="_blank" rel="noopener">Markdown and the Slow Fade of the Formatting Fetish</a>. </p>
 
-<p>Within Notenik the body of each Note can be formatted using Markdown, but so can any other field declared to be of the type <a href="longtext.html" class="wiki-link">longtext</a>. </p>
+<p>Within Notenik the body of each note can be formatted using Markdown, but so can any other field declared to be of the type <a href="longtext.html" class="wiki-link">longtext</a>. </p>
 
-<p>Conversion to HTML will be done when displaying a Note, but can also be invoked when sharing a Note, or when generating HTML through Notenik&#8217;s templating engine. </p>
+<p>Conversion to HTML will be done when displaying a note, but can also be invoked when sharing a note, or when generating HTML through Notenik&#8217;s templating engine. </p>
+
+<p>Thanks to the generosity of other open-source developers, Notenik gives you a choice of Markdown parsers to use. Visit the <a href="app-settings.html" class="wiki-link">App Settings</a> to change your choice of parser. </p>
+<ul>
+<li><p><a href="https://github.com/johnxnguyen/Down" class="ext-link" target="_blank" rel="noopener">Down</a> - Blazing fast Markdown rendering in Swift, built upon cmark, which is in turn based on the <a href="https://commonmark.org" class="ext-link" target="_blank" rel="noopener">CommonMark</a> spec. </p></li>
+<li><p><a href="https://github.com/JohnSundell/Ink" class="ext-link" target="_blank" rel="noopener">Ink</a> - A fast and flexible Markdown parser written in Swift. </p></li>
+<li><p><a href="https://github.com/hbowie/NotenikMkdown" class="ext-link" target="_blank" rel="noopener">Mkdown</a> - Notenik&#8217;s own Markdown parser. </p></li>
+</ul>
+
+<p>Notenik will default to using its own parser, and this is probably the right choice for most users, for most of the time, since it supports many useful extensions to the original Markdown spec. </p>
+
+<p>The remainder of this section will describe Notenik&#8217;s own parser. </p>
 
 <hr />
 <h4>Contents</h4>
 <ul class="notenik-toc">
-<li>7.1 <a href="markdown-cheat-sheet.html" class="nav-link">Markdown Cheat Sheet</a></li>
-<li>7.2 <a href="choice-of-markdown-parsers.html" class="nav-link">Choice of Markdown Parsers</a></li>
-<li>7.3 <a href="notenik-markdown-parser.html" class="nav-link">Notenik Markdown Parser</a></li>
+<li>4.1 <a href="markdown-plus-smartypants.html" class="nav-link">Markdown plus SmartyPants</a></li>
+<li>4.2 <a href="word-and-character-counts.html" class="nav-link">Word and Character Counts</a></li>
+<li>4.3 <a href="minor-markdown-variations.html" class="nav-link">Minor Markdown Variations</a></li>
+<li>4.4 <a href="common-markdown-extensions.html" class="nav-link">Common Markdown Extensions</a></li>
+<li>4.5 <a href="multimarkdown-extensions.html" class="nav-link">MultiMarkdown Extensions</a></li>
+<li>4.6 <a href="referencing-another-note.html" class="nav-link">Referencing Another Note</a></li>
+<li>4.7 <a href="single-line-commands.html" class="nav-link">Single-Line Commands</a></li>
+<li>4.7 <a href="wiki-style-links.html" class="nav-link">Wiki Style Links</a></li>
+<li>4.8 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a></li>
+<li>4.9 <a href="intra-note-commands.html" class="nav-link">Intra-Note Commands</a></li>
+<li>4.10 <a href="collection-navigation-commands.html" class="nav-link">Collection Navigation Commands</a></li>
+<li>4.11 <a href="supply-collection-data.html" class="nav-link">Supply Collection Data</a></li>
 </ul>
 
 <hr />
 
 <div>
 
-<p class="float-left">Next: 7.1 <a href="markdown-cheat-sheet.html" class="nav-link">Markdown Cheat Sheet</a></p>
+<p class="float-left">Next: 4.1 <a href="markdown-plus-smartypants.html" class="nav-link">Markdown plus SmartyPants</a></p>
 
-<p class="float-right">Skip to: <a href="files-and-folders.html" class="nav-link">Files and Folders</a></p></div>
+<p class="float-right">Skip to: <a href="fields.html" class="nav-link">Fields</a></p></div>
 
 
 </main>

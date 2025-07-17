@@ -20,21 +20,22 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>9. <a href="field-labels-and-types.html" class="nav-link">Field Labels and Types</a>&#160;&#8593;</p><h3 id="whatwemeanbylabelandtype">9.1 What We Mean by Label and Type</h3>
+<p>5 <a href="fields.html" class="nav-link">Fields</a>&#160;&#8593;</p><h3 id="whatwemeanbylabelandtype">5.1 What We Mean by Label and Type</h3>
 <p>A field <em>label</em> is the thing you see identifying a particular field for each Note. </p>
 
 <p>A field <em>type</em> identifies a set of behaviors and representations that will be available for a particular field. </p>
@@ -43,34 +44,34 @@ window.MathJax = {
 
 <p>Every field within a Collection must have its own unique label. However, you can often have multiple fields with different labels but of the same type. </p>
 
-<p>Both labels and types can be specified within <a href="the-collection-template-file.html" class="wiki-link">the Collection template file</a>. For example, consider the following line appearing at the top of a Collection&#8217;s template file: </p>
+<p>Both labels and types can be specified within <a href="the-collection-template-file.html" class="wiki-link">the Collection template file</a>. For example, consider the following line appearing at the top of a collection&#8217;s template file: </p>
 
 <pre><code>Name: &lt;title>
 </code></pre>
 
-<p>Such a line would be used to specify a field with the label <code>Name</code>, and of the type <a href="title.html" class="wiki-link">Title</a>. </p>
+<p>Such a line would be used to specify a field with the label Name, and of the type <a href="title.html" class="wiki-link">Title</a>. </p>
 
 <p>Notenik only supports a limited set of field types, and all fields, no matter how they are labeled, will be assigned one of these predetermined types. The default will be a simple <a href="string.html" class="wiki-link">String</a>. </p>
 
-<p>A label matching the desired type is the easiest way to create a field of that type; however, by specifying an explicit type within a Collection&#8217;s template file (as in the example above), any type can be assigned to any label. </p>
+<p>A label matching the desired type is the easiest way to create a field of that type; however, by specifying an explicit type within a collection&#8217;s template file (as in the example above), any type can be assigned to any label. </p>
 
 <p>You can make up your own field labels &#8211; you&#8217;re not constrained by the default set offered by Notenik. You&#8217;re only constrained by a few rules: </p>
 <ol>
 <li>A field label may not consist of more than 48 characters; </li>
-<li>A field label may not contain special characters, other than dashes and underscores. </li>
+<li>A field label may not contain special characters, other than dashes and underscores; </li>
 <li>A field label may not contain more than six spaces &#8211; meaning no more than seven words separated by spaces. </li>
 </ol>
 
-<p>One think to keep in mind, when it comes to field labels and field types, is that Notenik sees these identifiers only through what we might call a lowest common denominator representation. Such a representation is formed by changing all letters to lower case, and removing all spacing and punctuation. </p>
+<p>One thing to keep in mind, when it comes to field labels and field types, is that Notenik sees these identifiers only through what we might call a lowest common denominator representation. Such a representation is formed by changing all letters to lower case, and removing all spacing and punctuation. </p>
 
 <p>So whether you type a field label, or see it referred to, as <code>Time Stamp</code>, <code>Timestamp</code>, <code>time-stamp</code> or <code>timestamp</code>, it makes no difference to Notenik: all of these boil down to the same internal representation of <code>timestamp</code>, and thus all will be treated identically. </p>
 
-<p>Each field label/type is discussed below, grouped into logical collections. </p>
+<p>Each field label/type is discussed on following pages, grouped into logical collections. </p>
 
 <hr />
 <div>
 
-<p>Next: 9.2 <a href="functionality-associated-with-field-types.html" class="nav-link">Functionality Associated with Field Types</a></p></div>
+<p>Next: 5.2 <a href="functionality-associated-with-field-types.html" class="nav-link">Functionality Associated with Field Types</a></p></div>
 
 
 </main>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Version 16.8.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>13 <a href="version-history.html" class="nav-link">Version History</a>&#160;&#8593;</p><h3 id="version16.8.0">13.6 Version 16.8.0</h3>
+<p>Date: 27 Apr 2025 - Sunday</p><section id="section-for-tags-outline-view-performance-tuning">
+
+<h5 id="tags-outline-view-performance-tuning">Tags Outline View Performance Tuning</h5>
+
+<p>Changed a setting on the Tags Outline view to avoid strongly referencing items, which seems to have improved overall app performance significantly. </p>
+
+</section>
+
+<section id="section-for-underlines-within-words">
+
+<h5 id="underlines-within-words">Underlines Within Words</h5>
+
+<p>Underlines within words are now treated simply as underlines. Asterisks within words will still trigger appropriate emphasis, per the <a href="https://www.markdownguide.org/basic-syntax/#emphasis" class="ext-link" target="_blank" rel="noopener">Markdown Guide</a>. </p>
+
+</section>
+
+<section id="section-for-blank-line-following-yaml">
+
+<h5 id="blank-line-following-yaml">Blank Line Following YAML</h5>
+
+<p>When using YAML frontmatter, Notenik will now write a blank line following the end of the YAML metadata, and before the body of the note. </p>
+
+</section>
+
+<section id="section-for-incrementing-seq-values-for-new-notes">
+
+<h5 id="incrementing-seq-values-for-new-notes">Incrementing Seq Values for New Notes</h5>
+
+<p>If you have elected to <a href="change-note-id-configuration.html" class="wiki-link">Change Note ID Configuration</a> for your collection, and you  have chosen the <a href="seq.html" class="wiki-link">Seq</a> field as your auxiliary value, and have opted to identify notes based on their aux field only, wtihout reference to the Title field, then a new Note&#8217;s seq will now be incremented just beyond the highest seq value yet used in the collection, without reference to the currently selected Note. </p>
+
+</section>
+
+<section id="section-for-fix-for-failure-to-refresh-multi-note-views">
+
+<h5 id="fix-for-failure-to-refresh-multi-note-views">Fix for Failure to Refresh Multi-Note Views</h5>
+
+<p>When the user selected a different note within a collection, by clicking on a different row in one of the multi-note views, and when they were in the process of adding a new note, without having yet saved it, Notenik would save the in-progress note, but fail to refresh the multi-note views to show the new note. This has been fixed. </p>
+
+</section>
+
+<section id="section-for-improvements-to-seq-field-formatting">
+
+<h5 id="improvements-to-seq-field-formatting">Improvements to Seq Field Formatting</h5>
+
+<p>Several enhancements have been made to formatting of the <a href="seq.html" class="wiki-link">Seq</a> field. Also added the <a href="seq-formatted.html" class="wiki-link">Seq Formatted</a> derived variable, and the <a href="seq-formatting-k.html" class="wiki-link">Seq Formatting - K</a> variable modifier. </p>
+
+</section>
+
+
+<hr />
+<div>
+
+<p>Next: 13.7 <a href="version-16.7.0.html" class="nav-link">Version 16.7.0</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

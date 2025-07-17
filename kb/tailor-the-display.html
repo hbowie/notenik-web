@@ -20,44 +20,29 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>6.2 <a href="display-a-note.html" class="nav-link">Display a Note</a>&#160;&#8593;</p><h4 id="tailorthedisplay">6.2.1 Tailor the Display</h4>
-<p>You can alter the appearance of your Notes on the Display tab in a number of different ways, available from a number of different windows. </p>
+<p>3.4 <a href="display-a-note.html" class="nav-link">Display a Note</a>&#160;&#8593;</p><h4 id="tailorthedisplay">3.4.1 Tailor the Display</h4>
+<p>You can alter the appearance of your notes on the Display tab in a number of different ways, available from a number of different windows. </p>
 
 <section id="section-for-display-settings">
 
 <h5 id="display-settings">Display Settings</h5>
 
-<p>You can alter the appearance of your Notes on the Display tab by selecting the Display Appearance item beneath the Notenik menu, or by clicking on the Display Fonts button on the toolbar. </p>
-
-<p>In either case, you will then be presented with the Display Settings window, where you may make the following adjustments, and then click OK to apply your changes, or Cancel to exit without applying your changes. </p>
-
-<p>Note that the Display settings here will apply to the display of all of your Collections, not just the one you may be currently viewing. </p>
-<ul>
-<li><p><strong>Center Headings?</strong> &#8211; You may specify <code>n/a</code> to leave them left-justified, or specify a range of heading levels that you wish to see centered. </p></li>
-<li><p><strong>Apply Fonts to:</strong> &#8211; Select the Body radio button to apply the following font selections to all text in general. If you would like a different font selection for Headings, then click the Headings radio button and select the font you would like to use for headings. If you would like to change the font settings for the List Tab, then click the List button before proceeding to the font settings. </p></li>
-<li><p><strong>Show All Fonts?</strong> &#8211; Click the check box to see a long list of fonts, including all of the fonts installed on your system. Unclick the check box to see a shorter, more manageable list of common fonts. </p></li>
-<li><p><strong>Display Font:</strong> &#8211; Select the font that you would like to use. The selected font will be used for either body text, or headings text, or the List Tab, depending on the radio button currently selected above. For the List Tab only, you can revert to the default system font by specifying a value of &#8216;<code>- System Font -</code>&#8217;. </p></li>
-<li><p><strong>Display Size:</strong> &#8211; Use this control to change the size of the font. If you have selected the Body settings via the radio button above, then you will be asked to choose a point size for your text. If you have selected the Headings setting, then you will be asked to choose an em value &#8211; essentially a multiplier applied to your body value. The headings size value you select will be applied to level 1 headings, with subsequent heading sizes being stepped down by 0.2em for each succeeding level. If you have selected the List Tab settings via the radio button above, then you will be asked to specify a point size for your text. </p></li>
-<li><p><strong>Generate CSS</strong> &#8211; If you are working with the Body or Headings settings, then clicking on this button will use your choices above to generate the CSS code that will style your Note text in accordance with your wishes. It will also cause the Sample Display below to be refreshed with your settings. </p></li>
-<li><p><strong>CSS code</strong> &#8211; As described above, you can generate the code here from your Body settings. But you can also enter CSS code here directly. Whatever you enter here will be applied to the body element of your Note display. </p></li>
-<li><p><strong>Refresh Sample Display</strong> &#8211; Clicking this button will refresh the sample display below, using the latest settings you have specified above. The sample text will show you the appearance of two headings followed by a paragraph of text. </p></li>
-<li><p><strong>Cancel</strong> &#8211; Clicking here will close the window without saving any changes you might have made. </p></li>
-<li><p><strong>OK</strong> &#8211; Clicking here will save your settings and apply them to the display of your Notes, and optionally to the List Tab. </p></li>
-</ul>
+<p>See the separate <a href="display-settings.html" class="wiki-link">Display Settings</a> page within the <a href="configuration-settings.html" class="wiki-link">Configuration Settings</a> section. </p>
 
 </section>
 
@@ -77,13 +62,13 @@ window.MathJax = {
 
 <h5 id="custom-display-files">Custom Display Files</h5>
 
-<p>The layout and appearance of the Display tab for a particular Collection can be further customized by the addition of either of the following special files to the folder containing a Collection&#8217;s notes. </p>
+<p>The layout and appearance of the Display tab for a particular collection can be further customized by the addition of either of the following special files to the folder containing a Collection&#8217;s notes. </p>
 <ul>
 <li><p><code>display.css</code> &#8211; Enter whatever custom CSS you would like to alter the appearance of a Note on the Display tab. </p></li>
 <li><p><code>display.html</code> &#8211; Enter a Merge Template (following the rules for <a href="merge-templates.html" class="wiki-link">Merge Templates</a>) to alter the layout of the Display tab in any way you would like. If this file is present, then it should contain the CSS to be used (rather than putting it into the separate file mentioned above). This file should start with a <code>&lt;?nextrec?&gt;</code> command and end with a <code>&lt;?loop?&gt;</code> command, and should not include an <code>&lt;?output?&gt;</code> command. </p></li>
 </ul>
 
-<p>Note that you may use the <code>Generate Sample Display Template</code> command beneath the <code>Collection</code> menu to have Notenik generate samples of both of these files. You may then delete one or the other, and modify the remaining file, to achieve your desired effects. </p>
+<p>Note that you may use the Generate Sample Display Template command beneath the Collection menu to have Notenik generate samples of both of these files. You may then delete one or the other, and modify the remaining file, to achieve your desired effects. </p>
 
 </section>
 
@@ -91,7 +76,7 @@ window.MathJax = {
 <hr />
 <div>
 
-<p>Next: 6.2.2 <a href="default-styling-for-headings.html" class="nav-link">Default Styling for Headings</a></p></div>
+<p>Next: 3.4.2 <a href="default-styling-for-headings.html" class="nav-link">Default Styling for Headings</a></p></div>
 
 
 </main>

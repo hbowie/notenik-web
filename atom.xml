@@ -4,12 +4,179 @@
   <subtitle>The Latest Adventures with the Notenik Mac App</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2025-03-08T09:00:00Z</updated>
+  <updated>2025-05-22T09:00:00Z</updated>
   <rights>Copyright © 2025, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie and the Notenik Community</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Building Something Without Having to Order the Cement</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html"/>
+	  <id>https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html</id>
+	  <published>2025-05-22T09:00:00Z</published>
+	  <updated>2025-05-22T20:31:04Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  As Ken Thompson has said, programming is addictive, partly because &quot;It&apos;s like building something where you don&apos;t have to order the cement.&quot; Notenik has been going strong for years now, and the neighbors have yet to see a cement truck pull up to my door. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>A few years ago I came across a really good book by <a href="https://www.nytimes.com/by/steve-lohr" class="ext-link" target="_blank" rel="noopener">Steve Lohr</a> with a mouthful of a title: <a href="https://amzn.to/4koTf7A" class="ext-link" target="_blank" rel="noopener">Go To: The Story Of The Math Majors, Bridge Players, Engineers, Chess Wizards, Scientists And Iconoclasts Who Were The Hero Programmers Of The Software Revolution</a>. (And yes, if huge numbers of you rush out and order copies from Amazon using this link, there is some remote chance of me receiving a payment from them at some distant point in the future. So consider yourself forewarned. But I digress&#8230;.) </p>
+
+<p>The book featured a number of great interviews with early pioneers in what is now called computer science, and quotes from a couple of these resonated strongly with my own experience. </p>
+
+<p>The first is from an interview with <a href="https://en.wikipedia.org/wiki/Ken_Thompson" class="ext-link" target="_blank" rel="noopener">Ken Thompson</a>: </p>
+
+<p>&gt; He has called programming an addiction of sorts, and it was in the Berkeley computer center that he got hooked. Sitting in the Bell Labs offices years later, he described the appeal as having all the craftsman’s satisfactions of making things, without the cost and trouble of procuring the materials. “It’s like building something where you don’t have to order the cement,” Thompson said. “You create a world of your own, your own environment, and you never leave this room.” </p>
+
+<p>The other is from an interview with <a href="https://en.wikipedia.org/wiki/David_Sayre" class="ext-link" target="_blank" rel="noopener">David Sayre</a>, talking about the days at IBM when the field of software development was trying to incorporate practices from hardware engineering: </p>
+
+<p>&gt; The disciplines of hardware engineering fit uneasily in the more ethereal realm of software. “Software is a much more plastic object than hardware,” Sayre said. “You whip it up, squeeze it, and you can dream.” </p>
+
+<p>It is feelings like these that run through me whenever I sit down at my Mac to work on Notenik. More than that, though, it is a desire to foster some of these same feelings for myself and others when we are <em>using</em> Notenik, or when contributing to Notenik through discussions on the <a href="https://discourse.notenik.app/" class="ext-link" target="_blank" rel="noopener">Notenik Forum</a>. My favorite software is open-ended, a sort of doorway into a magical kingdom with evolving rules and no fixed boundaries, and my intent with Notenik has always been to create such software, and such an experience for its users. </p>
+
+<p>And on that note, I&apos;m grateful for everyone who has used Notenik, and especially to those who have reached out to me to express their ideas and feelings about the software over the months and now, yes, years. </p>
+
+<p>It&apos;s an ongoing journey, and I&apos;m thrilled to have others along for the ride. </p>
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Tech Priorities for Note-Taking</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/tech-priorities-for-note-taking.html"/>
+	  <id>https://notenik.app/adventures/tech-priorities-for-note-taking.html</id>
+	  <published>2025-04-07T09:00:00Z</published>
+	  <updated>2025-04-08T15:03:46Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  Here is a prioritized list of technology concerns that should be considered when deciding upon your own personal note-taking system. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>There are a number of technology priorities for me when I consider how to store notes that I take. </p>
+
+<p>And, since I&apos;m the author of the Mac app Notenik, these are naturally the priorities addressed by that app! </p>
+
+<p>But whether you use Notenik or not, I think these priorities are deserving of your consideration. </p>
+
+<section id="section-for-1-text-files">
+
+<h2 id="1-text-files">1. Text Files</h2>
+
+<p>This is the foundation on which everything else is built. All data is stored in text files, and those files are easily accessible by the user. Files can be opened using any text editor. Nothing is hidden. Everything can be easily backed up, copied or moved, using any number of different methods, and to any modern computing platform. Files can be organized into folders/directories, and those can be stored anywhere the user likes. </p>
+
+</section>
+
+<section id="section-for-2-html">
+
+<h2 id="2-html">2. HTML</h2>
+
+<p>HTML is the <em>lingua franca</em> for modern digital communications. (And, of course, it can be stored in text files!) It is universal and non-proprietary, and it can be used to publish any sort of text, along with images, audio and video. And so, whatever else we do, we must ultimately be able to express it in HTML. </p>
+
+</section>
+
+<section id="section-for-3-markdown">
+
+<h2 id="3-markdown">3. Markdown </h2>
+
+<p>HTML, despite its other advantages, is not a great language for authoring, or for content management.  This is where lightweight markup languages come into play, and <a href="https://daringfireball.net/projects/markdown/syntax" class="ext-link" target="_blank" rel="noopener">Markdown</a> hits a sweet spot of maximum lightness while retaining a reasonable degree of expressiveness. It&apos;s also well supported by a large and ever-growing set of tools available on pretty much every computing platform. </p>
+
+<p>It must be noted that extensions to the original Markdown spec can be problematic, as they are not uniformly or evenly implemented across all platforms. However, while standardization is not perfect, there is a <a href="https://www.markdownguide.org/extended-syntax/" class="ext-link" target="_blank" rel="noopener">well-defined set of extensions</a> that are widely supported. And agreement on extended syntax seems to be gradually progressing, as one might expect, since the whole community benefits from a common syntax. </p>
+
+<p>The other point here is that all extended syntax should meet the first two priorities: that is, it can be clearly stored in user-accessible text files, and it can be easily and reliably converted to HTML that can be displayed using any modern web browser. </p>
+
+</section>
+
+<section id="section-for-4-metadata-aka-fields">
+
+<h2 id="4-metadata-aka-fields">4. Metadata (aka Fields)</h2>
+
+<p>I said earlier that HTML is not a great language for content management. What I meant is that, while HTML can be easily used to <em>present</em> the organization of content, it provides no ready ability to dynamically sort and filter and summarize content to prepare it for display. This is where metadata becomes important (and we use  <em>fields</em> within Notenik to store such data). </p>
+
+<p>Again, though, such data should be stored in text files, should sit comfortably alongside Markdown, and should be easily converted to HTML. </p>
+
+<p>There are several different sets of conventions for encoding metadata alongside Markdown. Notenik uses its own. Other apps use YAML. And then there is the MultiMarkdown convention. </p>
+
+<p>However all of these conventions rely on <a href="https://en.wikipedia.org/wiki/Name%E2%80%93value_pair" class="ext-link" target="_blank" rel="noopener">name-value pairs</a>, with fairly slight variations in formatting, and an app such as Notenik can pretty easily detect and respect whichever convention is being used in existing files, and allow a user the option of selecting whichever convention they prefer. </p>
+
+</section>
+
+<section id="section-for-5-interoperable-data">
+
+<h2 id="5-interoperable-data">5. Interoperable Data</h2>
+
+<p>It should be easy to access your data — including both Markdown and metadata — from multiple pieces of software. In other words, you should avoid lock-in with one particular tool. </p>
+
+</section>
+
+<section id="section-for-6-free-and-open-source-software">
+
+<h2 id="6-free-and-open-source-software">6. Free and Open-Source Software</h2>
+
+<p>And finally, at least some of the software you use should be open-source, to ensure that your data is never held hostage by a for-profit concern. </p>
+
+</section>
+
+<section id="section-for-bottom-line">
+
+<h2 id="bottom-line">Bottom Line</h2>
+
+<p>Notenik has been built to respect all of these priorities, as defined above. </p>
+
+<p>Again, though, whether you use Notenik or not, I think it wise to consider all of these priorities for your own note-taking efforts. </p>
+
+<p><em>Edited on 8 Apr 2025 to note variations in metadata formatting, and to add the word &quot;free&quot; in conjunction with &quot;open-source&quot;.</em> </p>
+
+</section>
+
+		  ]]>
+	  </content>
+	</entry>
+	<entry>
+	  <title>Creating a Portable Wisdom Feed</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/creating-a-portable-wisdom-feed.html"/>
+	  <id>https://notenik.app/adventures/creating-a-portable-wisdom-feed.html</id>
+	  <published>2025-04-02T09:00:00Z</published>
+	  <updated>2025-04-02T18:45:11Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  How I use the latest version of Notenik to generate an RSS feed of a series of randomly selected quotations from my Commonplace book — something I&apos;m calling the Portable Wisdom feed. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>One of the things I use Notenik for is to maintain a list of my <a href="https://hbowie.net/authors/index.html" class="ext-link" target="_blank" rel="noopener">favorite quotations</a>. I&apos;ve compiled quite a few, and they are all meaningful to me, in addition to being reasonably concise. </p>
+
+<p>Sometime ago I made some changes to Notenik so that I could easily see a random selection from this collection each morning: my quote of the day, so to speak. And I was frankly surprised at how much I enjoyed it. </p>
+
+<p>So then I wondered if it might be worth sharing these with others. My first thought was to create an RSS feed containing each day&apos;s quote. But then I ran into a problem: how could Notenik keep track of these random selections? </p>
+
+<p>After some cogitating on the problem, I came up with the idea of adding a new field type to Notenik, to be called <a href="https://notenik.app/kb/date-picked.html" class="ext-link" target="_blank" rel="noopener">Date Picked</a>. This way, as each random selection is made, Notenik would have a place to store a timestamp recording the date and time of each selection. And then, of course, a <a href="https://notenik.app/kb/script-files.html" class="ext-link" target="_blank" rel="noopener">script file</a> could filter and sort using this field, so that the selections could be presented in reverse chronological order (latest first), as is standard for feeds of all kinds. </p>
+
+<p>I then added a new variation on the Notenik <a href="https://notenik.app/kb/custom-url-scheme.html" class="ext-link" target="_blank" rel="noopener">Custom URL Scheme</a> so that I could perform a <a href="https://notenik.app/kb/notenik-url-open-command.html" class="ext-link" target="_blank" rel="noopener">randompick</a> operation — meaning select a note at random from the specified collection, then set the date picked to the current date and time. This way I could easily perform this operation by launching a link within Notenik, or through any other utility (such as Keyboard Maestro) capable of opening a URL. </p>
+
+<p>(Somewhere along the way I decided to dub this whole thing the <em>Portable Wisdom</em> project, partly because I own the portablewisdom.com domain name, but mostly just because this phrase has resonated with me for a long time.) </p>
+
+<p>Next I created a new Notenik <a href="https://github.com/hbowie/Hbowie-23/blob/main/factory/templates/wisdom-atom-template.xml" class="ext-link" target="_blank" rel="noopener">template</a> or <a href="https://github.com/hbowie/Hbowie-23/blob/main/factory/templates/wisdom-page.html" class="ext-link" target="_blank" rel="noopener">two</a> to generate an <a href="https://hbowie.net/portablewisdom/feeds/atom.xml" class="ext-link" target="_blank" rel="noopener">Atom feed</a> and a corresponding <a href="https://hbowie.net/portablewisdom/index.html" class="ext-link" target="_blank" rel="noopener">web page</a> so that I could share the most recent twenty of these selections. </p>
+
+<p>And then, of course, a <a href="https://github.com/hbowie/Hbowie-23/blob/main/factory/scripts/wisdom.tsv" class="ext-link" target="_blank" rel="noopener">script file</a> to sort the quotes and generate the output via the templates. </p>
+
+<p>And then I created another variation on the Custom URL Scheme so that a URL could be used to <a href="https://notenik.app/kb/notenik-url-run-command.html" class="ext-link" target="_blank" rel="noopener">run a Notenik script file</a>. Again, this could be invoked from within Notenik or by any other handy utility. </p>
+
+<p>So now each morning, just through a few quick actions, I can see my <em>Portable Wisdom</em> quote for the day, and also share it with others. </p>
+
+<p>And although picking a quote at random each day might seem — well, sort of random — I&apos;ve found that it&apos;s this very randomness that I&apos;m enjoying — as opposed to the usual relentless need to read and say something <em>pointed</em> and <em>relevant</em> about the latest bit of news that&apos;s happened. Hopefully each of these quotes carries some bit of timeless wisdom, and it&apos;s nice to reflect on that for a minute, before being swept up in the never-ending tide of the other stuff. </p>
+
+<p>So feel free to subscribe to this <a href="https://hbowie.net/portablewisdom/feeds/atom.xml" class="ext-link" target="_blank" rel="noopener">Portable Wisdom feed</a> if you&apos;re into RSS. I&apos;ll also be posting these from time to time to my <a href="https://c.im/@hbowie" class="ext-link" target="_blank" rel="noopener">Mastodon account</a>, if you&apos;d like to follow along there. </p>
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Starter Packs for Notenik</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/adventures/starter-packs-for-notenik.html"/>
@@ -711,91 +878,6 @@
 <p>This is one reason why Notenik continues to evolve, with a new release every couple of weeks, and with an <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">active user community</a>. </p>
 
 <p>And this split personality is one of the main attributes that makes Notenik such a uniquely useful Mac app. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>A Dedicated Outline Tab</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/a-dedicated-outline-tab.html"/>
-	  <id>https://notenik.app/adventures/a-dedicated-outline-tab.html</id>
-	  <published>2024-08-22T09:00:00Z</published>
-	  <updated>2024-08-22T23:00:36Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  Notenik Version 15.1.0 has just been released into the Mac App Store, and it includes a new, optional, Outline tab that can be displayed when using the Seq and Level fields to build an outline. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Notenik Version 15.1.0 has just been released into the Mac App Store, and it includes a new, optional, Outline tab that can be displayed when using the Seq and Level fields to build an outline. </p>
-
-<p>You can select this option by selecting <em>Show</em> or <em>Hide</em> Outline Tab, which can be found beneath the Collection menu. </p>
-
-<p>When the tab is shown, it will appear as a third tab on the left side of the Collection window, just to the right of the Tags tab. </p>
-
-<p>This tab will work similarly to the List tab, in terms of working with your Notes, but will allow you to selectively show and collapse sections of your outline by clicking on the conventional disclosure triangles, thus allowing you to focus on one section of your outline at a time, while hiding others that might otherwise obscure your area(s) of focus. </p>
-
-<p><img src="images/outline-tab.jpg &quot;Screenshot of Notenik with Outline tab shown&quot;" alt="Screenshot of Notenik with Outline tab" /> </p>
-
-<p>This is a great example of a feature engendered by the Notenik Discussion forum, which can be found at <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">discourse.notenik.app</a>. Various users there have been indicating for some time that they would like to see such a feature and for a long time I avoided the idea because I couldn&apos;t quite see a good way to implement it. But users persisted, so I began to explore possibilities with the forum, and with some tentative code, and after a series of betas — each eliciting thoughtful and helpful feedback — things seemed to gel. So a hearty thanks to all of the forum users who participated and provided ideas and feedback! </p>
-
-<p>As I&apos;ve said before, my original vision for Notenik included not a thing about outlining, and it&apos;s certainly not a dedicated outliner. But Notenik has evolved into something of a personal information multitool, and outlining has become one of the tools that has proven useful. And while dedicated outliners such as OmniOutliner and Bike have definite advantages, there are also advantages to an outlining tool that fully accommodates accompanying Markdown text, as well as other useful fields, such that your outline is not <em>only</em> an outline. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Dragging and Dropping Into an Outline</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/dragging-and-dropping-into-an-outline.html"/>
-	  <id>https://notenik.app/adventures/dragging-and-dropping-into-an-outline.html</id>
-	  <published>2024-08-18T09:00:00Z</published>
-	  <updated>2024-08-18T16:41:52Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  Notenik supports drag and drop in many situations, and two of them are especially suited for use with outlining. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>The ability to select an item from one location, then drag it to another, and drop it into a desired new location — what we call <a href="https://support.apple.com/guide/mac-help/drag-and-drop-items-mh35852/mac" class="ext-link" target="_blank" rel="noopener">drag and drop</a> on a Mac — is a powerfully convenient feature of macOS. </p>
-
-<p>Notenik supports drag and drop in many situations, and two of them are especially suited for use with outlining. </p>
-
-<p>The first involves dragging a note from within an outline to a new location within the same outline. Notenik will conveniently adjust the seq value of the dropped item to fit into its new location, based on the note above that location, and then will move the note from its original location to its new location. </p>
-
-<p>The second involves dragging a note from another collection into a collection that is sorted by seq. In this case Notenik will helpfully adjust/add both seq and level fields to fit the new note into its new location before copying the note to the outline. </p>
-
-<p>I&apos;ve found both of these techniques to be helpful in different circumstances, and hopefully you will as well. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Indenting and Outdenting Outline Entries</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/indenting-and-outdenting-outline-entries.html"/>
-	  <id>https://notenik.app/adventures/indenting-and-outdenting-outline-entries.html</id>
-	  <published>2024-08-16T09:00:00Z</published>
-	  <updated>2024-08-16T16:54:26Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  Notenik makes it easy to indent or outdent a single note or a range of notes. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>Any attempt to build an outline will soon run into the following issue: </p>
-
-<p>You&apos;ve already created a note at a given level, but now want to demote it to a lower level (higher numeric value); this function is generally referred to as <em>indenting</em>, since it typically indents the line below its parent. </p>
-
-<p>And then, if you can indent, you might well also wish at times to be able to <em>outdent</em>: to promote a note to a higher level (lower numeric value). </p>
-
-<p>Notenik provides these two commands beneath the Note menu, along with handy keyboard shortcuts. </p>
-<ul>
-<li><code>OPT-CMD-]</code> will indent the selected note(s); </li>
-<li><code>OPT-CMD-[</code> will outdent the selected note(s). </li>
-</ul>
-
 		  ]]>
 	  </content>
 	</entry>

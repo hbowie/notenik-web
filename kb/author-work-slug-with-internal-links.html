@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Author Work Slug with Internal Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>9.2.3 <a href="derived-variables.html" class="nav-link">Derived Variables</a>&#160;&#8593;</p><h5 id="authorworkslugwithinternallinks">9.2.3.2 Author Work Slug with Internal Links</h5>
+<p>This is similar to <a href="author-work-slug.html" class="wiki-link">Author Work Slug</a>, but generates internal links for author pages, rather than linking to any designated external link. More specifically, the filename will consist of the author name, modified by the <a href="file-name-f.html" class="wiki-link">File Name - F</a> variable modifier, with an <code>.html</code> file extension, and with a preceding path of <code>../authors/</code>. </p>
+
+<p>For example, the following <a href="merge-variables.html" class="wiki-link">Merge Variable</a>&#8230; </p>
+
+<pre><code>=$author-work-slug-int-links$=
+</code></pre>
+
+<p>&#8230;when expanded for an author name of &#8220;Wynton Marsalis&#8221;, would produce the following linking code: </p>
+
+<pre><code>&lt;a href="../authors/wynton-marsalis.html">
+</code></pre>
+
+
+<hr />
+<div>
+
+<p>Next: 9.2.3.3 <a href="image-slug.html" class="nav-link">Image Slug</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

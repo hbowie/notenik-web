@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Sync Module Parameters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>10.3 <a href="scripting-modules.html" class="nav-link">Scripting Modules</a>&#160;&#8593;</p><h4 id="syncmoduleparameters">10.3.6 Sync Module Parameters</h4>
+<p>Following is a sample set of script file rows that can be used to execute a <a href="syncing-collections.html" class="wiki-link">Collection Sync</a>. </p>
+
+<p>We&#8217;ll first display this as an HTML table, to make it easy to read. </p><table>
+<tr>
+<th>
+ module</th>
+<th>
+ action</th>
+<th>
+ modifier</th>
+<th>
+ object</th>
+<th>
+ value </th>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ open</td>
+<td>
+ </td>
+<td>
+ left</td>
+<td>
+ /Users/hbowie/Sites/HBowie-23/content/authors </td>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ open</td>
+<td>
+ </td>
+<td>
+ right</td>
+<td>
+ /Users/hbowie/Sites/belief-system-21c/content/authors </td>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ set</td>
+<td>
+ </td>
+<td>
+ direction</td>
+<td>
+ bidirectional </td>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ set</td>
+<td>
+ </td>
+<td>
+ respectblanks</td>
+<td>
+ false </td>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ set</td>
+<td>
+ </td>
+<td>
+ actions</td>
+<td>
+ logsummary </td>
+ </tr>
+<tr>
+<td>
+ sync</td>
+<td>
+ sync</td>
+<td>
+ </td>
+<td>
+ </td>
+<td>
+  </td>
+ </tr>
+</table>
+
+<p>Now we&#8217;ll show the code for these same rows, using tabs as column delimiters. </p>
+
+<pre><code>module	action	modifier	object	value
+sync	open		left	/Users/hbowie/Sites/HBowie-23/content/authors
+sync	open		right	/Users/hbowie/Sites/belief-system-21c/content/authors
+sync	set		direction	bidirectional
+sync	set		respectblanks	false
+sync	set		actions	logsummary
+sync	sync			
+
+</code></pre>
+
+<p>As we can see, there are three different actions available. </p>
+
+<section id="section-for-open">
+
+<h4 id="open">Open</h4>
+
+<p>The <em>Object</em> value can be either <code>left</code> or <code>right</code>, and both must be specified. The value column should contain a file path to a collection folder. </p>
+
+</section>
+
+<section id="section-for-set">
+
+<h4 id="set">Set</h4>
+
+<p>The following parameters may be set. </p>
+<ul>
+<li><p>direction — Set this variable to <code>lefttoright</code>, <code>righttoleft</code> or <code>bidirectional</code>. </p></li>
+<li><p>respectblanks — Set this to either <code>true</code> or <code>false</code>. </p></li>
+<li><p>actions — Set this to <code>logonly</code>, <code>logdetails</code>, or <code>logsummary</code>. </p></li>
+</ul>
+
+</section>
+
+<section id="section-for-sync">
+
+<h4 id="sync">Sync</h4>
+
+<p>No parameters are necessary. This will start the sync process. </p>
+
+</section>
+
+
+<hr />
+<div>
+
+<p>Next: 10.3.7 <a href="browse-module-parameters.html" class="nav-link">Browse Module Parameters</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>

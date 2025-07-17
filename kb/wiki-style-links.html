@@ -20,38 +20,39 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>7.3.5 <a href="referencing-another-note.html" class="nav-link">Referencing Another Note</a>&#160;&#8593;</p><h5 id="wikistylelinks">7.3.5.1 Wiki Style Links</h5>
-<p>Notenik allows the user to create a link from one Note to another Note within the same Collection. </p>
+<p>4 <a href="markdown.html" class="nav-link">Markdown</a>&#160;&#8593;</p><h3 id="wikistylelinks">4.7 Wiki Style Links</h3>
+<p>Notenik allows the user to create a link from one note to another note within the same collection. </p>
 
 <p>In order to enable this option, the user must be using Notenik&#8217;s own internal Markdown parser. </p>
 
 <p>The Notenik Markdown parser supports <a href="https://en.wikipedia.org/wiki/Hyperlink#Wikis" class="ext-link" target="_blank" rel="noopener">double-bracket wiki-style links</a> as an extension to the original Markdown spec from John Gruber.  </p>
 
-<p>If you are using Notenik&#8217;s parser, then a link to another Note may be coded by simply enclosing the title of the target Note within double square brackets, like this &#8211; <code>[[Overview]]</code> &#8211; and a click on the resulting link will take you to that note. </p>
+<p>If you are using Notenik&#8217;s parser, then a link to another note may be coded by simply enclosing the title of the target note within double square brackets, like this &#8211; <code>[[Overview]]</code> &#8211; and a click on the resulting link will take you to that note. </p>
 
-<p>If Notenik cannot initially find the target for a link, it will attempt to take possible singular/plural variation into account, in this way: if the link target ends with the letter &#8216;s&#8217;, then Notenik will try again with the trailing &#8216;s&#8217; removed; if the link target does not end with an &#8216;s&#8217;, then Notenik will try adding the letter &#8216;s&#8217; to the end. If such a change successfully identifies a Note, then that Note will be used as the target of the wiki link. </p>
+<p>If Notenik cannot initially find the target for a link, it will attempt to take possible singular/plural variation into account, in this way: if the link target ends with the letter &#8216;s&#8217;, then Notenik will try again with the trailing &#8216;s&#8217; removed; if the link target does not end with an &#8216;s&#8217;, then Notenik will try adding the letter &#8216;s&#8217; to the end. If such a change successfully identifies a note, then that note will be used as the target of the wiki link. </p>
 
-<p>If you code a wiki style link, in double square brackets, to a Note that does not yet exist, then after saving the edits to the Note and redisplaying it, the new Note (the target of the link) may be created for you automatically. The new Note will have the targeted Title assigned, and body text containing a link back to the referencing Note. This auto-creation behavior is optional, and can be enabled by checking a box in the Collection Settings window. </p>
+<p>If you code a wiki style link, in double square brackets, to a note that does not yet exist, then after saving the edits to the note and redisplaying it, the new note (the target of the link) may be created for you automatically. The new note will have the targeted title assigned, and body text containing a link back to the referencing note. Also, starting with <a href="version-17.0.0.html" class="wiki-link">Version 17.0.0</a>, the new note will be assigned the same <a href="class.html" class="wiki-link">Class</a> as the linking note, the same <a href="level.html" class="wiki-link">Level</a>, and an incremented <a href="seq.html" class="wiki-link">Seq</a>, if the linking note has these fields. This auto-creation behavior is optional, and can be enabled by checking a box in the <a href="collection-settings.html" class="wiki-link">Collection Settings</a> window. </p>
 
-<p>If you also enable the <a href="timestamp.html" class="wiki-link">timestamp</a> field for a Collection, then you can change the title of a linked Note without changing the referencing wiki link text, and Notenik will remember the association between the old title and the new title, making use of the timestamp field to preserve a unique, unchanging identity for each Note. These associations will be saved in a special file named &#8216;alias.txt&#8217;, within the Collection folder. This functionality can be useful to make sure you don&#8217;t end up with broken links between Notes. </p>
+<p>If you also enable the <a href="timestamp.html" class="wiki-link">timestamp</a> field for a collection, then you can change the title of a linked note without changing the referencing wiki link text, and Notenik will remember the association between the old title and the new title, making use of the timestamp field to preserve a unique, unchanging identity for each note. These associations will be saved in a special file named &#8216;alias.txt&#8217;, within the collection folder. This functionality can be useful to make sure you don&#8217;t end up with broken links between notes. </p>
 
-<p>Be sure and check out the ability to <a href="select-a-note-for-action.html" class="wiki-link">Select a Note for Action</a> for an easy way to select a target Note and insert a wiki link to that second Note. </p>
+<p>Be sure and check out the ability to <a href="select-a-note-for-action.html" class="wiki-link">Select a Note for Action</a> for an easy way to select a target note and insert a wiki link to that second note. </p>
 
-<p>The linked text normally shows the title of the Note that is the target of the link, but the linked text may be altered by placing a vertical bar (aka a pipe symbol) after the title of the target Note, followed by the text to be used as the linked text. </p>
+<p>The linked text normally shows the title of the note that is the target of the link, but the linked text may be altered by placing a vertical bar (aka a pipe symbol) after the title of the target note, followed by the text to be used as the linked text. </p>
 
 <p>As an example, the following code: </p>
 
@@ -63,7 +64,7 @@ window.MathJax = {
 <hr />
 <div>
 
-<p>Next: 7.3.5.2 <a href="wiki-links-between-collections.html" class="nav-link">Wiki Links Between Collections</a></p></div>
+<p>Next: 4.8 <a href="formatting-commands.html" class="nav-link">Formatting Commands</a></p></div>
 
 
 </main>

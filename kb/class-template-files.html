@@ -20,33 +20,34 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>8.1 <a href="note-files.html" class="nav-link">Note Files</a>&#160;&#8593;</p><h4 id="classtemplatefiles">8.1.6 Class Template Files</h4>
-<p>Starting with <a href="version-7.7.0.html" class="wiki-link">Version 7.7.0</a>, the user may specify a special template file for each different <a href="class.html" class="wiki-link">class</a> of Note within a Collection. </p>
+<p>6.1 <a href="note-files.html" class="nav-link">Note Files</a>&#160;&#8593;</p><h4 id="classtemplatefiles">6.1.6 Class Template Files</h4>
+<p>Starting with <a href="version-7.7.0.html" class="wiki-link">Version 7.7.0</a>, the user may specify a special template file for each different <a href="class.html" class="wiki-link">Class</a> of Note within a Collection. </p>
 
 <p>A Class template file can serve two different purposes: </p>
 <ul>
-<li><p>A class template file may specify a subset of all fields within the Collection to be available when adding/editing a Note of the specified Class. This can be useful if the Collection identifies a long list of field labels and types, but only some of these are relevant to Notes of a certain class: the Edit tab then becomes a lot cleaner. </p></li>
-<li><p>A class template file may specify default values for one or more fields, to be presented on the Edit tab when adding a new Note of a given class. </p></li>
+<li><p>A class template file may specify a subset of all fields within the Collection to be available when adding/editing a Note of the specified Class. This can be useful if the collection identifies a long list of field labels and types, but only some of these are relevant to notes of a certain class: the Edit tab then becomes a lot cleaner. </p></li>
+<li><p>A class template file may specify default values for one or more fields, to be presented on the Edit tab when adding a new note of a given class. </p></li>
 </ul>
 
 <p>Here&#8217;s how to make all of this work. </p>
 <ol>
-<li><p><a href="tailor-collection-settings.html" class="wiki-link">Tailor the Collection Settings</a>  and make sure the Class field has a check mark next to it. </p></li>
-<li><p>Also make sure that all of the fields you might want for any class are specified for the overall Collection Settings: this list of field labels should be a superset of any appearing for a particular class. </p></li>
+<li><p><a href="collection-settings.html" class="wiki-link">Tailor the Collection Settings</a>  and make sure the Class field has a check mark next to it. </p></li>
+<li><p>Also make sure that all of the fields you might want for any class are specified for the overall <a href="collection-settings.html" class="wiki-link">Collection Settings</a>: this list of field labels should be a superset of any appearing for a particular class. </p></li>
 <li><p>If you&#8217;d like, you can specify a list of possible values for the class field within <a href="the-collection-template-file.html" class="wiki-link">the Collection Template file</a>. </p>
 
 <p>Here&#8217;s an example of how you would do this: </p>
@@ -57,12 +58,12 @@ window.MathJax = {
 <p>In other words, enter the usual field label, followed by a colon, and then follow that with the possible values, separated using commas or semicolons. </p>
 
 <p>Be sure to Reload the Collection after making changes to the Collection template! </p></li>
-<li><p>Once you&#8217;ve enabled a Class field, you can use the <code>Generate New Class Template...</code> item beneath the <code>Collection</code> menu to create a class template file. These files will be stored within a subfolder named <code>class</code>, within the folder holding your Collection&#8217;s Notes. The name of the file should be in all lower-case letters, and this name will become the name of a class available for that Collection, irrespective of whether you&#8217;ve entered that class name as indicated above, within the Collection template file. </p></li>
+<li><p>Once you&#8217;ve enabled a Class field, you can use the Generate New Class Template item beneath the Collection menu to create a class template file. These files will be stored within a subfolder named <code>class</code>, within the folder holding your collection&#8217;s notes. The name of the file should be in all lower-case letters, and this name will become the name of a class available for that collection, irrespective of whether you&#8217;ve entered that class name as indicated above, within the collection template file. </p></li>
 <li><p>After creating the requested class template file, Notenik will ask macOS to open the file within your preferred text editor. </p></li>
-<li><p>The new class template file will have all of the Collection&#8217;s field labels called out, but without any following information. You can now make two sorts of changes to the generated file. </p>
+<li><p>The new class template file will have all of the collection&#8217;s field labels called out, but without any following information. You can now make two sorts of changes to the generated file. </p>
 <ul>
 <li><p>You can delete the entries for any field labels that you do not plan to use with this class; </p></li>
-<li><p>You can specify default values for any of these field labels, to be provided whenever you create a new Note of this class. </p></li>
+<li><p>You can specify default values for any of these field labels, to be provided whenever you create a new note of this class. </p></li>
 </ul>
 
 <p>When you&#8217;re done making these changes, save the class template file within your text editor, and then Reload the Collection within Notenik. </p></li>
@@ -75,7 +76,7 @@ window.MathJax = {
 <hr />
 <div>
 
-<p>Next: 8.1.7 <a href="the-defaults-class-template.html" class="nav-link">The defaults Class Template</a></p></div>
+<p>Next: 6.1.7 <a href="the-defaults-class-template.html" class="nav-link">The defaults Class Template</a></p></div>
 
 
 </main>

@@ -20,30 +20,31 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>7.3 <a href="notenik-markdown-parser.html" class="nav-link">Notenik Markdown Parser</a>&#160;&#8593;</p><h4 id="collectionnavigationcommands">7.3.9 Collection Navigation Commands</h4>
-<p>The following commands can be used to provide navigation throughout a Collection. </p>
+<p>4 <a href="markdown.html" class="nav-link">Markdown</a>&#160;&#8593;</p><h3 id="collectionnavigationcommands">4.10 Collection Navigation Commands</h3>
+<p>The following commands can be used to provide navigation throughout a collection. </p>
 
 <p>These Markdown extensions are generally unique to Notenik. </p>
 
-<p>When using Notenik to turn a Collection into a website (as with the <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a> functionality), these commands can be used to create pages facilitating navigation through the entire site. </p>
+<p>When using Notenik to turn a collection into a website (as with the <a href="export-as-web-book.html" class="wiki-link">Export as Web Book</a> functionality), these commands can be used to create pages facilitating navigation through the entire site. </p>
 
-<p>A note on performance: when Notenik displays a Note containing one of these commands, the app dynamically runs through the entire Collection in order to create the resulting HTML used to generate the view seen on the Display tab. This can take a while, especially for a large Collection, so don&#8217;t be surprised if a page like this takes a bit longer to load than a normal Note would. </p>
+<p>A note on performance: when Notenik displays a note containing one of these commands, the app dynamically runs through the entire Collection in order to create the resulting HTML used to generate the view seen on the Display tab. This can take a while, especially for a large collection, so don&#8217;t be surprised if a page like this takes a bit longer to load than a normal note would. </p>
 
-<p>When a Collection is turned into a website, then this Notenik performance hit will be taken when the output HTML is generated, and not when the resulting page is loaded into a web browser. </p>
+<p>When a collection is turned into a website, then this Notenik performance hit will be taken when the output HTML is generated, and not when the resulting page is loaded into a web browser. </p>
 
 <p>On the other hand, if the command results in the generation of a large web page (as is especially true for the <code>search</code> command), then some delays can also be expected when loading the output web page into a browser. </p><table>
 <tr>
@@ -56,13 +57,13 @@ window.MathJax = {
 <td>
 <code>{:biblio}</code> </td>
 <td>
- <a href="generate-a-bibliography.html" class="wiki-link">Generate a Bibliography</a> </td>
+ <em><a href="generate-a-bibliography.html" class="wiki-link">Generate a Bibliography</a></em> </td>
 </tr>
 <tr>
 <td>
  <code>{:calendar}</code> </td>
 <td>
- <a href="generate-a-collection-calendar.html" class="wiki-link">Generate a Collection Calendar</a> </td>
+ <em><a href="generate-a-collection-calendar.html" class="wiki-link">Generate a Collection Calendar</a></em> </td>
 </tr>
 <tr>
 <td>
@@ -80,7 +81,7 @@ window.MathJax = {
 <td>
  <code>{:random}</code> </td>
 <td>
- <a href="go-to-random-note.html" class="wiki-link">Go To Random Note</a>* </td>
+ <em><a href="go-to-random-note.html" class="wiki-link">Go To Random Note</a></em> </td>
 </tr>
 <tr>
 <td>
@@ -112,22 +113,22 @@ window.MathJax = {
 <hr />
 <h4>Contents</h4>
 <ul class="notenik-toc">
-<li>7.3.9.1 <a href="generate-a-bibliography.html" class="nav-link">Generate a Bibliography</a></li>
-<li>7.3.9.2 <a href="generate-a-collection-calendar.html" class="nav-link">Generate a Collection Calendar</a></li>
-<li>7.3.9.3 <a href="generate-a-collection-table-of-contents.html" class="nav-link">Generate a Collection Table of Contents</a></li>
-<li>7.3.9.4 <a href="generate-a-collection-index.html" class="nav-link">Generate a Collection Index</a></li>
-<li>7.3.9.5 <a href="go-to-random-note.html" class="nav-link">Go To Random Note</a></li>
-<li>7.3.9.6 <a href="generate-a-collection-search-page.html" class="nav-link">Generate a Collection Search Page</a></li>
-<li>7.3.9.7 <a href="generate-a-tags-cloud.html" class="nav-link">Generate a Tags Cloud</a></li>
-<li>7.3.9.8 <a href="generate-a-tags-outline.html" class="nav-link">Generate a Tags Outline</a></li>
-<li>7.3.9.9 <a href="display-teasers.html" class="nav-link">Display Teasers</a></li>
+<li>4.10.1 <a href="generate-a-bibliography.html" class="nav-link">Generate a Bibliography</a></li>
+<li>4.10.2 <a href="generate-a-collection-calendar.html" class="nav-link">Generate a Collection Calendar</a></li>
+<li>4.10.3 <a href="generate-a-collection-table-of-contents.html" class="nav-link">Generate a Collection Table of Contents</a></li>
+<li>4.10.4 <a href="generate-a-collection-index.html" class="nav-link">Generate a Collection Index</a></li>
+<li>4.10.5 <a href="go-to-random-note.html" class="nav-link">Go To Random Note</a></li>
+<li>4.10.6 <a href="generate-a-collection-search-page.html" class="nav-link">Generate a Collection Search Page</a></li>
+<li>4.10.7 <a href="generate-a-tags-cloud.html" class="nav-link">Generate a Tags Cloud</a></li>
+<li>4.10.8 <a href="generate-a-tags-outline.html" class="nav-link">Generate a Tags Outline</a></li>
+<li>4.10.9 <a href="display-teasers.html" class="nav-link">Display Teasers</a></li>
 </ul>
 
 <hr />
 
 <div>
 
-<p class="float-left">Next: 7.3.9.1 <a href="generate-a-bibliography.html" class="nav-link">Generate a Bibliography</a></p>
+<p class="float-left">Next: 4.10.1 <a href="generate-a-bibliography.html" class="nav-link">Generate a Bibliography</a></p>
 
 <p class="float-right">Skip to: <a href="supply-collection-data.html" class="nav-link">Supply Collection Data</a></p></div>
 

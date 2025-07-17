@@ -12,6 +12,24 @@
     "language": "en-US",
     "items": [
         {
+            "id": "notenik.app/adventures/building-something-without-having-to-order-the-cement",
+            "url": "https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html\">$$
+						"date_published": "2025-05-22T00:00:00Z"
+        },
+        {
+            "id": "notenik.app/adventures/tech-priorities-for-note-taking",
+            "url": "https://notenik.app/adventures/tech-priorities-for-note-taking.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/tech-priorities-for-note-taking.html\">$$
+						"date_published": "2025-04-07T00:00:00Z"
+        },
+        {
+            "id": "notenik.app/adventures/creating-a-portable-wisdom-feed",
+            "url": "https://notenik.app/adventures/creating-a-portable-wisdom-feed.html",
+						"content_html": "<p><a href=\"https://notenik.app/adventures/creating-a-portable-wisdom-feed.html\">$$
+						"date_published": "2025-04-02T00:00:00Z"
+        },
+        {
             "id": "notenik.app/adventures/starter-packs-for-notenik",
             "url": "https://notenik.app/adventures/starter-packs-for-notenik.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/starter-packs-for-notenik.html\">$$
@@ -106,24 +124,6 @@
             "url": "https://notenik.app/adventures/noteniks-split-personality.html",
 						"content_html": "<p><a href=\"https://notenik.app/adventures/noteniks-split-personality.html\">$$
 						"date_published": "2024-08-30T00:00:00Z"
-        },
-        {
-            "id": "notenik.app/adventures/a-dedicated-outline-tab",
-            "url": "https://notenik.app/adventures/a-dedicated-outline-tab.html",
-						"content_html": "<p><a href=\"https://notenik.app/adventures/a-dedicated-outline-tab.html\">$$
-						"date_published": "2024-08-22T00:00:00Z"
-        },
-        {
-            "id": "notenik.app/adventures/dragging-and-dropping-into-an-outline",
-            "url": "https://notenik.app/adventures/dragging-and-dropping-into-an-outline.html",
-						"content_html": "<p><a href=\"https://notenik.app/adventures/dragging-and-dropping-into-an-outline.html\">$$
-						"date_published": "2024-08-18T00:00:00Z"
-        },
-        {
-            "id": "notenik.app/adventures/indenting-and-outdenting-outline-entries",
-            "url": "https://notenik.app/adventures/indenting-and-outdenting-outline-entries.html",
-						"content_html": "<p><a href=\"https://notenik.app/adventures/indenting-and-outdenting-outline-entries.html\">$$
-						"date_published": "2024-08-16T00:00:00Z"
         },
     ]
 }

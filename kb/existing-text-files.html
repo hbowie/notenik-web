@@ -20,36 +20,37 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>8. <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="existingtextfiles">8.11 Existing Text Files</h3>
+<p>6 <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="existingtextfiles">6.12 Existing Text Files</h3>
 <p>To better support users with existing collections of notes stored in text files, Notenik makes its best effort to recognize and appropriately handle the following alternate text file formats.  </p>
 
-<p>In all cases, the body of the Note will be treated as Markdown. </p>
+<p>In all cases, the body of the note will be treated as Markdown. </p>
 
 <p>Notenik will generally be able to determine which of these variations is being used based on the contents of the first few lines of each text file. </p>
 
-<p>Notenik will also attempt to respect these variations when modifying an existing Note, keeping each Note in its original format. </p>
+<p>Notenik will also attempt to respect these variations when modifying an existing note, keeping each note in its original format. </p>
 
-<p>And when adding new Notes to a Collection, Notenik will attempt to use whatever format is already found in the folder. </p>
+<p>And when adding new notes to a collection, Notenik will attempt to use whatever format is already found in the folder. </p>
 
-<p>Note that, beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set/change a Collection&#8217;s preferred file format when you <a href="tailor-collection-settings.html" class="wiki-link">Tailor Collection Settings</a>. </p>
+<p>Note that, beginning with <a href="version-10.6.0.html" class="wiki-link">Version 10.6.0</a>, you may explicitly set/change a collection&#8217;s preferred file format when you <a href="collection-settings.html" class="wiki-link">Tailor Collection Settings</a>. </p>
 
 <section id="section-for-plain-text">
 
-<h2 id="plain-text">Plain Text</h2>
+<h5 id="plain-text">Plain Text</h5>
 
 <p>The first line of the file contains neither a Title label nor a Markdown level 1 heading. The title is taken from the file name (minus the extension) and the entire file contents make up the body. No metadata, no field labels, and no tags. </p>
 
@@ -57,21 +58,13 @@ window.MathJax = {
 
 <section id="section-for-markdown">
 
-<h2 id="markdown">Markdown</h2>
+<h5 id="markdown">Markdown</h5>
 
-<p>The first line of the file contains a level 1 heading, and this is used as the Note&#8217;s title. The second line may optionally contain tags for the Note, identified by a hash mark in the first position of the line, immediately followed by tag(s), with no intervening spaces. The rest of the file makes up the Note&#8217;s body. No metadata, and no field labels. </p>
-
-</section>
-
-<section id="section-for-multimarkdown">
+<p>The first line of the file contains a level 1 heading, and this is used as the note&#8217;s title. The second line may optionally contain tags for the Note, identified by a hash mark in the first position of the line, immediately followed by tag(s), with no intervening spaces. The rest of the file makes up the note&#8217;s body. No metadata, and no field labels. </p>
 
 <h2 id="multimarkdown">MultiMarkdown </h2>
 
 <p>The MultiMarkdown format has a special syntax for metadata stored at the top of a Markdown document. Notenik will attempt to recognize and parse such a document according to <a href="https://fletcher.github.io/MultiMarkdown-4/metadata.html" class="ext-link" target="_blank" rel="noopener">this specification</a>. </p>
-
-</section>
-
-<section id="section-for-yaml-frontmatter">
 
 <h2 id="yaml-frontmatter">YAML Frontmatter</h2>
 
@@ -85,7 +78,7 @@ window.MathJax = {
 
 <section id="section-for-notenik">
 
-<h2 id="notenik">Notenik</h2>
+<h5 id="notenik">Notenik</h5>
 
 <p>The Notenik format differs from those above in the following significant ways. </p>
 <ul>
@@ -95,15 +88,13 @@ window.MathJax = {
 </code></pre>
 </li>
 <li><p>Notenik will generally write out a blank line between fields, to aid in readability, which means that the beginning of the body is not triggered by the first blank line. </p></li>
-<li><p>Notenik will explicitly identify the start of the Note&#8217;s body with a body label, as in the following example: </p>
+<li><p>Notenik will explicitly identify the start of the Note&#8217;s body with a body label, as in the following example: </p></li>
+</ul>
 
 <pre><code>Body: 
+		
+And this is the first line of the body.
 </code></pre>
-
-<pre><code>And this is the first line of the body.
-</code></pre>
-</li>
-</ul>
 
 </section>
 
@@ -111,20 +102,20 @@ window.MathJax = {
 <hr />
 <h4>Contents</h4>
 <ul class="notenik-toc">
-<li>8.11.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></li>
-<li>8.11.2 <a href="rules-for-updating.html" class="nav-link">Rules for Updating</a></li>
-<li>8.11.3 <a href="rules-for-new-notes.html" class="nav-link">Rules for New Notes</a></li>
-<li>8.11.4 <a href="converting-an-entire-collection.html" class="nav-link">Converting an Entire Collection</a></li>
-<li>8.11.5 <a href="backing-up.html" class="nav-link">Backing Up</a></li>
+<li>6.12.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></li>
+<li>6.12.2 <a href="rules-for-updating.html" class="nav-link">Rules for Updating</a></li>
+<li>6.12.3 <a href="rules-for-new-notes.html" class="nav-link">Rules for New Notes</a></li>
+<li>6.12.4 <a href="converting-an-entire-collection.html" class="nav-link">Converting an Entire Collection</a></li>
+<li>6.12.5 <a href="backing-up-existing-files.html" class="nav-link">Backing Up Existing Files</a></li>
 </ul>
 
 <hr />
 
 <div>
 
-<p class="float-left">Next: 8.11.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></p>
+<p class="float-left">Next: 6.12.1 <a href="rules-for-reading.html" class="nav-link">Rules for Reading</a></p>
 
-<p class="float-right">Skip to: <a href="field-labels-and-types.html" class="nav-link">Field Labels and Types</a></p></div>
+<p class="float-right">Skip to: <a href="configuration-settings.html" class="nav-link">Configuration Settings</a></p></div>
 
 
 </main>

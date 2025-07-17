@@ -20,33 +20,34 @@ window.MathJax = {
 <header class="nnk-header">
 <p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
 <hr class="clearFloats" />
-<p>The Notenik Knowledge Base </p>
+<p>Notenik Knowledge Base </p>
 
 </header>
 
 <nav class="nnk-nav">
 <ul>
-<li><a href="complete-table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
 <li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
 </ul>
 
 
 </nav>
 
 <main>
-<p>9.6 <a href="fields-for-sequencing-and-outlining.html" class="nav-link">Fields for Sequencing and Outlining</a>&#160;&#8593;</p><h4 id="seq">9.6.1 Seq</h4>
-<p>The word <code>seq</code> can be used as both a label and a type. </p>
+<p>5.6 <a href="fields-for-sequencing-and-outlining.html" class="nav-link">Fields for Sequencing and Outlining</a>&#160;&#8593;</p><h4 id="seq">5.6.1 Seq</h4>
+<p>The word seq can be used as both a label and a type. </p>
 
-<p>In addition to <code>seq</code> itself, this field type will be inferred for field labels matching any of the following: </p>
+<p>In addition to seq itself, this field type will be inferred for field labels matching any of the following: </p>
 <ul>
 <li>sequence </li>
 <li>rev </li>
 <li>revision </li>
 <li>version </li>
-<li>Anything beginning with <code>seq</code> </li>
+<li>Anything beginning with seq </li>
 </ul>
 
-<p>A Collection is not expected to have more than one field of type <code>seq</code>. </p>
+<p>A Collection is not expected to have more than one field of type seq. </p>
 
 <p>A seq field is meant to contain some sort of sequence number, revision letter, version number or priority that can be used to put the Notes of a Collection into some meaningful order. </p>
 
@@ -56,53 +57,200 @@ window.MathJax = {
 
 <p>When editing, the seq field will appear as a single line of editable text. </p>
 
-<p>When displayed, the seq field will be displayed as entered.   </p>
+<p>When displayed, the seq field will be displayed as entered.  </p>
 
-<p>When used as a sort field, seq values will be padded to cause them to sort into a natural order, rather than a strict character-by-character alphanumeric order.  In other words, a value of <code>2</code> will sort before a value of <code>10</code>, a value of <code>b</code> will sort before <code>aa</code>, etc. Each segment of this field, when separated by a dot or a dash, will be padded separately. </p>
+<section id="section-for-sorting-by-seq">
+
+<h5 id="sorting-by-seq">Sorting by Seq </h5>
+
+<p>When used as a sort field, seq values will be padded to cause them to sort into a natural order, rather than a strict character-by-character alphanumeric order.  In other words, a value of 2 will sort before a value of 10, a value of b will sort before aa, etc. Each segment of this field, when separated by a dot or a dash, will be padded separately. </p>
+
+<p>If you&#8217;d like to see your Notes listed in sequence by their assigned number, you can use the Sort Menu to change the sequence of the displayed list from Title to Seq + Title. Use the Reverse option to see them in descending sequence. </p>
+
+</section>
+
+<section id="section-for-seq-as-time-of-day">
+
+<h5 id="seq-as-time-of-day">Seq as Time of Day</h5>
 
 <p>A seq field can also be used to store a time of day. In this case, colons and spaces will be recognized as separator characters, and a final segment containing a value of &#8216;AM&#8217; or &#8216;PM&#8217; (in either upper- or lowercase) will be placed at the beginning of the derived sort key, after converting to lowercase, for purposes of normalization. The result should be that these values sort into a natural order, and are displayed in a natural format. </p>
 
-<p>If you&#8217;d like to see your Notes listed in sequence by their assigned number, you can use the Sort Menu to change the sequence of the displayed list from <code>Title</code> to <code>Seq + Title</code>. Use the <code>Reverse</code> option to see them in descending sequence. </p>
+<p>Note that a Seq time of day field can be combined with another field of type Seq. In a case like this, the Seq time of day field should have a label starting with the word &#8220;time&#8221;, and its definition in <a href="the-collection-template-file.html" class="wiki-link">the Collection Template File</a> should follow the line defining the other Seq field being used. </p>
+
+</section>
+
+<section id="section-for-new-note-seq-suggestions">
+
+<h5 id="new-note-seq-suggestions">New Note Seq Suggestions</h5>
 
 <p>When adding a new Note, if the currently selected Note has a seq value, then the new Note&#8217;s seq will be initialized by incrementing the selected Note&#8217;s seq value. In other words, if you have your list sorted by Seq, then a new Note will be inserted immediately following the selected Note. </p>
 
-<p>If you want to insert a new note with a Seq Value already assigned to another Note, then first select the other Note, then use the <code>Increment</code> command under the <code>Note</code> menu to increment the Seq field of the existing note, as well as following notes that might otherwise cause duplicate Seq values. </p>
+<p>If you have elected to <a href="change-note-id-configuration.html" class="wiki-link">Change Note ID Configuration</a> for your collection, and you  have chosen the <a href="seq.html" class="wiki-link">Seq</a> field as your auxiliary value, and have opted to identify notes based on their aux field only, wtihout reference to the Title field, then a new Note&#8217;s seq will instead be incremented just beyond the highest seq value yet used in the collection, without reference to the currently selected Note. </p>
 
-<p>If your Notes have a two-part Seq field (i.e., 1.00), then use the <code>Increment Major Seq</code> command beneath the <code>Note</code> menu to force the numbers to the left of the decimal point to be incremented, rather than incrementing the numbers on the right. </p>
+</section>
+
+<section id="section-for-making-room-for-insertions">
+
+<h5 id="making-room-for-insertions">Making Room for Insertions</h5>
+
+<p>If you want to insert a new note with a Seq Value already assigned to another Note, then first select the other Note, then use the Increment command under the Note menu to increment the Seq field of the existing note, as well as following notes that might otherwise cause duplicate Seq values. </p>
+
+<p>If your Notes have a two-part Seq field (i.e., 1.00), then use the Increment Major Seq command beneath the Note menu to force the numbers to the left of the decimal point to be incremented, rather than incrementing the numbers on the right. </p>
+
+</section>
+
+<section id="section-for-drag-and-drop">
+
+<h5 id="drag-and-drop">Drag and Drop</h5>
 
 <p>You can perform some basic resequencing by dragging and dropping a Note from one position to another on the List tab. Note that you must move the Drop indicator to a line above and/or below existing Notes in order to indicate a desired new position for an existing Note (in other words, not on top of an existing Note). Only the Note being dragged and dropped will have its Seq value changed. </p>
 
-<p>Starting with <a href="version-7.9.0.html" class="wiki-link">Version 7.9.0</a>, you can also modify the Seq values for an entire range of Notes. The first step is to select the range to be renumbered on the List tab. Then use Ctrl-Click, or right-click, to obtain the contextual menu, then select <code>Modify Seq...</code> from the menu. You will be presented with a new window showing the range you have selected, and then allowing you to enter a new Seq value for the first Note in the range. Once you&#8217;ve entered that new value, and hit the <code>OK</code> button, the entire range will be renumbered. This command doesn&#8217;t make use of, or modify, the Level values, if present, but the structure of the range, as represented by the levels of numbering for each Note, will be preserved. The Seq value for following Notes will not be modified, so if you&#8217;re moving a block of Notes into an existing sequence, then you may wish to increment the Seq value for the new following Notes, before initiating the <code>Modify Seq</code> operation. </p>
+</section>
 
-<p>Starting with <a href="version-8.7.0.html" class="wiki-link">Version 8.7.0</a>, you may edit <a href="the-collection-template-file.html" class="wiki-link">the Collection Template file</a> and add codes to control the formatting of Seq values in secondary displays. </p>
+<section id="section-for-moving-a-range-of-notes">
 
-<p>Primary displays of Seq values occur on the display of the Note in question. Primary displays always carry the full, unformatted Seq value. </p>
+<h5 id="moving-a-range-of-notes">Moving a Range of Notes</h5>
 
-<p>Secondary displays of Seq values may arise when showing the contents of a higher-<a href="level.html" class="wiki-link">level</a> Note. These are the sorts of displays that will be affected by formatting codes specified in the Collection template file. </p>
+<p>Starting with <a href="version-7.9.0.html" class="wiki-link">Version 7.9.0</a>, you can also modify the Seq values for an entire range of Notes. The first step is to select the range to be renumbered on the List tab. Then use Ctrl-Click, or right-click, to obtain the contextual menu, then select Modify Seq&#8230; from the menu. You will be presented with a new window showing the range you have selected, and then allowing you to enter a new Seq value for the first Note in the range. Once you&#8217;ve entered that new value, and hit the OK button, the entire range will be renumbered. This command doesn&#8217;t make use of, or modify, the Level values, if present, but the structure of the range, as represented by the levels of numbering for each Note, will be preserved. The Seq value for following Notes will not be modified, so if you&#8217;re moving a block of Notes into an existing sequence, then you may wish to increment the Seq value for the new following Notes, before initiating the Modify Seq operation. </p>
 
-<p>Here is an example of such formatting codes: </p>
+</section>
 
-<pre><code>Seq: &lt;seq: x|n.|x|x > 
-</code></pre>
+<section id="section-for-formatting-seq-fields-for-display">
 
-<p>In this example&#8230; </p>
-<ul>
-<li>The first <code>Seq</code> is the field label; </li>
-<li>The next <code>seq</code> is the field type; </li>
-<li>The <code>&lt;</code> and <code>&gt;</code> enclose the field type and its formatting codes; </li>
-<li>The <code>:</code> separates the type from the following codes; </li>
-<li>The pipe characters (<code>|</code>) separate the levels of a Seq field; </li>
-<li>The <code>x</code> character indicates that the level should be excluded from the formatted display; </li>
-<li>The <code>n</code> character represents a Seq level to be displayed; </li>
-<li>The <code>.</code> is a suffix to be added to the Seq level. </li>
-</ul>
+<h5 id="formatting-seq-fields-for-display">Formatting Seq Fields for Display</h5>
 
-<p>So, given the formatting codes in the example above, a Seq value of &#8216;7.3&#8217; would appear in a secondary display as &#8216;3.&#8217;. </p>
+<p>Formatting codes may be specified for a Seq field. </p>
+
+<p>These codes can serve three distinct purposes. </p>
+<ol>
+<li><p>Display integer numbers (1, 2, 3) as either upper-case letters (A, B, C), lower-case letters (a, b, c), upper-case Roman numerals (I, II, III) or lower-case Roman numerals (i, ii, iii). For example a Seq value of 3.5.7 could be displayed instead as III.E.7. </p></li>
+<li><p>Suppress the display of higher-level numbering when identifying a single note. For example, instead of showing III.E.7, the first two levels could be excluded, identifying the detail only with the number 7 (as would typically be done for a chapter within a section, for example, where higher-level numbers are implied by context). </p></li>
+<li><p>Add literals. For example, instead of displaying simply 3, a period could be made to follow, producing &#8216;3.&#8217;, or the value could be enclosed in parentheses, producing &#8216;(3)&#8217;. </p></li>
+</ol>
+
+<p>Of course these three effects can also be combined in any way the user might desire. </p>
+
+<p>The coding scheme is two-dimensional. </p>
+
+<p>The first dimension consists of one general formatting string that can be used for a full display of all levels, followed by a separate formatting string specified for each Seq level. These strings are specified one after another, and separated by pipe characters (&#8216;|&#8217;). The first of these would be applied when a full expression of a Seq value is appropriate, while the others would be applied when a partial expression might be more helpful. So the second format string would be applied to Seq values of only one level, the third would be applied to Seq values with two levels, and so on. </p>
+
+<p>And then within each formatting string, one formatting character can be specified for each level within a particular Seq value. The following characters are meaningful. </p><table>
+<tr>
+<th>
+ Character  </th>
+<th>
+ Meaning </th>
+ </tr>
+<tr>
+<td>
+ x (or X)   </td>
+<td>
+ Exclude this level </td>
+</tr>
+<tr>
+<td>
+ n (or N)   </td>
+<td>
+ Include this level as-is </td>
+</tr>
+<tr>
+<td>
+ nn (or NN) </td>
+<td>
+ Multiple n&#8217;s can be used to indicate padding </td>
+</tr>
+<tr>
+<td>
+ a          </td>
+<td>
+ Convert the number to a lower-case letter </td>
+</tr>
+<tr>
+<td>
+ A          </td>
+<td>
+ Convert the number to an upper-case letter </td>
+</tr>
+<tr>
+<td>
+ i          </td>
+<td>
+ Convert the number to a lower-case roman numeral </td>
+</tr>
+<tr>
+<td>
+ I          </td>
+<td>
+ Convert the number to an upper-case roman numeral </td>
+</tr>
+</table>
+
+<p>Any other, non-meaningful character will be treated as a literal to be used as a prefix, separator, or suffix, depending on its position. </p>
+
+<p>Note that the first formatting string would generally not exclude any levels, while following ones might well exclude more significant levels, instead relying on context to orient the reader. </p>
+
+<p>Here&#8217;s an example of how such codes might appear in a collection template file. (The first value of Seq: specifies the field label. The second value of seq specifies the field type. The formatting codes then follow the colon.) </p>
+
+<p>Seq: <seq: n.a.i|n.|xa.|xxi.> </p>
+
+<p>And here&#8217;s how a series of Seq values might appear after formatting using these codes. </p><table>
+<tr>
+<th>
+ Seq as Entered </th>
+<th>
+ Full   </th>
+<th>
+ Partial </th>
+ </tr>
+<tr>
+<td>
+ 1              </td>
+<td>
+ 1      </td>
+<td>
+ 1.      </td>
+</tr>
+<tr>
+<td>
+ 1.1            </td>
+<td>
+ 1.a    </td>
+<td>
+ a.      </td>
+</tr>
+<tr>
+<td>
+ 1.2            </td>
+<td>
+ 1.b    </td>
+<td>
+ b.      </td>
+</tr>
+<tr>
+<td>
+ 1.2.1          </td>
+<td>
+ 1.b.i  </td>
+<td>
+ i.      </td>
+</tr>
+<tr>
+<td>
+ 1.2.2          </td>
+<td>
+ 1.b.ii </td>
+<td>
+ ii.     </td>
+</tr>
+</table>
+
+</section>
+
 
 <hr />
 <div>
 
-<p>Next: 9.6.2 <a href="level.html" class="nav-link">Level</a></p></div>
+<p>Next: 5.6.2 <a href="level.html" class="nav-link">Level</a></p></div>
 
 
 </main>

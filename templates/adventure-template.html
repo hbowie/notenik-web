@@ -44,6 +44,30 @@
 				<h3>=$title$=</h3>
 				<p class="news-date">Adventure # =$seq$= &bull;  =$date&EEEE, MMMM d, yyyy$=</p>
 				<div id="content">
+					
+<?if "=$imagename$=" ?>
+<?if "=$imagecredit$=" ?>
+			<figure>
+				<img class="img-fluid rounded" src="=$relative$=images/=$imagename&f$=" alt="=$imagealt$=">
+			<figcaption class="image-credit">
+			image credit:
+<?if "imagecreditlink" ?>
+						<a href="=$imagecreditlink$=" class="ext-link" target="_blank" rel="noopener">
+<?endif?>
+							=$imagecredit$=
+<?if "imagecreditlink" ?>
+						</a>
+<?endif?>
+					</figcaption>
+					</figure>
+<?else?>
+					<p>
+						<img class="img-fluid rounded" src="=$relative$=images/=$imagename&f$=" alt="=$imagealt$=">
+					</p>
+<?endif?>
+
+<?copyfile "../../../Xcode/NotenikDocs/adventures/files/=$imagename$=" "../images/=$imagename&f$=" ?>
+<?endif?>
 					=$body&fw1o$=
 <?copyimages?>
 					

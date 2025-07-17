@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Syncing Collections</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript"> 
+window.MathJax = { 
+    tex: { 
+      tags: 'ams' 
+    } 
+  }; 
+</script> 
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> 
+</script>
+</head>
+<body>
+
+<header class="nnk-header">
+<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
+<hr class="clearFloats" />
+<p>Notenik Knowledge Base </p>
+
+</header>
+
+<nav class="nnk-nav">
+<ul>
+<li><a href="table-of-contents.html" class="wiki-link">Contents</a> </li>
+<li><a href="index-to-the-knowledge-base.html" class="wiki-link">Index</a> </li>
+<li><a href="search-page.html" class="wiki-link">Search</a> </li>
+</ul>
+
+
+</nav>
+
+<main>
+<p>6 <a href="files-and-folders.html" class="nav-link">Files and Folders</a>&#160;&#8593;</p><h3 id="syncingcollections">6.10 Syncing Collections</h3>
+<p>Notenik has a <em>Sync</em> command that can be found beneath the <em>File</em> menu. </p>
+
+<p>The purpose of this command is to synchronize data between two Notenik collections. </p>
+
+<p>The collections to be synced must have identical <a href="change-note-id-configuration.html" class="wiki-link">Note ID Configuration</a>s. </p>
+
+<p>Data will only be synced between fields having identical <a href="what-we-mean-by-label-and-type.html" class="wiki-link">field label</a>s. </p>
+
+<p>File attachments will not be included in the synchronization. </p>
+
+<p>Neither of the collections should be currently open, before invoking the command. </p>
+
+<p>Invoking the <em>Sync</em> command will show a window containing the following controls. </p>
+<ul>
+<li><p>Select Left — Pressing this button will allow you to select the left-hand collection to be synced. Once selected, its path will show in the wrapping label below. </p></li>
+<li><p>Select Right — Pressing this button will allow you to select the right-hand collection to be synced. Once selected, its path will show in the wrapping label below. </p></li>
+<li><p>Direction — The user may select <em>Bidirectional</em>, <em>Left to Right</em>, or <em>Right to Left</em>. </p></li>
+<li><p>Honor Blanks? — If yes, then a blank field may be allowed to overwrite a field with data in some cases. </p></li>
+<li><p>Logging — The user may select <em>Log Only</em>, <em>Log Details</em>, or <em>Log Summary</em>. <em>Log Only</em> will produce a detailed log of expected actions, but will not actually perform any updates. The other two will perform any needed updates, with or without detailed action descriptions in the Log. </p></li>
+<li><p>Cancel — Pressing this button will dismiss the window without taking any further action. </p></li>
+<li><p>OK — Pressing this button will start the Sync process. Once completed, a message with summary totals will be shown. </p></li>
+</ul>
+
+<p>In the case of a bidirectional sync: </p>
+<ul>
+<li>The <a href="date-modified.html" class="wiki-link">Date Modified</a> values for the notes will be used to decide which note has had the later update, and a later updated note will be chosen to overwrite an earlier one. </li>
+<li>If the collections do not have explicit <a href="date-modified.html" class="wiki-link">Date Modified</a> fields, then the latest mod date from the file system will be used instead. </li>
+<li>Notes found in either collection, but missing from the other one, will be added where missing. </li>
+<li>No notes will be deleted from either collection. </li>
+</ul>
+
+<p>In the case of a sync in a single direction: </p>
+<ul>
+<li>The <em>from</em> collection will not be modified in any way. </li>
+<li>The <em>from</em> collection will be assumed to have the desired data. Modification dates will not be considered. </li>
+<li>Deletions will occur when the <em>to</em> collection has a note not contained in the <em>from</em> collection. </li>
+</ul>
+
+<p>Note that a Collection Sync can also be scripted, using the <a href="sync-module-parameters.html" class="wiki-link">Sync Module</a>. </p>
+
+<hr />
+<div>
+
+<p>Next: 6.11 <a href="using-a-sync-service.html" class="nav-link">Using a Sync Service</a></p></div>
+
+
+</main>
+
+<footer class="nnk-footer">
+<p>Authored by Herb Bowie as open source software under the terms of the MIT License. </p>
+
+</footer>
+</body>
+</html>
