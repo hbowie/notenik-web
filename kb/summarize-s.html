@@ -18,8 +18,6 @@ window.MathJax = {
 <body>
 
 <header class="nnk-header">
-<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
-<hr class="clearFloats" />
 <p>Notenik Knowledge Base </p>
 
 </header>
@@ -35,17 +33,19 @@ window.MathJax = {
 </nav>
 
 <main>
-<p>9.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="summarize-s">9.3.32 Summarize - S</h4>
+<p>9.3 <a href="variable-modifiers.html" class="nav-link">Variable Modifiers</a>&#160;&#8593;</p><h4 id="summarize-s">9.3.34 Summarize - S</h4>
 <p>The letter &#8220;S&#8221; will pull the first few sentences from the field, within the first 250 characters. Specifying a number immediately following the &#8220;S&#8221; will override the default of 250 with the specified number. For the purposes of this operation, Notenik will recognize either a period or a semi-colon as the end of a sentence (but will try to ignore a period placed after a leading number on a line). </p>
 
 <p>If a conversion from Markdown to HTML is also needed, then the Summarize mod is best applied before the <a href="markdown-to-html-o.html" class="wiki-link">Markdown to HTML</a> mod. </p>
 
 <p>Note that, if you are using <a href="https://www.markdownguide.org/basic-syntax/#reference-style-links" class="ext-link" target="_blank" rel="noopener">Reference-style Links</a>, and if you are placing the link definitions later in your text, then those definitions may be unavailable following a Summarize operation. In this case the reference links will be effectively ignored when the HTML is generated (which is often what you would like anyway, when Summarizing some text to be used as a teaser on an index page). </p>
 
+<p>If the field to be modified starts with &#8220;https://&#8221; or &#8220;http://&#8221;, then this function will work a bit differently. The leading characters will be removed, and the remaining characters will then be truncated if they exceed the maximum length, but without any consideration for spacing or punctuation. If the field is truncated, then it will end with an ellipsis. </p>
+
 <hr />
 <div>
 
-<p>Next: 9.3.33 <a href="html-to-markdown-t.html" class="nav-link">HTML to Markdown - T</a></p></div>
+<p>Next: 9.3.35 <a href="html-to-markdown-t.html" class="nav-link">HTML to Markdown - T</a></p></div>
 
 
 </main>

@@ -112,6 +112,146 @@
 				
 				<article>
 					<h3>
+						<a class="invisi-link" href="adventures/designing-my-new-personal-blog.html"?>
+							Designing My New Personal Blog
+						</a>
+					</h3>
+					
+					<p class="news-date">Adventure # 48 &bull;  Monday, September 22, 2025</p>
+
+					<p>I&#8217;ve tried maintaining a personal blog in the past, but the practice has never stuck with me. </p>
+
+<p>Part of the problem is that, while I enjoy writing for the Web, my writings aren&#8217;t really topical enough or frequent enough to fit into the blogging category. </p>
+
+<p>Another part of the problem is that I never really got into use of Twitter. I think I just wasn&#8217;t interested in the brevity of Tweets, or in their typical rapid-fire, back-and-forth nature. </p>
+
+<p>I tried participating in the Micro.blog community for a while, but for various reasons that failed to appeal to me. </p>
+
+<p>Recently, though, I found my interest in a personal blog reviving. </p>
+
+<p>And part of the reason for that was a renewed interest in reading, and in documenting the books that I&#8217;ve read.  While I&#8217;m not interested in doing a full-on review for each book, I am interested in jotting down a few thoughts about each work that I&#8217;ve finished. </p>
+
+<p>So anyway, with all that being said, I recently decided it was time to take another run at this whole personal blogging thing. </p>
+
+<p>And, of course, I&#8217;m using Notenik for this effort, so I thought it might be of some interest to others for me to document what I&#8217;m doing and how I&#8217;m doing it. </p>
+
+<p>This will probably end up as a series of <a href="https://notenik.app/adventures.html" class="ext-link" target="_blank" rel="noopener">Adventure</a> posts, with this being the first. </p>
+
+<p>You&#8217;ll note that, in designing my blog, I&#8217;m generally following the steps outlined in an earlier Adventure, <a href="how-to-build-a-website.html" class="wiki-link">How To Build A Website</a>. </p>
+
+<p>My first step was to create a new Notenik collection to contain my blog posts. This will be published on my <a href="https://hbowie.net" class="ext-link" target="_blank" rel="noopener">HBowie.net site</a>, so I created a new collection within the <a href="https://github.com/hbowie/Hbowie-23/tree/main/content" class="ext-link" target="_blank" rel="noopener">content folder</a> of my project for this site. </p>
+
+<p>Then the next step was to figure out what fields I wanted to have in my <code>blog</code> collection. </p>
+
+<p>Rather than show you the entire completed collection template all at once, let me break it down so I can explain my rationale for each field or, in some cases, group of fields. </p>
+
+<pre><code>Title: &lt;title>
+</code></pre>
+
+<p>There is a distinction that can be made between <a href="https://en.wikipedia.org/wiki/Microblogging" class="ext-link" target="_blank" rel="noopener">microblogging</a> and <a href="https://en.wikipedia.org/wiki/Blog" class="ext-link" target="_blank" rel="noopener">non-micro blogging</a>, and one of the distinguishing characteristics of a microblog is that individual posts lack titles. What I&#8217;m trying to do here is really more of a microblogging thing, in that the posts will be brief, and will often reference other larger items published somewhere else. However, I really like titles and, of course, Notenik mostly prefers unique titles for each note. So each of my posts will have a title, and the title will be the basis of each post&#8217;s unique ID. </p>
+
+<pre><code>Body: 
+</code></pre>
+
+<p>The body field will provide the primary substance for each post. </p>
+
+<pre><code>Link: &lt;link>
+</code></pre>
+
+<p>As I mentioned above these blog posts will often reference other items, so the Link field will be used to provide this sort of reference link, when appropriate. </p>
+
+<pre><code>Date: &lt;date>
+</code></pre>
+
+<p>As with all blogs (micro or otherwise), the latest items will be shown first, and the Date field will be used to keep things in reverse chronological sequence. In my case, I don&#8217;t really plan to post more than one item per day, so this field will simply contain a date (without any time). In fact, in some cases, it may not even contain a complete date. </p>
+
+<pre><code>Date Modified: &lt;datemodified>
+</code></pre>
+
+<p>Seems like a good idea to have a more precise, system-maintained date and time as well, so the Date Modified field will scratch this itch. </p>
+
+<pre><code>Author: &lt;lookup: authors>
+
+Work Title: &lt;lookup: works>
+
+Rating: &lt;rating>
+</code></pre>
+
+<p>These three fields will be filled in for posts stating that I&#8217;ve finished reading a book (or watching a film, etc.). Notice that the Author and Work TItle fields are lookup fields, meaning that they reference content in associated collections. This might be a bit much for a simple blog but, in my case, those lookup collections were already in place anyway, as part of my <a href="https://notenik.app/kb/commonplace-with-lookups.html" class="ext-link" target="_blank" rel="noopener">Commonplace with Lookups</a>, so I figured I might as well use them. And then I&#8217;ll use the Rating field to assign my own personal rating for each book, on a scale of 1 - 5. </p>
+
+<pre><code>Image Name: &lt;imagename>
+
+Image Alt: 
+
+Image Caption: 
+
+Image Credit: 
+
+Image Credit Link: &lt;link>
+</code></pre>
+
+<p>I think it&#8217;s fun to add images to some of my posts, so these fields will allow for that. </p>
+
+<pre><code>Class: &lt;class: finished, general >
+</code></pre>
+
+<p>A Class field is often useful to distinguish between different types of notes in a single collection. In my case, I want the posts stating that I&#8217;ve finished reading a book to have a class of <code>finished</code>, while other posts will simply have a class of <code>general</code>. This should be enough for my purposes (at least for now). </p>
+
+<pre><code>Tags: &lt;tags>
+</code></pre>
+
+<p>And then, finally, I&#8217;m using the Tags field to categorize my posts in various ways. </p>
+
+<p>Put all of these fields into some kind of reasonable order, and here&#8217;s the complete collection template. </p>
+
+<pre><code>Title: &lt;title>
+
+Tags: &lt;tags>
+
+Link: &lt;link>
+
+Class: &lt;class: , finished, general >
+
+Date: &lt;date>
+
+Image Name: &lt;imagename>
+
+Image Alt: 
+
+Image Caption: 
+
+Image Credit: 
+
+Image Credit Link: &lt;link>
+
+Author: &lt;lookup: authors>
+
+Work Title: &lt;lookup: works>
+
+Rating: &lt;rating>
+
+Date Modified: &lt;datemodified>
+
+Body: 
+
+</code></pre>
+
+<p>Note that, rather than starting a blog with some particular preconception of what a blog should look like, I&#8217;m starting by answering the questions, <em>What sort of content do I want on my blog?</em> and then <em>What sort of fields would best contain and describe that content?</em>. </p>
+
+<p>And so, following this approach, I&#8217;m ending up with something that I think will work very well to accomplish my particular goals, but that doesn&#8217;t necessarily look like every other blog that&#8217;s out there. </p>
+
+<p>In subsequent Adventures, I&#8217;ll describe how I format this content into something that can be consumed by others. </p>
+
+					<p class="news-date">
+						<a href="adventures/designing-my-new-personal-blog.html">
+							permalink
+						</a> &bull;
+						tags: <a href='adventure-tags.html#blog' rel='tag'>blog</a>
+					</p>
+				<article>
+				<hr />
+				<article>
+					<h3>
 						<a class="invisi-link" href="adventures/building-something-without-having-to-order-the-cement.html"?>
 							Building Something Without Having to Order the Cement
 						</a>

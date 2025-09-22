@@ -5,6 +5,13 @@
 	<description>The Latest Adventures with Notenik</description>
 	<language>en</language>
 	<item>
+	  <title>Designing My New Personal Blog</title>
+	  <link>https://notenik.app/adventures/designing-my-new-personal-blog.html</link>
+	  <guid>https://notenik.app/adventures/designing-my-new-personal-blog.html</guid>
+	  <pubDate>Mon, 22 Sep 2025 09:00:00 -0700</pubDate>
+	  <description>The inside scoop on how I designed my new personal blog, and the fields I ended up with. </description>
+	</item>
+	<item>
 	  <title>Building Something Without Having to Order the Cement</title>
 	  <link>https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html</link>
 	  <guid>https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html</guid>
@@ -129,13 +136,6 @@
 	  <guid>https://notenik.app/adventures/inline-hashtags-and-postels-law.html</guid>
 	  <pubDate>Wed, 04 Sep 2024 09:00:00 -0700</pubDate>
 	  <description>How do we tag our notes? Let me count the ways&#8230;. </description>
-	</item>
-	<item>
-	  <title>Notenik&apos;s Split Personality</title>
-	  <link>https://notenik.app/adventures/noteniks-split-personality.html</link>
-	  <guid>https://notenik.app/adventures/noteniks-split-personality.html</guid>
-	  <pubDate>Fri, 30 Aug 2024 09:00:00 -0700</pubDate>
-	  <description>Is it yet another &quot;just a bunch of text files&quot; app? Or is it a personal database system for the Mac? Well, a bit of both, to be honest. </description>
 	</item>
   </channel>
 </rss>

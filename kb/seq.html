@@ -18,8 +18,6 @@ window.MathJax = {
 <body>
 
 <header class="nnk-header">
-<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
-<hr class="clearFloats" />
 <p>Notenik Knowledge Base </p>
 
 </header>
@@ -66,6 +64,14 @@ window.MathJax = {
 <p>When used as a sort field, seq values will be padded to cause them to sort into a natural order, rather than a strict character-by-character alphanumeric order.  In other words, a value of 2 will sort before a value of 10, a value of b will sort before aa, etc. Each segment of this field, when separated by a dot or a dash, will be padded separately. </p>
 
 <p>If you&#8217;d like to see your Notes listed in sequence by their assigned number, you can use the Sort Menu to change the sequence of the displayed list from Title to Seq + Title. Use the Reverse option to see them in descending sequence. </p>
+
+</section>
+
+<section id="section-for-multiple-seq-values">
+
+<h5 id="multiple-seq-values">Multiple Seq Values</h5>
+
+<p>A Seq field may contain multiple sequence values, separated by semicolons. When sorting by such a field, and viewing on the List tab or the Outline tab, the same note will appear multiple times: once for each distinct value. Modifying any occurrence will modify the underlying note, and hence will modify the data for all of the rows. Deleting any of the rows will result in the deletion of the underlying note, and hence the removal of all rows. </p>
 
 </section>
 

@@ -4,12 +4,151 @@
   <subtitle>The Latest Adventures with the Notenik Mac App</subtitle>
   <link href="https://notenik.app/atom.xml" type="application/atom+xml" rel="self" />
   <link href="https://notenik.app/" type="text/html" rel="alternate"  />
-  <updated>2025-05-22T09:00:00Z</updated>
+  <updated>2025-09-22T09:00:00Z</updated>
   <rights>Copyright © 2025, Herb Bowie</rights>
   <author>
 	<name>Herb Bowie and the Notenik Community</name>
   </author>
   <id>https://hbowie.net/atom.xml</id>
+	<entry>
+	  <title>Designing My New Personal Blog</title>
+	  <link rel="related" type="text/html" href="https://notenik.app/adventures/designing-my-new-personal-blog.html"/>
+	  <id>https://notenik.app/adventures/designing-my-new-personal-blog.html</id>
+	  <published>2025-09-22T09:00:00Z</published>
+	  <updated>2025-09-22T22:11:49Z</updated>
+	  <author>
+		<name>Herb Bowie</name>
+	  </author>
+	  <summary>
+		  The inside scoop on how I designed my new personal blog, and the fields I ended up with. 
+	  </summary>
+	  <content type="html">
+		  <![CDATA[
+		  <p>I&apos;ve tried maintaining a personal blog in the past, but the practice has never stuck with me. </p>
+
+<p>Part of the problem is that, while I enjoy writing for the Web, my writings aren&apos;t really topical enough or frequent enough to fit into the blogging category. </p>
+
+<p>Another part of the problem is that I never really got into use of Twitter. I think I just wasn&apos;t interested in the brevity of Tweets, or in their typical rapid-fire, back-and-forth nature. </p>
+
+<p>I tried participating in the Micro.blog community for a while, but for various reasons that failed to appeal to me. </p>
+
+<p>Recently, though, I found my interest in a personal blog reviving. </p>
+
+<p>And part of the reason for that was a renewed interest in reading, and in documenting the books that I&apos;ve read.  While I&apos;m not interested in doing a full-on review for each book, I am interested in jotting down a few thoughts about each work that I&apos;ve finished. </p>
+
+<p>So anyway, with all that being said, I recently decided it was time to take another run at this whole personal blogging thing. </p>
+
+<p>And, of course, I&apos;m using Notenik for this effort, so I thought it might be of some interest to others for me to document what I&apos;m doing and how I&apos;m doing it. </p>
+
+<p>This will probably end up as a series of <a href="https://notenik.app/adventures.html" class="ext-link" target="_blank" rel="noopener">Adventure</a> posts, with this being the first. </p>
+
+<p>You&apos;ll note that, in designing my blog, I&apos;m generally following the steps outlined in an earlier Adventure, <a href="https://ntnk.app/howtobuildawebsite" class="wiki-link">How To Build A Website</a>. </p>
+
+<p>My first step was to create a new Notenik collection to contain my blog posts. This will be published on my <a href="https://hbowie.net" class="ext-link" target="_blank" rel="noopener">HBowie.net site</a>, so I created a new collection within the <a href="https://github.com/hbowie/Hbowie-23/tree/main/content" class="ext-link" target="_blank" rel="noopener">content folder</a> of my project for this site. </p>
+
+<p>Then the next step was to figure out what fields I wanted to have in my <code>blog</code> collection. </p>
+
+<p>Rather than show you the entire completed collection template all at once, let me break it down so I can explain my rationale for each field or, in some cases, group of fields. </p>
+
+<pre><code>Title: &amp;lt;title&amp;gt;
+</code></pre>
+
+<p>There is a distinction that can be made between <a href="https://en.wikipedia.org/wiki/Microblogging" class="ext-link" target="_blank" rel="noopener">microblogging</a> and <a href="https://en.wikipedia.org/wiki/Blog" class="ext-link" target="_blank" rel="noopener">non-micro blogging</a>, and one of the distinguishing characteristics of a microblog is that individual posts lack titles. What I&apos;m trying to do here is really more of a microblogging thing, in that the posts will be brief, and will often reference other larger items published somewhere else. However, I really like titles and, of course, Notenik mostly prefers unique titles for each note. So each of my posts will have a title, and the title will be the basis of each post&apos;s unique ID. </p>
+
+<pre><code>Body: 
+</code></pre>
+
+<p>The body field will provide the primary substance for each post. </p>
+
+<pre><code>Link: &amp;lt;link&amp;gt;
+</code></pre>
+
+<p>As I mentioned above these blog posts will often reference other items, so the Link field will be used to provide this sort of reference link, when appropriate. </p>
+
+<pre><code>Date: &amp;lt;date&amp;gt;
+</code></pre>
+
+<p>As with all blogs (micro or otherwise), the latest items will be shown first, and the Date field will be used to keep things in reverse chronological sequence. In my case, I don&apos;t really plan to post more than one item per day, so this field will simply contain a date (without any time). In fact, in some cases, it may not even contain a complete date. </p>
+
+<pre><code>Date Modified: &amp;lt;datemodified&amp;gt;
+</code></pre>
+
+<p>Seems like a good idea to have a more precise, system-maintained date and time as well, so the Date Modified field will scratch this itch. </p>
+
+<pre><code>Author: &amp;lt;lookup: authors&amp;gt;
+
+Work Title: &amp;lt;lookup: works&amp;gt;
+
+Rating: &amp;lt;rating&amp;gt;
+</code></pre>
+
+<p>These three fields will be filled in for posts stating that I&apos;ve finished reading a book (or watching a film, etc.). Notice that the Author and Work TItle fields are lookup fields, meaning that they reference content in associated collections. This might be a bit much for a simple blog but, in my case, those lookup collections were already in place anyway, as part of my <a href="https://notenik.app/kb/commonplace-with-lookups.html" class="ext-link" target="_blank" rel="noopener">Commonplace with Lookups</a>, so I figured I might as well use them. And then I&apos;ll use the Rating field to assign my own personal rating for each book, on a scale of 1 - 5. </p>
+
+<pre><code>Image Name: &amp;lt;imagename&amp;gt;
+
+Image Alt: 
+
+Image Caption: 
+
+Image Credit: 
+
+Image Credit Link: &amp;lt;link&amp;gt;
+</code></pre>
+
+<p>I think it&apos;s fun to add images to some of my posts, so these fields will allow for that. </p>
+
+<pre><code>Class: &amp;lt;class: finished, general &amp;gt;
+</code></pre>
+
+<p>A Class field is often useful to distinguish between different types of notes in a single collection. In my case, I want the posts stating that I&apos;ve finished reading a book to have a class of <code>finished</code>, while other posts will simply have a class of <code>general</code>. This should be enough for my purposes (at least for now). </p>
+
+<pre><code>Tags: &amp;lt;tags&amp;gt;
+</code></pre>
+
+<p>And then, finally, I&apos;m using the Tags field to categorize my posts in various ways. </p>
+
+<p>Put all of these fields into some kind of reasonable order, and here&apos;s the complete collection template. </p>
+
+<pre><code>Title: &amp;lt;title&amp;gt;
+
+Tags: &amp;lt;tags&amp;gt;
+
+Link: &amp;lt;link&amp;gt;
+
+Class: &amp;lt;class: , finished, general &amp;gt;
+
+Date: &amp;lt;date&amp;gt;
+
+Image Name: &amp;lt;imagename&amp;gt;
+
+Image Alt: 
+
+Image Caption: 
+
+Image Credit: 
+
+Image Credit Link: &amp;lt;link&amp;gt;
+
+Author: &amp;lt;lookup: authors&amp;gt;
+
+Work Title: &amp;lt;lookup: works&amp;gt;
+
+Rating: &amp;lt;rating&amp;gt;
+
+Date Modified: &amp;lt;datemodified&amp;gt;
+
+Body: 
+
+</code></pre>
+
+<p>Note that, rather than starting a blog with some particular preconception of what a blog should look like, I&apos;m starting by answering the questions, <em>What sort of content do I want on my blog?</em> and then <em>What sort of fields would best contain and describe that content?</em>. </p>
+
+<p>And so, following this approach, I&apos;m ending up with something that I think will work very well to accomplish my particular goals, but that doesn&apos;t necessarily look like every other blog that&apos;s out there. </p>
+
+<p>In subsequent Adventures, I&apos;ll describe how I format this content into something that can be consumed by others. </p>
+		  ]]>
+	  </content>
+	</entry>
 	<entry>
 	  <title>Building Something Without Having to Order the Cement</title>
 	  <link rel="related" type="text/html" href="https://notenik.app/adventures/building-something-without-having-to-order-the-cement.html"/>
@@ -848,36 +987,6 @@
 <p>And so now, with the latest release, Notenik now supports this third approach as well, via a new <a href="https://notenik.app/kb/tags-handling.html" class="ext-link" target="_blank" rel="noopener">Tags Handling</a> option. </p>
 
 <p>The goal, as always, is to maximize interoperability between Notenik and other apps and note-taking systems out there. </p>
-		  ]]>
-	  </content>
-	</entry>
-	<entry>
-	  <title>Notenik&apos;s Split Personality</title>
-	  <link rel="related" type="text/html" href="https://notenik.app/adventures/noteniks-split-personality.html"/>
-	  <id>https://notenik.app/adventures/noteniks-split-personality.html</id>
-	  <published>2024-08-30T09:00:00Z</published>
-	  <updated>2024-09-23T15:49:35Z</updated>
-	  <author>
-		<name>Herb Bowie</name>
-	  </author>
-	  <summary>
-		  Is it yet another &quot;just a bunch of text files&quot; app? Or is it a personal database system for the Mac? Well, a bit of both, to be honest. 
-	  </summary>
-	  <content type="html">
-		  <![CDATA[
-		  <p>I must confess that my Notenik Mac app has a bit of a split personality. </p>
-
-<p>On the one hand, it stores all of its data in text files and supports Markdown. So it&apos;s one of many apps designed to maintain folders full of notes written in Markdown and stored as plain text files. So we might call this the &quot;just a bunch of text files&quot; personality. </p>
-
-<p>On the other hand, notes can have fields, and the fields can have different labels and types, and different folders can have different sets of fields, and each folder of notes also has a special template text file that provides something like a schema definition for that particular folder. So we might call this the &quot;personal database&quot; personality. </p>
-
-<p>So why can&apos;t Notenik make up its mind, and just be one thing or the other? </p>
-
-<p>Well, because straddling this divide offers so many interesting opportunities, both for development and for use. On the one hand, all of Notenik&apos;s data is easily accessible, and can be read (and edited!) with any text editor, and many Markdown editors, and many other &quot;just a bunch of text files&quot; organizers. On the other hand, all sorts of useful information can be maintained and tracked, and sorted in different ways, and exported to a spreadsheet for further manipulation whenever needed. </p>
-
-<p>This is one reason why Notenik continues to evolve, with a new release every couple of weeks, and with an <a href="https://discourse.notenik.app" class="ext-link" target="_blank" rel="noopener">active user community</a>. </p>
-
-<p>And this split personality is one of the main attributes that makes Notenik such a uniquely useful Mac app. </p>
 		  ]]>
 	  </content>
 	</entry>

@@ -18,8 +18,6 @@ window.MathJax = {
 <body>
 
 <header class="nnk-header">
-<p class= "alignRight"><em>Back to <a href="../docs.html">Notenik Docs</a></em></p>
-<hr class="clearFloats" />
 <p>Notenik Knowledge Base </p>
 
 </header>
@@ -52,6 +50,20 @@ window.MathJax = {
 <p>Notenik will create and edit a collection&#8217;s template file for you, in most cases, but for very complex or specialized sets of <a href="fields.html" class="wiki-link">field labels and types</a>, you may wish to make <a href="use-of-a-text-editor.html" class="wiki-link">use of a text editor</a> to modify the file directly. </p>
 
 <p>Note that collection templates are very different from <a href="merge-templates.html" class="wiki-link">Merge Templates</a>, so you should not confuse the two. </p>
+
+<p>Also note that, when writing a note to disk, the Notenik default is to avoid writing lines without data. However, if you have fields for which you wish to see note lines with labels only, the default can be overridden by placing a <code>@</code> character preceding the field type in the collection template file.  </p>
+
+<p>See the following example: </p>
+
+<pre><code>Author Info: @&lt;longtext>
+</code></pre>
+
+<p>In this case, the note file would contain a line like the following when the Author Info was missing or blank. </p>
+
+<pre><code>Author Info: 
+</code></pre>
+
+<p>This can be especially useful if you intend to edit the note file later using a text editor, or some other application. </p>
 
 <hr />
 <div>
